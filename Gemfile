@@ -13,3 +13,5 @@ gem "rspec", "~> 3.0"
 gem "rubocop", "~> 1.21"
 
 gem "builder", "~> 3.3"
+
+gem "zeitwerk", "~> 2.7"
