@@ -31,7 +31,7 @@ module Eccairs
           VALUE_14: 14,
           VALUE_105: 105,
           VALUE_106: 106,
-          VALUE_98: 98,
+          NOT_REPORTED: 98,
           VALUE_8: 8,
           VALUE_15: 15,
           VALUE_28: 28,

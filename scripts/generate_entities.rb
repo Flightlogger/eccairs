@@ -54,16 +54,21 @@ def load_value_list(vl_id)
 end
 
 def generate_enum_hash(values)
-  # Try to create meaningful constant names
+  # Try to create meaningful constant names based on common ECCAIRS patterns
   enum_hash = {}
 
   values.each do |val|
-    # Create constant name from value
+    # Create constant name from value using common ECCAIRS conventions
     const_name = case val
     when '1' then 'YES'
     when '2' then 'NO'
+    when '97' then 'NOT_APPLICABLE'
+    when '98' then 'NOT_REPORTED'
     when '99' then 'UNKNOWN'
-    else "VALUE_#{val}"
+    else
+      # For other values, just use VALUE_ prefix
+      # Users can manually update these to be more meaningful
+      "VALUE_#{val}"
     end
 
     enum_hash[const_name.to_sym] = val.to_i
@@ -131,49 +136,35 @@ def generate_entity_class(attr_name, attr_id, datatype, unit, valuelist_id, sequ
   content
 end
 
-# Read the AttributeList.csv file (has entity path info)
-csv_path = File.expand_path('../../docs/Eccairs Aviation v5100 RITedb/documents/AttributeList.csv', __FILE__)
-base_entities_dir = File.expand_path('../../lib/eccairs', __FILE__)
+# Read the Attributes.csv file
+csv_path = File.expand_path('../../docs/Eccairs Aviation v5100 RITedb/mappings/Attributes.csv', __FILE__)
+entities_dir = File.expand_path('../../lib/eccairs/occurrence/entities', __FILE__)
 
 # Skip already created entities
 skip_entities = ['Dew_Point', 'Wx_Conditions', 'Dang_Goods_Involved']
 
 CSV.foreach(csv_path, headers: true, col_sep: "\t") do |row|
-  entity_path = row['Entity name path for RIT']
-  next unless entity_path && entity_path.start_with?('Occurrence')
+  parent_entity = row['Parent Entity Synonym']
+  next unless parent_entity == 'Occurrence'
 
-  attr_name = row['Attribute synonym for RIT']
+  attr_name = row['Attribute Synonym']
   next if skip_entities.include?(attr_name)
-  next unless attr_name && !attr_name.empty?
 
   attr_id = row['Attribute ID']
+  datatype = row['ECCAIRS Datatype']
+  unit = row['UM default']
+  valuelist_id = row['Valuelist ID']
+  sequence = row['Attribute Sequence']
 
-  # Get datatype info from Attributes.csv mapping
-  # For now, we'll need to look this up separately or use a simpler approach
-  # Let's just create the directory structure for Occurrence entities first
+  # Generate the entity class
+  class_content = generate_entity_class(attr_name, attr_id, datatype, unit, valuelist_id, sequence)
 
-  # Parse the entity path to create directory structure
-  # e.g., "Occurrence" -> lib/eccairs/occurrence/entities/
-  # e.g., "Occurrence/Aerodrome_General" -> lib/eccairs/occurrence/aerodrome_general/
-  path_parts = entity_path.split('/')
-
-  if path_parts.length == 1
-    # Direct Occurrence attribute
-    dir_path = File.join(base_entities_dir, 'occurrence', 'entities')
-  else
-    # Nested entity (e.g., Aerodrome_General under Occurrence)
-    # Convert to snake_case for directory names
-    nested_path = path_parts[1..-1].map { |p| p.downcase.gsub('_', '_') }.join('/')
-    dir_path = File.join(base_entities_dir, 'occurrence', nested_path)
-  end
-
-  FileUtils.mkdir_p(dir_path)
-
-  # For now, just print what we would create
+  # Write to file - replace hyphens with underscores for valid Ruby file names
   file_name = attr_name.downcase.gsub('-', '_') + '.rb'
-  file_path = File.join(dir_path, file_name)
+  file_path = File.join(entities_dir, file_name)
 
-  puts "Would create: #{file_path} (Entity Path: #{entity_path})"
+  File.write(file_path, class_content)
+  puts "Created: #{file_path}"
 end
 
-puts "\nDone! Analyzed entity structure."
+puts "\nDone! Generated all Occurrence entities."

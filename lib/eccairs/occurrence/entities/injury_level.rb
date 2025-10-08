@@ -11,7 +11,7 @@ module Eccairs
           YES: 1,
           NO: 2,
           VALUE_3: 3,
-          VALUE_98: 98,
+          NOT_REPORTED: 98,
           UNKNOWN: 99
         }
       end

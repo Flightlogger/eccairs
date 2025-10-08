@@ -8,7 +8,7 @@ module Eccairs
         xml_tag "Damage_Not_To_A_C"
         sequence 22
         validates_inclusion within: {
-          VALUE_97: 97,
+          NOT_APPLICABLE: 97,
           NO: 2,
           YES: 1,
           UNKNOWN: 99
