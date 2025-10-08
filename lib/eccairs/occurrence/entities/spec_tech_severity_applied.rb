@@ -3,14 +3,14 @@
 module Eccairs
   module Occurrence
     module Entities
-      class DangGoodsInvolved < BaseEntity
-        attribute_id 129
-        xml_tag "Dang_Goods_Involved"
-        sequence 2
+      class SpecTechSeverityApplied < BaseEntity
+        attribute_id 1079
+        xml_tag "Spec_Tech_Severity_Applied"
+        sequence 47
         validates_inclusion within: {
           YES: 1,
           NO: 2,
-          UNKNOWN: 99
+          VALUE_3: 3
         }
       end
     end

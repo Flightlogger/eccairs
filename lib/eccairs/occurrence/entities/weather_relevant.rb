@@ -3,10 +3,10 @@
 module Eccairs
   module Occurrence
     module Entities
-      class DangGoodsInvolved < BaseEntity
-        attribute_id 129
-        xml_tag "Dang_Goods_Involved"
-        sequence 2
+      class WeatherRelevant < BaseEntity
+        attribute_id 606
+        xml_tag "Weather_Relevant"
+        sequence 38
         validates_inclusion within: {
           YES: 1,
           NO: 2,

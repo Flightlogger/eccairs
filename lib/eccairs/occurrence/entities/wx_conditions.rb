@@ -6,6 +6,7 @@ module Eccairs
       class WxConditions < BaseEntity
         attribute_id 127
         xml_tag "Wx_Conditions"
+        sequence 1
         validates_inclusion within: {
           VMC: 1,
           IMC: 2,

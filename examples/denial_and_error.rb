@@ -5,14 +5,29 @@ require 'eccairs'
 report = Eccairs.report
 
 # Create entities (attributes) for the occurrence
+# Weather-related entities
 dew_point = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
+air_temperature = Eccairs::Occurrence::Entities::AirTemperature.new(22.0)
 wx_conditions = Eccairs::Occurrence::Entities::WxConditions.new(:VMC)
+wind_speed = Eccairs::Occurrence::Entities::WindSpeed.new(12.5)
+wind_direction = Eccairs::Occurrence::Entities::WindDirection.new(270)
+visibility = Eccairs::Occurrence::Entities::Visibility.new(10000)
+
+# Occurrence details
 dang_goods_involved = Eccairs::Occurrence::Entities::DangGoodsInvolved.new(:NO)
+location_name = Eccairs::Occurrence::Entities::LocationName.new("London Heathrow Airport")
+headline = Eccairs::Occurrence::Entities::Headline.new("Example occurrence report")
 
 # Add entities to the report (which has a single Occurrence)
 report.add_entity(dew_point)
+report.add_entity(air_temperature)
 report.add_entity(wx_conditions)
+report.add_entity(wind_speed)
+report.add_entity(wind_direction)
+report.add_entity(visibility)
 report.add_entity(dang_goods_involved)
+report.add_entity(location_name)
+report.add_entity(headline)
 
 puts "Validation errors:"
 puts report.validate.empty? ? "None - Valid!" : report.validate

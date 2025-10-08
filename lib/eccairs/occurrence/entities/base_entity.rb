@@ -24,6 +24,15 @@ module Eccairs
           end
         end
 
+        # DSL method to set sequence at class level (for XML ordering)
+        def self.sequence(value = nil)
+          if value
+            @sequence = value.to_i
+          else
+            @sequence || 999 # Default to high number if not set
+          end
+        end
+
         # DSL method to declare validations at class level
         def self.validates_numericality(min: nil, max: nil, type: :decimal)
           @validation_type = :numeric
@@ -64,10 +73,10 @@ module Eccairs
           if mapping && !mapping.empty? && new_value
             # Try to convert string/symbol keys to their integer values
             converted = if new_value.is_a?(String) || new_value.is_a?(Symbol)
-              mapping[new_value] || mapping[new_value.to_sym] || new_value
-            else
-              new_value
-            end
+                          mapping[new_value] || mapping[new_value.to_sym] || new_value
+                        else
+                          new_value
+                        end
             validate_value(converted)
             @value = converted
           else

@@ -3,11 +3,11 @@
 module Eccairs
   module Occurrence
     module Entities
-      class DewPoint < BaseEntity
-        attribute_id 85
-        xml_tag "Dew_Point"
-        sequence 0
-        validates_numericality min: -100, max: 100, type: :decimal
+      class AirTemperature < BaseEntity
+        attribute_id 287
+        xml_tag "Air_Temperature"
+        sequence 8
+        validates_numericality min: -1000, max: 100000, type: :decimal
 
         protected
 
