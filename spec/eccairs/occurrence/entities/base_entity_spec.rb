@@ -27,6 +27,34 @@ RSpec.describe Eccairs::Occurrence::Entities::BaseEntity do
       expect(entity).to receive(:validate_value).with(50)
       entity.value = 50
     end
+
+    it "validates using validates_numericality declaration" do
+      test_class = Class.new(described_class) do
+        validates_numericality min: 0, max: 100
+      end
+
+      expect {
+        test_class.new(50)
+      }.not_to raise_error
+
+      expect {
+        test_class.new(150)
+      }.to raise_error(Eccairs::ValidationError, /less than or equal to 100/)
+    end
+
+    it "validates using validates_inclusion declaration" do
+      test_class = Class.new(described_class) do
+        validates_inclusion within: ["1", "2", "3"]
+      end
+
+      expect {
+        test_class.new("2")
+      }.not_to raise_error
+
+      expect {
+        test_class.new("5")
+      }.to raise_error(Eccairs::ValidationError, /must be one of: 1, 2, 3/)
+    end
   end
 
   describe ".attribute_id" do
@@ -56,6 +84,42 @@ RSpec.describe Eccairs::Occurrence::Entities::BaseEntity do
     it "returns nil when xml_tag is not set" do
       test_class = Class.new(described_class)
       expect(test_class.xml_tag).to be_nil
+    end
+  end
+
+  describe ".validates_numericality" do
+    it "sets validation type to :numeric" do
+      test_class = Class.new(described_class) do
+        validates_numericality min: 0, max: 100
+      end
+
+      expect(test_class.validation_type).to eq(:numeric)
+    end
+
+    it "stores validation options" do
+      test_class = Class.new(described_class) do
+        validates_numericality min: -50, max: 50, type: :integer
+      end
+
+      expect(test_class.validation_options).to eq({ min: -50, max: 50, type: :integer })
+    end
+  end
+
+  describe ".validates_inclusion" do
+    it "sets validation type to :enum" do
+      test_class = Class.new(described_class) do
+        validates_inclusion within: ["1", "2", "3"]
+      end
+
+      expect(test_class.validation_type).to eq(:enum)
+    end
+
+    it "stores validation options" do
+      test_class = Class.new(described_class) do
+        validates_inclusion within: ["a", "b", "c"]
+      end
+
+      expect(test_class.validation_options).to eq({ allowed_values: ["a", "b", "c"] })
     end
   end
 

@@ -6,23 +6,7 @@ module Eccairs
       class WxConditions < BaseEntity
         attribute_id 127
         xml_tag "Wx_Conditions"
-
-        # Wx_Conditions attribute (ID: 127)
-        # - Type: Enumeration (VL127_5_0_1_1)
-        # - Allowed values: "1", "2", "99"
-        # Validation constants from schema
-        ALLOWED_VALUES = ["1", "2", "99"].freeze
-
-        # Common constants for readability
-        VMC = "1"  # Visual Meteorological Conditions
-        IMC = "2"  # Instrument Meteorological Conditions
-        UNKNOWN = "99"
-
-        protected
-
-        def validate_value(val)
-          validate_enum!(:wx_conditions, val, allowed_values: ALLOWED_VALUES)
-        end
+        validates_inclusion within: [1, 2, 99]
       end
     end
   end

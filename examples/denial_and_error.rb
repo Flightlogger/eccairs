@@ -6,7 +6,7 @@ report = Eccairs.report
 
 # Create entities (attributes) for the occurrence
 dew_point = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
-wx_conditions = Eccairs::Occurrence::Entities::WxConditions.new('1')
+wx_conditions = Eccairs::Occurrence::Entities::WxConditions.new(1)
 
 # Add entities to the report (which has a single Occurrence)
 report.add_entity(dew_point)

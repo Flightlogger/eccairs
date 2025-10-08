@@ -28,7 +28,7 @@ RSpec.describe Eccairs::Occurrence::Base do
     it "allows chaining multiple entities" do
       occurrence = described_class.new
       entity1 = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
-      entity2 = Eccairs::Occurrence::Entities::WxConditions.new("1")
+      entity2 = Eccairs::Occurrence::Entities::WxConditions.new(1)
 
       occurrence.add_entity(entity1).add_entity(entity2)
 
@@ -77,7 +77,7 @@ RSpec.describe Eccairs::Occurrence::Base do
     it "generates XML with multiple entity attributes" do
       occurrence = described_class.new
       entity1 = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
-      entity2 = Eccairs::Occurrence::Entities::WxConditions.new("1")
+      entity2 = Eccairs::Occurrence::Entities::WxConditions.new(1)
       occurrence.add_entity(entity1).add_entity(entity2)
 
       builder = Nokogiri::XML::Builder.new do |xml|

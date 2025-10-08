@@ -10,8 +10,8 @@ RSpec.describe Eccairs::Occurrence::Entities::WxConditions do
     end
 
     it "initializes with provided value" do
-      entity = described_class.new("1")
-      expect(entity.value).to eq("1")
+      entity = described_class.new(1)
+      expect(entity.value).to eq(1)
     end
   end
 
@@ -23,7 +23,7 @@ RSpec.describe Eccairs::Occurrence::Entities::WxConditions do
 
   describe "#build_xml" do
     it "generates valid XML with value" do
-      entity = described_class.new("1")
+      entity = described_class.new(1)
       builder = Nokogiri::XML::Builder.new do |xml|
         entity.build_xml(xml)
       end
@@ -43,7 +43,7 @@ RSpec.describe Eccairs::Occurrence::Entities::WxConditions do
     end
 
     it "includes correct attributeId" do
-      entity = described_class.new("2")
+      entity = described_class.new(2)
       builder = Nokogiri::XML::Builder.new do |xml|
         entity.build_xml(xml)
       end
@@ -54,45 +54,27 @@ RSpec.describe Eccairs::Occurrence::Entities::WxConditions do
   end
 
   describe "validation" do
-    it "accepts valid value '1' (VMC)" do
+    it "accepts valid value 1 (VMC)" do
       expect {
-        described_class.new("1")
+        described_class.new(1)
       }.not_to raise_error
     end
 
-    it "accepts valid value '2' (IMC)" do
+    it "accepts valid value 2 (IMC)" do
       expect {
-        described_class.new("2")
+        described_class.new(2)
       }.not_to raise_error
     end
 
-    it "accepts valid value '99' (Unknown)" do
+    it "accepts valid value 99 (Unknown)" do
       expect {
-        described_class.new("99")
-      }.not_to raise_error
-    end
-
-    it "accepts VMC constant" do
-      expect {
-        described_class.new(described_class::VMC)
-      }.not_to raise_error
-    end
-
-    it "accepts IMC constant" do
-      expect {
-        described_class.new(described_class::IMC)
-      }.not_to raise_error
-    end
-
-    it "accepts UNKNOWN constant" do
-      expect {
-        described_class.new(described_class::UNKNOWN)
+        described_class.new(99)
       }.not_to raise_error
     end
 
     it "raises error with invalid value" do
       expect {
-        described_class.new("3")
+        described_class.new(3)
       }.to raise_error(Eccairs::ValidationError, /must be one of: 1, 2, 99/)
     end
 
@@ -111,7 +93,7 @@ RSpec.describe Eccairs::Occurrence::Entities::WxConditions do
     it "raises error when setting invalid value after initialization" do
       entity = described_class.new
       expect {
-        entity.value = "5"
+        entity.value = 5
       }.to raise_error(Eccairs::ValidationError, /must be one of: 1, 2, 99/)
     end
 
@@ -123,38 +105,16 @@ RSpec.describe Eccairs::Occurrence::Entities::WxConditions do
 
       # Should be able to set a valid value
       expect {
-        entity.value = "1"
+        entity.value = 1
       }.not_to raise_error
 
-      expect(entity.value).to eq("1")
+      expect(entity.value).to eq(1)
     end
 
     it "provides helpful error message with actual value" do
       expect {
         described_class.new("invalid")
       }.to raise_error(Eccairs::ValidationError, /got invalid/)
-    end
-  end
-
-  describe "constants" do
-    it "defines VMC constant as '1'" do
-      expect(described_class::VMC).to eq("1")
-    end
-
-    it "defines IMC constant as '2'" do
-      expect(described_class::IMC).to eq("2")
-    end
-
-    it "defines UNKNOWN constant as '99'" do
-      expect(described_class::UNKNOWN).to eq("99")
-    end
-
-    it "defines ALLOWED_VALUES array" do
-      expect(described_class::ALLOWED_VALUES).to eq(["1", "2", "99"])
-    end
-
-    it "freezes ALLOWED_VALUES array" do
-      expect(described_class::ALLOWED_VALUES).to be_frozen
     end
   end
 end

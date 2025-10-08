@@ -24,6 +24,25 @@ module Eccairs
           end
         end
 
+        # DSL method to declare validations at class level
+        def self.validates_numericality(min: nil, max: nil, type: :decimal)
+          @validation_type = :numeric
+          @validation_options = { min: min, max: max, type: type }
+        end
+
+        def self.validates_inclusion(within:)
+          @validation_type = :enum
+          @validation_options = { allowed_values: within }
+        end
+
+        def self.validation_type
+          @validation_type
+        end
+
+        def self.validation_options
+          @validation_options || {}
+        end
+
         def initialize(value = nil)
           self.value = value
         end
@@ -50,9 +69,22 @@ module Eccairs
         protected
 
         # Hook for subclasses to validate the value
-        # Override this method to add validation logic
+        # Uses class-level validation declarations by default
+        # Can be overridden for custom validation logic
         def validate_value(value)
-          # Default: no validation
+          return unless value # nil values are optional
+
+          validation_type = self.class.validation_type
+          return unless validation_type # no validation declared
+
+          case validation_type
+          when :numeric
+            opts = self.class.validation_options
+            validate_numeric!(:value, value, **opts)
+          when :enum
+            opts = self.class.validation_options
+            validate_enum!(:value, value, **opts)
+          end
         end
 
         # Helper method to validate a numeric value - raises ValidationError if invalid
