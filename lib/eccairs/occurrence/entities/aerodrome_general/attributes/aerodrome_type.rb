@@ -9,7 +9,6 @@ module Eccairs
             attribute_id 10
             xml_tag "Aerodrome_Type"
             sequence 3
-            parent_entity_id 1
             validates_inclusion within: {
               AERODROME: 1,
               HELIPORT: 2,

@@ -9,7 +9,6 @@ module Eccairs
             attribute_id 5
             xml_tag "Location_Indicator"
             sequence 2
-            parent_entity_id 1
           end
         end
       end

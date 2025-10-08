@@ -80,13 +80,43 @@ module Eccairs
         parts = entity.class.name.split('::')
         # Find the parent entity module (between Entities and Attributes)
         entities_index = parts.index('Entities')
-        attributes_index = parts.index('Attributes')
         parent_module = parts[entities_index + 1] # e.g., "AerodromeGeneral"
         parent_tag = parent_module.gsub(/([a-z])([A-Z])/, '\1_\2') # e.g., "Aerodrome_General"
-        parent_entity_id = entity.class.parent_entity_id || "1" # Get from class or default
+
+        # Derive entity ID from the parent tag name using ECCAIRS entity mapping
+        parent_entity_id = entity_id_from_tag(parent_tag)
 
         [parent_tag, parent_entity_id]
       end
+
+      # Map entity tag names to their ECCAIRS entity IDs
+      # Based on AttributeList.csv Entity ID column
+      def entity_id_from_tag(tag_name)
+        ENTITY_ID_MAPPING[tag_name] || raise("Unknown entity: #{tag_name}")
+      end
+
+      # ECCAIRS Entity ID mapping from AttributeList.csv
+      ENTITY_ID_MAPPING = {
+        "Aerodrome_General" => "1",
+        "Aerodrome_Weather_Reports" => "2",
+        "Air_Space" => "3",
+        "Aircraft" => "4",
+        "Air_Navigation_Service" => "10",
+        "Engine" => "13",
+        "Events" => "14",
+        "Flight_Crew_Licenses" => "16",
+        "Flight_Crew_Member" => "17",
+        "Incapacitation" => "20",
+        "Narrative" => "22",
+        "Part_Information" => "26",
+        "Precipitation_And_Other_Weather_Phenomena" => "28",
+        "Propeller" => "29",
+        "Runway" => "31",
+        "Sector" => "33",
+        "Separation" => "34",
+        "Separation_Aircraft" => "35",
+        "Separation_Traffic_Info_Type_Quality" => "36"
+      }.freeze
     end
   end
 end

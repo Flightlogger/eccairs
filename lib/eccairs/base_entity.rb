@@ -31,15 +31,6 @@ module Eccairs
       end
     end
 
-    # DSL method to set parent_entity_id at class level (for nested entities)
-    def self.parent_entity_id(value = nil)
-      if value
-        @parent_entity_id = value.to_s
-      else
-        @parent_entity_id
-      end
-    end
-
     # DSL method to declare validations at class level
     def self.validates_numericality(min: nil, max: nil, type: :decimal)
       @validation_type = :numeric

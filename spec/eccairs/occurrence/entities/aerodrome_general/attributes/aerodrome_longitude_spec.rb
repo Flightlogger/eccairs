@@ -9,11 +9,6 @@ RSpec.describe Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::Aero
     end
   end
 
-  describe ".parent_entity_id" do
-    it "returns the correct parent_entity_id" do
-      expect(described_class.parent_entity_id).to eq("1")
-    end
-  end
 
   describe "#build_xml" do
     it "generates XML with correct tag and attributeId" do

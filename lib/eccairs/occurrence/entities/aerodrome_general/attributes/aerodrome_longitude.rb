@@ -9,7 +9,6 @@ module Eccairs
             attribute_id 2
             xml_tag "Aerodrome_Longitude"
             sequence 1
-            parent_entity_id 1
             validates_numericality min: -180.0, max: 180.0, type: :decimal
           end
         end
