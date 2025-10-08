@@ -4,7 +4,7 @@ RSpec.describe Eccairs::Report do
   describe "#validate" do
     it "returns an empty array for valid XML" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::DewPoint.new
+      occurrence = Eccairs::Occurrence::DewPoint.new(dew_point: 15.5)
       report.add_occurrence(occurrence)
 
       errors = report.validate
@@ -50,7 +50,7 @@ RSpec.describe Eccairs::Report do
   describe "#valid?" do
     it "returns true for valid XML" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::DewPoint.new
+      occurrence = Eccairs::Occurrence::DewPoint.new(dew_point: 15.5)
       report.add_occurrence(occurrence)
 
       expect(report.valid?).to be true
@@ -84,7 +84,7 @@ RSpec.describe Eccairs::Report do
   describe "namespace declarations" do
     it "uses correct namespace URIs" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::DewPoint.new
+      occurrence = Eccairs::Occurrence::DewPoint.new(dew_point: 15.5)
       report.add_occurrence(occurrence)
 
       xml = report.to_xml
@@ -94,7 +94,7 @@ RSpec.describe Eccairs::Report do
 
     it "uses correct taxonomy version" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::DewPoint.new
+      occurrence = Eccairs::Occurrence::DewPoint.new(dew_point: 15.5)
       report.add_occurrence(occurrence)
 
       xml = report.to_xml
@@ -103,7 +103,7 @@ RSpec.describe Eccairs::Report do
 
     it "uses correct taxonomy name" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::DewPoint.new
+      occurrence = Eccairs::Occurrence::DewPoint.new(dew_point: 15.5)
       report.add_occurrence(occurrence)
 
       xml = report.to_xml
@@ -112,7 +112,7 @@ RSpec.describe Eccairs::Report do
 
     it "uses correct domain" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::DewPoint.new
+      occurrence = Eccairs::Occurrence::DewPoint.new(dew_point: 15.5)
       report.add_occurrence(occurrence)
 
       xml = report.to_xml
@@ -121,7 +121,7 @@ RSpec.describe Eccairs::Report do
 
     it "uses correct version" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::DewPoint.new
+      occurrence = Eccairs::Occurrence::DewPoint.new(dew_point: 15.5)
       report.add_occurrence(occurrence)
 
       xml = report.to_xml
@@ -129,4 +129,3 @@ RSpec.describe Eccairs::Report do
     end
   end
 end
-
