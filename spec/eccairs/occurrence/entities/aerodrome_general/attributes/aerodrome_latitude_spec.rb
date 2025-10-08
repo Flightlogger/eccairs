@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "spec_helper"
+require "nokogiri"
 
 RSpec.describe Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::AerodromeLatitude do
   describe ".attribute_id" do
@@ -73,7 +74,7 @@ RSpec.describe Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::Aero
       report = Eccairs.report
       entity = described_class.new(45.5)
       report.add_entity(entity)
-      
+
       expect(report.valid?).to be true
     end
   end
