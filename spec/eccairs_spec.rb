@@ -5,7 +5,16 @@ RSpec.describe Eccairs do
     expect(Eccairs::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it "creates a report" do
+    report = Eccairs.report
+    expect(report).to be_a(Eccairs::Report)
+  end
+
+  it "generates valid XML" do
+    report = Eccairs.report
+    occurrence = Eccairs::Occurrence::DewPoint.new
+    report.add_occurrence(occurrence)
+
+    expect(report.valid?).to be true
   end
 end
