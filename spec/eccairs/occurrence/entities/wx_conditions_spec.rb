@@ -162,4 +162,14 @@ RSpec.describe Eccairs::Occurrence::Entities::WxConditions do
       }.to raise_error(Eccairs::ValidationError, /got invalid/)
     end
   end
+
+describe "ECCAIRS report validation" do
+  it "generates a valid ECCAIRS report" do
+    report = Eccairs.report
+    entity = described_class.new(1)
+    report.add_entity(entity)
+    
+    expect(report.valid?).to be true
+  end
+end
 end

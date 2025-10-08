@@ -41,4 +41,14 @@ describe "#build_xml" do
     expect(xml).not_to include("Headline")
   end
 end
+
+describe "ECCAIRS report validation" do
+  it "generates a valid ECCAIRS report" do
+    report = Eccairs.report
+    entity = described_class.new("Test headline")
+    report.add_entity(entity)
+    
+    expect(report.valid?).to be true
+  end
+end
 end

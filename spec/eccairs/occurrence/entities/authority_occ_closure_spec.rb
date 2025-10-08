@@ -41,4 +41,14 @@ describe "#build_xml" do
     expect(xml).not_to include("Authority_Occ_Closure")
   end
 end
+
+describe "ECCAIRS report validation" do
+  it "generates a valid ECCAIRS report with nil value" do
+    report = Eccairs.report
+    entity = described_class.new(nil)
+    report.add_entity(entity)
+
+    expect(report.valid?).to be true
+  end
+end
 end

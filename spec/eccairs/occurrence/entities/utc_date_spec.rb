@@ -41,4 +41,14 @@ describe "#build_xml" do
     expect(xml).not_to include("UTC_Date")
   end
 end
+
+describe "ECCAIRS report validation" do
+  it "generates a valid ECCAIRS report" do
+    report = Eccairs.report
+    entity = described_class.new("2024-01-01")
+    report.add_entity(entity)
+    
+    expect(report.valid?).to be true
+  end
+end
 end

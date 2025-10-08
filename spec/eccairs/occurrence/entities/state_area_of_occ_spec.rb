@@ -41,4 +41,14 @@ describe "#build_xml" do
     expect(xml).not_to include("State_Area_Of_Occ")
   end
 end
+
+describe "ECCAIRS report validation" do
+  it "generates a valid ECCAIRS report with valid country code" do
+    report = Eccairs.report
+    entity = described_class.new("905") # Valid country code from ECCAIRS enumeration
+    report.add_entity(entity)
+
+    expect(report.valid?).to be true
+  end
+end
 end
