@@ -3,11 +3,17 @@
 require 'eccairs'
 
 report = Eccairs.report
-occurrence = Eccairs::Occurrence::DewPoint.new
-occurrence.dew_point = 200
 
-report.add_occurrence(occurrence)
+# Create entities (attributes) for the occurrence
+dew_point = Eccairs::Occurrence::Entities::DewPoint.new(dew_point: 15.5)
+wx_conditions = Eccairs::Occurrence::Entities::WxConditions.new(wx_conditions: '1')
 
-puts report.valid?
+# Add entities to the report (which has a single Occurrence)
+report.add_entity(dew_point)
+report.add_entity(wx_conditions)
 
+puts "Validation errors:"
+puts report.validate.empty? ? "None - Valid!" : report.validate
+
+puts "\nGenerated XML:"
 puts report.to_xml

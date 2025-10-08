@@ -15,27 +15,37 @@ module Eccairs
 
     SCHEMA_PATH = File.expand_path("../../docs/Eccairs Aviation v5100 RITedb/schema/Schema.xsd", __dir__)
 
-    attr_reader :occurrences
+    attr_reader :occurrence
 
     def initialize
-      @occurrences = []
+      @occurrence = Eccairs::Occurrence::Base.new
     end
 
     def to_xml
       builder = Nokogiri::XML::Builder.new(encoding: "UTF-8") do |xml|
         xml.SET(SET_ATTRS) do
-          @occurrences.each do |occurrence|
-            occurrence.to_xml(xml)
-          end
+          @occurrence.to_xml(xml)
         end
       end
 
       builder.to_xml
     end
 
-    def add_occurrence(occurrence)
-      @occurrences << occurrence
-      occurrence
+    def add_entity(entity)
+      @occurrence.add_entity(entity)
+      self
+    end
+
+    # Deprecated: Use add_entity instead
+    # Kept for backward compatibility during transition
+    def add_occurrence(occurrence_or_entity)
+      if occurrence_or_entity.is_a?(Eccairs::Occurrence::Base)
+        @occurrence = occurrence_or_entity
+      else
+        # Assume it's an old-style occurrence that should be treated as an entity
+        add_entity(occurrence_or_entity)
+      end
+      occurrence_or_entity
     end
 
     def valid?
