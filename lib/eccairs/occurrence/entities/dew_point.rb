@@ -5,6 +5,7 @@ module Eccairs
     module Entities
       class DewPoint < BaseEntity
         attribute_id 85
+        xml_tag "Dew_Point"
 
         # Dew_Point attribute (ID: 85)
         # - Type: Decimal (Base_Dew_Point)
@@ -15,14 +16,14 @@ module Eccairs
         MAX_VALUE = 100
         UNIT = "C"
 
-        def build_xml(xml)
-          xml.Dew_Point(value, Unit: UNIT, attributeId: self.class.attribute_id) if value
-        end
-
         protected
 
         def validate_value(val)
           validate_numeric!(:dew_point, val, min: MIN_VALUE, max: MAX_VALUE, type: :decimal)
+        end
+
+        def additional_xml_attributes
+          { Unit: UNIT }
         end
       end
     end

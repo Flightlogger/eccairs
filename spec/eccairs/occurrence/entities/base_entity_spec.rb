@@ -44,6 +44,21 @@ RSpec.describe Eccairs::Occurrence::Entities::BaseEntity do
     end
   end
 
+  describe ".xml_tag" do
+    it "can set and retrieve xml_tag" do
+      test_class = Class.new(described_class) do
+        xml_tag :Test_Tag
+      end
+
+      expect(test_class.xml_tag).to eq("Test_Tag")
+    end
+
+    it "returns nil when xml_tag is not set" do
+      test_class = Class.new(described_class)
+      expect(test_class.xml_tag).to be_nil
+    end
+  end
+
   describe "#validate_numeric!" do
     let(:entity) { described_class.new }
 
@@ -101,11 +116,64 @@ RSpec.describe Eccairs::Occurrence::Entities::BaseEntity do
   end
 
   describe "#build_xml" do
-    it "raises NotImplementedError" do
-      entity = described_class.new
+    it "raises NotImplementedError when xml_tag is not defined" do
+      entity = described_class.new(42)
+      builder = Nokogiri::XML::Builder.new
+
       expect {
-        entity.build_xml(nil)
-      }.to raise_error(NotImplementedError, /must implement build_xml/)
+        entity.build_xml(builder)
+      }.to raise_error(NotImplementedError, /must define xml_tag/)
+    end
+
+    it "does not generate XML when value is nil" do
+      test_class = Class.new(described_class) do
+        attribute_id 123
+        xml_tag :Test_Tag
+      end
+
+      entity = test_class.new
+      builder = Nokogiri::XML::Builder.new do |xml|
+        entity.build_xml(xml)
+      end
+
+      xml_string = builder.to_xml
+      expect(xml_string).not_to include('Test_Tag')
+    end
+
+    it "generates XML with tag and attributeId when value is present" do
+      test_class = Class.new(described_class) do
+        attribute_id 123
+        xml_tag :Test_Tag
+      end
+
+      entity = test_class.new("test_value")
+      builder = Nokogiri::XML::Builder.new do |xml|
+        entity.build_xml(xml)
+      end
+
+      xml_string = builder.to_xml
+      expect(xml_string).to include('<Test_Tag attributeId="123">test_value</Test_Tag>')
+    end
+
+    it "includes additional_xml_attributes when defined" do
+      test_class = Class.new(described_class) do
+        attribute_id 123
+        xml_tag :Test_Tag
+
+        def additional_xml_attributes
+          { Unit: "C", Type: "decimal" }
+        end
+      end
+
+      entity = test_class.new(42)
+      builder = Nokogiri::XML::Builder.new do |xml|
+        entity.build_xml(xml)
+      end
+
+      xml_string = builder.to_xml
+      expect(xml_string).to include('Unit="C"')
+      expect(xml_string).to include('Type="decimal"')
+      expect(xml_string).to include('attributeId="123"')
     end
   end
 end

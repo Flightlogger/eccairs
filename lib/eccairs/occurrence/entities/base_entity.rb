@@ -15,6 +15,15 @@ module Eccairs
           end
         end
 
+        # DSL method to set xml_tag at class level
+        def self.xml_tag(value = nil)
+          if value
+            @xml_tag = value.to_s
+          else
+            @xml_tag
+          end
+        end
+
         def initialize(value = nil)
           self.value = value
         end
@@ -25,9 +34,17 @@ module Eccairs
         end
 
         # Method to build XML for this entity's attribute
-        # Must be implemented by subclasses
+        # Can be overridden by subclasses for custom behavior
         def build_xml(xml)
-          raise NotImplementedError, "Subclasses must implement build_xml"
+          return unless value
+
+          tag_name = self.class.xml_tag
+          raise NotImplementedError, "Subclasses must define xml_tag" unless tag_name
+
+          xml_attributes = { attributeId: self.class.attribute_id }
+          xml_attributes.merge!(additional_xml_attributes) if respond_to?(:additional_xml_attributes, true)
+
+          xml.send(tag_name, value, xml_attributes)
         end
 
         protected

@@ -5,6 +5,7 @@ module Eccairs
     module Entities
       class WxConditions < BaseEntity
         attribute_id 127
+        xml_tag "Wx_Conditions"
 
         # Wx_Conditions attribute (ID: 127)
         # - Type: Enumeration (VL127_5_0_1_1)
@@ -16,10 +17,6 @@ module Eccairs
         VMC = "1"  # Visual Meteorological Conditions
         IMC = "2"  # Instrument Meteorological Conditions
         UNKNOWN = "99"
-
-        def build_xml(xml)
-          xml.Wx_Conditions(value, attributeId: self.class.attribute_id) if value
-        end
 
         protected
 

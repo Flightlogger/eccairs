@@ -29,7 +29,10 @@ RSpec.describe Eccairs::Occurrence::Entities::DewPoint do
       end
 
       xml_string = builder.to_xml
-      expect(xml_string).to include('<Dew_Point Unit="C" attributeId="85">15.5</Dew_Point>')
+      expect(xml_string).to include('<Dew_Point')
+      expect(xml_string).to include('attributeId="85"')
+      expect(xml_string).to include('Unit="C"')
+      expect(xml_string).to include('>15.5</Dew_Point>')
     end
 
     it "does not generate XML when value is nil" do
