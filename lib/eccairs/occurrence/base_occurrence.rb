@@ -25,7 +25,7 @@ module Eccairs::Occurrence
 
     def build_attributes(xml)
       attributes.each do |key, value|
-        xml.tag!(key, value)
+        xml.send(key, value)
       end
     end
   end
