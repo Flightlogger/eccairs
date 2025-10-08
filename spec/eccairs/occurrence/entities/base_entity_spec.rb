@@ -55,6 +55,36 @@ RSpec.describe Eccairs::Occurrence::Entities::BaseEntity do
         test_class.new("5")
       }.to raise_error(Eccairs::ValidationError, /must be one of: 1, 2, 3/)
     end
+
+    it "converts enum symbols to values" do
+      test_class = Class.new(described_class) do
+        validates_inclusion within: { SMALL: 1, MEDIUM: 2, LARGE: 3 }
+      end
+
+      entity = test_class.new(:SMALL)
+      expect(entity.value).to eq(1)
+
+      entity = test_class.new(:MEDIUM)
+      expect(entity.value).to eq(2)
+    end
+
+    it "converts enum strings to values" do
+      test_class = Class.new(described_class) do
+        validates_inclusion within: { SMALL: 1, MEDIUM: 2, LARGE: 3 }
+      end
+
+      entity = test_class.new("SMALL")
+      expect(entity.value).to eq(1)
+    end
+
+    it "accepts direct integer values for enums" do
+      test_class = Class.new(described_class) do
+        validates_inclusion within: { SMALL: 1, MEDIUM: 2, LARGE: 3 }
+      end
+
+      entity = test_class.new(2)
+      expect(entity.value).to eq(2)
+    end
   end
 
   describe ".attribute_id" do
@@ -114,12 +144,38 @@ RSpec.describe Eccairs::Occurrence::Entities::BaseEntity do
       expect(test_class.validation_type).to eq(:enum)
     end
 
-    it "stores validation options" do
+    it "stores validation options with array" do
       test_class = Class.new(described_class) do
         validates_inclusion within: ["a", "b", "c"]
       end
 
       expect(test_class.validation_options).to eq({ allowed_values: ["a", "b", "c"] })
+    end
+
+    it "stores validation options with hash" do
+      test_class = Class.new(described_class) do
+        validates_inclusion within: { FOO: 1, BAR: 2 }
+      end
+
+      expect(test_class.validation_options).to eq({ allowed_values: [1, 2] })
+    end
+
+    it "defines constants from hash keys" do
+      test_class = Class.new(described_class) do
+        validates_inclusion within: { ALPHA: 10, BETA: 20, GAMMA: 30 }
+      end
+
+      expect(test_class::ALPHA).to eq(10)
+      expect(test_class::BETA).to eq(20)
+      expect(test_class::GAMMA).to eq(30)
+    end
+
+    it "stores enum mapping" do
+      test_class = Class.new(described_class) do
+        validates_inclusion within: { RED: 1, GREEN: 2, BLUE: 3 }
+      end
+
+      expect(test_class.enum_mapping).to eq({ RED: 1, GREEN: 2, BLUE: 3 })
     end
   end
 

@@ -31,8 +31,15 @@ module Eccairs
         end
 
         def self.validates_inclusion(within:)
+          if within.is_a?(Hash)
+            # Define constants from hash keys
+            within.each { |name, value| const_set(name, value) unless const_defined?(name) }
+            @enum_mapping = within
+            @validation_options = { allowed_values: within.values }
+          else
+            @validation_options = { allowed_values: within }
+          end
           @validation_type = :enum
-          @validation_options = { allowed_values: within }
         end
 
         def self.validation_type
@@ -43,13 +50,30 @@ module Eccairs
           @validation_options || {}
         end
 
+        def self.enum_mapping
+          @enum_mapping || {}
+        end
+
         def initialize(value = nil)
           self.value = value
         end
 
         def value=(new_value)
-          validate_value(new_value)
-          @value = new_value
+          # Convert enum keys to their integer values if mapping exists
+          mapping = self.class.enum_mapping
+          if mapping && !mapping.empty? && new_value
+            # Try to convert string/symbol keys to their integer values
+            converted = if new_value.is_a?(String) || new_value.is_a?(Symbol)
+              mapping[new_value] || mapping[new_value.to_sym] || new_value
+            else
+              new_value
+            end
+            validate_value(converted)
+            @value = converted
+          else
+            validate_value(new_value)
+            @value = new_value
+          end
         end
 
         # Method to build XML for this entity's attribute

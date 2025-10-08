@@ -53,6 +53,20 @@ RSpec.describe Eccairs::Occurrence::Entities::WxConditions do
     end
   end
 
+  describe "constants" do
+    it "defines VMC constant" do
+      expect(described_class::VMC).to eq(1)
+    end
+
+    it "defines IMC constant" do
+      expect(described_class::IMC).to eq(2)
+    end
+
+    it "defines UNKNOWN constant" do
+      expect(described_class::UNKNOWN).to eq(99)
+    end
+  end
+
   describe "validation" do
     it "accepts valid value 1 (VMC)" do
       expect {
@@ -72,9 +86,40 @@ RSpec.describe Eccairs::Occurrence::Entities::WxConditions do
       }.not_to raise_error
     end
 
+    it "accepts :VMC symbol" do
+      entity = described_class.new(:VMC)
+      expect(entity.value).to eq(1)
+    end
+
+    it "accepts :IMC symbol" do
+      entity = described_class.new(:IMC)
+      expect(entity.value).to eq(2)
+    end
+
+    it "accepts :UNKNOWN symbol" do
+      entity = described_class.new(:UNKNOWN)
+      expect(entity.value).to eq(99)
+    end
+
+    it "accepts 'VMC' string" do
+      entity = described_class.new("VMC")
+      expect(entity.value).to eq(1)
+    end
+
+    it "accepts VMC constant" do
+      entity = described_class.new(described_class::VMC)
+      expect(entity.value).to eq(1)
+    end
+
     it "raises error with invalid value" do
       expect {
         described_class.new(3)
+      }.to raise_error(Eccairs::ValidationError, /must be one of: 1, 2, 99/)
+    end
+
+    it "raises error with invalid symbol" do
+      expect {
+        described_class.new(:INVALID)
       }.to raise_error(Eccairs::ValidationError, /must be one of: 1, 2, 99/)
     end
 
@@ -105,7 +150,7 @@ RSpec.describe Eccairs::Occurrence::Entities::WxConditions do
 
       # Should be able to set a valid value
       expect {
-        entity.value = 1
+        entity.value = :VMC
       }.not_to raise_error
 
       expect(entity.value).to eq(1)

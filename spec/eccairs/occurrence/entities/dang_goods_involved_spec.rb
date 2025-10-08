@@ -55,28 +55,73 @@ RSpec.describe Eccairs::Occurrence::Entities::DangGoodsInvolved do
     end
   end
 
+  describe "constants" do
+    it "defines YES constant" do
+      expect(described_class::YES).to eq(1)
+    end
+
+    it "defines NO constant" do
+      expect(described_class::NO).to eq(2)
+    end
+
+    it "defines UNKNOWN constant" do
+      expect(described_class::UNKNOWN).to eq(99)
+    end
+  end
+
   describe "validation" do
-    it "accepts valid value 1" do
+    it "accepts valid value 1 (YES)" do
       expect {
         described_class.new(1)
       }.not_to raise_error
     end
 
-    it "accepts valid value 2" do
+    it "accepts valid value 2 (NO)" do
       expect {
         described_class.new(2)
       }.not_to raise_error
     end
 
-    it "accepts valid value 99" do
+    it "accepts valid value 99 (UNKNOWN)" do
       expect {
         described_class.new(99)
       }.not_to raise_error
     end
 
+    it "accepts :YES symbol" do
+      entity = described_class.new(:YES)
+      expect(entity.value).to eq(1)
+    end
+
+    it "accepts :NO symbol" do
+      entity = described_class.new(:NO)
+      expect(entity.value).to eq(2)
+    end
+
+    it "accepts :UNKNOWN symbol" do
+      entity = described_class.new(:UNKNOWN)
+      expect(entity.value).to eq(99)
+    end
+
+    it "accepts 'YES' string" do
+      entity = described_class.new("YES")
+      expect(entity.value).to eq(1)
+    end
+
+    it "accepts YES constant" do
+      entity = described_class.new(described_class::YES)
+      expect(entity.value).to eq(1)
+    end
+
     it "raises error with invalid value" do
       expect {
         described_class.new(3)
+      }.to raise_error(Eccairs::ValidationError, /must be one of: 1, 2, 99/)
+    end
+
+    it "raises error with invalid symbol" do
+      expect {
+        described_class.new(:MAYBE)
       }.to raise_error(Eccairs::ValidationError, /must be one of: 1, 2, 99/)
     end
 
@@ -107,7 +152,7 @@ RSpec.describe Eccairs::Occurrence::Entities::DangGoodsInvolved do
 
       # Should be able to set a valid value
       expect {
-        entity.value = 1
+        entity.value = :YES
       }.not_to raise_error
 
       expect(entity.value).to eq(1)
@@ -120,4 +165,3 @@ RSpec.describe Eccairs::Occurrence::Entities::DangGoodsInvolved do
     end
   end
 end
-
