@@ -1,0 +1,19 @@
+# frozen_string_literal: true
+
+module Eccairs
+  module Occurrence
+    module Entities
+      module AerodromeGeneral
+        module Attributes
+          class AerodromeLongitude < Eccairs::BaseEntity
+            attribute_id 2
+            xml_tag "Aerodrome_Longitude"
+            sequence 1
+            parent_entity_id 1
+            validates_numericality min: -180.0, max: 180.0, type: :decimal
+          end
+        end
+      end
+    end
+  end
+end

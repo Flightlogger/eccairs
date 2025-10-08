@@ -4,7 +4,7 @@ RSpec.describe Eccairs::Report do
   describe "#validate" do
     it "returns an empty array for valid XML" do
       report = Eccairs.report
-      entity = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
+      entity = Eccairs::Occurrence::Attributes::DewPoint.new(15.5)
       report.add_entity(entity)
 
       errors = report.validate
@@ -13,18 +13,20 @@ RSpec.describe Eccairs::Report do
 
     it "returns validation errors for invalid XML" do
       # Create a custom entity with an invalid Dew_Point value
-      class InvalidDewPointEntity < Eccairs::Occurrence::Entities::BaseEntity
-        def initialize
-          @value = 150 # Out of range! Should be -100 to 100
-        end
+      module Eccairs::Occurrence::Attributes
+        class InvalidDewPointEntity < Eccairs::BaseEntity
+          def initialize
+            @value = 150 # Out of range! Should be -100 to 100
+          end
 
-        def build_xml(xml)
-          xml.Dew_Point(@value, Unit: "C", attributeId: "85")
+          def build_xml(xml)
+            xml.Dew_Point(@value, Unit: "C", attributeId: "85")
+          end
         end
       end
 
       report = Eccairs.report
-      entity = InvalidDewPointEntity.new
+      entity = Eccairs::Occurrence::Attributes::InvalidDewPointEntity.new
       report.add_entity(entity)
 
       errors = report.validate
@@ -43,7 +45,7 @@ RSpec.describe Eccairs::Report do
   describe "#valid?" do
     it "returns true for valid XML" do
       report = Eccairs.report
-      entity = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
+      entity = Eccairs::Occurrence::Attributes::DewPoint.new(15.5)
       report.add_entity(entity)
 
       expect(report.valid?).to be true
@@ -51,18 +53,20 @@ RSpec.describe Eccairs::Report do
 
     it "returns false for invalid XML" do
       # Create a custom entity with an invalid Dew_Point value
-      class InvalidDewPointEntity2 < Eccairs::Occurrence::Entities::BaseEntity
-        def initialize
-          @value = -150 # Out of range! Should be -100 to 100
-        end
+      module Eccairs::Occurrence::Attributes
+        class InvalidDewPointEntity2 < Eccairs::BaseEntity
+          def initialize
+            @value = -150 # Out of range! Should be -100 to 100
+          end
 
-        def build_xml(xml)
-          xml.Dew_Point(@value, Unit: "C", attributeId: "85")
+          def build_xml(xml)
+            xml.Dew_Point(@value, Unit: "C", attributeId: "85")
+          end
         end
       end
 
       report = Eccairs.report
-      entity = InvalidDewPointEntity2.new
+      entity = Eccairs::Occurrence::Attributes::InvalidDewPointEntity2.new
       report.add_entity(entity)
 
       expect(report.valid?).to be false
@@ -72,7 +76,7 @@ RSpec.describe Eccairs::Report do
   describe "namespace declarations" do
     it "uses correct namespace URIs" do
       report = Eccairs.report
-      entity = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
+      entity = Eccairs::Occurrence::Attributes::DewPoint.new(15.5)
       report.add_entity(entity)
 
       xml = report.to_xml
@@ -82,7 +86,7 @@ RSpec.describe Eccairs::Report do
 
     it "uses correct taxonomy version" do
       report = Eccairs.report
-      entity = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
+      entity = Eccairs::Occurrence::Attributes::DewPoint.new(15.5)
       report.add_entity(entity)
 
       xml = report.to_xml
@@ -91,7 +95,7 @@ RSpec.describe Eccairs::Report do
 
     it "uses correct taxonomy name" do
       report = Eccairs.report
-      entity = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
+      entity = Eccairs::Occurrence::Attributes::DewPoint.new(15.5)
       report.add_entity(entity)
 
       xml = report.to_xml
@@ -100,7 +104,7 @@ RSpec.describe Eccairs::Report do
 
     it "uses correct domain" do
       report = Eccairs.report
-      entity = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
+      entity = Eccairs::Occurrence::Attributes::DewPoint.new(15.5)
       report.add_entity(entity)
 
       xml = report.to_xml
@@ -109,7 +113,7 @@ RSpec.describe Eccairs::Report do
 
     it "uses correct version" do
       report = Eccairs.report
-      entity = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
+      entity = Eccairs::Occurrence::Attributes::DewPoint.new(15.5)
       report.add_entity(entity)
 
       xml = report.to_xml

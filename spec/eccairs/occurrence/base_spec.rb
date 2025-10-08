@@ -13,22 +13,22 @@ RSpec.describe Eccairs::Occurrence::Base do
   describe "#add_entity" do
     it "adds an entity to the occurrence" do
       occurrence = described_class.new
-      entity = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
+      entity = Eccairs::Occurrence::Attributes::DewPoint.new(15.5)
       occurrence.add_entity(entity)
       expect(occurrence.entities).to include(entity)
     end
 
     it "returns self for method chaining" do
       occurrence = described_class.new
-      entity = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
+      entity = Eccairs::Occurrence::Attributes::DewPoint.new(15.5)
       result = occurrence.add_entity(entity)
       expect(result).to eq(occurrence)
     end
 
     it "allows chaining multiple entities" do
       occurrence = described_class.new
-      entity1 = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
-      entity2 = Eccairs::Occurrence::Entities::WxConditions.new(1)
+      entity1 = Eccairs::Occurrence::Attributes::DewPoint.new(15.5)
+      entity2 = Eccairs::Occurrence::Attributes::WxConditions.new(1)
 
       occurrence.add_entity(entity1).add_entity(entity2)
 
@@ -44,23 +44,22 @@ RSpec.describe Eccairs::Occurrence::Base do
       end
 
       xml_string = builder.to_xml
-      expect(xml_string).to include('<Occurrence entityId="24">')
-      expect(xml_string).to match(/<ATTRIBUTES[\/>]/)
+      expect(xml_string).to include('<Occurrence entityId="24"')
     end
 
-    it "generates XML with empty ATTRIBUTES when no entities are added" do
+    it "does not generate ATTRIBUTES section when no entities are added" do
       occurrence = described_class.new
       builder = Nokogiri::XML::Builder.new do |xml|
         occurrence.to_xml(xml)
       end
 
       xml_string = builder.to_xml
-      expect(xml_string).to include('<ATTRIBUTES/>')
+      expect(xml_string).not_to include('<ATTRIBUTES')
     end
 
     it "generates XML with entity attributes when added" do
       occurrence = described_class.new
-      entity = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
+      entity = Eccairs::Occurrence::Attributes::DewPoint.new(15.5)
       occurrence.add_entity(entity)
 
       builder = Nokogiri::XML::Builder.new do |xml|
@@ -76,8 +75,8 @@ RSpec.describe Eccairs::Occurrence::Base do
 
     it "generates XML with multiple entity attributes" do
       occurrence = described_class.new
-      entity1 = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
-      entity2 = Eccairs::Occurrence::Entities::WxConditions.new(1)
+      entity1 = Eccairs::Occurrence::Attributes::DewPoint.new(15.5)
+      entity2 = Eccairs::Occurrence::Attributes::WxConditions.new(1)
       occurrence.add_entity(entity1).add_entity(entity2)
 
       builder = Nokogiri::XML::Builder.new do |xml|

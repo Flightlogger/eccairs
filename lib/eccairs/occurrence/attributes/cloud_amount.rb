@@ -1,0 +1,23 @@
+# frozen_string_literal: true
+
+module Eccairs
+  module Occurrence
+    module Attributes
+      class CloudAmount < Eccairs::BaseEntity
+        attribute_id 266
+        xml_tag "Cloud_Amount"
+        sequence 6
+        validates_inclusion within: {
+          YES: 1,
+          VALUE_101: 101,
+          NO: 2,
+          VALUE_6: 6,
+          VALUE_3: 3,
+          VALUE_4: 4,
+          VALUE_5: 5,
+          UNKNOWN: 99
+        }
+      end
+    end
+  end
+end
