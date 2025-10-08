@@ -73,7 +73,96 @@ RSpec.describe Eccairs::Occurrence::DewPoint do
     end
   end
 
-  describe "validation" do
+  describe "validation at occurrence level" do
+    it "accepts valid value within range (-100 to 100)" do
+      expect {
+        described_class.new(dew_point: 15.5)
+      }.not_to raise_error
+    end
+
+    it "accepts minimum value (-100)" do
+      expect {
+        described_class.new(dew_point: -100)
+      }.not_to raise_error
+    end
+
+    it "accepts maximum value (100)" do
+      expect {
+        described_class.new(dew_point: 100)
+      }.not_to raise_error
+    end
+
+    it "raises error with value above maximum (100)" do
+      expect {
+        described_class.new(dew_point: 150)
+      }.to raise_error(Eccairs::ValidationError, /less than or equal to 100/)
+    end
+
+    it "raises error with value below minimum (-100)" do
+      expect {
+        described_class.new(dew_point: -150)
+      }.to raise_error(Eccairs::ValidationError, /greater than or equal to -100/)
+    end
+
+    it "accepts nil value (optional attribute)" do
+      expect {
+        described_class.new
+      }.not_to raise_error
+    end
+
+    it "accepts decimal values" do
+      expect {
+        described_class.new(dew_point: 15.567)
+      }.not_to raise_error
+    end
+
+    it "accepts negative decimal values" do
+      expect {
+        described_class.new(dew_point: -25.789)
+      }.not_to raise_error
+    end
+
+    it "accepts zero value" do
+      expect {
+        described_class.new(dew_point: 0)
+      }.not_to raise_error
+    end
+
+    it "raises error when setting invalid dew_point after initialization" do
+      occurrence = described_class.new
+      expect {
+        occurrence.dew_point = 200
+      }.to raise_error(Eccairs::ValidationError, /less than or equal to 100/)
+    end
+
+    it "allows correcting value after error" do
+      occurrence = described_class.new
+      expect {
+        occurrence.dew_point = 200
+      }.to raise_error(Eccairs::ValidationError)
+
+      # Should be able to set a valid value
+      expect {
+        occurrence.dew_point = 50
+      }.not_to raise_error
+
+      expect(occurrence.dew_point).to eq(50)
+    end
+
+    it "raises error with non-numeric value" do
+      expect {
+        described_class.new(dew_point: "not a number")
+      }.to raise_error(Eccairs::ValidationError, /must be a number/)
+    end
+
+    it "provides helpful error message with actual value" do
+      expect {
+        described_class.new(dew_point: 150)
+      }.to raise_error(Eccairs::ValidationError, /got 150/)
+    end
+  end
+
+  describe "validation with report (integration)" do
     it "validates with value within range (-100 to 100)" do
       report = Eccairs.report
       occurrence = described_class.new(dew_point: 15.5)
@@ -98,24 +187,16 @@ RSpec.describe Eccairs::Occurrence::DewPoint do
       expect(report.valid?).to be true
     end
 
-    it "fails validation with value above maximum (100)" do
-      report = Eccairs.report
-      occurrence = described_class.new(dew_point: 150)
-      report.add_occurrence(occurrence)
-
-      errors = report.validate
-      expect(errors).not_to be_empty
-      expect(errors.first.message).to include("greater than the maximum value allowed")
+    it "cannot create occurrence with value above maximum (100)" do
+      expect {
+        described_class.new(dew_point: 150)
+      }.to raise_error(Eccairs::ValidationError)
     end
 
-    it "fails validation with value below minimum (-100)" do
-      report = Eccairs.report
-      occurrence = described_class.new(dew_point: -150)
-      report.add_occurrence(occurrence)
-
-      errors = report.validate
-      expect(errors).not_to be_empty
-      expect(errors.first.message).to include("less than the minimum value allowed")
+    it "cannot create occurrence with value below minimum (-100)" do
+      expect {
+        described_class.new(dew_point: -150)
+      }.to raise_error(Eccairs::ValidationError)
     end
 
     it "validates with nil value (optional attribute)" do

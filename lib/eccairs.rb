@@ -6,6 +6,7 @@ loader.setup
 
 module Eccairs
   class Error < StandardError; end
+  class ValidationError < Error; end
 
   def self.report
     Eccairs::Report.new
