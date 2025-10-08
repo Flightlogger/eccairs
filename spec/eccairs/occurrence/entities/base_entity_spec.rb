@@ -3,6 +3,32 @@
 require "nokogiri"
 
 RSpec.describe Eccairs::Occurrence::Entities::BaseEntity do
+  describe "#initialize" do
+    it "initializes with nil value by default" do
+      entity = described_class.new
+      expect(entity.value).to be_nil
+    end
+
+    it "initializes with provided value" do
+      entity = described_class.new(42)
+      expect(entity.value).to eq(42)
+    end
+  end
+
+  describe "#value=" do
+    it "sets the value" do
+      entity = described_class.new
+      entity.value = 100
+      expect(entity.value).to eq(100)
+    end
+
+    it "calls validate_value hook" do
+      entity = described_class.new
+      expect(entity).to receive(:validate_value).with(50)
+      entity.value = 50
+    end
+  end
+
   describe ".attribute_id" do
     it "can set and retrieve attribute_id" do
       test_class = Class.new(described_class) do
@@ -83,4 +109,3 @@ RSpec.describe Eccairs::Occurrence::Entities::BaseEntity do
     end
   end
 end
-

@@ -17,24 +17,16 @@ module Eccairs
         IMC = "2"  # Instrument Meteorological Conditions
         UNKNOWN = "99"
 
-        def initialize(wx_conditions: nil)
-          self.wx_conditions = wx_conditions
-        end
-
-        def wx_conditions
-          @wx_conditions
-        end
-
-        def wx_conditions=(value)
-          validate_enum!(:wx_conditions, value, allowed_values: ALLOWED_VALUES)
-          @wx_conditions = value
-        end
-
         def build_xml(xml)
-          xml.Wx_Conditions(@wx_conditions, attributeId: self.class.attribute_id) if @wx_conditions
+          xml.Wx_Conditions(value, attributeId: self.class.attribute_id) if value
+        end
+
+        protected
+
+        def validate_value(val)
+          validate_enum!(:wx_conditions, val, allowed_values: ALLOWED_VALUES)
         end
       end
     end
   end
 end
-

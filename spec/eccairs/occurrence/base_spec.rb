@@ -13,22 +13,22 @@ RSpec.describe Eccairs::Occurrence::Base do
   describe "#add_entity" do
     it "adds an entity to the occurrence" do
       occurrence = described_class.new
-      entity = Eccairs::Occurrence::Entities::DewPoint.new(dew_point: 15.5)
+      entity = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
       occurrence.add_entity(entity)
       expect(occurrence.entities).to include(entity)
     end
 
     it "returns self for method chaining" do
       occurrence = described_class.new
-      entity = Eccairs::Occurrence::Entities::DewPoint.new(dew_point: 15.5)
+      entity = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
       result = occurrence.add_entity(entity)
       expect(result).to eq(occurrence)
     end
 
     it "allows chaining multiple entities" do
       occurrence = described_class.new
-      entity1 = Eccairs::Occurrence::Entities::DewPoint.new(dew_point: 15.5)
-      entity2 = Eccairs::Occurrence::Entities::WxConditions.new(wx_conditions: "1")
+      entity1 = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
+      entity2 = Eccairs::Occurrence::Entities::WxConditions.new("1")
 
       occurrence.add_entity(entity1).add_entity(entity2)
 
@@ -60,7 +60,7 @@ RSpec.describe Eccairs::Occurrence::Base do
 
     it "generates XML with entity attributes when added" do
       occurrence = described_class.new
-      entity = Eccairs::Occurrence::Entities::DewPoint.new(dew_point: 15.5)
+      entity = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
       occurrence.add_entity(entity)
 
       builder = Nokogiri::XML::Builder.new do |xml|
@@ -73,8 +73,8 @@ RSpec.describe Eccairs::Occurrence::Base do
 
     it "generates XML with multiple entity attributes" do
       occurrence = described_class.new
-      entity1 = Eccairs::Occurrence::Entities::DewPoint.new(dew_point: 15.5)
-      entity2 = Eccairs::Occurrence::Entities::WxConditions.new(wx_conditions: "1")
+      entity1 = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
+      entity2 = Eccairs::Occurrence::Entities::WxConditions.new("1")
       occurrence.add_entity(entity1).add_entity(entity2)
 
       builder = Nokogiri::XML::Builder.new do |xml|
@@ -87,4 +87,3 @@ RSpec.describe Eccairs::Occurrence::Base do
     end
   end
 end
-

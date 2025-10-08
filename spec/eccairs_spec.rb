@@ -12,7 +12,7 @@ RSpec.describe Eccairs do
 
   it "generates valid XML" do
     report = Eccairs.report
-    entity = Eccairs::Occurrence::Entities::DewPoint.new(dew_point: 15.5)
+    entity = Eccairs::Occurrence::Entities::DewPoint.new(15.5)
     report.add_entity(entity)
 
     expect(report.valid?).to be true

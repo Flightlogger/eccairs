@@ -4,6 +4,8 @@ module Eccairs
   module Occurrence
     module Entities
       class BaseEntity
+        attr_reader :value
+
         # DSL method to set attribute_id at class level
         def self.attribute_id(value = nil)
           if value
@@ -13,6 +15,15 @@ module Eccairs
           end
         end
 
+        def initialize(value = nil)
+          self.value = value
+        end
+
+        def value=(new_value)
+          validate_value(new_value)
+          @value = new_value
+        end
+
         # Method to build XML for this entity's attribute
         # Must be implemented by subclasses
         def build_xml(xml)
@@ -20,6 +31,12 @@ module Eccairs
         end
 
         protected
+
+        # Hook for subclasses to validate the value
+        # Override this method to add validation logic
+        def validate_value(value)
+          # Default: no validation
+        end
 
         # Helper method to validate a numeric value - raises ValidationError if invalid
         def validate_numeric!(attribute_name, value, min: nil, max: nil, type: :decimal)

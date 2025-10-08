@@ -4,14 +4,14 @@ require "nokogiri"
 
 RSpec.describe Eccairs::Occurrence::Entities::WxConditions do
   describe "#initialize" do
-    it "initializes with nil wx_conditions by default" do
+    it "initializes with nil value by default" do
       entity = described_class.new
-      expect(entity.wx_conditions).to be_nil
+      expect(entity.value).to be_nil
     end
 
-    it "initializes with provided wx_conditions value" do
-      entity = described_class.new(wx_conditions: "1")
-      expect(entity.wx_conditions).to eq("1")
+    it "initializes with provided value" do
+      entity = described_class.new("1")
+      expect(entity.value).to eq("1")
     end
   end
 
@@ -22,8 +22,8 @@ RSpec.describe Eccairs::Occurrence::Entities::WxConditions do
   end
 
   describe "#build_xml" do
-    it "generates valid XML with wx_conditions value" do
-      entity = described_class.new(wx_conditions: "1")
+    it "generates valid XML with value" do
+      entity = described_class.new("1")
       builder = Nokogiri::XML::Builder.new do |xml|
         entity.build_xml(xml)
       end
@@ -43,7 +43,7 @@ RSpec.describe Eccairs::Occurrence::Entities::WxConditions do
     end
 
     it "includes correct attributeId" do
-      entity = described_class.new(wx_conditions: "2")
+      entity = described_class.new("2")
       builder = Nokogiri::XML::Builder.new do |xml|
         entity.build_xml(xml)
       end
@@ -56,49 +56,49 @@ RSpec.describe Eccairs::Occurrence::Entities::WxConditions do
   describe "validation" do
     it "accepts valid value '1' (VMC)" do
       expect {
-        described_class.new(wx_conditions: "1")
+        described_class.new("1")
       }.not_to raise_error
     end
 
     it "accepts valid value '2' (IMC)" do
       expect {
-        described_class.new(wx_conditions: "2")
+        described_class.new("2")
       }.not_to raise_error
     end
 
     it "accepts valid value '99' (Unknown)" do
       expect {
-        described_class.new(wx_conditions: "99")
+        described_class.new("99")
       }.not_to raise_error
     end
 
     it "accepts VMC constant" do
       expect {
-        described_class.new(wx_conditions: described_class::VMC)
+        described_class.new(described_class::VMC)
       }.not_to raise_error
     end
 
     it "accepts IMC constant" do
       expect {
-        described_class.new(wx_conditions: described_class::IMC)
+        described_class.new(described_class::IMC)
       }.not_to raise_error
     end
 
     it "accepts UNKNOWN constant" do
       expect {
-        described_class.new(wx_conditions: described_class::UNKNOWN)
+        described_class.new(described_class::UNKNOWN)
       }.not_to raise_error
     end
 
     it "raises error with invalid value" do
       expect {
-        described_class.new(wx_conditions: "3")
+        described_class.new("3")
       }.to raise_error(Eccairs::ValidationError, /must be one of: 1, 2, 99/)
     end
 
     it "raises error with invalid string value" do
       expect {
-        described_class.new(wx_conditions: "invalid")
+        described_class.new("invalid")
       }.to raise_error(Eccairs::ValidationError, /must be one of: 1, 2, 99/)
     end
 
@@ -108,30 +108,30 @@ RSpec.describe Eccairs::Occurrence::Entities::WxConditions do
       }.not_to raise_error
     end
 
-    it "raises error when setting invalid wx_conditions after initialization" do
+    it "raises error when setting invalid value after initialization" do
       entity = described_class.new
       expect {
-        entity.wx_conditions = "5"
+        entity.value = "5"
       }.to raise_error(Eccairs::ValidationError, /must be one of: 1, 2, 99/)
     end
 
     it "allows correcting value after error" do
       entity = described_class.new
       expect {
-        entity.wx_conditions = "invalid"
+        entity.value = "invalid"
       }.to raise_error(Eccairs::ValidationError)
 
       # Should be able to set a valid value
       expect {
-        entity.wx_conditions = "1"
+        entity.value = "1"
       }.not_to raise_error
 
-      expect(entity.wx_conditions).to eq("1")
+      expect(entity.value).to eq("1")
     end
 
     it "provides helpful error message with actual value" do
       expect {
-        described_class.new(wx_conditions: "invalid")
+        described_class.new("invalid")
       }.to raise_error(Eccairs::ValidationError, /got invalid/)
     end
   end
@@ -158,4 +158,3 @@ RSpec.describe Eccairs::Occurrence::Entities::WxConditions do
     end
   end
 end
-

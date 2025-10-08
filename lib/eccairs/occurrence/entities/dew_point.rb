@@ -15,24 +15,16 @@ module Eccairs
         MAX_VALUE = 100
         UNIT = "C"
 
-        def initialize(dew_point: nil)
-          self.dew_point = dew_point
-        end
-
-        def dew_point
-          @dew_point
-        end
-
-        def dew_point=(value)
-          validate_numeric!(:dew_point, value, min: MIN_VALUE, max: MAX_VALUE, type: :decimal)
-          @dew_point = value
-        end
-
         def build_xml(xml)
-          xml.Dew_Point(@dew_point, Unit: UNIT, attributeId: self.class.attribute_id) if @dew_point
+          xml.Dew_Point(value, Unit: UNIT, attributeId: self.class.attribute_id) if value
+        end
+
+        protected
+
+        def validate_value(val)
+          validate_numeric!(:dew_point, val, min: MIN_VALUE, max: MAX_VALUE, type: :decimal)
         end
       end
     end
   end
 end
-
