@@ -2,4 +2,7 @@
 
 require 'eccairs'
 
-Eccairs.create_report
+report = Eccairs.report
+occurrence = Eccairs::Occurrence::DewPoint.new
+report.add_occurrence(occurrence)
+puts report.to_xml

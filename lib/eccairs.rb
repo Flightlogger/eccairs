@@ -7,8 +7,7 @@ loader.setup
 module Eccairs
   class Error < StandardError; end
 
-  def self.create_report
-    xml_markup = Builder::XmlMarkup.new
-    xml_markup.div { strong("text") }
+  def self.report
+    Eccairs::Report.new
   end
 end
