@@ -1,0 +1,18 @@
+# frozen_string_literal: true
+
+module Eccairs
+  module Occurrence
+    module Entities
+      module RiskAssessment
+        module Attributes
+          class SituationalAwarenessAndActions < Eccairs::BaseEntity
+            attribute_id 1101
+            xml_tag "Situational_Awareness_And_Actions"
+            sequence 11
+          end
+        end
+      end
+    end
+  end
+end
+

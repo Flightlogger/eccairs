@@ -1,0 +1,18 @@
+# frozen_string_literal: true
+
+module Eccairs
+  module Occurrence
+    module Entities
+      module RiskAssessment
+        module Attributes
+          class RecoveryAction < Eccairs::BaseEntity
+            attribute_id 1103
+            xml_tag "Recovery_Action"
+            sequence 13
+          end
+        end
+      end
+    end
+  end
+end
+
