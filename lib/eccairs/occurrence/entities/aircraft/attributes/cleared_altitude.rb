@@ -1,0 +1,23 @@
+# frozen_string_literal: true
+
+module Eccairs
+  module Occurrence
+    module Entities
+      module Aircraft
+        module Attributes
+          class ClearedAltitude < Eccairs::BaseEntity
+            attribute_id 58
+            xml_tag "Cleared_Altitude"
+            sequence 9
+
+            protected
+
+            def additional_xml_attributes
+              { Unit: "ft" }
+            end
+          end
+        end
+      end
+    end
+  end
+end

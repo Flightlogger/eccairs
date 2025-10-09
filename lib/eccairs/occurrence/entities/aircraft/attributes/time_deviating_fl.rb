@@ -1,0 +1,23 @@
+# frozen_string_literal: true
+
+module Eccairs
+  module Occurrence
+    module Entities
+      module Aircraft
+        module Attributes
+          class TimeDeviatingFl < Eccairs::BaseEntity
+            attribute_id 816
+            xml_tag "Time_Deviating_FL"
+            sequence 53
+
+            protected
+
+            def additional_xml_attributes
+              { Unit: "Second(s)" }
+            end
+          end
+        end
+      end
+    end
+  end
+end

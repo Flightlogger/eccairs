@@ -1,0 +1,19 @@
+# frozen_string_literal: true
+
+module Eccairs
+  module Occurrence
+    module Entities
+      module Aircraft
+        module Attributes
+          class CurrentTrafficType < Eccairs::BaseEntity
+            attribute_id 29
+            xml_tag "Current_Traffic_Type"
+            sequence 3
+            # Type 5 enum - VL29_5_0_1_1
+          end
+        end
+      end
+    end
+  end
+end
+
