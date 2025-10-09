@@ -42,13 +42,13 @@ RSpec.describe Eccairs::Occurrence::Attributes::UtcDate do
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set" do
+      set = Eccairs.set
       entity = described_class.new("2024-01-01")
-      report.add_entity(entity)
+      set.add_entity(entity)
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

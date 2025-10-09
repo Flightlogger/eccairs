@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::Separation::Attributes::RateOfClos
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with rate_of_closure" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with rate_of_closure" do
+      set = Eccairs.set
 
-      report.add_entity(described_class.new(1))
+      set.add_entity(described_class.new(1))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

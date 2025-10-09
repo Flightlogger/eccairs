@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::AirNavigationService::Sector::Attr
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with sector_name" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with sector_name" do
+      set = Eccairs.set
 
-      report.add_entity(described_class.new("London North"))
+      set.add_entity(described_class.new("London North"))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

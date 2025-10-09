@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::DangerousGoods::Attributes::Quanti
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with quantity_per_inner_packaging" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with quantity_per_inner_packaging" do
+      set = Eccairs.set
 
-      report.add_entity(described_class.new(100))
+      set.add_entity(described_class.new(100))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

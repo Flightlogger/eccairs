@@ -41,33 +41,33 @@ gem install eccairs
 ```ruby
 require 'eccairs'
 
-# Create a new report
-report = Eccairs.report
+# Create a new set
+set = Eccairs.set
 
-# Add basic occurrence information directly to the report
-report.add_entity(Eccairs::Occurrence::Attributes::Headline.new("Bird strike during takeoff"))
-report.add_entity(Eccairs::Occurrence::Attributes::UtcDate.new("2024-03-15"))
-report.add_entity(Eccairs::Occurrence::Attributes::UtcTime.new("14:30:00"))
+# Add basic occurrence information directly to the set
+set.add_entity(Eccairs::Occurrence::Attributes::Headline.new("Bird strike during takeoff"))
+set.add_entity(Eccairs::Occurrence::Attributes::UtcDate.new("2024-03-15"))
+set.add_entity(Eccairs::Occurrence::Attributes::UtcTime.new("14:30:00"))
 
 # Add aircraft information
-report.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftRegistration.new("N12345"))
-report.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::FlightPhase.new(3)) # Takeoff
+set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftRegistration.new("N12345"))
+set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::FlightPhase.new(3)) # Takeoff
 
-# Validate the report
-if report.valid?
+# Validate the set
+if set.valid?
   # Generate XML
-  xml = report.to_xml
+  xml = set.to_xml
   puts xml
 else
-  puts "Validation errors: #{report.validate.join(", ")}"
+  puts "Validation errors: #{set.validate.join(", ")}"
 end
 ```
 
 ## Architecture
 
-### Report Structure
+### SET Structure
 
-The gem follows the ECCAIRS XML structure. Each report contains a single occurrence with attributes and nested entities:
+The gem follows the ECCAIRS XML structure. Each SET contains a single Occurrence with attributes and nested entities:
 
 ```
 SET (Root)
@@ -92,12 +92,12 @@ SET (Root)
 
 ### Class Organization
 
-The gem uses a simple, flat API where all entities are added directly to the report:
+The gem uses a simple, flat API where all entities are added directly to the set:
 
-- **Report**: `Eccairs::Report`
+- **Set**: `Eccairs::Set`
     - Main entry point - manages all entities and generates XML
-    - Use `Eccairs.report` to create a new report
-    - Use `report.add_entity(entity)` to add any attribute or entity
+    - Use `Eccairs.set` to create a new SET
+    - Use `set.add_entity(entity)` to add any attribute or entity
 
 - **Direct Attributes**: `Eccairs::Occurrence::Attributes::*`
     - Attributes that belong directly to the occurrence
@@ -111,59 +111,59 @@ The gem uses a simple, flat API where all entities are added directly to the rep
     - Sub-entities within entities
     - Example: `AerodromeGeneral::Runway::Attributes::RunwayIdentifier`
 
-The report automatically organizes entities into the correct hierarchical structure based on their module namespace.
+The set automatically organizes entities into the correct hierarchical structure based on their module namespace.
 
 ## Usage Examples
 
-### Basic Occurrence Report
+### Basic Occurrence SET
 
 ```ruby
-report = Eccairs.report
+set = Eccairs.set
 
 # Basic information
-report.add_entity(Eccairs::Occurrence::Attributes::Headline.new("Runway incursion"))
-report.add_entity(Eccairs::Occurrence::Attributes::LocationName.new("London Heathrow"))
-report.add_entity(Eccairs::Occurrence::Attributes::UtcDate.new("2024-01-15"))
-report.add_entity(Eccairs::Occurrence::Attributes::UtcTime.new("09:45:00"))
-report.add_entity(Eccairs::Occurrence::Attributes::OccurrenceCategory.new(1))
+set.add_entity(Eccairs::Occurrence::Attributes::Headline.new("Runway incursion"))
+set.add_entity(Eccairs::Occurrence::Attributes::LocationName.new("London Heathrow"))
+set.add_entity(Eccairs::Occurrence::Attributes::UtcDate.new("2024-01-15"))
+set.add_entity(Eccairs::Occurrence::Attributes::UtcTime.new("09:45:00"))
+set.add_entity(Eccairs::Occurrence::Attributes::OccurrenceCategory.new(1))
 ```
 
 ### Weather Conditions
 
 ```ruby
 # Add weather information
-report.add_entity(Eccairs::Occurrence::Attributes::AirTemperature.new(18.0))
-report.add_entity(Eccairs::Occurrence::Attributes::DewPoint.new(12.0))
-report.add_entity(Eccairs::Occurrence::Attributes::WxConditions.new(1)) # VMC
-report.add_entity(Eccairs::Occurrence::Attributes::WindSpeed.new(8.0))
-report.add_entity(Eccairs::Occurrence::Attributes::WindDirection.new(270))
-report.add_entity(Eccairs::Occurrence::Attributes::Visibility.new(10000))
+set.add_entity(Eccairs::Occurrence::Attributes::AirTemperature.new(18.0))
+set.add_entity(Eccairs::Occurrence::Attributes::DewPoint.new(12.0))
+set.add_entity(Eccairs::Occurrence::Attributes::WxConditions.new(1)) # VMC
+set.add_entity(Eccairs::Occurrence::Attributes::WindSpeed.new(8.0))
+set.add_entity(Eccairs::Occurrence::Attributes::WindDirection.new(270))
+set.add_entity(Eccairs::Occurrence::Attributes::Visibility.new(10000))
 ```
 
 ### Aircraft Information
 
 ```ruby
 # Add aircraft details
-report.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftCategory.new(1))
-report.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftRegistration.new("G-ABCD"))
-report.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::SerialNumber.new("12345"))
-report.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::YearBuilt.new(2018))
-report.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::NumberOfEngines.new(2))
-report.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::FlightPhase.new(3))
+set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftCategory.new(1))
+set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftRegistration.new("G-ABCD"))
+set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::SerialNumber.new("12345"))
+set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::YearBuilt.new(2018))
+set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::NumberOfEngines.new(2))
+set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::FlightPhase.new(3))
 ```
 
 ### Aerodrome and Runway
 
 ```ruby
 # Aerodrome information
-report.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::LocationIndicator.new("EGLL"))
-report.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::AerodromeLatitude.new(51.4700))
-report.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::AerodromeLongitude.new(-0.4543))
-report.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::ElevationAboveMsl.new(25.0))
+set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::LocationIndicator.new("EGLL"))
+set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::AerodromeLatitude.new(51.4700))
+set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::AerodromeLongitude.new(-0.4543))
+set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::ElevationAboveMsl.new(25.0))
 
 # Runway information
-report.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Runway::Attributes::RunwayIdentifier.new("09L"))
-report.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Runway::Attributes::RunwayNumber.new(9))
+set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Runway::Attributes::RunwayIdentifier.new("09L"))
+set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Runway::Attributes::RunwayNumber.new(9))
 ```
 
 ### Narrative
@@ -172,16 +172,16 @@ report.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Runway::Attri
 narrative_text = "During approach to runway 09L, ATC reported a vehicle on the runway. " \
   "The crew executed a go-around and landed safely on the second approach."
 
-report.add_entity(Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeText.new(narrative_text))
-report.add_entity(Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeLanguage.new(1)) # English
+set.add_entity(Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeText.new(narrative_text))
+set.add_entity(Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeLanguage.new(1)) # English
 ```
 
 ### Air Navigation Services
 
 ```ruby
 # ATC information
-report.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Attributes::AnspName.new("NATS"))
-report.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Sector::Attributes::SectorName.new("London North"))
+set.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Attributes::AnspName.new("NATS"))
+set.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Sector::Attributes::SectorName.new("London North"))
 ```
 
 ### Method Chaining
@@ -189,7 +189,7 @@ report.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Sector::A
 The `add_entity` method returns `self`, allowing for method chaining:
 
 ```ruby
-report = Eccairs.report
+set = Eccairs.set
   .add_entity(Eccairs::Occurrence::Attributes::Headline.new("Bird strike"))
   .add_entity(Eccairs::Occurrence::Attributes::UtcDate.new("2024-03-15"))
   .add_entity(Eccairs::Occurrence::Attributes::UtcTime.new("14:30:00"))
@@ -201,19 +201,19 @@ report = Eccairs.report
 The gem includes comprehensive validation:
 
 ```ruby
-report = Eccairs.report
+set = Eccairs.set
 
 # Add entities...
-report.add_entity(Eccairs::Occurrence::Attributes::Headline.new("Bird strike"))
-report.add_entity(Eccairs::Occurrence::Attributes::UtcDate.new("2024-03-15"))
+set.add_entity(Eccairs::Occurrence::Attributes::Headline.new("Bird strike"))
+set.add_entity(Eccairs::Occurrence::Attributes::UtcDate.new("2024-03-15"))
 
 # Check if valid
-if report.valid?
-  puts "Report is valid!"
-  xml = report.to_xml
+if set.valid?
+  puts "SET is valid!"
+  xml = set.to_xml
 else
   # Get validation errors
-  errors = report.validate
+  errors = set.validate
   errors.each { |error| puts error }
 end
 ```
@@ -259,7 +259,7 @@ COVERAGE=true bundle exec rspec
 lib/eccairs/
 ├── base_entity.rb              # Base class for all attributes
 ├── base_entity_module.rb       # Base module for entity groupings
-├── report.rb                   # Main report class (orchestrates XML generation)
+├── set.rb                      # Main Set class (orchestrates XML generation)
 └── occurrence/
     ├── attributes/             # Direct occurrence attributes
     │   ├── headline.rb

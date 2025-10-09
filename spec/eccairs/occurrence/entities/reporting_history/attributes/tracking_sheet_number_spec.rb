@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::ReportingHistory::Attributes::Trac
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with tracking_sheet_number" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with tracking_sheet_number" do
+      set = Eccairs.set
 
-      report.add_entity(described_class.new("TRACK-001"))
+      set.add_entity(described_class.new("TRACK-001"))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

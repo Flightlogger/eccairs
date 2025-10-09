@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::AirNavigationService::Sector::AtmS
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with cism_offered" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with cism_offered" do
+      set = Eccairs.set
 
-      report.add_entity(described_class.new(1))
+      set.add_entity(described_class.new(1))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

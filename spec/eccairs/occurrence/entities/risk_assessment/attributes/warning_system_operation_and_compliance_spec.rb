@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::RiskAssessment::Attributes::Warnin
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with warning_system_operation_and_compliance" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with warning_system_operation_and_compliance" do
+      set = Eccairs.set
 
-      report.add_entity(described_class.new(1))
+      set.add_entity(described_class.new(1))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

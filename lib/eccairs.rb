@@ -9,7 +9,7 @@ module Eccairs
 
   class ValidationError < Error; end
 
-  def self.report
-    Eccairs::Report.new
+  def self.set
+    Eccairs::Set.new
   end
 end

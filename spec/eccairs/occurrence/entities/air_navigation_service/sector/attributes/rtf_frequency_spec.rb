@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::AirNavigationService::Sector::Attr
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with rtf_frequency" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with rtf_frequency" do
+      set = Eccairs.set
 
-      report.add_entity(described_class.new(118.500))
+      set.add_entity(described_class.new(118.500))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

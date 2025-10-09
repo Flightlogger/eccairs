@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Attributes::AtsRouteName
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with ats_route_name" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with ats_route_name" do
+      set = Eccairs.set
 
-      report.add_entity(described_class.new("A1"))
+      set.add_entity(described_class.new("A1"))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

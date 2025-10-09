@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::RiskAssessment::Attributes::ErcsCo
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with ercs_comments" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with ercs_comments" do
+      set = Eccairs.set
 
-      report.add_entity(described_class.new("Test comments"))
+      set.add_entity(described_class.new("Test comments"))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

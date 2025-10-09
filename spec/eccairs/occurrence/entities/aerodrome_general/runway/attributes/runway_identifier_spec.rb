@@ -9,14 +9,14 @@ RSpec.describe Eccairs::Occurrence::Entities::AerodromeGeneral::Runway::Attribut
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with runway_identifier" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with runway_identifier" do
+      set = Eccairs.set
 
-      report.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::LocationIndicator.new("1000"))
-      report.add_entity(described_class.new("09L"))
+      set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::LocationIndicator.new("1000"))
+      set.add_entity(described_class.new("09L"))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

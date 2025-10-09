@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::AirNavigationService::Sector::AtmS
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with duty_time_in_position" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with duty_time_in_position" do
+      set = Eccairs.set
 
-      report.add_entity(described_class.new(8.5))
+      set.add_entity(described_class.new(8.5))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

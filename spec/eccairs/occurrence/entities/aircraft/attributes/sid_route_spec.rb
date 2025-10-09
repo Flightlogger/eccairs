@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Attributes::SidRoute do
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with sid_route" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with sid_route" do
+      set = Eccairs.set
 
-      report.add_entity(described_class.new("SID1"))
+      set.add_entity(described_class.new("SID1"))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::AirNavigationService::Sector::AtmS
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with atm_staff entity" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with atm_staff entity" do
+      set = Eccairs.set
 
-      report.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Sector::AtmStaff::Attributes::Category.new(1))
+      set.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Sector::AtmStaff::Attributes::Category.new(1))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

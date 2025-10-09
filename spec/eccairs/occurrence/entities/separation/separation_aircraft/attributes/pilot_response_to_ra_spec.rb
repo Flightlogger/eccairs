@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::Separation::SeparationAircraft::At
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with pilot_response_to_ra" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with pilot_response_to_ra" do
+      set = Eccairs.set
 
-      report.add_entity(described_class.new(1))
+      set.add_entity(described_class.new(1))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

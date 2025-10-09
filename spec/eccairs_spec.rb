@@ -5,16 +5,16 @@ RSpec.describe Eccairs do
     expect(Eccairs::VERSION).not_to be nil
   end
 
-  it "creates a report" do
-    report = Eccairs.report
-    expect(report).to be_a(Eccairs::Report)
+  it "creates a set" do
+    set = Eccairs.set
+    expect(set).to be_a(Eccairs::Set)
   end
 
   it "generates valid XML" do
-    report = Eccairs.report
+    set = Eccairs.set
     entity = Eccairs::Occurrence::Attributes::DewPoint.new(15.5)
-    report.add_entity(entity)
+    set.add_entity(entity)
 
-    expect(report.valid?).to be true
+    expect(set.valid?).to be true
   end
 end

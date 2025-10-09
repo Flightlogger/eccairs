@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::FlightCrewMember::Attrib
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with experience_this_a_c" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with experience_this_a_c" do
+      set = Eccairs.set
 
-      report.add_entity(described_class.new(1000))
+      set.add_entity(described_class.new(1000))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

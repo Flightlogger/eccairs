@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::PartInformation do
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with part_information entity" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with part_information entity" do
+      set = Eccairs.set
 
-      report.add_entity(Eccairs::Occurrence::Entities::Aircraft::PartInformation::Attributes::PartName.new("Landing Gear"))
+      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::PartInformation::Attributes::PartName.new("Landing Gear"))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

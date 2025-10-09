@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::ReportingHistory::Attributes::Repo
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with reporting_date" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with reporting_date" do
+      set = Eccairs.set
 
-      report.add_entity(described_class.new("2023-01-01"))
+      set.add_entity(described_class.new("2023-01-01"))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

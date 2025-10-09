@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::DangerousGoods do
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with dangerous_goods entity" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with dangerous_goods entity" do
+      set = Eccairs.set
 
-      report.add_entity(Eccairs::Occurrence::Entities::DangerousGoods::Attributes::DangerousGood.new("2"))
+      set.add_entity(Eccairs::Occurrence::Entities::DangerousGoods::Attributes::DangerousGood.new("2"))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

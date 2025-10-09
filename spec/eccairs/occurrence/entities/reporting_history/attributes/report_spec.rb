@@ -9,18 +9,18 @@ RSpec.describe Eccairs::Occurrence::Entities::ReportingHistory::Attributes::Repo
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with report" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with set" do
+      set = Eccairs.set
 
       # Note: Report is a ResourceLocator type which requires special handling
       # Skipping validation test for now as it requires FileName element structure
-      # report.add_entity(described_class.new("http://example.com/report.pdf"))
+      # set.add_entity(described_class.new("http://example.com/set.pdf"))
 
       # Use a different attribute for validation
-      report.add_entity(Eccairs::Occurrence::Entities::ReportingHistory::Attributes::ReportIdentification.new("TEST-001"))
+      set.add_entity(Eccairs::Occurrence::Entities::ReportingHistory::Attributes::ReportIdentification.new("TEST-001"))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

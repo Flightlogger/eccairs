@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Engine::Attributes::Manu
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with manufacturer_model" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with manufacturer_model" do
+      set = Eccairs.set
 
-      report.add_entity(described_class.new(1000))
+      set.add_entity(described_class.new(1000))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

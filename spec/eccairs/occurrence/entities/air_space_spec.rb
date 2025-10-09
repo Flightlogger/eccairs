@@ -3,14 +3,14 @@
 require "spec_helper"
 
 RSpec.describe "Eccairs::Occurrence::Entities::AirSpace" do
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with Air Space entity" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with Air Space entity" do
+      set = Eccairs.set
 
-      report.add_entity(Eccairs::Occurrence::Entities::AirSpace::Attributes::AirspaceClass.new(1))
-      report.add_entity(Eccairs::Occurrence::Entities::AirSpace::Attributes::AirspaceName.new("Test Airspace"))
+      set.add_entity(Eccairs::Occurrence::Entities::AirSpace::Attributes::AirspaceClass.new(1))
+      set.add_entity(Eccairs::Occurrence::Entities::AirSpace::Attributes::AirspaceName.new("Test Airspace"))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

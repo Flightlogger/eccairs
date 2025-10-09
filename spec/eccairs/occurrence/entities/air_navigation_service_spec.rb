@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::AirNavigationService do
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with air_navigation_service entity" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with air_navigation_service entity" do
+      set = Eccairs.set
 
-      report.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Attributes::AnspName.new("Test ATS Unit"))
+      set.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Attributes::AnspName.new("Test ATS Unit"))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

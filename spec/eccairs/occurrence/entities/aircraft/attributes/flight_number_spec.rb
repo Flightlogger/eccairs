@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Attributes::FlightNumber
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with flight_number" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with flight_number" do
+      set = Eccairs.set
 
-      report.add_entity(described_class.new("BA123"))
+      set.add_entity(described_class.new("BA123"))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

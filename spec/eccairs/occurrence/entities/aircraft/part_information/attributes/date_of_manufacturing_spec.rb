@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::PartInformation::Attribu
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with date_of_manufacturing" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with date_of_manufacturing" do
+      set = Eccairs.set
 
-      report.add_entity(described_class.new("2020-01-15"))
+      set.add_entity(described_class.new("2020-01-15"))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

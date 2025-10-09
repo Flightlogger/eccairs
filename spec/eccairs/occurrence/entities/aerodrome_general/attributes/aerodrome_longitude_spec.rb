@@ -63,13 +63,13 @@ RSpec.describe Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::Aero
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with aerodrome_longitude" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with aerodrome_longitude" do
+      set = Eccairs.set
       entity = described_class.new(-75.5)
-      report.add_entity(entity)
+      set.add_entity(entity)
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

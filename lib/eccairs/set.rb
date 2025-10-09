@@ -3,7 +3,7 @@
 require "nokogiri"
 
 module Eccairs
-  class Report
+  class Set
     SET_ATTRS = {
       "xmlns" => "http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataBridge.xsd",
       "xmlns:dt" => "http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataTypes.xsd",

@@ -9,13 +9,13 @@ RSpec.describe Eccairs::Occurrence::Entities::ReportingHistory::Attributes::Conc
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with conclusions" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with conclusions" do
+      set = Eccairs.set
 
-      report.add_entity(described_class.new("Test Conclusions"))
+      set.add_entity(described_class.new("Test Conclusions"))
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end

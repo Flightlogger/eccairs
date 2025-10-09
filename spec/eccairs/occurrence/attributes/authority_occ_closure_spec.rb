@@ -42,13 +42,13 @@ RSpec.describe Eccairs::Occurrence::Attributes::AuthorityOccClosure do
     end
   end
 
-  describe "ECCAIRS report validation" do
-    it "generates a valid ECCAIRS report with nil value" do
-      report = Eccairs.report
+  describe "ECCAIRS set validation" do
+    it "generates a valid ECCAIRS set with nil value" do
+      set = Eccairs.set
       entity = described_class.new(nil)
-      report.add_entity(entity)
+      set.add_entity(entity)
 
-      expect(report.valid?).to be true
+      expect(set.valid?).to be true
     end
   end
 end
