@@ -10,6 +10,7 @@ module Eccairs
               attribute_id 660
               xml_tag "Time_Since_New"
               sequence 5
+              validates_numericality min: -999999, max: 999999, type: :decimal
 
               protected
 
@@ -23,4 +24,3 @@ module Eccairs
     end
   end
 end
-

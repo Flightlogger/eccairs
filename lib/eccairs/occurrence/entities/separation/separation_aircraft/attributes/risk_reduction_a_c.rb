@@ -10,6 +10,7 @@ module Eccairs
               attribute_id 591
               xml_tag "Risk_Reduction_A_C"
               sequence 3
+              validates_inclusion within: [1, 2, 99]
             end
           end
         end
@@ -17,4 +18,3 @@ module Eccairs
     end
   end
 end
-

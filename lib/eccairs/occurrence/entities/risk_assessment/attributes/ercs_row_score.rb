@@ -9,10 +9,10 @@ module Eccairs
             attribute_id 1093
             xml_tag "ERCS_Row_Score"
             sequence 3
+            validates_inclusion within: [1, 2, 3, 4, 5, 6]
           end
         end
       end
     end
   end
 end
-

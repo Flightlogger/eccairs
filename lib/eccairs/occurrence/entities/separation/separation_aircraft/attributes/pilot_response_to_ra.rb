@@ -10,6 +10,7 @@ module Eccairs
               attribute_id 611
               xml_tag "Pilot_Response_To_RA"
               sequence 7
+              validates_inclusion within: [1, 2, 3, 4, 5, 6]
             end
           end
         end
@@ -17,4 +18,3 @@ module Eccairs
     end
   end
 end
-

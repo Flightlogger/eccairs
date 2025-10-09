@@ -9,10 +9,10 @@ module Eccairs
             attribute_id 1096
             xml_tag "ERCS_Numerical_Equivalent_Score"
             sequence 6
+            validates_numericality min: -999999, max: 999999, type: :decimal
           end
         end
       end
     end
   end
 end
-

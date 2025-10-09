@@ -9,10 +9,10 @@ module Eccairs
             attribute_id 1058
             xml_tag "Number_Of_Inner_Packages"
             sequence 8
+            validates_numericality min: 0, max: 999999, type: :integer
           end
         end
       end
     end
   end
 end
-

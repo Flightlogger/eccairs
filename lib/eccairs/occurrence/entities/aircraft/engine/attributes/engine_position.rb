@@ -10,6 +10,7 @@ module Eccairs
               attribute_id 653
               xml_tag "Engine_Position"
               sequence 2
+              validates_numericality min: 0, max: 999999, type: :integer
             end
           end
         end
@@ -17,4 +18,3 @@ module Eccairs
     end
   end
 end
-

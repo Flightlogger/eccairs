@@ -8,12 +8,10 @@ module Eccairs
           class ManufacturerModel < Eccairs::BaseEntity
             attribute_id 21
             xml_tag "Manufacturer_Model"
-            sequence 0
-            # Type 12 is a multi-select enum - validation would need the full valuelist
+            sequence 0 # Type 12 is a multi-select enum - validation would need the full valuelist
           end
         end
       end
     end
   end
 end
-

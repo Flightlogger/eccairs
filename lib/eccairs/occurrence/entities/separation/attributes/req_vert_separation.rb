@@ -9,6 +9,7 @@ module Eccairs
             attribute_id 583
             xml_tag "Req_Vert_Separation"
             sequence 6
+            validates_numericality min: -999999, max: 999999, type: :decimal
 
             def additional_xml_attributes
               { Unit: "ft" }

@@ -10,6 +10,7 @@ module Eccairs
               attribute_id 896
               xml_tag "Prop_Involvement"
               sequence 5
+              validates_inclusion within: [3, 4, 7, 6, 5, 8, 2, 1]
             end
           end
         end
@@ -17,4 +18,3 @@ module Eccairs
     end
   end
 end
-

@@ -9,10 +9,10 @@ module Eccairs
             attribute_id 1094
             xml_tag "ERCS_Column_Score"
             sequence 4
+            validates_numericality min: 0, max: 999999, type: :integer
           end
         end
       end
     end
   end
 end
-

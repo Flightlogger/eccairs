@@ -11,6 +11,7 @@ module Eccairs
                 attribute_id 340
                 xml_tag "CISM_Offered"
                 sequence 0
+                validates_inclusion within: [1, 2, 99, 100]
               end
             end
           end
@@ -19,4 +20,3 @@ module Eccairs
     end
   end
 end
-

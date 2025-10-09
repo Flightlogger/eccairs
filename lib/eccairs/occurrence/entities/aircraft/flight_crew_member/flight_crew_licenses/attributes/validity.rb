@@ -11,6 +11,7 @@ module Eccairs
                 attribute_id 397
                 xml_tag "Validity"
                 sequence 0
+                validates_inclusion within: [1, 2, 97, 99]
               end
             end
           end
@@ -19,4 +20,3 @@ module Eccairs
     end
   end
 end
-

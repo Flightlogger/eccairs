@@ -14,7 +14,7 @@ RSpec.describe Eccairs::Occurrence::Entities::DangerousGoods::Attributes::Subsid
       report = Eccairs.report
       occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(described_class.new("1"))
+      occurrence.add_entity(described_class.new(1))
 
       report.add_occurrence(occurrence)
 

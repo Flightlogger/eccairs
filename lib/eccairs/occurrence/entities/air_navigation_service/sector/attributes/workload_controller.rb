@@ -10,6 +10,7 @@ module Eccairs
               attribute_id 559
               xml_tag "Workload_Controller"
               sequence 2
+              validates_inclusion within: [1, 100, 2, 101, 3, 99]
             end
           end
         end
@@ -17,4 +18,3 @@ module Eccairs
     end
   end
 end
-

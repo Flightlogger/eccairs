@@ -11,6 +11,7 @@ module Eccairs
                 attribute_id 399
                 xml_tag "License_Issued_By"
                 sequence 2
+                validates_inclusion within: [1, 2, 100, 99]
               end
             end
           end
@@ -19,4 +20,3 @@ module Eccairs
     end
   end
 end
-

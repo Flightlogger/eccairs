@@ -10,6 +10,7 @@ module Eccairs
               attribute_id 658
               xml_tag "Manufacturer"
               sequence 3
+              validates_inclusion within: (1..224).to_a
             end
           end
         end
@@ -17,4 +18,3 @@ module Eccairs
     end
   end
 end
-

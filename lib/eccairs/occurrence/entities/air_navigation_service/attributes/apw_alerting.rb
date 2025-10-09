@@ -9,10 +9,10 @@ module Eccairs
             attribute_id 363
             xml_tag "APW_Alerting"
             sequence 0
+            validates_inclusion within: [1, 2, 99, 100]
           end
         end
       end
     end
   end
 end
-

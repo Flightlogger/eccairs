@@ -10,6 +10,7 @@ module Eccairs
               attribute_id 402
               xml_tag "Category"
               sequence 0
+              validates_inclusion within: [4, 1, 3, 2, 98, 99]
             end
           end
         end
@@ -17,4 +18,3 @@ module Eccairs
     end
   end
 end
-

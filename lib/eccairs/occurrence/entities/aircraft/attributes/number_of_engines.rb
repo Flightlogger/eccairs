@@ -9,10 +9,10 @@ module Eccairs
             attribute_id 209
             xml_tag "Number_Of_Engines"
             sequence 24
+            validates_numericality min: 0, max: 999999, type: :integer
           end
         end
       end
     end
   end
 end
-

@@ -9,10 +9,10 @@ module Eccairs
             attribute_id 79
             xml_tag "Current_Flight_Rules"
             sequence 12
+            validates_inclusion within: [1, 2, 4, 3, 7, 97, 98, 99]
           end
         end
       end
     end
   end
 end
-

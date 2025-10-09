@@ -10,6 +10,7 @@ module Eccairs
               attribute_id 613
               xml_tag "RA_Classification"
               sequence 8
+              validates_inclusion within: [1, 2, 3, 4, 5]
             end
           end
         end
@@ -17,4 +18,3 @@ module Eccairs
     end
   end
 end
-

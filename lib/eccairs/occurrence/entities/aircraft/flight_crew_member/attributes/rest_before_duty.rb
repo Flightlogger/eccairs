@@ -10,6 +10,7 @@ module Eccairs
               attribute_id 408
               xml_tag "Rest_Before_Duty"
               sequence 2
+              validates_numericality min: -999999, max: 999999, type: :decimal
 
               protected
 
@@ -23,4 +24,3 @@ module Eccairs
     end
   end
 end
-

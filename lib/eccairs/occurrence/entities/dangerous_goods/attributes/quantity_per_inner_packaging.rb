@@ -9,10 +9,10 @@ module Eccairs
             attribute_id 1060
             xml_tag "Quantity_Per_Inner_Packaging"
             sequence 10
+            validates_numericality min: 0, max: 999999, type: :integer
           end
         end
       end
     end
   end
 end
-

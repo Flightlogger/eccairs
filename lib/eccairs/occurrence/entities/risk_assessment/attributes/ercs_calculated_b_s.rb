@@ -9,10 +9,10 @@ module Eccairs
             attribute_id 1106
             xml_tag "ERCS_Calculated_B_S"
             sequence 16
+            validates_numericality min: 0, max: 999999, type: :integer
           end
         end
       end
     end
   end
 end
-

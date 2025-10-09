@@ -9,10 +9,10 @@ module Eccairs
             attribute_id 1091
             xml_tag "Reporter_S_Language"
             sequence 18
+            validates_inclusion within: (1..66).to_a
           end
         end
       end
     end
   end
 end
-

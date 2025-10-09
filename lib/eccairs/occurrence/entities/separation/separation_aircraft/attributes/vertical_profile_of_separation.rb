@@ -10,6 +10,7 @@ module Eccairs
               attribute_id 598
               xml_tag "Vertical_Profile_Of_Separation"
               sequence 5
+              validates_inclusion within: [1, 2, 3, 99]
             end
           end
         end
@@ -17,4 +18,3 @@ module Eccairs
     end
   end
 end
-

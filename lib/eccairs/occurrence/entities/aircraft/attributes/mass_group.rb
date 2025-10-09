@@ -9,10 +9,10 @@ module Eccairs
             attribute_id 319
             xml_tag "Mass_Group"
             sequence 44
+            validates_inclusion within: (99..124).to_a
           end
         end
       end
     end
   end
 end
-

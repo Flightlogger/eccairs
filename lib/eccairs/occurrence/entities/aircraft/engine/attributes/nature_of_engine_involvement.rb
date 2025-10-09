@@ -10,6 +10,7 @@ module Eccairs
               attribute_id 654
               xml_tag "Nature_Of_Engine_Involvement"
               sequence 3
+              validates_inclusion within: [3, 4, 7, 6, 5, 8, 2, 1]
             end
           end
         end
@@ -17,4 +18,3 @@ module Eccairs
     end
   end
 end
-

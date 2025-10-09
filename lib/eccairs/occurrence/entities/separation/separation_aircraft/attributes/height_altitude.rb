@@ -10,6 +10,7 @@ module Eccairs
               attribute_id 597
               xml_tag "Height_Altitude"
               sequence 4
+              validates_numericality min: -999999, max: 999999, type: :decimal
 
               def additional_xml_attributes
                 { Unit: "ft" }

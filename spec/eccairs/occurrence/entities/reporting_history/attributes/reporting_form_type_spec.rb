@@ -14,7 +14,7 @@ RSpec.describe Eccairs::Occurrence::Entities::ReportingHistory::Attributes::Repo
       report = Eccairs.report
       occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(described_class.new("100"))
+      occurrence.add_entity(described_class.new(100))
 
       report.add_occurrence(occurrence)
 

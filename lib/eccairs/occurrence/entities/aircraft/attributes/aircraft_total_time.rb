@@ -9,6 +9,7 @@ module Eccairs
             attribute_id 291
             xml_tag "Aircraft_Total_Time"
             sequence 39
+            validates_numericality min: -999999, max: 999999, type: :decimal
 
             protected
 

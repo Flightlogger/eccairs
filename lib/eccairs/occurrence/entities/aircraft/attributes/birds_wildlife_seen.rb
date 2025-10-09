@@ -9,10 +9,10 @@ module Eccairs
             attribute_id 646
             xml_tag "Birds_Wildlife_Seen"
             sequence 49
+            validates_inclusion within: [1, 2, 3, 4, 5]
           end
         end
       end
     end
   end
 end
-

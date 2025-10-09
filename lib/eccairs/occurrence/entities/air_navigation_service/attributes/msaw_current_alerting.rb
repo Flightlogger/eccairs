@@ -9,10 +9,10 @@ module Eccairs
             attribute_id 369
             xml_tag "MSAW_Current_Alerting"
             sequence 2
+            validates_inclusion within: [1, 2, 99, 100]
           end
         end
       end
     end
   end
 end
-

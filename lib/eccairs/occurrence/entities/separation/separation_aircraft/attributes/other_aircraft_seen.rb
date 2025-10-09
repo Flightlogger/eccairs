@@ -10,6 +10,7 @@ module Eccairs
               attribute_id 587
               xml_tag "Other_Aircraft_Seen"
               sequence 2
+              validates_inclusion within: [1, 3, 2, 99]
             end
           end
         end
@@ -17,4 +18,3 @@ module Eccairs
     end
   end
 end
-

@@ -14,7 +14,7 @@ RSpec.describe Eccairs::Occurrence::Entities::AirNavigationService::Sector::Attr
       report = Eccairs.report
       occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(described_class.new("118.500"))
+      occurrence.add_entity(described_class.new(118.500))
 
       report.add_occurrence(occurrence)
 
@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::AirNavigationService::Sector::Attr
     end
   end
 end
-

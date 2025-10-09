@@ -9,10 +9,10 @@ module Eccairs
             attribute_id 1097
             xml_tag "Key_Risk_Area"
             sequence 7
+            validates_inclusion within: (1..36).to_a
           end
         end
       end
     end
   end
 end
-

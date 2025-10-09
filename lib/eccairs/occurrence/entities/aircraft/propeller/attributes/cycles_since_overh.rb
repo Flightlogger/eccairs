@@ -10,6 +10,7 @@ module Eccairs
               attribute_id 903
               xml_tag "Cycles_Since_Overh"
               sequence 10
+              validates_numericality min: 0, max: 999999, type: :integer
             end
           end
         end
@@ -17,4 +18,3 @@ module Eccairs
     end
   end
 end
-

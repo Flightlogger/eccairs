@@ -9,10 +9,10 @@ module Eccairs
             attribute_id 424
             xml_tag "Narrative_Language"
             sequence 0
+            validates_inclusion within: (1..66).to_a
           end
         end
       end
     end
   end
 end
-

@@ -9,6 +9,7 @@ module Eccairs
             attribute_id 25
             xml_tag "A_C_Flight_Level"
             sequence 2
+            validates_numericality min: 0, max: 999999, type: :integer
             # Type 3 is an integer
           end
         end
@@ -16,4 +17,3 @@ module Eccairs
     end
   end
 end
-

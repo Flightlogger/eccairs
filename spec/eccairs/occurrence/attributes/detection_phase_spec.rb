@@ -10,8 +10,8 @@ RSpec.describe Eccairs::Occurrence::Attributes::DetectionPhase do
     end
 
     it "initializes with provided value" do
-      entity = described_class.new("test")
-      expect(entity.value).to eq("test")
+      entity = described_class.new(1)
+      expect(entity.value).to eq(1)
     end
   end
 
@@ -23,7 +23,7 @@ RSpec.describe Eccairs::Occurrence::Attributes::DetectionPhase do
 
   describe "#build_xml" do
     it "generates valid XML with value" do
-      entity = described_class.new("test")
+      entity = described_class.new(1)
       builder = Nokogiri::XML::Builder.new
       entity.build_xml(builder)
       xml = builder.to_xml

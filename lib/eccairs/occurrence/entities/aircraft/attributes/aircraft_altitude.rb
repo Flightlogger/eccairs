@@ -9,6 +9,7 @@ module Eccairs
             attribute_id 22
             xml_tag "Aircraft_Altitude"
             sequence 1
+            validates_numericality min: -999999, max: 999999, type: :decimal
 
             protected
 

@@ -10,6 +10,7 @@ module Eccairs
               attribute_id 1114
               xml_tag "Life_Controlled_Part"
               sequence 14
+              validates_inclusion within: [1, 2, 99]
             end
           end
         end
@@ -17,4 +18,3 @@ module Eccairs
     end
   end
 end
-

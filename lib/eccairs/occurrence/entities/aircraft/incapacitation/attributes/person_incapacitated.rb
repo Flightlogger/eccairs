@@ -10,6 +10,7 @@ module Eccairs
               attribute_id 418
               xml_tag "Person_Incapacitated"
               sequence 0
+              validates_inclusion within: [1, 2, 3, 97, 98, 99]
             end
           end
         end
@@ -17,4 +18,3 @@ module Eccairs
     end
   end
 end
-

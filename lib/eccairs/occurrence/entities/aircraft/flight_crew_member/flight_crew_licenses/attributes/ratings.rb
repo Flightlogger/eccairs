@@ -11,6 +11,7 @@ module Eccairs
                 attribute_id 398
                 xml_tag "Ratings"
                 sequence 1
+                validates_inclusion within: [1, 2, 3, 99]
               end
             end
           end
@@ -19,4 +20,3 @@ module Eccairs
     end
   end
 end
-
