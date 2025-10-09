@@ -13,7 +13,7 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Attributes::SpeciesDescr
     it "generates a valid ECCAIRS set with species_description" do
       set = Eccairs.set
 
-      set.add_entity(described_class.new(1))
+      set.add_entity(described_class.new("1"))
 
       expect(set.valid?).to be true
     end

@@ -13,7 +13,7 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Attributes::PlannedDesti
     it "generates a valid ECCAIRS set with planned_destination" do
       set = Eccairs.set
 
-      set.add_entity(described_class.new(1000))
+      set.add_entity(described_class.new("1000"))
 
       expect(set.valid?).to be true
     end

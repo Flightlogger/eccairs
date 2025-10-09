@@ -13,7 +13,7 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Attributes::StateOfRegis
     it "generates a valid ECCAIRS set with state_of_registry" do
       set = Eccairs.set
 
-      set.add_entity(described_class.new(2))
+      set.add_entity(described_class.new("2"))
 
       expect(set.valid?).to be true
     end

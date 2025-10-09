@@ -13,7 +13,7 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Attributes::LastDepartur
     it "generates a valid ECCAIRS set with last_departure_point" do
       set = Eccairs.set
 
-      set.add_entity(described_class.new(1000))
+      set.add_entity(described_class.new("1000"))
 
       expect(set.valid?).to be true
     end

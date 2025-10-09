@@ -13,7 +13,7 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Entities::Propeller::Att
     it "generates a valid ECCAIRS set with propeller_model" do
       set = Eccairs.set
 
-      set.add_entity(described_class.new(1))
+      set.add_entity(described_class.new("Hartzell HC-B3TN-3D"))
 
       expect(set.valid?).to be true
     end

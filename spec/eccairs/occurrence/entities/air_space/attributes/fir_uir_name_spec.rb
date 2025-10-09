@@ -13,7 +13,7 @@ RSpec.describe Eccairs::Occurrence::Entities::AirSpace::Attributes::FirUirName d
     it "generates a valid ECCAIRS set with fir_uir_name" do
       set = Eccairs.set
 
-      set.add_entity(described_class.new(1))
+      set.add_entity(described_class.new("1"))
 
       expect(set.valid?).to be true
     end
