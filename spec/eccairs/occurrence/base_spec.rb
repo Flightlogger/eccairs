@@ -54,7 +54,7 @@ RSpec.describe Eccairs::Occurrence::Base do
       end
 
       xml_string = builder.to_xml
-      expect(xml_string).not_to include('<ATTRIBUTES')
+      expect(xml_string).not_to include("<ATTRIBUTES")
     end
 
     it "generates XML with entity attributes when added" do
@@ -67,10 +67,10 @@ RSpec.describe Eccairs::Occurrence::Base do
       end
 
       xml_string = builder.to_xml
-      expect(xml_string).to include('<Dew_Point')
+      expect(xml_string).to include("<Dew_Point")
       expect(xml_string).to include('attributeId="85"')
       expect(xml_string).to include('Unit="C"')
-      expect(xml_string).to include('>15.5</Dew_Point>')
+      expect(xml_string).to include(">15.5</Dew_Point>")
     end
 
     it "generates XML with multiple entity attributes" do
@@ -84,10 +84,10 @@ RSpec.describe Eccairs::Occurrence::Base do
       end
 
       xml_string = builder.to_xml
-      expect(xml_string).to include('<Dew_Point')
+      expect(xml_string).to include("<Dew_Point")
       expect(xml_string).to include('attributeId="85"')
       expect(xml_string).to include('Unit="C"')
-      expect(xml_string).to include('>15.5</Dew_Point>')
+      expect(xml_string).to include(">15.5</Dew_Point>")
       expect(xml_string).to include('<Wx_Conditions attributeId="127">1</Wx_Conditions>')
     end
   end

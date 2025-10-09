@@ -17,9 +17,9 @@ RSpec.describe Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::Aero
       end
 
       xml_string = builder.to_xml
-      expect(xml_string).to include('<Aerodrome_Longitude')
+      expect(xml_string).to include("<Aerodrome_Longitude")
       expect(xml_string).to include('attributeId="2"')
-      expect(xml_string).to include('>-75.5<')
+      expect(xml_string).to include(">-75.5<")
     end
   end
 

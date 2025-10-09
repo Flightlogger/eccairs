@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Propeller::Attributes::M
     end
   end
 end
-

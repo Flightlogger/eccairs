@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::AirNavigationService::Sector::Attr
     end
   end
 end
-

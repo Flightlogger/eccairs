@@ -23,4 +23,3 @@ RSpec.describe Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::Land
     end
   end
 end
-

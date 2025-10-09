@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::DangerousGoods::Attributes::Shippe
     end
   end
 end
-

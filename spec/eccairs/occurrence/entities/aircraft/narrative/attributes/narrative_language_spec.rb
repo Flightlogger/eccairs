@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Narrative::Attributes::N
     end
   end
 end
-

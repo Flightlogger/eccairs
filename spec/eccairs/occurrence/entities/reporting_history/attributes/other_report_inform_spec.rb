@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::ReportingHistory::Attributes::Othe
     end
   end
 end
-

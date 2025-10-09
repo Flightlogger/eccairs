@@ -15,7 +15,7 @@ module Eccairs
               protected
 
               def additional_xml_attributes
-                { Unit: "Hour(s)" }
+                {Unit: "Hour(s)"}
               end
             end
           end

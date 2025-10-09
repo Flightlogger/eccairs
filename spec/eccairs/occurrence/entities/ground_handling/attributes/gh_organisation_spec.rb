@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::GroundHandling::Attributes::GhOrga
     end
   end
 end
-

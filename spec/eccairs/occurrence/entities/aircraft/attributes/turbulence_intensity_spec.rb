@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Attributes::TurbulenceIn
     end
   end
 end
-

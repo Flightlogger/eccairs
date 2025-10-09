@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Attributes::ClearedFlAft
     end
   end
 end
-

@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Attributes::SsrMode do
     end
   end
 end
-

@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Attributes::TotalNumberO
     end
   end
 end
-

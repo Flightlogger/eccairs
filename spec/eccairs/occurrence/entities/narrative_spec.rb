@@ -23,4 +23,3 @@ RSpec.describe Eccairs::Occurrence::Entities::Narrative do
     end
   end
 end
-

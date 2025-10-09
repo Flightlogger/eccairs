@@ -15,4 +15,3 @@ RSpec.describe Eccairs::Occurrence::Entities::AerodromeGeneral do
     end
   end
 end
-

@@ -14,7 +14,7 @@ module Eccairs
             protected
 
             def additional_xml_attributes
-              { Unit: "Second(s)" }
+              {Unit: "Second(s)"}
             end
           end
         end

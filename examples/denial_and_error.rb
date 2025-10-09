@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'eccairs'
+require "eccairs"
 
 report = Eccairs.report
 

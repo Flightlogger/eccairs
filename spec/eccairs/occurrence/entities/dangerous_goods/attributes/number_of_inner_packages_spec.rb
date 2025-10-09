@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::DangerousGoods::Attributes::Number
     end
   end
 end
-

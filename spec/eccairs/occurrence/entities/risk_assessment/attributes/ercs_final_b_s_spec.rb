@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::RiskAssessment::Attributes::ErcsFi
     end
   end
 end
-

@@ -62,7 +62,7 @@ RSpec.describe Eccairs::Occurrence::Entities::AerodromeGeneral::Vehicle::Attribu
 
     it "accepts 'YES' string" do
       expect {
-        described_class.new('YES')
+        described_class.new("YES")
       }.not_to raise_error
     end
 
@@ -86,7 +86,7 @@ RSpec.describe Eccairs::Occurrence::Entities::AerodromeGeneral::Vehicle::Attribu
 
     it "rejects invalid string value" do
       expect {
-        described_class.new('MAYBE')
+        described_class.new("MAYBE")
       }.to raise_error(Eccairs::ValidationError)
     end
 

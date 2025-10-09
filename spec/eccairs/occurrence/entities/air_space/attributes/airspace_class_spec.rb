@@ -52,4 +52,3 @@ RSpec.describe Eccairs::Occurrence::Entities::AirSpace::Attributes::AirspaceClas
     end
   end
 end
-

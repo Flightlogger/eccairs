@@ -17,4 +17,3 @@ RSpec.describe "Eccairs::Occurrence::Entities::AirSpace" do
     end
   end
 end
-

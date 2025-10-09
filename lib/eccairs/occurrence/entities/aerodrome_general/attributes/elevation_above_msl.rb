@@ -14,7 +14,7 @@ module Eccairs
             protected
 
             def additional_xml_attributes
-              { Unit: "ft" }
+              {Unit: "ft"}
             end
           end
         end

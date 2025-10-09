@@ -17,9 +17,9 @@ RSpec.describe Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::Loca
       end
 
       xml_string = builder.to_xml
-      expect(xml_string).to include('<Location_Indicator')
+      expect(xml_string).to include("<Location_Indicator")
       expect(xml_string).to include('attributeId="5"')
-      expect(xml_string).to include('>1000<')
+      expect(xml_string).to include(">1000<")
     end
   end
 

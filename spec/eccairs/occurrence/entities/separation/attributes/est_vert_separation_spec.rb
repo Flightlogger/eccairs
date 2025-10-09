@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::Separation::Attributes::EstVertSep
     end
   end
 end
-

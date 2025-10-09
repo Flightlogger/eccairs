@@ -15,4 +15,3 @@ RSpec.describe Eccairs::Occurrence::Entities::GroundHandling::Narrative do
     end
   end
 end
-

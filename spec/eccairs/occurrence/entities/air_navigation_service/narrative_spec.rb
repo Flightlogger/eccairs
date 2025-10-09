@@ -23,4 +23,3 @@ RSpec.describe Eccairs::Occurrence::Entities::AirNavigationService::Narrative do
     end
   end
 end
-

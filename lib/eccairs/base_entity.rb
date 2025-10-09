@@ -43,7 +43,7 @@ module Eccairs
     # DSL method to declare validations at class level
     def self.validates_numericality(min: nil, max: nil, type: :decimal)
       @validation_type = :numeric
-      @validation_options = { min: min, max: max, type: type }
+      @validation_options = {min: min, max: max, type: type}
     end
 
     def self.validates_inclusion(within:)
@@ -51,9 +51,9 @@ module Eccairs
         # Define constants from hash keys
         within.each { |name, value| const_set(name, value) unless const_defined?(name) }
         @enum_mapping = within
-        @validation_options = { allowed_values: within.values }
+        @validation_options = {allowed_values: within.values}
       else
-        @validation_options = { allowed_values: within }
+        @validation_options = {allowed_values: within}
       end
       @validation_type = :enum
     end
@@ -80,10 +80,10 @@ module Eccairs
       if mapping && !mapping.empty? && new_value
         # Try to convert string/symbol keys to their integer values
         converted = if new_value.is_a?(String) || new_value.is_a?(Symbol)
-                      mapping[new_value] || mapping[new_value.to_sym] || new_value
-                    else
-                      new_value
-                    end
+          mapping[new_value] || mapping[new_value.to_sym] || new_value
+        else
+          new_value
+        end
         validate_value(converted)
         @value = converted
       else
@@ -100,13 +100,13 @@ module Eccairs
       tag_name = self.class.xml_tag
       raise NotImplementedError, "Subclasses must define xml_tag" unless tag_name
 
-      xml_attributes = { attributeId: self.class.attribute_id }
+      xml_attributes = {attributeId: self.class.attribute_id}
       xml_attributes.merge!(additional_xml_attributes) if respond_to?(:additional_xml_attributes, true)
 
       # Check if text should be wrapped in a special element (e.g., PlainText)
       if self.class.text_wrapper
         xml.send(tag_name, xml_attributes) do
-          xml['dt'].send(self.class.text_wrapper, value)
+          xml["dt"].send(self.class.text_wrapper, value)
         end
       else
         xml.send(tag_name, value, xml_attributes)
@@ -169,7 +169,7 @@ module Eccairs
       return if value.nil? # nil values are optional
 
       unless allowed_values.include?(value)
-        raise Eccairs::ValidationError, "#{attribute_name} must be one of: #{allowed_values.join(', ')} (got #{value})"
+        raise Eccairs::ValidationError, "#{attribute_name} must be one of: #{allowed_values.join(", ")} (got #{value})"
       end
     end
   end

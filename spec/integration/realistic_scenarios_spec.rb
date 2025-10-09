@@ -64,7 +64,7 @@ RSpec.describe "Realistic ECCAIRS XML Generation Scenarios" do
       report.add_occurrence(occurrence)
 
       # Validate the report
-      expect(report.valid?).to be(true), "Report should be valid. Errors: #{report.validate.join(', ')}"
+      expect(report.valid?).to be(true), "Report should be valid. Errors: #{report.validate.join(", ")}"
 
       # Check XML structure
       xml = report.to_xml
@@ -130,7 +130,7 @@ RSpec.describe "Realistic ECCAIRS XML Generation Scenarios" do
       report.add_occurrence(occurrence)
 
       # Validate the report
-      expect(report.valid?).to be(true), "Report should be valid. Errors: #{report.validate.join(', ')}"
+      expect(report.valid?).to be(true), "Report should be valid. Errors: #{report.validate.join(", ")}"
 
       # Check XML structure
       xml = report.to_xml
@@ -193,7 +193,7 @@ RSpec.describe "Realistic ECCAIRS XML Generation Scenarios" do
       report.add_occurrence(occurrence)
 
       # Validate the report
-      expect(report.valid?).to be(true), "Report should be valid. Errors: #{report.validate.join(', ')}"
+      expect(report.valid?).to be(true), "Report should be valid. Errors: #{report.validate.join(", ")}"
 
       # Check XML structure
       xml = report.to_xml

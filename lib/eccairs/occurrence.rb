@@ -19,7 +19,7 @@ module Eccairs
 
       def to_xml(xml)
         xml.Occurrence(entityId: ENTITY_ID) do
-          build_hierarchical_xml(xml, @entities, 'Eccairs::Occurrence')
+          build_hierarchical_xml(xml, @entities, "Eccairs::Occurrence")
         end
       end
 
@@ -30,8 +30,8 @@ module Eccairs
         grouped = entities.group_by { |e| get_immediate_section(e, parent_path) }
 
         # Separate direct attributes from nested entities
-        direct_attributes = grouped.delete('Attributes') || []
-        nested_entities = grouped.reject { |k, _v| k == 'Attributes' }
+        direct_attributes = grouped.delete("Attributes") || []
+        nested_entities = grouped.reject { |k, _v| k == "Attributes" }
 
         # Build ATTRIBUTES section if there are direct attributes
         if direct_attributes.any?
@@ -47,15 +47,15 @@ module Eccairs
               # Get the full module path for this entity
               # If parent already contains "::Entities::", just append the entity name
               # Otherwise, add "::Entities::" before the entity name
-              if parent_path.include?('::Entities::')
-                full_module_path = "#{parent_path}::#{entity_module_name}"
+              full_module_path = if parent_path.include?("::Entities::")
+                "#{parent_path}::#{entity_module_name}"
               else
-                full_module_path = "#{parent_path}::Entities::#{entity_module_name}"
+                "#{parent_path}::Entities::#{entity_module_name}"
               end
               entity_module = Object.const_get(full_module_path)
 
               # Build the entity XML with optional ID attribute
-              xml_attributes = { entityId: entity_module.entity_id }
+              xml_attributes = {entityId: entity_module.entity_id}
 
               # Add ID attribute if the entity requires it (for key constraints)
               # XML ID must start with a letter or underscore, so prefix with entity name
@@ -79,12 +79,12 @@ module Eccairs
         # e.g., parent: "Eccairs::Occurrence", entity: "Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::..." -> "AerodromeGeneral"
         # e.g., parent: "Eccairs::Occurrence::Entities::AerodromeGeneral", entity: "...::Narrative::Attributes::..." -> "Narrative"
 
-        relative_path = entity.class.name.sub("#{parent_path}::", '')
-        parts = relative_path.split('::')
+        relative_path = entity.class.name.sub("#{parent_path}::", "")
+        parts = relative_path.split("::")
 
         # If first part is "Entities", return the second part (the entity name)
         # If first part is "Attributes", return "Attributes"
-        if parts.first == 'Entities'
+        if parts.first == "Entities"
           parts[1]
         else
           parts.first

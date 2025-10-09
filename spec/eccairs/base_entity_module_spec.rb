@@ -46,6 +46,7 @@ RSpec.describe Eccairs::BaseEntityModule do
     let(:configured_module) do
       Module.new do
         extend Eccairs::BaseEntityModule
+
         entity_id "1"
         xml_tag "Test_Entity"
       end
@@ -53,16 +54,14 @@ RSpec.describe Eccairs::BaseEntityModule do
 
     let(:mock_entity1) do
       double("Entity1",
-             class: double(sequence: 1),
-             build_xml: nil
-      )
+        class: double(sequence: 1),
+        build_xml: nil)
     end
 
     let(:mock_entity2) do
       double("Entity2",
-             class: double(sequence: 2),
-             build_xml: nil
-      )
+        class: double(sequence: 2),
+        build_xml: nil)
     end
 
     it "generates XML with correct entity tag and entityId" do
@@ -71,15 +70,15 @@ RSpec.describe Eccairs::BaseEntityModule do
       end
 
       xml_string = builder.to_xml
-      expect(xml_string).to include('<Test_Entity')
+      expect(xml_string).to include("<Test_Entity")
       expect(xml_string).to include('entityId="1"')
-      expect(xml_string).to include('<ATTRIBUTES')
+      expect(xml_string).to include("<ATTRIBUTES")
     end
 
     it "sorts entities by sequence before building XML" do
       entities = [mock_entity2, mock_entity1]
 
-      builder = Nokogiri::XML::Builder.new do |xml|
+      Nokogiri::XML::Builder.new do |xml|
         configured_module.build_entity_xml(xml, entities)
       end
 
@@ -91,7 +90,7 @@ RSpec.describe Eccairs::BaseEntityModule do
     it "calls build_xml on each entity" do
       entities = [mock_entity1, mock_entity2]
 
-      builder = Nokogiri::XML::Builder.new do |xml|
+      Nokogiri::XML::Builder.new do |xml|
         configured_module.build_entity_xml(xml, entities)
       end
 
@@ -110,15 +109,15 @@ RSpec.describe Eccairs::BaseEntityModule do
 
       xml_string = builder.to_xml
       expect(xml_string).to include('<Test_Entity entityId="1">')
-      expect(xml_string).to include('<ATTRIBUTES>')
-      expect(xml_string).to include('<Aerodrome_Latitude')
+      expect(xml_string).to include("<ATTRIBUTES>")
+      expect(xml_string).to include("<Aerodrome_Latitude")
       expect(xml_string).to include('attributeId="1"')
-      expect(xml_string).to include('>45.5<')
-      expect(xml_string).to include('<Aerodrome_Longitude')
+      expect(xml_string).to include(">45.5<")
+      expect(xml_string).to include("<Aerodrome_Longitude")
       expect(xml_string).to include('attributeId="2"')
-      expect(xml_string).to include('>-75.5<')
-      expect(xml_string).to include('</ATTRIBUTES>')
-      expect(xml_string).to include('</Test_Entity>')
+      expect(xml_string).to include(">-75.5<")
+      expect(xml_string).to include("</ATTRIBUTES>")
+      expect(xml_string).to include("</Test_Entity>")
     end
   end
 
@@ -137,8 +136,8 @@ RSpec.describe Eccairs::BaseEntityModule do
 
       xml_string = builder.to_xml
       expect(xml_string).to include('<Aerodrome_General entityId="1">')
-      expect(xml_string).to include('<Aerodrome_Latitude')
-      expect(xml_string).to include('>51.5<')
+      expect(xml_string).to include("<Aerodrome_Latitude")
+      expect(xml_string).to include(">51.5<")
     end
   end
 end

@@ -15,3 +15,5 @@ gem "rubocop", "~> 1.21"
 gem "nokogiri", "~> 1.16"
 
 gem "zeitwerk", "~> 2.7"
+
+gem "standard", ">= 1.35.1"

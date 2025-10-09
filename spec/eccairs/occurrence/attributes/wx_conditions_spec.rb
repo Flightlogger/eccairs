@@ -39,7 +39,7 @@ RSpec.describe Eccairs::Occurrence::Attributes::WxConditions do
       end
 
       xml_string = builder.to_xml
-      expect(xml_string).not_to include('Wx_Conditions')
+      expect(xml_string).not_to include("Wx_Conditions")
     end
 
     it "includes correct attributeId" do

@@ -53,4 +53,3 @@ RSpec.describe Eccairs::Occurrence::Entities::AirSpace::Narrative::Attributes::N
     end
   end
 end
-

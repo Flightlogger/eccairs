@@ -14,7 +14,7 @@ module Eccairs
             protected
 
             def additional_xml_attributes
-              { Unit: "kg" }
+              {Unit: "kg"}
             end
           end
         end

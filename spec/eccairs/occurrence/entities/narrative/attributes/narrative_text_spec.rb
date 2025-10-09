@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeTe
     end
   end
 end
-

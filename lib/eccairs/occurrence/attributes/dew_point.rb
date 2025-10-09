@@ -12,7 +12,7 @@ module Eccairs
         protected
 
         def additional_xml_attributes
-          { Unit: "C" }
+          {Unit: "C"}
         end
       end
     end

@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Incapacitation::Attribut
     end
   end
 end
-

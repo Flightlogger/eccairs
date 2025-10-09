@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::GroundHandling::Attributes::TypeOf
     end
   end
 end
-

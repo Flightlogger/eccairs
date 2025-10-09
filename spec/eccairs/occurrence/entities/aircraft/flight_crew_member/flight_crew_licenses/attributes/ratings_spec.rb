@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::FlightCrewMember::Flight
     end
   end
 end
-

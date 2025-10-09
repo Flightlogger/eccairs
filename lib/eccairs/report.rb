@@ -67,7 +67,7 @@ module Eccairs
       # Change to schema directory so relative includes work
       Dir.chdir(schema_dir) do
         # Read the file and handle BOM
-        schema_content = File.read(SCHEMA_PATH, encoding: 'BOM|UTF-8')
+        schema_content = File.read(SCHEMA_PATH, encoding: "BOM|UTF-8")
         Nokogiri::XML::Schema(schema_content)
       end
     rescue Nokogiri::XML::SyntaxError => e

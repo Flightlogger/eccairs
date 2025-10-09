@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::PrecipitationAndOtherWeatherPhenom
     end
   end
 end
-

@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::Separation::Attributes::RateOfClos
     end
   end
 end
-

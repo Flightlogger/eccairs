@@ -29,9 +29,9 @@ RSpec.describe Eccairs::Occurrence::Attributes::DangGoodsInvolved do
       end
 
       xml_string = builder.to_xml
-      expect(xml_string).to include('<Dang_Goods_Involved')
+      expect(xml_string).to include("<Dang_Goods_Involved")
       expect(xml_string).to include('attributeId="129"')
-      expect(xml_string).to include('>1</Dang_Goods_Involved>')
+      expect(xml_string).to include(">1</Dang_Goods_Involved>")
     end
 
     it "does not generate XML when value is nil" do
@@ -41,7 +41,7 @@ RSpec.describe Eccairs::Occurrence::Attributes::DangGoodsInvolved do
       end
 
       xml_string = builder.to_xml
-      expect(xml_string).not_to include('Dang_Goods_Involved')
+      expect(xml_string).not_to include("Dang_Goods_Involved")
     end
 
     it "includes correct attributeId" do

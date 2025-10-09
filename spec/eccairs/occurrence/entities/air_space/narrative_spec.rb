@@ -18,4 +18,3 @@ RSpec.describe "Eccairs::Occurrence::Entities::AirSpace::Narrative" do
     end
   end
 end
-

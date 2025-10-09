@@ -58,7 +58,7 @@ RSpec.describe Eccairs::BaseEntity do
 
     it "converts enum symbols to values" do
       test_class = Class.new(described_class) do
-        validates_inclusion within: { SMALL: 1, MEDIUM: 2, LARGE: 3 }
+        validates_inclusion within: {SMALL: 1, MEDIUM: 2, LARGE: 3}
       end
 
       entity = test_class.new(:SMALL)
@@ -70,7 +70,7 @@ RSpec.describe Eccairs::BaseEntity do
 
     it "converts enum strings to values" do
       test_class = Class.new(described_class) do
-        validates_inclusion within: { SMALL: 1, MEDIUM: 2, LARGE: 3 }
+        validates_inclusion within: {SMALL: 1, MEDIUM: 2, LARGE: 3}
       end
 
       entity = test_class.new("SMALL")
@@ -79,7 +79,7 @@ RSpec.describe Eccairs::BaseEntity do
 
     it "accepts direct integer values for enums" do
       test_class = Class.new(described_class) do
-        validates_inclusion within: { SMALL: 1, MEDIUM: 2, LARGE: 3 }
+        validates_inclusion within: {SMALL: 1, MEDIUM: 2, LARGE: 3}
       end
 
       entity = test_class.new(2)
@@ -131,7 +131,7 @@ RSpec.describe Eccairs::BaseEntity do
         validates_numericality min: -50, max: 50, type: :integer
       end
 
-      expect(test_class.validation_options).to eq({ min: -50, max: 50, type: :integer })
+      expect(test_class.validation_options).to eq({min: -50, max: 50, type: :integer})
     end
   end
 
@@ -149,20 +149,20 @@ RSpec.describe Eccairs::BaseEntity do
         validates_inclusion within: ["a", "b", "c"]
       end
 
-      expect(test_class.validation_options).to eq({ allowed_values: ["a", "b", "c"] })
+      expect(test_class.validation_options).to eq({allowed_values: ["a", "b", "c"]})
     end
 
     it "stores validation options with hash" do
       test_class = Class.new(described_class) do
-        validates_inclusion within: { FOO: 1, BAR: 2 }
+        validates_inclusion within: {FOO: 1, BAR: 2}
       end
 
-      expect(test_class.validation_options).to eq({ allowed_values: [1, 2] })
+      expect(test_class.validation_options).to eq({allowed_values: [1, 2]})
     end
 
     it "defines constants from hash keys" do
       test_class = Class.new(described_class) do
-        validates_inclusion within: { ALPHA: 10, BETA: 20, GAMMA: 30 }
+        validates_inclusion within: {ALPHA: 10, BETA: 20, GAMMA: 30}
       end
 
       expect(test_class::ALPHA).to eq(10)
@@ -172,10 +172,10 @@ RSpec.describe Eccairs::BaseEntity do
 
     it "stores enum mapping" do
       test_class = Class.new(described_class) do
-        validates_inclusion within: { RED: 1, GREEN: 2, BLUE: 3 }
+        validates_inclusion within: {RED: 1, GREEN: 2, BLUE: 3}
       end
 
-      expect(test_class.enum_mapping).to eq({ RED: 1, GREEN: 2, BLUE: 3 })
+      expect(test_class.enum_mapping).to eq({RED: 1, GREEN: 2, BLUE: 3})
     end
   end
 
@@ -257,7 +257,7 @@ RSpec.describe Eccairs::BaseEntity do
       end
 
       xml_string = builder.to_xml
-      expect(xml_string).not_to include('Test_Tag')
+      expect(xml_string).not_to include("Test_Tag")
     end
 
     it "generates XML with tag and attributeId when value is present" do
@@ -281,7 +281,7 @@ RSpec.describe Eccairs::BaseEntity do
         xml_tag :Test_Tag
 
         def additional_xml_attributes
-          { Unit: "C", Type: "decimal" }
+          {Unit: "C", Type: "decimal"}
         end
       end
 
@@ -304,16 +304,16 @@ RSpec.describe Eccairs::BaseEntity do
       end
 
       entity = test_class.new("This is a test narrative")
-      builder = Nokogiri::XML::Builder.new(encoding: 'UTF-8') do |xml|
-        xml.root('xmlns:dt' => 'http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataTypes.xsd') do
+      builder = Nokogiri::XML::Builder.new(encoding: "UTF-8") do |xml|
+        xml.root("xmlns:dt" => "http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataTypes.xsd") do
           entity.build_xml(xml)
         end
       end
 
       xml_string = builder.to_xml
-      expect(xml_string).to include('Narrative_Text')
+      expect(xml_string).to include("Narrative_Text")
       expect(xml_string).to include('attributeId="425"')
-      expect(xml_string).to include('<dt:PlainText>This is a test narrative</dt:PlainText>')
+      expect(xml_string).to include("<dt:PlainText>This is a test narrative</dt:PlainText>")
     end
   end
 end

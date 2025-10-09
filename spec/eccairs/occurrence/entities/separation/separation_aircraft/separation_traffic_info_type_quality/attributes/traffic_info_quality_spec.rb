@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::Separation::SeparationAircraft::Se
     end
   end
 end
-

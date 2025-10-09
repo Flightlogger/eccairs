@@ -15,4 +15,3 @@ RSpec.describe Eccairs::Occurrence::Entities::RiskAssessment do
     end
   end
 end
-

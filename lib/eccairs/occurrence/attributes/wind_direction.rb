@@ -12,7 +12,7 @@ module Eccairs
         protected
 
         def additional_xml_attributes
-          { Unit: "Degree(s)" }
+          {Unit: "Degree(s)"}
         end
       end
     end

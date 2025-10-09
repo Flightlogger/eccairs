@@ -22,4 +22,3 @@ RSpec.describe Eccairs::Occurrence::Entities::AirSpace::Attributes::FirUirName d
     end
   end
 end
-
