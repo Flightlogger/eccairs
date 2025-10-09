@@ -1,0 +1,20 @@
+# frozen_string_literal: true
+
+module Eccairs
+  module Occurrence
+    module Entities
+      module Separation
+        module SeparationAircraft
+          module Attributes
+            class AtmAction < Eccairs::BaseEntity
+              attribute_id 565
+              xml_tag "ATM_Action"
+              sequence 0
+            end
+          end
+        end
+      end
+    end
+  end
+end
+
