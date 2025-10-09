@@ -16,7 +16,7 @@ module Eccairs
                   YES: 1,
                   NO: 2,
                   UNKNOWN: 99
-        )
+                )
               end
             end
           end

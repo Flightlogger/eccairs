@@ -9,8 +9,7 @@ module Eccairs
         sequence 8
         unit "C"
 
-        min -1000
-
+        min(-1000)
 
         max 100000
       end

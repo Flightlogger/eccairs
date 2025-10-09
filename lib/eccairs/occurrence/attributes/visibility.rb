@@ -9,8 +9,7 @@ module Eccairs
         sequence 9
         unit "m"
 
-        min -1000
-
+        min(-1000)
 
         max 100000
       end

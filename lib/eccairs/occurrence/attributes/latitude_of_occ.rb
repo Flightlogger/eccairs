@@ -8,8 +8,7 @@ module Eccairs
         xml_tag "Latitude_Of_Occ"
         sequence 19
 
-        min -90.0
-
+        min(-90.0)
 
         max 90.0
       end

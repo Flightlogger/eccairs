@@ -140,6 +140,5 @@ RSpec.describe Eccairs::Base::Entity do
       xml_string = builder.to_xml
       expect(xml_string).to include('<Test_Tag attributeId="123">test_value</Test_Tag>')
     end
-
   end
 end

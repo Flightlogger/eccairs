@@ -13,8 +13,7 @@ module Eccairs
                 sequence 3
                 unit "kHz"
 
-                min -999999
-
+                min(-999999)
 
                 max 999999
               end

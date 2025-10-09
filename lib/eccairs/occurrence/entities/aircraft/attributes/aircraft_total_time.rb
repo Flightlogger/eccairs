@@ -11,8 +11,7 @@ module Eccairs
             sequence 39
             unit "Hour(s)"
 
-            min -999999
-
+            min(-999999)
 
             max 999999
           end

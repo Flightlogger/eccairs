@@ -9,8 +9,7 @@ module Eccairs
         sequence 3
         unit "ft"
 
-        min -1000
-
+        min(-1000)
 
         max 100000
       end

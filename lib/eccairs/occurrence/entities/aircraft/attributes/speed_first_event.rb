@@ -11,8 +11,7 @@ module Eccairs
             sequence 35
             unit "kt"
 
-            min -999999
-
+            min(-999999)
 
             max 999999
           end

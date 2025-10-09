@@ -11,8 +11,7 @@ module Eccairs
             sequence 22
             unit "kg"
 
-            min -999999
-
+            min(-999999)
 
             max 999999
           end

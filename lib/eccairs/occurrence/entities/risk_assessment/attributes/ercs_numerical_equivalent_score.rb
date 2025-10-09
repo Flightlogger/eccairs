@@ -10,8 +10,7 @@ module Eccairs
             xml_tag "ERCS_Numerical_Equivalent_Score"
             sequence 6
 
-            min -999999
-
+            min(-999999)
 
             max 999999
           end

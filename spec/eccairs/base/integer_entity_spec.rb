@@ -183,4 +183,3 @@ RSpec.describe Eccairs::Base::IntegerEntity do
     end
   end
 end
-

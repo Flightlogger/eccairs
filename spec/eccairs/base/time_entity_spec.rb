@@ -86,4 +86,3 @@ RSpec.describe Eccairs::Base::TimeEntity do
     end
   end
 end
-

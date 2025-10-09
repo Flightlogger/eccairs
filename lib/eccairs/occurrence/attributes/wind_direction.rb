@@ -9,8 +9,7 @@ module Eccairs
         sequence 10
         unit "Degree(s)"
 
-        min -1000
-
+        min(-1000)
 
         max 100000
       end

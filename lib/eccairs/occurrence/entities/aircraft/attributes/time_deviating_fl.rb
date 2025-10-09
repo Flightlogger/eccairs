@@ -11,8 +11,7 @@ module Eccairs
             sequence 53
             unit "Second(s)"
 
-            min -999999
-
+            min(-999999)
 
             max 999999
           end

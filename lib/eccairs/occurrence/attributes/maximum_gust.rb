@@ -9,8 +9,7 @@ module Eccairs
         sequence 5
         unit "kt"
 
-        min -1000
-
+        min(-1000)
 
         max 100000
       end

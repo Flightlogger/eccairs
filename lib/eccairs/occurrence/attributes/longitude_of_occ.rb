@@ -8,8 +8,7 @@ module Eccairs
         xml_tag "Longitude_Of_Occ"
         sequence 21
 
-        min -180.0
-
+        min(-180.0)
 
         max 180.0
       end

@@ -9,8 +9,7 @@ module Eccairs
         sequence 0
         unit "C"
 
-        min -100
-
+        min(-100)
 
         max 100
       end

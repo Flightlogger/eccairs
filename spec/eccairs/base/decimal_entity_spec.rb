@@ -10,7 +10,7 @@ RSpec.describe Eccairs::Base::DecimalEntity do
   describe ".min" do
     it "sets and retrieves minimum value" do
       test_class = Class.new(described_class) do
-        min -100
+        min(-100)
       end
 
       expect(test_class.min).to eq(-100)
@@ -104,7 +104,7 @@ RSpec.describe Eccairs::Base::DecimalEntity do
     context "with both min and max constraints" do
       let(:test_class) do
         Class.new(described_class) do
-          min -50
+          min(-50)
           max 50
         end
       end
@@ -164,7 +164,7 @@ RSpec.describe Eccairs::Base::DecimalEntity do
     context "decimal precision" do
       let(:test_class) do
         Class.new(described_class) do
-          min -100.5
+          min(-100.5)
           max 100.5
         end
       end
@@ -181,4 +181,3 @@ RSpec.describe Eccairs::Base::DecimalEntity do
     end
   end
 end
-

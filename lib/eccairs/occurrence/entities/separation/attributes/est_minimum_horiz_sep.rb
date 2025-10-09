@@ -11,8 +11,7 @@ module Eccairs
             sequence 2
             unit "NM"
 
-            min -999999
-
+            min(-999999)
 
             max 999999
           end

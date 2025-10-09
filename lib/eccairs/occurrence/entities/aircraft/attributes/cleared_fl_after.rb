@@ -10,8 +10,7 @@ module Eccairs
             xml_tag "Cleared_FL_After"
             sequence 54
 
-            min -999999
-
+            min(-999999)
 
             max 999999
           end

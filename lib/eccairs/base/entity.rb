@@ -32,8 +32,6 @@ module Eccairs
         end
       end
 
-
-
       # DSL method to set unit for XML attribute (e.g., "C", "kt", "Hour(s)")
       def self.unit(value = nil)
         if value
@@ -42,8 +40,6 @@ module Eccairs
           @unit
         end
       end
-
-
 
       def initialize(value = nil)
         self.value = value

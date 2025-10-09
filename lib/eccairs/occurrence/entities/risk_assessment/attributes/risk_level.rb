@@ -10,8 +10,7 @@ module Eccairs
             xml_tag "Risk_Level"
             sequence 2
 
-            min -999999
-
+            min(-999999)
 
             max 999999
           end

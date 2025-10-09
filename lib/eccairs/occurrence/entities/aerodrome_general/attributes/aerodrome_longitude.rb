@@ -10,8 +10,7 @@ module Eccairs
             xml_tag "Aerodrome_Longitude"
             sequence 1
 
-            min -180.0
-
+            min(-180.0)
 
             max 180.0
           end

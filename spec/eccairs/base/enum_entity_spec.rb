@@ -187,4 +187,3 @@ RSpec.describe Eccairs::Base::EnumEntity do
     end
   end
 end
-

@@ -92,4 +92,3 @@ RSpec.describe Eccairs::Base::DateEntity do
     end
   end
 end
-

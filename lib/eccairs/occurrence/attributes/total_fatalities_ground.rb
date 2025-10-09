@@ -10,7 +10,6 @@ module Eccairs
 
         min 0
 
-
         max 100000
       end
     end
