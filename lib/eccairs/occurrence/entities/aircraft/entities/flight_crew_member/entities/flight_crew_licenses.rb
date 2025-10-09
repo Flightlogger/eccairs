@@ -12,7 +12,6 @@ module Eccairs
 
                 entity_id "16"
                 xml_tag "Flight_Crew_Licenses"
-                requires_id
               end
             end
           end
