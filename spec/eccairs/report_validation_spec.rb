@@ -12,22 +12,21 @@ RSpec.describe Eccairs::Report do
     end
 
     it "returns validation errors for invalid XML" do
-      # Create a custom entity with an invalid Dew_Point value
-      module Eccairs::Occurrence::Attributes
-        class InvalidDewPointEntity < Eccairs::BaseEntity
-          def initialize
-            @value = 150 # Out of range! Should be -100 to 100
-          end
-
-          def build_xml(xml)
-            xml.Dew_Point(@value, Unit: "C", attributeId: "85")
-          end
-        end
-      end
-
+      # Create an entity with an invalid Dew_Point value (out of range -100 to 100)
+      # We'll stub the to_xml method to generate invalid XML
       report = Eccairs.report
-      entity = Eccairs::Occurrence::Attributes::InvalidDewPointEntity.new
-      report.add_entity(entity)
+
+      # Stub the to_xml method to generate invalid XML
+      allow(report).to receive(:to_xml).and_return(<<~XML)
+        <?xml version="1.0" encoding="UTF-8"?>
+        <SET xmlns="http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataBridge.xsd" xmlns:dt="http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataTypes.xsd" TaxonomyName="ECCAIRS Aviation" TaxonomyVersion="5.1.0.0" Domain="RIT" Version="1.0.0.0">
+          <Occurrence entityId="24">
+            <ATTRIBUTES>
+              <Dew_Point attributeId="85" Unit="C">150</Dew_Point>
+            </ATTRIBUTES>
+          </Occurrence>
+        </SET>
+      XML
 
       errors = report.validate
       expect(errors).not_to be_empty
@@ -52,22 +51,21 @@ RSpec.describe Eccairs::Report do
     end
 
     it "returns false for invalid XML" do
-      # Create a custom entity with an invalid Dew_Point value
-      module Eccairs::Occurrence::Attributes
-        class InvalidDewPointEntity2 < Eccairs::BaseEntity
-          def initialize
-            @value = -150 # Out of range! Should be -100 to 100
-          end
-
-          def build_xml(xml)
-            xml.Dew_Point(@value, Unit: "C", attributeId: "85")
-          end
-        end
-      end
-
+      # Create an entity with an invalid Dew_Point value (out of range -100 to 100)
+      # We'll stub the to_xml method to generate invalid XML
       report = Eccairs.report
-      entity = Eccairs::Occurrence::Attributes::InvalidDewPointEntity2.new
-      report.add_entity(entity)
+
+      # Stub the to_xml method to generate invalid XML
+      allow(report).to receive(:to_xml).and_return(<<~XML)
+        <?xml version="1.0" encoding="UTF-8"?>
+        <SET xmlns="http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataBridge.xsd" xmlns:dt="http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataTypes.xsd" TaxonomyName="ECCAIRS Aviation" TaxonomyVersion="5.1.0.0" Domain="RIT" Version="1.0.0.0">
+          <Occurrence entityId="24">
+            <ATTRIBUTES>
+              <Dew_Point attributeId="85" Unit="C">-150</Dew_Point>
+            </ATTRIBUTES>
+          </Occurrence>
+        </SET>
+      XML
 
       expect(report.valid?).to be false
     end
