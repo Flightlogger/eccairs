@@ -8,7 +8,7 @@ module Eccairs
           class AerodromeType < Eccairs::BaseEntity
             attribute_id 10
             xml_tag "Aerodrome_Type"
-            sequence 3
+            sequence 8
             validates_inclusion within: {
               AERODROME: 1,
               HELIPORT: 2,

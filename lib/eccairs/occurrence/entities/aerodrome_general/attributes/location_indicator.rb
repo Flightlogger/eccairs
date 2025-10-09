@@ -8,7 +8,7 @@ module Eccairs
           class LocationIndicator < Eccairs::BaseEntity
             attribute_id 5
             xml_tag "Location_Indicator"
-            sequence 2
+            sequence 4
           end
         end
       end
