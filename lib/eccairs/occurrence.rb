@@ -8,4 +8,3 @@ module Eccairs
     xml_tag "Occurrence"
   end
 end
-

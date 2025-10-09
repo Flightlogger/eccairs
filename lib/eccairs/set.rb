@@ -102,7 +102,7 @@ module Eccairs
       # Return immediate child module path:
       # - For leaf attributes: just the namespace (e.g., "Attributes")
       # - For nested entities: namespace + entity name (e.g., "Entities::Aircraft")
-      parts.length == 2 ? parts.first : parts[0..1].join("::")
+      (parts.length == 2) ? parts.first : parts[0..1].join("::")
     end
 
     def load_schema
