@@ -31,7 +31,7 @@ module Eccairs
 
         # Separate direct attributes from nested entities
         direct_attributes = grouped.delete("Attributes") || []
-        nested_entities = grouped.reject { |k, _v| k == "Attributes" }
+        nested_entities = grouped.except("Attributes")
 
         # Build ATTRIBUTES section if there are direct attributes
         if direct_attributes.any?
