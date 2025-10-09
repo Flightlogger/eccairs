@@ -10,20 +10,18 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Ruby ${{ matrix.ruby }}
-    strategy:
-      matrix:
-        ruby:
-          - '3.4.5'
+    name: Ruby (mise)
 
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+
+      - name: Install mise
+        uses: jdx/mise-action@v2
         with:
-          ruby-version: ${{ matrix.ruby }}
-          bundler-cache: true
+          install: true
+          cache: true
+
       - name: Run the default task
-        run: bundle exec rake
+        run: mise exec -- bundle exec rake
