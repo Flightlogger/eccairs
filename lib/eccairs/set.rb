@@ -66,29 +66,28 @@ module Eccairs
     end
 
     def build_hierarchical_xml(xml, entities, parent_module_path)
-      # Group entities by their immediate child module
+      # Group entities by their immediate child module path
       grouped = entities.group_by { |e| get_immediate_child_module(e, parent_module_path) }
 
-      # Separate attributes from entity modules
-      attributes = grouped.delete("Attributes") || []
-      entity_modules = grouped.reject { |k, _| k == "Attributes" }
+      # Separate leaf attributes from nested entity modules
+      leaf_attributes, nested_entities = grouped.partition do |module_path, _|
+        # Leaf attributes are directly under parent (e.g., "Attributes")
+        # Nested entities have deeper paths (e.g., "Entities::Aircraft")
+        !module_path.include?("::")
+      end.map(&:to_h)
 
-      # Build ATTRIBUTES section
-      if attributes.any?
+      # Build ATTRIBUTES section for leaf attributes
+      if leaf_attributes.any?
         xml.ATTRIBUTES do
-          attributes.sort_by { |e| e.class.sequence }.each { |e| e.build_xml(xml) }
+          leaf_attributes.values.flatten.sort_by { |e| e.class.sequence }.each { |e| e.build_xml(xml) }
         end
       end
 
-      # Build ENTITIES section
-      if entity_modules.any?
+      # Build ENTITIES section for nested entity modules
+      if nested_entities.any?
         xml.ENTITIES do
-          entity_modules.each do |module_name, module_entities|
-            # Resolve the full module path
-            child_module_path = "#{parent_module_path}::#{module_name}"
-            child_module = Object.const_get(child_module_path)
-
-            # Recursively build this entity module
+          nested_entities.each do |module_path, module_entities|
+            child_module = Object.const_get("#{parent_module_path}::#{module_path}")
             build_module_xml(xml, child_module, module_entities)
           end
         end
@@ -96,22 +95,14 @@ module Eccairs
     end
 
     def get_immediate_child_module(entity, parent_module_path)
-      # Get the relative path from parent to entity
-      # e.g., parent: "Eccairs::Occurrence", entity: "Eccairs::Occurrence::Attributes::Headline" -> "Attributes"
-      # e.g., parent: "Eccairs::Occurrence", entity: "Eccairs::Occurrence::Entities::Aircraft::..." -> "Entities::Aircraft"
+      # Get the relative path from parent to entity's class
       relative_path = entity.class.name.sub("#{parent_module_path}::", "")
       parts = relative_path.split("::")
 
-      # Return the immediate child module
-      # If it's "Attributes::Something", return "Attributes"
-      # If it's "Entities::SomeName::...", return "Entities::SomeName"
-      if parts.first == "Attributes"
-        "Attributes"
-      elsif parts.first == "Entities" && parts.length > 1
-        "Entities::#{parts[1]}"
-      else
-        parts.first
-      end
+      # Return immediate child module path:
+      # - For leaf attributes: just the namespace (e.g., "Attributes")
+      # - For nested entities: namespace + entity name (e.g., "Entities::Aircraft")
+      parts.length == 2 ? parts.first : parts[0..1].join("::")
     end
 
     def load_schema
