@@ -10,18 +10,18 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Ruby (mise)
+    name: Ruby
 
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
 
-      - name: Install mise
-        uses: jdx/mise-action@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          install: true
-          cache: true
+          ruby-version-file: .ruby-version
+          bundler-cache: true
 
       - name: Run the default task
-        run: mise exec -- bundle exec rake
+        run: bundle exec rake
