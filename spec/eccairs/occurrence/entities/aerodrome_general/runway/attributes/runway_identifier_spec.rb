@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Eccairs::Occurrence::Entities::AerodromeGeneral::Runway::Attributes::RunwayIdentifier do
+RSpec.describe Eccairs::Occurrence::Entities::AerodromeGeneral::Entities::Runway::Attributes::RunwayIdentifier do
   describe ".attribute_id" do
     it "returns the correct attribute_id" do
       expect(described_class.attribute_id).to eq("499")

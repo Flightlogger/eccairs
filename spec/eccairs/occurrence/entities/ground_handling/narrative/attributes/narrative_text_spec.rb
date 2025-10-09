@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Eccairs::Occurrence::Entities::GroundHandling::Narrative::Attributes::NarrativeText do
+RSpec.describe Eccairs::Occurrence::Entities::GroundHandling::Entities::Narrative::Attributes::NarrativeText do
   describe ".attribute_id" do
     it "returns the correct attribute_id" do
       expect(described_class.attribute_id).to eq("425")

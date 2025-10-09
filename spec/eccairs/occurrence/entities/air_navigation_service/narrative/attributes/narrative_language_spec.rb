@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Eccairs::Occurrence::Entities::AirNavigationService::Narrative::Attributes::NarrativeLanguage do
+RSpec.describe Eccairs::Occurrence::Entities::AirNavigationService::Entities::Narrative::Attributes::NarrativeLanguage do
   describe ".attribute_id" do
     it "returns the correct attribute_id" do
       expect(described_class.attribute_id).to eq("424")

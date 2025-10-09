@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Propeller::Attributes::PropPosition do
+RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Entities::Propeller::Attributes::PropPosition do
   describe ".attribute_id" do
     it "returns the correct attribute_id" do
       expect(described_class.attribute_id).to eq("895")

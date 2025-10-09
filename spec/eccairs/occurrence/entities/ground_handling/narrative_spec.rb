@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Eccairs::Occurrence::Entities::GroundHandling::Narrative do
+RSpec.describe Eccairs::Occurrence::Entities::GroundHandling::Entities::Narrative do
   describe ".entity_id" do
     it "returns the correct entity_id" do
       expect(described_class.entity_id).to eq("22")

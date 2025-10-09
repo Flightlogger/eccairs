@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Eccairs::Occurrence::Entities::Aircraft::FlightCrewMember::FlightCrewLicenses::Attributes::Validity do
+RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Entities::FlightCrewMember::Entities::FlightCrewLicenses::Attributes::Validity do
   describe ".attribute_id" do
     it "returns the correct attribute_id" do
       expect(described_class.attribute_id).to eq("397")

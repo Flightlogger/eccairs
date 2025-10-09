@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Eccairs::Occurrence::Entities::AirNavigationService::Sector::AtmStaff::Attributes::DutyTimeInPosition do
+RSpec.describe Eccairs::Occurrence::Entities::AirNavigationService::Entities::Sector::Entities::AtmStaff::Attributes::DutyTimeInPosition do
   describe ".attribute_id" do
     it "returns the correct attribute_id" do
       expect(described_class.attribute_id).to eq("347")

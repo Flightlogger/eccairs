@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Eccairs::Occurrence::Entities::Separation::SeparationAircraft::SeparationTrafficInfoTypeQuality::Attributes::TrafficInfoQuality do
+RSpec.describe Eccairs::Occurrence::Entities::Separation::Entities::SeparationAircraft::Entities::SeparationTrafficInfoTypeQuality::Attributes::TrafficInfoQuality do
   describe ".attribute_id" do
     it "returns the correct attribute_id" do
       expect(described_class.attribute_id).to eq("595")

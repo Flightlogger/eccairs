@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Eccairs::Occurrence::Entities::Aircraft::PartInformation::Attributes::TimeSinceInspection do
+RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Entities::PartInformation::Attributes::TimeSinceInspection do
   describe ".attribute_id" do
     it "returns the correct attribute_id" do
       expect(described_class.attribute_id).to eq("662")

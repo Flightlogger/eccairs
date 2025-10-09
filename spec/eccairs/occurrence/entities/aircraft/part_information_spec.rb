@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Eccairs::Occurrence::Entities::Aircraft::PartInformation do
+RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Entities::PartInformation do
   describe ".entity_id" do
     it "returns the correct entity_id" do
       expect(described_class.entity_id).to eq("26")
@@ -13,7 +13,7 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::PartInformation do
     it "generates a valid ECCAIRS set with part_information entity" do
       set = Eccairs.set
 
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::PartInformation::Attributes::PartName.new("Landing Gear"))
+      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Entities::PartInformation::Attributes::PartName.new("Landing Gear"))
 
       expect(set.valid?).to be true
     end

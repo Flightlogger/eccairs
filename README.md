@@ -13,6 +13,7 @@ ECCAIRS is the European standard for aviation safety reporting. This gem provide
 - ✅ Built-in XML schema validation
 - ✅ Type-safe attribute and entity classes with validation
 - ✅ Hierarchical entity structure (Occurrence → Entities → Attributes)
+- ✅ Generic XML generation based purely on directory structure
 - ✅ DSL-style API for clean, readable code
 - ✅ Comprehensive test coverage
 
@@ -65,6 +66,34 @@ end
 
 ## Architecture
 
+### Generic Structure-Based Design
+
+The gem uses a **completely generic** approach where the XML structure is determined purely by the directory structure and module namespace. There is no hardcoded logic for specific entities or attributes.
+
+**How it works:**
+1. The module path of each entity determines its position in the XML hierarchy
+2. `Attributes` modules create `<ATTRIBUTES>` sections
+3. `Entities` modules create `<ENTITIES>` sections
+4. The `Set` class automatically organizes everything based on module paths
+
+**Example mappings:**
+
+```ruby
+# Module Path → XML Structure
+
+Eccairs::Occurrence::Attributes::Headline
+→ <Occurrence><ATTRIBUTES><Headline>
+
+Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftRegistration
+→ <Occurrence><ENTITIES><Aircraft><ATTRIBUTES><Aircraft_Registration>
+
+Eccairs::Occurrence::Entities::Aircraft::Entities::Engine::Attributes::EnginePosition
+→ <Occurrence><ENTITIES><Aircraft><ENTITIES><Engine><ATTRIBUTES><Engine_Position>
+
+Eccairs::Occurrence::Entities::AerodromeGeneral::Entities::Runway::Attributes::RunwayIdentifier
+→ <Occurrence><ENTITIES><Aerodrome_General><ENTITIES><Runway><ATTRIBUTES><Runway_Identifier>
+```
+
 ### SET Structure
 
 The gem follows the ECCAIRS XML structure. Each SET contains a single Occurrence with attributes and nested entities:
@@ -79,15 +108,23 @@ SET (Root)
     │   └── ...
     └── ENTITIES (Nested entities)
         ├── Aircraft
-        │   └── ATTRIBUTES
-        │       ├── AircraftRegistration
-        │       ├── FlightPhase
-        │       └── ...
+        │   ├── ATTRIBUTES
+        │   │   ├── AircraftRegistration
+        │   │   ├── FlightPhase
+        │   │   └── ...
+        │   └── ENTITIES
+        │       └── Engine
+        │           └── ATTRIBUTES
+        │               └── EnginePosition
         ├── AerodromeGeneral
         │   ├── ATTRIBUTES
         │   └── ENTITIES
         │       └── Runway
+        │           └── ATTRIBUTES
+        │               └── RunwayIdentifier
         └── Narrative
+            └── ATTRIBUTES
+                └── NarrativeText
 ```
 
 ### Class Organization
@@ -107,11 +144,12 @@ The gem uses a simple, flat API where all entities are added directly to the set
     - Attributes that belong to specific entities
     - Example: `Aircraft::Attributes::AircraftRegistration`
 
-- **Nested Entities**: `Eccairs::Occurrence::Entities::{Entity}::{SubEntity}::Attributes::*`
+- **Nested Entities**: `Eccairs::Occurrence::Entities::{Entity}::Entities::{SubEntity}::Attributes::*`
     - Sub-entities within entities
-    - Example: `AerodromeGeneral::Runway::Attributes::RunwayIdentifier`
+    - Example: `AerodromeGeneral::Entities::Runway::Attributes::RunwayIdentifier`
+    - Example: `Aircraft::Entities::Engine::Attributes::EnginePosition`
 
-The set automatically organizes entities into the correct hierarchical structure based on their module namespace.
+The set automatically organizes entities into the correct hierarchical structure based on their module namespace. The directory structure directly determines the XML nesting - no hardcoded logic required.
 
 ## Usage Examples
 
@@ -161,9 +199,9 @@ set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::Aero
 set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::AerodromeLongitude.new(-0.4543))
 set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::ElevationAboveMsl.new(25.0))
 
-# Runway information
-set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Runway::Attributes::RunwayIdentifier.new("09L"))
-set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Runway::Attributes::RunwayNumber.new(9))
+# Runway information (nested entity)
+set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Entities::Runway::Attributes::RunwayIdentifier.new("09L"))
+set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Entities::Runway::Attributes::RunwayNumber.new(9))
 ```
 
 ### Narrative
@@ -176,12 +214,34 @@ set.add_entity(Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeTe
 set.add_entity(Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeLanguage.new(1)) # English
 ```
 
+### Deeply Nested Entities
+
+The gem supports arbitrary nesting levels. Here's an example with engine information nested under aircraft:
+
+```ruby
+# Aircraft
+set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftRegistration.new("N12345"))
+
+# Engine (nested under Aircraft)
+set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Entities::Engine::Attributes::EnginePosition.new(1))
+set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Entities::Engine::Attributes::EngineSerialNumber.new("ENG-12345"))
+set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Entities::Engine::Attributes::ManufacturerModel.new("CFM56-7B"))
+
+# Flight Crew Member (nested under Aircraft)
+set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Entities::FlightCrewMember::Attributes::Category.new(1))
+
+# Flight Crew Licenses (nested under Flight Crew Member, which is nested under Aircraft)
+set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Entities::FlightCrewMember::Entities::FlightCrewLicenses::Attributes::LicenseType.new(1))
+```
+
 ### Air Navigation Services
 
 ```ruby
 # ATC information
 set.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Attributes::AnspName.new("NATS"))
-set.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Sector::Attributes::SectorName.new("London North"))
+
+# Sector information (nested entity)
+set.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Entities::Sector::Attributes::SectorName.new("London North"))
 ```
 
 ### Method Chaining
@@ -255,24 +315,42 @@ COVERAGE=true bundle exec rspec
 
 ### Project Structure
 
+The gem follows a consistent directory structure where the file path directly determines the XML nesting:
+
 ```
 lib/eccairs/
 ├── base_entity.rb              # Base class for all attributes
 ├── base_entity_module.rb       # Base module for entity groupings
 ├── set.rb                      # Main Set class (orchestrates XML generation)
+├── occurrence.rb               # Occurrence module definition
 └── occurrence/
     ├── attributes/             # Direct occurrence attributes
     │   ├── headline.rb
     │   ├── utc_date.rb
     │   └── ...
-    └── entities/               # Nested entities
+    └── entities/               # Top-level entities
         ├── aircraft/
-        │   └── attributes/
+        │   ├── attributes/     # Aircraft attributes
+        │   └── entities/       # Nested entities under Aircraft
+        │       ├── engine/
+        │       │   └── attributes/
+        │       └── flight_crew_member/
+        │           ├── attributes/
+        │           └── entities/
+        │               └── flight_crew_licenses/
+        │                   └── attributes/
         ├── aerodrome_general/
-        │   ├── attributes/
-        │   └── runway/
+        │   ├── attributes/     # Aerodrome attributes
+        │   └── entities/       # Nested entities under Aerodrome
+        │       ├── runway/
+        │       │   └── attributes/
+        │       └── narrative/
+        │           └── attributes/
         └── narrative/
+            └── attributes/
 ```
+
+**Key Principle:** Directory structure = XML structure. Each `entities/` subdirectory creates an `<ENTITIES>` section in the XML, and each `attributes/` subdirectory creates an `<ATTRIBUTES>` section.
 
 ## ECCAIRS Resources
 

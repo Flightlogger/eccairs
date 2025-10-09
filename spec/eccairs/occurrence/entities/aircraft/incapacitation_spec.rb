@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Incapacitation do
+RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Entities::Incapacitation do
   describe ".entity_id" do
     it "returns the correct entity_id" do
       expect(described_class.entity_id).to eq("20")
@@ -13,7 +13,7 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Incapacitation do
     it "generates a valid ECCAIRS set with incapacitation entity" do
       set = Eccairs.set
 
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Incapacitation::Attributes::PersonIncapacitated.new(1))
+      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Entities::Incapacitation::Attributes::PersonIncapacitated.new(1))
 
       expect(set.valid?).to be true
     end

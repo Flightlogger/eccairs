@@ -14,7 +14,6 @@ module Eccairs
     }.freeze
 
     SCHEMA_PATH = File.expand_path("../../docs/Eccairs Aviation v5100 RITedb/schema/Schema.xsd", __dir__)
-    OCCURRENCE_ENTITY_ID = "24"
 
     attr_reader :entities
 
@@ -26,9 +25,7 @@ module Eccairs
     def to_xml
       builder = Nokogiri::XML::Builder.new(encoding: "UTF-8") do |xml|
         xml.SET(SET_ATTRS) do
-          xml.Occurrence(entityId: OCCURRENCE_ENTITY_ID) do
-            build_hierarchical_xml(xml, @entities, "Eccairs::Occurrence")
-          end
+          build_module_xml(xml, Occurrence, @entities)
         end
       end
 
@@ -52,67 +49,66 @@ module Eccairs
 
     private
 
-    def build_hierarchical_xml(xml, entities, parent_path)
-      # Group entities by their immediate section under parent_path
-      grouped = entities.group_by { |e| get_immediate_section(e, parent_path) }
+    def build_module_xml(xml, entity_module, entities)
+      # Build the entity XML element
+      xml_attributes = {entityId: entity_module.entity_id}
 
-      # Separate direct attributes from nested entities
-      direct_attributes = grouped.delete("Attributes") || []
-      nested_entities = grouped.except("Attributes")
+      # Add ID attribute if required
+      if entity_module.respond_to?(:requires_id?) && entity_module.requires_id?
+        module_name = entity_module.name.split("::").last
+        @entity_id_counters[module_name] += 1
+        xml_attributes[:ID] = "#{module_name}_#{@entity_id_counters[module_name]}"
+      end
 
-      # Build ATTRIBUTES section if there are direct attributes
-      if direct_attributes.any?
+      xml.send(entity_module.xml_tag, xml_attributes) do
+        build_hierarchical_xml(xml, entities, entity_module.name)
+      end
+    end
+
+    def build_hierarchical_xml(xml, entities, parent_module_path)
+      # Group entities by their immediate child module
+      grouped = entities.group_by { |e| get_immediate_child_module(e, parent_module_path) }
+
+      # Separate attributes from entity modules
+      attributes = grouped.delete("Attributes") || []
+      entity_modules = grouped.reject { |k, _| k == "Attributes" }
+
+      # Build ATTRIBUTES section
+      if attributes.any?
         xml.ATTRIBUTES do
-          direct_attributes.sort_by { |e| e.class.sequence }.each { |e| e.build_xml(xml) }
+          attributes.sort_by { |e| e.class.sequence }.each { |e| e.build_xml(xml) }
         end
       end
 
-      # Build ENTITIES section if there are nested entities
-      if nested_entities.any?
+      # Build ENTITIES section
+      if entity_modules.any?
         xml.ENTITIES do
-          nested_entities.each do |entity_module_name, entity_list|
-            # Get the full module path for this entity
-            # If parent already contains "::Entities::", just append the entity name
-            # Otherwise, add "::Entities::" before the entity name
-            full_module_path = if parent_path.include?("::Entities::")
-              "#{parent_path}::#{entity_module_name}"
-            else
-              "#{parent_path}::Entities::#{entity_module_name}"
-            end
-            entity_module = Object.const_get(full_module_path)
+          entity_modules.each do |module_name, module_entities|
+            # Resolve the full module path
+            child_module_path = "#{parent_module_path}::#{module_name}"
+            child_module = Object.const_get(child_module_path)
 
-            # Build the entity XML with optional ID attribute
-            xml_attributes = {entityId: entity_module.entity_id}
-
-            # Add ID attribute if the entity requires it (for key constraints)
-            # XML ID must start with a letter or underscore, so prefix with entity name
-            if entity_module.respond_to?(:requires_id?) && entity_module.requires_id?
-              @entity_id_counters[entity_module_name] += 1
-              xml_attributes[:ID] = "#{entity_module_name}_#{@entity_id_counters[entity_module_name]}"
-            end
-
-            xml.send(entity_module.xml_tag, xml_attributes) do
-              # Recursively build nested content
-              build_hierarchical_xml(xml, entity_list, full_module_path)
-            end
+            # Recursively build this entity module
+            build_module_xml(xml, child_module, module_entities)
           end
         end
       end
     end
 
-    def get_immediate_section(entity, parent_path)
-      # Remove parent path prefix and get the immediate next section
-      # e.g., parent: "Eccairs::Occurrence", entity: "Eccairs::Occurrence::Attributes::DewPoint" -> "Attributes"
-      # e.g., parent: "Eccairs::Occurrence", entity: "Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::..." -> "AerodromeGeneral"
-      # e.g., parent: "Eccairs::Occurrence::Entities::AerodromeGeneral", entity: "...::Narrative::Attributes::..." -> "Narrative"
-
-      relative_path = entity.class.name.sub("#{parent_path}::", "")
+    def get_immediate_child_module(entity, parent_module_path)
+      # Get the relative path from parent to entity
+      # e.g., parent: "Eccairs::Occurrence", entity: "Eccairs::Occurrence::Attributes::Headline" -> "Attributes"
+      # e.g., parent: "Eccairs::Occurrence", entity: "Eccairs::Occurrence::Entities::Aircraft::..." -> "Entities::Aircraft"
+      relative_path = entity.class.name.sub("#{parent_module_path}::", "")
       parts = relative_path.split("::")
 
-      # If first part is "Entities", return the second part (the entity name)
-      # If first part is "Attributes", return "Attributes"
-      if parts.first == "Entities"
-        parts[1]
+      # Return the immediate child module
+      # If it's "Attributes::Something", return "Attributes"
+      # If it's "Entities::SomeName::...", return "Entities::SomeName"
+      if parts.first == "Attributes"
+        "Attributes"
+      elsif parts.first == "Entities" && parts.length > 1
+        "Entities::#{parts[1]}"
       else
         parts.first
       end

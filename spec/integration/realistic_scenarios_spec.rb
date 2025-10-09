@@ -32,8 +32,8 @@ RSpec.describe "Realistic ECCAIRS XML Generation Scenarios" do
       set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::AerodromeType.new(1))
 
       # Runway information
-      set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Runway::Attributes::RunwayIdentifier.new("04R"))
-      set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Runway::Attributes::RunwayNumber.new(4))
+      set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Entities::Runway::Attributes::RunwayIdentifier.new("04R"))
+      set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Entities::Runway::Attributes::RunwayNumber.new(4))
 
       # Aircraft information
       set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftCategory.new(1))
@@ -101,7 +101,7 @@ RSpec.describe "Realistic ECCAIRS XML Generation Scenarios" do
       set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::LocationOnNearAerodrome.new(1)) # Runway
 
       # Runway information
-      set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Runway::Attributes::RunwayIdentifier.new("27L"))
+      set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Entities::Runway::Attributes::RunwayIdentifier.new("27L"))
 
       # Aircraft information (aircraft on approach)
       set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftCategory.new(1))
@@ -110,8 +110,8 @@ RSpec.describe "Realistic ECCAIRS XML Generation Scenarios" do
 
       # Air Navigation Service information
       set.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Attributes::AnspName.new("NATS"))
-      set.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Sector::Attributes::SectorName.new("Tower"))
-      set.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Sector::Attributes::ServicesProvided.new(2000000))
+      set.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Entities::Sector::Attributes::SectorName.new("Tower"))
+      set.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Entities::Sector::Attributes::ServicesProvided.new(2000000))
 
       # Narrative
       narrative_text = "An airport maintenance vehicle crossed runway 27L without clearance " \
@@ -167,9 +167,9 @@ RSpec.describe "Realistic ECCAIRS XML Generation Scenarios" do
       set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::TotalNumberOfPersons.new(189))
 
       # Engine information
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Engine::Attributes::EnginePosition.new(2)) # Right
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Engine::Attributes::EngineSerialNumber.new("ENG-54321"))
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Engine::Attributes::HazardEngEffect.new(1))
+      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Entities::Engine::Attributes::EnginePosition.new(2)) # Right
+      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Entities::Engine::Attributes::EngineSerialNumber.new("ENG-54321"))
+      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Entities::Engine::Attributes::HazardEngEffect.new(1))
 
       # Narrative
       narrative_text = "During cruise at FL370, the crew experienced a sudden vibration followed by " \
