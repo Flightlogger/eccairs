@@ -99,16 +99,16 @@ SET (Root)
 ### Class Organization
 
 - **Direct Attributes**: `Eccairs::Occurrence::Attributes::*`
-  - Attributes that belong directly to the occurrence
-  - Example: `Headline`, `UtcDate`, `WindSpeed`
+    - Attributes that belong directly to the occurrence
+    - Example: `Headline`, `UtcDate`, `WindSpeed`
 
 - **Entity Attributes**: `Eccairs::Occurrence::Entities::{Entity}::Attributes::*`
-  - Attributes that belong to specific entities
-  - Example: `Aircraft::Attributes::AircraftRegistration`
+    - Attributes that belong to specific entities
+    - Example: `Aircraft::Attributes::AircraftRegistration`
 
 - **Nested Entities**: `Eccairs::Occurrence::Entities::{Entity}::{SubEntity}::Attributes::*`
-  - Sub-entities within entities
-  - Example: `AerodromeGeneral::Runway::Attributes::RunwayIdentifier`
+    - Sub-entities within entities
+    - Example: `AerodromeGeneral::Runway::Attributes::RunwayIdentifier`
 
 ## Usage Examples
 
@@ -170,7 +170,7 @@ occurrence.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Runway::A
 
 ```ruby
 narrative_text = "During approach to runway 09L, ATC reported a vehicle on the runway. " \
-                 "The crew executed a go-around and landed safely on the second approach."
+  "The crew executed a go-around and landed safely on the second approach."
 
 occurrence.add_entity(Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeText.new(narrative_text))
 occurrence.add_entity(Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeLanguage.new(1)) # English
