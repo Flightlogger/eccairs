@@ -9,7 +9,6 @@ RSpec.describe Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::Aero
     end
   end
 
-
   describe "constants" do
     it "defines AERODROME constant" do
       expect(described_class::AERODROME).to eq(1)
@@ -65,7 +64,7 @@ RSpec.describe Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::Aero
       report = Eccairs.report
       entity = described_class.new(1)
       report.add_entity(entity)
-      
+
       expect(report.valid?).to be true
     end
   end

@@ -10,45 +10,45 @@ RSpec.describe Eccairs::Occurrence::Attributes::AuthorityOccClosure do
     end
 
     it "initializes with provided value" do
-          entity = described_class.new("test value")
-          expect(entity.value).to eq("test value")
-  end
-end
-
-describe ".attribute_id" do
-  it "returns attribute ID of 1087" do
-    expect(described_class.attribute_id).to eq("1087")
-  end
-end
-
-describe "#build_xml" do
-  it "generates valid XML with value" do
-          entity = described_class.new("test value")
-    builder = Nokogiri::XML::Builder.new
-    entity.build_xml(builder)
-    xml = builder.to_xml
-    
-    expect(xml).to include("Authority_Occ_Closure")
-    expect(xml).to include('attributeId="1087"')
+      entity = described_class.new("test value")
+      expect(entity.value).to eq("test value")
+    end
   end
 
-  it "does not generate XML when value is nil" do
-    entity = described_class.new
-    builder = Nokogiri::XML::Builder.new
-    entity.build_xml(builder)
-    xml = builder.to_xml
-    
-    expect(xml).not_to include("Authority_Occ_Closure")
+  describe ".attribute_id" do
+    it "returns attribute ID of 1087" do
+      expect(described_class.attribute_id).to eq("1087")
+    end
   end
-end
 
-describe "ECCAIRS report validation" do
-  it "generates a valid ECCAIRS report with nil value" do
-    report = Eccairs.report
-    entity = described_class.new(nil)
-    report.add_entity(entity)
+  describe "#build_xml" do
+    it "generates valid XML with value" do
+      entity = described_class.new("test value")
+      builder = Nokogiri::XML::Builder.new
+      entity.build_xml(builder)
+      xml = builder.to_xml
 
-    expect(report.valid?).to be true
+      expect(xml).to include("Authority_Occ_Closure")
+      expect(xml).to include('attributeId="1087"')
+    end
+
+    it "does not generate XML when value is nil" do
+      entity = described_class.new
+      builder = Nokogiri::XML::Builder.new
+      entity.build_xml(builder)
+      xml = builder.to_xml
+
+      expect(xml).not_to include("Authority_Occ_Closure")
+    end
   end
-end
+
+  describe "ECCAIRS report validation" do
+    it "generates a valid ECCAIRS report with nil value" do
+      report = Eccairs.report
+      entity = described_class.new(nil)
+      report.add_entity(entity)
+
+      expect(report.valid?).to be true
+    end
+  end
 end

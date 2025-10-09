@@ -295,5 +295,25 @@ RSpec.describe Eccairs::BaseEntity do
       expect(xml_string).to include('Type="decimal"')
       expect(xml_string).to include('attributeId="123"')
     end
+
+    it "wraps text in specified element when wrap_text_in is used" do
+      test_class = Class.new(described_class) do
+        attribute_id 425
+        xml_tag :Narrative_Text
+        wrap_text_in "PlainText"
+      end
+
+      entity = test_class.new("This is a test narrative")
+      builder = Nokogiri::XML::Builder.new(encoding: 'UTF-8') do |xml|
+        xml.root('xmlns:dt' => 'http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataTypes.xsd') do
+          entity.build_xml(xml)
+        end
+      end
+
+      xml_string = builder.to_xml
+      expect(xml_string).to include('Narrative_Text')
+      expect(xml_string).to include('attributeId="425"')
+      expect(xml_string).to include('<dt:PlainText>This is a test narrative</dt:PlainText>')
+    end
   end
 end

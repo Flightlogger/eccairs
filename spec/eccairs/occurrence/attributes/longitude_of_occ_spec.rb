@@ -10,45 +10,45 @@ RSpec.describe Eccairs::Occurrence::Attributes::LongitudeOfOcc do
     end
 
     it "initializes with provided value" do
-          entity = described_class.new(15.5)
-          expect(entity.value).to eq(15.5)
-  end
-end
-
-describe ".attribute_id" do
-  it "returns attribute ID of 444" do
-    expect(described_class.attribute_id).to eq("444")
-  end
-end
-
-describe "#build_xml" do
-  it "generates valid XML with value" do
-          entity = described_class.new(15.5)
-    builder = Nokogiri::XML::Builder.new
-    entity.build_xml(builder)
-    xml = builder.to_xml
-    
-    expect(xml).to include("Longitude_Of_Occ")
-    expect(xml).to include('attributeId="444"')
+      entity = described_class.new(15.5)
+      expect(entity.value).to eq(15.5)
+    end
   end
 
-  it "does not generate XML when value is nil" do
-    entity = described_class.new
-    builder = Nokogiri::XML::Builder.new
-    entity.build_xml(builder)
-    xml = builder.to_xml
-    
-    expect(xml).not_to include("Longitude_Of_Occ")
+  describe ".attribute_id" do
+    it "returns attribute ID of 444" do
+      expect(described_class.attribute_id).to eq("444")
+    end
   end
-end
 
-describe "ECCAIRS report validation" do
-  it "generates a valid ECCAIRS report" do
-    report = Eccairs.report
-    entity = described_class.new(-75.5)
-    report.add_entity(entity)
-    
-    expect(report.valid?).to be true
+  describe "#build_xml" do
+    it "generates valid XML with value" do
+      entity = described_class.new(15.5)
+      builder = Nokogiri::XML::Builder.new
+      entity.build_xml(builder)
+      xml = builder.to_xml
+
+      expect(xml).to include("Longitude_Of_Occ")
+      expect(xml).to include('attributeId="444"')
+    end
+
+    it "does not generate XML when value is nil" do
+      entity = described_class.new
+      builder = Nokogiri::XML::Builder.new
+      entity.build_xml(builder)
+      xml = builder.to_xml
+
+      expect(xml).not_to include("Longitude_Of_Occ")
+    end
   end
-end
+
+  describe "ECCAIRS report validation" do
+    it "generates a valid ECCAIRS report" do
+      report = Eccairs.report
+      entity = described_class.new(-75.5)
+      report.add_entity(entity)
+
+      expect(report.valid?).to be true
+    end
+  end
 end

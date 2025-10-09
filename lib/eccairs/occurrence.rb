@@ -9,6 +9,7 @@ module Eccairs
 
       def initialize
         @entities = []
+        @entity_id_counters = Hash.new(0)
       end
 
       def add_entity(entity)
@@ -18,45 +19,75 @@ module Eccairs
 
       def to_xml(xml)
         xml.Occurrence(entityId: ENTITY_ID) do
-          # Group entities by their section module relative to Eccairs::Occurrence
-          grouped = @entities.group_by { |e| extract_section_module(e) }
-
-          grouped.each do |section_module, section_entities|
-            build_section(xml, section_module, section_entities)
-          end
+          build_hierarchical_xml(xml, @entities, 'Eccairs::Occurrence')
         end
       end
 
       private
 
-      def extract_section_module(entity)
-        # Remove "Eccairs::Occurrence::" prefix and get the section module
-        # e.g., Eccairs::Occurrence::Attributes::DewPoint -> Attributes
-        # e.g., Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::AerodromeLatitude
-        #       -> Entities::AerodromeGeneral
-        relative_path = entity.class.name.sub('Eccairs::Occurrence::', '')
-        parts = relative_path.split('::')
+      def build_hierarchical_xml(xml, entities, parent_path)
+        # Group entities by their immediate section under parent_path
+        grouped = entities.group_by { |e| get_immediate_section(e, parent_path) }
 
-        # If there are more than 2 parts, it's nested (e.g., Entities::AerodromeGeneral::Attributes::...)
-        # Take first 2 parts. Otherwise, just take the first part (e.g., Attributes::DewPoint)
-        parts.length > 2 ? parts[0..1].join('::') : parts.first
+        # Separate direct attributes from nested entities
+        direct_attributes = grouped.delete('Attributes') || []
+        nested_entities = grouped.reject { |k, _v| k == 'Attributes' }
+
+        # Build ATTRIBUTES section if there are direct attributes
+        if direct_attributes.any?
+          xml.ATTRIBUTES do
+            direct_attributes.sort_by { |e| e.class.sequence }.each { |e| e.build_xml(xml) }
+          end
+        end
+
+        # Build ENTITIES section if there are nested entities
+        if nested_entities.any?
+          xml.ENTITIES do
+            nested_entities.each do |entity_module_name, entity_list|
+              # Get the full module path for this entity
+              # If parent already contains "::Entities::", just append the entity name
+              # Otherwise, add "::Entities::" before the entity name
+              if parent_path.include?('::Entities::')
+                full_module_path = "#{parent_path}::#{entity_module_name}"
+              else
+                full_module_path = "#{parent_path}::Entities::#{entity_module_name}"
+              end
+              entity_module = Object.const_get(full_module_path)
+
+              # Build the entity XML with optional ID attribute
+              xml_attributes = { entityId: entity_module.entity_id }
+
+              # Add ID attribute if the entity requires it (for key constraints)
+              # XML ID must start with a letter or underscore, so prefix with entity name
+              if entity_module.respond_to?(:requires_id?) && entity_module.requires_id?
+                @entity_id_counters[entity_module_name] += 1
+                xml_attributes[:ID] = "#{entity_module_name}_#{@entity_id_counters[entity_module_name]}"
+              end
+
+              xml.send(entity_module.xml_tag, xml_attributes) do
+                # Recursively build nested content
+                build_hierarchical_xml(xml, entity_list, full_module_path)
+              end
+            end
+          end
+        end
       end
 
-      def build_section(xml, section_path, entities)
-        # Section path is like "Attributes" or "Entities::AerodromeGeneral"
-        section_name = section_path.split('::').first.upcase.to_sym
+      def get_immediate_section(entity, parent_path)
+        # Remove parent path prefix and get the immediate next section
+        # e.g., parent: "Eccairs::Occurrence", entity: "Eccairs::Occurrence::Attributes::DewPoint" -> "Attributes"
+        # e.g., parent: "Eccairs::Occurrence", entity: "Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::..." -> "AerodromeGeneral"
+        # e.g., parent: "Eccairs::Occurrence::Entities::AerodromeGeneral", entity: "...::Narrative::Attributes::..." -> "Narrative"
 
-        xml.send(section_name) do
-          if section_name == :ENTITIES
-            # For nested entities, group by parent module and build entity XML
-            entities.group_by { |e| extract_section_module(e) }.each do |module_path, grouped_entities|
-              parent_module = Object.const_get("Eccairs::Occurrence::#{module_path}")
-              parent_module.build_entity_xml(xml, grouped_entities.sort_by { |e| e.class.sequence })
-            end
-          else
-            # For direct attributes, just build XML for each
-            entities.sort_by { |e| e.class.sequence }.each { |e| e.build_xml(xml) }
-          end
+        relative_path = entity.class.name.sub("#{parent_path}::", '')
+        parts = relative_path.split('::')
+
+        # If first part is "Entities", return the second part (the entity name)
+        # If first part is "Attributes", return "Attributes"
+        if parts.first == 'Entities'
+          parts[1]
+        else
+          parts.first
         end
       end
     end

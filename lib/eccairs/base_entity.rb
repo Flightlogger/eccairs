@@ -31,6 +31,15 @@ module Eccairs
       end
     end
 
+    # DSL method to wrap text content in a specific XML element (e.g., PlainText)
+    def self.wrap_text_in(wrapper_element)
+      @text_wrapper = wrapper_element.to_s
+    end
+
+    def self.text_wrapper
+      @text_wrapper
+    end
+
     # DSL method to declare validations at class level
     def self.validates_numericality(min: nil, max: nil, type: :decimal)
       @validation_type = :numeric
@@ -94,7 +103,14 @@ module Eccairs
       xml_attributes = { attributeId: self.class.attribute_id }
       xml_attributes.merge!(additional_xml_attributes) if respond_to?(:additional_xml_attributes, true)
 
-      xml.send(tag_name, value, xml_attributes)
+      # Check if text should be wrapped in a special element (e.g., PlainText)
+      if self.class.text_wrapper
+        xml.send(tag_name, xml_attributes) do
+          xml['dt'].send(self.class.text_wrapper, value)
+        end
+      else
+        xml.send(tag_name, value, xml_attributes)
+      end
     end
 
     protected

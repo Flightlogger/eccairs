@@ -9,7 +9,6 @@ RSpec.describe Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::Loca
     end
   end
 
-
   describe "#build_xml" do
     it "generates XML with correct tag and attributeId" do
       entity = described_class.new("1000")
@@ -29,9 +28,8 @@ RSpec.describe Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::Loca
       report = Eccairs.report
       entity = described_class.new("1000")
       report.add_entity(entity)
-      
+
       expect(report.valid?).to be true
     end
   end
 end
-

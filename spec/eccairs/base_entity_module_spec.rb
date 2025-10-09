@@ -53,15 +53,15 @@ RSpec.describe Eccairs::BaseEntityModule do
 
     let(:mock_entity1) do
       double("Entity1",
-        class: double(sequence: 1),
-        build_xml: nil
+             class: double(sequence: 1),
+             build_xml: nil
       )
     end
 
     let(:mock_entity2) do
       double("Entity2",
-        class: double(sequence: 2),
-        build_xml: nil
+             class: double(sequence: 2),
+             build_xml: nil
       )
     end
 
@@ -78,7 +78,7 @@ RSpec.describe Eccairs::BaseEntityModule do
 
     it "sorts entities by sequence before building XML" do
       entities = [mock_entity2, mock_entity1]
-      
+
       builder = Nokogiri::XML::Builder.new do |xml|
         configured_module.build_entity_xml(xml, entities)
       end
@@ -90,7 +90,7 @@ RSpec.describe Eccairs::BaseEntityModule do
 
     it "calls build_xml on each entity" do
       entities = [mock_entity1, mock_entity2]
-      
+
       builder = Nokogiri::XML::Builder.new do |xml|
         configured_module.build_entity_xml(xml, entities)
       end
@@ -142,4 +142,3 @@ RSpec.describe Eccairs::BaseEntityModule do
     end
   end
 end
-

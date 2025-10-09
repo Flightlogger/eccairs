@@ -33,12 +33,12 @@ DATATYPE_MAP = {
 
 # Unit mapping (UM default column)
 UNIT_MAP = {
-  '101' => 'C',           # Celsius
-  '202' => 'm',           # meters
-  '401' => 'kt',          # knots
-  '901' => 'kg',          # kilograms
-  '1001' => 'Degree(s)',  # degrees
-  '2001' => 'ft'          # feet
+  '101' => 'C', # Celsius
+  '202' => 'm', # meters
+  '401' => 'kt', # knots
+  '901' => 'kg', # kilograms
+  '1001' => 'Degree(s)', # degrees
+  '2001' => 'ft' # feet
 }
 
 def load_value_list(vl_id)
@@ -60,16 +60,16 @@ def generate_enum_hash(values)
   values.each do |val|
     # Create constant name from value using common ECCAIRS conventions
     const_name = case val
-    when '1' then 'YES'
-    when '2' then 'NO'
-    when '97' then 'NOT_APPLICABLE'
-    when '98' then 'NOT_REPORTED'
-    when '99' then 'UNKNOWN'
-    else
-      # For other values, just use VALUE_ prefix
-      # Users can manually update these to be more meaningful
-      "VALUE_#{val}"
-    end
+                 when '1' then 'YES'
+                 when '2' then 'NO'
+                 when '97' then 'NOT_APPLICABLE'
+                 when '98' then 'NOT_REPORTED'
+                 when '99' then 'UNKNOWN'
+                 else
+                   # For other values, just use VALUE_ prefix
+                   # Users can manually update these to be more meaningful
+                   "VALUE_#{val}"
+                 end
 
     enum_hash[const_name.to_sym] = val.to_i
   end

@@ -22,7 +22,7 @@ DATATYPE_MAP = {
 def load_value_list(vl_id)
   vl_path = File.expand_path("../../docs/Eccairs Aviation v5100 RITedb/mappings/#{vl_id}.csv", __FILE__)
   return nil unless File.exist?(vl_path)
-  
+
   values = []
   CSV.foreach(vl_path, headers: true, col_sep: "\t") do |row|
     value_id = row['Value ID']
@@ -34,7 +34,7 @@ end
 def generate_spec_content(attr_name, attr_id, datatype, valuelist_id)
   # Replace hyphens with underscores for class name generation
   class_name = attr_name.gsub('-', '_').split('_').map(&:capitalize).join
-  
+
   content = <<~RUBY
     # frozen_string_literal: true
     
@@ -49,7 +49,7 @@ def generate_spec_content(attr_name, attr_id, datatype, valuelist_id)
     
         it "initializes with provided value" do
   RUBY
-  
+
   case DATATYPE_MAP[datatype]
   when :enum
     if valuelist_id && !valuelist_id.empty?
@@ -79,21 +79,21 @@ def generate_spec_content(attr_name, attr_id, datatype, valuelist_id)
     content += "          entity = described_class.new(\"test\")\n"
     content += "          expect(entity.value).to eq(\"test\")\n"
   end
-  
+
   content += <<~RUBY
-        end
       end
-    
-      describe ".attribute_id" do
-        it "returns attribute ID of #{attr_id}" do
-          expect(described_class.attribute_id).to eq("#{attr_id}")
-        end
+    end
+
+    describe ".attribute_id" do
+      it "returns attribute ID of #{attr_id}" do
+        expect(described_class.attribute_id).to eq("#{attr_id}")
       end
-    
-      describe "#build_xml" do
-        it "generates valid XML with value" do
+    end
+
+    describe "#build_xml" do
+      it "generates valid XML with value" do
   RUBY
-  
+
   case DATATYPE_MAP[datatype]
   when :enum
     if valuelist_id && !valuelist_id.empty?
@@ -116,27 +116,27 @@ def generate_spec_content(attr_name, attr_id, datatype, valuelist_id)
   else
     content += "          entity = described_class.new(\"test\")\n"
   end
-  
+
   content += <<~RUBY
-          builder = Nokogiri::XML::Builder.new
-          entity.build_xml(builder)
-          xml = builder.to_xml
-          
-          expect(xml).to include("#{attr_name}")
-          expect(xml).to include('attributeId="#{attr_id}"')
-        end
-    
-        it "does not generate XML when value is nil" do
-          entity = described_class.new
-          builder = Nokogiri::XML::Builder.new
-          entity.build_xml(builder)
-          xml = builder.to_xml
-          
-          expect(xml).not_to include("#{attr_name}")
-        end
+        builder = Nokogiri::XML::Builder.new
+        entity.build_xml(builder)
+        xml = builder.to_xml
+        
+        expect(xml).to include("#{attr_name}")
+        expect(xml).to include('attributeId="#{attr_id}"')
       end
+
+      it "does not generate XML when value is nil" do
+        entity = described_class.new
+        builder = Nokogiri::XML::Builder.new
+        entity.build_xml(builder)
+        xml = builder.to_xml
+        
+        expect(xml).not_to include("#{attr_name}")
+      end
+    end
   RUBY
-  
+
   # Add validation tests for enums
   if DATATYPE_MAP[datatype] == :enum && valuelist_id && !valuelist_id.empty?
     values = load_value_list(valuelist_id)
@@ -146,11 +146,11 @@ def generate_spec_content(attr_name, attr_id, datatype, valuelist_id)
         describe "validation" do
           it "accepts valid values" do
       RUBY
-      
+
       values.each do |val|
         content += "            expect { described_class.new(#{val.to_i}) }.not_to raise_error\n"
       end
-      
+
       content += <<~RUBY
           end
 
@@ -165,7 +165,7 @@ def generate_spec_content(attr_name, attr_id, datatype, valuelist_id)
       RUBY
     end
   end
-  
+
   content += "end\n"
   content
 end
@@ -180,21 +180,21 @@ skip_entities = ['Dew_Point', 'Wx_Conditions', 'Dang_Goods_Involved']
 CSV.foreach(csv_path, headers: true, col_sep: "\t") do |row|
   parent_entity = row['Parent Entity Synonym']
   next unless parent_entity == 'Occurrence'
-  
+
   attr_name = row['Attribute Synonym']
   next if skip_entities.include?(attr_name)
-  
+
   attr_id = row['Attribute ID']
   datatype = row['ECCAIRS Datatype']
   valuelist_id = row['Valuelist ID']
-  
+
   # Generate the spec
   spec_content = generate_spec_content(attr_name, attr_id, datatype, valuelist_id)
-  
+
   # Write to file
   file_name = attr_name.downcase.gsub('-', '_') + '_spec.rb'
   file_path = File.join(specs_dir, file_name)
-  
+
   File.write(file_path, spec_content)
   puts "Created: #{file_path}"
 end

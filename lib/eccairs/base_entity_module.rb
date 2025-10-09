@@ -22,6 +22,15 @@ module Eccairs
       end
     end
 
+    # DSL method to indicate if this entity requires an ID attribute (for key constraints)
+    def requires_id(value = true)
+      @requires_id = value
+    end
+
+    def requires_id?
+      @requires_id || false
+    end
+
     # Build XML for this entity with its attributes
     def build_entity_xml(xml, entities)
       xml.send(xml_tag, entityId: entity_id) do
@@ -32,4 +41,3 @@ module Eccairs
     end
   end
 end
-

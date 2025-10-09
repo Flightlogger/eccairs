@@ -10,61 +10,61 @@ RSpec.describe Eccairs::Occurrence::Attributes::ThirdPartyDamage do
     end
 
     it "initializes with provided value" do
-          entity = described_class.new(1)
-          expect(entity.value).to eq(1)
-  end
-end
-
-describe ".attribute_id" do
-  it "returns attribute ID of 456" do
-    expect(described_class.attribute_id).to eq("456")
-  end
-end
-
-describe "#build_xml" do
-  it "generates valid XML with value" do
-          entity = described_class.new(1)
-    builder = Nokogiri::XML::Builder.new
-    entity.build_xml(builder)
-    xml = builder.to_xml
-    
-    expect(xml).to include("Third_Party_Damage")
-    expect(xml).to include('attributeId="456"')
+      entity = described_class.new(1)
+      expect(entity.value).to eq(1)
+    end
   end
 
-  it "does not generate XML when value is nil" do
-    entity = described_class.new
-    builder = Nokogiri::XML::Builder.new
-    entity.build_xml(builder)
-    xml = builder.to_xml
-    
-    expect(xml).not_to include("Third_Party_Damage")
-  end
-end
-
-describe "validation" do
-  it "accepts valid values" do
-            expect { described_class.new(1) }.not_to raise_error
-            expect { described_class.new(100) }.not_to raise_error
-            expect { described_class.new(101) }.not_to raise_error
+  describe ".attribute_id" do
+    it "returns attribute ID of 456" do
+      expect(described_class.attribute_id).to eq("456")
+    end
   end
 
-  it "raises error with invalid value" do
-    expect { described_class.new(99999) }.to raise_error(Eccairs::ValidationError)
+  describe "#build_xml" do
+    it "generates valid XML with value" do
+      entity = described_class.new(1)
+      builder = Nokogiri::XML::Builder.new
+      entity.build_xml(builder)
+      xml = builder.to_xml
+
+      expect(xml).to include("Third_Party_Damage")
+      expect(xml).to include('attributeId="456"')
+    end
+
+    it "does not generate XML when value is nil" do
+      entity = described_class.new
+      builder = Nokogiri::XML::Builder.new
+      entity.build_xml(builder)
+      xml = builder.to_xml
+
+      expect(xml).not_to include("Third_Party_Damage")
+    end
   end
 
-  it "accepts nil value (optional attribute)" do
-    expect { described_class.new(nil) }.not_to raise_error
-  end
-end
+  describe "validation" do
+    it "accepts valid values" do
+      expect { described_class.new(1) }.not_to raise_error
+      expect { described_class.new(100) }.not_to raise_error
+      expect { described_class.new(101) }.not_to raise_error
+    end
 
-describe "ECCAIRS report validation" do
-  it "generates a valid ECCAIRS report" do
-    report = Eccairs.report
-    entity = described_class.new(1)
-    report.add_entity(entity)
-    
-    expect(report.valid?).to be true
+    it "raises error with invalid value" do
+      expect { described_class.new(99999) }.to raise_error(Eccairs::ValidationError)
+    end
+
+    it "accepts nil value (optional attribute)" do
+      expect { described_class.new(nil) }.not_to raise_error
+    end
   end
-end
+
+  describe "ECCAIRS report validation" do
+    it "generates a valid ECCAIRS report" do
+      report = Eccairs.report
+      entity = described_class.new(1)
+      report.add_entity(entity)
+
+      expect(report.valid?).to be true
+    end
+  end
 end
