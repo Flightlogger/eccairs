@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class CorrectiveActions < Eccairs::Base::Entity
+          class CorrectiveActions < Eccairs::Base::StringEntity
             attribute_id 1069
             xml_tag "Corrective_Actions"
             sequence 12

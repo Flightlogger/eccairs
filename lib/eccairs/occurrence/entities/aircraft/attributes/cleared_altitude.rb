@@ -5,13 +5,16 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class ClearedAltitude < Eccairs::Base::Entity
+          class ClearedAltitude < Eccairs::Base::DecimalEntity
             attribute_id 58
             xml_tag "Cleared_Altitude"
             sequence 9
             unit "ft"
 
-            validates_numericality min: -999999, max: 999999, type: :decimal
+            min -999999
+
+
+            max 999999
           end
         end
       end

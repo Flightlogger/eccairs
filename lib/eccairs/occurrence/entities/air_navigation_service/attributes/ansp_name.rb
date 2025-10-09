@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module AirNavigationService
         module Attributes
-          class AnspName < Eccairs::Base::Entity
+          class AnspName < Eccairs::Base::StringEntity
             attribute_id 372
             xml_tag "ANSP_Name"
             sequence 3

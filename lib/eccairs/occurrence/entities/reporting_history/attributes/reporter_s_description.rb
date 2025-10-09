@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class ReporterSDescription < Eccairs::Base::Entity
+          class ReporterSDescription < Eccairs::Base::StringEntity
             attribute_id 1092
             xml_tag "Reporter_S_Description"
             sequence 19

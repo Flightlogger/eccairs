@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class Headline < Eccairs::Base::Entity
+      class Headline < Eccairs::Base::StringEntity
         attribute_id 601
         xml_tag "Headline"
         sequence 37

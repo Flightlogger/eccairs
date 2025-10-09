@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Events
         module Attributes
-          class Phase < Eccairs::Base::Entity
+          class Phase < Eccairs::Base::StringEntity
             attribute_id 391
             xml_tag "Phase"
             sequence 1

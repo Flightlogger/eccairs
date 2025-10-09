@@ -5,11 +5,11 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class ReporterSLanguage < Eccairs::Base::Entity
+          class ReporterSLanguage < Eccairs::Base::EnumEntity
             attribute_id 1091
             xml_tag "Reporter_S_Language"
             sequence 18
-            validates_inclusion within: (1..66).to_a
+            allowed_values (1..66).to_a
           end
         end
       end

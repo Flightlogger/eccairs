@@ -5,13 +5,16 @@ module Eccairs
     module Entities
       module Separation
         module Attributes
-          class VerticalSepRecorded < Eccairs::Base::Entity
+          class VerticalSepRecorded < Eccairs::Base::DecimalEntity
             attribute_id 585
             xml_tag "Vertical_Sep_Recorded"
             sequence 7
             unit "ft"
 
-            validates_numericality min: -999999, max: 999999, type: :decimal
+            min -999999
+
+
+            max 999999
           end
         end
       end

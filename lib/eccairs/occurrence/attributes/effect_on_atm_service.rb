@@ -3,11 +3,11 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class EffectOnAtmService < Eccairs::Base::Entity
+      class EffectOnAtmService < Eccairs::Base::EnumEntity
         attribute_id 436
         xml_tag "Effect_On_ATM_Service"
         sequence 18
-        validates_inclusion within: {
+        allowed_values(
           VALUE_4: 4,
           VALUE_3: 3,
           NO: 2,
@@ -15,7 +15,7 @@ module Eccairs
           VALUE_5: 5,
           VALUE_7: 7,
           VALUE_6: 6
-        }
+        )
       end
     end
   end

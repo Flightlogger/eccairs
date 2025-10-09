@@ -7,13 +7,16 @@ module Eccairs
         module Entities
           module Engine
             module Attributes
-              class TimeSinceNew < Eccairs::Base::Entity
+              class TimeSinceNew < Eccairs::Base::DecimalEntity
                 attribute_id 883
                 xml_tag "Time_Since_New"
                 sequence 6
                 unit "Hour(s)"
 
-                validates_numericality min: -999999, max: 999999, type: :decimal
+                min -999999
+
+
+                max 999999
               end
             end
           end

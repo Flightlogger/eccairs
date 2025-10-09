@@ -7,11 +7,11 @@ module Eccairs
         module Entities
           module Propeller
             module Attributes
-              class PropInvolvement < Eccairs::Base::Entity
+              class PropInvolvement < Eccairs::Base::EnumEntity
                 attribute_id 896
                 xml_tag "Prop_Involvement"
                 sequence 5
-                validates_inclusion within: [3, 4, 7, 6, 5, 8, 2, 1]
+                allowed_values [3, 4, 7, 6, 5, 8, 2, 1]
               end
             end
           end

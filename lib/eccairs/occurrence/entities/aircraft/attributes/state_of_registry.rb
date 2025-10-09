@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class StateOfRegistry < Eccairs::Base::Entity
+          class StateOfRegistry < Eccairs::Base::StringEntity
             attribute_id 281
             xml_tag "State_Of_Registry"
             sequence 38

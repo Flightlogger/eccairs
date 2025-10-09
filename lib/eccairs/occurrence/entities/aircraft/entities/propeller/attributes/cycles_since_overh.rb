@@ -7,11 +7,15 @@ module Eccairs
         module Entities
           module Propeller
             module Attributes
-              class CyclesSinceOverh < Eccairs::Base::Entity
+              class CyclesSinceOverh < Eccairs::Base::IntegerEntity
                 attribute_id 903
                 xml_tag "Cycles_Since_Overh"
                 sequence 10
-                validates_numericality min: 0, max: 999999, type: :integer
+
+                min 0
+
+
+                max 999999
               end
             end
           end

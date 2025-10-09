@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class FlightNumber < Eccairs::Base::Entity
+          class FlightNumber < Eccairs::Base::StringEntity
             attribute_id 120
             xml_tag "Flight_Number"
             sequence 16

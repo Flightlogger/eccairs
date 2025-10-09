@@ -3,12 +3,16 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class WindSpeed < Eccairs::Base::Entity
+      class WindSpeed < Eccairs::Base::DecimalEntity
         attribute_id 322
         xml_tag "Wind_Speed"
         sequence 12
         unit "kt"
-        validates_numericality min: -1000, max: 100000, type: :decimal
+
+        min -1000
+
+
+        max 100000
       end
     end
   end

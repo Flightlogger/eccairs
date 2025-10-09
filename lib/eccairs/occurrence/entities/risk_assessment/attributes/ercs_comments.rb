@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module RiskAssessment
         module Attributes
-          class ErcsComments < Eccairs::Base::Entity
+          class ErcsComments < Eccairs::Base::StringEntity
             attribute_id 1110
             xml_tag "ERCS_Comments"
             sequence 19

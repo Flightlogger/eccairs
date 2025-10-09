@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module PartInformation
             module Attributes
-              class DateOfManufacturing < Eccairs::Base::Entity
+              class DateOfManufacturing < Eccairs::Base::DateEntity
                 attribute_id 666
                 xml_tag "Date_Of_Manufacturing"
                 sequence 11

@@ -7,13 +7,16 @@ module Eccairs
         module Entities
           module PartInformation
             module Attributes
-              class TimeSinceInspection < Eccairs::Base::Entity
+              class TimeSinceInspection < Eccairs::Base::DecimalEntity
                 attribute_id 662
                 xml_tag "Time_Since_Inspection"
                 sequence 7
                 unit "Hour(s)"
 
-                validates_numericality min: -999999, max: 999999, type: :decimal
+                min -999999
+
+
+                max 999999
               end
             end
           end

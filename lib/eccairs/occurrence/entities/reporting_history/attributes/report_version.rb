@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class ReportVersion < Eccairs::Base::Entity
+          class ReportVersion < Eccairs::Base::StringEntity
             attribute_id 1084
             xml_tag "Report_Version"
             sequence 15

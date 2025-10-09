@@ -5,11 +5,15 @@ module Eccairs
     module Entities
       module AerodromeGeneral
         module Attributes
-          class AerodromeLongitude < Eccairs::Base::Entity
+          class AerodromeLongitude < Eccairs::Base::DecimalEntity
             attribute_id 2
             xml_tag "Aerodrome_Longitude"
             sequence 1
-            validates_numericality min: -180.0, max: 180.0, type: :decimal
+
+            min -180.0
+
+
+            max 180.0
           end
         end
       end

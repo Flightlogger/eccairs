@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module PartInformation
             module Attributes
-              class DateOfOverhaul < Eccairs::Base::Entity
+              class DateOfOverhaul < Eccairs::Base::DateEntity
                 attribute_id 667
                 xml_tag "Date_Of_Overhaul"
                 sequence 12

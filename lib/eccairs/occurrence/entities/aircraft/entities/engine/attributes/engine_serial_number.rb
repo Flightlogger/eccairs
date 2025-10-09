@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Engine
             module Attributes
-              class EngineSerialNumber < Eccairs::Base::Entity
+              class EngineSerialNumber < Eccairs::Base::StringEntity
                 attribute_id 881
                 xml_tag "Engine_Serial_Number"
                 sequence 4

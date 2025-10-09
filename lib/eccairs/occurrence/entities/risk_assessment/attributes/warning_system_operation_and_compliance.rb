@@ -5,11 +5,11 @@ module Eccairs
     module Entities
       module RiskAssessment
         module Attributes
-          class WarningSystemOperationAndCompliance < Eccairs::Base::Entity
+          class WarningSystemOperationAndCompliance < Eccairs::Base::EnumEntity
             attribute_id 1102
             xml_tag "Warning_System_Operation_And_Compliance"
             sequence 12
-            validates_inclusion within: [1, 2, 3, 4, 5, 6]
+            allowed_values [1, 2, 3, 4, 5, 6]
           end
         end
       end

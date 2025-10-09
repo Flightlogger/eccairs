@@ -9,11 +9,11 @@ module Eccairs
             module Entities
               module FlightCrewLicenses
                 module Attributes
-                  class Ratings < Eccairs::Base::Entity
+                  class Ratings < Eccairs::Base::EnumEntity
                     attribute_id 398
                     xml_tag "Ratings"
                     sequence 1
-                    validates_inclusion within: [1, 2, 3, 99]
+                    allowed_values [1, 2, 3, 99]
                   end
                 end
               end

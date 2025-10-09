@@ -7,11 +7,11 @@ module Eccairs
         module Entities
           module SeparationAircraft
             module Attributes
-              class OtherAircraftSeen < Eccairs::Base::Entity
+              class OtherAircraftSeen < Eccairs::Base::EnumEntity
                 attribute_id 587
                 xml_tag "Other_Aircraft_Seen"
                 sequence 2
-                validates_inclusion within: [1, 3, 2, 99]
+                allowed_values [1, 3, 2, 99]
               end
             end
           end

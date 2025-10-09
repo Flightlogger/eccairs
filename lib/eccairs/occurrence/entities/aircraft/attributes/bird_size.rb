@@ -5,11 +5,11 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class BirdSize < Eccairs::Base::Entity
+          class BirdSize < Eccairs::Base::EnumEntity
             attribute_id 648
             xml_tag "Bird_Size"
             sequence 51
-            validates_inclusion within: [1, 2, 3, 4]
+            allowed_values [1, 2, 3, 4]
           end
         end
       end

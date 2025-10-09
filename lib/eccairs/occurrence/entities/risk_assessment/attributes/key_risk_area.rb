@@ -5,11 +5,11 @@ module Eccairs
     module Entities
       module RiskAssessment
         module Attributes
-          class KeyRiskArea < Eccairs::Base::Entity
+          class KeyRiskArea < Eccairs::Base::EnumEntity
             attribute_id 1097
             xml_tag "Key_Risk_Area"
             sequence 7
-            validates_inclusion within: (1..36).to_a
+            allowed_values (1..36).to_a
           end
         end
       end

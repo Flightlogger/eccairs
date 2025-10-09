@@ -5,11 +5,15 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class AircraftFlightLevel < Eccairs::Base::Entity
+          class AircraftFlightLevel < Eccairs::Base::IntegerEntity
             attribute_id 25
             xml_tag "A_C_Flight_Level"
             sequence 2
-            validates_numericality min: 0, max: 999999, type: :integer
+
+            min 0
+
+
+            max 999999
             # Type 3 is an integer
           end
         end

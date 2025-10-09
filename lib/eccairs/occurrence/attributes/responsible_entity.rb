@@ -3,11 +3,11 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class ResponsibleEntity < Eccairs::Base::Entity
+      class ResponsibleEntity < Eccairs::Base::EnumEntity
         attribute_id 453
         xml_tag "Responsible_Entity"
         sequence 25
-        validates_inclusion within: {
+        allowed_values(
           YES: 1,
           VALUE_1001: 1001,
           VALUE_2001: 2001,
@@ -3590,7 +3590,7 @@ module Eccairs
           VALUE_99999: 99999,
           VALUE_99998: 99998,
           VALUE_13200: 13200
-        }
+        )
       end
     end
   end

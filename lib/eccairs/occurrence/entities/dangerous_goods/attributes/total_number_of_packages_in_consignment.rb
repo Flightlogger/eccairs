@@ -5,11 +5,15 @@ module Eccairs
     module Entities
       module DangerousGoods
         module Attributes
-          class TotalNumberOfPackagesInConsignment < Eccairs::Base::Entity
+          class TotalNumberOfPackagesInConsignment < Eccairs::Base::IntegerEntity
             attribute_id 1054
             xml_tag "Total_Number_Of_Packages_In_Consignment"
             sequence 4
-            validates_numericality min: 0, max: 999999, type: :integer
+
+            min 0
+
+
+            max 999999
           end
         end
       end

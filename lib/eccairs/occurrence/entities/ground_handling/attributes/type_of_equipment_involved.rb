@@ -5,11 +5,11 @@ module Eccairs
     module Entities
       module GroundHandling
         module Attributes
-          class TypeOfEquipmentInvolved < Eccairs::Base::Entity
+          class TypeOfEquipmentInvolved < Eccairs::Base::EnumEntity
             attribute_id 1120
             xml_tag "Type_Of_Equipment_Involved"
             sequence 4
-            validates_inclusion within: (1..28).to_a
+            allowed_values (1..28).to_a
           end
         end
       end

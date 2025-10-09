@@ -3,11 +3,15 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class TotalMinorInjuriesGround < Eccairs::Base::Entity
+      class TotalMinorInjuriesGround < Eccairs::Base::IntegerEntity
         attribute_id 469
         xml_tag "Total_Minor_Injuries-Ground"
         sequence 33
-        validates_numericality min: 0, max: 100000, type: :integer
+
+        min 0
+
+
+        max 100000
       end
     end
   end

@@ -7,11 +7,11 @@ module Eccairs
         module Entities
           module SeparationAircraft
             module Attributes
-              class AtmAction < Eccairs::Base::Entity
+              class AtmAction < Eccairs::Base::EnumEntity
                 attribute_id 565
                 xml_tag "ATM_Action"
                 sequence 0
-                validates_inclusion within: [1, 4, 3, 2, 97, 99]
+                allowed_values [1, 4, 3, 2, 97, 99]
               end
             end
           end

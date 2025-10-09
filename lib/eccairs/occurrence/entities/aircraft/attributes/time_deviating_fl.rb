@@ -5,13 +5,16 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class TimeDeviatingFl < Eccairs::Base::Entity
+          class TimeDeviatingFl < Eccairs::Base::DecimalEntity
             attribute_id 816
             xml_tag "Time_Deviating_FL"
             sequence 53
             unit "Second(s)"
 
-            validates_numericality min: -999999, max: 999999, type: :decimal
+            min -999999
+
+
+            max 999999
           end
         end
       end

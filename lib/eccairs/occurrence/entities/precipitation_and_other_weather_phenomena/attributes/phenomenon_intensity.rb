@@ -5,11 +5,11 @@ module Eccairs
     module Entities
       module PrecipitationAndOtherWeatherPhenomena
         module Attributes
-          class PhenomenonIntensity < Eccairs::Base::Entity
+          class PhenomenonIntensity < Eccairs::Base::EnumEntity
             attribute_id 230
             xml_tag "Phenomenon_Intensity"
             sequence 0
-            validates_inclusion within: [97, 1, 2, 3, 99]
+            allowed_values [97, 1, 2, 3, 99]
           end
         end
       end

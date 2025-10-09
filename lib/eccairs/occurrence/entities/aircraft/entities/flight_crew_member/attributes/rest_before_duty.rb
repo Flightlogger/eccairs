@@ -7,13 +7,16 @@ module Eccairs
         module Entities
           module FlightCrewMember
             module Attributes
-              class RestBeforeDuty < Eccairs::Base::Entity
+              class RestBeforeDuty < Eccairs::Base::DecimalEntity
                 attribute_id 408
                 xml_tag "Rest_Before_Duty"
                 sequence 2
                 unit "Hour(s)"
 
-                validates_numericality min: -999999, max: 999999, type: :decimal
+                min -999999
+
+
+                max 999999
               end
             end
           end

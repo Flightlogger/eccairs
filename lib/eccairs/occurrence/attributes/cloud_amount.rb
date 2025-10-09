@@ -3,11 +3,11 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class CloudAmount < Eccairs::Base::Entity
+      class CloudAmount < Eccairs::Base::EnumEntity
         attribute_id 266
         xml_tag "Cloud_Amount"
         sequence 6
-        validates_inclusion within: {
+        allowed_values(
           YES: 1,
           VALUE_101: 101,
           NO: 2,
@@ -16,7 +16,7 @@ module Eccairs
           VALUE_4: 4,
           VALUE_5: 5,
           UNKNOWN: 99
-        }
+        )
       end
     end
   end

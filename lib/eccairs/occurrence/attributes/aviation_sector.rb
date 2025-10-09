@@ -3,11 +3,11 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class AviationSector < Eccairs::Base::Entity
+      class AviationSector < Eccairs::Base::EnumEntity
         attribute_id 1088
         xml_tag "Aviation_Sector"
         sequence 51
-        validates_inclusion within: {
+        allowed_values(
           YES: 1,
           NO: 2,
           VALUE_3: 3,
@@ -17,7 +17,7 @@ module Eccairs
           VALUE_7: 7,
           VALUE_8: 8,
           VALUE_9: 9
-        }
+        )
       end
     end
   end

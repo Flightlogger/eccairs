@@ -5,13 +5,16 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class MaximumToMass < Eccairs::Base::Entity
+          class MaximumToMass < Eccairs::Base::DecimalEntity
             attribute_id 175
             xml_tag "Maximum_T_O_Mass"
             sequence 22
             unit "kg"
 
-            validates_numericality min: -999999, max: 999999, type: :decimal
+            min -999999
+
+
+            max 999999
           end
         end
       end

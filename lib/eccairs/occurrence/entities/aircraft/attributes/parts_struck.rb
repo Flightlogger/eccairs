@@ -5,11 +5,11 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class PartsStruck < Eccairs::Base::Entity
+          class PartsStruck < Eccairs::Base::EnumEntity
             attribute_id 644
             xml_tag "Parts_Struck"
             sequence 47
-            validates_inclusion within: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 15]
+            allowed_values [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 15]
           end
         end
       end

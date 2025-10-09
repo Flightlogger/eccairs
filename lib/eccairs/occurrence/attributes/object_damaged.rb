@@ -3,11 +3,11 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class ObjectDamaged < Eccairs::Base::Entity
+      class ObjectDamaged < Eccairs::Base::EnumEntity
         attribute_id 640
         xml_tag "Object_Damaged"
         sequence 39
-        validates_inclusion within: {
+        allowed_values(
           NO: 2,
           VALUE_6: 6,
           VALUE_7: 7,
@@ -29,7 +29,7 @@ module Eccairs
           VALUE_21: 21,
           VALUE_5: 5,
           YES: 1
-        }
+        )
       end
     end
   end

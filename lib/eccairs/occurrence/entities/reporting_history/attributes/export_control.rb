@@ -5,11 +5,11 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class ExportControl < Eccairs::Base::Entity
+          class ExportControl < Eccairs::Base::EnumEntity
             attribute_id 1086
             xml_tag "Export_Control"
             sequence 17
-            validates_inclusion within: [1, 2]
+            allowed_values [1, 2]
           end
         end
       end

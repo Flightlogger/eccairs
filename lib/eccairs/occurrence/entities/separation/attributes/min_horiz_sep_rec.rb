@@ -5,13 +5,16 @@ module Eccairs
     module Entities
       module Separation
         module Attributes
-          class MinHorizSepRec < Eccairs::Base::Entity
+          class MinHorizSepRec < Eccairs::Base::DecimalEntity
             attribute_id 579
             xml_tag "Min_Horiz_Sep_Rec"
             sequence 4
             unit "NM"
 
-            validates_numericality min: -999999, max: 999999, type: :decimal
+            min -999999
+
+
+            max 999999
           end
         end
       end

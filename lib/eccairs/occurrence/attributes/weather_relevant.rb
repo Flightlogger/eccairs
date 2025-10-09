@@ -3,15 +3,15 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class WeatherRelevant < Eccairs::Base::Entity
+      class WeatherRelevant < Eccairs::Base::EnumEntity
         attribute_id 606
         xml_tag "Weather_Relevant"
         sequence 38
-        validates_inclusion within: {
+        allowed_values(
           YES: 1,
           NO: 2,
           UNKNOWN: 99
-        }
+        )
       end
     end
   end

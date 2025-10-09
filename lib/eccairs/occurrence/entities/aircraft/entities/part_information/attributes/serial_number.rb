@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module PartInformation
             module Attributes
-              class SerialNumber < Eccairs::Base::Entity
+              class SerialNumber < Eccairs::Base::StringEntity
                 attribute_id 657
                 xml_tag "Serial_Number"
                 sequence 2

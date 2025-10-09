@@ -7,11 +7,11 @@ module Eccairs
         module Entities
           module Sector
             module Attributes
-              class WorkloadController < Eccairs::Base::Entity
+              class WorkloadController < Eccairs::Base::EnumEntity
                 attribute_id 559
                 xml_tag "Workload_Controller"
                 sequence 2
-                validates_inclusion within: [1, 100, 2, 101, 3, 99]
+                allowed_values [1, 100, 2, 101, 3, 99]
               end
             end
           end

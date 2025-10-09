@@ -7,11 +7,11 @@ module Eccairs
         module Entities
           module PartInformation
             module Attributes
-              class Manufacturer < Eccairs::Base::Entity
+              class Manufacturer < Eccairs::Base::EnumEntity
                 attribute_id 658
                 xml_tag "Manufacturer"
                 sequence 3
-                validates_inclusion within: (1..224).to_a
+                allowed_values (1..224).to_a
               end
             end
           end

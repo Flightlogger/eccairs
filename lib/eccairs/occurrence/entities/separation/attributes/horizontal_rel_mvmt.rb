@@ -5,11 +5,11 @@ module Eccairs
     module Entities
       module Separation
         module Attributes
-          class HorizontalRelMvmt < Eccairs::Base::Entity
+          class HorizontalRelMvmt < Eccairs::Base::EnumEntity
             attribute_id 570
             xml_tag "Horizontal_Rel_Mvmt"
             sequence 0
-            validates_inclusion within: [3, 1, 2, 4, 5, 6, 99]
+            allowed_values [3, 1, 2, 4, 5, 6, 99]
           end
         end
       end

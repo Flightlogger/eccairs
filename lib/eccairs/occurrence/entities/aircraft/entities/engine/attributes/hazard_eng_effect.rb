@@ -7,11 +7,11 @@ module Eccairs
         module Entities
           module Engine
             module Attributes
-              class HazardEngEffect < Eccairs::Base::Entity
+              class HazardEngEffect < Eccairs::Base::EnumEntity
                 attribute_id 945
                 xml_tag "Hazard_Eng_Effect"
                 sequence 14
-                validates_inclusion within: [1, 2, 3, 4, 9, 6, 10, 8, 7]
+                allowed_values [1, 2, 3, 4, 9, 6, 10, 8, 7]
               end
             end
           end

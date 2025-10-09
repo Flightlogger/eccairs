@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class SerialNumber < Eccairs::Base::Entity
+          class SerialNumber < Eccairs::Base::StringEntity
             attribute_id 254
             xml_tag "Serial_Number"
             sequence 32

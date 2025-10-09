@@ -5,11 +5,11 @@ module Eccairs
     module Entities
       module AerodromeGeneral
         module Attributes
-          class AreaConfiguration < Eccairs::Base::Entity
+          class AreaConfiguration < Eccairs::Base::EnumEntity
             attribute_id 3
             xml_tag "Area_Configuration"
             sequence 2
-            validates_inclusion within: [1, 2, 3, 98, 99]
+            allowed_values [1, 2, 3, 98, 99]
           end
         end
       end

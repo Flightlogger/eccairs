@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class Report < Eccairs::Base::Entity
+          class Report < Eccairs::Base::StringEntity
             attribute_id 802
             xml_tag "Report"
             sequence 6

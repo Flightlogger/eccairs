@@ -5,11 +5,15 @@ module Eccairs
     module Entities
       module RiskAssessment
         module Attributes
-          class RiskLevel < Eccairs::Base::Entity
+          class RiskLevel < Eccairs::Base::DecimalEntity
             attribute_id 940
             xml_tag "Risk_Level"
             sequence 2
-            validates_numericality min: -999999, max: 999999, type: :decimal
+
+            min -999999
+
+
+            max 999999
           end
         end
       end

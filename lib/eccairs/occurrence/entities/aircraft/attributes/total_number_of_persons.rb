@@ -5,11 +5,15 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class TotalNumberOfPersons < Eccairs::Base::Entity
+          class TotalNumberOfPersons < Eccairs::Base::IntegerEntity
             attribute_id 152
             xml_tag "Total_Number_Of_Persons"
             sequence 18
-            validates_numericality min: 0, max: 999999, type: :integer
+
+            min 0
+
+
+            max 999999
           end
         end
       end

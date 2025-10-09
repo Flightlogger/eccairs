@@ -5,11 +5,11 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class CurrentFlightRules < Eccairs::Base::Entity
+          class CurrentFlightRules < Eccairs::Base::EnumEntity
             attribute_id 79
             xml_tag "Current_Flight_Rules"
             sequence 12
-            validates_inclusion within: [1, 2, 4, 3, 7, 97, 98, 99]
+            allowed_values [1, 2, 4, 3, 7, 97, 98, 99]
           end
         end
       end

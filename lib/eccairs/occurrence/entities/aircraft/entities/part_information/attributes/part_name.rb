@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module PartInformation
             module Attributes
-              class PartName < Eccairs::Base::Entity
+              class PartName < Eccairs::Base::StringEntity
                 attribute_id 485
                 xml_tag "Part_Name"
                 sequence 0

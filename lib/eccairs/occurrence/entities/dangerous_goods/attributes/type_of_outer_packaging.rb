@@ -5,11 +5,11 @@ module Eccairs
     module Entities
       module DangerousGoods
         module Attributes
-          class TypeOfOuterPackaging < Eccairs::Base::Entity
+          class TypeOfOuterPackaging < Eccairs::Base::EnumEntity
             attribute_id 1056
             xml_tag "Type_Of_Outer_Packaging"
             sequence 6
-            validates_inclusion within: (1..53).to_a
+            allowed_values (1..53).to_a
           end
         end
       end

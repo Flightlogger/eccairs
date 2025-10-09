@@ -5,11 +5,11 @@ module Eccairs
     module Entities
       module RiskAssessment
         module Attributes
-          class RiskGrade < Eccairs::Base::Entity
+          class RiskGrade < Eccairs::Base::EnumEntity
             attribute_id 718
             xml_tag "Risk_Grade"
             sequence 0
-            validates_inclusion within: [1, 2, 3]
+            allowed_values [1, 2, 3]
           end
         end
       end

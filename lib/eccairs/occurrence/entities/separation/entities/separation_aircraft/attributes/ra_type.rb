@@ -7,11 +7,11 @@ module Eccairs
         module Entities
           module SeparationAircraft
             module Attributes
-              class RaType < Eccairs::Base::Entity
+              class RaType < Eccairs::Base::EnumEntity
                 attribute_id 610
                 xml_tag "RA_Type"
                 sequence 6
-                validates_inclusion within: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+                allowed_values [1, 2, 3, 4, 5, 6, 7, 8, 9]
               end
             end
           end

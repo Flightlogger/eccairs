@@ -3,17 +3,17 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class InjuryLevel < Eccairs::Base::Entity
+      class InjuryLevel < Eccairs::Base::EnumEntity
         attribute_id 451
         xml_tag "Injury_Level"
         sequence 23
-        validates_inclusion within: {
+        allowed_values(
           YES: 1,
           NO: 2,
           VALUE_3: 3,
           NOT_REPORTED: 98,
           UNKNOWN: 99
-        }
+        )
       end
     end
   end

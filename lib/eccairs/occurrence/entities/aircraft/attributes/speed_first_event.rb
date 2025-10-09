@@ -5,13 +5,16 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class SpeedFirstEvent < Eccairs::Base::Entity
+          class SpeedFirstEvent < Eccairs::Base::DecimalEntity
             attribute_id 273
             xml_tag "Speed_First_Event"
             sequence 35
             unit "kt"
 
-            validates_numericality min: -999999, max: 999999, type: :decimal
+            min -999999
+
+
+            max 999999
           end
         end
       end

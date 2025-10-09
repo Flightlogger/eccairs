@@ -7,11 +7,15 @@ module Eccairs
         module Entities
           module PartInformation
             module Attributes
-              class CyclesSinceOverhaul < Eccairs::Base::Entity
+              class CyclesSinceOverhaul < Eccairs::Base::IntegerEntity
                 attribute_id 664
                 xml_tag "Cycles_Since_Overhaul"
                 sequence 9
-                validates_numericality min: 0, max: 999999, type: :integer
+
+                min 0
+
+
+                max 999999
               end
             end
           end

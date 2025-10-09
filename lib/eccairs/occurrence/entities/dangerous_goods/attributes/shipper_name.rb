@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module DangerousGoods
         module Attributes
-          class ShipperName < Eccairs::Base::Entity
+          class ShipperName < Eccairs::Base::StringEntity
             attribute_id 1053
             xml_tag "Shipper_Name"
             sequence 3

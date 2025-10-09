@@ -7,11 +7,15 @@ module Eccairs
         module Entities
           module Propeller
             module Attributes
-              class PropPosition < Eccairs::Base::Entity
+              class PropPosition < Eccairs::Base::IntegerEntity
                 attribute_id 895
                 xml_tag "Prop_Position"
                 sequence 4
-                validates_numericality min: 0, max: 999999, type: :integer
+
+                min 0
+
+
+                max 999999
               end
             end
           end

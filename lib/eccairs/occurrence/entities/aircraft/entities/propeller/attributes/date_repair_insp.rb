@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Propeller
             module Attributes
-              class DateRepairInsp < Eccairs::Base::Entity
+              class DateRepairInsp < Eccairs::Base::StringEntity
                 attribute_id 907
                 xml_tag "Date_Repair_Insp"
                 sequence 14

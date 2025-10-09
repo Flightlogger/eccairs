@@ -5,13 +5,16 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class AircraftAltitude < Eccairs::Base::Entity
+          class AircraftAltitude < Eccairs::Base::DecimalEntity
             attribute_id 22
             xml_tag "Aircraft_Altitude"
             sequence 1
             unit "ft"
 
-            validates_numericality min: -999999, max: 999999, type: :decimal
+            min -999999
+
+
+            max 999999
           end
         end
       end

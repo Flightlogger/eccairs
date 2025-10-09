@@ -5,13 +5,16 @@ module Eccairs
     module Entities
       module Separation
         module Attributes
-          class EstVertSeparation < Eccairs::Base::Entity
+          class EstVertSeparation < Eccairs::Base::DecimalEntity
             attribute_id 581
             xml_tag "Est_Vert_Separation"
             sequence 5
             unit "ft"
 
-            validates_numericality min: -999999, max: 999999, type: :decimal
+            min -999999
+
+
+            max 999999
           end
         end
       end

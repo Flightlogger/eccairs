@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Engine
             module Attributes
-              class DateOfManufacturing < Eccairs::Base::Entity
+              class DateOfManufacturing < Eccairs::Base::StringEntity
                 attribute_id 888
                 xml_tag "Date_Of_Manufacturing"
                 sequence 11

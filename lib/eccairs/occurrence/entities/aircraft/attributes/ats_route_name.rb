@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class AtsRouteName < Eccairs::Base::Entity
+          class AtsRouteName < Eccairs::Base::StringEntity
             attribute_id 46
             xml_tag "ATS_Route_Name"
             sequence 6

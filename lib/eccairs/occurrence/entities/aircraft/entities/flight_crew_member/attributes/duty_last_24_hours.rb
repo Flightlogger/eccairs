@@ -7,13 +7,16 @@ module Eccairs
         module Entities
           module FlightCrewMember
             module Attributes
-              class DutyLast24Hours < Eccairs::Base::Entity
+              class DutyLast24Hours < Eccairs::Base::DecimalEntity
                 attribute_id 403
                 xml_tag "Duty_Last_24_Hours"
                 sequence 1
                 unit "Hour(s)"
 
-                validates_numericality min: -999999, max: 999999, type: :decimal
+                min -999999
+
+
+                max 999999
               end
             end
           end

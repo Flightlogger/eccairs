@@ -7,11 +7,15 @@ module Eccairs
         module Entities
           module Engine
             module Attributes
-              class EnginePosition < Eccairs::Base::Entity
+              class EnginePosition < Eccairs::Base::IntegerEntity
                 attribute_id 653
                 xml_tag "Engine_Position"
                 sequence 2
-                validates_numericality min: 0, max: 999999, type: :integer
+
+                min 0
+
+
+                max 999999
               end
             end
           end

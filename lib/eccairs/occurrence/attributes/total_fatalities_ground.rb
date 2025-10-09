@@ -3,11 +3,15 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class TotalFatalitiesGround < Eccairs::Base::Entity
+      class TotalFatalitiesGround < Eccairs::Base::IntegerEntity
         attribute_id 460
         xml_tag "Total_Fatalities_Ground"
         sequence 30
-        validates_numericality min: 0, max: 100000, type: :integer
+
+        min 0
+
+
+        max 100000
       end
     end
   end

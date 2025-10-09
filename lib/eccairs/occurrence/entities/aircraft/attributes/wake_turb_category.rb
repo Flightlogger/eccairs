@@ -5,11 +5,11 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class WakeTurbCategory < Eccairs::Base::Entity
+          class WakeTurbCategory < Eccairs::Base::EnumEntity
             attribute_id 313
             xml_tag "Wake_Turb_Category"
             sequence 43
-            validates_inclusion within: [1, 2, 3, 5, 4]
+            allowed_values [1, 2, 3, 5, 4]
           end
         end
       end

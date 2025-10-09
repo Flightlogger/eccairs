@@ -5,11 +5,15 @@ module Eccairs
     module Entities
       module DangerousGoods
         module Attributes
-          class NumberOfInnerPackages < Eccairs::Base::Entity
+          class NumberOfInnerPackages < Eccairs::Base::IntegerEntity
             attribute_id 1058
             xml_tag "Number_Of_Inner_Packages"
             sequence 8
-            validates_numericality min: 0, max: 999999, type: :integer
+
+            min 0
+
+
+            max 999999
           end
         end
       end

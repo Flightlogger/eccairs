@@ -9,11 +9,11 @@ module Eccairs
             module Entities
               module AtmStaff
                 module Attributes
-                  class CismOffered < Eccairs::Base::Entity
+                  class CismOffered < Eccairs::Base::EnumEntity
                     attribute_id 340
                     xml_tag "CISM_Offered"
                     sequence 0
-                    validates_inclusion within: [1, 2, 99, 100]
+                    allowed_values [1, 2, 99, 100]
                   end
                 end
               end

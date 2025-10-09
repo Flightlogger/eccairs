@@ -5,13 +5,16 @@ module Eccairs
     module Entities
       module Separation
         module Attributes
-          class RateOfClosure < Eccairs::Base::Entity
+          class RateOfClosure < Eccairs::Base::DecimalEntity
             attribute_id 588
             xml_tag "Rate_Of_Closure"
             sequence 8
             unit "kt"
 
-            validates_numericality min: -999999, max: 999999, type: :decimal
+            min -999999
+
+
+            max 999999
           end
         end
       end

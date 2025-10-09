@@ -3,11 +3,11 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class OccurrenceCategory < Eccairs::Base::Entity
+      class OccurrenceCategory < Eccairs::Base::EnumEntity
         attribute_id 430
         xml_tag "Occurrence_Category"
         sequence 14
-        validates_inclusion within: {
+        allowed_values(
           VALUE_24: 24,
           YES: 1,
           NO: 2,
@@ -44,7 +44,7 @@ module Eccairs
           VALUE_22: 22,
           VALUE_27: 27,
           VALUE_23: 23
-        }
+        )
       end
     end
   end

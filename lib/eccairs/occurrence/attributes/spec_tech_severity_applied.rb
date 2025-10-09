@@ -3,15 +3,15 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class SpecTechSeverityApplied < Eccairs::Base::Entity
+      class SpecTechSeverityApplied < Eccairs::Base::EnumEntity
         attribute_id 1079
         xml_tag "Spec_Tech_Severity_Applied"
         sequence 47
-        validates_inclusion within: {
+        allowed_values(
           YES: 1,
           NO: 2,
           VALUE_3: 3
-        }
+        )
       end
     end
   end

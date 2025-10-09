@@ -7,11 +7,15 @@ module Eccairs
         module Entities
           module Engine
             module Attributes
-              class CyclesSinceNew < Eccairs::Base::Entity
+              class CyclesSinceNew < Eccairs::Base::IntegerEntity
                 attribute_id 885
                 xml_tag "Cycles_Since_New"
                 sequence 8
-                validates_numericality min: 0, max: 999999, type: :integer
+
+                min 0
+
+
+                max 999999
               end
             end
           end

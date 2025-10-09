@@ -5,11 +5,11 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class ReportStatus < Eccairs::Base::Entity
+          class ReportStatus < Eccairs::Base::EnumEntity
             attribute_id 800
             xml_tag "Report_Status"
             sequence 4
-            validates_inclusion within: [5, 2, 1, 6, 3, 8, 4, 7]
+            allowed_values [5, 2, 1, 6, 3, 8, 4, 7]
           end
         end
       end

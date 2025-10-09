@@ -5,11 +5,11 @@ module Eccairs
     module Entities
       module AirNavigationService
         module Attributes
-          class MsawCurrentAlerting < Eccairs::Base::Entity
+          class MsawCurrentAlerting < Eccairs::Base::EnumEntity
             attribute_id 369
             xml_tag "MSAW_Current_Alerting"
             sequence 2
-            validates_inclusion within: [1, 2, 99, 100]
+            allowed_values [1, 2, 99, 100]
           end
         end
       end

@@ -9,7 +9,7 @@ module Eccairs
             module Entities
               module FlightCrewLicenses
                 module Attributes
-                  class DateOfLicense < Eccairs::Base::Entity
+                  class DateOfLicense < Eccairs::Base::StringEntity
                     attribute_id 639
                     xml_tag "Date_Of_License"
                     sequence 4

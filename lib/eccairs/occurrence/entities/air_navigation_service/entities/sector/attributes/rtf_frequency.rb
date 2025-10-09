@@ -7,13 +7,16 @@ module Eccairs
         module Entities
           module Sector
             module Attributes
-              class RtfFrequency < Eccairs::Base::Entity
+              class RtfFrequency < Eccairs::Base::DecimalEntity
                 attribute_id 619
                 xml_tag "RTF_Frequency"
                 sequence 3
                 unit "kHz"
 
-                validates_numericality min: -999999, max: 999999, type: :decimal
+                min -999999
+
+
+                max 999999
               end
             end
           end

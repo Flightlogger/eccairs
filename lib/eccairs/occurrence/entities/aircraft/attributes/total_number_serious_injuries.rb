@@ -5,11 +5,15 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class TotalNumberSeriousInjuries < Eccairs::Base::Entity
+          class TotalNumberSeriousInjuries < Eccairs::Base::IntegerEntity
             attribute_id 262
             xml_tag "Total_Number_Serious_Injuries"
             sequence 33
-            validates_numericality min: 0, max: 999999, type: :integer
+
+            min 0
+
+
+            max 999999
           end
         end
       end

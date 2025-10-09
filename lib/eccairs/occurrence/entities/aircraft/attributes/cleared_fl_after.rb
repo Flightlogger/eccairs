@@ -5,11 +5,15 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class ClearedFlAfter < Eccairs::Base::Entity
+          class ClearedFlAfter < Eccairs::Base::DecimalEntity
             attribute_id 817
             xml_tag "Cleared_FL_After"
             sequence 54
-            validates_numericality min: -999999, max: 999999, type: :decimal
+
+            min -999999
+
+
+            max 999999
           end
         end
       end

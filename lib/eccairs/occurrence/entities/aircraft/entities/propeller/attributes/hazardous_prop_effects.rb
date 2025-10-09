@@ -7,11 +7,11 @@ module Eccairs
         module Entities
           module Propeller
             module Attributes
-              class HazardousPropEffects < Eccairs::Base::Entity
+              class HazardousPropEffects < Eccairs::Base::EnumEntity
                 attribute_id 946
                 xml_tag "Hazardous_Prop_Effects"
                 sequence 15
-                validates_inclusion within: [1, 2, 3, 4, 6, 5]
+                allowed_values [1, 2, 3, 4, 6, 5]
               end
             end
           end

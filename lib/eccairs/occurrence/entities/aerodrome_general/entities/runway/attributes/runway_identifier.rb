@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Runway
             module Attributes
-              class RunwayIdentifier < Eccairs::Base::Entity
+              class RunwayIdentifier < Eccairs::Base::StringEntity
                 attribute_id 499
                 xml_tag "Runway_Identifier"
                 sequence 0

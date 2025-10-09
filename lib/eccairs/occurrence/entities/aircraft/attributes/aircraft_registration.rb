@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class AircraftRegistration < Eccairs::Base::Entity
+          class AircraftRegistration < Eccairs::Base::StringEntity
             attribute_id 244
             xml_tag "Aircraft_Registration"
             sequence 30

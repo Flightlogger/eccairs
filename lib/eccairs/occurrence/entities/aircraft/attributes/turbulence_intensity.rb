@@ -5,11 +5,11 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class TurbulenceIntensity < Eccairs::Base::Entity
+          class TurbulenceIntensity < Eccairs::Base::EnumEntity
             attribute_id 293
             xml_tag "Turbulence_Intensity"
             sequence 40
-            validates_inclusion within: [97, 1, 2, 3, 99]
+            allowed_values [97, 1, 2, 3, 99]
           end
         end
       end

@@ -3,15 +3,15 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class SpeedMeasuredAt < Eccairs::Base::Entity
+      class SpeedMeasuredAt < Eccairs::Base::EnumEntity
         attribute_id 275
         xml_tag "Speed_Measured_At"
         sequence 7
-        validates_inclusion within: {
+        allowed_values(
           NO: 2,
           YES: 1,
           UNKNOWN: 99
-        }
+        )
       end
     end
   end

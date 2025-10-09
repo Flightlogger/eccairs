@@ -5,11 +5,11 @@ module Eccairs
     module Entities
       module AirNavigationService
         module Attributes
-          class RimcasAlerting < Eccairs::Base::Entity
+          class RimcasAlerting < Eccairs::Base::EnumEntity
             attribute_id 366
             xml_tag "RIMCAS_Alerting"
             sequence 1
-            validates_inclusion within: [1, 2, 99, 100]
+            allowed_values [1, 2, 99, 100]
           end
         end
       end

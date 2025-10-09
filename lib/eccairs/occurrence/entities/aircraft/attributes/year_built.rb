@@ -5,11 +5,15 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class YearBuilt < Eccairs::Base::Entity
+          class YearBuilt < Eccairs::Base::IntegerEntity
             attribute_id 327
             xml_tag "Year_Built"
             sequence 45
-            validates_numericality min: 0, max: 999999, type: :integer
+
+            min 0
+
+
+            max 999999
           end
         end
       end

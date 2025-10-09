@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Propeller
             module Attributes
-              class DateOfManufacturing < Eccairs::Base::Entity
+              class DateOfManufacturing < Eccairs::Base::StringEntity
                 attribute_id 905
                 xml_tag "Date_Of_Manufacturing"
                 sequence 12

@@ -3,11 +3,11 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class SpecTechSeverity < Eccairs::Base::Entity
+      class SpecTechSeverity < Eccairs::Base::EnumEntity
         attribute_id 1080
         xml_tag "Spec_Tech_Severity"
         sequence 48
-        validates_inclusion within: {
+        allowed_values(
           YES: 1,
           NO: 2,
           VALUE_3: 3,
@@ -16,7 +16,7 @@ module Eccairs
           VALUE_6: 6,
           VALUE_8: 8,
           VALUE_7: 7
-        }
+        )
       end
     end
   end

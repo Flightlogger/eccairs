@@ -9,13 +9,16 @@ module Eccairs
             module Entities
               module AtmStaff
                 module Attributes
-                  class DutyTimeInPosition < Eccairs::Base::Entity
+                  class DutyTimeInPosition < Eccairs::Base::DecimalEntity
                     attribute_id 347
                     xml_tag "Duty_Time_In_Position"
                     sequence 1
                     unit "Hour(s)"
 
-                    validates_numericality min: -999999, max: 999999, type: :decimal
+                    min -999999
+
+
+                    max 999999
                   end
                 end
               end

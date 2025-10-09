@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class LastDeparturePoint < Eccairs::Base::Entity
+          class LastDeparturePoint < Eccairs::Base::StringEntity
             attribute_id 167
             xml_tag "Last_Departure_Point"
             sequence 21

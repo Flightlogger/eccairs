@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Propeller
             module Attributes
-              class PropSerial < Eccairs::Base::Entity
+              class PropSerial < Eccairs::Base::StringEntity
                 attribute_id 893
                 xml_tag "Prop_Serial"
                 sequence 2

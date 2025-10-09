@@ -7,11 +7,11 @@ module Eccairs
         module Entities
           module FlightCrewMember
             module Attributes
-              class Category < Eccairs::Base::Entity
+              class Category < Eccairs::Base::EnumEntity
                 attribute_id 402
                 xml_tag "Category"
                 sequence 0
-                validates_inclusion within: [4, 1, 3, 2, 98, 99]
+                allowed_values [4, 1, 3, 2, 98, 99]
               end
             end
           end

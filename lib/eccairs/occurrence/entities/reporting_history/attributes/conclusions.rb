@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class Conclusions < Eccairs::Base::Entity
+          class Conclusions < Eccairs::Base::StringEntity
             attribute_id 1070
             xml_tag "Conclusions"
             sequence 13

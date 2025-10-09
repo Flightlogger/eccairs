@@ -5,11 +5,11 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class ClearanceValidity < Eccairs::Base::Entity
+          class ClearanceValidity < Eccairs::Base::EnumEntity
             attribute_id 57
             xml_tag "Clearance_Validity"
             sequence 8
-            validates_inclusion within: [6, 2, 99, 7]
+            allowed_values [6, 2, 99, 7]
           end
         end
       end

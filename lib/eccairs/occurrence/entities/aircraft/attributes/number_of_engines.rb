@@ -5,11 +5,15 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class NumberOfEngines < Eccairs::Base::Entity
+          class NumberOfEngines < Eccairs::Base::IntegerEntity
             attribute_id 209
             xml_tag "Number_Of_Engines"
             sequence 24
-            validates_numericality min: 0, max: 999999, type: :integer
+
+            min 0
+
+
+            max 999999
           end
         end
       end

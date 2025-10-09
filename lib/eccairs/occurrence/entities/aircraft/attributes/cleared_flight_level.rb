@@ -5,11 +5,15 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class ClearedFlightLevel < Eccairs::Base::Entity
+          class ClearedFlightLevel < Eccairs::Base::IntegerEntity
             attribute_id 60
             xml_tag "Cleared_Flight_Level"
             sequence 10
-            validates_numericality min: 0, max: 999999, type: :integer
+
+            min 0
+
+
+            max 999999
           end
         end
       end

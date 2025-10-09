@@ -3,11 +3,11 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class ThirdPartyDamage < Eccairs::Base::Entity
+      class ThirdPartyDamage < Eccairs::Base::EnumEntity
         attribute_id 456
         xml_tag "Third_Party_Damage"
         sequence 28
-        validates_inclusion within: {
+        allowed_values(
           YES: 1,
           VALUE_100: 100,
           VALUE_101: 101,
@@ -19,7 +19,7 @@ module Eccairs
           VALUE_107: 107,
           NO: 2,
           UNKNOWN: 99
-        }
+        )
       end
     end
   end

@@ -3,11 +3,11 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class OverallSeverity < Eccairs::Base::Entity
+      class OverallSeverity < Eccairs::Base::EnumEntity
         attribute_id 1077
         xml_tag "Overall_Severity"
         sequence 45
-        validates_inclusion within: {
+        allowed_values(
           YES: 1,
           NO: 2,
           VALUE_3: 3,
@@ -15,7 +15,7 @@ module Eccairs
           VALUE_5: 5,
           VALUE_7: 7,
           VALUE_8: 8
-        }
+        )
       end
     end
   end

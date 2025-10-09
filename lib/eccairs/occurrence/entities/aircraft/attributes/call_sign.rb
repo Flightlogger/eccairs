@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class CallSign < Eccairs::Base::Entity
+          class CallSign < Eccairs::Base::StringEntity
             attribute_id 54
             xml_tag "Call_Sign"
             sequence 7

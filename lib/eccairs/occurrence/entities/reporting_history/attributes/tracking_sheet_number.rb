@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class TrackingSheetNumber < Eccairs::Base::Entity
+          class TrackingSheetNumber < Eccairs::Base::StringEntity
             attribute_id 1071
             xml_tag "Tracking_Sheet_Number"
             sequence 14
