@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class PilotAdvisedOfBirds < Eccairs::BaseEntity
+          class PilotAdvisedOfBirds < Eccairs::Base::Entity
             attribute_id 649
             xml_tag "Pilot_Advised_Of_Birds"
             sequence 52

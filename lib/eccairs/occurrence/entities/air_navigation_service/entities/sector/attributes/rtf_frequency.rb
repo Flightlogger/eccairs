@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Sector
             module Attributes
-              class RtfFrequency < Eccairs::BaseEntity
+              class RtfFrequency < Eccairs::Base::Entity
                 attribute_id 619
                 xml_tag "RTF_Frequency"
                 sequence 3

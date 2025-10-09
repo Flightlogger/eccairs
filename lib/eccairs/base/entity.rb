@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
 module Eccairs
-  class BaseEntity
-    attr_reader :value
+  module Base
+    class Entity
+      attr_reader :value
 
     # DSL method to set attribute_id at class level
     def self.attribute_id(value = nil)
@@ -171,6 +172,7 @@ module Eccairs
       unless allowed_values.include?(value)
         raise Eccairs::ValidationError, "#{attribute_name} must be one of: #{allowed_values.join(", ")} (got #{value})"
       end
+    end
     end
   end
 end

@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module RiskAssessment
         module Attributes
-          class Unspecified < Eccairs::BaseEntity
+          class Unspecified < Eccairs::Base::Entity
             attribute_id 1105
             xml_tag "Unspecified"
             sequence 15

@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class LocalTime < Eccairs::BaseEntity
+      class LocalTime < Eccairs::Base::Entity
         attribute_id 457
         xml_tag "Local_Time"
         sequence 29

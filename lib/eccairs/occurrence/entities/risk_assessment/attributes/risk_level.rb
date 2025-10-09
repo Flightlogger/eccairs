@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module RiskAssessment
         module Attributes
-          class RiskLevel < Eccairs::BaseEntity
+          class RiskLevel < Eccairs::Base::Entity
             attribute_id 940
             xml_tag "Risk_Level"
             sequence 2

@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module RiskAssessment
         module Attributes
-          class WarningSystemOperationAndCompliance < Eccairs::BaseEntity
+          class WarningSystemOperationAndCompliance < Eccairs::Base::Entity
             attribute_id 1102
             xml_tag "Warning_System_Operation_And_Compliance"
             sequence 12

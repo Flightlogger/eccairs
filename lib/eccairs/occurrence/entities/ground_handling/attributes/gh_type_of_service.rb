@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module GroundHandling
         module Attributes
-          class GhTypeOfService < Eccairs::BaseEntity
+          class GhTypeOfService < Eccairs::Base::Entity
             attribute_id 1115
             xml_tag "GH_Type_Of_Service"
             sequence 0

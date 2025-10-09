@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module AerodromeGeneral
         module Attributes
-          class AreaConfiguration < Eccairs::BaseEntity
+          class AreaConfiguration < Eccairs::Base::Entity
             attribute_id 3
             xml_tag "Area_Configuration"
             sequence 2

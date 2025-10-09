@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class PartsStruck < Eccairs::BaseEntity
+          class PartsStruck < Eccairs::Base::Entity
             attribute_id 644
             xml_tag "Parts_Struck"
             sequence 47

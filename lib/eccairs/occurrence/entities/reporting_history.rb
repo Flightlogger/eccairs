@@ -4,7 +4,7 @@ module Eccairs
   module Occurrence
     module Entities
       module ReportingHistory
-        extend Eccairs::BaseEntityModule
+        extend Eccairs::Base::EntityModule
 
         entity_id "53"
         xml_tag "Reporting_History"

@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module RiskAssessment
         module Attributes
-          class ErcsNumericalEquivalentScore < Eccairs::BaseEntity
+          class ErcsNumericalEquivalentScore < Eccairs::Base::Entity
             attribute_id 1096
             xml_tag "ERCS_Numerical_Equivalent_Score"
             sequence 6

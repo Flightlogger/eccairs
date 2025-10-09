@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class WxConditions < Eccairs::BaseEntity
+      class WxConditions < Eccairs::Base::Entity
         attribute_id 127
         xml_tag "Wx_Conditions"
         sequence 1

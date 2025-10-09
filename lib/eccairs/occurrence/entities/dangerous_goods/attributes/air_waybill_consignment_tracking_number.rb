@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module DangerousGoods
         module Attributes
-          class AirWaybillConsignmentTrackingNumber < Eccairs::BaseEntity
+          class AirWaybillConsignmentTrackingNumber < Eccairs::Base::Entity
             attribute_id 1052
             xml_tag "Air_Waybill_Consignment_Tracking_Number"
             sequence 2

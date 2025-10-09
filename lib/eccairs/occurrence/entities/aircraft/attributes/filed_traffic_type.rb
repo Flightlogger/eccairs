@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class FiledTrafficType < Eccairs::BaseEntity
+          class FiledTrafficType < Eccairs::Base::Entity
             attribute_id 118
             xml_tag "Filed_Traffic_Type"
             sequence 15

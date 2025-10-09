@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class AirTemperature < Eccairs::BaseEntity
+      class AirTemperature < Eccairs::Base::Entity
         attribute_id 287
         xml_tag "Air_Temperature"
         sequence 8

@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class MaximumGust < Eccairs::BaseEntity
+      class MaximumGust < Eccairs::Base::Entity
         attribute_id 176
         xml_tag "Maximum_Gust"
         sequence 5

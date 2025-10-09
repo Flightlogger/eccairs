@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Engine
             module Attributes
-              class DateOverhaul < Eccairs::BaseEntity
+              class DateOverhaul < Eccairs::Base::Entity
                 attribute_id 889
                 xml_tag "Date_Overhaul"
                 sequence 12

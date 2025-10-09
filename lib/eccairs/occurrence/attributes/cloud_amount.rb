@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class CloudAmount < Eccairs::BaseEntity
+      class CloudAmount < Eccairs::Base::Entity
         attribute_id 266
         xml_tag "Cloud_Amount"
         sequence 6

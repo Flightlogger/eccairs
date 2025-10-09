@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class ExportControl < Eccairs::BaseEntity
+          class ExportControl < Eccairs::Base::Entity
             attribute_id 1086
             xml_tag "Export_Control"
             sequence 17

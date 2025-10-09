@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Propeller
             module Attributes
-              class TimeSinceOverhaul < Eccairs::BaseEntity
+              class TimeSinceOverhaul < Eccairs::Base::Entity
                 attribute_id 900
                 xml_tag "Time_Since_Overhaul"
                 sequence 7

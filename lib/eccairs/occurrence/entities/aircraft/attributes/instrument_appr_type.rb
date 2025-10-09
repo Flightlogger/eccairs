@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class InstrumentApprType < Eccairs::BaseEntity
+          class InstrumentApprType < Eccairs::Base::Entity
             attribute_id 165
             xml_tag "Instrument_Appr_Type"
             sequence 19

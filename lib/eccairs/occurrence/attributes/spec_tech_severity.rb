@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class SpecTechSeverity < Eccairs::BaseEntity
+      class SpecTechSeverity < Eccairs::Base::Entity
         attribute_id 1080
         xml_tag "Spec_Tech_Severity"
         sequence 48

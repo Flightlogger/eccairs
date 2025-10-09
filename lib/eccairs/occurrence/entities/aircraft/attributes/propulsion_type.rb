@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class PropulsionType < Eccairs::BaseEntity
+          class PropulsionType < Eccairs::Base::Entity
             attribute_id 232
             xml_tag "Propulsion_Type"
             sequence 29

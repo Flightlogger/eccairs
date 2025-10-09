@@ -4,7 +4,7 @@ module Eccairs
   module Occurrence
     module Entities
       module GroundHandling
-        extend Eccairs::BaseEntityModule
+        extend Eccairs::Base::EntityModule
 
         entity_id "60"
         xml_tag "Ground_Handling"

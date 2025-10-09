@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module SeparationAircraft
             module Attributes
-              class RaClassification < Eccairs::BaseEntity
+              class RaClassification < Eccairs::Base::Entity
                 attribute_id 613
                 xml_tag "RA_Classification"
                 sequence 8

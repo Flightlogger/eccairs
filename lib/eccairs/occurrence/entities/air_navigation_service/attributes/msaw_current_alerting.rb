@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module AirNavigationService
         module Attributes
-          class MsawCurrentAlerting < Eccairs::BaseEntity
+          class MsawCurrentAlerting < Eccairs::Base::Entity
             attribute_id 369
             xml_tag "MSAW_Current_Alerting"
             sequence 2

@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class DetectionPhase < Eccairs::BaseEntity
+      class DetectionPhase < Eccairs::Base::Entity
         attribute_id 1072
         xml_tag "Detection_Phase"
         sequence 40

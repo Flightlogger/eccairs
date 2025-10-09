@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Separation
         module Attributes
-          class RateOfClosure < Eccairs::BaseEntity
+          class RateOfClosure < Eccairs::Base::Entity
             attribute_id 588
             xml_tag "Rate_Of_Closure"
             sequence 8

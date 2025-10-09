@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module SeparationAircraft
             module Attributes
-              class RaType < Eccairs::BaseEntity
+              class RaType < Eccairs::Base::Entity
                 attribute_id 610
                 xml_tag "RA_Type"
                 sequence 6

@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class ControllingAgency < Eccairs::BaseEntity
+          class ControllingAgency < Eccairs::Base::Entity
             attribute_id 64
             xml_tag "Controlling_Agency"
             sequence 11

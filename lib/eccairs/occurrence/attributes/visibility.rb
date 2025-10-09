@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class Visibility < Eccairs::BaseEntity
+      class Visibility < Eccairs::Base::Entity
         attribute_id 310
         xml_tag "Visibility"
         sequence 9

@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class InjuryLevel < Eccairs::BaseEntity
+      class InjuryLevel < Eccairs::Base::Entity
         attribute_id 451
         xml_tag "Injury_Level"
         sequence 23

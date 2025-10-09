@@ -9,7 +9,7 @@ module Eccairs
             module Entities
               module FlightCrewLicenses
                 module Attributes
-                  class Ratings < Eccairs::BaseEntity
+                  class Ratings < Eccairs::Base::Entity
                     attribute_id 398
                     xml_tag "Ratings"
                     sequence 1

@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class ReportStatus < Eccairs::BaseEntity
+          class ReportStatus < Eccairs::Base::Entity
             attribute_id 800
             xml_tag "Report_Status"
             sequence 4

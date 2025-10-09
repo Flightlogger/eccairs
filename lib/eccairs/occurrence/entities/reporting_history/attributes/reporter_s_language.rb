@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class ReporterSLanguage < Eccairs::BaseEntity
+          class ReporterSLanguage < Eccairs::Base::Entity
             attribute_id 1091
             xml_tag "Reporter_S_Language"
             sequence 18

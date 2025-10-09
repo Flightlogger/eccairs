@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class DewPoint < Eccairs::BaseEntity
+      class DewPoint < Eccairs::Base::Entity
         attribute_id 85
         xml_tag "Dew_Point"
         sequence 0

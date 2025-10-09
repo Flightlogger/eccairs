@@ -6,7 +6,7 @@ module Eccairs
       module Aircraft
         module Entities
           module Engine
-            extend Eccairs::BaseEntityModule
+            extend Eccairs::Base::EntityModule
 
             entity_id "13"
             xml_tag "Engine"

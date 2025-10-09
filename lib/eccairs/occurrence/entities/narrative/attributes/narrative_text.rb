@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Narrative
         module Attributes
-          class NarrativeText < Eccairs::BaseEntity
+          class NarrativeText < Eccairs::Base::Entity
             attribute_id 425
             xml_tag "Narrative_Text"
             sequence 1

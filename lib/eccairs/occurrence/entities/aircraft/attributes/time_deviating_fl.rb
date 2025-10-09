@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class TimeDeviatingFl < Eccairs::BaseEntity
+          class TimeDeviatingFl < Eccairs::Base::Entity
             attribute_id 816
             xml_tag "Time_Deviating_FL"
             sequence 53

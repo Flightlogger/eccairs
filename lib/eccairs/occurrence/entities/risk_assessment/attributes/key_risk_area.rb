@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module RiskAssessment
         module Attributes
-          class KeyRiskArea < Eccairs::BaseEntity
+          class KeyRiskArea < Eccairs::Base::Entity
             attribute_id 1097
             xml_tag "Key_Risk_Area"
             sequence 7

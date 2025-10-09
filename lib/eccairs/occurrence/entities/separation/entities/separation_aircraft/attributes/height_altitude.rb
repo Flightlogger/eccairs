@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module SeparationAircraft
             module Attributes
-              class HeightAltitude < Eccairs::BaseEntity
+              class HeightAltitude < Eccairs::Base::Entity
                 attribute_id 597
                 xml_tag "Height_Altitude"
                 sequence 4

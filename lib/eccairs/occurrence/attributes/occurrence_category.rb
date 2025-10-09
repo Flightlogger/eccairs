@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class OccurrenceCategory < Eccairs::BaseEntity
+      class OccurrenceCategory < Eccairs::Base::Entity
         attribute_id 430
         xml_tag "Occurrence_Category"
         sequence 14

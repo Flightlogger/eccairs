@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module DangerousGoods
         module Attributes
-          class QuantityPerInnerPackaging < Eccairs::BaseEntity
+          class QuantityPerInnerPackaging < Eccairs::Base::Entity
             attribute_id 1060
             xml_tag "Quantity_Per_Inner_Packaging"
             sequence 10

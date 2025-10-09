@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Propeller
             module Attributes
-              class AtaChapterInvolved < Eccairs::BaseEntity
+              class AtaChapterInvolved < Eccairs::Base::Entity
                 attribute_id 894
                 xml_tag "ATA_Chapter_Involved"
                 sequence 3

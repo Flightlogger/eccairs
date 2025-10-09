@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module FlightCrewMember
             module Attributes
-              class ExperienceThisAC < Eccairs::BaseEntity
+              class ExperienceThisAC < Eccairs::Base::Entity
                 attribute_id 411
                 xml_tag "Experience_This_A_C"
                 sequence 4

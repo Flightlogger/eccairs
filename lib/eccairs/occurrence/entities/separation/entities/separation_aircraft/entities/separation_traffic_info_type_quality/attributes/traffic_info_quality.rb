@@ -9,7 +9,7 @@ module Eccairs
             module Entities
               module SeparationTrafficInfoTypeQuality
                 module Attributes
-                  class TrafficInfoQuality < Eccairs::BaseEntity
+                  class TrafficInfoQuality < Eccairs::Base::Entity
                     attribute_id 595
                     xml_tag "Traffic_Info_Quality"
                     sequence 0

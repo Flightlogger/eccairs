@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module AerodromeGeneral
         module Attributes
-          class ElevationAboveMsl < Eccairs::BaseEntity
+          class ElevationAboveMsl < Eccairs::Base::Entity
             attribute_id 4
             xml_tag "Elevation_Above_MSL"
             sequence 3

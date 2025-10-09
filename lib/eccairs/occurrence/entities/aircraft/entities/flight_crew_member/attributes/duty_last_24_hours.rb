@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module FlightCrewMember
             module Attributes
-              class DutyLast24Hours < Eccairs::BaseEntity
+              class DutyLast24Hours < Eccairs::Base::Entity
                 attribute_id 403
                 xml_tag "Duty_Last_24_Hours"
                 sequence 1

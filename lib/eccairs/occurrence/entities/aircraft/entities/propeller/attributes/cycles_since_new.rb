@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Propeller
             module Attributes
-              class CyclesSinceNew < Eccairs::BaseEntity
+              class CyclesSinceNew < Eccairs::Base::Entity
                 attribute_id 902
                 xml_tag "Cycles_Since_New"
                 sequence 9

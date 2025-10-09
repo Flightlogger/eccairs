@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class OverallSeverity < Eccairs::BaseEntity
+      class OverallSeverity < Eccairs::Base::Entity
         attribute_id 1077
         xml_tag "Overall_Severity"
         sequence 45

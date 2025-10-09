@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class DescriptionInvestigation < Eccairs::BaseEntity
+          class DescriptionInvestigation < Eccairs::Base::Entity
             attribute_id 1067
             xml_tag "Description_Investigation"
             sequence 10

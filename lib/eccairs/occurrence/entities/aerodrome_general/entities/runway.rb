@@ -6,7 +6,7 @@ module Eccairs
       module AerodromeGeneral
         module Entities
           module Runway
-            extend Eccairs::BaseEntityModule
+            extend Eccairs::Base::EntityModule
 
             entity_id "31"
             xml_tag "Runway"

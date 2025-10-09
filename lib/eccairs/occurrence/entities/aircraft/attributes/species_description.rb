@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class SpeciesDescription < Eccairs::BaseEntity
+          class SpeciesDescription < Eccairs::Base::Entity
             attribute_id 645
             xml_tag "Species_Description"
             sequence 48

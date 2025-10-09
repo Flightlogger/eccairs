@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class AviationSector < Eccairs::BaseEntity
+      class AviationSector < Eccairs::Base::Entity
         attribute_id 1088
         xml_tag "Aviation_Sector"
         sequence 51

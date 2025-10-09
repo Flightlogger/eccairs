@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class ClearanceValidity < Eccairs::BaseEntity
+          class ClearanceValidity < Eccairs::Base::Entity
             attribute_id 57
             xml_tag "Clearance_Validity"
             sequence 8

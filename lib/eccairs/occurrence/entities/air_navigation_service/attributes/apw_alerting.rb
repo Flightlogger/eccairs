@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module AirNavigationService
         module Attributes
-          class ApwAlerting < Eccairs::BaseEntity
+          class ApwAlerting < Eccairs::Base::Entity
             attribute_id 363
             xml_tag "APW_Alerting"
             sequence 0

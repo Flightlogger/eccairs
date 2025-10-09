@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module PartInformation
             module Attributes
-              class CyclesSinceOverhaul < Eccairs::BaseEntity
+              class CyclesSinceOverhaul < Eccairs::Base::Entity
                 attribute_id 664
                 xml_tag "Cycles_Since_Overhaul"
                 sequence 9

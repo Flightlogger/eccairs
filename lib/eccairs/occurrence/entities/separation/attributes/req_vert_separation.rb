@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Separation
         module Attributes
-          class ReqVertSeparation < Eccairs::BaseEntity
+          class ReqVertSeparation < Eccairs::Base::Entity
             attribute_id 583
             xml_tag "Req_Vert_Separation"
             sequence 6

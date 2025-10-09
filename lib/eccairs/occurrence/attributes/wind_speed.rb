@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class WindSpeed < Eccairs::BaseEntity
+      class WindSpeed < Eccairs::Base::Entity
         attribute_id 322
         xml_tag "Wind_Speed"
         sequence 12

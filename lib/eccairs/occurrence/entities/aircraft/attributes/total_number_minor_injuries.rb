@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class TotalNumberMinorInjuries < Eccairs::BaseEntity
+          class TotalNumberMinorInjuries < Eccairs::Base::Entity
             attribute_id 187
             xml_tag "Total_Number_Minor_Injuries"
             sequence 23

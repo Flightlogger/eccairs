@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class ClearedAltitude < Eccairs::BaseEntity
+          class ClearedAltitude < Eccairs::Base::Entity
             attribute_id 58
             xml_tag "Cleared_Altitude"
             sequence 9

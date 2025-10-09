@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Propeller
             module Attributes
-              class PropPosition < Eccairs::BaseEntity
+              class PropPosition < Eccairs::Base::Entity
                 attribute_id 895
                 xml_tag "Prop_Position"
                 sequence 4

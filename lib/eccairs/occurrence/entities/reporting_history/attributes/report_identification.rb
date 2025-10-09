@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class ReportIdentification < Eccairs::BaseEntity
+          class ReportIdentification < Eccairs::Base::Entity
             attribute_id 438
             xml_tag "Report_Identification"
             sequence 0

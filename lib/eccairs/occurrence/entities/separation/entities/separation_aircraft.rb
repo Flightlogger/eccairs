@@ -6,7 +6,7 @@ module Eccairs
       module Separation
         module Entities
           module SeparationAircraft
-            extend Eccairs::BaseEntityModule
+            extend Eccairs::Base::EntityModule
 
             entity_id "35"
             xml_tag "Separation_Aircraft"

@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class StateAreaOfOcc < Eccairs::BaseEntity
+      class StateAreaOfOcc < Eccairs::Base::Entity
         attribute_id 454
         xml_tag "State_Area_Of_Occ"
         sequence 26

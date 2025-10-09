@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class VisibilityRestrictions < Eccairs::BaseEntity
+          class VisibilityRestrictions < Eccairs::Base::Entity
             attribute_id 311
             xml_tag "Visib_Restrictions"
             sequence 42

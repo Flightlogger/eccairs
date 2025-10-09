@@ -9,7 +9,7 @@ module Eccairs
             module Entities
               module FlightCrewLicenses
                 module Attributes
-                  class LicenseIssuedBy < Eccairs::BaseEntity
+                  class LicenseIssuedBy < Eccairs::Base::Entity
                     attribute_id 399
                     xml_tag "License_Issued_By"
                     sequence 2

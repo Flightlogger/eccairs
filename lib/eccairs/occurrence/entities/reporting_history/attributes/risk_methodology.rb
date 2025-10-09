@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class RiskMethodology < Eccairs::BaseEntity
+          class RiskMethodology < Eccairs::Base::Entity
             attribute_id 1066
             xml_tag "Risk_Methodology"
             sequence 9

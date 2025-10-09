@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class AircraftFlightLevel < Eccairs::BaseEntity
+          class AircraftFlightLevel < Eccairs::Base::Entity
             attribute_id 25
             xml_tag "A_C_Flight_Level"
             sequence 2

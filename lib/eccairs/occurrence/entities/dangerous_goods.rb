@@ -4,7 +4,7 @@ module Eccairs
   module Occurrence
     module Entities
       module DangerousGoods
-        extend Eccairs::BaseEntityModule
+        extend Eccairs::Base::EntityModule
 
         entity_id "43"
         xml_tag "Dangerous_Goods"

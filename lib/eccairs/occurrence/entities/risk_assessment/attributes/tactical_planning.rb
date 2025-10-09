@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module RiskAssessment
         module Attributes
-          class TacticalPlanning < Eccairs::BaseEntity
+          class TacticalPlanning < Eccairs::Base::Entity
             attribute_id 1099
             xml_tag "Tactical_Planning"
             sequence 9

@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class MaximumToMass < Eccairs::BaseEntity
+          class MaximumToMass < Eccairs::Base::Entity
             attribute_id 175
             xml_tag "Maximum_T_O_Mass"
             sequence 22

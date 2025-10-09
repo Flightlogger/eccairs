@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class BirdsWildlifeSeen < Eccairs::BaseEntity
+          class BirdsWildlifeSeen < Eccairs::Base::Entity
             attribute_id 646
             xml_tag "Birds_Wildlife_Seen"
             sequence 49

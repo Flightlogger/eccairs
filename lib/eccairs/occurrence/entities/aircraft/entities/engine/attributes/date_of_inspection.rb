@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Engine
             module Attributes
-              class DateOfInspection < Eccairs::BaseEntity
+              class DateOfInspection < Eccairs::Base::Entity
                 attribute_id 890
                 xml_tag "Date_Of_Inspection"
                 sequence 13

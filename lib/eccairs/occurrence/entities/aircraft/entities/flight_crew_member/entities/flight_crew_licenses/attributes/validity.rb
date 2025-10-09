@@ -9,7 +9,7 @@ module Eccairs
             module Entities
               module FlightCrewLicenses
                 module Attributes
-                  class Validity < Eccairs::BaseEntity
+                  class Validity < Eccairs::Base::Entity
                     attribute_id 397
                     xml_tag "Validity"
                     sequence 0

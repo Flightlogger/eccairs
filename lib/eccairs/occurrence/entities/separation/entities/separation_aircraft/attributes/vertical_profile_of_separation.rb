@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module SeparationAircraft
             module Attributes
-              class VerticalProfileOfSeparation < Eccairs::BaseEntity
+              class VerticalProfileOfSeparation < Eccairs::Base::Entity
                 attribute_id 598
                 xml_tag "Vertical_Profile_Of_Separation"
                 sequence 5

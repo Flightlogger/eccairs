@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class DamageNotToAC < Eccairs::BaseEntity
+      class DamageNotToAC < Eccairs::Base::Entity
         attribute_id 448
         xml_tag "Damage_Not_To_A_C"
         sequence 22

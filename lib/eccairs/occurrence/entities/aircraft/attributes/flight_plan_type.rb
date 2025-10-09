@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class FlightPlanType < Eccairs::BaseEntity
+          class FlightPlanType < Eccairs::Base::Entity
             attribute_id 297
             xml_tag "Flight_Plan_Type"
             sequence 41

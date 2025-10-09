@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class RiskAssessment < Eccairs::BaseEntity
+          class RiskAssessment < Eccairs::Base::Entity
             attribute_id 1068
             xml_tag "Risk_Assessment"
             sequence 11

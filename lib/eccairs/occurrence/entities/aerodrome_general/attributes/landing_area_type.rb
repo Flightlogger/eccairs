@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module AerodromeGeneral
         module Attributes
-          class LandingAreaType < Eccairs::BaseEntity
+          class LandingAreaType < Eccairs::Base::Entity
             attribute_id 9
             xml_tag "Landing_Area_Type"
             sequence 7

@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class OccurrenceStatus < Eccairs::BaseEntity
+      class OccurrenceStatus < Eccairs::Base::Entity
         attribute_id 455
         xml_tag "Occurrence_Status"
         sequence 27

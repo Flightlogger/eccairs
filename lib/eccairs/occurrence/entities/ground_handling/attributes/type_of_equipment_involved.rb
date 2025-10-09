@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module GroundHandling
         module Attributes
-          class TypeOfEquipmentInvolved < Eccairs::BaseEntity
+          class TypeOfEquipmentInvolved < Eccairs::Base::Entity
             attribute_id 1120
             xml_tag "Type_Of_Equipment_Involved"
             sequence 4

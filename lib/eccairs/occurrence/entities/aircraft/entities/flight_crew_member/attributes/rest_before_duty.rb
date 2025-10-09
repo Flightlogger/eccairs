@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module FlightCrewMember
             module Attributes
-              class RestBeforeDuty < Eccairs::BaseEntity
+              class RestBeforeDuty < Eccairs::Base::Entity
                 attribute_id 408
                 xml_tag "Rest_Before_Duty"
                 sequence 2

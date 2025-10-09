@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Runway
             module Attributes
-              class SurfaceType < Eccairs::BaseEntity
+              class SurfaceType < Eccairs::Base::Entity
                 attribute_id 509
                 xml_tag "Surface_Type"
                 sequence 1

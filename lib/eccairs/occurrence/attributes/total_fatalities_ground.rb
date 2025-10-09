@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class TotalFatalitiesGround < Eccairs::BaseEntity
+      class TotalFatalitiesGround < Eccairs::Base::Entity
         attribute_id 460
         xml_tag "Total_Fatalities_Ground"
         sequence 30

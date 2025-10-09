@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class WakeTurbCategory < Eccairs::BaseEntity
+          class WakeTurbCategory < Eccairs::Base::Entity
             attribute_id 313
             xml_tag "Wake_Turb_Category"
             sequence 43

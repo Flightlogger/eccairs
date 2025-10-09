@@ -1,9 +1,10 @@
 # frozen_string_literal: true
 
 module Eccairs
-  # Module to be extended by entity modules (e.g., AerodromeGeneral)
-  # Provides DSL methods for defining entity metadata and XML generation
-  module BaseEntityModule
+  module Base
+    # Module to be extended by entity modules (e.g., AerodromeGeneral)
+    # Provides DSL methods for defining entity metadata and XML generation
+    module EntityModule
     # DSL method to set entity_id at module level
     def entity_id(value = nil)
       if value
@@ -38,6 +39,7 @@ module Eccairs
           entities.sort_by { |e| e.class.sequence }.each { |e| e.build_xml(xml) }
         end
       end
+    end
     end
   end
 end

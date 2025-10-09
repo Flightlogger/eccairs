@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class ResponsibleEntity < Eccairs::BaseEntity
+      class ResponsibleEntity < Eccairs::Base::Entity
         attribute_id 453
         xml_tag "Responsible_Entity"
         sequence 25

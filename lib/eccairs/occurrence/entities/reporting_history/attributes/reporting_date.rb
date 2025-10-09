@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class ReportingDate < Eccairs::BaseEntity
+          class ReportingDate < Eccairs::Base::Entity
             attribute_id 801
             xml_tag "Reporting_Date"
             sequence 5

@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Propeller
             module Attributes
-              class CyclesSinceInsp < Eccairs::BaseEntity
+              class CyclesSinceInsp < Eccairs::Base::Entity
                 attribute_id 904
                 xml_tag "Cycles_Since_Insp"
                 sequence 11

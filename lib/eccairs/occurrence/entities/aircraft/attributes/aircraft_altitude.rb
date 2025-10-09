@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class AircraftAltitude < Eccairs::BaseEntity
+          class AircraftAltitude < Eccairs::Base::Entity
             attribute_id 22
             xml_tag "Aircraft_Altitude"
             sequence 1

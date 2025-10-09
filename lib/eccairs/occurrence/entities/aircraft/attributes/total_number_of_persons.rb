@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class TotalNumberOfPersons < Eccairs::BaseEntity
+          class TotalNumberOfPersons < Eccairs::Base::Entity
             attribute_id 152
             xml_tag "Total_Number_Of_Persons"
             sequence 18

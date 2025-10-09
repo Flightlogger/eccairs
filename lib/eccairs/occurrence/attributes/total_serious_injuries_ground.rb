@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class TotalSeriousInjuriesGround < Eccairs::BaseEntity
+      class TotalSeriousInjuriesGround < Eccairs::Base::Entity
         attribute_id 472
         xml_tag "Total_Serious_Injuries-Ground"
         sequence 34

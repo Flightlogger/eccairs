@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class CurrentFlightRules < Eccairs::BaseEntity
+          class CurrentFlightRules < Eccairs::Base::Entity
             attribute_id 79
             xml_tag "Current_Flight_Rules"
             sequence 12

@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class OperationType < Eccairs::BaseEntity
+          class OperationType < Eccairs::Base::Entity
             attribute_id 214
             xml_tag "Operation_Type"
             sequence 26

@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module AirSpace
         module Attributes
-          class SpecialActivities < Eccairs::BaseEntity
+          class SpecialActivities < Eccairs::Base::Entity
             attribute_id 17
             xml_tag "Special_Activities"
             sequence 4

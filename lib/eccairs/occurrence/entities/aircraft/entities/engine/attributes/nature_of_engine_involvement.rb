@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Engine
             module Attributes
-              class NatureOfEngineInvolvement < Eccairs::BaseEntity
+              class NatureOfEngineInvolvement < Eccairs::Base::Entity
                 attribute_id 654
                 xml_tag "Nature_Of_Engine_Involvement"
                 sequence 3

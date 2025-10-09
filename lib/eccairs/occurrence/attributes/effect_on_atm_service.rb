@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class EffectOnAtmService < Eccairs::BaseEntity
+      class EffectOnAtmService < Eccairs::Base::Entity
         attribute_id 436
         xml_tag "Effect_On_ATM_Service"
         sequence 18

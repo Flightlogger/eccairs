@@ -2,7 +2,7 @@
 
 module Eccairs
   module Occurrence
-    extend Eccairs::BaseEntityModule
+    extend Eccairs::Base::EntityModule
 
     entity_id "24"
     xml_tag "Occurrence"

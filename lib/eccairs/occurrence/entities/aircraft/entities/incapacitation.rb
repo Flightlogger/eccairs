@@ -6,7 +6,7 @@ module Eccairs
       module Aircraft
         module Entities
           module Incapacitation
-            extend Eccairs::BaseEntityModule
+            extend Eccairs::Base::EntityModule
 
             entity_id "20"
             xml_tag "Incapacitation"

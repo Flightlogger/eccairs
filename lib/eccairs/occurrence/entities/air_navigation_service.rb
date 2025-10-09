@@ -4,7 +4,7 @@ module Eccairs
   module Occurrence
     module Entities
       module AirNavigationService
-        extend Eccairs::BaseEntityModule
+        extend Eccairs::Base::EntityModule
 
         entity_id "10"
         xml_tag "Air_Navigation_Service"

@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Engine
             module Attributes
-              class CyclesSinceInsp < Eccairs::BaseEntity
+              class CyclesSinceInsp < Eccairs::Base::Entity
                 attribute_id 887
                 xml_tag "Cycles_Since_Insp"
                 sequence 10

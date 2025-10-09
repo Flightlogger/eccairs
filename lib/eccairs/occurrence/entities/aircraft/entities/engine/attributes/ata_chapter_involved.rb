@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Engine
             module Attributes
-              class AtaChapterInvolved < Eccairs::BaseEntity
+              class AtaChapterInvolved < Eccairs::Base::Entity
                 attribute_id 882
                 xml_tag "ATA_Chapter_Involved"
                 sequence 5

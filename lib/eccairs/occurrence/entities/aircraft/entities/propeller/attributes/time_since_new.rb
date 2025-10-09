@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Propeller
             module Attributes
-              class TimeSinceNew < Eccairs::BaseEntity
+              class TimeSinceNew < Eccairs::Base::Entity
                 attribute_id 899
                 xml_tag "Time_Since_New"
                 sequence 6

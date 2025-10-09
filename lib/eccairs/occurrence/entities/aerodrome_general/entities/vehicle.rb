@@ -6,7 +6,7 @@ module Eccairs
       module AerodromeGeneral
         module Entities
           module Vehicle
-            extend Eccairs::BaseEntityModule
+            extend Eccairs::Base::EntityModule
 
             entity_id "48"
             xml_tag "Vehicle"

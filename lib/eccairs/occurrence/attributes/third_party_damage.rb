@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class ThirdPartyDamage < Eccairs::BaseEntity
+      class ThirdPartyDamage < Eccairs::Base::Entity
         attribute_id 456
         xml_tag "Third_Party_Damage"
         sequence 28

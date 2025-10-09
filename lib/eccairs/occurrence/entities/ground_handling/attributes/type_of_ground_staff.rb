@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module GroundHandling
         module Attributes
-          class TypeOfGroundStaff < Eccairs::BaseEntity
+          class TypeOfGroundStaff < Eccairs::Base::Entity
             attribute_id 1117
             xml_tag "Type_of_Ground_staff"
             sequence 2

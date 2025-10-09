@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class ReportingEntity < Eccairs::BaseEntity
+          class ReportingEntity < Eccairs::Base::Entity
             attribute_id 447
             xml_tag "Reporting_Entity"
             sequence 1

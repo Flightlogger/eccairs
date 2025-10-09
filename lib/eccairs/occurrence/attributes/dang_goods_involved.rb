@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class DangGoodsInvolved < Eccairs::BaseEntity
+      class DangGoodsInvolved < Eccairs::Base::Entity
         attribute_id 129
         xml_tag "Dang_Goods_Involved"
         sequence 2

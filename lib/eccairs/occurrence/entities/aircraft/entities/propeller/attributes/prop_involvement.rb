@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Propeller
             module Attributes
-              class PropInvolvement < Eccairs::BaseEntity
+              class PropInvolvement < Eccairs::Base::Entity
                 attribute_id 896
                 xml_tag "Prop_Involvement"
                 sequence 5

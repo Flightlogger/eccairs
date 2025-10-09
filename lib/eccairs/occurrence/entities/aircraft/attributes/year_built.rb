@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class YearBuilt < Eccairs::BaseEntity
+          class YearBuilt < Eccairs::Base::Entity
             attribute_id 327
             xml_tag "Year_Built"
             sequence 45

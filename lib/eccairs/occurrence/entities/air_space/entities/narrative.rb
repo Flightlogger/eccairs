@@ -6,7 +6,7 @@ module Eccairs
       module AirSpace
         module Entities
           module Narrative
-            extend Eccairs::BaseEntityModule
+            extend Eccairs::Base::EntityModule
 
             entity_id "22"
             xml_tag "Narrative"

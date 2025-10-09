@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Incapacitation
             module Attributes
-              class ReasonForIncapacity < Eccairs::BaseEntity
+              class ReasonForIncapacity < Eccairs::Base::Entity
                 attribute_id 419
                 xml_tag "Reason_For_Incapacity"
                 sequence 1

@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class Operator < Eccairs::BaseEntity
+          class Operator < Eccairs::Base::Entity
             attribute_id 215
             xml_tag "Operator"
             sequence 27

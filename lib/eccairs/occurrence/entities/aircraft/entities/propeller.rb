@@ -6,7 +6,7 @@ module Eccairs
       module Aircraft
         module Entities
           module Propeller
-            extend Eccairs::BaseEntityModule
+            extend Eccairs::Base::EntityModule
 
             entity_id "29"
             xml_tag "Propeller"

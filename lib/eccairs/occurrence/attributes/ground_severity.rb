@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class GroundSeverity < Eccairs::BaseEntity
+      class GroundSeverity < Eccairs::Base::Entity
         attribute_id 1074
         xml_tag "Ground_Severity"
         sequence 42

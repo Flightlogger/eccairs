@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class TotalCyclesAc < Eccairs::BaseEntity
+          class TotalCyclesAc < Eccairs::Base::Entity
             attribute_id 33
             xml_tag "Total_Cycles_A_C"
             sequence 5

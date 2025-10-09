@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class AuthorityOccClosure < Eccairs::BaseEntity
+      class AuthorityOccClosure < Eccairs::Base::Entity
         attribute_id 1087
         xml_tag "Authority_Occ_Closure"
         sequence 50

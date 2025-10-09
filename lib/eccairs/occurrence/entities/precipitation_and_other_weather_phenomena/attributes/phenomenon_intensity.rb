@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module PrecipitationAndOtherWeatherPhenomena
         module Attributes
-          class PhenomenonIntensity < Eccairs::BaseEntity
+          class PhenomenonIntensity < Eccairs::Base::Entity
             attribute_id 230
             xml_tag "Phenomenon_Intensity"
             sequence 0

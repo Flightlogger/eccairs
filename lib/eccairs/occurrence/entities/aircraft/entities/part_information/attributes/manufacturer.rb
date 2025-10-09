@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module PartInformation
             module Attributes
-              class Manufacturer < Eccairs::BaseEntity
+              class Manufacturer < Eccairs::Base::Entity
                 attribute_id 658
                 xml_tag "Manufacturer"
                 sequence 3

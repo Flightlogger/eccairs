@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Separation
         module Attributes
-          class EstVertSeparation < Eccairs::BaseEntity
+          class EstVertSeparation < Eccairs::Base::Entity
             attribute_id 581
             xml_tag "Est_Vert_Separation"
             sequence 5

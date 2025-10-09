@@ -4,7 +4,7 @@ module Eccairs
   module Occurrence
     module Entities
       module AirSpace
-        extend Eccairs::BaseEntityModule
+        extend Eccairs::Base::EntityModule
 
         entity_id "3"
         xml_tag "Air_Space"

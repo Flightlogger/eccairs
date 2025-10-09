@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class RelWindDirection < Eccairs::BaseEntity
+          class RelWindDirection < Eccairs::Base::Entity
             attribute_id 245
             xml_tag "Rel_Wind_Direction"
             sequence 31

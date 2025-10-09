@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module AerodromeGeneral
         module Attributes
-          class AerodromeLatitude < Eccairs::BaseEntity
+          class AerodromeLatitude < Eccairs::Base::Entity
             attribute_id 1
             xml_tag "Aerodrome_Latitude"
             sequence 0

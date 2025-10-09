@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module RiskAssessment
         module Attributes
-          class ErcsScore < Eccairs::BaseEntity
+          class ErcsScore < Eccairs::Base::Entity
             attribute_id 1095
             xml_tag "ERCS_Score"
             sequence 5

@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Separation
         module Attributes
-          class MilitaryACInvolved < Eccairs::BaseEntity
+          class MilitaryACInvolved < Eccairs::Base::Entity
             attribute_id 574
             xml_tag "Military_A_C_Involved"
             sequence 1

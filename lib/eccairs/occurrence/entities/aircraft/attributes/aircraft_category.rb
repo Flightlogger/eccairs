@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class AircraftCategory < Eccairs::BaseEntity
+          class AircraftCategory < Eccairs::Base::Entity
             attribute_id 32
             xml_tag "Aircraft_Category"
             sequence 4

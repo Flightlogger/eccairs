@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class PartsDamaged < Eccairs::BaseEntity
+          class PartsDamaged < Eccairs::Base::Entity
             attribute_id 643
             xml_tag "Parts_Damaged"
             sequence 46

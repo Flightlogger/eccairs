@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class SsrMode < Eccairs::BaseEntity
+          class SsrMode < Eccairs::Base::Entity
             attribute_id 278
             xml_tag "SSR_Mode"
             sequence 37

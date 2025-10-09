@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module FlightCrewMember
             module Attributes
-              class Category < Eccairs::BaseEntity
+              class Category < Eccairs::Base::Entity
                 attribute_id 402
                 xml_tag "Category"
                 sequence 0

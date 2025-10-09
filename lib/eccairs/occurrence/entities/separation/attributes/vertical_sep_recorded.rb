@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Separation
         module Attributes
-          class VerticalSepRecorded < Eccairs::BaseEntity
+          class VerticalSepRecorded < Eccairs::Base::Entity
             attribute_id 585
             xml_tag "Vertical_Sep_Recorded"
             sequence 7

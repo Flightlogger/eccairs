@@ -4,7 +4,7 @@ module Eccairs
   module Occurrence
     module Entities
       module PrecipitationAndOtherWeatherPhenomena
-        extend Eccairs::BaseEntityModule
+        extend Eccairs::Base::EntityModule
 
         entity_id "28"
         xml_tag "Precipitation_And_Other_Weather_Phenomena"

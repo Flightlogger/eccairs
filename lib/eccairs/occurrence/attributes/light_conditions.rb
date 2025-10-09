@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class LightConditions < Eccairs::BaseEntity
+      class LightConditions < Eccairs::Base::Entity
         attribute_id 168
         xml_tag "Light_Conditions"
         sequence 4

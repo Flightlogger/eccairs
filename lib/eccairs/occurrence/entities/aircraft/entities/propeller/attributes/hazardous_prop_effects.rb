@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Propeller
             module Attributes
-              class HazardousPropEffects < Eccairs::BaseEntity
+              class HazardousPropEffects < Eccairs::Base::Entity
                 attribute_id 946
                 xml_tag "Hazardous_Prop_Effects"
                 sequence 15

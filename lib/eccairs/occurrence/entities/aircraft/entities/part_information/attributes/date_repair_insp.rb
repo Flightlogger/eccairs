@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module PartInformation
             module Attributes
-              class DateRepairInsp < Eccairs::BaseEntity
+              class DateRepairInsp < Eccairs::Base::Entity
                 attribute_id 668
                 xml_tag "Date_Repair_Insp"
                 sequence 13

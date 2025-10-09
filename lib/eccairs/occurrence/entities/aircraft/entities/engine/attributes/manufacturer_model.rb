@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Engine
             module Attributes
-              class ManufacturerModel < Eccairs::BaseEntity
+              class ManufacturerModel < Eccairs::Base::Entity
                 attribute_id 387
                 xml_tag "Manufacturer_Model"
                 sequence 0

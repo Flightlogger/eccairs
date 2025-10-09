@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Propeller
             module Attributes
-              class TimeSinceInspection < Eccairs::BaseEntity
+              class TimeSinceInspection < Eccairs::Base::Entity
                 attribute_id 901
                 xml_tag "Time_Since_Inspection"
                 sequence 8

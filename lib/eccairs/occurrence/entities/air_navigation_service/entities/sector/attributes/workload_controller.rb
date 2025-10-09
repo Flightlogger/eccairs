@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Sector
             module Attributes
-              class WorkloadController < Eccairs::BaseEntity
+              class WorkloadController < Eccairs::Base::Entity
                 attribute_id 559
                 xml_tag "Workload_Controller"
                 sequence 2

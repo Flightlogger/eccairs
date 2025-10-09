@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Separation
         module Attributes
-          class HorizontalRelMvmt < Eccairs::BaseEntity
+          class HorizontalRelMvmt < Eccairs::Base::Entity
             attribute_id 570
             xml_tag "Horizontal_Rel_Mvmt"
             sequence 0

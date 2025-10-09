@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Separation
         module Attributes
-          class MinHorizSepRec < Eccairs::BaseEntity
+          class MinHorizSepRec < Eccairs::Base::Entity
             attribute_id 579
             xml_tag "Min_Horiz_Sep_Rec"
             sequence 4

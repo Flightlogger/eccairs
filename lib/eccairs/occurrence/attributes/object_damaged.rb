@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class ObjectDamaged < Eccairs::BaseEntity
+      class ObjectDamaged < Eccairs::Base::Entity
         attribute_id 640
         xml_tag "Object_Damaged"
         sequence 39

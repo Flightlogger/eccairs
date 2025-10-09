@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module PartInformation
             module Attributes
-              class LifeControlledPart < Eccairs::BaseEntity
+              class LifeControlledPart < Eccairs::Base::Entity
                 attribute_id 1114
                 xml_tag "Life_Controlled_Part"
                 sequence 14

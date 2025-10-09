@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class HighestDamage < Eccairs::BaseEntity
+      class HighestDamage < Eccairs::Base::Entity
         attribute_id 432
         xml_tag "Highest_Damage"
         sequence 16

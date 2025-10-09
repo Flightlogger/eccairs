@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class OverallRepeatability < Eccairs::BaseEntity
+      class OverallRepeatability < Eccairs::Base::Entity
         attribute_id 1078
         xml_tag "Overall_Repeatability"
         sequence 46

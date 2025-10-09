@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Sector
             module Attributes
-              class ServicesProvided < Eccairs::BaseEntity
+              class ServicesProvided < Eccairs::Base::Entity
                 attribute_id 527
                 xml_tag "Services_Provided"
                 sequence 1

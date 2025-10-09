@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class FileNumber < Eccairs::BaseEntity
+      class FileNumber < Eccairs::Base::Entity
         attribute_id 452
         xml_tag "File_Number"
         sequence 24

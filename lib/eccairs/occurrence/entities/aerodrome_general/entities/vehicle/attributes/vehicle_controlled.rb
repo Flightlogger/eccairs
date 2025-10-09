@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Vehicle
             module Attributes
-              class VehicleControlled < Eccairs::BaseEntity
+              class VehicleControlled < Eccairs::Base::Entity
                 attribute_id 743
                 xml_tag "Vehicle_Controlled"
                 sequence 1

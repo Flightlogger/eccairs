@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Engine
             module Attributes
-              class EnginePosition < Eccairs::BaseEntity
+              class EnginePosition < Eccairs::Base::Entity
                 attribute_id 653
                 xml_tag "Engine_Position"
                 sequence 2

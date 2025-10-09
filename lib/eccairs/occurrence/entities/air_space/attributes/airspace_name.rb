@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module AirSpace
         module Attributes
-          class AirspaceName < Eccairs::BaseEntity
+          class AirspaceName < Eccairs::Base::Entity
             attribute_id 14
             xml_tag "Airspace_Name"
             sequence 1

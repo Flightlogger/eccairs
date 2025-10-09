@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module DangerousGoods
         module Attributes
-          class NumberOfInnerPackages < Eccairs::BaseEntity
+          class NumberOfInnerPackages < Eccairs::Base::Entity
             attribute_id 1058
             xml_tag "Number_Of_Inner_Packages"
             sequence 8

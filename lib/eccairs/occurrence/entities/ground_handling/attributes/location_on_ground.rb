@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module GroundHandling
         module Attributes
-          class LocationOnGround < Eccairs::BaseEntity
+          class LocationOnGround < Eccairs::Base::Entity
             attribute_id 1118
             xml_tag "Location_On_Ground"
             sequence 3

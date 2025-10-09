@@ -9,7 +9,7 @@ module Eccairs
             module Entities
               module FlightCrewLicenses
                 module Attributes
-                  class LicenseType < Eccairs::BaseEntity
+                  class LicenseType < Eccairs::Base::Entity
                     attribute_id 400
                     xml_tag "License_Type"
                     sequence 3

@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class TypeOfAirspeed < Eccairs::BaseEntity
+          class TypeOfAirspeed < Eccairs::Base::Entity
             attribute_id 276
             xml_tag "Type_Of_Airspeed"
             sequence 36

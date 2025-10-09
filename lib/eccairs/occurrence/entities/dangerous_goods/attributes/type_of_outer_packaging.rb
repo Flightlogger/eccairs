@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module DangerousGoods
         module Attributes
-          class TypeOfOuterPackaging < Eccairs::BaseEntity
+          class TypeOfOuterPackaging < Eccairs::Base::Entity
             attribute_id 1056
             xml_tag "Type_Of_Outer_Packaging"
             sequence 6

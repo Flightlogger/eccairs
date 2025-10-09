@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class FiledFlightRules < Eccairs::BaseEntity
+          class FiledFlightRules < Eccairs::Base::Entity
             attribute_id 117
             xml_tag "Filed_Flight_Rules"
             sequence 14

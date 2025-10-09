@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module SeparationAircraft
             module Attributes
-              class RiskReductionAC < Eccairs::BaseEntity
+              class RiskReductionAC < Eccairs::Base::Entity
                 attribute_id 591
                 xml_tag "Risk_Reduction_A_C"
                 sequence 3

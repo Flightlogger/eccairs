@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class SidRoute < Eccairs::BaseEntity
+          class SidRoute < Eccairs::Base::Entity
             attribute_id 264
             xml_tag "SID_Route"
             sequence 34

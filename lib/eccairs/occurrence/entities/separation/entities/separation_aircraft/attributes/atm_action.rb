@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module SeparationAircraft
             module Attributes
-              class AtmAction < Eccairs::BaseEntity
+              class AtmAction < Eccairs::Base::Entity
                 attribute_id 565
                 xml_tag "ATM_Action"
                 sequence 0

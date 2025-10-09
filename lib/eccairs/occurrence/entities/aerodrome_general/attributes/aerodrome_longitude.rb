@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module AerodromeGeneral
         module Attributes
-          class AerodromeLongitude < Eccairs::BaseEntity
+          class AerodromeLongitude < Eccairs::Base::Entity
             attribute_id 2
             xml_tag "Aerodrome_Longitude"
             sequence 1

@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class NumberOfEngines < Eccairs::BaseEntity
+          class NumberOfEngines < Eccairs::Base::Entity
             attribute_id 209
             xml_tag "Number_Of_Engines"
             sequence 24

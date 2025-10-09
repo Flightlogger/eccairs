@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module AerodromeGeneral
         module Attributes
-          class LocationIndicator < Eccairs::BaseEntity
+          class LocationIndicator < Eccairs::Base::Entity
             attribute_id 5
             xml_tag "Location_Indicator"
             sequence 4

@@ -3,10 +3,10 @@
 require "spec_helper"
 require "nokogiri"
 
-RSpec.describe Eccairs::BaseEntityModule do
+RSpec.describe Eccairs::Base::EntityModule do
   let(:test_module) do
     Module.new do
-      extend Eccairs::BaseEntityModule
+      extend Eccairs::Base::EntityModule
     end
   end
 
@@ -45,7 +45,7 @@ RSpec.describe Eccairs::BaseEntityModule do
   describe ".build_entity_xml" do
     let(:configured_module) do
       Module.new do
-        extend Eccairs::BaseEntityModule
+        extend Eccairs::Base::EntityModule
 
         entity_id "1"
         xml_tag "Test_Entity"

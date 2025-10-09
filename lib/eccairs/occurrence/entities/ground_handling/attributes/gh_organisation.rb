@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module GroundHandling
         module Attributes
-          class GhOrganisation < Eccairs::BaseEntity
+          class GhOrganisation < Eccairs::Base::Entity
             attribute_id 1116
             xml_tag "GH_Organisation"
             sequence 1

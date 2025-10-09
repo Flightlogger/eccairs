@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class ReportingFormType < Eccairs::BaseEntity
+          class ReportingFormType < Eccairs::Base::Entity
             attribute_id 495
             xml_tag "Reporting_Form_Type"
             sequence 3

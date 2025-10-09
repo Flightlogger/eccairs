@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Vehicle
             module Attributes
-              class TypeOfVehicle < Eccairs::BaseEntity
+              class TypeOfVehicle < Eccairs::Base::Entity
                 attribute_id 733
                 xml_tag "Type_Of_Vehicle"
                 sequence 0

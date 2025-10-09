@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class GroundRepeatability < Eccairs::BaseEntity
+      class GroundRepeatability < Eccairs::Base::Entity
         attribute_id 1075
         xml_tag "Ground_Repeatability"
         sequence 43

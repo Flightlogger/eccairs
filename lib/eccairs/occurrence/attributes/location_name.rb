@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class LocationName < Eccairs::BaseEntity
+      class LocationName < Eccairs::Base::Entity
         attribute_id 440
         xml_tag "Location_Name"
         sequence 20

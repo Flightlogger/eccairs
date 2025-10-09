@@ -8,7 +8,7 @@ module Eccairs
           module SeparationAircraft
             module Entities
               module SeparationTrafficInfoTypeQuality
-                extend Eccairs::BaseEntityModule
+                extend Eccairs::Base::EntityModule
 
                 entity_id "36"
                 xml_tag "Separation_Traffic_Info_Type_Quality"

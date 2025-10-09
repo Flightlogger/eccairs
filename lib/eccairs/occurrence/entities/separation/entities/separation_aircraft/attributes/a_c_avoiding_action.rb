@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module SeparationAircraft
             module Attributes
-              class ACAvoidingAction < Eccairs::BaseEntity
+              class ACAvoidingAction < Eccairs::Base::Entity
                 attribute_id 566
                 xml_tag "A_C_Avoiding_Action"
                 sequence 1

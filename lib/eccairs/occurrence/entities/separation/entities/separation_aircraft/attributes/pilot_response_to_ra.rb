@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module SeparationAircraft
             module Attributes
-              class PilotResponseToRa < Eccairs::BaseEntity
+              class PilotResponseToRa < Eccairs::Base::Entity
                 attribute_id 611
                 xml_tag "Pilot_Response_To_RA"
                 sequence 7

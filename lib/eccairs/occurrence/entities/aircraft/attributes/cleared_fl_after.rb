@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class ClearedFlAfter < Eccairs::BaseEntity
+          class ClearedFlAfter < Eccairs::Base::Entity
             attribute_id 817
             xml_tag "Cleared_FL_After"
             sequence 54

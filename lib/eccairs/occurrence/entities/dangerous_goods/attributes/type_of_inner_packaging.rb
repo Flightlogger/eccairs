@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module DangerousGoods
         module Attributes
-          class TypeOfInnerPackaging < Eccairs::BaseEntity
+          class TypeOfInnerPackaging < Eccairs::Base::Entity
             attribute_id 1059
             xml_tag "Type_Of_Inner_Packaging"
             sequence 9

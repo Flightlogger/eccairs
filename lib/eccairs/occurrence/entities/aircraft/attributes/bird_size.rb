@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class BirdSize < Eccairs::BaseEntity
+          class BirdSize < Eccairs::Base::Entity
             attribute_id 648
             xml_tag "Bird_Size"
             sequence 51

@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Propeller
             module Attributes
-              class CyclesSinceOverh < Eccairs::BaseEntity
+              class CyclesSinceOverh < Eccairs::Base::Entity
                 attribute_id 903
                 xml_tag "Cycles_Since_Overh"
                 sequence 10

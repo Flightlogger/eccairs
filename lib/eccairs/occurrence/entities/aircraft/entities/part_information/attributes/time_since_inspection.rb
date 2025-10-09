@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module PartInformation
             module Attributes
-              class TimeSinceInspection < Eccairs::BaseEntity
+              class TimeSinceInspection < Eccairs::Base::Entity
                 attribute_id 662
                 xml_tag "Time_Since_Inspection"
                 sequence 7

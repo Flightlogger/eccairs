@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module DangerousGoods
         module Attributes
-          class DangerousGood < Eccairs::BaseEntity
+          class DangerousGood < Eccairs::Base::Entity
             attribute_id 688
             xml_tag "Dangerous_Good"
             sequence 0

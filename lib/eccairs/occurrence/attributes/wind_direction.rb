@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class WindDirection < Eccairs::BaseEntity
+      class WindDirection < Eccairs::Base::Entity
         attribute_id 320
         xml_tag "Wind_Direction"
         sequence 10

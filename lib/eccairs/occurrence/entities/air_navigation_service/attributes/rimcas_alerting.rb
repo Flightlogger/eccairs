@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module AirNavigationService
         module Attributes
-          class RimcasAlerting < Eccairs::BaseEntity
+          class RimcasAlerting < Eccairs::Base::Entity
             attribute_id 366
             xml_tag "RIMCAS_Alerting"
             sequence 1

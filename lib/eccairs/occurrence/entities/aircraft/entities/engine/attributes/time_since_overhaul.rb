@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Engine
             module Attributes
-              class TimeSinceOverhaul < Eccairs::BaseEntity
+              class TimeSinceOverhaul < Eccairs::Base::Entity
                 attribute_id 389
                 xml_tag "Time_Since_Overhaul"
                 sequence 1

@@ -6,7 +6,7 @@ module Eccairs
       module Aircraft
         module Entities
           module FlightCrewMember
-            extend Eccairs::BaseEntityModule
+            extend Eccairs::Base::EntityModule
 
             entity_id "17"
             xml_tag "Flight_Crew_Member"

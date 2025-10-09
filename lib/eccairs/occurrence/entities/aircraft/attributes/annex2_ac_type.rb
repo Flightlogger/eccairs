@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class Annex2AcType < Eccairs::BaseEntity
+          class Annex2AcType < Eccairs::Base::Entity
             attribute_id 1090
             xml_tag "Annex_2_A_C_Type"
             sequence 55

@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module PartInformation
             module Attributes
-              class AtaChapterNumber < Eccairs::BaseEntity
+              class AtaChapterNumber < Eccairs::Base::Entity
                 attribute_id 659
                 xml_tag "ATA_Chapter_Number"
                 sequence 4

@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class TurbulenceIntensity < Eccairs::BaseEntity
+          class TurbulenceIntensity < Eccairs::Base::Entity
             attribute_id 293
             xml_tag "Turbulence_Intensity"
             sequence 40

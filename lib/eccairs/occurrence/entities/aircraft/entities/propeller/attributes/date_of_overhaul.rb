@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Propeller
             module Attributes
-              class DateOfOverhaul < Eccairs::BaseEntity
+              class DateOfOverhaul < Eccairs::Base::Entity
                 attribute_id 906
                 xml_tag "Date_Of_Overhaul"
                 sequence 13

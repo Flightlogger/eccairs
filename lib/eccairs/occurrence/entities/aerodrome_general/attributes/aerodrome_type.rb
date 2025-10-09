@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module AerodromeGeneral
         module Attributes
-          class AerodromeType < Eccairs::BaseEntity
+          class AerodromeType < Eccairs::Base::Entity
             attribute_id 10
             xml_tag "Aerodrome_Type"
             sequence 8

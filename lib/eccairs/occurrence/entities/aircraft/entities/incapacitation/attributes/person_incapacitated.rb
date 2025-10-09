@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Incapacitation
             module Attributes
-              class PersonIncapacitated < Eccairs::BaseEntity
+              class PersonIncapacitated < Eccairs::Base::Entity
                 attribute_id 418
                 xml_tag "Person_Incapacitated"
                 sequence 0

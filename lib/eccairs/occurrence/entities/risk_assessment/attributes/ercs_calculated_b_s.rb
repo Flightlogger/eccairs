@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module RiskAssessment
         module Attributes
-          class ErcsCalculatedBS < Eccairs::BaseEntity
+          class ErcsCalculatedBS < Eccairs::Base::Entity
             attribute_id 1106
             xml_tag "ERCS_Calculated_B_S"
             sequence 16

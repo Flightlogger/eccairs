@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Sector
             module Attributes
-              class SectorName < Eccairs::BaseEntity
+              class SectorName < Eccairs::Base::Entity
                 attribute_id 526
                 xml_tag "Sector_Name"
                 sequence 0

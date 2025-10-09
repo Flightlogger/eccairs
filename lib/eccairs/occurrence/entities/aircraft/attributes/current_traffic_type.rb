@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class CurrentTrafficType < Eccairs::BaseEntity
+          class CurrentTrafficType < Eccairs::Base::Entity
             attribute_id 29
             xml_tag "Current_Traffic_Type"
             sequence 3

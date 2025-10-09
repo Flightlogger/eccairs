@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class LandingGearType < Eccairs::BaseEntity
+          class LandingGearType < Eccairs::Base::Entity
             attribute_id 166
             xml_tag "Landing_Gear_Type"
             sequence 20

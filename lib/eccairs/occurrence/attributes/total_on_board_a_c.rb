@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class TotalOnBoardAC < Eccairs::BaseEntity
+      class TotalOnBoardAC < Eccairs::Base::Entity
         attribute_id 462
         xml_tag "Total_On_Board_A_C"
         sequence 31

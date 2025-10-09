@@ -4,7 +4,7 @@ module Eccairs
   module Occurrence
     module Entities
       module AerodromeGeneral
-        extend Eccairs::BaseEntityModule
+        extend Eccairs::Base::EntityModule
 
         entity_id "1"
         xml_tag "Aerodrome_General"

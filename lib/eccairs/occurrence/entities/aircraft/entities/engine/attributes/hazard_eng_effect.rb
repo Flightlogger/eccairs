@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Engine
             module Attributes
-              class HazardEngEffect < Eccairs::BaseEntity
+              class HazardEngEffect < Eccairs::Base::Entity
                 attribute_id 945
                 xml_tag "Hazard_Eng_Effect"
                 sequence 14

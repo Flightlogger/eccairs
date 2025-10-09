@@ -8,7 +8,7 @@ module Eccairs
           module Sector
             module Entities
               module AtmStaff
-                extend Eccairs::BaseEntityModule
+                extend Eccairs::Base::EntityModule
 
                 entity_id "9"
                 xml_tag "ATM_Staff"

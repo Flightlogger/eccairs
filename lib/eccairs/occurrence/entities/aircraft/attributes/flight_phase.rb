@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class FlightPhase < Eccairs::BaseEntity
+          class FlightPhase < Eccairs::Base::Entity
             attribute_id 121
             xml_tag "Flight_Phase"
             sequence 17

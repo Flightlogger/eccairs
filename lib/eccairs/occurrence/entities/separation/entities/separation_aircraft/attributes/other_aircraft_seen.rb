@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module SeparationAircraft
             module Attributes
-              class OtherAircraftSeen < Eccairs::BaseEntity
+              class OtherAircraftSeen < Eccairs::Base::Entity
                 attribute_id 587
                 xml_tag "Other_Aircraft_Seen"
                 sequence 2

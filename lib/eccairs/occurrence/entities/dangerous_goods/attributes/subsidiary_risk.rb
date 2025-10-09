@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module DangerousGoods
         module Attributes
-          class SubsidiaryRisk < Eccairs::BaseEntity
+          class SubsidiaryRisk < Eccairs::Base::Entity
             attribute_id 1055
             xml_tag "Subsidiary_Risk"
             sequence 5

@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module PrecipitationAndOtherWeatherPhenomena
         module Attributes
-          class PhenomenonType < Eccairs::BaseEntity
+          class PhenomenonType < Eccairs::Base::Entity
             attribute_id 299
             xml_tag "Phenomenon_Type"
             sequence 1

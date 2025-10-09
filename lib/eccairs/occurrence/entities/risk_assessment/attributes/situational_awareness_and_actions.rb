@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module RiskAssessment
         module Attributes
-          class SituationalAwarenessAndActions < Eccairs::BaseEntity
+          class SituationalAwarenessAndActions < Eccairs::Base::Entity
             attribute_id 1101
             xml_tag "Situational_Awareness_And_Actions"
             sequence 11

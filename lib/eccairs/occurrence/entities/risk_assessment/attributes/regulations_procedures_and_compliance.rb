@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module RiskAssessment
         module Attributes
-          class RegulationsProceduresAndCompliance < Eccairs::BaseEntity
+          class RegulationsProceduresAndCompliance < Eccairs::Base::Entity
             attribute_id 1100
             xml_tag "Regulations_Procedures_And_Compliance"
             sequence 10

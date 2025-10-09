@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class SpecTechRepeatability < Eccairs::BaseEntity
+      class SpecTechRepeatability < Eccairs::Base::Entity
         attribute_id 1081
         xml_tag "Spec_Tech_Repeatability"
         sequence 49

@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Narrative
             module Attributes
-              class NarrativeLanguage < Eccairs::BaseEntity
+              class NarrativeLanguage < Eccairs::Base::Entity
                 attribute_id 424
                 xml_tag "Narrative_Language"
                 sequence 0

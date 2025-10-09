@@ -9,7 +9,7 @@ module Eccairs
             module Entities
               module AtmStaff
                 module Attributes
-                  class DutyTimeInPosition < Eccairs::BaseEntity
+                  class DutyTimeInPosition < Eccairs::Base::Entity
                     attribute_id 347
                     xml_tag "Duty_Time_In_Position"
                     sequence 1

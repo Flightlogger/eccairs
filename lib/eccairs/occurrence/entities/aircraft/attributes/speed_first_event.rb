@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class SpeedFirstEvent < Eccairs::BaseEntity
+          class SpeedFirstEvent < Eccairs::Base::Entity
             attribute_id 273
             xml_tag "Speed_First_Event"
             sequence 35

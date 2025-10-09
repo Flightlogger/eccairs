@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class OtherReportInform < Eccairs::BaseEntity
+          class OtherReportInform < Eccairs::Base::Entity
             attribute_id 1085
             xml_tag "Other_Report_Inform"
             sequence 16

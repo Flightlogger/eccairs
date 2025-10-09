@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class PlannedDestination < Eccairs::BaseEntity
+          class PlannedDestination < Eccairs::Base::Entity
             attribute_id 228
             xml_tag "Planned_Destination"
             sequence 28

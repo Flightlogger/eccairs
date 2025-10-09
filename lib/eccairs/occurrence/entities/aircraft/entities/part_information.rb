@@ -6,7 +6,7 @@ module Eccairs
       module Aircraft
         module Entities
           module PartInformation
-            extend Eccairs::BaseEntityModule
+            extend Eccairs::Base::EntityModule
 
             entity_id "26"
             xml_tag "Part_Information"

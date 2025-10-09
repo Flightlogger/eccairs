@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Propeller
             module Attributes
-              class MakeOfPropeller < Eccairs::BaseEntity
+              class MakeOfPropeller < Eccairs::Base::Entity
                 attribute_id 492
                 xml_tag "Make_Of_Propeller"
                 sequence 0

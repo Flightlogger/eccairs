@@ -9,7 +9,7 @@ module Eccairs
             module Entities
               module AtmStaff
                 module Attributes
-                  class CismOffered < Eccairs::BaseEntity
+                  class CismOffered < Eccairs::Base::Entity
                     attribute_id 340
                     xml_tag "CISM_Offered"
                     sequence 0

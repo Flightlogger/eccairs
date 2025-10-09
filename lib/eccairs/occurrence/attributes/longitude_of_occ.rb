@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class LongitudeOfOcc < Eccairs::BaseEntity
+      class LongitudeOfOcc < Eccairs::Base::Entity
         attribute_id 444
         xml_tag "Longitude_Of_Occ"
         sequence 21

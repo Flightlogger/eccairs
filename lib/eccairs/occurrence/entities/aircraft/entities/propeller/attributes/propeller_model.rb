@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module Propeller
             module Attributes
-              class PropellerModel < Eccairs::BaseEntity
+              class PropellerModel < Eccairs::Base::Entity
                 attribute_id 493
                 xml_tag "Propeller_Model"
                 sequence 1

@@ -2,7 +2,7 @@
 
 require "nokogiri"
 
-RSpec.describe Eccairs::BaseEntity do
+RSpec.describe Eccairs::Base::Entity do
   describe "#initialize" do
     it "initializes with nil value by default" do
       entity = described_class.new

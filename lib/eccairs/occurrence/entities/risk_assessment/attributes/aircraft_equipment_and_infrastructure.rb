@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module RiskAssessment
         module Attributes
-          class AircraftEquipmentAndInfrastructure < Eccairs::BaseEntity
+          class AircraftEquipmentAndInfrastructure < Eccairs::Base::Entity
             attribute_id 1098
             xml_tag "Aircraft_Equipment_And_Infrastructure"
             sequence 8

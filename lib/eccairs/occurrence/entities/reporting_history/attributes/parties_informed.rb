@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class PartiesInformed < Eccairs::BaseEntity
+          class PartiesInformed < Eccairs::Base::Entity
             attribute_id 1064
             xml_tag "Parties_Informed"
             sequence 7

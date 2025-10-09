@@ -6,7 +6,7 @@ module Eccairs
       module AirNavigationService
         module Entities
           module Sector
-            extend Eccairs::BaseEntityModule
+            extend Eccairs::Base::EntityModule
 
             entity_id "33"
             xml_tag "Sector"

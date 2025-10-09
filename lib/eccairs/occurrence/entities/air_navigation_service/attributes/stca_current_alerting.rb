@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module AirNavigationService
         module Attributes
-          class StcaCurrentAlerting < Eccairs::BaseEntity
+          class StcaCurrentAlerting < Eccairs::Base::Entity
             attribute_id 379
             xml_tag "STCA_Current_Alerting"
             sequence 4

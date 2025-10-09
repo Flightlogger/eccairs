@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module ReportingHistory
         module Attributes
-          class ReportSource < Eccairs::BaseEntity
+          class ReportSource < Eccairs::Base::Entity
             attribute_id 476
             xml_tag "Report_Source"
             sequence 2

@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class SpeedMeasuredAt < Eccairs::BaseEntity
+      class SpeedMeasuredAt < Eccairs::Base::Entity
         attribute_id 275
         xml_tag "Speed_Measured_At"
         sequence 7

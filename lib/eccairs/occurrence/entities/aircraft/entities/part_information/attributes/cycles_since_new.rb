@@ -7,7 +7,7 @@ module Eccairs
         module Entities
           module PartInformation
             module Attributes
-              class CyclesSinceNew < Eccairs::BaseEntity
+              class CyclesSinceNew < Eccairs::Base::Entity
                 attribute_id 663
                 xml_tag "Cycles_Since_New"
                 sequence 8

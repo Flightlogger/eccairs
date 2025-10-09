@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class HeightOfCloudBase < Eccairs::BaseEntity
+      class HeightOfCloudBase < Eccairs::Base::Entity
         attribute_id 140
         xml_tag "Height_Of_Cloud_Base"
         sequence 3

@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class AtmContribution < Eccairs::BaseEntity
+      class AtmContribution < Eccairs::Base::Entity
         attribute_id 428
         xml_tag "ATM_Contribution"
         sequence 13

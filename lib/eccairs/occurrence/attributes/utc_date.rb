@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class UtcDate < Eccairs::BaseEntity
+      class UtcDate < Eccairs::Base::Entity
         attribute_id 477
         xml_tag "UTC_Date"
         sequence 35

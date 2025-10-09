@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module RiskAssessment
         module Attributes
-          class RiskMethod < Eccairs::BaseEntity
+          class RiskMethod < Eccairs::Base::Entity
             attribute_id 939
             xml_tag "Risk_Method"
             sequence 1

@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module AerodromeGeneral
         module Attributes
-          class LocationOnNearAerodrome < Eccairs::BaseEntity
+          class LocationOnNearAerodrome < Eccairs::Base::Entity
             attribute_id 641
             xml_tag "Location_On_Near_Aerodrome"
             sequence 9

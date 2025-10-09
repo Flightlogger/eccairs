@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module RiskAssessment
         module Attributes
-          class RecoveryAction < Eccairs::BaseEntity
+          class RecoveryAction < Eccairs::Base::Entity
             attribute_id 1103
             xml_tag "Recovery_Action"
             sequence 13

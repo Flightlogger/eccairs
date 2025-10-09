@@ -4,7 +4,7 @@ module Eccairs
   module Occurrence
     module Entities
       module Events
-        extend Eccairs::BaseEntityModule
+        extend Eccairs::Base::EntityModule
 
         entity_id "14"
         xml_tag "Events"

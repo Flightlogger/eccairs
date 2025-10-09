@@ -5,7 +5,7 @@ module Eccairs
     module Entities
       module Aircraft
         module Attributes
-          class AircraftTotalTime < Eccairs::BaseEntity
+          class AircraftTotalTime < Eccairs::Base::Entity
             attribute_id 291
             xml_tag "Aircraft_Total_Time"
             sequence 39

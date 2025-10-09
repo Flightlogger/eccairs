@@ -3,7 +3,7 @@
 module Eccairs
   module Occurrence
     module Attributes
-      class WindGusts < Eccairs::BaseEntity
+      class WindGusts < Eccairs::Base::Entity
         attribute_id 321
         xml_tag "Wind_Gusts"
         sequence 11
