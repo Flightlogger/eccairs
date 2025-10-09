@@ -9,11 +9,9 @@ module Eccairs
             attribute_id 585
             xml_tag "Vertical_Sep_Recorded"
             sequence 7
-            validates_numericality min: -999999, max: 999999, type: :decimal
+            unit "ft"
 
-            def additional_xml_attributes
-              {Unit: "ft"}
-            end
+            validates_numericality min: -999999, max: 999999, type: :decimal
           end
         end
       end

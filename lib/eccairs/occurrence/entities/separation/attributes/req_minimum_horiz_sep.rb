@@ -9,11 +9,9 @@ module Eccairs
             attribute_id 577
             xml_tag "Req_Minimum_Horiz_Sep"
             sequence 3
-            validates_numericality min: -999999, max: 999999, type: :decimal
+            unit "NM"
 
-            def additional_xml_attributes
-              {Unit: "NM"}
-            end
+            validates_numericality min: -999999, max: 999999, type: :decimal
           end
         end
       end

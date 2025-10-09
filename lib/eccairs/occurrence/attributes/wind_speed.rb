@@ -7,13 +7,8 @@ module Eccairs
         attribute_id 322
         xml_tag "Wind_Speed"
         sequence 12
+        unit "kt"
         validates_numericality min: -1000, max: 100000, type: :decimal
-
-        protected
-
-        def additional_xml_attributes
-          {Unit: "kt"}
-        end
       end
     end
   end

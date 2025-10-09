@@ -7,13 +7,8 @@ module Eccairs
         attribute_id 287
         xml_tag "Air_Temperature"
         sequence 8
+        unit "C"
         validates_numericality min: -1000, max: 100000, type: :decimal
-
-        protected
-
-        def additional_xml_attributes
-          {Unit: "C"}
-        end
       end
     end
   end

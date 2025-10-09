@@ -7,13 +7,9 @@ module Eccairs
         attribute_id 320
         xml_tag "Wind_Direction"
         sequence 10
+        unit "Degree(s)"
+
         validates_numericality min: -1000, max: 100000, type: :decimal
-
-        protected
-
-        def additional_xml_attributes
-          {Unit: "Degree(s)"}
-        end
       end
     end
   end

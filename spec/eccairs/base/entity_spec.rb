@@ -275,26 +275,7 @@ RSpec.describe Eccairs::Base::Entity do
       expect(xml_string).to include('<Test_Tag attributeId="123">test_value</Test_Tag>')
     end
 
-    it "includes additional_xml_attributes when defined" do
-      test_class = Class.new(described_class) do
-        attribute_id 123
-        xml_tag :Test_Tag
 
-        def additional_xml_attributes
-          {Unit: "C", Type: "decimal"}
-        end
-      end
-
-      entity = test_class.new(42)
-      builder = Nokogiri::XML::Builder.new do |xml|
-        entity.build_xml(xml)
-      end
-
-      xml_string = builder.to_xml
-      expect(xml_string).to include('Unit="C"')
-      expect(xml_string).to include('Type="decimal"')
-      expect(xml_string).to include('attributeId="123"')
-    end
 
     it "wraps text in specified element when wrap_text_in is used" do
       test_class = Class.new(described_class) do

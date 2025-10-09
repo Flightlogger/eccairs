@@ -7,13 +7,9 @@ module Eccairs
         attribute_id 176
         xml_tag "Maximum_Gust"
         sequence 5
+        unit "kt"
+
         validates_numericality min: -1000, max: 100000, type: :decimal
-
-        protected
-
-        def additional_xml_attributes
-          {Unit: "kt"}
-        end
       end
     end
   end

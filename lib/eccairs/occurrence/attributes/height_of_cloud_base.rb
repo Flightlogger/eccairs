@@ -7,13 +7,9 @@ module Eccairs
         attribute_id 140
         xml_tag "Height_Of_Cloud_Base"
         sequence 3
+        unit "ft"
+
         validates_numericality min: -1000, max: 100000, type: :decimal
-
-        protected
-
-        def additional_xml_attributes
-          {Unit: "ft"}
-        end
       end
     end
   end

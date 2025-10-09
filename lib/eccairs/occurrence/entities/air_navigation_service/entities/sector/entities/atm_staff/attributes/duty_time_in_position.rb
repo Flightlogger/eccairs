@@ -13,11 +13,9 @@ module Eccairs
                     attribute_id 347
                     xml_tag "Duty_Time_In_Position"
                     sequence 1
-                    validates_numericality min: -999999, max: 999999, type: :decimal
+                    unit "Hour(s)"
 
-                    def additional_xml_attributes
-                      {Unit: "Hour(s)"}
-                    end
+                    validates_numericality min: -999999, max: 999999, type: :decimal
                   end
                 end
               end

@@ -41,6 +41,15 @@ module Eccairs
         @text_wrapper
       end
 
+      # DSL method to set unit for XML attribute (e.g., "C", "kt", "Hour(s)")
+      def self.unit(value = nil)
+        if value
+          @unit = value.to_s
+        else
+          @unit
+        end
+      end
+
       # DSL method to declare validations at class level
       def self.validates_numericality(min: nil, max: nil, type: :decimal)
         @validation_type = :numeric
@@ -102,7 +111,7 @@ module Eccairs
         raise NotImplementedError, "Subclasses must define xml_tag" unless tag_name
 
         xml_attributes = {attributeId: self.class.attribute_id}
-        xml_attributes.merge!(additional_xml_attributes) if respond_to?(:additional_xml_attributes, true)
+        xml_attributes[:Unit] = self.class.unit if self.class.unit
 
         # Check if text should be wrapped in a special element (e.g., PlainText)
         if self.class.text_wrapper
