@@ -12,16 +12,13 @@ RSpec.describe Eccairs::Occurrence::Entities::ReportingHistory::Attributes::Repo
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with report" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
       # Note: Report is a ResourceLocator type which requires special handling
       # Skipping validation test for now as it requires FileName element structure
-      # occurrence.add_entity(described_class.new("http://example.com/report.pdf"))
+      # report.add_entity(described_class.new("http://example.com/report.pdf"))
 
       # Use a different attribute for validation
-      occurrence.add_entity(Eccairs::Occurrence::Entities::ReportingHistory::Attributes::ReportIdentification.new("TEST-001"))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(Eccairs::Occurrence::Entities::ReportingHistory::Attributes::ReportIdentification.new("TEST-001"))
 
       expect(report.valid?).to be true
     end

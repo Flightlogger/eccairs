@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Engine do
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with engine entity" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(Eccairs::Occurrence::Entities::Aircraft::Engine::Attributes::EngineSerialNumber.new("ABC123"))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(Eccairs::Occurrence::Entities::Aircraft::Engine::Attributes::EngineSerialNumber.new("ABC123"))
 
       expect(report.valid?).to be true
     end

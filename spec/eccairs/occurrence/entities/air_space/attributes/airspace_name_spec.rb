@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::AirSpace::Attributes::AirspaceName
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with airspace_name" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(described_class.new("Test Airspace"))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(described_class.new("Test Airspace"))
 
       expect(report.valid?).to be true
     end

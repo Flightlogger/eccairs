@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::Separation::Attributes::EstVertSep
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with est_vert_separation" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(described_class.new(1000))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(described_class.new(1000))
 
       expect(report.valid?).to be true
     end

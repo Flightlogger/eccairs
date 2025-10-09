@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::PrecipitationAndOtherWeatherPhenom
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with precipitation_and_other_weather_phenomena entity" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(Eccairs::Occurrence::Entities::PrecipitationAndOtherWeatherPhenomena::Attributes::PhenomenonType.new(1))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(Eccairs::Occurrence::Entities::PrecipitationAndOtherWeatherPhenomena::Attributes::PhenomenonType.new(1))
 
       expect(report.valid?).to be true
     end

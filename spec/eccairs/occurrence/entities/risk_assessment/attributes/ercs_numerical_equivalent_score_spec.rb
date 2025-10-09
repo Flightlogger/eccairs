@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::RiskAssessment::Attributes::ErcsNu
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with ercs_numerical_equivalent_score" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(described_class.new(1))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(described_class.new(1))
 
       expect(report.valid?).to be true
     end

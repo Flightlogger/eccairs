@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Propeller::Attributes::D
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with date_of_overhaul" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(described_class.new("2021-08-15"))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(described_class.new("2021-08-15"))
 
       expect(report.valid?).to be true
     end

@@ -12,12 +12,9 @@ RSpec.describe Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::Elev
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with elevation_above_msl" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::LocationIndicator.new("1000"))
-      occurrence.add_entity(described_class.new(13.0))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::LocationIndicator.new("1000"))
+      report.add_entity(described_class.new(13.0))
 
       expect(report.valid?).to be true
     end

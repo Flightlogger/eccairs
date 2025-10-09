@@ -12,12 +12,9 @@ RSpec.describe Eccairs::Occurrence::Entities::AirSpace::Narrative::Attributes::N
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with narrative_text" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(Eccairs::Occurrence::Entities::AirSpace::Attributes::AirspaceClass.new(1))
-      occurrence.add_entity(described_class.new("This is a test narrative describing the airspace incident."))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(Eccairs::Occurrence::Entities::AirSpace::Attributes::AirspaceClass.new(1))
+      report.add_entity(described_class.new("This is a test narrative describing the airspace incident."))
 
       expect(report.valid?).to be true
     end

@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::ReportingHistory do
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with reporting_history entity" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(Eccairs::Occurrence::Entities::ReportingHistory::Attributes::ReportIdentification.new("TEST-001"))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(Eccairs::Occurrence::Entities::ReportingHistory::Attributes::ReportIdentification.new("TEST-001"))
 
       expect(report.valid?).to be true
     end

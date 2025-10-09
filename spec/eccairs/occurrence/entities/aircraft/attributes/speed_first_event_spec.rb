@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Attributes::SpeedFirstEv
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with speed_first_event" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(described_class.new(250))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(described_class.new(250))
 
       expect(report.valid?).to be true
     end

@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::DangerousGoods::Attributes::AirWay
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with air_waybill_consignment_tracking_number" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(described_class.new("AWB123456"))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(described_class.new("AWB123456"))
 
       expect(report.valid?).to be true
     end

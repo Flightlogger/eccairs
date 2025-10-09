@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::GroundHandling::Narrative::Attribu
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with narrative_text" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(described_class.new("Test narrative text"))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(described_class.new("Test narrative text"))
 
       expect(report.valid?).to be true
     end

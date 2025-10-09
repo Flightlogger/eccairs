@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::DangerousGoods::Attributes::Origin
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with origin_of_goods" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(described_class.new("Test Origin"))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(described_class.new("Test Origin"))
 
       expect(report.valid?).to be true
     end

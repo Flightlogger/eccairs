@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Attributes::AtsRouteName
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with ats_route_name" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(described_class.new("A1"))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(described_class.new("A1"))
 
       expect(report.valid?).to be true
     end

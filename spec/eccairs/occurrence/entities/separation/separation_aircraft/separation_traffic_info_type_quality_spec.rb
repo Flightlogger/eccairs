@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::Separation::SeparationAircraft::Se
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with separation_traffic_info_type_quality entity" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(Eccairs::Occurrence::Entities::Separation::SeparationAircraft::SeparationTrafficInfoTypeQuality::Attributes::TrafficInfoQuality.new(1))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(Eccairs::Occurrence::Entities::Separation::SeparationAircraft::SeparationTrafficInfoTypeQuality::Attributes::TrafficInfoQuality.new(1))
 
       expect(report.valid?).to be true
     end

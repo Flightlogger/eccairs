@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Propeller::Attributes::A
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with ata_chapter_involved" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(described_class.new(11000000))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(described_class.new(11000000))
 
       expect(report.valid?).to be true
     end

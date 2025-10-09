@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Attributes::SerialNumber
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with serial_number" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(described_class.new("SN12345"))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(described_class.new("SN12345"))
 
       expect(report.valid?).to be true
     end

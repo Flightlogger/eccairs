@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Attributes::YearBuilt do
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with year_built" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(described_class.new(2020))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(described_class.new(2020))
 
       expect(report.valid?).to be true
     end

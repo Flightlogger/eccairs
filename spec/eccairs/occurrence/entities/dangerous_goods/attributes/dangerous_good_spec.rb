@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::DangerousGoods::Attributes::Danger
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with dangerous_good" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(described_class.new("2"))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(described_class.new("2"))
 
       expect(report.valid?).to be true
     end

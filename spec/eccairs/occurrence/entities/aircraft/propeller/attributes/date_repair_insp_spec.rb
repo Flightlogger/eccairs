@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Propeller::Attributes::D
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with date_repair_insp" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(described_class.new("2023-02-10"))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(described_class.new("2023-02-10"))
 
       expect(report.valid?).to be true
     end

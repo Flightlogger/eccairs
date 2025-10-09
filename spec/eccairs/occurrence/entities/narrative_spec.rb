@@ -12,12 +12,9 @@ RSpec.describe Eccairs::Occurrence::Entities::Narrative do
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with narrative entity" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeLanguage.new(1))
-      occurrence.add_entity(Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeText.new("Test narrative"))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeLanguage.new(1))
+      report.add_entity(Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeText.new("Test narrative"))
 
       expect(report.valid?).to be true
     end

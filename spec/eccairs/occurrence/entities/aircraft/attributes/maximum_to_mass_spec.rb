@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Attributes::MaximumToMas
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with maximum_to_mass" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(described_class.new(75000))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(described_class.new(75000))
 
       expect(report.valid?).to be true
     end

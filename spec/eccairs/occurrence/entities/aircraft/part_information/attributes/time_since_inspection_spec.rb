@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::PartInformation::Attribu
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with time_since_inspection" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(described_class.new(100.75))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(described_class.new(100.75))
 
       expect(report.valid?).to be true
     end

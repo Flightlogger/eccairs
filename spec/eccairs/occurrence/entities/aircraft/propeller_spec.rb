@@ -12,11 +12,8 @@ RSpec.describe Eccairs::Occurrence::Entities::Aircraft::Propeller do
   describe "ECCAIRS report validation" do
     it "generates a valid ECCAIRS report with propeller entity" do
       report = Eccairs.report
-      occurrence = Eccairs::Occurrence::Base.new
 
-      occurrence.add_entity(Eccairs::Occurrence::Entities::Aircraft::Propeller::Attributes::PropSerial.new("PROP123"))
-
-      report.add_occurrence(occurrence)
+      report.add_entity(Eccairs::Occurrence::Entities::Aircraft::Propeller::Attributes::PropSerial.new("PROP123"))
 
       expect(report.valid?).to be true
     end
