@@ -6,15 +6,13 @@ module Eccairs
       entity_id "47"
       xml_tag "Runway_Incursion"
 
-      belongs_to :occurrence
-
-      # Linked entities (references to entities defined elsewhere)
-      # has_many :aircraft, class_name: "Eccairs::Entities::Aircraft"
-      # has_many :runway, class_name: "Eccairs::Entities::Runway"
-      # has_many :vehicle, class_name: "Eccairs::Entities::Vehicle"
-
-      # Attributes
-      has_many :entity_involved, class_name: "Eccairs::Attributes::EntityInvolved"
+      # Add entity involved
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::EntityInvolved] The created attribute instance
+      # @note Attribute ID: 741, XML Tag: Entity_Involved
+      def add_entity_involved(value)
+        add_attribute(Eccairs::Attributes::EntityInvolved, false, value)
+      end
     end
   end
 end

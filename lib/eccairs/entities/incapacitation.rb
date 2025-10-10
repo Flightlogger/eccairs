@@ -6,11 +6,21 @@ module Eccairs
       entity_id "20"
       xml_tag "Incapacitation"
 
-      belongs_to :aircraft
+      # Add person incapacitated
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::PersonIncapacitated] The created attribute instance
+      # @note Attribute ID: 418, XML Tag: Person_Incapacitated
+      def add_person_incapacitated(value)
+        add_attribute(Eccairs::Attributes::PersonIncapacitated, false, value)
+      end
 
-      # Attributes
-      has_many :person_incapacitated, class_name: "Eccairs::Attributes::PersonIncapacitated"
-      has_many :reason_for_incapacity, class_name: "Eccairs::Attributes::ReasonForIncapacity"
+      # Add reason for incapacity
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::ReasonForIncapacity] The created attribute instance
+      # @note Attribute ID: 419, XML Tag: Reason_For_Incapacity
+      def add_reason_for_incapacity(value)
+        add_attribute(Eccairs::Attributes::ReasonForIncapacity, false, value)
+      end
     end
   end
 end

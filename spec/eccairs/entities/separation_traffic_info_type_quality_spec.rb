@@ -57,4 +57,3 @@ RSpec.describe Eccairs::Entities::SeparationTrafficInfoTypeQuality do
     end
   end
 end
-

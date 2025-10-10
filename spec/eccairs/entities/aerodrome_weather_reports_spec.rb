@@ -49,4 +49,3 @@ RSpec.describe Eccairs::Entities::AerodromeWeatherReports do
     end
   end
 end
-

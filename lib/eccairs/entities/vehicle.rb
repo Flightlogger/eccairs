@@ -6,12 +6,23 @@ module Eccairs
       entity_id "48"
       xml_tag "Vehicle"
       requires_id
-
-      belongs_to :aerodrome_general
-
       # Vehicle attributes
-      has_many :type_of_vehicle, class_name: "Eccairs::Attributes::TypeOfVehicle"
-      has_many :vehicle_controlled, class_name: "Eccairs::Attributes::VehicleControlled"
+
+      # Add type of vehicle
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::TypeOfVehicle] The created attribute instance
+      # @note Attribute ID: 733, XML Tag: Type_Of_Vehicle
+      def add_type_of_vehicle(value)
+        add_attribute(Eccairs::Attributes::TypeOfVehicle, false, value)
+      end
+
+      # Add vehicle controlled
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::VehicleControlled] The created attribute instance
+      # @note Attribute ID: 743, XML Tag: Vehicle_Controlled
+      def add_vehicle_controlled(value)
+        add_attribute(Eccairs::Attributes::VehicleControlled, false, value)
+      end
     end
   end
 end

@@ -76,4 +76,3 @@ RSpec.describe Eccairs::Entities::SeparationAircraft do
     end
   end
 end
-

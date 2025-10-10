@@ -49,4 +49,3 @@ RSpec.describe Eccairs::Entities::RunwayIncursion do
     end
   end
 end
-

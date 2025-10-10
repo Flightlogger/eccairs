@@ -32,87 +32,54 @@ module Eccairs
         @requires_id || false
       end
 
-      # Store relationship definitions
-      def self.relationships
-        @relationships ||= {}
-      end
-
-      # DSL method to define has_many relationship
-      def self.has_many(name, class_name:)
-        relationships[name] = {type: :has_many, class_name: class_name}
-
-        # Define add_* method for builder pattern
-        define_method("add_#{name}") do |*args, &block|
-          klass = Object.const_get(class_name)
-
-          # Check if the class is an Entity or Attribute
-          is_entity = klass.ancestors.include?(Eccairs::Base::Entity)
-
-          instance = if is_entity
-            # Entity relationship - create instance and yield for builder pattern if block given
-            klass.new
-          else
-            # Attribute relationship - create attribute with value
-            klass.new(*args)
-          end
-
-          if is_entity
-            instance.parent = self
-            @children[name] ||= []
-            @children[name] << instance
-            block&.call(instance)
-          else
-            @attributes[name] ||= []
-            @attributes[name] << instance
-          end
-
-          instance
-        end
-      end
-
-      # DSL method to define has_one relationship
-      def self.has_one(name, class_name:)
-        relationships[name] = {type: :has_one, class_name: class_name}
-
-        # Define add_* method for builder pattern
-        define_method("add_#{name}") do |*args, &block|
-          klass = Object.const_get(class_name)
-
-          # Check if the class is an Entity or Attribute
-          is_entity = klass.ancestors.include?(Eccairs::Base::Entity)
-
-          instance = if is_entity
-            # Entity relationship - create instance and yield for builder pattern if block given
-            klass.new
-          else
-            # Attribute relationship - create attribute with value
-            klass.new(*args)
-          end
-
-          if is_entity
-            instance.parent = self
-            @children[name] = instance
-            block&.call(instance)
-          else
-            @attributes[name] = instance
-          end
-
-          instance
-        end
-      end
-
-      # DSL method to define belongs_to relationship
-      def self.belongs_to(name)
-        relationships[name] = {type: :belongs_to}
-      end
-
       def initialize
         @attributes = {}
         @children = {}
         @parent = nil
+        @id = nil
       end
 
       attr_writer :parent
+      attr_accessor :id
+
+      private
+
+      # Helper method for explicit add_attribute methods
+      # This is called by the generated explicit methods in each entity class
+      def add_attribute(klass, is_has_one, *args)
+        instance = klass.new(*args)
+        name = klass.xml_tag.downcase.to_sym
+
+        if is_has_one
+          @attributes[name] = instance
+        else
+          @attributes[name] ||= []
+          @attributes[name] << instance
+        end
+
+        instance
+      end
+
+      # Helper method for explicit add_entity methods
+      # This is called by the generated explicit methods in each entity class
+      def add_entity(klass, is_has_one, id: nil, &block)
+        instance = klass.new
+        instance.parent = self
+        instance.id = id if id && klass.requires_id?
+        name = klass.xml_tag.downcase.to_sym
+
+        if is_has_one
+          @children[name] = instance
+        else
+          @children[name] ||= []
+          @children[name] << instance
+        end
+        block&.call(instance)
+
+        instance
+      end
+
+      public
 
       # Build XML for this entity
       def build_xml(xml, entity_id_counters = {})

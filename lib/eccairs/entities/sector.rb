@@ -7,19 +7,46 @@ module Eccairs
       xml_tag "Sector"
       requires_id
 
-      belongs_to :air_navigation_service
+      # Add atm staff entity
+      # @yield [atm_staff] Block for configuring the atm staff
+      # @yieldparam atm_staff [Eccairs::Entities::AtmStaff] The entity instance
+      # @return [Eccairs::Entities::AtmStaff] The created entity instance
+      # @note Entity ID: 9, XML Tag: ATM_Staff
+      def add_atm_staff(&block)
+        add_entity(Eccairs::Entities::AtmStaff, false, &block)
+      end
 
-      # Nested entities
-      has_many :atm_staff, class_name: "Eccairs::Entities::AtmStaff"
+      # Add sector name
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::SectorName] The created attribute instance
+      # @note Attribute ID: 526, XML Tag: Sector_Name
+      def add_sector_name(value)
+        add_attribute(Eccairs::Attributes::SectorName, false, value)
+      end
 
-      # Linked entities (references to entities defined elsewhere)
-      # has_many :aircraft, class_name: "Eccairs::Entities::Aircraft"
+      # Add services provided
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::ServicesProvided] The created attribute instance
+      # @note Attribute ID: 527, XML Tag: Services_Provided
+      def add_services_provided(value)
+        add_attribute(Eccairs::Attributes::ServicesProvided, false, value)
+      end
 
-      # Sector attributes
-      has_many :sector_name, class_name: "Eccairs::Attributes::SectorName"
-      has_many :services_provided, class_name: "Eccairs::Attributes::ServicesProvided"
-      has_many :workload_controller, class_name: "Eccairs::Attributes::WorkloadController"
-      has_many :rtf_frequency, class_name: "Eccairs::Attributes::RtfFrequency"
+      # Add workload controller
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::WorkloadController] The created attribute instance
+      # @note Attribute ID: 559, XML Tag: Workload_Controller
+      def add_workload_controller(value)
+        add_attribute(Eccairs::Attributes::WorkloadController, false, value)
+      end
+
+      # Add rtf frequency
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::RtfFrequency] The created attribute instance
+      # @note Attribute ID: 619, XML Tag: RTF_Frequency
+      def add_rtf_frequency(value)
+        add_attribute(Eccairs::Attributes::RtfFrequency, false, value)
+      end
     end
   end
 end
