@@ -48,21 +48,25 @@ module Eccairs
           # Check if the class is an Entity or Attribute
           is_entity = klass.ancestors.include?(Eccairs::Base::Entity)
 
-          if is_entity
+          instance = if is_entity
             # Entity relationship - create instance and yield for builder pattern if block given
-            instance = klass.new
+            klass.new
+          else
+            # Attribute relationship - create attribute with value
+            klass.new(*args)
+          end
+
+          if is_entity
             instance.parent = self
             @children[name] ||= []
             @children[name] << instance
-            block.call(instance) if block
-            instance
+            block&.call(instance)
           else
-            # Attribute relationship - create attribute with value
-            instance = klass.new(*args)
             @attributes[name] ||= []
             @attributes[name] << instance
-            instance
           end
+
+          instance
         end
       end
 
@@ -77,19 +81,23 @@ module Eccairs
           # Check if the class is an Entity or Attribute
           is_entity = klass.ancestors.include?(Eccairs::Base::Entity)
 
-          if is_entity
+          instance = if is_entity
             # Entity relationship - create instance and yield for builder pattern if block given
-            instance = klass.new
-            instance.parent = self
-            @children[name] = instance
-            block.call(instance) if block
-            instance
+            klass.new
           else
             # Attribute relationship - create attribute with value
-            instance = klass.new(*args)
-            @attributes[name] = instance
-            instance
+            klass.new(*args)
           end
+
+          if is_entity
+            instance.parent = self
+            @children[name] = instance
+            block&.call(instance)
+          else
+            @attributes[name] = instance
+          end
+
+          instance
         end
       end
 
