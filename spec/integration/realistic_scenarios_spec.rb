@@ -7,58 +7,66 @@ RSpec.describe "Realistic ECCAIRS XML Generation Scenarios" do
     it "generates a valid ECCAIRS set for a bird strike incident" do
       set = Eccairs.set
 
-      # Basic occurrence information
-      set.add_entity(Eccairs::Occurrence::Attributes::Headline.new("Bird strike during takeoff roll"))
-      set.add_entity(Eccairs::Occurrence::Attributes::LocationName.new("John F. Kennedy International Airport"))
-      set.add_entity(Eccairs::Occurrence::Attributes::UtcDate.new("2024-03-15"))
-      set.add_entity(Eccairs::Occurrence::Attributes::UtcTime.new("14:30:00"))
-      set.add_entity(Eccairs::Occurrence::Attributes::LocalDate.new("2024-03-15"))
-      set.add_entity(Eccairs::Occurrence::Attributes::LocalTime.new("10:30:00"))
-      set.add_entity(Eccairs::Occurrence::Attributes::OccurrenceCategory.new(1))
+      set.add_occurrence do |occurrence|
+        # Basic occurrence information
+        occurrence.add_headline("Bird strike during takeoff roll")
+        occurrence.add_location_name("John F. Kennedy International Airport")
+        occurrence.add_utc_date("2024-03-15")
+        occurrence.add_utc_time("14:30:00")
+        occurrence.add_local_date("2024-03-15")
+        occurrence.add_local_time("10:30:00")
+        occurrence.add_occurrence_category(1)
 
-      # Weather conditions
-      set.add_entity(Eccairs::Occurrence::Attributes::AirTemperature.new(18.0))
-      set.add_entity(Eccairs::Occurrence::Attributes::DewPoint.new(12.0))
-      set.add_entity(Eccairs::Occurrence::Attributes::WxConditions.new(1)) # VMC
-      set.add_entity(Eccairs::Occurrence::Attributes::WindSpeed.new(8.0))
-      set.add_entity(Eccairs::Occurrence::Attributes::WindDirection.new(270))
-      set.add_entity(Eccairs::Occurrence::Attributes::Visibility.new(10000))
+        # Weather conditions
+        occurrence.add_air_temperature(18.0)
+        occurrence.add_dew_point(12.0)
+        occurrence.add_wx_conditions(1) # VMC
+        occurrence.add_wind_speed(8.0)
+        occurrence.add_wind_direction(270)
+        occurrence.add_visibility(10000)
 
-      # Aerodrome information
-      set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::LocationIndicator.new("1000"))
-      set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::AerodromeLatitude.new(40.6413))
-      set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::AerodromeLongitude.new(-73.7781))
-      set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::ElevationAboveMsl.new(13.0))
-      set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::AerodromeType.new(1))
+        # Aerodrome information
+        occurrence.add_aerodrome_general do |aerodrome|
+          aerodrome.add_location_indicator("1000")
+          aerodrome.add_aerodrome_latitude(40.6413)
+          aerodrome.add_aerodrome_longitude(-73.7781)
+          aerodrome.add_elevation_above_msl(13.0)
+          aerodrome.add_aerodrome_type(1)
 
-      # Runway information
-      set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Entities::Runway::Attributes::RunwayIdentifier.new("04R"))
-      set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Entities::Runway::Attributes::RunwayNumber.new(4))
+          # Runway information
+          aerodrome.add_runway do |runway|
+            runway.add_runway_identifier("04R")
+            runway.add_runway_number(4)
+          end
+        end
 
-      # Aircraft information
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftCategory.new(1))
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftRegistration.new("N12345"))
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::SerialNumber.new("12345"))
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::YearBuilt.new(2018))
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::MaximumToMass.new(79000))
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::NumberOfEngines.new(2))
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::FlightPhase.new(3)) # Takeoff
+        # Aircraft information
+        occurrence.add_aircraft do |aircraft|
+          aircraft.add_aircraft_registration("N12345")
+          aircraft.add_year_built(2018)
+          aircraft.add_maximum_to_mass(79000)
+          aircraft.add_number_of_engines(2)
+          aircraft.add_flight_phase(3) # Takeoff
 
-      # Bird strike details
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::BirdsWildlifeSeen.new(1))
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::BirdsWildlifeStruck.new(1))
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::BirdSize.new(1))
+          # Bird strike details
+          aircraft.add_birds_wildlife_seen(1)
+          aircraft.add_birds_wildlife_struck(1)
+          aircraft.add_bird_size(1)
+        end
 
-      # Narrative
-      narrative_text = "During takeoff roll on runway 04R, at approximately 80 knots, " \
-                       "the crew observed a flock of birds crossing the runway. " \
-                       "Unable to stop safely, the aircraft continued the takeoff. " \
-                       "Multiple bird strikes were felt and heard. The takeoff was completed " \
-                       "successfully and the aircraft returned for landing after dumping fuel. " \
-                       "Post-flight inspection revealed damage to the nose cone and engine inlet."
+        # Narrative
+        narrative_text = "During takeoff roll on runway 04R, at approximately 80 knots, " \
+                         "the crew observed a flock of birds crossing the runway. " \
+                         "Unable to stop safely, the aircraft continued the takeoff. " \
+                         "Multiple bird strikes were felt and heard. The takeoff was completed " \
+                         "successfully and the aircraft returned for landing after dumping fuel. " \
+                         "Post-flight inspection revealed damage to the nose cone and engine inlet."
 
-      set.add_entity(Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeText.new(narrative_text))
-      set.add_entity(Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeLanguage.new(1)) # English
+        occurrence.add_narrative do |narrative|
+          narrative.add_narrative_text(narrative_text)
+          narrative.add_narrative_language(1) # English
+        end
+      end
 
       # Validate the set
       expect(set.valid?).to be(true), "Report should be valid. Errors: #{set.validate.join(", ")}"
@@ -77,51 +85,65 @@ RSpec.describe "Realistic ECCAIRS XML Generation Scenarios" do
     it "generates a valid ECCAIRS set for a runway incursion" do
       set = Eccairs.set
 
-      # Basic occurrence information
-      set.add_entity(Eccairs::Occurrence::Attributes::Headline.new("Runway incursion - vehicle crossed active runway"))
-      set.add_entity(Eccairs::Occurrence::Attributes::LocationName.new("London Heathrow Airport"))
-      set.add_entity(Eccairs::Occurrence::Attributes::UtcDate.new("2024-06-20"))
-      set.add_entity(Eccairs::Occurrence::Attributes::UtcTime.new("09:15:00"))
-      set.add_entity(Eccairs::Occurrence::Attributes::LocalDate.new("2024-06-20"))
-      set.add_entity(Eccairs::Occurrence::Attributes::LocalTime.new("10:15:00"))
-      set.add_entity(Eccairs::Occurrence::Attributes::OccurrenceCategory.new(1))
+      set.add_occurrence do |occurrence|
+        # Basic occurrence information
+        occurrence.add_headline("Runway incursion - vehicle crossed active runway")
+        occurrence.add_location_name("London Heathrow Airport")
+        occurrence.add_utc_date("2024-06-20")
+        occurrence.add_utc_time("09:15:00")
+        occurrence.add_local_date("2024-06-20")
+        occurrence.add_local_time("10:15:00")
+        occurrence.add_occurrence_category(1)
 
-      # Weather conditions - good visibility
-      set.add_entity(Eccairs::Occurrence::Attributes::WxConditions.new(1)) # VMC
-      set.add_entity(Eccairs::Occurrence::Attributes::Visibility.new(10000))
-      set.add_entity(Eccairs::Occurrence::Attributes::AirTemperature.new(22.0))
-      set.add_entity(Eccairs::Occurrence::Attributes::WindSpeed.new(5.0))
-      set.add_entity(Eccairs::Occurrence::Attributes::WindDirection.new(90))
+        # Weather conditions - good visibility
+        occurrence.add_wx_conditions(1) # VMC
+        occurrence.add_visibility(10000)
+        occurrence.add_air_temperature(22.0)
+        occurrence.add_wind_speed(5.0)
+        occurrence.add_wind_direction(90)
 
-      # Aerodrome information
-      set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::LocationIndicator.new("1000"))
-      set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::AerodromeLatitude.new(51.4700))
-      set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::AerodromeLongitude.new(-0.4543))
-      set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::AerodromeType.new(1))
-      set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::LocationOnNearAerodrome.new(1)) # Runway
+        # Aerodrome information
+        occurrence.add_aerodrome_general do |aerodrome|
+          aerodrome.add_location_indicator("1000")
+          aerodrome.add_aerodrome_latitude(51.4700)
+          aerodrome.add_aerodrome_longitude(-0.4543)
+          aerodrome.add_aerodrome_type(1)
+          aerodrome.add_location_on_near_aerodrome(1) # Runway
 
-      # Runway information
-      set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Entities::Runway::Attributes::RunwayIdentifier.new("27L"))
+          # Runway information
+          aerodrome.add_runway do |runway|
+            runway.add_runway_identifier("27L")
+          end
+        end
 
-      # Aircraft information (aircraft on approach)
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftCategory.new(1))
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftRegistration.new("G-ABCD"))
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::FlightPhase.new(6)) # Approach
+        # Aircraft information (aircraft on approach)
+        occurrence.add_aircraft do |aircraft|
+          aircraft.add_aircraft_registration("G-ABCD")
+          aircraft.add_flight_phase(6) # Approach
+        end
 
-      # Air Navigation Service information
-      set.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Attributes::AnspName.new("NATS"))
-      set.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Entities::Sector::Attributes::SectorName.new("Tower"))
-      set.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Entities::Sector::Attributes::ServicesProvided.new(2000000))
+        # Air Navigation Service information
+        occurrence.add_air_navigation_service do |ans|
+          ans.add_ansp_name("NATS")
 
-      # Narrative
-      narrative_text = "An airport maintenance vehicle crossed runway 27L without clearance " \
-                       "while an aircraft was on final approach at 3 miles. The tower controller " \
-                       "immediately instructed the aircraft to go around. The aircraft executed " \
-                       "the go-around successfully with no damage or injuries. Investigation revealed " \
-                       "a communication breakdown between ground control and the vehicle driver."
+          ans.add_sector do |sector|
+            sector.add_sector_name("Tower")
+            sector.add_services_provided(2000000)
+          end
+        end
 
-      set.add_entity(Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeText.new(narrative_text))
-      set.add_entity(Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeLanguage.new(1))
+        # Narrative
+        narrative_text = "An airport maintenance vehicle crossed runway 27L without clearance " \
+                         "while an aircraft was on final approach at 3 miles. The tower controller " \
+                         "immediately instructed the aircraft to go around. The aircraft executed " \
+                         "the go-around successfully with no damage or injuries. Investigation revealed " \
+                         "a communication breakdown between ground control and the vehicle driver."
+
+        occurrence.add_narrative do |narrative|
+          narrative.add_narrative_text(narrative_text)
+          narrative.add_narrative_language(1)
+        end
+      end
 
       # Validate the set
       expect(set.valid?).to be(true), "Report should be valid. Errors: #{set.validate.join(", ")}"
@@ -141,47 +163,53 @@ RSpec.describe "Realistic ECCAIRS XML Generation Scenarios" do
     it "generates a valid ECCAIRS set for an engine failure" do
       set = Eccairs.set
 
-      # Basic occurrence information
-      set.add_entity(Eccairs::Occurrence::Attributes::Headline.new("Engine failure during cruise - successful emergency landing"))
-      set.add_entity(Eccairs::Occurrence::Attributes::LocationName.new("Over North Atlantic"))
-      set.add_entity(Eccairs::Occurrence::Attributes::UtcDate.new("2024-08-10"))
-      set.add_entity(Eccairs::Occurrence::Attributes::UtcTime.new("16:45:00"))
-      set.add_entity(Eccairs::Occurrence::Attributes::LatitudeOfOcc.new(45.5))
-      set.add_entity(Eccairs::Occurrence::Attributes::LongitudeOfOcc.new(-30.2))
-      set.add_entity(Eccairs::Occurrence::Attributes::OccurrenceCategory.new(1))
+      set.add_occurrence do |occurrence|
+        # Basic occurrence information
+        occurrence.add_headline("Engine failure during cruise - successful emergency landing")
+        occurrence.add_location_name("Over North Atlantic")
+        occurrence.add_utc_date("2024-08-10")
+        occurrence.add_utc_time("16:45:00")
+        occurrence.add_latitude_of_occ(45.5)
+        occurrence.add_longitude_of_occ(-30.2)
+        occurrence.add_occurrence_category(1)
 
-      # Weather conditions
-      set.add_entity(Eccairs::Occurrence::Attributes::WxConditions.new(2)) # IMC
-      set.add_entity(Eccairs::Occurrence::Attributes::AirTemperature.new(-40.0))
-      set.add_entity(Eccairs::Occurrence::Attributes::WindSpeed.new(45.0))
-      set.add_entity(Eccairs::Occurrence::Attributes::WindDirection.new(270))
+        # Weather conditions
+        occurrence.add_wx_conditions(2) # IMC
+        occurrence.add_air_temperature(-40.0)
+        occurrence.add_wind_speed(45.0)
+        occurrence.add_wind_direction(270)
 
-      # Aircraft information
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftCategory.new(1))
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftRegistration.new("N98765"))
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::SerialNumber.new("98765"))
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::YearBuilt.new(2015))
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::MaximumToMass.new(250000))
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::NumberOfEngines.new(2))
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::FlightPhase.new(5)) # Cruise
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::TotalNumberOfPersons.new(189))
+        # Aircraft information
+        occurrence.add_aircraft do |aircraft|
+          aircraft.add_aircraft_registration("N98765")
+          aircraft.add_year_built(2015)
+          aircraft.add_maximum_to_mass(250000)
+          aircraft.add_number_of_engines(2)
+          aircraft.add_flight_phase(5) # Cruise
+          aircraft.add_total_number_of_persons(189)
 
-      # Engine information
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Entities::Engine::Attributes::EnginePosition.new(2)) # Right
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Entities::Engine::Attributes::EngineSerialNumber.new("ENG-54321"))
-      set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Entities::Engine::Attributes::HazardEngEffect.new(1))
+          # Engine information
+          aircraft.add_engine do |engine|
+            engine.add_engine_position(2) # Right
+            engine.add_engine_serial_number("ENG-54321")
+            engine.add_hazard_eng_effect(1)
+          end
+        end
 
-      # Narrative
-      narrative_text = "During cruise at FL370, the crew experienced a sudden vibration followed by " \
-                       "engine fire warnings on the right engine. The crew executed the engine fire " \
-                       "checklist, shut down the right engine, and discharged both fire bottles. " \
-                       "The fire warning extinguished. The crew declared an emergency and diverted " \
-                       "to the nearest suitable airport. The aircraft landed safely on one engine " \
-                       "with no injuries. Post-incident inspection revealed a catastrophic failure " \
-                       "of a high-pressure turbine blade, resulting in significant engine damage."
+        # Narrative
+        narrative_text = "During cruise at FL370, the crew experienced a sudden vibration followed by " \
+                         "engine fire warnings on the right engine. The crew executed the engine fire " \
+                         "checklist, shut down the right engine, and discharged both fire bottles. " \
+                         "The fire warning extinguished. The crew declared an emergency and diverted " \
+                         "to the nearest suitable airport. The aircraft landed safely on one engine " \
+                         "with no injuries. Post-incident inspection revealed a catastrophic failure " \
+                         "of a high-pressure turbine blade, resulting in significant engine damage."
 
-      set.add_entity(Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeText.new(narrative_text))
-      set.add_entity(Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeLanguage.new(1))
+        occurrence.add_narrative do |narrative|
+          narrative.add_narrative_text(narrative_text)
+          narrative.add_narrative_language(1)
+        end
+      end
 
       # Validate the set
       expect(set.valid?).to be(true), "Report should be valid. Errors: #{set.validate.join(", ")}"

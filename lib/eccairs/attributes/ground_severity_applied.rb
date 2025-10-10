@@ -1,0 +1,16 @@
+# frozen_string_literal: true
+
+module Eccairs
+  module Attributes
+    class GroundSeverityApplied < Eccairs::Base::EnumAttribute
+      attribute_id 1073
+      xml_tag "Ground_Severity_Applied"
+      sequence 41
+      allowed_values(
+        YES: 1,
+        NO: 2,
+        VALUE_3: 3
+        )
+    end
+  end
+end

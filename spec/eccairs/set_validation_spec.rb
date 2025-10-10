@@ -4,8 +4,9 @@ RSpec.describe Eccairs::Set do
   describe "#validate" do
     it "returns an empty array for valid XML" do
       set = Eccairs.set
-      entity = Eccairs::Occurrence::Attributes::DewPoint.new(15.5)
-      set.add_entity(entity)
+      set.add_occurrence do |occurrence|
+        occurrence.add_dew_point(15.5)
+      end
 
       errors = set.validate
       expect(errors).to be_empty
@@ -33,8 +34,11 @@ RSpec.describe Eccairs::Set do
       expect(errors.first.message).to include("greater than the maximum value allowed")
     end
 
-    it "validates empty ATTRIBUTES as valid" do
+    it "validates occurrence with empty ATTRIBUTES as valid" do
       set = Eccairs.set
+      set.add_occurrence do |occurrence|
+        # Empty occurrence - no attributes
+      end
 
       errors = set.validate
       expect(errors).to be_empty
@@ -44,8 +48,9 @@ RSpec.describe Eccairs::Set do
   describe "#valid?" do
     it "returns true for valid XML" do
       set = Eccairs.set
-      entity = Eccairs::Occurrence::Attributes::DewPoint.new(15.5)
-      set.add_entity(entity)
+      set.add_occurrence do |occurrence|
+        occurrence.add_dew_point(15.5)
+      end
 
       expect(set.valid?).to be true
     end
@@ -74,8 +79,9 @@ RSpec.describe Eccairs::Set do
   describe "namespace declarations" do
     it "uses correct namespace URIs" do
       set = Eccairs.set
-      entity = Eccairs::Occurrence::Attributes::DewPoint.new(15.5)
-      set.add_entity(entity)
+      set.add_occurrence do |occurrence|
+        occurrence.add_dew_point(15.5)
+      end
 
       xml = set.to_xml
       expect(xml).to include('xmlns="http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataBridge.xsd"')
@@ -84,8 +90,9 @@ RSpec.describe Eccairs::Set do
 
     it "uses correct taxonomy version" do
       set = Eccairs.set
-      entity = Eccairs::Occurrence::Attributes::DewPoint.new(15.5)
-      set.add_entity(entity)
+      set.add_occurrence do |occurrence|
+        occurrence.add_dew_point(15.5)
+      end
 
       xml = set.to_xml
       expect(xml).to include('TaxonomyVersion="5.1.0.0"')
@@ -93,8 +100,9 @@ RSpec.describe Eccairs::Set do
 
     it "uses correct taxonomy name" do
       set = Eccairs.set
-      entity = Eccairs::Occurrence::Attributes::DewPoint.new(15.5)
-      set.add_entity(entity)
+      set.add_occurrence do |occurrence|
+        occurrence.add_dew_point(15.5)
+      end
 
       xml = set.to_xml
       expect(xml).to include('TaxonomyName="ECCAIRS Aviation"')
@@ -102,8 +110,9 @@ RSpec.describe Eccairs::Set do
 
     it "uses correct domain" do
       set = Eccairs.set
-      entity = Eccairs::Occurrence::Attributes::DewPoint.new(15.5)
-      set.add_entity(entity)
+      set.add_occurrence do |occurrence|
+        occurrence.add_dew_point(15.5)
+      end
 
       xml = set.to_xml
       expect(xml).to include('Domain="RIT"')
@@ -111,8 +120,9 @@ RSpec.describe Eccairs::Set do
 
     it "uses correct version" do
       set = Eccairs.set
-      entity = Eccairs::Occurrence::Attributes::DewPoint.new(15.5)
-      set.add_entity(entity)
+      set.add_occurrence do |occurrence|
+        occurrence.add_dew_point(15.5)
+      end
 
       xml = set.to_xml
       expect(xml).to include('Version="1.0.0.0"')

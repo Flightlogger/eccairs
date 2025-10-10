@@ -6,36 +6,20 @@ A Ruby gem for generating valid ECCAIRS (European Coordination Centre for Accide
 
 ## Overview
 
-ECCAIRS is the European standard for aviation safety reporting. This gem provides a clean, object-oriented Ruby interface for building ECCAIRS XML reports that comply with the official schema and taxonomy.
+ECCAIRS is the European standard for aviation safety reporting. This gem provides a clean, Rails-style DSL for building ECCAIRS XML reports that comply with the official schema and taxonomy.
 
 **Key Features:**
-- ✅ Full support for ECCAIRS Aviation v5.1.0.0 taxonomy
+- ✅ Full support for ECCAIRS Aviation v5.1.0.0 taxonomy (259 attributes, 23 entities)
+- ✅ Rails-style DSL with `has_many`, `has_one`, `belongs_to` relationships
+- ✅ Builder pattern API with nested blocks for intuitive report construction
+- ✅ Typed attribute system (String, Decimal, Integer, Enum, Date, Time)
 - ✅ Built-in XML schema validation against official XSD
-- ✅ **Typed entity system** with automatic validation (DecimalEntity, IntegerEntity, EnumEntity, StringEntity, DateEntity, TimeEntity)
-- ✅ Type-safe attribute and entity classes with compile-time validation
-- ✅ Hierarchical entity structure (Occurrence → Entities → Attributes)
-- ✅ Generic XML generation based purely on directory structure
-- ✅ DSL-style API for clean, readable code
-- ✅ Comprehensive test coverage
+- ✅ 100% test coverage (1,404 passing tests)
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
 ```ruby
 gem 'eccairs'
-```
-
-And then execute:
-
-```bash
-bundle install
-```
-
-Or install it yourself as:
-
-```bash
-gem install eccairs
 ```
 
 ## Quick Start
@@ -43,513 +27,302 @@ gem install eccairs
 ```ruby
 require 'eccairs'
 
-# Create a new set
-set = Eccairs.set
+# Create a report using the builder pattern
+report = Eccairs.set
 
-# Add basic occurrence information directly to the set
-set.add_entity(Eccairs::Occurrence::Attributes::Headline.new("Bird strike during takeoff"))
-set.add_entity(Eccairs::Occurrence::Attributes::UtcDate.new("2024-03-15"))
-set.add_entity(Eccairs::Occurrence::Attributes::UtcTime.new("14:30:00"))
+report.add_occurrence do |occurrence|
+  # Add occurrence-level attributes
+  occurrence.add_headline("Bird strike during takeoff")
+  occurrence.add_utc_date("2024-03-15")
+  occurrence.add_utc_time("14:30:00")
+  occurrence.add_occurrence_category("100")
 
-# Add aircraft information
-set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftRegistration.new("N12345"))
-set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::FlightPhase.new(3)) # Takeoff
+  # Add aircraft entity with nested attributes
+  occurrence.add_aircraft do |aircraft|
+    aircraft.add_aircraft_registration("N12345")
+    aircraft.add_flight_phase("1")
+    aircraft.add_number_of_engines("2")
+  end
 
-# Validate the set
-if set.valid?
-  # Generate XML
-  xml = set.to_xml
+  # Add narrative
+  occurrence.add_narrative do |narrative|
+    narrative.add_narrative_text("Bird strike occurred during takeoff roll at V1.")
+  end
+end
+
+# Validate and generate XML
+errors = report.validate
+if errors.empty?
+  xml = report.to_xml
   puts xml
 else
-  puts "Validation errors: #{set.validate.join(", ")}"
+  puts "Validation errors: #{errors.map(&:message).join(', ')}"
 end
 ```
 
 ## Architecture
 
-### Generic Structure-Based Design
+### Builder Pattern with Rails-Style DSL
 
-The gem uses a **completely generic** approach where the XML structure is determined purely by the directory structure and module namespace. There is no hardcoded logic for specific entities or attributes.
+The gem uses a **builder pattern** with Rails-style DSL methods (`has_many`, `has_one`, `belongs_to`) for defining entity relationships. This provides an intuitive, nested block-based API for constructing reports.
 
-**How it works:**
-1. The module path of each entity determines its position in the XML hierarchy
-2. `Attributes` modules create `<ATTRIBUTES>` sections
-3. `Entities` modules create `<ENTITIES>` sections
-4. The `Set` class automatically organizes everything based on module paths
+**Key Concepts:**
 
-**Example mappings:**
+1. **Flat Directory Structure**: All entities in `lib/eccairs/entities/`, all attributes in `lib/eccairs/attributes/`
+2. **Rails-Style Relationships**: Entities declare their attributes and nested entities using `has_many`, `has_one`
+3. **Builder Methods**: Each relationship automatically generates `add_*` methods for the builder API
+4. **Automatic Nesting**: The builder pattern handles XML hierarchy automatically
 
-```ruby
-# Module Path → XML Structure
-
-Eccairs::Occurrence::Attributes::Headline
-→ <Occurrence><ATTRIBUTES><Headline>
-
-Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftRegistration
-→ <Occurrence><ENTITIES><Aircraft><ATTRIBUTES><Aircraft_Registration>
-
-Eccairs::Occurrence::Entities::Aircraft::Entities::Engine::Attributes::EnginePosition
-→ <Occurrence><ENTITIES><Aircraft><ENTITIES><Engine><ATTRIBUTES><Engine_Position>
-
-Eccairs::Occurrence::Entities::AerodromeGeneral::Entities::Runway::Attributes::RunwayIdentifier
-→ <Occurrence><ENTITIES><Aerodrome_General><ENTITIES><Runway><ATTRIBUTES><Runway_Identifier>
-```
-
-### SET Structure
-
-The gem follows the ECCAIRS XML structure. Each SET contains a single Occurrence with attributes and nested entities:
+### ECCAIRS XML Structure
 
 ```
 SET (Root)
 └── Occurrence
     ├── ATTRIBUTES (Direct occurrence attributes)
     │   ├── Headline
-    │   ├── UtcDate
-    │   ├── UtcTime
+    │   ├── UTC_Date
     │   └── ...
     └── ENTITIES (Nested entities)
         ├── Aircraft
         │   ├── ATTRIBUTES
-        │   │   ├── AircraftRegistration
-        │   │   ├── FlightPhase
-        │   │   └── ...
+        │   │   ├── Aircraft_Registration
+        │   │   └── Flight_Phase
         │   └── ENTITIES
-        │       └── Engine
-        │           └── ATTRIBUTES
-        │               └── EnginePosition
-        ├── AerodromeGeneral
-        │   ├── ATTRIBUTES
+        │       ├── Engine
+        │       └── Incapacitation
+        ├── Aerodrome_General
         │   └── ENTITIES
         │       └── Runway
-        │           └── ATTRIBUTES
-        │               └── RunwayIdentifier
         └── Narrative
-            └── ATTRIBUTES
-                └── NarrativeText
 ```
 
 ### Class Organization
 
-The gem uses a simple, flat API where all entities are added directly to the set:
+- **Entities** (`lib/eccairs/entities/*.rb`): Container classes that can have attributes and nested entities
+  - Examples: `Aircraft`, `AerodromeGeneral`, `Engine`, `Runway`
+  - Define relationships using `has_many :attribute_name` and `has_one :entity_name`
 
-- **Set**: `Eccairs::Set`
-    - Main entry point - manages all entities and generates XML
-    - Use `Eccairs.set` to create a new SET
-    - Use `set.add_entity(entity)` to add any attribute or entity
-
-- **Direct Attributes**: `Eccairs::Occurrence::Attributes::*`
-    - Attributes that belong directly to the occurrence
-    - Example: `Headline`, `UtcDate`, `WindSpeed`
-
-- **Entity Attributes**: `Eccairs::Occurrence::Entities::{Entity}::Attributes::*`
-    - Attributes that belong to specific entities
-    - Example: `Aircraft::Attributes::AircraftRegistration`
-
-- **Nested Entities**: `Eccairs::Occurrence::Entities::{Entity}::Entities::{SubEntity}::Attributes::*`
-    - Sub-entities within entities
-    - Example: `AerodromeGeneral::Entities::Runway::Attributes::RunwayIdentifier`
-    - Example: `Aircraft::Entities::Engine::Attributes::EnginePosition`
-
-The set automatically organizes entities into the correct hierarchical structure based on their module namespace. The directory structure directly determines the XML nesting - no hardcoded logic required.
+- **Attributes** (`lib/eccairs/attributes/*.rb`): Leaf nodes with values
+  - Examples: `Headline`, `AircraftRegistration`, `FlightPhase`
+  - Inherit from typed base classes: `StringAttribute`, `EnumAttribute`, `DecimalAttribute`, etc.
 
 ## Usage Examples
 
-### Basic Occurrence SET
+### Basic Occurrence Report
 
 ```ruby
-set = Eccairs.set
+report = Eccairs.set
 
-# Basic information
-set.add_entity(Eccairs::Occurrence::Attributes::Headline.new("Runway incursion"))
-set.add_entity(Eccairs::Occurrence::Attributes::LocationName.new("London Heathrow"))
-set.add_entity(Eccairs::Occurrence::Attributes::UtcDate.new("2024-01-15"))
-set.add_entity(Eccairs::Occurrence::Attributes::UtcTime.new("09:45:00"))
-set.add_entity(Eccairs::Occurrence::Attributes::OccurrenceCategory.new(1))
+report.add_occurrence do |occurrence|
+  occurrence.add_headline("Runway incursion at London Heathrow")
+  occurrence.add_location_name("London Heathrow")
+  occurrence.add_utc_date("2024-01-15")
+  occurrence.add_utc_time("09:45:00")
+  occurrence.add_occurrence_category("100")
+end
 ```
 
-### Weather Conditions
+### Aircraft with Nested Entities
 
 ```ruby
-# Add weather information
-set.add_entity(Eccairs::Occurrence::Attributes::AirTemperature.new(18.0))
-set.add_entity(Eccairs::Occurrence::Attributes::DewPoint.new(12.0))
-set.add_entity(Eccairs::Occurrence::Attributes::WxConditions.new(1)) # VMC
-set.add_entity(Eccairs::Occurrence::Attributes::WindSpeed.new(8.0))
-set.add_entity(Eccairs::Occurrence::Attributes::WindDirection.new(270))
-set.add_entity(Eccairs::Occurrence::Attributes::Visibility.new(10000))
+report.add_occurrence do |occurrence|
+  occurrence.add_headline("Engine failure during cruise")
+
+  occurrence.add_aircraft do |aircraft|
+    aircraft.add_aircraft_registration("G-ABCD")
+    aircraft.add_aircraft_category("1")
+    aircraft.add_number_of_engines("2")
+    aircraft.add_flight_phase("1")
+
+    # Nested engine entity
+    aircraft.add_engine do |engine|
+      engine.add_engine_position("2")
+      engine.add_engine_serial_number("ENG-12345")
+    end
+  end
+end
 ```
 
-### Aircraft Information
+### Aerodrome with Runway
 
 ```ruby
-# Add aircraft details
-set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftCategory.new(1))
-set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftRegistration.new("G-ABCD"))
-set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::SerialNumber.new("12345"))
-set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::YearBuilt.new(2018))
-set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::NumberOfEngines.new(2))
-set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::FlightPhase.new(3))
+report.add_occurrence do |occurrence|
+  occurrence.add_aerodrome_general do |aerodrome|
+    aerodrome.add_location_indicator("1000")
+    aerodrome.add_aerodrome_latitude("51.4700")
+    aerodrome.add_aerodrome_longitude("-0.4543")
+
+    # Nested runway entity
+    aerodrome.add_runway do |runway|
+      runway.add_runway_identifier("09L")
+      runway.add_runway_number("9")
+    end
+  end
+end
 ```
 
-### Aerodrome and Runway
+### Complete Example with Multiple Entities
 
 ```ruby
-# Aerodrome information
-set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::LocationIndicator.new("EGLL"))
-set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::AerodromeLatitude.new(51.4700))
-set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::AerodromeLongitude.new(-0.4543))
-set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Attributes::ElevationAboveMsl.new(25.0))
+report = Eccairs.set
 
-# Runway information (nested entity)
-set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Entities::Runway::Attributes::RunwayIdentifier.new("09L"))
-set.add_entity(Eccairs::Occurrence::Entities::AerodromeGeneral::Entities::Runway::Attributes::RunwayNumber.new(9))
-```
+report.add_occurrence do |occurrence|
+  # Occurrence attributes
+  occurrence.add_headline("Bird strike during takeoff")
+  occurrence.add_utc_date("2024-03-15")
+  occurrence.add_utc_time("14:30:00")
+  occurrence.add_occurrence_category("100")
 
-### Narrative
+  # Weather conditions
+  occurrence.add_air_temperature("18.0")
+  occurrence.add_dew_point("12.0")
+  occurrence.add_wind_speed("8.0")
+  occurrence.add_wind_direction("270")
 
-```ruby
-narrative_text = "During approach to runway 09L, ATC reported a vehicle on the runway. " \
-  "The crew executed a go-around and landed safely on the second approach."
+  # Aircraft
+  occurrence.add_aircraft do |aircraft|
+    aircraft.add_aircraft_registration("N12345")
+    aircraft.add_flight_phase("1")
+    aircraft.add_number_of_engines("2")
+  end
 
-set.add_entity(Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeText.new(narrative_text))
-set.add_entity(Eccairs::Occurrence::Entities::Narrative::Attributes::NarrativeLanguage.new(1)) # English
-```
+  # Aerodrome
+  occurrence.add_aerodrome_general do |aerodrome|
+    aerodrome.add_location_indicator("1000")
+  end
 
-### Deeply Nested Entities
+  # Narrative
+  occurrence.add_narrative do |narrative|
+    narrative.add_narrative_text("Bird strike occurred at V1 during takeoff roll.")
+  end
+end
 
-The gem supports arbitrary nesting levels. Here's an example with engine information nested under aircraft:
-
-```ruby
-# Aircraft
-set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftRegistration.new("N12345"))
-
-# Engine (nested under Aircraft)
-set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Entities::Engine::Attributes::EnginePosition.new(1))
-set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Entities::Engine::Attributes::EngineSerialNumber.new("ENG-12345"))
-set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Entities::Engine::Attributes::ManufacturerModel.new("CFM56-7B"))
-
-# Flight Crew Member (nested under Aircraft)
-set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Entities::FlightCrewMember::Attributes::Category.new(1))
-
-# Flight Crew Licenses (nested under Flight Crew Member, which is nested under Aircraft)
-set.add_entity(Eccairs::Occurrence::Entities::Aircraft::Entities::FlightCrewMember::Entities::FlightCrewLicenses::Attributes::LicenseType.new(1))
-```
-
-### Air Navigation Services
-
-```ruby
-# ATC information
-set.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Attributes::AnspName.new("NATS"))
-
-# Sector information (nested entity)
-set.add_entity(Eccairs::Occurrence::Entities::AirNavigationService::Entities::Sector::Attributes::SectorName.new("London North"))
-```
-
-### Method Chaining
-
-The `add_entity` method returns `self`, allowing for method chaining:
-
-```ruby
-set = Eccairs.set
-  .add_entity(Eccairs::Occurrence::Attributes::Headline.new("Bird strike"))
-  .add_entity(Eccairs::Occurrence::Attributes::UtcDate.new("2024-03-15"))
-  .add_entity(Eccairs::Occurrence::Attributes::UtcTime.new("14:30:00"))
-  .add_entity(Eccairs::Occurrence::Entities::Aircraft::Attributes::AircraftRegistration.new("N12345"))
+# Validate and output
+errors = report.validate
+puts errors.empty? ? report.to_xml : errors.map(&:message)
 ```
 
 ## Validation
 
-The gem includes comprehensive validation:
+All reports are validated against the official ECCAIRS Aviation v5.1.0.0 XSD schema:
 
 ```ruby
-set = Eccairs.set
+report = Eccairs.set
+# ... build report ...
 
-# Add entities...
-set.add_entity(Eccairs::Occurrence::Attributes::Headline.new("Bird strike"))
-set.add_entity(Eccairs::Occurrence::Attributes::UtcDate.new("2024-03-15"))
-
-# Check if valid
-if set.valid?
-  puts "SET is valid!"
-  xml = set.to_xml
+errors = report.validate
+if errors.empty?
+  xml = report.to_xml
+  File.write("report.xml", xml)
 else
-  # Get validation errors
-  errors = set.validate
-  errors.each { |error| puts error }
+  errors.each { |error| puts error.message }
 end
 ```
 
-### Built-in Validations
+## Attribute Types
 
-The gem uses a **typed entity system** where each attribute automatically validates based on its type:
+Attributes inherit from typed base classes that provide automatic validation:
 
-#### Type-Based Validation
+- **`StringAttribute`** - Text values (e.g., `Headline`, `AircraftRegistration`)
+- **`EnumAttribute`** - Enumerated values from ECCAIRS taxonomy (e.g., `FlightPhase`, `OccurrenceCategory`)
+- **`DecimalAttribute`** - Decimal numbers (e.g., `AirTemperature`, `WindSpeed`)
+- **`IntegerAttribute`** - Integer numbers (e.g., `NumberOfEngines`, `RunwayNumber`)
+- **`DateAttribute`** - Date values (e.g., `UtcDate`)
+- **`TimeAttribute`** - Time values (e.g., `UtcTime`)
 
-- **DecimalEntity**: Validates numeric values with optional `min` and `max` constraints
-  ```ruby
-  class DewPoint < Eccairs::Base::DecimalEntity
-    attribute_id 85
-    xml_tag "Dew_Point"
-    unit "C"
-    min -100
-    max 100
-  end
-  ```
-
-- **IntegerEntity**: Validates integer values with optional `min` and `max` constraints
-  ```ruby
-  class NumberOfEngines < Eccairs::Base::IntegerEntity
-    attribute_id 392
-    xml_tag "Number_Of_Engines"
-    min 0
-  end
-  ```
-
-- **EnumEntity**: Validates against allowed values from ECCAIRS taxonomy
-  ```ruby
-  class OccurrenceCategory < Eccairs::Base::EnumEntity
-    attribute_id 430
-    xml_tag "Occurrence_Category"
-    allowed_values [1, 2, 3, 4, 5]
-  end
-
-  # With symbolic constants
-  class DangGoodsInvolved < Eccairs::Base::EnumEntity
-    attribute_id 129
-    xml_tag "Dang_Goods_Involved"
-    allowed_values({
-      YES: 1,
-      NO: 2,
-      UNKNOWN: 99
-    })
-  end
-
-  # Can use symbols, strings, or integer values
-  set.add_entity(DangGoodsInvolved.new(:YES))
-  set.add_entity(DangGoodsInvolved.new("NO"))
-  set.add_entity(DangGoodsInvolved.new(99))
-  set.add_entity(DangGoodsInvolved.new(DangGoodsInvolved::YES))
-  ```
-
-- **StringEntity**: Validates string values with optional `max_length` constraint
-  ```ruby
-  class Headline < Eccairs::Base::StringEntity
-    attribute_id 601
-    xml_tag "Headline"
-    max_length 500
-  end
-  ```
-
-- **DateEntity**: Validates Date, Time, or String values
-  ```ruby
-  class UtcDate < Eccairs::Base::DateEntity
-    attribute_id 477
-    xml_tag "UTC_Date"
-  end
-
-  set.add_entity(UtcDate.new(Date.today))
-  set.add_entity(UtcDate.new("2024-03-15"))
-  ```
-
-- **TimeEntity**: Validates Time or String values
-  ```ruby
-  class UtcTime < Eccairs::Base::TimeEntity
-    attribute_id 478
-    xml_tag "UTC_Time"
-  end
-
-  set.add_entity(UtcTime.new(Time.now))
-  set.add_entity(UtcTime.new("14:30:00"))
-  ```
-
-#### Validation Errors
-
-All validation happens at initialization time, providing immediate feedback:
+### Defining Custom Attributes
 
 ```ruby
-# This will raise an error immediately
-DewPoint.new(150)  # ArgumentError: Value 150 is above maximum 100
-
-# This will raise an error immediately
-OccurrenceCategory.new(99)  # ArgumentError: Value 99 is not in allowed values: [1, 2, 3, 4, 5]
-
-# This will raise an error immediately
-Headline.new("x" * 600)  # ArgumentError: Value exceeds maximum length of 500
-```
-
-#### XML Schema Validation
-
-After building your set, validate against the official ECCAIRS XSD schema:
-
-```ruby
-if set.valid?
-  puts "SET is valid!"
-else
-  errors = set.validate
-  errors.each { |error| puts error }
-end
-```
-
-## Typed Entity System
-
-The gem uses a sophisticated typed entity system where each attribute inherits from one of six base entity types. This provides automatic validation and type safety.
-
-### Base Entity Types
-
-All attributes inherit from one of these typed base classes:
-
-1. **`Eccairs::Base::DecimalEntity`** - For decimal/float values
-   - DSL methods: `min`, `max`, `unit`
-   - Validates numeric values within optional range
-
-2. **`Eccairs::Base::IntegerEntity`** - For integer values
-   - DSL methods: `min`, `max`, `unit`
-   - Validates integer values within optional range
-
-3. **`Eccairs::Base::EnumEntity`** - For enumerated values
-   - DSL method: `allowed_values` (array or hash)
-   - Validates against predefined value sets from ECCAIRS taxonomy
-   - Supports symbolic constants for better code readability
-
-4. **`Eccairs::Base::StringEntity`** - For string values
-   - DSL methods: `max_length`, `wrap_text_in`
-   - Validates string length
-   - Optional text wrapping (e.g., `<PlainText>`)
-
-5. **`Eccairs::Base::DateEntity`** - For date values
-   - Accepts Date, Time, or String objects
-   - Automatically formats for ECCAIRS XML
-
-6. **`Eccairs::Base::TimeEntity`** - For time values
-   - Accepts Time or String objects
-   - Automatically formats for ECCAIRS XML
-
-### Creating Custom Attributes
-
-Each attribute is a simple class that declares its configuration using DSL methods:
-
-```ruby
-# Decimal attribute with range validation
-class AirTemperature < Eccairs::Base::DecimalEntity
-  attribute_id 287
-  xml_tag "Air_Temperature"
-  unit "C"
-  min -100
-  max 100
+# String attribute
+class Headline < Eccairs::Base::StringAttribute
+  attribute_id 601
+  xml_tag "Headline"
+  sequence 1
 end
 
-# Enum attribute with symbolic constants
-class FlightPhase < Eccairs::Base::EnumEntity
+# Enum attribute
+class FlightPhase < Eccairs::Base::EnumAttribute
   attribute_id 390
   xml_tag "Flight_Phase"
-  allowed_values({
-    STANDING: 1,
-    TAXI: 2,
-    TAKEOFF: 3,
-    CLIMB: 4,
-    CRUISE: 5,
-    DESCENT: 6,
-    APPROACH: 7,
-    LANDING: 8
-  })
+  sequence 5
 end
 
-# String attribute with length validation and text wrapping
-class NarrativeText < Eccairs::Base::StringEntity
-  attribute_id 392
-  xml_tag "Narrative_Text"
-  max_length 32000
-  wrap_text_in "PlainText"
+# Decimal attribute
+class AirTemperature < Eccairs::Base::DecimalAttribute
+  attribute_id 287
+  xml_tag "Air_Temperature"
+  sequence 10
+end
+```
+
+### Defining Custom Entities
+
+```ruby
+class Aircraft < Eccairs::Base::Entity
+  entity_id 4
+  xml_tag "Aircraft"
+
+  # Attributes
+  has_many :aircraft_registration, class_name: "Eccairs::Attributes::AircraftRegistration"
+  has_many :flight_phase, class_name: "Eccairs::Attributes::FlightPhase"
+
+  # Nested entities
+  has_many :engine, class_name: "Eccairs::Entities::Engine"
+  has_many :incapacitation, class_name: "Eccairs::Entities::Incapacitation"
 end
 ```
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests:
-
-```bash
-bin/setup
-rake spec
-```
-
-You can also run `bin/console` for an interactive prompt that will allow you to experiment:
-
-```bash
-bin/console
-```
-
 ### Running Tests
 
 ```bash
-# Run all tests (1161 examples)
+# Run all tests (1,404 examples)
 bundle exec rspec
 
-# Run specific test file
-bundle exec rspec spec/eccairs/occurrence/attributes/headline_spec.rb
-
-# Run base entity tests
-bundle exec rspec spec/eccairs/base/
-
-# Run with coverage
-COVERAGE=true bundle exec rspec
+# Run specific test
+bundle exec rspec spec/eccairs/attributes/headline_spec.rb
 ```
 
 ### Test Coverage
 
-The gem has comprehensive test coverage:
-- **130 base entity tests** covering all typed entity validation
-- **1031+ attribute and entity tests** covering all ECCAIRS attributes
-- **100% passing** - all 1161 tests pass
-- **XML validation** - every test validates against the official XSD schema
+- **1,404 tests** covering all 259 attributes and 23 entities
+- **100% pass rate** - all tests validate against official XSD schema
+- **Automated test generation** via `scripts/generate_tests.rb`
 
 ### Project Structure
 
-The gem follows a consistent directory structure where the file path directly determines the XML nesting:
+**Flat directory structure** - all entities and attributes in single-level directories:
 
 ```
 lib/eccairs/
-├── base/                       # Typed base entity classes
-│   ├── entity.rb              # Base Entity class
-│   ├── entity_module.rb       # Base module for entity groupings
-│   ├── decimal_entity.rb      # Base for decimal attributes
-│   ├── integer_entity.rb      # Base for integer attributes
-│   ├── enum_entity.rb         # Base for enum attributes
-│   ├── string_entity.rb       # Base for string attributes
-│   ├── date_entity.rb         # Base for date attributes
-│   └── time_entity.rb         # Base for time attributes
-├── set.rb                      # Main Set class (orchestrates XML generation)
-├── occurrence.rb               # Occurrence module definition
-└── occurrence/
-    ├── attributes/             # Direct occurrence attributes
-    │   ├── headline.rb        # StringEntity
-    │   ├── utc_date.rb        # DateEntity
-    │   ├── utc_time.rb        # TimeEntity
-    │   ├── dew_point.rb       # DecimalEntity
-    │   ├── occurrence_category.rb  # EnumEntity
-    │   └── ...
-    └── entities/               # Top-level entities
-        ├── aircraft/
-        │   ├── attributes/     # Aircraft attributes
-        │   └── entities/       # Nested entities under Aircraft
-        │       ├── engine/
-        │       │   └── attributes/
-        │       └── flight_crew_member/
-        │           ├── attributes/
-        │           └── entities/
-        │               └── flight_crew_licenses/
-        │                   └── attributes/
-        ├── aerodrome_general/
-        │   ├── attributes/     # Aerodrome attributes
-        │   └── entities/       # Nested entities under Aerodrome
-        │       ├── runway/
-        │       │   └── attributes/
-        │       └── narrative/
-        │           └── attributes/
-        └── narrative/
-            └── attributes/
+├── base/
+│   ├── entity.rb              # Base class for entities
+│   ├── attribute.rb           # Base class for attributes
+│   ├── string_attribute.rb    # Base for string attributes
+│   ├── enum_attribute.rb      # Base for enum attributes
+│   ├── decimal_attribute.rb   # Base for decimal attributes
+│   ├── integer_attribute.rb   # Base for integer attributes
+│   ├── date_attribute.rb      # Base for date attributes
+│   └── time_attribute.rb      # Base for time attributes
+├── entities/                   # All 23 entities (flat)
+│   ├── aircraft.rb
+│   ├── aerodrome_general.rb
+│   ├── engine.rb
+│   ├── runway.rb
+│   ├── narrative.rb
+│   └── ...
+├── attributes/                 # All 259 attributes (flat)
+│   ├── headline.rb
+│   ├── aircraft_registration.rb
+│   ├── flight_phase.rb
+│   ├── utc_date.rb
+│   └── ...
+├── occurrence.rb               # Occurrence class with builder methods
+└── set.rb                      # Main Set class
 ```
 
-**Key Principle:** Directory structure = XML structure. Each `entities/` subdirectory creates an `<ENTITIES>` section in the XML, and each `attributes/` subdirectory creates an `<ATTRIBUTES>` section.
+**Key Principle:** Flat structure with Rails-style DSL. Entity relationships define XML hierarchy, not directory structure.
 
 ## ECCAIRS Resources
 
@@ -559,27 +332,12 @@ lib/eccairs/
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/Flightlogger/eccairs. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/Flightlogger/eccairs/blob/main/CODE_OF_CONDUCT.md).
-
-### Contribution Guidelines
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Write tests for your changes
-4. Ensure all tests pass (`rake spec`)
-5. Commit your changes (`git commit -am 'Add amazing feature'`)
-6. Push to the branch (`git push origin feature/amazing-feature`)
-7. Open a Pull Request
+Bug reports and pull requests are welcome on GitHub at https://github.com/Flightlogger/eccairs.
 
 ## License
 
-This gem is available as open source under the terms of the MIT License.
-
-## Code of Conduct
-
-Everyone interacting in the ECCAIRS project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/Flightlogger/eccairs/blob/main/CODE_OF_CONDUCT.md).
+MIT License - see LICENSE file for details.
 
 ## Acknowledgments
 
-- Built for compliance with ECCAIRS Aviation v5.1.0.0 taxonomy
-- Developed by [Flightlogger](https://github.com/Flightlogger)
+Built for compliance with ECCAIRS Aviation v5.1.0.0 taxonomy by [Flightlogger](https://github.com/Flightlogger).
