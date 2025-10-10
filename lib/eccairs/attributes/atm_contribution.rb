@@ -13,7 +13,7 @@ module Eccairs
         VALUE_100: 100,
         VALUE_101: 101,
         UNKNOWN: 99
-        )
+      )
     end
   end
 end

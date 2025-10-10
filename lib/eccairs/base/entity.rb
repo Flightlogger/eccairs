@@ -104,9 +104,7 @@ module Eccairs
         @parent = nil
       end
 
-      def parent=(value)
-        @parent = value
-      end
+      attr_writer :parent
 
       # Build XML for this entity
       def build_xml(xml, entity_id_counters = {})

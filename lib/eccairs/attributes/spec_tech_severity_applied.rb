@@ -10,7 +10,7 @@ module Eccairs
         YES: 1,
         NO: 2,
         VALUE_3: 3
-        )
+      )
     end
   end
 end

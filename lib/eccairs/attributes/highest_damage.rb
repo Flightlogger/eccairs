@@ -12,7 +12,7 @@ module Eccairs
         VALUE_3: 3,
         NOT_REPORTED: 98,
         UNKNOWN: 99
-        )
+      )
     end
   end
 end

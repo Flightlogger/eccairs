@@ -16,14 +16,14 @@ RSpec.describe Eccairs::Attributes::ClearedFlAfter do
       expect(described_class.superclass).to eq(Eccairs::Base::DecimalAttribute)
     end
   end
-  
+
   describe "initialization" do
     it "creates an instance with a value" do
       instance = described_class.new(10.5)
       expect(instance.value).to eq(10.5)
     end
   end
-  
+
   describe "XML generation in occurrence" do
     it "generates valid XML within an occurrence" do
       set = Eccairs.set
@@ -47,7 +47,7 @@ RSpec.describe Eccairs::Attributes::ClearedFlAfter do
       end
 
       errors = set.validate
-      expect(errors).to be_empty, "Expected no validation errors, got: #{errors.map(&:message).join(', ')}"
+      expect(errors).to be_empty, "Expected no validation errors, got: #{errors.map(&:message).join(", ")}"
     end
   end
 end

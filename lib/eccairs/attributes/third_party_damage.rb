@@ -18,7 +18,7 @@ module Eccairs
         VALUE_107: 107,
         NO: 2,
         UNKNOWN: 99
-        )
+      )
     end
   end
 end

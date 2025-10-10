@@ -15,7 +15,7 @@ module Eccairs
         VALUE_6: 6,
         NOT_REPORTED: 98,
         UNKNOWN: 99
-        )
+      )
     end
   end
 end

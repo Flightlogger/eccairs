@@ -28,7 +28,7 @@ module Eccairs
         VALUE_21: 21,
         VALUE_5: 5,
         YES: 1
-        )
+      )
     end
   end
 end

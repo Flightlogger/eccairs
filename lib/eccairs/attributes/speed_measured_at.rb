@@ -10,7 +10,7 @@ module Eccairs
         NO: 2,
         YES: 1,
         UNKNOWN: 99
-        )
+      )
     end
   end
 end

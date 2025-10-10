@@ -16,7 +16,7 @@ module Eccairs
         VALUE_501: 501,
         VALUE_502: 502,
         VALUE_500: 500
-        )
+      )
     end
   end
 end

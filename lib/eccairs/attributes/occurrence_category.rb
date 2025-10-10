@@ -43,7 +43,7 @@ module Eccairs
         VALUE_22: 22,
         VALUE_27: 27,
         VALUE_23: 23
-        )
+      )
     end
   end
 end

@@ -10,7 +10,7 @@ module Eccairs
         VMC: 1,
         IMC: 2,
         UNKNOWN: 99
-        )
+      )
     end
   end
 end

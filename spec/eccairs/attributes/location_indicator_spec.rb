@@ -16,14 +16,14 @@ RSpec.describe Eccairs::Attributes::LocationIndicator do
       expect(described_class.superclass).to eq(Eccairs::Base::StringAttribute)
     end
   end
-  
+
   describe "initialization" do
     it "creates an instance with a value" do
       instance = described_class.new("1000")
       expect(instance.value).to eq("1000")
     end
   end
-  
+
   describe "XML generation in occurrence" do
     it "generates valid XML within an occurrence" do
       set = Eccairs.set
@@ -47,7 +47,7 @@ RSpec.describe Eccairs::Attributes::LocationIndicator do
       end
 
       errors = set.validate
-      expect(errors).to be_empty, "Expected no validation errors, got: #{errors.map(&:message).join(', ')}"
+      expect(errors).to be_empty, "Expected no validation errors, got: #{errors.map(&:message).join(", ")}"
     end
   end
 end

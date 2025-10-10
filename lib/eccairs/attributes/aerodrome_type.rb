@@ -10,7 +10,7 @@ module Eccairs
         AERODROME: 1,
         HELIPORT: 2,
         UNKNOWN: 99
-        )
+      )
     end
   end
 end

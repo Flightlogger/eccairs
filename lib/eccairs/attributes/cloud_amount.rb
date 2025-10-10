@@ -15,7 +15,7 @@ module Eccairs
         VALUE_4: 4,
         VALUE_5: 5,
         UNKNOWN: 99
-        )
+      )
     end
   end
 end

@@ -3589,7 +3589,7 @@ module Eccairs
         VALUE_99999: 99999,
         VALUE_99998: 99998,
         VALUE_13200: 13200
-        )
+      )
     end
   end
 end

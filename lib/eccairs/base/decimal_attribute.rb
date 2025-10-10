@@ -44,4 +44,3 @@ module Eccairs
     end
   end
 end
-

@@ -55,7 +55,7 @@ module Eccairs
         if hash
           # Try as symbol
           return hash[value] if value.is_a?(Symbol) && hash.key?(value)
-          
+
           # Try as string
           symbol_key = value.to_s.upcase.to_sym
           return hash[symbol_key] if hash.key?(symbol_key)
@@ -69,4 +69,3 @@ module Eccairs
     end
   end
 end
-

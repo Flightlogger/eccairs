@@ -14,7 +14,7 @@ module Eccairs
         VALUE_5: 5,
         VALUE_7: 7,
         VALUE_6: 6
-        )
+      )
     end
   end
 end

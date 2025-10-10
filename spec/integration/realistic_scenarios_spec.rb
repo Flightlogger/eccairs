@@ -56,11 +56,11 @@ RSpec.describe "Realistic ECCAIRS XML Generation Scenarios" do
 
         # Narrative
         narrative_text = "During takeoff roll on runway 04R, at approximately 80 knots, " \
-                         "the crew observed a flock of birds crossing the runway. " \
-                         "Unable to stop safely, the aircraft continued the takeoff. " \
-                         "Multiple bird strikes were felt and heard. The takeoff was completed " \
-                         "successfully and the aircraft returned for landing after dumping fuel. " \
-                         "Post-flight inspection revealed damage to the nose cone and engine inlet."
+          "the crew observed a flock of birds crossing the runway. " \
+          "Unable to stop safely, the aircraft continued the takeoff. " \
+          "Multiple bird strikes were felt and heard. The takeoff was completed " \
+          "successfully and the aircraft returned for landing after dumping fuel. " \
+          "Post-flight inspection revealed damage to the nose cone and engine inlet."
 
         occurrence.add_narrative do |narrative|
           narrative.add_narrative_text(narrative_text)
@@ -134,10 +134,10 @@ RSpec.describe "Realistic ECCAIRS XML Generation Scenarios" do
 
         # Narrative
         narrative_text = "An airport maintenance vehicle crossed runway 27L without clearance " \
-                         "while an aircraft was on final approach at 3 miles. The tower controller " \
-                         "immediately instructed the aircraft to go around. The aircraft executed " \
-                         "the go-around successfully with no damage or injuries. Investigation revealed " \
-                         "a communication breakdown between ground control and the vehicle driver."
+          "while an aircraft was on final approach at 3 miles. The tower controller " \
+          "immediately instructed the aircraft to go around. The aircraft executed " \
+          "the go-around successfully with no damage or injuries. Investigation revealed " \
+          "a communication breakdown between ground control and the vehicle driver."
 
         occurrence.add_narrative do |narrative|
           narrative.add_narrative_text(narrative_text)
@@ -198,12 +198,12 @@ RSpec.describe "Realistic ECCAIRS XML Generation Scenarios" do
 
         # Narrative
         narrative_text = "During cruise at FL370, the crew experienced a sudden vibration followed by " \
-                         "engine fire warnings on the right engine. The crew executed the engine fire " \
-                         "checklist, shut down the right engine, and discharged both fire bottles. " \
-                         "The fire warning extinguished. The crew declared an emergency and diverted " \
-                         "to the nearest suitable airport. The aircraft landed safely on one engine " \
-                         "with no injuries. Post-incident inspection revealed a catastrophic failure " \
-                         "of a high-pressure turbine blade, resulting in significant engine damage."
+          "engine fire warnings on the right engine. The crew executed the engine fire " \
+          "checklist, shut down the right engine, and discharged both fire bottles. " \
+          "The fire warning extinguished. The crew declared an emergency and diverted " \
+          "to the nearest suitable airport. The aircraft landed safely on one engine " \
+          "with no injuries. Post-incident inspection revealed a catastrophic failure " \
+          "of a high-pressure turbine blade, resulting in significant engine damage."
 
         occurrence.add_narrative do |narrative|
           narrative.add_narrative_text(narrative_text)
