@@ -63,6 +63,7 @@ module Eccairs
       # Nested entities
       has_many :aircraft, class_name: "Eccairs::Entities::Aircraft"
       has_many :aerodrome_general, class_name: "Eccairs::Entities::AerodromeGeneral"
+      has_many :aerodrome_weather_reports, class_name: "Eccairs::Entities::AerodromeWeatherReports"
       has_many :air_navigation_service, class_name: "Eccairs::Entities::AirNavigationService"
       has_many :air_space, class_name: "Eccairs::Entities::AirSpace"
       has_many :dangerous_goods, class_name: "Eccairs::Entities::DangerousGoods"
@@ -72,6 +73,7 @@ module Eccairs
       has_many :precipitation_and_other_weather_phenomena, class_name: "Eccairs::Entities::PrecipitationAndOtherWeatherPhenomena"
       has_many :reporting_history, class_name: "Eccairs::Entities::ReportingHistory"
       has_many :risk_assessment, class_name: "Eccairs::Entities::RiskAssessment"
+      has_many :runway_incursion, class_name: "Eccairs::Entities::RunwayIncursion"
       has_many :separation, class_name: "Eccairs::Entities::Separation"
     end
   end

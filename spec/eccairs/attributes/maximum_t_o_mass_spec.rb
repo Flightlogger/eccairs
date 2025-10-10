@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Eccairs::Attributes::MaximumToMass do
+RSpec.describe Eccairs::Attributes::MaximumTOMass do
   describe "class configuration" do
     it "has correct attribute_id" do
       expect(described_class.attribute_id).to eq("175")
@@ -19,30 +19,34 @@ RSpec.describe Eccairs::Attributes::MaximumToMass do
 
   describe "initialization" do
     it "creates an instance with a value" do
-      instance = described_class.new(10.5)
-      expect(instance.value).to eq(10.5)
+      attribute = described_class.new(79000.5)
+      expect(attribute.value).to eq(79000.5)
     end
   end
 
   describe "XML generation in occurrence" do
     it "generates valid XML within an occurrence" do
-      set = Eccairs.set
+      set = Eccairs::Set.new
       set.add_occurrence do |occurrence|
-        occurrence.add_aircraft do |aircraft|
-          aircraft.add_maximum_t_o_mass(10.5)
+        occurrence.add_file_number("TEST-001")
+        occurrence.add_responsible_entity("1")
+        occurrence.add_occurrence_class("100")
+
+        occurrence.add_aircraft(id: "AC1") do |aircraft|
+          aircraft.add_maximum_t_o_mass(79000.5)
         end
       end
 
       xml = set.to_xml
       expect(xml).to include("Maximum_T_O_Mass")
-      expect(xml).to include('attributeId="175"')
+      expect(xml).to include("79000.5")
     end
 
     it "validates successfully in a minimal occurrence" do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
-        occurrence.add_aircraft do |aircraft|
-          aircraft.add_maximum_t_o_mass(10.5)
+        occurrence.add_aircraft(id: "AC1") do |aircraft|
+          aircraft.add_maximum_t_o_mass(79000.5)
         end
       end
 

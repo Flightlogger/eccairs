@@ -8,6 +8,9 @@ module Eccairs
 
       belongs_to :aircraft
 
+      # Nested entities
+      has_many :flight_crew_licenses, class_name: "Eccairs::Entities::FlightCrewLicenses"
+
       # Attributes
       has_many :category, class_name: "Eccairs::Attributes::Category"
       has_many :duty_last_24_hours, class_name: "Eccairs::Attributes::DutyLast24Hours"

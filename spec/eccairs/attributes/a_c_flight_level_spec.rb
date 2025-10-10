@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Eccairs::Attributes::AircraftFlightLevel do
+RSpec.describe Eccairs::Attributes::ACFlightLevel do
   describe "class configuration" do
     it "has correct attribute_id" do
       expect(described_class.attribute_id).to eq("25")
@@ -19,35 +19,40 @@ RSpec.describe Eccairs::Attributes::AircraftFlightLevel do
 
   describe "initialization" do
     it "creates an instance with a value" do
-      instance = described_class.new(10)
-      expect(instance.value).to eq(10)
+      attribute = described_class.new(350)
+      expect(attribute.value).to eq(350)
     end
   end
 
   describe "XML generation in occurrence" do
     it "generates valid XML within an occurrence" do
-      set = Eccairs.set
+      set = Eccairs::Set.new
       set.add_occurrence do |occurrence|
-        occurrence.add_aircraft do |aircraft|
-          aircraft.add_a_c_flight_level(10)
+        occurrence.add_file_number("TEST-001")
+        occurrence.add_responsible_entity("1")
+
+        occurrence.add_aircraft(id: "AC1") do |aircraft|
+          aircraft.add_a_c_flight_level(350)
         end
       end
 
       xml = set.to_xml
       expect(xml).to include("A_C_Flight_Level")
-      expect(xml).to include('attributeId="25"')
+      expect(xml).to include("350")
     end
 
     it "validates successfully in a minimal occurrence" do
-      set = Eccairs.set
+      set = Eccairs::Set.new
       set.add_occurrence do |occurrence|
-        occurrence.add_aircraft do |aircraft|
-          aircraft.add_a_c_flight_level(10)
+        occurrence.add_file_number("TEST-001")
+        occurrence.add_responsible_entity("1")
+
+        occurrence.add_aircraft(id: "AC1") do |aircraft|
+          aircraft.add_a_c_flight_level(350)
         end
       end
 
-      errors = set.validate
-      expect(errors).to be_empty, "Expected no validation errors, got: #{errors.map(&:message).join(", ")}"
+      expect(set.valid?).to be true
     end
   end
 end

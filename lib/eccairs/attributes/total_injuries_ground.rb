@@ -3,7 +3,7 @@
 module Eccairs
   module Attributes
     class TotalInjuriesGround < Eccairs::Base::IntegerAttribute
-      attribute_id 463
+      attribute_id "463"
       xml_tag "Total_Injuries-Ground"
       sequence 32
       min 0

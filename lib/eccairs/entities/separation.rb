@@ -8,6 +8,9 @@ module Eccairs
 
       belongs_to :occurrence
 
+      # Nested entities
+      has_many :separation_aircraft, class_name: "Eccairs::Entities::SeparationAircraft"
+
       # Attributes
       has_many :est_minimum_horiz_sep, class_name: "Eccairs::Attributes::EstMinimumHorizSep"
       has_many :est_vert_separation, class_name: "Eccairs::Attributes::EstVertSeparation"

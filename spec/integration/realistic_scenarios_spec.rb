@@ -44,7 +44,7 @@ RSpec.describe "Realistic ECCAIRS XML Generation Scenarios" do
         occurrence.add_aircraft do |aircraft|
           aircraft.add_aircraft_registration("N12345")
           aircraft.add_year_built(2018)
-          aircraft.add_maximum_to_mass(79000)
+          aircraft.add_maximum_t_o_mass(79000)
           aircraft.add_number_of_engines(2)
           aircraft.add_flight_phase(3) # Takeoff
 
@@ -183,7 +183,7 @@ RSpec.describe "Realistic ECCAIRS XML Generation Scenarios" do
         occurrence.add_aircraft do |aircraft|
           aircraft.add_aircraft_registration("N98765")
           aircraft.add_year_built(2015)
-          aircraft.add_maximum_to_mass(250000)
+          aircraft.add_maximum_t_o_mass(250000)
           aircraft.add_number_of_engines(2)
           aircraft.add_flight_phase(5) # Cruise
           aircraft.add_total_number_of_persons(189)
