@@ -5,20 +5,14 @@ module Eccairs
     class DecimalAttribute < Attribute
       # DSL method to set min at class level
       def self.min(value = nil)
-        if value
-          @min = value.to_f
-        else
-          @min
-        end
+        return @min unless value
+        @min = value.to_f
       end
 
       # DSL method to set max at class level
       def self.max(value = nil)
-        if value
-          @max = value.to_f
-        else
-          @max
-        end
+        return @max unless value
+        @max = value.to_f
       end
 
       protected
@@ -26,19 +20,16 @@ module Eccairs
       def validate_value(value)
         return if value.nil?
 
+        raise ArgumentError, "Value must be numeric, got #{value.class}" if value.is_a?(Array) || value.is_a?(Hash)
+
         numeric_value = Float(value)
+        raise ArgumentError, "Value #{numeric_value} is less than minimum of #{self.class.min}" if self.class.min && numeric_value < self.class.min
+        raise ArgumentError, "Value #{numeric_value} is greater than maximum of #{self.class.max}" if self.class.max && numeric_value > self.class.max
 
-        min = self.class.min
-        if min && numeric_value < min
-          raise ArgumentError, "Value #{numeric_value} is less than minimum of #{min}"
-        end
-
-        max = self.class.max
-        if max && numeric_value > max
-          raise ArgumentError, "Value #{numeric_value} is greater than maximum of #{max}"
-        end
+        # Preserve string representation for scientific notation
+        @value = value if value.is_a?(String) && value.match?(/e/i)
       rescue ArgumentError => e
-        raise unless e.message.include?("invalid value for Float")
+        raise if e.message.include?("less than minimum") || e.message.include?("greater than maximum")
         raise ArgumentError, "Value must be numeric, got #{value.class}"
       end
     end

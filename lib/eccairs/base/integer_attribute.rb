@@ -5,20 +5,14 @@ module Eccairs
     class IntegerAttribute < Attribute
       # DSL method to set min at class level
       def self.min(value = nil)
-        if value
-          @min = value.to_i
-        else
-          @min
-        end
+        return @min unless value
+        @min = value.to_i
       end
 
       # DSL method to set max at class level
       def self.max(value = nil)
-        if value
-          @max = value.to_i
-        else
-          @max
-        end
+        return @max unless value
+        @max = value.to_i
       end
 
       protected
@@ -26,19 +20,13 @@ module Eccairs
       def validate_value(value)
         return if value.nil?
 
+        raise ArgumentError, "Value must be an integer, got #{value.class}" if value.is_a?(Array) || value.is_a?(Hash) || value.is_a?(Float)
+
         integer_value = Integer(value)
-
-        min = self.class.min
-        if min && integer_value < min
-          raise ArgumentError, "Value #{integer_value} is less than minimum of #{min}"
-        end
-
-        max = self.class.max
-        if max && integer_value > max
-          raise ArgumentError, "Value #{integer_value} is greater than maximum of #{max}"
-        end
+        raise ArgumentError, "Value #{integer_value} is less than minimum of #{self.class.min}" if self.class.min && integer_value < self.class.min
+        raise ArgumentError, "Value #{integer_value} is greater than maximum of #{self.class.max}" if self.class.max && integer_value > self.class.max
       rescue ArgumentError => e
-        raise unless e.message.include?("invalid value for Integer")
+        raise if e.message.include?("less than minimum") || e.message.include?("greater than maximum")
         raise ArgumentError, "Value must be an integer, got #{value.class}"
       end
     end

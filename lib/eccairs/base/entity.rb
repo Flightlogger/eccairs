@@ -7,23 +7,17 @@ module Eccairs
 
       # DSL method to set entity_id at class level
       def self.entity_id(value = nil)
-        if value
-          @entity_id = value.to_s
-        else
-          @entity_id
-        end
+        return @entity_id unless value
+        @entity_id = value.to_s
       end
 
       # DSL method to set xml_tag at class level
       def self.xml_tag(value = nil)
-        if value
-          @xml_tag = value.to_s
-        else
-          @xml_tag
-        end
+        return @xml_tag unless value
+        @xml_tag = value.to_s
       end
 
-      # DSL method to indicate if this entity requires an ID attribute (for key constraints)
+      # DSL method to indicate if this entity requires an ID attribute
       def self.requires_id(value = true)
         @requires_id = value
       end
@@ -32,6 +26,15 @@ module Eccairs
         @requires_id || false
       end
 
+      # DSL method to set sequence at class level (for XML ordering)
+      def self.sequence(value = nil)
+        return @sequence || 999 unless value
+        @sequence = value.to_i
+      end
+
+      attr_writer :parent
+      attr_accessor :id
+
       def initialize
         @attributes = {}
         @children = {}
@@ -39,13 +42,9 @@ module Eccairs
         @id = nil
       end
 
-      attr_writer :parent
-      attr_accessor :id
-
       private
 
       # Helper method for explicit add_attribute methods
-      # This is called by the generated explicit methods in each entity class
       def add_attribute(klass, is_has_one, *args)
         instance = klass.new(*args)
         name = klass.xml_tag.downcase.to_sym
@@ -53,15 +52,13 @@ module Eccairs
         if is_has_one
           @attributes[name] = instance
         else
-          @attributes[name] ||= []
-          @attributes[name] << instance
+          (@attributes[name] ||= []) << instance
         end
 
         instance
       end
 
       # Helper method for explicit add_entity methods
-      # This is called by the generated explicit methods in each entity class
       def add_entity(klass, is_has_one, id: nil, &block)
         instance = klass.new
         instance.parent = self
@@ -71,11 +68,10 @@ module Eccairs
         if is_has_one
           @children[name] = instance
         else
-          @children[name] ||= []
-          @children[name] << instance
+          (@children[name] ||= []) << instance
         end
-        block&.call(instance)
 
+        block&.call(instance)
         instance
       end
 
@@ -83,53 +79,52 @@ module Eccairs
 
       # Build XML for this entity
       def build_xml(xml, entity_id_counters = {})
-        xml_attributes = {entityId: self.class.entity_id}
+        xml.send(self.class.xml_tag, build_xml_attributes(entity_id_counters)) do
+          build_attributes_section(xml) if @attributes&.any?
+          build_entities_section(xml, entity_id_counters) if @children&.any?
+        end
+      end
 
-        # Add ID attribute if required
+      private
+
+      def build_xml_attributes(entity_id_counters)
+        attrs = {}
+        attrs[:entityId] = self.class.entity_id if self.class.entity_id
+
         if self.class.requires_id?
-          entity_name = self.class.name.split("::").last
+          entity_name = self.class.name&.split("::")&.last || self.class.xml_tag
           entity_id_counters[entity_name] ||= 0
           entity_id_counters[entity_name] += 1
-          xml_attributes[:ID] = "#{entity_name}_#{entity_id_counters[entity_name]}"
+          attrs[:ID] = "#{entity_name}_#{entity_id_counters[entity_name]}"
         end
 
-        xml.send(self.class.xml_tag, xml_attributes) do
-          # Build ATTRIBUTES section
-          if @attributes.any?
-            xml.ATTRIBUTES do
-              # Flatten all attributes and sort by sequence
-              all_attributes = @attributes.values.flatten
-              all_attributes.sort_by { |attr| attr.class.sequence }.each do |attr|
-                attr.build_xml(xml)
-              end
-            end
-          end
+        attrs
+      end
 
-          # Build ENTITIES section
-          if @children.any?
-            xml.ENTITIES do
-              # Process all child entities
-              @children.each do |_name, child_or_children|
-                if child_or_children.is_a?(Array)
-                  child_or_children.each { |child| child.build_xml(xml, entity_id_counters) }
-                else
-                  child_or_children.build_xml(xml, entity_id_counters)
-                end
-              end
-            end
+      def build_attributes_section(xml)
+        xml.ATTRIBUTES do
+          @attributes.values.flatten.sort_by { |attr| attr.class.sequence }.each do |attr|
+            attr.build_xml(xml)
           end
         end
       end
 
-      # Get all attributes recursively for validation
+      def build_entities_section(xml, entity_id_counters)
+        xml.ENTITIES do
+          all_children = @children.values.flatten
+          all_children.sort_by { |child| child.class.sequence }.each do |child|
+            child.build_xml(xml, entity_id_counters)
+          end
+        end
+      end
+
+      public
+
+      # Get all attributes recursively
       def all_attributes
         attrs = @attributes.values.flatten
-        @children.each do |_name, child_or_children|
-          if child_or_children.is_a?(Array)
-            child_or_children.each { |child| attrs.concat(child.all_attributes) if child.respond_to?(:all_attributes) }
-          elsif child_or_children.respond_to?(:all_attributes)
-            attrs.concat(child_or_children.all_attributes)
-          end
+        @children.values.flatten.each do |child|
+          attrs.concat(child.all_attributes) if child.respond_to?(:all_attributes)
         end
         attrs
       end

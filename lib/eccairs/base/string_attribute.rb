@@ -5,11 +5,8 @@ module Eccairs
     class StringAttribute < Attribute
       # DSL method to set max_length at class level
       def self.max_length(value = nil)
-        if value
-          @max_length = value.to_i
-        else
-          @max_length
-        end
+        return @max_length unless value
+        @max_length = value.to_i
       end
 
       protected
@@ -17,14 +14,8 @@ module Eccairs
       def validate_value(value)
         return if value.nil?
 
-        unless value.is_a?(String)
-          raise ArgumentError, "Value must be a string, got #{value.class}"
-        end
-
-        max = self.class.max_length
-        if max && value.length > max
-          raise ArgumentError, "String length #{value.length} exceeds maximum of #{max}"
-        end
+        raise ArgumentError, "Value must be a string, got #{value.class}" unless value.is_a?(String)
+        raise ArgumentError, "String length #{value.length} exceeds maximum of #{self.class.max_length}" if self.class.max_length && value.length > self.class.max_length
       end
     end
   end
