@@ -20,7 +20,7 @@ RSpec.describe Eccairs::Attributes::AtmContribution do
   describe "initialization" do
     it "creates an instance with a value" do
       instance = described_class.new("2")
-      expect(instance.value).to eq("2")
+      expect(instance.value).to eq(2)
     end
   end
 

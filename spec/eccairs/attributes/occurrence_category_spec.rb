@@ -20,7 +20,7 @@ RSpec.describe Eccairs::Attributes::OccurrenceCategory do
   describe "initialization" do
     it "creates an instance with a value" do
       instance = described_class.new("100")
-      expect(instance.value).to eq("100")
+      expect(instance.value).to eq(100)
     end
   end
 

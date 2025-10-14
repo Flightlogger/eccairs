@@ -20,7 +20,7 @@ RSpec.describe Eccairs::Attributes::ServicesProvided do
   describe "initialization" do
     it "creates an instance with a value" do
       instance = described_class.new("2000000")
-      expect(instance.value).to eq("2000000")
+      expect(instance.value).to eq(2000000)
     end
   end
 

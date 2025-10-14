@@ -20,7 +20,7 @@ RSpec.describe Eccairs::Attributes::Annex2ACType do
   describe "initialization" do
     it "creates an instance with a value" do
       attribute = described_class.new("2")
-      expect(attribute.value).to eq("2")
+      expect(attribute.value).to eq(2)
     end
   end
 

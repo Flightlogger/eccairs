@@ -20,7 +20,7 @@ RSpec.describe Eccairs::Attributes::MassGroup do
   describe "initialization" do
     it "creates an instance with a value" do
       instance = described_class.new("99")
-      expect(instance.value).to eq("99")
+      expect(instance.value).to eq(99)
     end
   end
 

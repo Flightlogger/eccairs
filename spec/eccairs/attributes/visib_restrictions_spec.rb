@@ -20,7 +20,7 @@ RSpec.describe Eccairs::Attributes::VisibRestrictions do
   describe "initialization" do
     it "creates an instance with a value" do
       attribute = described_class.new("4")
-      expect(attribute.value).to eq("4")
+      expect(attribute.value).to eq(4)
     end
   end
 

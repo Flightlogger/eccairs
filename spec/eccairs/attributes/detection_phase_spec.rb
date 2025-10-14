@@ -20,7 +20,7 @@ RSpec.describe Eccairs::Attributes::DetectionPhase do
   describe "initialization" do
     it "creates an instance with a value" do
       instance = described_class.new("1")
-      expect(instance.value).to eq("1")
+      expect(instance.value).to eq(1)
     end
   end
 

@@ -20,7 +20,7 @@ RSpec.describe Eccairs::Attributes::ReasonForIncapacity do
   describe "initialization" do
     it "creates an instance with a value" do
       instance = described_class.new("4")
-      expect(instance.value).to eq("4")
+      expect(instance.value).to eq(4)
     end
   end
 

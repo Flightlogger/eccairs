@@ -20,7 +20,7 @@ RSpec.describe Eccairs::Attributes::PersonIncapacitated do
   describe "initialization" do
     it "creates an instance with a value" do
       instance = described_class.new("3")
-      expect(instance.value).to eq("3")
+      expect(instance.value).to eq(3)
     end
   end
 
