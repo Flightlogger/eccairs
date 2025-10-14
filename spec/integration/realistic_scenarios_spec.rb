@@ -341,11 +341,11 @@ RSpec.describe "Realistic ECCAIRS XML Generation Scenarios" do
 
       # Verify multiple engines are present in XML
       # Count Engine entity tags (opening tags with entityId attribute)
-      engine_count = xml.scan(/<Engine entityId="13"/).length
+      engine_count = xml.scan('<Engine entityId="13"').length
       expect(engine_count).to eq(4), "Expected 4 engines in XML, found #{engine_count}"
 
       # Verify multiple crew members are present in XML
-      crew_count = xml.scan(/<Flight_Crew_Member entityId="17"/).length
+      crew_count = xml.scan('<Flight_Crew_Member entityId="17"').length
       expect(crew_count).to eq(3), "Expected 3 crew members in XML, found #{crew_count}"
     end
   end
