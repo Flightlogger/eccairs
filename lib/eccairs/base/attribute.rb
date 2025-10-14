@@ -7,38 +7,26 @@ module Eccairs
 
       # DSL method to set attribute_id at class level
       def self.attribute_id(value = nil)
-        if value
-          @attribute_id = value.to_s
-        else
-          @attribute_id
-        end
+        return @attribute_id unless value
+        @attribute_id = value.to_s
       end
 
       # DSL method to set xml_tag at class level
       def self.xml_tag(value = nil)
-        if value
-          @xml_tag = value.to_s
-        else
-          @xml_tag
-        end
+        return @xml_tag unless value
+        @xml_tag = value.to_s
       end
 
       # DSL method to set sequence at class level (for XML ordering)
       def self.sequence(value = nil)
-        if value
-          @sequence = value.to_i
-        else
-          @sequence || 999 # Default to high number if not set
-        end
+        return @sequence || 999 unless value
+        @sequence = value.to_i
       end
 
       # DSL method to set unit for XML attribute (e.g., "C", "kt", "Hour(s)")
       def self.unit(value = nil)
-        if value
-          @unit = value.to_s
-        else
-          @unit
-        end
+        return @unit unless value
+        @unit = value.to_s
       end
 
       def initialize(value = nil)
@@ -46,30 +34,29 @@ module Eccairs
       end
 
       def value=(new_value)
+        @value_before_validation = @value
         validate_value(new_value)
-        @value = new_value
+        # Only set @value if validate_value didn't already set it
+        @value = new_value if @value == @value_before_validation
       end
 
       # Method to build XML for this attribute
-      # Can be overridden by subclasses for custom behavior
       def build_xml(xml)
         return unless value
 
-        tag_name = self.class.xml_tag
-        raise NotImplementedError, "Subclasses must define xml_tag" unless tag_name
+        raise NotImplementedError, "Subclasses must define xml_tag" unless self.class.xml_tag
 
-        xml_attributes = {attributeId: self.class.attribute_id}
-        xml_attributes[:Unit] = self.class.unit if self.class.unit
+        attrs = {attributeId: self.class.attribute_id}
+        attrs[:Unit] = self.class.unit if self.class.unit
 
-        xml.send(tag_name, value, xml_attributes)
+        xml.send(self.class.xml_tag, value, attrs)
       end
 
       protected
 
       # Hook for subclasses to validate the value
-      # Override in typed attribute subclasses for custom validation logic
       def validate_value(value)
-        # Base implementation does nothing - subclasses override this
+        # Base implementation does nothing
       end
     end
   end
