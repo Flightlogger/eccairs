@@ -5,6 +5,7 @@ module Eccairs
     class PartInformation < Eccairs::Base::Entity
       entity_id "26"
       xml_tag "Part_Information"
+      sequence 5
 
       # Add ata chapter number
       # @param value [Object] The attribute value

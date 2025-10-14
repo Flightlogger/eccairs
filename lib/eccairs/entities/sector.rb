@@ -5,6 +5,7 @@ module Eccairs
     class Sector < Eccairs::Base::Entity
       entity_id "33"
       xml_tag "Sector"
+      sequence 2
       requires_id
 
       # Add atm staff entity

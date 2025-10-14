@@ -5,6 +5,7 @@ module Eccairs
     class GroundHandling < Eccairs::Base::Entity
       entity_id "60"
       xml_tag "Ground_Handling"
+      sequence 14
 
       # Add gh organisation
       # @param value [Object] The attribute value

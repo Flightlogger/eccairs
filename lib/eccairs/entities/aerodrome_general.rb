@@ -5,6 +5,7 @@ module Eccairs
     class AerodromeGeneral < Eccairs::Base::Entity
       entity_id "1"
       xml_tag "Aerodrome_General"
+      sequence 1
       # Aerodrome attributes
 
       # Add aerodrome latitude

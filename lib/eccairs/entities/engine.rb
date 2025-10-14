@@ -5,6 +5,7 @@ module Eccairs
     class Engine < Eccairs::Base::Entity
       entity_id "13"
       xml_tag "Engine"
+      sequence 1
       # Engine attributes
 
       # Add ata chapter involved

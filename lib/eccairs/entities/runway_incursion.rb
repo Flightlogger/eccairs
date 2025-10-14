@@ -5,6 +5,7 @@ module Eccairs
     class RunwayIncursion < Eccairs::Base::Entity
       entity_id "47"
       xml_tag "Runway_Incursion"
+      sequence 11
 
       # Add entity involved
       # @param value [Object] The attribute value

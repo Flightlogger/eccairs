@@ -5,6 +5,7 @@ module Eccairs
     class Incapacitation < Eccairs::Base::Entity
       entity_id "20"
       xml_tag "Incapacitation"
+      sequence 3
 
       # Add person incapacitated
       # @param value [Object] The attribute value

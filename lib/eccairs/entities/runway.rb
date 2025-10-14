@@ -5,6 +5,7 @@ module Eccairs
     class Runway < Eccairs::Base::Entity
       entity_id "31"
       xml_tag "Runway"
+      sequence 2
       requires_id
       # Runway attributes
 

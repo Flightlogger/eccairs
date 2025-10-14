@@ -5,6 +5,7 @@ module Eccairs
     class SeparationAircraft < Eccairs::Base::Entity
       entity_id "35"
       xml_tag "Separation_Aircraft"
+      sequence 1
 
       # Add separation traffic info type quality entity
       # @yield [separation_traffic_info_type_quality] Block for configuring the separation traffic info type quality

@@ -5,6 +5,7 @@ module Eccairs
     class AerodromeWeatherReports < Eccairs::Base::Entity
       entity_id "2"
       xml_tag "Aerodrome_Weather_Reports"
+      sequence 2
 
       # Add wx report
       # @param value [Object] The attribute value

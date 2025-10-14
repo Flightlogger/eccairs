@@ -5,6 +5,7 @@ module Eccairs
     class AirNavigationService < Eccairs::Base::Entity
       entity_id "10"
       xml_tag "Air_Navigation_Service"
+      sequence 5
 
       # Add ansp name
       # @param value [Object] The attribute value

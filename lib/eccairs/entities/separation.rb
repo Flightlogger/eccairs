@@ -5,6 +5,7 @@ module Eccairs
     class Separation < Eccairs::Base::Entity
       entity_id "34"
       xml_tag "Separation"
+      sequence 9
 
       # Add separation aircraft entity
       # @yield [separation_aircraft] Block for configuring the separation aircraft

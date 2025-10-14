@@ -5,6 +5,7 @@ module Eccairs
     class AircraftNarrative < Eccairs::Base::Entity
       entity_id "22"
       xml_tag "Narrative"
+      sequence 7
       # Narrative attributes
 
       # Add narrative language

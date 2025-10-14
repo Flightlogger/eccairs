@@ -5,6 +5,7 @@ module Eccairs
     class AtmStaff < Eccairs::Base::Entity
       entity_id "9"
       xml_tag "ATM_Staff"
+      sequence 1
 
       # Add cism offered
       # @param value [Object] The attribute value

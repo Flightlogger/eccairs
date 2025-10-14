@@ -5,6 +5,7 @@ module Eccairs
     class RiskAssessment < Eccairs::Base::Entity
       entity_id "59"
       xml_tag "Risk_Assessment"
+      sequence 13
       # Attributes - there are many, adding the main ones
 
       # Add key risk area

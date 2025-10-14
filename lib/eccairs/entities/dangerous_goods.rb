@@ -5,6 +5,7 @@ module Eccairs
     class DangerousGoods < Eccairs::Base::Entity
       entity_id "43"
       xml_tag "Dangerous_Goods"
+      sequence 10
       requires_id
 
       # Add air waybill consignment tracking number

@@ -5,6 +5,7 @@ module Eccairs
     class Events < Eccairs::Base::Entity
       entity_id "14"
       xml_tag "Events"
+      sequence 6
       requires_id
 
       # Add event type

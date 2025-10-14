@@ -5,6 +5,7 @@ module Eccairs
     class SeparationTrafficInfoTypeQuality < Eccairs::Base::Entity
       entity_id "36"
       xml_tag "Separation_Traffic_Info_Type_Quality"
+      sequence 1
 
       # Add traffic info quality
       # @param value [Object] The attribute value

@@ -5,6 +5,7 @@ module Eccairs
     class FlightCrewLicenses < Eccairs::Base::Entity
       entity_id "16"
       xml_tag "Flight_Crew_Licenses"
+      sequence 1
 
       # Add validity
       # @param value [Object] The attribute value

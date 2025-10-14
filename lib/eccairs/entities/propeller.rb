@@ -5,6 +5,7 @@ module Eccairs
     class Propeller < Eccairs::Base::Entity
       entity_id "29"
       xml_tag "Propeller"
+      sequence 6
 
       # Add ata chapter involved
       # @param value [Object] The attribute value

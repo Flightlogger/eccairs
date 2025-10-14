@@ -5,6 +5,7 @@ module Eccairs
     class Vehicle < Eccairs::Base::Entity
       entity_id "48"
       xml_tag "Vehicle"
+      sequence 3
       requires_id
       # Vehicle attributes
 

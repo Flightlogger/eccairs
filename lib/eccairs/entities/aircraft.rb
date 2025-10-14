@@ -5,6 +5,7 @@ module Eccairs
     class Aircraft < Eccairs::Base::Entity
       entity_id "4"
       xml_tag "Aircraft"
+      sequence 4
       requires_id
 
       # Add aircraft altitude

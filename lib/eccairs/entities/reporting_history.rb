@@ -5,6 +5,7 @@ module Eccairs
     class ReportingHistory < Eccairs::Base::Entity
       entity_id "53"
       xml_tag "Reporting_History"
+      sequence 12
       # Attributes - there are many, adding the main ones
 
       # Add conclusions

@@ -5,6 +5,7 @@ module Eccairs
     class FlightCrewMember < Eccairs::Base::Entity
       entity_id "17"
       xml_tag "Flight_Crew_Member"
+      sequence 2
 
       # Add flight crew licenses entity
       # @yield [flight_crew_licenses] Block for configuring the flight crew licenses

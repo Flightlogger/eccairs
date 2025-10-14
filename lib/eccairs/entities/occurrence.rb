@@ -5,6 +5,7 @@ module Eccairs
     class Occurrence < Eccairs::Base::Entity
       entity_id "24"
       xml_tag "Occurrence"
+      sequence 1
 
       # Direct occurrence attributes
 

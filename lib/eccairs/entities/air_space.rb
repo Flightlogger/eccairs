@@ -5,6 +5,7 @@ module Eccairs
     class AirSpace < Eccairs::Base::Entity
       entity_id "3"
       xml_tag "Air_Space"
+      sequence 3
       requires_id
 
       # Add airspace class

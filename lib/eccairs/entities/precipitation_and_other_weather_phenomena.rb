@@ -5,6 +5,7 @@ module Eccairs
     class PrecipitationAndOtherWeatherPhenomena < Eccairs::Base::Entity
       entity_id "28"
       xml_tag "Precipitation_And_Other_Weather_Phenomena"
+      sequence 8
 
       # Add phenomenon intensity
       # @param value [Object] The attribute value
