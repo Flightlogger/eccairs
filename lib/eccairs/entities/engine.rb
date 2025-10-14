@@ -18,26 +18,26 @@ module Eccairs
 
       # Add cycles since insp
       # @param value [Object] The attribute value
-      # @return [Eccairs::Attributes::CyclesSinceInsp] The created attribute instance
-      # @note Attribute ID: 904, XML Tag: Cycles_Since_Insp
+      # @return [Eccairs::Attributes::EngineCyclesSinceInsp] The created attribute instance
+      # @note Attribute ID: 887, XML Tag: Cycles_Since_Insp
       def add_cycles_since_insp(value)
-        add_attribute(Eccairs::Attributes::CyclesSinceInsp, false, value)
+        add_attribute(Eccairs::Attributes::EngineCyclesSinceInsp, false, value)
       end
 
       # Add cycles since new
       # @param value [Object] The attribute value
-      # @return [Eccairs::Attributes::CyclesSinceNew] The created attribute instance
-      # @note Attribute ID: 902, XML Tag: Cycles_Since_New
+      # @return [Eccairs::Attributes::EngineCyclesSinceNew] The created attribute instance
+      # @note Attribute ID: 885, XML Tag: Cycles_Since_New
       def add_cycles_since_new(value)
-        add_attribute(Eccairs::Attributes::CyclesSinceNew, false, value)
+        add_attribute(Eccairs::Attributes::EngineCyclesSinceNew, false, value)
       end
 
       # Add cycles since overhaul
       # @param value [Object] The attribute value
-      # @return [Eccairs::Attributes::CyclesSinceOverhaul] The created attribute instance
-      # @note Attribute ID: 664, XML Tag: Cycles_Since_Overhaul
+      # @return [Eccairs::Attributes::EngineCyclesSinceOverhaul] The created attribute instance
+      # @note Attribute ID: 886, XML Tag: Cycles_Since_Overhaul
       def add_cycles_since_overhaul(value)
-        add_attribute(Eccairs::Attributes::CyclesSinceOverhaul, false, value)
+        add_attribute(Eccairs::Attributes::EngineCyclesSinceOverhaul, false, value)
       end
 
       # Add date of inspection
@@ -114,18 +114,18 @@ module Eccairs
 
       # Add time since new
       # @param value [String] The attribute value
-      # @return [Eccairs::Attributes::TimeSinceNew] The created attribute instance
-      # @note Attribute ID: 899, XML Tag: Time_Since_New
+      # @return [Eccairs::Attributes::EngineTimeSinceNew] The created attribute instance
+      # @note Attribute ID: 883, XML Tag: Time_Since_New
       def add_time_since_new(value)
-        add_attribute(Eccairs::Attributes::TimeSinceNew, false, value)
+        add_attribute(Eccairs::Attributes::EngineTimeSinceNew, false, value)
       end
 
       # Add time since overhaul
       # @param value [String] The attribute value
-      # @return [Eccairs::Attributes::TimeSinceOverhaul] The created attribute instance
-      # @note Attribute ID: 900, XML Tag: Time_Since_Overhaul
+      # @return [Eccairs::Attributes::EngineTimeSinceOverhaul] The created attribute instance
+      # @note Attribute ID: 884, XML Tag: Time_Since_Overhaul
       def add_time_since_overhaul(value)
-        add_attribute(Eccairs::Attributes::TimeSinceOverhaul, false, value)
+        add_attribute(Eccairs::Attributes::EngineTimeSinceOverhaul, false, value)
       end
     end
   end

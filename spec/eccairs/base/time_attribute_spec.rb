@@ -194,8 +194,6 @@ RSpec.describe Eccairs::Base::TimeAttribute do
     end
   end
 
-
-
   describe "edge cases" do
     it "handles midnight exactly" do
       instance = test_time_class.new("00:00:00")

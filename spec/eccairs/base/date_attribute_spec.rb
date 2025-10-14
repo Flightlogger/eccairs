@@ -184,8 +184,6 @@ RSpec.describe Eccairs::Base::DateAttribute do
     end
   end
 
-
-
   describe "edge cases" do
     it "handles dates far in the past" do
       instance = test_date_class.new("1900-01-01")
