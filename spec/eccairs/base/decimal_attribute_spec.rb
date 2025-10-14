@@ -316,12 +316,12 @@ RSpec.describe Eccairs::Base::DecimalAttribute do
     end
 
     it "handles scientific notation strings" do
-      instance = test_decimal_class.new("1.5e1")
-      expect(instance.value).to eq("1.5e1")
+      instance = test_decimal_class.new("5.0e0")
+      expect(instance.value).to eq("5.0e0")
     end
 
     it "validates scientific notation against range" do
-      expect { test_decimal_class.new("1.5e2") }.to raise_error(ArgumentError, /greater than maximum/)
+      expect { test_decimal_class.new("1.5e1") }.to raise_error(ArgumentError, /greater than maximum/)
     end
   end
 end

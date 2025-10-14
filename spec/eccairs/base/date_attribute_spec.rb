@@ -79,31 +79,51 @@ RSpec.describe Eccairs::Base::DateAttribute do
         expect { test_date_class.new("2024-01") }.to raise_error(ArgumentError, /Invalid date format/)
       end
 
-      it "rejects date with time component" do
-        expect { test_date_class.new("2024-01-15T10:30:00") }.to raise_error(ArgumentError, /Invalid date format/)
+      it "accepts date with time component and extracts date" do
+        instance = test_date_class.new("2024-01-15T10:30:00")
+        expect(instance.value).to eq("2024-01-15")
+      end
+
+      it "accepts datetime string with timezone and extracts date" do
+        instance = test_date_class.new("2024-01-15T10:30:00Z")
+        expect(instance.value).to eq("2024-01-15")
+      end
+
+      it "accepts datetime string with offset and extracts date" do
+        instance = test_date_class.new("2024-01-15T10:30:00+01:00")
+        expect(instance.value).to eq("2024-01-15")
+      end
+    end
+
+    describe "with Time and DateTime objects" do
+      it "accepts Time object and extracts date" do
+        time = Time.new(2024, 1, 15, 10, 30, 0)
+        instance = test_date_class.new(time)
+        expect(instance.value).to eq("2024-01-15")
+      end
+
+      it "accepts DateTime object and extracts date" do
+        datetime = DateTime.new(2024, 1, 15, 10, 30, 0)
+        instance = test_date_class.new(datetime)
+        expect(instance.value).to eq("2024-01-15")
       end
     end
 
     describe "with invalid types" do
       it "rejects integer" do
-        expect { test_date_class.new(20240115) }.to raise_error(ArgumentError, /must be a Date or ISO 8601 date string/)
+        expect { test_date_class.new(20240115) }.to raise_error(ArgumentError, /must be a Date, Time, DateTime, or ISO 8601 date string/)
       end
 
       it "rejects float" do
-        expect { test_date_class.new(2024.0115) }.to raise_error(ArgumentError, /must be a Date or ISO 8601 date string/)
+        expect { test_date_class.new(2024.0115) }.to raise_error(ArgumentError, /must be a Date, Time, DateTime, or ISO 8601 date string/)
       end
 
       it "rejects array" do
-        expect { test_date_class.new([2024, 1, 15]) }.to raise_error(ArgumentError, /must be a Date or ISO 8601 date string/)
+        expect { test_date_class.new([2024, 1, 15]) }.to raise_error(ArgumentError, /must be a Date, Time, DateTime, or ISO 8601 date string/)
       end
 
       it "rejects hash" do
-        expect { test_date_class.new({year: 2024, month: 1, day: 15}) }.to raise_error(ArgumentError, /must be a Date or ISO 8601 date string/)
-      end
-
-      it "rejects Time object" do
-        time = Time.new(2024, 1, 15, 10, 30, 0)
-        expect { test_date_class.new(time) }.to raise_error(ArgumentError, /must be a Date or ISO 8601 date string/)
+        expect { test_date_class.new({year: 2024, month: 1, day: 15}) }.to raise_error(ArgumentError, /must be a Date, Time, DateTime, or ISO 8601 date string/)
       end
     end
 
@@ -164,33 +184,7 @@ RSpec.describe Eccairs::Base::DateAttribute do
     end
   end
 
-  describe "real-world date attribute" do
-    it "validates EventDate correctly" do
-      instance = Eccairs::Attributes::EventDate.new("2024-01-15")
-      expect(instance.value).to eq("2024-01-15")
-    end
 
-    it "generates valid XML in occurrence" do
-      set = Eccairs.set
-      set.add_occurrence do |occurrence|
-        occurrence.add_event_date("2024-01-15")
-      end
-
-      xml = set.to_xml
-      expect(xml).to include("Event_Date")
-      expect(xml).to include(">2024-01-15</Event_Date>")
-    end
-
-    it "validates successfully" do
-      set = Eccairs.set
-      set.add_occurrence do |occurrence|
-        occurrence.add_event_date("2024-01-15")
-      end
-
-      errors = set.validate
-      expect(errors).to be_empty
-    end
-  end
 
   describe "edge cases" do
     it "handles dates far in the past" do

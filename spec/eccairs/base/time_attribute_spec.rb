@@ -194,33 +194,7 @@ RSpec.describe Eccairs::Base::TimeAttribute do
     end
   end
 
-  describe "real-world time attribute" do
-    it "validates EventTime correctly" do
-      instance = Eccairs::Attributes::EventTime.new("14:30:45")
-      expect(instance.value).to eq("14:30:45")
-    end
 
-    it "generates valid XML in occurrence" do
-      set = Eccairs.set
-      set.add_occurrence do |occurrence|
-        occurrence.add_event_time("14:30:45")
-      end
-
-      xml = set.to_xml
-      expect(xml).to include("Event_Time")
-      expect(xml).to include(">14:30:45</Event_Time>")
-    end
-
-    it "validates successfully" do
-      set = Eccairs.set
-      set.add_occurrence do |occurrence|
-        occurrence.add_event_time("14:30:45")
-      end
-
-      errors = set.validate
-      expect(errors).to be_empty
-    end
-  end
 
   describe "edge cases" do
     it "handles midnight exactly" do

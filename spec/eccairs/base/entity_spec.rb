@@ -128,22 +128,25 @@ RSpec.describe Eccairs::Base::Entity do
       instance.build_xml(xml_builder)
 
       xml = xml_builder.to_xml
-      expect(xml).to include('ID="TestEntityWithID_1"')
+      expect(xml).to include('ID="Test_Entity_With_ID_1"')
     end
 
     it "increments ID counter for multiple entities" do
-      builder = Nokogiri::XML::Builder.new
-      counters = {}
+      builder = Nokogiri::XML::Builder.new do |xml|
+        xml.root do
+          counters = {}
 
-      instance1 = test_entity_with_id_class.new
-      instance1.build_xml(builder, counters)
+          instance1 = test_entity_with_id_class.new
+          instance1.build_xml(xml, counters)
 
-      instance2 = test_entity_with_id_class.new
-      instance2.build_xml(builder, counters)
+          instance2 = test_entity_with_id_class.new
+          instance2.build_xml(xml, counters)
+        end
+      end
 
       xml = builder.to_xml
-      expect(xml).to include('ID="TestEntityWithID_1"')
-      expect(xml).to include('ID="TestEntityWithID_2"')
+      expect(xml).to include('ID="Test_Entity_With_ID_1"')
+      expect(xml).to include('ID="Test_Entity_With_ID_2"')
     end
 
     it "does not include ATTRIBUTES section when no attributes" do
