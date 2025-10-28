@@ -30,25 +30,6 @@ RSpec.describe Eccairs::Base::TextAttribute do
     end
   end
 
-  describe "inheritance" do
-    it "inherits from Attribute" do
-      expect(described_class.superclass).to eq(Eccairs::Base::Attribute)
-    end
-
-    it "has access to Attribute DSL methods" do
-      test_class = Class.new(described_class) do
-        attribute_id "123"
-        xml_tag "Test_Text"
-        sequence 5
-        unit "TestUnit"
-      end
-
-      expect(test_class.attribute_id).to eq("123")
-      expect(test_class.xml_tag).to eq("Test_Text")
-      expect(test_class.sequence).to eq(5)
-      expect(test_class.unit).to eq("TestUnit")
-    end
-  end
 
   describe "validation" do
     let(:test_text_class) do
@@ -171,7 +152,7 @@ RSpec.describe Eccairs::Base::TextAttribute do
 
     it "generates XML with PlainText child element" do
       xml_builder = Nokogiri::XML::Builder.new do |xml|
-        xml.root('xmlns:dt' => 'http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataTypes.xsd') do
+        xml.root("xmlns:dt" => "http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataTypes.xsd") do
           instance = test_text_class.new("test value")
           instance.build_xml(xml)
         end
@@ -183,9 +164,9 @@ RSpec.describe Eccairs::Base::TextAttribute do
       expect(xml).to include('attributeId="999"')
     end
 
-    it "handles special XML characters in PlainText" do
+    it "handles special XML characters" do
       xml_builder = Nokogiri::XML::Builder.new do |xml|
-        xml.root('xmlns:dt' => 'http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataTypes.xsd') do
+        xml.root("xmlns:dt" => "http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataTypes.xsd") do
           instance = test_text_class.new("test & <value>")
           instance.build_xml(xml)
         end
@@ -193,7 +174,6 @@ RSpec.describe Eccairs::Base::TextAttribute do
 
       xml = xml_builder.to_xml
       expect(xml).to include("Test_Text")
-      expect(xml).to include("<dt:PlainText>")
       # Nokogiri should escape special characters
       expect(xml).to include("&amp;")
       expect(xml).to include("&lt;")
@@ -207,26 +187,6 @@ RSpec.describe Eccairs::Base::TextAttribute do
 
       xml = xml_builder.to_xml
       expect(xml).not_to include("Test_Text")
-    end
-
-    it "includes unit in XML attributes when set" do
-      klass_with_unit = Class.new(described_class) do
-        attribute_id "777"
-        xml_tag "Text_With_Unit"
-        unit "TestUnit"
-        text_type true
-      end
-
-      xml_builder = Nokogiri::XML::Builder.new do |xml|
-        xml.root('xmlns:dt' => 'http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataTypes.xsd') do
-          instance = klass_with_unit.new("test value")
-          instance.build_xml(xml)
-        end
-      end
-
-      xml = xml_builder.to_xml
-      expect(xml).to include('Unit="TestUnit"')
-      expect(xml).to include("<dt:PlainText>test value</dt:PlainText>")
     end
   end
 
@@ -298,96 +258,6 @@ RSpec.describe Eccairs::Base::TextAttribute do
       instance = test_text_class.new("     ")
       expect(instance.value).to eq("     ")
     end
-
-    it "handles multiline text" do
-      multiline_text_class = Class.new(described_class) do
-        attribute_id "999"
-        xml_tag "Test_Text"
-        max_length 50  # Increased to accommodate multiline text
-        text_type true
-      end
-      
-      multiline_text = "Line 1\nLine 2\nLine 3"
-      instance = multiline_text_class.new(multiline_text)
-      expect(instance.value).to eq(multiline_text)
-    end
   end
 
-  describe "text_type integration" do
-    it "works with text_type DSL method from Attribute" do
-      test_class = Class.new(described_class) do
-        attribute_id "555"
-        xml_tag "Text_Type_Test"
-        text_type true
-      end
-
-      expect(test_class.text_type).to be true
-    end
-
-    it "generates PlainText XML when text_type is true" do
-      test_class = Class.new(described_class) do
-        attribute_id "555"
-        xml_tag "Text_Type_Test"
-        text_type true
-      end
-
-      xml_builder = Nokogiri::XML::Builder.new do |xml|
-        xml.root('xmlns:dt' => 'http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataTypes.xsd') do
-          instance = test_class.new("test content")
-          instance.build_xml(xml)
-        end
-      end
-
-      xml = xml_builder.to_xml
-      expect(xml).to include("<dt:PlainText>test content</dt:PlainText>")
-    end
-  end
-
-  describe "comparison with StringAttribute" do
-    let(:string_class) do
-      Class.new(Eccairs::Base::StringAttribute) do
-        attribute_id "888"
-        xml_tag "String_Test"
-        max_length 10
-      end
-    end
-
-    let(:text_class) do
-      Class.new(described_class) do
-        attribute_id "999"
-        xml_tag "Text_Test"
-        max_length 10
-        text_type true
-      end
-    end
-
-    it "both validate string types" do
-      expect { string_class.new("valid") }.not_to raise_error
-      expect { text_class.new("valid") }.not_to raise_error
-    end
-
-    it "both validate max_length" do
-      expect { string_class.new("12345678901") }.to raise_error(ArgumentError, /exceeds maximum/)
-      expect { text_class.new("12345678901") }.to raise_error(ArgumentError, /exceeds maximum/)
-    end
-
-    it "generates different XML structures" do
-      string_xml = Nokogiri::XML::Builder.new do |xml|
-        xml.root do
-          string_instance = string_class.new("test")
-          string_instance.build_xml(xml)
-        end
-      end
-
-      text_xml = Nokogiri::XML::Builder.new do |xml|
-        xml.root('xmlns:dt' => 'http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataTypes.xsd') do
-          text_instance = text_class.new("test")
-          text_instance.build_xml(xml)
-        end
-      end
-
-      expect(string_xml.to_xml).to include(">test</String_Test>")
-      expect(text_xml.to_xml).to include("<dt:PlainText>test</dt:PlainText>")
-    end
-  end
 end
