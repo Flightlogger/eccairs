@@ -30,7 +30,6 @@ RSpec.describe Eccairs::Base::TextAttribute do
     end
   end
 
-
   describe "validation" do
     let(:test_text_class) do
       Class.new(described_class) do
@@ -259,5 +258,4 @@ RSpec.describe Eccairs::Base::TextAttribute do
       expect(instance.value).to eq("     ")
     end
   end
-
 end
