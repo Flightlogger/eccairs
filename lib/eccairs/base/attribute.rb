@@ -29,6 +29,12 @@ module Eccairs
         @unit = value.to_s
       end
 
+      # DSL method to mark attribute as dt:Text type (requires PlainText child element)
+      def self.text_type(value = nil)
+        return @text_type unless value
+        @text_type = value
+      end
+
       def initialize(value = nil)
         self.value = value
       end
@@ -49,7 +55,16 @@ module Eccairs
         attrs = {attributeId: self.class.attribute_id}
         attrs[:Unit] = self.class.unit if self.class.unit
 
-        xml.send(self.class.xml_tag, value, attrs)
+        if self.class.text_type
+          # For dt:Text attributes, use PlainText child element
+          xml.send(self.class.xml_tag, attrs) do
+            xml.parent.namespace = xml.parent.namespace_definitions.find { |ns| ns.prefix == "db" }
+            xml["dt"].PlainText(value)
+          end
+        else
+          # For regular attributes, use direct text content
+          xml.send(self.class.xml_tag, value, attrs)
+        end
       end
 
       protected

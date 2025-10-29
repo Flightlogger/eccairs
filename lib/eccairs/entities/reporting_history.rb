@@ -71,6 +71,14 @@ module Eccairs
       def add_reporting_entity(value)
         add_attribute(Eccairs::Attributes::ReportingEntity, false, value)
       end
+
+      # Add reporting description
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::ReporterSDescription] The created attribute instance
+      # @note Attribute ID: 1092, XML Tag: Reporter_s_Description
+      def add_reporting_description(value)
+        add_attribute(Eccairs::Attributes::ReporterSDescription, false, value)
+      end
     end
   end
 end
