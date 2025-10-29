@@ -12,8 +12,8 @@ RSpec.describe Eccairs::Attributes::DescriptionInvestigation do
       expect(described_class.xml_tag).to eq("Description_Investigation")
     end
 
-    it "inherits from StringAttribute" do
-      expect(described_class.superclass).to eq(Eccairs::Base::StringAttribute)
+    it "inherits from TextAttribute" do
+      expect(described_class.superclass).to eq(Eccairs::Base::TextAttribute)
     end
   end
 
