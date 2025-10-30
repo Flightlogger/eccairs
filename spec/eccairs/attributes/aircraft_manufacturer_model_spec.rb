@@ -47,9 +47,9 @@ RSpec.describe Eccairs::Attributes::AircraftManufacturerModel do
       end
 
       xml = set.to_xml
-      expect(xml).to include('<Manufacturer_Model')
+      expect(xml).to include("<Manufacturer_Model")
       expect(xml).to include('attributeId="21"')
-      expect(xml).to include('>Boeing 737-800</Manufacturer_Model>')
+      expect(xml).to include(">Boeing 737-800</Manufacturer_Model>")
     end
   end
 end

@@ -47,9 +47,9 @@ RSpec.describe Eccairs::Attributes::ACOutOfService do
       end
 
       xml = set.to_xml
-      expect(xml).to include('<A_C_Out_Of_Service')
+      expect(xml).to include("<A_C_Out_Of_Service")
       expect(xml).to include('attributeId="650"')
-      expect(xml).to include('>1</A_C_Out_Of_Service>')
+      expect(xml).to include(">1</A_C_Out_Of_Service>")
     end
   end
 end

@@ -47,9 +47,9 @@ RSpec.describe Eccairs::Attributes::SpeedAtImpact do
       end
 
       xml = set.to_xml
-      expect(xml).to include('<Speed_At_Impact')
+      expect(xml).to include("<Speed_At_Impact")
       expect(xml).to include('attributeId="272"')
-      expect(xml).to include('>10.5</Speed_At_Impact>')
+      expect(xml).to include(">10.5</Speed_At_Impact>")
     end
   end
 end

@@ -47,9 +47,9 @@ RSpec.describe Eccairs::Attributes::IcaoInformation do
       end
 
       xml = set.to_xml
-      expect(xml).to include('<ICAO_Information')
+      expect(xml).to include("<ICAO_Information")
       expect(xml).to include('attributeId="28"')
-      expect(xml).to include('>ICAO Annex 13 information</ICAO_Information>')
+      expect(xml).to include(">ICAO Annex 13 information</ICAO_Information>")
     end
   end
 end

@@ -47,9 +47,9 @@ RSpec.describe Eccairs::Attributes::LossOfRevenue do
       end
 
       xml = set.to_xml
-      expect(xml).to include('<Loss_Of_Revenue')
+      expect(xml).to include("<Loss_Of_Revenue")
       expect(xml).to include('attributeId="652"')
-      expect(xml).to include('>50000.25</Loss_Of_Revenue>')
+      expect(xml).to include(">50000.25</Loss_Of_Revenue>")
     end
   end
 end

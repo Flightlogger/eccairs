@@ -47,9 +47,9 @@ RSpec.describe Eccairs::Attributes::CostOfRepair do
       end
 
       xml = set.to_xml
-      expect(xml).to include('<Cost_Of_Repair')
+      expect(xml).to include("<Cost_Of_Repair")
       expect(xml).to include('attributeId="651"')
-      expect(xml).to include('>15000.5</Cost_Of_Repair>')
+      expect(xml).to include(">15000.5</Cost_Of_Repair>")
     end
   end
 end
