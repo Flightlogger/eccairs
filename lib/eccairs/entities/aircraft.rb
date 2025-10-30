@@ -352,6 +352,46 @@ module Eccairs
         add_attribute(Eccairs::Attributes::SpeedFirstEvent, false, value)
       end
 
+      # Add speed at impact
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::SpeedAtImpact] The created attribute instance
+      # @note Attribute ID: 272, XML Tag: Speed_At_Impact
+      def add_speed_at_impact(value)
+        add_attribute(Eccairs::Attributes::SpeedAtImpact, false, value)
+      end
+
+      # Add cost of repair
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::CostOfRepair] The created attribute instance
+      # @note Attribute ID: 651, XML Tag: Cost_Of_Repair
+      def add_cost_of_repair(value)
+        add_attribute(Eccairs::Attributes::CostOfRepair, false, value)
+      end
+
+      # Add a c out of service
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::ACOutOfService] The created attribute instance
+      # @note Attribute ID: 650, XML Tag: A_C_Out_Of_Service
+      def add_a_c_out_of_service(value)
+        add_attribute(Eccairs::Attributes::ACOutOfService, false, value)
+      end
+
+      # Add loss of revenue
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::LossOfRevenue] The created attribute instance
+      # @note Attribute ID: 652, XML Tag: Loss_Of_Revenue
+      def add_loss_of_revenue(value)
+        add_attribute(Eccairs::Attributes::LossOfRevenue, false, value)
+      end
+
+      # Add icao information
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::IcaoInformation] The created attribute instance
+      # @note Attribute ID: 28, XML Tag: ICAO_Information
+      def add_icao_information(value)
+        add_attribute(Eccairs::Attributes::IcaoInformation, false, value)
+      end
+
       # Add ssr mode
       # @param value [Object] The attribute value
       # @return [Eccairs::Attributes::SsrMode] The created attribute instance
