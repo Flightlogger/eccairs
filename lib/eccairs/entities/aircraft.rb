@@ -218,10 +218,10 @@ module Eccairs
 
       # Add manufacturer model
       # @param value [Object] The attribute value
-      # @return [Eccairs::Attributes::ManufacturerModel] The created attribute instance
-      # @note Attribute ID: 387, XML Tag: Manufacturer_Model
+      # @return [Eccairs::Attributes::AircraftManufacturerModel] The created attribute instance
+      # @note Attribute ID: 21, XML Tag: Manufacturer_Model
       def add_manufacturer_model(value)
-        add_attribute(Eccairs::Attributes::ManufacturerModel, false, value)
+        add_attribute(Eccairs::Attributes::AircraftManufacturerModel, false, value)
       end
 
       # Add mass group
