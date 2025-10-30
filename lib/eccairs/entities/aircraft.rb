@@ -496,6 +496,30 @@ module Eccairs
         add_attribute(Eccairs::Attributes::YearBuilt, false, value)
       end
 
+      # Add bank angle
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::BankAngle] The created attribute instance
+      # @note Attribute ID: 567, XML Tag: Bank_Angle
+      def add_bank_angle(value)
+        add_attribute(Eccairs::Attributes::BankAngle, false, value)
+      end
+
+      # Add bank direction
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::BankDirection] The created attribute instance
+      # @note Attribute ID: 568, XML Tag: Bank_Direction
+      def add_bank_direction(value)
+        add_attribute(Eccairs::Attributes::BankDirection, false, value)
+      end
+
+      # Add actual altimeter setting
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::ActualAltimeterSetting] The created attribute instance
+      # @note Attribute ID: 23, XML Tag: Actual_Altimeter_Setting
+      def add_actual_altimeter_setting(value)
+        add_attribute(Eccairs::Attributes::ActualAltimeterSetting, false, value)
+      end
+
       # Add engine entity
       # @yield [engine] Block for configuring the engine
       # @yieldparam engine [Eccairs::Entities::Engine] The entity instance
