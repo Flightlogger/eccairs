@@ -7,7 +7,7 @@ module Eccairs
       xml_tag "Airspeed"
       sequence 0
       unit "kt"
-      min(-999999)
+      min 0
       max 999999
     end
   end
