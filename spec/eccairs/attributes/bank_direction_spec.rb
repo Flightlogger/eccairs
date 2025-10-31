@@ -65,8 +65,10 @@ RSpec.describe Eccairs::Attributes::BankDirection do
     it "generates valid XML within an occurrence" do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
-        occurrence.add_aircraft do |aircraft|
-          aircraft.add_bank_direction(1)
+        occurrence.add_separation do |separation|
+          separation.add_separation_aircraft do |separation_aircraft|
+            separation_aircraft.add_bank_direction(1)
+          end
         end
       end
 
@@ -78,8 +80,10 @@ RSpec.describe Eccairs::Attributes::BankDirection do
     it "generates valid XML structure (schema validation skipped for new attributes)" do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
-        occurrence.add_aircraft do |aircraft|
-          aircraft.add_bank_direction(2)
+        occurrence.add_separation do |separation|
+          separation.add_separation_aircraft do |separation_aircraft|
+            separation_aircraft.add_bank_direction(2)
+          end
         end
       end
 
@@ -92,8 +96,10 @@ RSpec.describe Eccairs::Attributes::BankDirection do
     it "generates valid XML with UNKNOWN value" do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
-        occurrence.add_aircraft do |aircraft|
-          aircraft.add_bank_direction(99)
+        occurrence.add_separation do |separation|
+          separation.add_separation_aircraft do |separation_aircraft|
+            separation_aircraft.add_bank_direction(99)
+          end
         end
       end
 

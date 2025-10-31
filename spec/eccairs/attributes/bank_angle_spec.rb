@@ -66,8 +66,10 @@ RSpec.describe Eccairs::Attributes::BankAngle do
     it "generates valid XML within an occurrence" do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
-        occurrence.add_aircraft do |aircraft|
-          aircraft.add_bank_angle(3)
+        occurrence.add_separation do |separation|
+          separation.add_separation_aircraft do |separation_aircraft|
+            separation_aircraft.add_bank_angle(3)
+          end
         end
       end
 
@@ -79,8 +81,10 @@ RSpec.describe Eccairs::Attributes::BankAngle do
     it "generates valid XML structure (schema validation skipped for new attributes)" do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
-        occurrence.add_aircraft do |aircraft|
-          aircraft.add_bank_angle(2)
+        occurrence.add_separation do |separation|
+          separation.add_separation_aircraft do |separation_aircraft|
+            separation_aircraft.add_bank_angle(2)
+          end
         end
       end
 
@@ -93,8 +97,10 @@ RSpec.describe Eccairs::Attributes::BankAngle do
     it "generates valid XML with value 1" do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
-        occurrence.add_aircraft do |aircraft|
-          aircraft.add_bank_angle(1)
+        occurrence.add_separation do |separation|
+          separation.add_separation_aircraft do |separation_aircraft|
+            separation_aircraft.add_bank_angle(1)
+          end
         end
       end
 
@@ -107,8 +113,10 @@ RSpec.describe Eccairs::Attributes::BankAngle do
     it "generates valid XML with value 4" do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
-        occurrence.add_aircraft do |aircraft|
-          aircraft.add_bank_angle(4)
+        occurrence.add_separation do |separation|
+          separation.add_separation_aircraft do |separation_aircraft|
+            separation_aircraft.add_bank_angle(4)
+          end
         end
       end
 
@@ -121,8 +129,10 @@ RSpec.describe Eccairs::Attributes::BankAngle do
     it "generates valid XML with value 5" do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
-        occurrence.add_aircraft do |aircraft|
-          aircraft.add_bank_angle(5)
+        occurrence.add_separation do |separation|
+          separation.add_separation_aircraft do |separation_aircraft|
+            separation_aircraft.add_bank_angle(5)
+          end
         end
       end
 
@@ -135,8 +145,10 @@ RSpec.describe Eccairs::Attributes::BankAngle do
     it "generates valid XML with UNKNOWN value" do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
-        occurrence.add_aircraft do |aircraft|
-          aircraft.add_bank_angle(99)
+        occurrence.add_separation do |separation|
+          separation.add_separation_aircraft do |separation_aircraft|
+            separation_aircraft.add_bank_angle(99)
+          end
         end
       end
 

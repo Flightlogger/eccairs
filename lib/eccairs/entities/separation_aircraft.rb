@@ -32,6 +32,22 @@ module Eccairs
         add_attribute(Eccairs::Attributes::ACAvoidingAction, false, value)
       end
 
+      # Add bank angle
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::BankAngle] The created attribute instance
+      # @note Attribute ID: 567, XML Tag: Bank_Angle
+      def add_bank_angle(value)
+        add_attribute(Eccairs::Attributes::BankAngle, false, value)
+      end
+
+      # Add bank direction
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::BankDirection] The created attribute instance
+      # @note Attribute ID: 568, XML Tag: Bank_Direction
+      def add_bank_direction(value)
+        add_attribute(Eccairs::Attributes::BankDirection, false, value)
+      end
+
       # Add other aircraft seen
       # @param value [Object] The attribute value
       # @return [Eccairs::Attributes::OtherAircraftSeen] The created attribute instance
