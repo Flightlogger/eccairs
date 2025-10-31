@@ -490,10 +490,10 @@ module Eccairs
 
       # Add visib restrictions
       # @param value [Object] The attribute value
-      # @return [Eccairs::Attributes::VisibRestrictions] The created attribute instance
+      # @return [Eccairs::Attributes::VisibilityRestrictions] The created attribute instance
       # @note Attribute ID: 311, XML Tag: Visib_Restrictions
       def add_visib_restrictions(value)
-        add_attribute(Eccairs::Attributes::VisibRestrictions, false, value)
+        add_attribute(Eccairs::Attributes::VisibilityRestrictions, false, value)
       end
 
       # Add wake turb category
