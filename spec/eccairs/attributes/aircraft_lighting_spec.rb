@@ -109,4 +109,3 @@ RSpec.describe Eccairs::Attributes::AircraftLighting do
     end
   end
 end
-

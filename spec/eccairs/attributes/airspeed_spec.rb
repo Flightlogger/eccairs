@@ -65,4 +65,3 @@ RSpec.describe Eccairs::Attributes::Airspeed do
     end
   end
 end
-
