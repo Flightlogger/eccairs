@@ -24,6 +24,14 @@ module Eccairs
         add_attribute(Eccairs::Attributes::AircraftCategory, false, value)
       end
 
+      # Add aircraft lighting
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::AircraftLighting] The created attribute instance
+      # @note Attribute ID: 596, XML Tag: Aircraft_Lighting
+      def add_aircraft_lighting(value)
+        add_attribute(Eccairs::Attributes::AircraftLighting, false, value)
+      end
+
       # Add a c flight level
       # @param value [Object] The attribute value
       # @return [Eccairs::Attributes::ACFlightLevel] The created attribute instance
@@ -46,6 +54,14 @@ module Eccairs
       # @note Attribute ID: 291, XML Tag: Aircraft_Total_Time
       def add_aircraft_total_time(value)
         add_attribute(Eccairs::Attributes::AircraftTotalTime, false, value)
+      end
+
+      # Add airspeed
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::Airspeed] The created attribute instance
+      # @note Attribute ID: 292, XML Tag: Airspeed
+      def add_airspeed(value)
+        add_attribute(Eccairs::Attributes::Airspeed, false, value)
       end
 
       # Add annex 2 a c type
@@ -474,10 +490,10 @@ module Eccairs
 
       # Add visib restrictions
       # @param value [Object] The attribute value
-      # @return [Eccairs::Attributes::VisibRestrictions] The created attribute instance
+      # @return [Eccairs::Attributes::VisibilityRestrictions] The created attribute instance
       # @note Attribute ID: 311, XML Tag: Visib_Restrictions
       def add_visib_restrictions(value)
-        add_attribute(Eccairs::Attributes::VisibRestrictions, false, value)
+        add_attribute(Eccairs::Attributes::VisibilityRestrictions, false, value)
       end
 
       # Add wake turb category
@@ -494,22 +510,6 @@ module Eccairs
       # @note Attribute ID: 327, XML Tag: Year_Built
       def add_year_built(value)
         add_attribute(Eccairs::Attributes::YearBuilt, false, value)
-      end
-
-      # Add bank angle
-      # @param value [Object] The attribute value
-      # @return [Eccairs::Attributes::BankAngle] The created attribute instance
-      # @note Attribute ID: 567, XML Tag: Bank_Angle
-      def add_bank_angle(value)
-        add_attribute(Eccairs::Attributes::BankAngle, false, value)
-      end
-
-      # Add bank direction
-      # @param value [Object] The attribute value
-      # @return [Eccairs::Attributes::BankDirection] The created attribute instance
-      # @note Attribute ID: 568, XML Tag: Bank_Direction
-      def add_bank_direction(value)
-        add_attribute(Eccairs::Attributes::BankDirection, false, value)
       end
 
       # Add actual altimeter setting
