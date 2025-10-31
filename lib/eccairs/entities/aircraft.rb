@@ -24,6 +24,14 @@ module Eccairs
         add_attribute(Eccairs::Attributes::AircraftCategory, false, value)
       end
 
+      # Add aircraft lighting
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::AircraftLighting] The created attribute instance
+      # @note Attribute ID: 596, XML Tag: Aircraft_Lighting
+      def add_aircraft_lighting(value)
+        add_attribute(Eccairs::Attributes::AircraftLighting, false, value)
+      end
+
       # Add a c flight level
       # @param value [Object] The attribute value
       # @return [Eccairs::Attributes::ACFlightLevel] The created attribute instance
@@ -46,6 +54,14 @@ module Eccairs
       # @note Attribute ID: 291, XML Tag: Aircraft_Total_Time
       def add_aircraft_total_time(value)
         add_attribute(Eccairs::Attributes::AircraftTotalTime, false, value)
+      end
+
+      # Add airspeed
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::Airspeed] The created attribute instance
+      # @note Attribute ID: 292, XML Tag: Airspeed
+      def add_airspeed(value)
+        add_attribute(Eccairs::Attributes::Airspeed, false, value)
       end
 
       # Add annex 2 a c type
