@@ -112,6 +112,14 @@ module Eccairs
         add_attribute(Eccairs::Attributes::TimeSinceInspection, false, value)
       end
 
+      # Add engine time since inspection
+      # @param value [String] The attribute value
+      # @return [Eccairs::Attributes::EngineTimeSinceInspection] The created attribute instance
+      # @note Attribute ID: 884, XML Tag: Time_Since_Inspection
+      def add_engine_time_since_inspection(value)
+        add_attribute(Eccairs::Attributes::EngineTimeSinceInspection, false, value)
+      end
+
       # Add time since new
       # @param value [String] The attribute value
       # @return [Eccairs::Attributes::EngineTimeSinceNew] The created attribute instance
@@ -123,7 +131,7 @@ module Eccairs
       # Add time since overhaul
       # @param value [String] The attribute value
       # @return [Eccairs::Attributes::EngineTimeSinceOverhaul] The created attribute instance
-      # @note Attribute ID: 884, XML Tag: Time_Since_Overhaul
+      # @note Attribute ID: 389, XML Tag: Time_Since_Overhaul
       def add_time_since_overhaul(value)
         add_attribute(Eccairs::Attributes::EngineTimeSinceOverhaul, false, value)
       end

@@ -111,6 +111,14 @@ module Eccairs
         add_attribute(Eccairs::Attributes::TimeSinceInspection, false, value)
       end
 
+      # Add part information time since inspection
+      # @param value [String] The attribute value
+      # @return [Eccairs::Attributes::PartInformationTimeSinceInspection] The created attribute instance
+      # @note Attribute ID: 662, XML Tag: Time_Since_Inspection
+      def add_part_information_time_since_inspection(value)
+        add_attribute(Eccairs::Attributes::PartInformationTimeSinceInspection, false, value)
+      end
+
       # Add time since new
       # @param value [String] The attribute value
       # @return [Eccairs::Attributes::TimeSinceNew] The created attribute instance

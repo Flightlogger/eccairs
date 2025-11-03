@@ -39,6 +39,14 @@ module Eccairs
       def add_risk_method(value)
         add_attribute(Eccairs::Attributes::RiskMethod, false, value)
       end
+
+      # Add ERCS comments
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::ErcsComments] The created attribute instance
+      # @note Attribute ID: 1110, XML Tag: ERCS_Comments
+      def add_ercs_comments(value)
+        add_attribute(Eccairs::Attributes::ErcsComments, false, value)
+      end
     end
   end
 end

@@ -43,4 +43,20 @@ RSpec.describe Eccairs::Entities::RiskAssessment do
       expect(errors).to be_empty, "Expected no validation errors, got: #{errors.map(&:message).join(", ")}"
     end
   end
+
+  describe "attribute methods" do
+    it "adds ERCS comments" do
+      set = Eccairs.set
+      set.add_occurrence do |occurrence|
+        occurrence.add_risk_assessment do |risk_assessment|
+          risk_assessment.add_ercs_comments("Test ERCS comment")
+        end
+      end
+
+      xml = set.to_xml
+      expect(xml).to include("ERCS_Comments")
+      expect(xml).to include('attributeId="1110"')
+      expect(xml).to include("Test ERCS comment")
+    end
+  end
 end
