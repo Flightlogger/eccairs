@@ -24,6 +24,14 @@ module Eccairs
         add_attribute(Eccairs::Attributes::AircraftCategory, false, value)
       end
 
+      # Add airworthiness cert
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::AirworthinessCert] The created attribute instance
+      # @note Attribute ID: 35, XML Tag: Airworthiness_Cert
+      def add_airworthiness_cert(value)
+        add_attribute(Eccairs::Attributes::AirworthinessCert, false, value)
+      end
+
       # Add aircraft lighting
       # @param value [Object] The attribute value
       # @return [Eccairs::Attributes::AircraftLighting] The created attribute instance
@@ -246,6 +254,14 @@ module Eccairs
       # @note Attribute ID: 319, XML Tag: Mass_Group
       def add_mass_group(value)
         add_attribute(Eccairs::Attributes::MassGroup, false, value)
+      end
+
+      # Add maintenance docs
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::MaintenanceDocs] The created attribute instance
+      # @note Attribute ID: 174, XML Tag: Maintenance_Docs
+      def add_maintenance_docs(value)
+        add_attribute(Eccairs::Attributes::MaintenanceDocs, false, value)
       end
 
       # Add maximum t o mass

@@ -47,4 +47,37 @@ RSpec.describe Eccairs::Entities::PartInformation do
       expect(errors).to be_empty, "Expected no validation errors, got: #{errors.map(&:message).join(", ")}"
     end
   end
+
+  describe "attribute methods" do
+    it "adds time since inspection (using TimeSinceInspection)" do
+      set = Eccairs.set
+      set.add_occurrence do |occurrence|
+        occurrence.add_aircraft do |aircraft|
+          aircraft.add_part_information do |part_info|
+            part_info.add_time_since_inspection(10.5)
+          end
+        end
+      end
+
+      xml = set.to_xml
+      expect(xml).to include("Time_Since_Inspection")
+      expect(xml).to include('attributeId="901"')
+    end
+
+    it "adds part information time since inspection (attribute ID 662)" do
+      set = Eccairs.set
+      set.add_occurrence do |occurrence|
+        occurrence.add_aircraft do |aircraft|
+          aircraft.add_part_information do |part_info|
+            part_info.add_part_information_time_since_inspection(50.5)
+          end
+        end
+      end
+
+      xml = set.to_xml
+      expect(xml).to include("Time_Since_Inspection")
+      expect(xml).to include('attributeId="662"')
+      expect(xml).to include('Unit="Hour(s)"')
+    end
+  end
 end
