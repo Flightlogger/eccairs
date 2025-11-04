@@ -80,6 +80,30 @@ module Eccairs
         add_attribute(Eccairs::Attributes::Annex2ACType, false, value)
       end
 
+      # Add autopilot
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::Autopilot] The created attribute instance
+      # @note Attribute ID: 804, XML Tag: Autopilot
+      def add_autopilot(value)
+        add_attribute(Eccairs::Attributes::Autopilot, false, value)
+      end
+
+      # Add spoilers position
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::SpoilersPosition] The created attribute instance
+      # @note Attribute ID: 807, XML Tag: Spoilers_Position
+      def add_spoilers_position(value)
+        add_attribute(Eccairs::Attributes::SpoilersPosition, false, value)
+      end
+
+      # Add flaps position
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::FlapsPosition] The created attribute instance
+      # @note Attribute ID: 808, XML Tag: Flaps_Position
+      def add_flaps_position(value)
+        add_attribute(Eccairs::Attributes::FlapsPosition, false, value)
+      end
+
       # Add ats route name
       # @param value [Object] The attribute value
       # @return [Eccairs::Attributes::AtsRouteName] The created attribute instance

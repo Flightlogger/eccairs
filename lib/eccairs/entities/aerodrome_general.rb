@@ -48,6 +48,14 @@ module Eccairs
         add_attribute(Eccairs::Attributes::AreaConfiguration, false, value)
       end
 
+      # Add braking action
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::BrakingAction] The created attribute instance
+      # @note Attribute ID: 498, XML Tag: Braking_Action
+      def add_braking_action(value)
+        add_attribute(Eccairs::Attributes::BrakingAction, false, value)
+      end
+
       # Add elevation above msl
       # @param value [Object] The attribute value
       # @return [Eccairs::Attributes::ElevationAboveMsl] The created attribute instance
