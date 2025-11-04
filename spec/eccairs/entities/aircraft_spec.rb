@@ -74,5 +74,44 @@ RSpec.describe Eccairs::Entities::Aircraft do
       expect(xml).to include("Airworthiness_Cert")
       expect(xml).to include('attributeId="35"')
     end
+
+    it "adds autopilot" do
+      set = Eccairs.set
+      set.add_occurrence do |occurrence|
+        occurrence.add_aircraft do |aircraft|
+          aircraft.add_autopilot(1)
+        end
+      end
+
+      xml = set.to_xml
+      expect(xml).to include("Autopilot")
+      expect(xml).to include('attributeId="804"')
+    end
+
+    it "adds spoilers position" do
+      set = Eccairs.set
+      set.add_occurrence do |occurrence|
+        occurrence.add_aircraft do |aircraft|
+          aircraft.add_spoilers_position(1)
+        end
+      end
+
+      xml = set.to_xml
+      expect(xml).to include("Spoilers_Position")
+      expect(xml).to include('attributeId="807"')
+    end
+
+    it "adds flaps position" do
+      set = Eccairs.set
+      set.add_occurrence do |occurrence|
+        occurrence.add_aircraft do |aircraft|
+          aircraft.add_flaps_position(15.5)
+        end
+      end
+
+      xml = set.to_xml
+      expect(xml).to include("Flaps_Position")
+      expect(xml).to include('attributeId="808"')
+    end
   end
 end
