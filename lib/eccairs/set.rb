@@ -43,13 +43,34 @@ module Eccairs
     end
 
     def valid?
-      validate.empty?
+      validate.empty? && validation_errors.empty?
     end
 
     def validate
       xml_doc = Nokogiri::XML(to_xml)
       xsd = load_schema
       xsd.validate(xml_doc)
+    end
+
+    # Get all validation errors from all occurrences
+    def validation_errors
+      errors = []
+      @occurrences.each do |occurrence|
+        errors.concat(occurrence.validation_errors) if occurrence.respond_to?(:validation_errors)
+      end
+      errors
+    end
+
+    # Get a summary of validation errors grouped by field
+    def validation_summary
+      validation_errors.group_by(&:field_name).transform_values do |errors|
+        errors.map { |e| {value: e.provided_value, message: e.message} }
+      end
+    end
+
+    # Get list of invalid field names
+    def invalid_fields
+      validation_errors.map(&:field_name).uniq
     end
 
     private

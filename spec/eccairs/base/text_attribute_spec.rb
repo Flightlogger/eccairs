@@ -46,27 +46,39 @@ RSpec.describe Eccairs::Base::TextAttribute do
       end
 
       it "rejects non-string values" do
-        expect { test_text_class.new(123) }.to raise_error(ArgumentError, /must be a string/)
+        instance = test_text_class.new(123)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be a string/)
       end
 
       it "rejects integer" do
-        expect { test_text_class.new(42) }.to raise_error(ArgumentError, /must be a string/)
+        instance = test_text_class.new(42)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be a string/)
       end
 
       it "rejects float" do
-        expect { test_text_class.new(3.14) }.to raise_error(ArgumentError, /must be a string/)
+        instance = test_text_class.new(3.14)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be a string/)
       end
 
       it "rejects array" do
-        expect { test_text_class.new([1, 2, 3]) }.to raise_error(ArgumentError, /must be a string/)
+        instance = test_text_class.new([1, 2, 3])
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be a string/)
       end
 
       it "rejects hash" do
-        expect { test_text_class.new({key: "value"}) }.to raise_error(ArgumentError, /must be a string/)
+        instance = test_text_class.new({key: "value"})
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be a string/)
       end
 
       it "rejects symbol" do
-        expect { test_text_class.new(:symbol) }.to raise_error(ArgumentError, /must be a string/)
+        instance = test_text_class.new(:symbol)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be a string/)
       end
     end
 
@@ -82,7 +94,9 @@ RSpec.describe Eccairs::Base::TextAttribute do
       end
 
       it "rejects string exceeding max_length" do
-        expect { test_text_class.new("12345678901") }.to raise_error(ArgumentError, /exceeds maximum/)
+        instance = test_text_class.new("12345678901")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/exceeds maximum/)
       end
 
       it "accepts empty string" do
@@ -91,7 +105,9 @@ RSpec.describe Eccairs::Base::TextAttribute do
       end
 
       it "includes actual and max length in error message" do
-        expect { test_text_class.new("12345678901") }.to raise_error(ArgumentError, /length 11 exceeds maximum of 10/)
+        instance = test_text_class.new("12345678901")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/length 11 exceeds maximum of 10/)
       end
     end
 
@@ -110,7 +126,9 @@ RSpec.describe Eccairs::Base::TextAttribute do
       end
 
       it "still validates type" do
-        expect { unlimited_text_class.new(123) }.to raise_error(ArgumentError, /must be a string/)
+        instance = unlimited_text_class.new(123)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be a string/)
       end
     end
 
@@ -128,7 +146,9 @@ RSpec.describe Eccairs::Base::TextAttribute do
     describe "value assignment" do
       it "validates on value assignment" do
         instance = test_text_class.new("short")
-        expect { instance.value = "12345678901" }.to raise_error(ArgumentError, /exceeds maximum/)
+        instance.value = "12345678901"
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/exceeds maximum/)
       end
 
       it "allows changing to another valid value" do

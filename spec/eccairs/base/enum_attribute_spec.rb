@@ -78,15 +78,21 @@ RSpec.describe Eccairs::Base::EnumAttribute do
       end
 
       it "rejects invalid integer value" do
-        expect { test_enum_class.new(99) }.to raise_error(ArgumentError, /not in allowed values/)
+        instance = test_enum_class.new(99)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/not in allowed values/)
       end
 
       it "rejects negative values not in allowed list" do
-        expect { test_enum_class.new(-1) }.to raise_error(ArgumentError, /not in allowed values/)
+        instance = test_enum_class.new(-1)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/not in allowed values/)
       end
 
       it "rejects zero if not in allowed list" do
-        expect { test_enum_class.new(0) }.to raise_error(ArgumentError, /not in allowed values/)
+        instance = test_enum_class.new(0)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/not in allowed values/)
       end
     end
 
@@ -97,11 +103,15 @@ RSpec.describe Eccairs::Base::EnumAttribute do
       end
 
       it "rejects invalid string value" do
-        expect { test_enum_class.new("99") }.to raise_error(ArgumentError, /not in allowed values/)
+        instance = test_enum_class.new("99")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/not in allowed values/)
       end
 
       it "rejects non-numeric strings" do
-        expect { test_enum_class.new("invalid") }.to raise_error(ArgumentError, /Cannot resolve value/)
+        instance = test_enum_class.new("invalid")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/Cannot resolve value/)
       end
     end
 
@@ -144,7 +154,9 @@ RSpec.describe Eccairs::Base::EnumAttribute do
       end
 
       it "rejects invalid symbol" do
-        expect { symbolic_enum_class.new(:INVALID) }.to raise_error(ArgumentError, /Cannot resolve value/)
+        instance = symbolic_enum_class.new(:INVALID)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/Cannot resolve value/)
       end
     end
 
@@ -162,7 +174,9 @@ RSpec.describe Eccairs::Base::EnumAttribute do
     describe "value assignment" do
       it "validates on value assignment" do
         instance = test_enum_class.new(1)
-        expect { instance.value = 99 }.to raise_error(ArgumentError, /not in allowed values/)
+        instance.value = 99
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/not in allowed values/)
       end
 
       it "allows changing to another valid value" do
@@ -262,7 +276,9 @@ RSpec.describe Eccairs::Base::EnumAttribute do
         allowed_values []
       end
 
-      expect { empty_enum_class.new(1) }.to raise_error(ArgumentError, /not in allowed values/)
+      instance = empty_enum_class.new(1)
+      expect(instance.valid?).to be false
+      expect(instance.validation_error.message).to match(/not in allowed values/)
     end
   end
 end

@@ -34,7 +34,16 @@ module Eccairs
         return unless self.class.allowed_values
 
         numeric_value = resolve_value(value)
-        raise ArgumentError, "Value #{value} is not in allowed values: #{self.class.allowed_values.join(", ")}" unless self.class.allowed_values.include?(numeric_value)
+
+        if numeric_value.nil?
+          # Error was already recorded in resolve_value
+          return
+        end
+
+        unless self.class.allowed_values.include?(numeric_value)
+          record_error("Value #{value} is not in allowed values: #{self.class.allowed_values.join(", ")}", value)
+          return
+        end
 
         @value = numeric_value
       end
@@ -47,12 +56,17 @@ module Eccairs
           return resolved if resolved
         end
 
-        return Integer(value) if value.is_a?(String)
+        if value.is_a?(String)
+          begin
+            return Integer(value)
+          rescue ArgumentError
+            record_error("Cannot resolve value to an allowed enum value", value)
+            return nil
+          end
+        end
 
-        raise ArgumentError, "Cannot resolve value #{value} to an allowed enum value"
-      rescue ArgumentError => e
-        raise if e.message.include?("Cannot resolve value")
-        raise ArgumentError, "Cannot resolve value #{value} to an allowed enum value"
+        record_error("Cannot resolve value to an allowed enum value", value)
+        nil
       end
 
       def resolve_from_hash(value)

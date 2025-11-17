@@ -128,6 +128,28 @@ module Eccairs
         end
         attrs
       end
+
+      # Get all validation errors from this entity and its children
+      def validation_errors
+        errors = []
+
+        # Collect errors from attributes
+        @attributes.values.flatten.each do |attr|
+          errors << attr.validation_error if attr.validation_error
+        end
+
+        # Collect errors from nested entities
+        @children.values.flatten.each do |child|
+          errors.concat(child.validation_errors) if child.respond_to?(:validation_errors)
+        end
+
+        errors
+      end
+
+      # Check if this entity and all its children are valid
+      def valid?
+        validation_errors.empty?
+      end
     end
   end
 end

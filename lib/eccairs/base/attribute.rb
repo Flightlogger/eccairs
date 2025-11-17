@@ -3,7 +3,7 @@
 module Eccairs
   module Base
     class Attribute
-      attr_reader :value
+      attr_reader :value, :validation_error
 
       # DSL method to set attribute_id at class level
       def self.attribute_id(value = nil)
@@ -36,14 +36,20 @@ module Eccairs
       end
 
       def initialize(value = nil)
+        @validation_error = nil
         self.value = value
       end
 
       def value=(new_value)
         @value_before_validation = @value
+        @validation_error = nil
         validate_value(new_value)
-        # Only set @value if validate_value didn't already set it
-        @value = new_value if @value == @value_before_validation
+        # Only set @value if validation passed and validate_value didn't already set it
+        @value = new_value if @validation_error.nil? && @value == @value_before_validation
+      end
+
+      def valid?
+        @validation_error.nil?
       end
 
       # Method to build XML for this attribute
@@ -70,8 +76,19 @@ module Eccairs
       protected
 
       # Hook for subclasses to validate the value
+      # Subclasses should call record_error instead of raising exceptions
       def validate_value(value)
         # Base implementation does nothing
+      end
+
+      # Record a validation error instead of raising an exception
+      def record_error(message, value)
+        @validation_error = Eccairs::ValidationError.new(
+          field_name: self.class.xml_tag,
+          attribute_id: self.class.attribute_id,
+          provided_value: value,
+          message: message
+        )
       end
     end
   end

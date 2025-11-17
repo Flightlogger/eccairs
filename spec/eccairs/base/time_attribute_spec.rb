@@ -70,70 +70,102 @@ RSpec.describe Eccairs::Base::TimeAttribute do
       end
 
       it "rejects time without seconds" do
-        expect { test_time_class.new("14:30") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("14:30")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "rejects time with milliseconds" do
-        expect { test_time_class.new("14:30:45.123") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("14:30:45.123")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "rejects 12-hour format" do
-        expect { test_time_class.new("2:30:45 PM") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("2:30:45 PM")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "rejects invalid hour" do
-        expect { test_time_class.new("24:00:00") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("24:00:00")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "rejects invalid minute" do
-        expect { test_time_class.new("14:60:00") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("14:60:00")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "rejects invalid second" do
-        expect { test_time_class.new("14:30:60") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("14:30:60")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "rejects time without colons" do
-        expect { test_time_class.new("143045") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("143045")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "rejects time with wrong separator" do
-        expect { test_time_class.new("14.30.45") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("14.30.45")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "rejects single digit hours" do
-        expect { test_time_class.new("9:30:45") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("9:30:45")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "rejects single digit minutes" do
-        expect { test_time_class.new("09:5:45") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("09:5:45")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "rejects single digit seconds" do
-        expect { test_time_class.new("09:05:3") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("09:05:3")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
     end
 
     describe "with invalid types" do
       it "rejects integer" do
-        expect { test_time_class.new(143045) }.to raise_error(ArgumentError, /must be a Time or time string/)
+        instance = test_time_class.new(143045)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be a Time or time string/)
       end
 
       it "rejects float" do
-        expect { test_time_class.new(14.3045) }.to raise_error(ArgumentError, /must be a Time or time string/)
+        instance = test_time_class.new(14.3045)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be a Time or time string/)
       end
 
       it "rejects array" do
-        expect { test_time_class.new([14, 30, 45]) }.to raise_error(ArgumentError, /must be a Time or time string/)
+        instance = test_time_class.new([14, 30, 45])
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be a Time or time string/)
       end
 
       it "rejects hash" do
-        expect { test_time_class.new({hour: 14, minute: 30, second: 45}) }.to raise_error(ArgumentError, /must be a Time or time string/)
+        instance = test_time_class.new({hour: 14, minute: 30, second: 45})
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be a Time or time string/)
       end
 
       it "rejects Date object" do
         date = Date.new(2024, 1, 15)
-        expect { test_time_class.new(date) }.to raise_error(ArgumentError, /must be a Time or time string/)
+        instance = test_time_class.new(date)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be a Time or time string/)
       end
     end
 
@@ -151,7 +183,9 @@ RSpec.describe Eccairs::Base::TimeAttribute do
     describe "value assignment" do
       it "validates on value assignment" do
         instance = test_time_class.new("14:30:45")
-        expect { instance.value = "invalid" }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance.value = "invalid"
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "allows changing to another valid value" do

@@ -78,15 +78,21 @@ RSpec.describe Eccairs::Base::DecimalAttribute do
       end
 
       it "rejects non-numeric strings" do
-        expect { test_decimal_class.new("abc") }.to raise_error(ArgumentError, /must be numeric/)
+        instance = test_decimal_class.new("abc")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be numeric/)
       end
 
       it "rejects arrays" do
-        expect { test_decimal_class.new([1.5, 2.5]) }.to raise_error(ArgumentError, /must be numeric/)
+        instance = test_decimal_class.new([1.5, 2.5])
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be numeric/)
       end
 
       it "rejects hashes" do
-        expect { test_decimal_class.new({key: "value"}) }.to raise_error(ArgumentError, /must be numeric/)
+        instance = test_decimal_class.new({key: "value"})
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be numeric/)
       end
     end
 
@@ -107,11 +113,15 @@ RSpec.describe Eccairs::Base::DecimalAttribute do
       end
 
       it "rejects value below min" do
-        expect { test_decimal_class.new(-100.1) }.to raise_error(ArgumentError, /less than minimum of -100.0/)
+        instance = test_decimal_class.new(-100.1)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/less than minimum of -100.0/)
       end
 
       it "rejects value above max" do
-        expect { test_decimal_class.new(100.1) }.to raise_error(ArgumentError, /greater than maximum of 100.0/)
+        instance = test_decimal_class.new(100.1)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/greater than maximum of 100.0/)
       end
 
       it "accepts zero" do
@@ -145,7 +155,9 @@ RSpec.describe Eccairs::Base::DecimalAttribute do
       end
 
       it "still enforces max" do
-        expect { no_min_class.new(100.1) }.to raise_error(ArgumentError, /greater than maximum/)
+        instance = no_min_class.new(100.1)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/greater than maximum/)
       end
     end
 
@@ -164,7 +176,9 @@ RSpec.describe Eccairs::Base::DecimalAttribute do
       end
 
       it "still enforces min" do
-        expect { no_max_class.new(-100.1) }.to raise_error(ArgumentError, /less than minimum/)
+        instance = no_max_class.new(-100.1)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/less than minimum/)
       end
     end
 
@@ -187,7 +201,9 @@ RSpec.describe Eccairs::Base::DecimalAttribute do
       end
 
       it "still validates type" do
-        expect { unlimited_class.new("abc") }.to raise_error(ArgumentError, /must be numeric/)
+        instance = unlimited_class.new("abc")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be numeric/)
       end
     end
 
@@ -205,7 +221,9 @@ RSpec.describe Eccairs::Base::DecimalAttribute do
     describe "value assignment" do
       it "validates on value assignment" do
         instance = test_decimal_class.new(50.5)
-        expect { instance.value = 100.1 }.to raise_error(ArgumentError, /greater than maximum/)
+        instance.value = 100.1
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/greater than maximum/)
       end
 
       it "allows changing to another valid value" do
@@ -321,7 +339,9 @@ RSpec.describe Eccairs::Base::DecimalAttribute do
     end
 
     it "validates scientific notation against range" do
-      expect { test_decimal_class.new("1.5e1") }.to raise_error(ArgumentError, /greater than maximum/)
+      instance = test_decimal_class.new("1.5e1")
+      expect(instance.valid?).to be false
+      expect(instance.validation_error.message).to match(/greater than maximum/)
     end
   end
 end

@@ -13,14 +13,21 @@ module Eccairs
         if value.is_a?(Time)
           @value = value.strftime("%H:%M:%S")
         elsif value.is_a?(String)
-          raise ArgumentError, "Time must be in HH:MM:SS format" unless value.match?(/\A\d{2}:\d{2}:\d{2}\z/)
+          unless value.match?(/\A\d{2}:\d{2}:\d{2}\z/)
+            record_error("Time must be in HH:MM:SS format", value)
+            return
+          end
 
           hour, minute, second = value.split(":").map(&:to_i)
-          raise ArgumentError, "Time must be in HH:MM:SS format" if hour > 23 || minute > 59 || second > 59
+          if hour > 23 || minute > 59 || second > 59
+            record_error("Time must be in HH:MM:SS format", value)
+            return
+          end
 
           @value = value
         else
-          raise ArgumentError, "Value must be a Time or time string (HH:MM:SS), got #{value.class}"
+          record_error("Value must be a Time or time string (HH:MM:SS), got #{value.class}", value)
+          nil
         end
       end
     end
