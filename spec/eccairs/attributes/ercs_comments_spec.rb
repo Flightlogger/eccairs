@@ -12,8 +12,8 @@ RSpec.describe Eccairs::Attributes::ErcsComments do
       expect(described_class.xml_tag).to eq("ERCS_Comments")
     end
 
-    it "inherits from TextAttribute" do
-      expect(described_class.superclass).to eq(Eccairs::Base::TextAttribute)
+    it "inherits from StringAttribute" do
+      expect(described_class.superclass).to eq(Eccairs::Base::StringAttribute)
     end
 
     it "has text_type enabled" do

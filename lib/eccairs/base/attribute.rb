@@ -52,36 +52,29 @@ module Eccairs
         @validation_error.nil?
       end
 
-      # Method to build XML for this attribute
       def build_xml(xml)
         return unless value
-
         raise NotImplementedError, "Subclasses must define xml_tag" unless self.class.xml_tag
 
         attrs = {attributeId: self.class.attribute_id}
         attrs[:Unit] = self.class.unit if self.class.unit
 
         if self.class.text_type
-          # For dt:Text attributes, use PlainText child element
           xml.send(self.class.xml_tag, attrs) do
             xml.parent.namespace = xml.parent.namespace_definitions.find { |ns| ns.prefix == "db" }
             xml["dt"].PlainText(value)
           end
         else
-          # For regular attributes, use direct text content
           xml.send(self.class.xml_tag, value, attrs)
         end
       end
 
       protected
 
-      # Hook for subclasses to validate the value
-      # Subclasses should call record_error instead of raising exceptions
       def validate_value(value)
-        # Base implementation does nothing
+        # Hook for subclasses - base implementation does nothing
       end
 
-      # Record a validation error instead of raising an exception
       def record_error(message, value)
         @validation_error = Eccairs::ValidationError.new(
           field_name: self.class.xml_tag,

@@ -34,16 +34,9 @@ module Eccairs
         return unless self.class.allowed_values
 
         numeric_value = resolve_value(value)
+        return if numeric_value.nil?
 
-        if numeric_value.nil?
-          # Error was already recorded in resolve_value
-          return
-        end
-
-        unless self.class.allowed_values.include?(numeric_value)
-          record_error("Value #{value} is not in allowed values: #{self.class.allowed_values.join(", ")}", value)
-          return
-        end
+        return record_error("Value #{value} is not in allowed values: #{self.class.allowed_values.join(", ")}", value) unless self.class.allowed_values.include?(numeric_value)
 
         @value = numeric_value
       end
@@ -51,43 +44,28 @@ module Eccairs
       def resolve_value(value)
         return value if value.is_a?(Integer)
 
-        if self.class.allowed_values_hash
-          resolved = resolve_from_hash(value)
-          return resolved if resolved
-        end
+        resolved = resolve_from_hash(value) if self.class.allowed_values_hash
+        return resolved if resolved
 
-        if value.is_a?(String)
-          begin
-            return Integer(value)
-          rescue ArgumentError
-            record_error("Cannot resolve value to an allowed enum value", value)
-            return nil
-          end
-        end
+        return Integer(value) if value.is_a?(String)
 
+        record_error("Cannot resolve value to an allowed enum value", value)
+        nil
+      rescue ArgumentError
         record_error("Cannot resolve value to an allowed enum value", value)
         nil
       end
 
       def resolve_from_hash(value)
         hash = self.class.allowed_values_hash
+        return hash[value] if hash.key?(value)
 
-        # Try direct symbol match
-        return hash[value] if value.is_a?(Symbol) && hash.key?(value)
-
-        # Try uppercase symbol
-        if value.is_a?(Symbol)
+        if value.is_a?(Symbol) || value.is_a?(String)
           upper_key = value.to_s.upcase.to_sym
           return hash[upper_key] if hash.key?(upper_key)
-        end
 
-        # Try string as symbol
-        if value.is_a?(String)
-          sym_key = value.to_sym
-          return hash[sym_key] if hash.key?(sym_key)
-
-          upper_key = value.upcase.to_sym
-          return hash[upper_key] if hash.key?(upper_key)
+          sym_key = value.to_sym if value.is_a?(String)
+          return hash[sym_key] if sym_key && hash.key?(sym_key)
         end
 
         nil

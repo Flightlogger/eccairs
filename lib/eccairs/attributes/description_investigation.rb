@@ -2,7 +2,7 @@
 
 module Eccairs
   module Attributes
-    class DescriptionInvestigation < Eccairs::Base::TextAttribute
+    class DescriptionInvestigation < Eccairs::Base::StringAttribute
       attribute_id 1067
       xml_tag "Description_Investigation"
       sequence 10

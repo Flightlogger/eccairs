@@ -14,14 +14,10 @@ module Eccairs
       def validate_value(value)
         return if value.nil?
 
-        unless value.is_a?(String)
-          record_error("Value must be a string, got #{value.class}", value)
-          return
-        end
+        return record_error("Value must be a string, got #{value.class}", value) unless value.is_a?(String)
 
         if self.class.max_length && value.length > self.class.max_length
           record_error("String length #{value.length} exceeds maximum of #{self.class.max_length}", value)
-          nil
         end
       end
     end

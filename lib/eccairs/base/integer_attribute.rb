@@ -19,28 +19,13 @@ module Eccairs
 
       def validate_value(value)
         return if value.nil?
+        return record_error("Value must be an integer, got #{value.class}", value) if value.is_a?(Array) || value.is_a?(Hash) || value.is_a?(Float)
 
-        if value.is_a?(Array) || value.is_a?(Hash) || value.is_a?(Float)
-          record_error("Value must be an integer, got #{value.class}", value)
-          return
-        end
-
-        begin
-          integer_value = Integer(value)
-        rescue ArgumentError
-          record_error("Value must be an integer, got #{value.class}", value)
-          return
-        end
-
-        if self.class.min && integer_value < self.class.min
-          record_error("Value #{integer_value} is less than minimum of #{self.class.min}", value)
-          return
-        end
-
-        if self.class.max && integer_value > self.class.max
-          record_error("Value #{integer_value} is greater than maximum of #{self.class.max}", value)
-          nil
-        end
+        integer_value = Integer(value)
+        return record_error("Value #{integer_value} is less than minimum of #{self.class.min}", value) if self.class.min && integer_value < self.class.min
+        record_error("Value #{integer_value} is greater than maximum of #{self.class.max}", value) if self.class.max && integer_value > self.class.max
+      rescue ArgumentError
+        record_error("Value must be an integer, got #{value.class}", value)
       end
     end
   end

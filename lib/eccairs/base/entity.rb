@@ -4,6 +4,8 @@ module Eccairs
   module Base
     class Entity
       attr_reader :attributes, :children, :parent
+      attr_writer :parent
+      attr_accessor :id
 
       # DSL method to set entity_id at class level
       def self.entity_id(value = nil)
@@ -32,14 +34,50 @@ module Eccairs
         @sequence = value.to_i
       end
 
-      attr_writer :parent
-      attr_accessor :id
-
       def initialize
         @attributes = {}
         @children = {}
         @parent = nil
         @id = nil
+      end
+
+      # Build XML for this entity
+      def build_xml(xml, entity_id_counters = {})
+        xml.send(self.class.xml_tag, build_xml_attributes(entity_id_counters)) do
+          build_attributes_section(xml) if @attributes&.any?
+          build_entities_section(xml, entity_id_counters) if @children&.any?
+        end
+      end
+
+      # Get all attributes recursively
+      def all_attributes
+        attrs = @attributes.values.flatten
+        @children.values.flatten.each do |child|
+          attrs.concat(child.all_attributes) if child.respond_to?(:all_attributes)
+        end
+        attrs
+      end
+
+      # Get all validation errors from this entity and its children
+      def validation_errors
+        errors = []
+
+        # Collect errors from attributes
+        @attributes.values.flatten.each do |attr|
+          errors << attr.validation_error if attr.validation_error
+        end
+
+        # Collect errors from nested entities
+        @children.values.flatten.each do |child|
+          errors.concat(child.validation_errors) if child.respond_to?(:validation_errors)
+        end
+
+        errors
+      end
+
+      # Check if this entity and all its children are valid
+      def valid?
+        validation_errors.empty?
       end
 
       private
@@ -75,18 +113,6 @@ module Eccairs
         instance
       end
 
-      public
-
-      # Build XML for this entity
-      def build_xml(xml, entity_id_counters = {})
-        xml.send(self.class.xml_tag, build_xml_attributes(entity_id_counters)) do
-          build_attributes_section(xml) if @attributes&.any?
-          build_entities_section(xml, entity_id_counters) if @children&.any?
-        end
-      end
-
-      private
-
       def build_xml_attributes(entity_id_counters)
         attrs = {}
         attrs[:entityId] = self.class.entity_id if self.class.entity_id
@@ -116,39 +142,6 @@ module Eccairs
             child.build_xml(xml, entity_id_counters)
           end
         end
-      end
-
-      public
-
-      # Get all attributes recursively
-      def all_attributes
-        attrs = @attributes.values.flatten
-        @children.values.flatten.each do |child|
-          attrs.concat(child.all_attributes) if child.respond_to?(:all_attributes)
-        end
-        attrs
-      end
-
-      # Get all validation errors from this entity and its children
-      def validation_errors
-        errors = []
-
-        # Collect errors from attributes
-        @attributes.values.flatten.each do |attr|
-          errors << attr.validation_error if attr.validation_error
-        end
-
-        # Collect errors from nested entities
-        @children.values.flatten.each do |child|
-          errors.concat(child.validation_errors) if child.respond_to?(:validation_errors)
-        end
-
-        errors
-      end
-
-      # Check if this entity and all its children are valid
-      def valid?
-        validation_errors.empty?
       end
     end
   end
