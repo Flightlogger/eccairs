@@ -68,20 +68,23 @@ RSpec.describe Eccairs::Base::IntegerAttribute do
       end
 
       it "rejects non-numeric strings" do
-        expect { test_integer_class.new("abc") }.to raise_error(ArgumentError, /must be an integer/)
+        instance = test_integer_class.new("abc")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be an integer/)
       end
 
       it "rejects float strings" do
-        expect { test_integer_class.new("3.14") }.to raise_error(ArgumentError, /must be an integer/)
+        instance = test_integer_class.new("3.14")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be an integer/)
       end
 
-      it "rejects arrays" do
-        expect { test_integer_class.new([1, 2, 3]) }.to raise_error(ArgumentError, /must be an integer/)
-      end
+      let(:test_class) { test_integer_class }
 
-      it "rejects hashes" do
-        expect { test_integer_class.new({key: "value"}) }.to raise_error(ArgumentError, /must be an integer/)
-      end
+      include_examples "an attribute that rejects invalid types", [
+        ["arrays", [1, 2, 3], /must be an integer/],
+        ["hashes", {key: "value"}, /must be an integer/]
+      ]
     end
 
     describe "range validation" do
@@ -101,11 +104,15 @@ RSpec.describe Eccairs::Base::IntegerAttribute do
       end
 
       it "rejects value below min" do
-        expect { test_integer_class.new(-101) }.to raise_error(ArgumentError, /less than minimum of -100/)
+        instance = test_integer_class.new(-101)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/less than minimum of -100/)
       end
 
       it "rejects value above max" do
-        expect { test_integer_class.new(101) }.to raise_error(ArgumentError, /greater than maximum of 100/)
+        instance = test_integer_class.new(101)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/greater than maximum of 100/)
       end
 
       it "accepts zero when in range" do
@@ -134,7 +141,9 @@ RSpec.describe Eccairs::Base::IntegerAttribute do
       end
 
       it "still enforces max" do
-        expect { no_min_class.new(101) }.to raise_error(ArgumentError, /greater than maximum/)
+        instance = no_min_class.new(101)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/greater than maximum/)
       end
     end
 
@@ -153,7 +162,9 @@ RSpec.describe Eccairs::Base::IntegerAttribute do
       end
 
       it "still enforces min" do
-        expect { no_max_class.new(-101) }.to raise_error(ArgumentError, /less than minimum/)
+        instance = no_max_class.new(-101)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/less than minimum/)
       end
     end
 
@@ -176,28 +187,27 @@ RSpec.describe Eccairs::Base::IntegerAttribute do
       end
 
       it "still validates type" do
-        expect { unlimited_class.new("abc") }.to raise_error(ArgumentError, /must be an integer/)
+        instance = unlimited_class.new("abc")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be an integer/)
       end
     end
 
     describe "with nil value" do
-      it "accepts nil value" do
-        instance = test_integer_class.new(nil)
-        expect(instance.value).to be_nil
-      end
+      let(:test_class) { test_integer_class }
 
-      it "does not validate nil" do
-        expect { test_integer_class.new(nil) }.not_to raise_error
-      end
+      include_examples "an attribute with nil value handling"
     end
 
     describe "value assignment" do
-      it "validates on value assignment" do
-        instance = test_integer_class.new(50)
-        expect { instance.value = 101 }.to raise_error(ArgumentError, /greater than maximum/)
-      end
+      let(:test_class) { test_integer_class }
 
-      it "allows changing to another valid value" do
+      include_examples "an attribute with value assignment",
+        50,
+        101,
+        /greater than maximum/
+
+      it "allows changing to another valid value", alternate_valid_value: 75 do
         instance = test_integer_class.new(50)
         instance.value = 75
         expect(instance.value).to eq(75)
@@ -215,16 +225,12 @@ RSpec.describe Eccairs::Base::IntegerAttribute do
       end
     end
 
-    it "generates XML with integer value" do
-      xml_builder = Nokogiri::XML::Builder.new
-      instance = test_integer_class.new(42)
-      instance.build_xml(xml_builder)
+    let(:test_class) { test_integer_class }
 
-      xml = xml_builder.to_xml
-      expect(xml).to include("Test_Integer")
-      expect(xml).to include(">42</Test_Integer>")
-      expect(xml).to include('attributeId="999"')
-    end
+    include_examples "an attribute with XML generation",
+      42,
+      "Test_Integer",
+      "999"
 
     it "handles zero" do
       xml_builder = Nokogiri::XML::Builder.new
@@ -249,15 +255,6 @@ RSpec.describe Eccairs::Base::IntegerAttribute do
 
       xml = xml_builder.to_xml
       expect(xml).to include(">-42</Negative_Integer>")
-    end
-
-    it "does not generate XML for nil value" do
-      xml_builder = Nokogiri::XML::Builder.new
-      instance = test_integer_class.new(nil)
-      instance.build_xml(xml_builder)
-
-      xml = xml_builder.to_xml
-      expect(xml).not_to include("Test_Integer")
     end
   end
 
@@ -305,11 +302,15 @@ RSpec.describe Eccairs::Base::IntegerAttribute do
     end
 
     it "validates string integers against range" do
-      expect { test_integer_class.new("11") }.to raise_error(ArgumentError, /greater than maximum/)
+      instance = test_integer_class.new("11")
+      expect(instance.valid?).to be false
+      expect(instance.validation_error.message).to match(/greater than maximum/)
     end
 
     it "rejects floats that would be in range if truncated" do
-      expect { test_integer_class.new(5.5) }.to raise_error(ArgumentError, /must be an integer/)
+      instance = test_integer_class.new(5.5)
+      expect(instance.valid?).to be false
+      expect(instance.validation_error.message).to match(/must be an integer/)
     end
   end
 end

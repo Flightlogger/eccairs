@@ -58,7 +58,9 @@ RSpec.describe Eccairs::Attributes::BankAngle do
     end
 
     it "raises error for invalid value" do
-      expect { described_class.new(6) }.to raise_error(ArgumentError, /not in allowed values/)
+      instance = described_class.new(6)
+      expect(instance.valid?).to be false
+      expect(instance.validation_error.message).to match(/not in allowed values/)
     end
   end
 

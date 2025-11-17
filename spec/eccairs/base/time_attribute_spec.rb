@@ -70,91 +70,105 @@ RSpec.describe Eccairs::Base::TimeAttribute do
       end
 
       it "rejects time without seconds" do
-        expect { test_time_class.new("14:30") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("14:30")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "rejects time with milliseconds" do
-        expect { test_time_class.new("14:30:45.123") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("14:30:45.123")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "rejects 12-hour format" do
-        expect { test_time_class.new("2:30:45 PM") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("2:30:45 PM")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "rejects invalid hour" do
-        expect { test_time_class.new("24:00:00") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("24:00:00")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "rejects invalid minute" do
-        expect { test_time_class.new("14:60:00") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("14:60:00")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "rejects invalid second" do
-        expect { test_time_class.new("14:30:60") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("14:30:60")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "rejects time without colons" do
-        expect { test_time_class.new("143045") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("143045")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "rejects time with wrong separator" do
-        expect { test_time_class.new("14.30.45") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("14.30.45")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "rejects single digit hours" do
-        expect { test_time_class.new("9:30:45") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("9:30:45")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "rejects single digit minutes" do
-        expect { test_time_class.new("09:5:45") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("09:5:45")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
 
       it "rejects single digit seconds" do
-        expect { test_time_class.new("09:05:3") }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
+        instance = test_time_class.new("09:05:3")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be in HH:MM:SS format/)
       end
     end
 
     describe "with invalid types" do
-      it "rejects integer" do
-        expect { test_time_class.new(143045) }.to raise_error(ArgumentError, /must be a Time or time string/)
-      end
+      let(:test_class) { test_time_class }
 
-      it "rejects float" do
-        expect { test_time_class.new(14.3045) }.to raise_error(ArgumentError, /must be a Time or time string/)
-      end
-
-      it "rejects array" do
-        expect { test_time_class.new([14, 30, 45]) }.to raise_error(ArgumentError, /must be a Time or time string/)
-      end
-
-      it "rejects hash" do
-        expect { test_time_class.new({hour: 14, minute: 30, second: 45}) }.to raise_error(ArgumentError, /must be a Time or time string/)
-      end
+      include_examples "an attribute that rejects invalid types", [
+        ["integer", 143045, /must be a Time or time string/],
+        ["float", 14.3045, /must be a Time or time string/],
+        ["array", [14, 30, 45], /must be a Time or time string/],
+        ["hash", {hour: 14, minute: 30, second: 45}, /must be a Time or time string/]
+      ]
 
       it "rejects Date object" do
         date = Date.new(2024, 1, 15)
-        expect { test_time_class.new(date) }.to raise_error(ArgumentError, /must be a Time or time string/)
+        instance = test_time_class.new(date)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be a Time or time string/)
       end
     end
 
     describe "with nil value" do
-      it "accepts nil value" do
-        instance = test_time_class.new(nil)
-        expect(instance.value).to be_nil
-      end
+      let(:test_class) { test_time_class }
 
-      it "does not validate nil" do
-        expect { test_time_class.new(nil) }.not_to raise_error
-      end
+      include_examples "an attribute with nil value handling"
     end
 
     describe "value assignment" do
-      it "validates on value assignment" do
-        instance = test_time_class.new("14:30:45")
-        expect { instance.value = "invalid" }.to raise_error(ArgumentError, /must be in HH:MM:SS format/)
-      end
+      let(:test_class) { test_time_class }
 
-      it "allows changing to another valid value" do
+      include_examples "an attribute with value assignment",
+        "14:30:45",
+        "invalid",
+        /must be in HH:MM:SS format/
+
+      it "allows changing to another valid value", alternate_valid_value: "09:15:30" do
         instance = test_time_class.new("14:30:45")
         instance.value = "09:15:30"
         expect(instance.value).to eq("09:15:30")
@@ -163,16 +177,12 @@ RSpec.describe Eccairs::Base::TimeAttribute do
   end
 
   describe "XML generation" do
-    it "generates XML with time value" do
-      xml_builder = Nokogiri::XML::Builder.new
-      instance = test_time_class.new("14:30:45")
-      instance.build_xml(xml_builder)
+    let(:test_class) { test_time_class }
 
-      xml = xml_builder.to_xml
-      expect(xml).to include("Test_Time")
-      expect(xml).to include(">14:30:45</Test_Time>")
-      expect(xml).to include('attributeId="999"')
-    end
+    include_examples "an attribute with XML generation",
+      "14:30:45",
+      "Test_Time",
+      "999"
 
     it "generates XML from Time object" do
       xml_builder = Nokogiri::XML::Builder.new
@@ -182,15 +192,6 @@ RSpec.describe Eccairs::Base::TimeAttribute do
 
       xml = xml_builder.to_xml
       expect(xml).to include(">14:30:45</Test_Time>")
-    end
-
-    it "does not generate XML for nil value" do
-      xml_builder = Nokogiri::XML::Builder.new
-      instance = test_time_class.new(nil)
-      instance.build_xml(xml_builder)
-
-      xml = xml_builder.to_xml
-      expect(xml).not_to include("Test_Time")
     end
   end
 

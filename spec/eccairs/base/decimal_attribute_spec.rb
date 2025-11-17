@@ -78,16 +78,17 @@ RSpec.describe Eccairs::Base::DecimalAttribute do
       end
 
       it "rejects non-numeric strings" do
-        expect { test_decimal_class.new("abc") }.to raise_error(ArgumentError, /must be numeric/)
+        instance = test_decimal_class.new("abc")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be numeric/)
       end
 
-      it "rejects arrays" do
-        expect { test_decimal_class.new([1.5, 2.5]) }.to raise_error(ArgumentError, /must be numeric/)
-      end
+      let(:test_class) { test_decimal_class }
 
-      it "rejects hashes" do
-        expect { test_decimal_class.new({key: "value"}) }.to raise_error(ArgumentError, /must be numeric/)
-      end
+      include_examples "an attribute that rejects invalid types", [
+        ["arrays", [1.5, 2.5], /must be numeric/],
+        ["hashes", {key: "value"}, /must be numeric/]
+      ]
     end
 
     describe "range validation" do
@@ -107,11 +108,15 @@ RSpec.describe Eccairs::Base::DecimalAttribute do
       end
 
       it "rejects value below min" do
-        expect { test_decimal_class.new(-100.1) }.to raise_error(ArgumentError, /less than minimum of -100.0/)
+        instance = test_decimal_class.new(-100.1)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/less than minimum of -100.0/)
       end
 
       it "rejects value above max" do
-        expect { test_decimal_class.new(100.1) }.to raise_error(ArgumentError, /greater than maximum of 100.0/)
+        instance = test_decimal_class.new(100.1)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/greater than maximum of 100.0/)
       end
 
       it "accepts zero" do
@@ -145,7 +150,9 @@ RSpec.describe Eccairs::Base::DecimalAttribute do
       end
 
       it "still enforces max" do
-        expect { no_min_class.new(100.1) }.to raise_error(ArgumentError, /greater than maximum/)
+        instance = no_min_class.new(100.1)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/greater than maximum/)
       end
     end
 
@@ -164,7 +171,9 @@ RSpec.describe Eccairs::Base::DecimalAttribute do
       end
 
       it "still enforces min" do
-        expect { no_max_class.new(-100.1) }.to raise_error(ArgumentError, /less than minimum/)
+        instance = no_max_class.new(-100.1)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/less than minimum/)
       end
     end
 
@@ -187,28 +196,27 @@ RSpec.describe Eccairs::Base::DecimalAttribute do
       end
 
       it "still validates type" do
-        expect { unlimited_class.new("abc") }.to raise_error(ArgumentError, /must be numeric/)
+        instance = unlimited_class.new("abc")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be numeric/)
       end
     end
 
     describe "with nil value" do
-      it "accepts nil value" do
-        instance = test_decimal_class.new(nil)
-        expect(instance.value).to be_nil
-      end
+      let(:test_class) { test_decimal_class }
 
-      it "does not validate nil" do
-        expect { test_decimal_class.new(nil) }.not_to raise_error
-      end
+      include_examples "an attribute with nil value handling"
     end
 
     describe "value assignment" do
-      it "validates on value assignment" do
-        instance = test_decimal_class.new(50.5)
-        expect { instance.value = 100.1 }.to raise_error(ArgumentError, /greater than maximum/)
-      end
+      let(:test_class) { test_decimal_class }
 
-      it "allows changing to another valid value" do
+      include_examples "an attribute with value assignment",
+        50.5,
+        100.1,
+        /greater than maximum/
+
+      it "allows changing to another valid value", alternate_valid_value: 75.25 do
         instance = test_decimal_class.new(50.5)
         instance.value = 75.25
         expect(instance.value).to eq(75.25)
@@ -226,16 +234,12 @@ RSpec.describe Eccairs::Base::DecimalAttribute do
       end
     end
 
-    it "generates XML with decimal value" do
-      xml_builder = Nokogiri::XML::Builder.new
-      instance = test_decimal_class.new(42.5)
-      instance.build_xml(xml_builder)
+    let(:test_class) { test_decimal_class }
 
-      xml = xml_builder.to_xml
-      expect(xml).to include("Test_Decimal")
-      expect(xml).to include(">42.5</Test_Decimal>")
-      expect(xml).to include('attributeId="999"')
-    end
+    include_examples "an attribute with XML generation",
+      42.5,
+      "Test_Decimal",
+      "999"
 
     it "handles zero" do
       xml_builder = Nokogiri::XML::Builder.new
@@ -260,15 +264,6 @@ RSpec.describe Eccairs::Base::DecimalAttribute do
 
       xml = xml_builder.to_xml
       expect(xml).to include(">-42.5</Negative_Decimal>")
-    end
-
-    it "does not generate XML for nil value" do
-      xml_builder = Nokogiri::XML::Builder.new
-      instance = test_decimal_class.new(nil)
-      instance.build_xml(xml_builder)
-
-      xml = xml_builder.to_xml
-      expect(xml).not_to include("Test_Decimal")
     end
   end
 
@@ -321,7 +316,9 @@ RSpec.describe Eccairs::Base::DecimalAttribute do
     end
 
     it "validates scientific notation against range" do
-      expect { test_decimal_class.new("1.5e1") }.to raise_error(ArgumentError, /greater than maximum/)
+      instance = test_decimal_class.new("1.5e1")
+      expect(instance.valid?).to be false
+      expect(instance.validation_error.message).to match(/greater than maximum/)
     end
   end
 end

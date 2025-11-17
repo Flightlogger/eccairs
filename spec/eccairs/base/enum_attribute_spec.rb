@@ -78,15 +78,21 @@ RSpec.describe Eccairs::Base::EnumAttribute do
       end
 
       it "rejects invalid integer value" do
-        expect { test_enum_class.new(99) }.to raise_error(ArgumentError, /not in allowed values/)
+        instance = test_enum_class.new(99)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/not in allowed values/)
       end
 
       it "rejects negative values not in allowed list" do
-        expect { test_enum_class.new(-1) }.to raise_error(ArgumentError, /not in allowed values/)
+        instance = test_enum_class.new(-1)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/not in allowed values/)
       end
 
       it "rejects zero if not in allowed list" do
-        expect { test_enum_class.new(0) }.to raise_error(ArgumentError, /not in allowed values/)
+        instance = test_enum_class.new(0)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/not in allowed values/)
       end
     end
 
@@ -97,11 +103,15 @@ RSpec.describe Eccairs::Base::EnumAttribute do
       end
 
       it "rejects invalid string value" do
-        expect { test_enum_class.new("99") }.to raise_error(ArgumentError, /not in allowed values/)
+        instance = test_enum_class.new("99")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/not in allowed values/)
       end
 
       it "rejects non-numeric strings" do
-        expect { test_enum_class.new("invalid") }.to raise_error(ArgumentError, /Cannot resolve value/)
+        instance = test_enum_class.new("invalid")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/Cannot resolve value/)
       end
     end
 
@@ -144,28 +154,27 @@ RSpec.describe Eccairs::Base::EnumAttribute do
       end
 
       it "rejects invalid symbol" do
-        expect { symbolic_enum_class.new(:INVALID) }.to raise_error(ArgumentError, /Cannot resolve value/)
+        instance = symbolic_enum_class.new(:INVALID)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/Cannot resolve value/)
       end
     end
 
     describe "with nil value" do
-      it "accepts nil value" do
-        instance = test_enum_class.new(nil)
-        expect(instance.value).to be_nil
-      end
+      let(:test_class) { test_enum_class }
 
-      it "does not validate nil" do
-        expect { test_enum_class.new(nil) }.not_to raise_error
-      end
+      include_examples "an attribute with nil value handling"
     end
 
     describe "value assignment" do
-      it "validates on value assignment" do
-        instance = test_enum_class.new(1)
-        expect { instance.value = 99 }.to raise_error(ArgumentError, /not in allowed values/)
-      end
+      let(:test_class) { test_enum_class }
 
-      it "allows changing to another valid value" do
+      include_examples "an attribute with value assignment",
+        1,
+        99,
+        /not in allowed values/
+
+      it "allows changing to another valid value", alternate_valid_value: 2 do
         instance = test_enum_class.new(1)
         instance.value = 2
         expect(instance.value).to eq(2)
@@ -182,25 +191,12 @@ RSpec.describe Eccairs::Base::EnumAttribute do
       end
     end
 
-    it "generates XML with numeric value" do
-      xml_builder = Nokogiri::XML::Builder.new
-      instance = test_enum_class.new(2)
-      instance.build_xml(xml_builder)
+    let(:test_class) { test_enum_class }
 
-      xml = xml_builder.to_xml
-      expect(xml).to include("Test_Enum")
-      expect(xml).to include(">2</Test_Enum>")
-      expect(xml).to include('attributeId="999"')
-    end
-
-    it "does not generate XML for nil value" do
-      xml_builder = Nokogiri::XML::Builder.new
-      instance = test_enum_class.new(nil)
-      instance.build_xml(xml_builder)
-
-      xml = xml_builder.to_xml
-      expect(xml).not_to include("Test_Enum")
-    end
+    include_examples "an attribute with XML generation",
+      2,
+      "Test_Enum",
+      "999"
   end
 
   describe "real-world enum attribute" do
@@ -262,7 +258,9 @@ RSpec.describe Eccairs::Base::EnumAttribute do
         allowed_values []
       end
 
-      expect { empty_enum_class.new(1) }.to raise_error(ArgumentError, /not in allowed values/)
+      instance = empty_enum_class.new(1)
+      expect(instance.valid?).to be false
+      expect(instance.validation_error.message).to match(/not in allowed values/)
     end
   end
 end

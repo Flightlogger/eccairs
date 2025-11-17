@@ -12,8 +12,8 @@ RSpec.describe Eccairs::Attributes::NarrativeText do
       expect(described_class.xml_tag).to eq("Narrative_Text")
     end
 
-    it "inherits from TextAttribute" do
-      expect(described_class.superclass).to eq(Eccairs::Base::TextAttribute)
+    it "inherits from StringAttribute" do
+      expect(described_class.superclass).to eq(Eccairs::Base::StringAttribute)
     end
   end
 

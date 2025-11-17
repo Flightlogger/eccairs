@@ -46,11 +46,15 @@ RSpec.describe Eccairs::Attributes::Airspeed do
     end
 
     it "raises error for value below minimum" do
-      expect { described_class.new(-1) }.to raise_error(ArgumentError, /less than minimum/)
+      instance = described_class.new(-1)
+      expect(instance.valid?).to be false
+      expect(instance.validation_error.message).to match(/less than minimum/)
     end
 
     it "raises error for value above maximum" do
-      expect { described_class.new(1000000) }.to raise_error(ArgumentError, /greater than maximum/)
+      instance = described_class.new(1000000)
+      expect(instance.valid?).to be false
+      expect(instance.validation_error.message).to match(/greater than maximum/)
     end
   end
 

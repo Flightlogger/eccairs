@@ -2,7 +2,7 @@
 
 module Eccairs
   module Attributes
-    class CorrectiveActions < Eccairs::Base::TextAttribute
+    class CorrectiveActions < Eccairs::Base::StringAttribute
       attribute_id 1069
       xml_tag "Corrective_Actions"
       sequence 12

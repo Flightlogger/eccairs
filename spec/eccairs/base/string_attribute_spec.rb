@@ -40,34 +40,21 @@ RSpec.describe Eccairs::Base::StringAttribute do
     end
 
     describe "type validation" do
+      let(:test_class) { test_string_class }
+
       it "accepts string values" do
         instance = test_string_class.new("hello")
         expect(instance.value).to eq("hello")
       end
 
-      it "rejects non-string values" do
-        expect { test_string_class.new(123) }.to raise_error(ArgumentError, /must be a string/)
-      end
-
-      it "rejects integer" do
-        expect { test_string_class.new(42) }.to raise_error(ArgumentError, /must be a string/)
-      end
-
-      it "rejects float" do
-        expect { test_string_class.new(3.14) }.to raise_error(ArgumentError, /must be a string/)
-      end
-
-      it "rejects array" do
-        expect { test_string_class.new([1, 2, 3]) }.to raise_error(ArgumentError, /must be a string/)
-      end
-
-      it "rejects hash" do
-        expect { test_string_class.new({key: "value"}) }.to raise_error(ArgumentError, /must be a string/)
-      end
-
-      it "rejects symbol" do
-        expect { test_string_class.new(:symbol) }.to raise_error(ArgumentError, /must be a string/)
-      end
+      include_examples "an attribute that rejects invalid types", [
+        ["non-string values", 123, /must be a string/],
+        ["integer", 42, /must be a string/],
+        ["float", 3.14, /must be a string/],
+        ["array", [1, 2, 3], /must be a string/],
+        ["hash", {key: "value"}, /must be a string/],
+        ["symbol", :symbol, /must be a string/]
+      ]
     end
 
     describe "length validation" do
@@ -82,7 +69,9 @@ RSpec.describe Eccairs::Base::StringAttribute do
       end
 
       it "rejects string exceeding max_length" do
-        expect { test_string_class.new("12345678901") }.to raise_error(ArgumentError, /exceeds maximum/)
+        instance = test_string_class.new("12345678901")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/exceeds maximum/)
       end
 
       it "accepts empty string" do
@@ -91,7 +80,9 @@ RSpec.describe Eccairs::Base::StringAttribute do
       end
 
       it "includes actual and max length in error message" do
-        expect { test_string_class.new("12345678901") }.to raise_error(ArgumentError, /length 11 exceeds maximum of 10/)
+        instance = test_string_class.new("12345678901")
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/length 11 exceeds maximum of 10/)
       end
     end
 
@@ -110,28 +101,27 @@ RSpec.describe Eccairs::Base::StringAttribute do
       end
 
       it "still validates type" do
-        expect { unlimited_string_class.new(123) }.to raise_error(ArgumentError, /must be a string/)
+        instance = unlimited_string_class.new(123)
+        expect(instance.valid?).to be false
+        expect(instance.validation_error.message).to match(/must be a string/)
       end
     end
 
     describe "with nil value" do
-      it "accepts nil value" do
-        instance = test_string_class.new(nil)
-        expect(instance.value).to be_nil
-      end
+      let(:test_class) { test_string_class }
 
-      it "does not validate nil" do
-        expect { test_string_class.new(nil) }.not_to raise_error
-      end
+      include_examples "an attribute with nil value handling"
     end
 
     describe "value assignment" do
-      it "validates on value assignment" do
-        instance = test_string_class.new("short")
-        expect { instance.value = "12345678901" }.to raise_error(ArgumentError, /exceeds maximum/)
-      end
+      let(:test_class) { test_string_class }
 
-      it "allows changing to another valid value" do
+      include_examples "an attribute with value assignment",
+        "short",
+        "12345678901",
+        /exceeds maximum/
+
+      it "allows changing to another valid value", alternate_valid_value: "world" do
         instance = test_string_class.new("hello")
         instance.value = "world"
         expect(instance.value).to eq("world")
@@ -148,16 +138,12 @@ RSpec.describe Eccairs::Base::StringAttribute do
       end
     end
 
-    it "generates XML with string value" do
-      xml_builder = Nokogiri::XML::Builder.new
-      instance = test_string_class.new("test value")
-      instance.build_xml(xml_builder)
+    let(:test_class) { test_string_class }
 
-      xml = xml_builder.to_xml
-      expect(xml).to include("Test_String")
-      expect(xml).to include(">test value</Test_String>")
-      expect(xml).to include('attributeId="999"')
-    end
+    include_examples "an attribute with XML generation",
+      "test value",
+      "Test_String",
+      "999"
 
     it "handles special XML characters" do
       xml_builder = Nokogiri::XML::Builder.new
@@ -170,15 +156,6 @@ RSpec.describe Eccairs::Base::StringAttribute do
       expect(xml).to include("&amp;")
       expect(xml).to include("&lt;")
       expect(xml).to include("&gt;")
-    end
-
-    it "does not generate XML for nil value" do
-      xml_builder = Nokogiri::XML::Builder.new
-      instance = test_string_class.new(nil)
-      instance.build_xml(xml_builder)
-
-      xml = xml_builder.to_xml
-      expect(xml).not_to include("Test_String")
     end
   end
 

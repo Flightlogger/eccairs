@@ -171,13 +171,17 @@ RSpec.describe Eccairs::Base::Attribute do
         protected
 
         def validate_value(value)
-          raise ArgumentError, "Invalid!" if value == "bad"
+          record_error("Invalid!", value) if value == "bad"
         end
       end
 
       instance = validating_class.new
-      expect { instance.value = "good" }.not_to raise_error
-      expect { instance.value = "bad" }.to raise_error(ArgumentError, "Invalid!")
+      instance.value = "good"
+      expect(instance.valid?).to be true
+
+      instance.value = "bad"
+      expect(instance.valid?).to be false
+      expect(instance.validation_error.message).to eq("Invalid!")
     end
   end
 

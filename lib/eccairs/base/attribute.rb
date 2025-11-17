@@ -3,7 +3,7 @@
 module Eccairs
   module Base
     class Attribute
-      attr_reader :value
+      attr_reader :value, :validation_error
 
       # DSL method to set attribute_id at class level
       def self.attribute_id(value = nil)
@@ -36,42 +36,52 @@ module Eccairs
       end
 
       def initialize(value = nil)
+        @validation_error = nil
         self.value = value
       end
 
       def value=(new_value)
         @value_before_validation = @value
+        @validation_error = nil
         validate_value(new_value)
-        # Only set @value if validate_value didn't already set it
-        @value = new_value if @value == @value_before_validation
+        # Only set @value if validation passed and validate_value didn't already set it
+        @value = new_value if @validation_error.nil? && @value == @value_before_validation
       end
 
-      # Method to build XML for this attribute
+      def valid?
+        @validation_error.nil?
+      end
+
       def build_xml(xml)
         return unless value
-
         raise NotImplementedError, "Subclasses must define xml_tag" unless self.class.xml_tag
 
         attrs = {attributeId: self.class.attribute_id}
         attrs[:Unit] = self.class.unit if self.class.unit
 
         if self.class.text_type
-          # For dt:Text attributes, use PlainText child element
           xml.send(self.class.xml_tag, attrs) do
             xml.parent.namespace = xml.parent.namespace_definitions.find { |ns| ns.prefix == "db" }
             xml["dt"].PlainText(value)
           end
         else
-          # For regular attributes, use direct text content
           xml.send(self.class.xml_tag, value, attrs)
         end
       end
 
       protected
 
-      # Hook for subclasses to validate the value
       def validate_value(value)
-        # Base implementation does nothing
+        # Hook for subclasses - base implementation does nothing
+      end
+
+      def record_error(message, value)
+        @validation_error = Eccairs::ValidationError.new(
+          field_name: self.class.xml_tag,
+          attribute_id: self.class.attribute_id,
+          provided_value: value,
+          message: message
+        )
       end
     end
   end

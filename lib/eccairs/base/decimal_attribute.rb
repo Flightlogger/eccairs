@@ -19,18 +19,15 @@ module Eccairs
 
       def validate_value(value)
         return if value.nil?
-
-        raise ArgumentError, "Value must be numeric, got #{value.class}" if value.is_a?(Array) || value.is_a?(Hash)
+        return record_error("Value must be numeric, got #{value.class}", value) if value.is_a?(Array) || value.is_a?(Hash)
 
         numeric_value = Float(value)
-        raise ArgumentError, "Value #{numeric_value} is less than minimum of #{self.class.min}" if self.class.min && numeric_value < self.class.min
-        raise ArgumentError, "Value #{numeric_value} is greater than maximum of #{self.class.max}" if self.class.max && numeric_value > self.class.max
+        return record_error("Value #{numeric_value} is less than minimum of #{self.class.min}", value) if self.class.min && numeric_value < self.class.min
+        return record_error("Value #{numeric_value} is greater than maximum of #{self.class.max}", value) if self.class.max && numeric_value > self.class.max
 
-        # Preserve string representation for scientific notation
         @value = value if value.is_a?(String) && value.match?(/e/i)
-      rescue ArgumentError => e
-        raise if e.message.include?("less than minimum") || e.message.include?("greater than maximum")
-        raise ArgumentError, "Value must be numeric, got #{value.class}"
+      rescue ArgumentError
+        record_error("Value must be numeric, got #{value.class}", value)
       end
     end
   end

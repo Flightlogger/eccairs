@@ -12,8 +12,8 @@ RSpec.describe Eccairs::Attributes::AuthorityOccClosure do
       expect(described_class.xml_tag).to eq("Authority_Occ_Closure")
     end
 
-    it "inherits from TextAttribute" do
-      expect(described_class.superclass).to eq(Eccairs::Base::TextAttribute)
+    it "inherits from StringAttribute" do
+      expect(described_class.superclass).to eq(Eccairs::Base::StringAttribute)
     end
   end
 

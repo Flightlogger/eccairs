@@ -56,11 +56,15 @@ RSpec.describe Eccairs::Attributes::FlapsPosition do
     end
 
     it "rejects value below minimum" do
-      expect { described_class.new(-11) }.to raise_error(ArgumentError, /less than minimum/)
+      instance = described_class.new(-11)
+      expect(instance.valid?).to be false
+      expect(instance.validation_error.message).to match(/less than minimum/)
     end
 
     it "rejects value exceeding maximum" do
-      expect { described_class.new(91) }.to raise_error(ArgumentError, /greater than maximum/)
+      instance = described_class.new(91)
+      expect(instance.valid?).to be false
+      expect(instance.validation_error.message).to match(/greater than maximum/)
     end
   end
 

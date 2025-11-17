@@ -12,8 +12,8 @@ RSpec.describe Eccairs::Attributes::CorrectiveActions do
       expect(described_class.xml_tag).to eq("Corrective_Actions")
     end
 
-    it "inherits from TextAttribute" do
-      expect(described_class.superclass).to eq(Eccairs::Base::TextAttribute)
+    it "inherits from StringAttribute" do
+      expect(described_class.superclass).to eq(Eccairs::Base::StringAttribute)
     end
   end
 
