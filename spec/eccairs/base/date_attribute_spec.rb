@@ -126,51 +126,31 @@ RSpec.describe Eccairs::Base::DateAttribute do
     end
 
     describe "with invalid types" do
-      it "rejects integer" do
-        instance = test_date_class.new(20240115)
-        expect(instance.valid?).to be false
-        expect(instance.validation_error.message).to match(/must be a Date, Time, DateTime, or ISO 8601 date string/)
-      end
+      let(:test_class) { test_date_class }
 
-      it "rejects float" do
-        instance = test_date_class.new(2024.0115)
-        expect(instance.valid?).to be false
-        expect(instance.validation_error.message).to match(/must be a Date, Time, DateTime, or ISO 8601 date string/)
-      end
-
-      it "rejects array" do
-        instance = test_date_class.new([2024, 1, 15])
-        expect(instance.valid?).to be false
-        expect(instance.validation_error.message).to match(/must be a Date, Time, DateTime, or ISO 8601 date string/)
-      end
-
-      it "rejects hash" do
-        instance = test_date_class.new({year: 2024, month: 1, day: 15})
-        expect(instance.valid?).to be false
-        expect(instance.validation_error.message).to match(/must be a Date, Time, DateTime, or ISO 8601 date string/)
-      end
+      include_examples "an attribute that rejects invalid types", [
+        ["integer", 20240115, /must be a Date, Time, DateTime, or ISO 8601 date string/],
+        ["float", 2024.0115, /must be a Date, Time, DateTime, or ISO 8601 date string/],
+        ["array", [2024, 1, 15], /must be a Date, Time, DateTime, or ISO 8601 date string/],
+        ["hash", {year: 2024, month: 1, day: 15}, /must be a Date, Time, DateTime, or ISO 8601 date string/]
+      ]
     end
 
     describe "with nil value" do
-      it "accepts nil value" do
-        instance = test_date_class.new(nil)
-        expect(instance.value).to be_nil
-      end
+      let(:test_class) { test_date_class }
 
-      it "does not validate nil" do
-        expect { test_date_class.new(nil) }.not_to raise_error
-      end
+      include_examples "an attribute with nil value handling"
     end
 
     describe "value assignment" do
-      it "validates on value assignment" do
-        instance = test_date_class.new("2024-01-15")
-        instance.value = "invalid"
-        expect(instance.valid?).to be false
-        expect(instance.validation_error.message).to match(/Date must be in YYYY-MM-DD format/)
-      end
+      let(:test_class) { test_date_class }
 
-      it "allows changing to another valid value" do
+      include_examples "an attribute with value assignment",
+        "2024-01-15",
+        "invalid",
+        /Date must be in YYYY-MM-DD format/
+
+      it "allows changing to another valid value", alternate_valid_value: "2024-12-31" do
         instance = test_date_class.new("2024-01-15")
         instance.value = "2024-12-31"
         expect(instance.value).to eq("2024-12-31")
@@ -179,16 +159,12 @@ RSpec.describe Eccairs::Base::DateAttribute do
   end
 
   describe "XML generation" do
-    it "generates XML with date value" do
-      xml_builder = Nokogiri::XML::Builder.new
-      instance = test_date_class.new("2024-01-15")
-      instance.build_xml(xml_builder)
+    let(:test_class) { test_date_class }
 
-      xml = xml_builder.to_xml
-      expect(xml).to include("Test_Date")
-      expect(xml).to include(">2024-01-15</Test_Date>")
-      expect(xml).to include('attributeId="999"')
-    end
+    include_examples "an attribute with XML generation",
+      "2024-01-15",
+      "Test_Date",
+      "999"
 
     it "generates XML from Date object" do
       xml_builder = Nokogiri::XML::Builder.new
@@ -198,15 +174,6 @@ RSpec.describe Eccairs::Base::DateAttribute do
 
       xml = xml_builder.to_xml
       expect(xml).to include(">2024-01-15</Test_Date>")
-    end
-
-    it "does not generate XML for nil value" do
-      xml_builder = Nokogiri::XML::Builder.new
-      instance = test_date_class.new(nil)
-      instance.build_xml(xml_builder)
-
-      xml = xml_builder.to_xml
-      expect(xml).not_to include("Test_Date")
     end
   end
 
