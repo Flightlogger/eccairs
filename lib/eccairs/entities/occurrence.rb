@@ -25,6 +25,14 @@ module Eccairs
         add_attribute(Eccairs::Attributes::AtmContribution, false, value)
       end
 
+      # Add attachments
+      # @param value [Object] The attribute value
+      # @return [Eccairs::Attributes::Attachments] The created attribute instance
+      # @note Attribute ID: 793, XML Tag: Attachments
+      def add_attachments(value)
+        add_attribute(Eccairs::Attributes::Attachments, false, value)
+      end
+
       # Add authority occ closure
       # @param value [Object] The attribute value
       # @return [Eccairs::Attributes::AuthorityOccClosure] The created attribute instance
