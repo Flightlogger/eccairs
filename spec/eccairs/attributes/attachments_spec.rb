@@ -25,7 +25,7 @@ RSpec.describe Eccairs::Attributes::Attachments do
   end
 
   describe "XML generation in occurrence" do
-    it "generates valid XML within an occurrence" do
+    it "generates valid XML with dt:FileName child element" do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
         occurrence.add_attachments("ATT000026.pdf")
@@ -35,20 +35,6 @@ RSpec.describe Eccairs::Attributes::Attachments do
       expect(xml).to include("Attachments")
       expect(xml).to include('attributeId="793"')
       expect(xml).to include("<dt:FileName>ATT000026.pdf</dt:FileName>")
-    end
-
-    it "generates valid XML structure (schema validation skipped for new attributes)" do
-      set = Eccairs.set
-      set.add_occurrence do |occurrence|
-        occurrence.add_attachments("ATT000026.pdf")
-      end
-
-      xml = set.to_xml
-      expect(xml).to include("Attachments")
-      expect(xml).to include('attributeId="793"')
-      expect(xml).to include("<dt:FileName>ATT000026.pdf</dt:FileName>")
-      # Note: Schema validation may fail for this attribute if it's not in the minimal schema
-      # The XML structure is correct, but the schema may require additional context
     end
   end
 end
