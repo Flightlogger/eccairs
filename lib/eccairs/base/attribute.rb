@@ -35,6 +35,36 @@ module Eccairs
         @text_type = value
       end
 
+      # DSL method to represent an attribute as a complex value using an ECCAIRS
+      # dataTypes child element (dt namespace).
+      #
+      # Example:
+      #   dt_child "FileName" { |v| File.basename(v) }
+      #
+      # Generates:
+      #   <MyTag attributeId="...">
+      #     <dt:FileName>...</dt:FileName>
+      #   </MyTag>
+      #
+      # Notes:
+      # - `text_type true` is treated as `dt_child "PlainText"` unless a dt_child is explicitly set.
+      def self.dt_child(tag = nil, &transform)
+        return @dt_child if tag.nil?
+
+        @dt_child = {
+          tag: tag.to_s,
+          transform: transform
+        }
+      end
+
+      def self.dt_child_tag
+        @dt_child&.fetch(:tag, nil)
+      end
+
+      def self.dt_child_transform
+        @dt_child&.fetch(:transform, nil)
+      end
+
       def initialize(value = nil)
         self.value = value
       end
@@ -55,11 +85,16 @@ module Eccairs
         attrs = {attributeId: self.class.attribute_id}
         attrs[:Unit] = self.class.unit if self.class.unit
 
-        if self.class.text_type
-          # For dt:Text attributes, use PlainText child element
+        dt_tag = self.class.dt_child_tag
+        dt_transform = self.class.dt_child_transform
+
+        # For complex (dataTypes) attributes, use a dt:* child element
+        if dt_tag || self.class.text_type
+          dt_tag ||= "PlainText"
+          dt_value = dt_transform ? dt_transform.call(value) : value
+
           xml.send(self.class.xml_tag, attrs) do
-            xml.parent.namespace = xml.parent.namespace_definitions.find { |ns| ns.prefix == "db" }
-            xml["dt"].PlainText(value)
+            xml["dt"].send(dt_tag, dt_value)
           end
         else
           # For regular attributes, use direct text content
