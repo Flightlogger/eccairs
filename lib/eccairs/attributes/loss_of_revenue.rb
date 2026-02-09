@@ -6,7 +6,7 @@ module Eccairs
       attribute_id 652
       xml_tag "Loss_Of_Revenue"
       sequence 0
-      unit "EUR"
+      unit "Euro"
       min(0)
       max 999999999
     end

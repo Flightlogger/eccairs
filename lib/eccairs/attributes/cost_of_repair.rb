@@ -6,7 +6,7 @@ module Eccairs
       attribute_id 651
       xml_tag "Cost_Of_Repair"
       sequence 0
-      unit "EUR"
+      unit "Euro"
       min(0)
       max 999999999
     end
