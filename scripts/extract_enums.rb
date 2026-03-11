@@ -124,7 +124,9 @@ attrs.each do |attr|
   end
 
   out_path = File.join(ENUMS_DIR, "#{key}.yml")
-  File.write(out_path, data.to_yaml)
+  yaml = data.to_yaml
+  yaml = yaml.sub(/\A---\n/, "") if yaml.start_with?("---\n")
+  File.write(out_path, yaml)
   written += 1
 end
 
