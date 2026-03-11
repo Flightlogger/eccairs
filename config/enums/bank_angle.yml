@@ -1,0 +1,11 @@
+---
+attribute_id: '567'
+xml_tag: Bank_Angle
+sequence:
+values:
+  1: Wings level
+  2: Slight bank
+  3: Moderate bank
+  4: Steep bank
+  5: Inverted
+  99: Unknown

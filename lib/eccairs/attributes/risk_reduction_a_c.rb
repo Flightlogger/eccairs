@@ -3,10 +3,7 @@
 module Eccairs
   module Attributes
     class RiskReductionAC < Eccairs::Base::EnumAttribute
-      attribute_id 591
-      xml_tag "Risk_Reduction_A_C"
-      sequence 3
-      allowed_values [1, 2, 99]
+      enums_from :risk_reduction_a_c
     end
   end
 end

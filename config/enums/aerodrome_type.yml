@@ -1,0 +1,11 @@
+---
+attribute_id: '10'
+xml_tag: Aerodrome_Type
+sequence: 8
+values:
+  1: Land
+  2: Water
+  3: Heliport
+  4: Prepared landing area
+  98: Other
+  99: Unknown

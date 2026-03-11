@@ -1,0 +1,10 @@
+---
+attribute_id: '48'
+xml_tag: Recording_Quality
+sequence:
+values:
+  1: Excellent
+  2: Good
+  3: Poor
+  4: Unreadable
+  99: Unknown

@@ -1,0 +1,11 @@
+---
+attribute_id: '1098'
+xml_tag: Aircraft_Equipment_And_Infrastructure
+sequence: 8
+values:
+  1: Stopped
+  2: Remaining Known
+  3: Remaining Assumed
+  4: Failed Known
+  5: Failed Assumed
+  6: Not Applicable

@@ -1,0 +1,9 @@
+---
+attribute_id: '90'
+xml_tag: EFIS
+sequence:
+values:
+  1: Yes, full
+  2: Yes, partial
+  3: 'No'
+  99: Unknown

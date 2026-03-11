@@ -3,10 +3,7 @@
 module Eccairs
   module Attributes
     class OtherAircraftSeen < Eccairs::Base::EnumAttribute
-      attribute_id 587
-      xml_tag "Other_Aircraft_Seen"
-      sequence 2
-      allowed_values [1, 3, 2, 99]
+      enums_from :other_aircraft_seen
     end
   end
 end

@@ -1,0 +1,91 @@
+---
+attribute_id: '1118'
+xml_tag: Location_On_Ground
+sequence: 3
+values:
+  1: Unknown
+  2: Other
+  3: On runway
+  4: On taxiway
+  5: On apron
+  6: Aircraft stand
+  7: Vehicle movement area
+  8: Vehicle lane
+  9: De-icing/anti-icing pad
+  10: Runway turn pad
+  11: Intersection between taxiways
+  13: Runway/vehicle lane intersection
+  14: Off movement area
+  15: Passenger terminal
+  16: Cargo shed
+  17: Baggage handling area
+  18: Engine run-up pad
+  19: On rapid exit taxiway
+  20: Fuel farm
+  21: On clearway
+  22: On runway end safety area
+  23: 1st Part
+  24: 2nd Part
+  25: 3rd Part
+  26: On stopway
+  27: Near the aerodrome
+  28: Not applicable
+  29: Off aerodrome
+hierarchy:
+- id: 1
+  description: Unknown
+- id: 2
+  description: Other
+- id: 3
+  description: On runway
+  children:
+  - id: 23
+    description: 1st Part
+  - id: 24
+    description: 2nd Part
+  - id: 25
+    description: 3rd Part
+- id: 4
+  description: On taxiway
+- id: 5
+  description: On apron
+- id: 6
+  description: Aircraft stand
+- id: 7
+  description: Vehicle movement area
+- id: 8
+  description: Vehicle lane
+- id: 9
+  description: De-icing/anti-icing pad
+- id: 10
+  description: Runway turn pad
+- id: 11
+  description: Intersection between taxiways
+- id: 13
+  description: Runway/vehicle lane intersection
+- id: 14
+  description: Off movement area
+- id: 15
+  description: Passenger terminal
+- id: 16
+  description: Cargo shed
+- id: 17
+  description: Baggage handling area
+- id: 18
+  description: Engine run-up pad
+- id: 19
+  description: On rapid exit taxiway
+- id: 20
+  description: Fuel farm
+- id: 21
+  description: On clearway
+- id: 22
+  description: On runway end safety area
+- id: 26
+  description: On stopway
+- id: 27
+  description: Near the aerodrome
+- id: 28
+  description: Not applicable
+- id: 29
+  description: Off aerodrome

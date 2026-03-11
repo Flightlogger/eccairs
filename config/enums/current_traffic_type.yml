@@ -1,0 +1,8 @@
+---
+attribute_id: '29'
+xml_tag: Current_Traffic_Type
+sequence: 3
+values:
+  1: OAT
+  2: GAT
+  99: Unknown

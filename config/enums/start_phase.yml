@@ -1,0 +1,12 @@
+---
+attribute_id: '280'
+xml_tag: Start_Phase
+sequence:
+values:
+  1: During fuelling
+  2: During ground ops
+  3: In-flight
+  4: At impact
+  5: After impact
+  98: Other
+  99: Unknown

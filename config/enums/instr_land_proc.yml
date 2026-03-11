@@ -1,0 +1,9 @@
+---
+attribute_id: '164'
+xml_tag: Instr_Land_Proc
+sequence:
+values:
+  1: Straight in
+  2: Circling
+  3: Side-step
+  99: Unknown

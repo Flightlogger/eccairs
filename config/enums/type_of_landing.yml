@@ -1,0 +1,10 @@
+---
+attribute_id: '298'
+xml_tag: Type_Of_Landing
+sequence:
+values:
+  1: Forced landing
+  2: Precautionary landing
+  3: Simulated forced landing
+  4: Regular landing
+  99: Unknown

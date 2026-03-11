@@ -1,0 +1,22 @@
+---
+attribute_id: '318'
+xml_tag: Weather_Forecast
+sequence:
+values:
+  1: Substantially correct
+  2: Considerably better
+  3: Considerably worse
+  99: Unknown
+  100: Substantially wrong
+hierarchy:
+- id: 1
+  description: Substantially correct
+- id: 99
+  description: Unknown
+- id: 100
+  description: Substantially wrong
+  children:
+  - id: 2
+    description: Considerably better
+  - id: 3
+    description: Considerably worse

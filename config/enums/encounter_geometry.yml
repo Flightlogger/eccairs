@@ -1,0 +1,12 @@
+---
+attribute_id: '739'
+xml_tag: Encounter_Geometry
+sequence:
+values:
+  1: Same runway - head on
+  2: Approaching same runway
+  3: Head-on
+  4: Crossing tracks
+  5: Converging tracks
+  6: Other
+  7: Same runway - tail chase

@@ -1,0 +1,9 @@
+---
+attribute_id: '335'
+xml_tag: Rating_Validity
+sequence:
+values:
+  1: Not valid
+  2: Valid with waivers
+  3: Valid
+  99: Unknown

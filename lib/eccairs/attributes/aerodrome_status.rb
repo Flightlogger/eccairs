@@ -3,10 +3,7 @@
 module Eccairs
   module Attributes
     class AerodromeStatus < Eccairs::Base::EnumAttribute
-      attribute_id 7
-      xml_tag "Aerodrome_Status"
-      sequence 5
-      allowed_values [1, 2, 3, 4, 5, 6, 98, 99]
+      enums_from :aerodrome_status
     end
   end
 end

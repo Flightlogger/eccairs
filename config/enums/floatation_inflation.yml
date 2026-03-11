@@ -1,0 +1,9 @@
+---
+attribute_id: '95'
+xml_tag: Floatation_Inflation
+sequence:
+values:
+  1: Not inflated
+  2: Inflated
+  3: Deflated
+  99: Unknown

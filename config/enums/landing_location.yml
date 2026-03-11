@@ -1,0 +1,12 @@
+---
+attribute_id: '172'
+xml_tag: Landing_Location
+sequence:
+values:
+  1: On land/on aerodrome
+  2: On land/off aerodrome
+  3: On water
+  4: Oil-rig
+  5: Ship
+  99: Unknown
+  100: Other

@@ -1,0 +1,9 @@
+---
+attribute_id: '1112'
+xml_tag: Wildlife_Size
+sequence:
+values:
+  1: Small
+  2: Medium
+  3: Large
+  4: Unknown

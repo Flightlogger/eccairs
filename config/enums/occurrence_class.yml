@@ -1,0 +1,14 @@
+---
+attribute_id: '431'
+xml_tag: Occurrence_Class
+sequence: 15
+values:
+  100: Accident
+  200: Serious incident
+  300: Incident
+  301: Major incident
+  302: Significant incident
+  400: Occurrence without safety effect
+  500: Not determined
+  501: Observation
+  502: Occurrence with No Flight Intended

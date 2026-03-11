@@ -1,0 +1,10 @@
+---
+attribute_id: '314'
+xml_tag: Water_Condition
+sequence:
+values:
+  1: Glassy
+  2: Calm (no swell)
+  3: Light swell
+  4: Heavy swell
+  99: Unknown

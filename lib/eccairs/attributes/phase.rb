@@ -2,10 +2,8 @@
 
 module Eccairs
   module Attributes
-    class Phase < Eccairs::Base::StringAttribute
-      attribute_id 391
-      xml_tag "Phase"
-      sequence 1
+    class Phase < Eccairs::Base::EnumAttribute
+      enums_from :phase
     end
   end
 end

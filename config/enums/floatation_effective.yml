@@ -1,0 +1,9 @@
+---
+attribute_id: '412'
+xml_tag: Floatation_Effective
+sequence:
+values:
+  1: Very effective
+  2: Adequate
+  3: Ineffective
+  99: Unknown

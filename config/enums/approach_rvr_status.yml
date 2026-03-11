@@ -1,0 +1,9 @@
+---
+attribute_id: '42'
+xml_tag: Approach_RVR_Status
+sequence:
+values:
+  1: Above minima
+  2: Below minima
+  99: Unknown
+  100: At minima

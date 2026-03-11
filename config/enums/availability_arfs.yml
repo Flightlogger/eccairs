@@ -1,0 +1,8 @@
+---
+attribute_id: '52'
+xml_tag: Availability_ARFS
+sequence:
+values:
+  1: Available
+  2: Not available
+  97: Not applicable

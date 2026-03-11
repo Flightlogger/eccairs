@@ -1,0 +1,11 @@
+---
+attribute_id: '562'
+xml_tag: Workload_Supervisor
+sequence:
+values:
+  1: Low
+  2: Medium
+  3: High
+  99: Unknown
+  100: Low/medium
+  101: Medium/high

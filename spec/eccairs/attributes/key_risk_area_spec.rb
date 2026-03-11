@@ -19,8 +19,8 @@ RSpec.describe Eccairs::Attributes::KeyRiskArea do
 
   describe "initialization" do
     it "creates an instance with a value" do
-      instance = described_class.new("1")
-      expect(instance.value).to eq(1)
+      instance = described_class.new("2")
+      expect(instance.value).to eq(2)
     end
   end
 
@@ -29,7 +29,7 @@ RSpec.describe Eccairs::Attributes::KeyRiskArea do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
         occurrence.add_risk_assessment do |ra|
-          ra.add_key_risk_area("1")
+          ra.add_key_risk_area(2)
         end
       end
 
@@ -42,7 +42,7 @@ RSpec.describe Eccairs::Attributes::KeyRiskArea do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
         occurrence.add_risk_assessment do |ra|
-          ra.add_key_risk_area("1")
+          ra.add_key_risk_area(2)
         end
       end
 

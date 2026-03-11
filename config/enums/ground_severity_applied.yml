@@ -1,0 +1,8 @@
+---
+attribute_id: '1073'
+xml_tag: Ground_Severity_Applied
+sequence: 41
+values:
+  1: 'Yes'
+  2: 'No'
+  3: Not applicable

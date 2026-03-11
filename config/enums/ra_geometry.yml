@@ -1,0 +1,13 @@
+---
+attribute_id: '609'
+xml_tag: RA_Geometry
+sequence:
+values:
+  1: High Vertical Rate
+  2: Vertical Crossings
+  3: Level - Level
+  4: Head On
+  5: Parallel Arrival
+  6: Tail Chase
+  7: Horizontal Track Crossings
+  8: Offset

@@ -3,10 +3,7 @@
 module Eccairs
   module Attributes
     class ErcsRiskGrade < Eccairs::Base::EnumAttribute
-      attribute_id 1109
-      xml_tag "ERCS_Risk_Grade"
-      sequence 18
-      allowed_values [1, 2, 3]
+      enums_from :ercs_risk_grade
     end
   end
 end

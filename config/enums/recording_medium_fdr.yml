@@ -1,0 +1,13 @@
+---
+attribute_id: '242'
+xml_tag: Recording_Medium_FDR
+sequence:
+values:
+  1: Metal foil
+  2: Wire
+  3: Magnetic tape
+  4: Metal tape
+  5: Solid state
+  6: Photographic paper
+  98: Other
+  99: Unknown

@@ -3,10 +3,7 @@
 module Eccairs
   module Attributes
     class HorizontalRelMvmt < Eccairs::Base::EnumAttribute
-      attribute_id 570
-      xml_tag "Horizontal_Rel_Mvmt"
-      sequence 0
-      allowed_values [3, 1, 2, 4, 5, 6, 99]
+      enums_from :horizontal_rel_mvmt
     end
   end
 end

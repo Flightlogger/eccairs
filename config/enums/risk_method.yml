@@ -1,0 +1,15 @@
+---
+attribute_id: '939'
+xml_tag: Risk_Method
+sequence: 1
+values:
+  1: ECCAIRS (old)
+  2: Undefined
+  3: RAT (Eurocontrol Risk Analysis Tool)
+  4: Other
+  5: ERC (Event Risk Classification of ARMS)
+  6: ERCS (European Common Risk Classification Scheme)
+  7: ICAO (Safety Risk Management)
+  8: ED-125 (EUROCAE Risk Classification Scheme)
+  9: FAA SRM (Safety Risk Management Worksheet)
+  10: Not applicable

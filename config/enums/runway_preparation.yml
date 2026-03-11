@@ -1,0 +1,8 @@
+---
+attribute_id: '512'
+xml_tag: Runway_Preparation
+sequence:
+values:
+  1: Prepared
+  2: Unprepared
+  99: Unknown

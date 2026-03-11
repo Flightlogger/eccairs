@@ -2,10 +2,8 @@
 
 module Eccairs
   module Attributes
-    class EventType < Eccairs::Base::StringAttribute
-      attribute_id 390
-      xml_tag "Event_Type"
-      sequence 0
+    class EventType < Eccairs::Base::EnumAttribute
+      enums_from :event_type
     end
   end
 end

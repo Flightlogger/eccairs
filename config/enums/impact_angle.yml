@@ -1,0 +1,9 @@
+---
+attribute_id: '36'
+xml_tag: Impact_Angle
+sequence:
+values:
+  1: Low
+  2: Intermediate
+  3: High
+  99: Unknown

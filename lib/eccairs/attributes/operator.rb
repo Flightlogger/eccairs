@@ -2,10 +2,8 @@
 
 module Eccairs
   module Attributes
-    class Operator < Eccairs::Base::StringAttribute
-      attribute_id 215
-      xml_tag "Operator"
-      sequence 27
+    class Operator < Eccairs::Base::EnumAttribute
+      enums_from :operator
     end
   end
 end

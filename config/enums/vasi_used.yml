@@ -1,0 +1,16 @@
+---
+attribute_id: '309'
+xml_tag: VASI_Used
+sequence:
+values:
+  1: VASIS 2 bar
+  2: AVASIS
+  3: VASIS 3 bar
+  4: AVASIS 3 bar
+  5: T-VASIS
+  6: AT-VASIS
+  7: PAPI
+  8: APAPI
+  97: None
+  98: Other
+  99: Unknown

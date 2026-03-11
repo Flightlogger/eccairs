@@ -1,0 +1,11 @@
+---
+attribute_id: '418'
+xml_tag: Person_Incapacitated
+sequence: 0
+values:
+  1: Flight crew member
+  2: Cabin crew member
+  3: Passenger
+  97: None
+  98: Other
+  99: Unknown

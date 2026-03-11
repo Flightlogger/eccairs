@@ -2,10 +2,8 @@
 
 module Eccairs
   module Attributes
-    class DangerousGood < Eccairs::Base::StringAttribute
-      attribute_id 688
-      xml_tag "Dangerous_Good"
-      sequence 0
+    class DangerousGood < Eccairs::Base::EnumAttribute
+      enums_from :dangerous_good
     end
   end
 end

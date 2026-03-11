@@ -1,0 +1,9 @@
+---
+attribute_id: '369'
+xml_tag: MSAW_Current_Alerting
+sequence: 2
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown
+  100: Not applicable

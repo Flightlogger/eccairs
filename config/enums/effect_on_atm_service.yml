@@ -1,0 +1,12 @@
+---
+attribute_id: '436'
+xml_tag: Effect_On_ATM_Service
+sequence: 18
+values:
+  1: Inability to prov serv
+  2: Service affect/serious
+  3: Service affect/partial
+  4: Degraded ATM service
+  5: No effect
+  6: Not determined
+  7: Not Applicable

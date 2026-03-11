@@ -1,0 +1,8 @@
+---
+attribute_id: '743'
+xml_tag: Vehicle_Controlled
+sequence: 1
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown

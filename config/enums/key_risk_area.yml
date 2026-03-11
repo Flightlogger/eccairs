@@ -1,0 +1,100 @@
+---
+attribute_id: '1097'
+xml_tag: Key_Risk_Area
+sequence: 7
+values:
+  2: Airborne collision
+  3: Aircraft upset (loss of control)
+  4: Excursion
+  5: Ground damage
+  6: Obstacle collision in flight
+  7: Collision on runway
+  8: Terrain collision
+  14: Airborne Collision - All Traffic Controlled
+  15: Airborne Collision - One or More Traffic Uncontrolled
+  16: Aircraft Upset - Flight Preparation
+  17: Aircraft Upset - Crew Factors
+  18: Aircraft Upset - Technical
+  19: Aircraft Upset - Environment
+  20: Runway Excursion - Overrun on Landing
+  21: Runway Excursion - Overrun on Take Off
+  22: Runway Excursion - Veer Off (Take-Off or Landing)
+  23: Taxiway/ Apron Excursion
+  24: Ground Damage - Aircraft v Aircraft
+  25: Ground Damage - Aircraft v Vehicles/ Equipment
+  26: Ground Damage - Aircraft v Buildings/ Structures
+  27: Obstacle Collision in Flight - Static Object
+  28: Obstacle Collision in Flight - Moving/ Dynamic Object
+  29: Runway Collision - Aircraft v Aircraft
+  30: Runway Collision - Aircraft v Vehicle
+  31: Runway Collision - Aircraft v Other
+  32: Terrain Collision
+  37: Fire, smoke and pressurisation
+  38: Other injuries
+  39: Security
+hierarchy:
+- id: 2
+  description: Airborne collision
+  children:
+  - id: 14
+    description: Airborne Collision - All Traffic Controlled
+  - id: 15
+    description: Airborne Collision - One or More Traffic Uncontrolled
+- id: 3
+  description: Aircraft upset (loss of control)
+  children:
+  - id: 16
+    description: Aircraft Upset - Flight Preparation
+  - id: 17
+    description: Aircraft Upset - Crew Factors
+  - id: 18
+    description: Aircraft Upset - Technical
+  - id: 19
+    description: Aircraft Upset - Environment
+- id: 4
+  description: Excursion
+  children:
+  - id: 20
+    description: Runway Excursion - Overrun on Landing
+  - id: 21
+    description: Runway Excursion - Overrun on Take Off
+  - id: 22
+    description: Runway Excursion - Veer Off (Take-Off or Landing)
+  - id: 23
+    description: Taxiway/ Apron Excursion
+- id: 5
+  description: Ground damage
+  children:
+  - id: 24
+    description: Ground Damage - Aircraft v Aircraft
+  - id: 25
+    description: Ground Damage - Aircraft v Vehicles/ Equipment
+  - id: 26
+    description: Ground Damage - Aircraft v Buildings/ Structures
+- id: 6
+  description: Obstacle collision in flight
+  children:
+  - id: 27
+    description: Obstacle Collision in Flight - Static Object
+  - id: 28
+    description: Obstacle Collision in Flight - Moving/ Dynamic Object
+- id: 7
+  description: Collision on runway
+  children:
+  - id: 29
+    description: Runway Collision - Aircraft v Aircraft
+  - id: 30
+    description: Runway Collision - Aircraft v Vehicle
+  - id: 31
+    description: Runway Collision - Aircraft v Other
+- id: 8
+  description: Terrain collision
+  children:
+  - id: 32
+    description: Terrain Collision
+- id: 37
+  description: Fire, smoke and pressurisation
+- id: 38
+  description: Other injuries
+- id: 39
+  description: Security

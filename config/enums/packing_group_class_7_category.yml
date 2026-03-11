@@ -1,0 +1,13 @@
+---
+attribute_id: '1057'
+xml_tag: Packing_Group_Class_7_Category
+sequence: 7
+values:
+  1: Other
+  2: Unknown
+  3: I  Packing Group I, High Danger
+  4: II  Packing Group II, Medium Danger
+  5: III  Packing Group III, Low Danger
+  6: I – White - Radioactive Material Category I label required/applied to package
+  7: II – Yellow - Radioactive Material Category II label required/applied to package
+  8: III – Yellow - Radioactive Material Category III label required/applied to package

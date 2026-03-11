@@ -1,0 +1,9 @@
+---
+attribute_id: '252'
+xml_tag: Rwy_Exit_At
+sequence:
+values:
+  1: Left side
+  2: Right side
+  3: End
+  99: Unknown

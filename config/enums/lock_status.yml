@@ -1,0 +1,7 @@
+---
+attribute_id: '441'
+xml_tag: Lock_Status
+sequence:
+values:
+  1: Locked
+  2: Unlocked

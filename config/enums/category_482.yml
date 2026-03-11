@@ -1,0 +1,12 @@
+---
+attribute_id: '482'
+xml_tag: Category
+sequence:
+values:
+  1: Other flight crew
+  2: Cabin crew
+  8: CAA-staff
+  9: Instructor / check pilot
+  10: Student
+  98: Other
+  99: Unknown

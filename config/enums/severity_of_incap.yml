@@ -1,0 +1,10 @@
+---
+attribute_id: '420'
+xml_tag: Severity_Of_Incap
+sequence:
+values:
+  1: Complete
+  2: Partial
+  3: Temporary
+  97: None
+  99: Unknown

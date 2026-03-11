@@ -1,0 +1,23 @@
+---
+attribute_id: '238'
+xml_tag: Reason_RFS_Ineffect
+sequence:
+values:
+  1: Weather/visibility
+  2: Terrain
+  3: Darkness
+  4: Arrived late
+  5: Terrain unfamiliar
+  6: Obstacles
+  7: Maps inacc/unavailable
+  8: Inadequate training
+  9: Inadequate equipment
+  10: Co-ordination problem
+  11: Inadequate emergency planning
+  12: Command problem
+  13: Communication problem
+  14: Equipment failed
+  15: Insufficient extinguishing agent
+  97: Not applicable
+  98: Other
+  99: Unknown

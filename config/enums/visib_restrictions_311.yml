@@ -1,0 +1,16 @@
+---
+attribute_id: '311'
+xml_tag: Visib_Restrictions
+sequence: 42
+values:
+  1: Fog/mist
+  2: Haze
+  3: Light conditions
+  4: Smoke
+  5: Cloud
+  6: Dust
+  7: Freezing fog
+  8: Precipitation
+  97: None
+  98: Other
+  99: Unknown

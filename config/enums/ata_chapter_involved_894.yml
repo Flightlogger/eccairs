@@ -1,0 +1,3402 @@
+---
+attribute_id: '894'
+xml_tag: ATA_Chapter_Involved
+sequence: 3
+values:
+  11000000: Aircraft components and systems
+  11070000: 0700 Lifting and shoring
+  11071000: 0710 Jacking
+  11072000: 0720 Shoring
+  11080000: '0800 Leveling and weighting'
+  11081000: '0810 Weighing and Balancing'
+  11082000: '0820 Leveling'
+  11090000: '0900 Towing and taxiing'
+  11091000: '0910 Towing'
+  11092000: '0920 Taxiing'
+  11100000: 1000 Parking, mooring, storage and return to service
+  11101000: 1010 Parking/Storage
+  11102000: 1020 Mooring
+  11103000: 1030 Return to Service
+  11110000: 1100 Placards and markings
+  11111000: 1110 Exterior Color Schemes and Markings
+  11112000: 1120 Exterior Placards and Markings
+  11113000: 1130 Interior Placards
+  11120000: 1200 Liquid servicing
+  11121000: 1210 Fuel servicing
+  11122000: 1220 Oil servicing
+  11123000: 1230 Hydraulic fluid servicing
+  11124000: 1240 Coolant servicing
+  11130100: Tow cable
+  11140000: 1400 Miscellaneous hardware
+  11141000: 1410 Hoses and tubes
+  11142000: 1420 Electrical Connectors
+  11143000: 1430 Fasteners
+  11149700: 1497 Miscellaneous Wiring
+  11180000: 1800 Helicopter vibration analysis
+  11181000: 1810 Helicopter vibration analysis
+  11182000: 1820 Helicopter noise analysis
+  11189700: 1897 Helicopter Vibration System Wiring
+  11210000: 2100 Air conditioning system
+  11211000: 2110 Cabin compressor system
+  11211100: 2126 Avionics ventilation
+  11212000: 2120 Distribution system
+  11212001: Air conditioning duct
+  11212100: 2121 Air distribution fan
+  11213000: 2130 Pressurization control
+  11213100: 2131 Cabin pressure control
+  11213101: Cabin pressure controller
+  11213105: Pressurization system - duct
+  11213200: 2132 Pressure indicator
+  11213300: 2133 Pressure regulator valve
+  11213400: 2134 Pressure sensor
+  11214000: 2140 Heating system
+  11215000: 2150 Cabin cooling system
+  11216000: 2160 Temperature control system
+  11216100: 2161 Cabin temperature control system
+  11216101: Controller
+  11216200: 2162 Cabin temperature indicator
+  11216300: 2163 Cabin temperature sensor
+  11217000: 2170 Moisture/Air Contaminant Control
+  11219700: 2197 Air Conditioning System Wiring
+  11220000: 2200 Autoflight system
+  11221000: 2210 Autopilot system
+  11221001: Autoflight yaw damper
+  11221010: Auto flare
+  11221014: Approach coupler
+  11221100: 2211 Autopilot computer
+  11221200: 2212 Altitude controller
+  11221300: 2213 Flight controller
+  11221400: 2214 Autopilot trim indicator
+  11221500: 2215 Autopilot main servo
+  11221600: 2216 Autopilot trim servo
+  11221700: 2297 Auto Flight System Wiring
+  11222000: 2220 Speed-attitude correction
+  11223000: 2230 Auto throttle system
+  11224000: 2240 System monitor
+  11225000: 2250 Aerodynamic load alleviation
+  11230000: 2300 Communications system
+  11231100: 2311 UHF communication system
+  11231200: 2312 VHF communication system
+  11231500: 2315 Satcom
+  11231600: 2316 HF communication system
+  11232000: 2320 Data transmission automatic call
+  11232100: 2321 Selcal
+  11233000: 2330 Passenger Address, Entertainment and Comfort
+  11234000: 2340 Interphone system
+  11235000: 2350 Audio integrating system
+  11235001: Headset phones
+  11235002: Headset microphone
+  11235003: Hand microphone
+  11236000: 2360 Static discharge system
+  11237000: 2370 Audio/video monitoring
+  11237001: Cockpit voice recorder
+  11237003: CVR area microphone
+  11237005: CVR independent power
+  11238000: 2380 Integrated auto tuning
+  11239700: 2397 Communications System Wiring
+  11240000: 2400 Electrical power system
+  11241000: 2410 Alternator-generator drive
+  11241001: Generator constant speed drive
+  11241007: Constant speed drive - oil pressure indicators
+  11241008: Constant speed drive - oil temperature indicators
+  11242000: 2420 AC generation system
+  11242100: 2421 AC generator-alternator
+  11242200: 2422 AC inverter
+  11242204: DC ram air turbine
+  11242224: DC circuit breaker/fuse
+  11242225: AC circuit breaker/fuse
+  11242300: 2423 Phase adapter
+  11242400: 2424 AC voltage regulator
+  11242500: 2425 AC indicating system
+  11243000: 2430 DC generating system
+  11243100: 2431 Battery overheat warning system
+  11243200: 2432 Battery/charger system
+  11243201: DC Battery
+  11243300: 2433 DC rectifier-converter
+  11243400: 2434 DC generator-alternator
+  11243500: 2435 Starter-generator
+  11243600: 2436 DC voltage regulator
+  11243700: 2437 DC indicating system
+  11244000: 2440 External Power
+  11245000: 2450 AC distribution system
+  11246000: 2460 DC distribution system
+  11246002: DC Distribution bus bar
+  11246004: DC Circuit breaker
+  11246010: DC Distribution relay
+  11246016: DC Circuitry switch
+  11246025: DC Wiring
+  11247000: 2470 Primary and Secondary Power
+  11249700: 2497 Electrical Power System Wiring
+  11250000: 2500 Cabin equipment/furnishings
+  11251000: 2510 Flight compartment equipment
+  11251001: Pilot's seat
+  11251002: Other flight crew seat
+  11251003: Shoulder harness
+  11251100: 2511 Flight crew documentation
+  11251101: Maps
+  11251102: Approach charts/plates
+  11251103: Checklists
+  11251104: Emergency checklists
+  11251105: Flight manuals
+  11251106: Company operations manual
+  11251201: Spray boom
+  11251202: Emergency jettison system
+  11252000: 2520 Passenger compartment equipment
+  11252001: Passenger seat
+  11252002: Passenger seatbelt
+  11252007: Cabin crew seat
+  11252008: Cabin crew harness
+  11253000: 2530 Buffet/galleys
+  11253001: Galley oven/heater
+  11253003: Water heater/boiler
+  11253007: Coffee maker
+  11254000: 2540 Lavatories
+  11255001: Cargo hold-cargo
+  11255003: Cargo hold baggage
+  11255006: External load
+  11255007: Sling cable/wire/rope
+  11256000: 2560 Emergency equipment
+  11256006: Smoke hoods/goggles/masks
+  11256007: Personal parachute
+  11256008: Escape rope
+  11256009: First aid/medical kit
+  11256010: Aircraft parachute
+  11256011: Drag/tail chute
+  11256012: Crash axe
+  11256013: Emergency radio
+  11256014: Underwater sonar beacon
+  11256100: 2561 Life-jacket
+  11256200: 2562 Emergency locator beacon
+  11256300: 2563 Parachute
+  11256400: 2564 Life-raft
+  11256500: 2565 Escape slide
+  11257000: 2570 Accessory compartments
+  11257100: 2571 Battery box structure
+  11257200: 2572 Electronic shelf section
+  11258000: 2580 Insulation blankets
+  11259000: 2590 Emergency clothing
+  11259001: Helicopter immersion suit
+  11259700: 2597 Equipment/Furnishings Wiring
+  11260000: 2600 Fire protection system
+  11261000: 2610 Overheat/smoke, detection
+  11261100: 2611 Smoke detection
+  11261200: 2612 Fire detection
+  11261201: Powerplant fire detection
+  11261202: APU fire detection
+  11261300: 2613 Overheat detection
+  11261301: Cargo compartment overheat detection
+  11261302: Galley overheat detection
+  11261303: Heater overheat detection
+  11261304: Pneumatic duct overheat detection
+  11261305: Toilet overheat detection
+  11261307: Auxiliary power unit overheat detection
+  11262000: 2620 Extinguishing system
+  11262100: 2621 Fire bottle, fixed
+  11262200: 2622 Fire bottle, portable
+  11263000: 2630 Explosion suppression system
+  11264000: 2640 Fire extinguishing indication system
+  11269700: 2697 Fire Protection System Wiring
+  11270000: 2700 Flight control system
+  11270100: 2701 Control column section
+  11270101: Side-stick
+  11271000: 2710 Aileron & Tab control system
+  11271001: Aileron control column
+  11271002: Aileron control cable
+  11271100: 2711 Aileron tab control system
+  11271200: 2712 Aileron trim system
+  11272000: 2720 Rudder & Tab control system
+  11272002: Rudder pedal
+  11272100: 2721 Rudder tab control system
+  11272200: 2722 Rudder actuator
+  11272300: 2723 Rudder feel system
+  11272400: 2724 Yaw damper system
+  11273000: 2730 Elevator & Tab control system
+  11273003: Elevator control column
+  11273100: 2731 Elevator tab control system
+  11273200: 2732 Elevator trim system
+  11273300: 2733 Elevator feel system
+  11273400: 2734 Stall protection system
+  11273600: 2736 Mach trim
+  11274000: 2740 Horizontal stabilizer control
+  11274001: Horizontal stabilizer trim
+  11274100: 2741 Stabilizer position indicating system
+  11274200: 2742 Horizontal stabilizer actuator
+  11275000: 2750 Trailing edge flap control system
+  11275100: 2751 Trailing edge flap position
+  11275200: 2752 Trailing edge flap actuator
+  11276000: 2760 Drag control system
+  11276100: 2761 Drag control actuator
+  11276200: 2762 Spoiler system
+  11277000: 2770 Gust lock and damper system
+  11278000: 2780 Lift Augmenting
+  11278100: 2781 Leading edge flap position
+  11278200: 2782 Leading edge flap actuator
+  11279700: 2797 Flight Control System Wiring
+  11280000: 2800 Aircraft fuel system
+  11280506: Fuel
+  11280510: Fuel anti-ice additive
+  11281000: 2810 Fuel storage system
+  11281001: Fuel tank
+  11281002: Fuel system vent
+  11281003: Fuel tank cap
+  11281007: Fuel crossfeed
+  11281009: Fuel tank drain
+  11281010: Fuel filter/strainer
+  11282000: 2820 Fuel distribution system
+  11282002: Fuel distribution pipe
+  11282010: Fuel drain
+  11282011: Fuel system water drain
+  11282100: 2821 Fuel filter/strainer
+  11282101: Fuel filter/screen
+  11282102: Fuel filter indication
+  11282200: 2822 Fuel pumps
+  11282201: Fuel boost pump
+  11282202: Fuel trim pump
+  11282300: 2823 Fuel select/shutoff valve
+  11282400: 2824 Fuel transfer valve
+  11283000: 2830 Fuel dump system
+  11284000: 2840 Fuel indicating system
+  11284100: 2841 Fuel quantity indicator
+  11284200: 2842 Fuel quantity sensor
+  11284300: 2843 Fuel temperature indicating
+  11284400: 2844 Fuel pressure indicator
+  11289700: 2897 Fuel System Wiring
+  11290000: 2900 Hydraulic power system
+  11291000: 2910 Hydraulic main system
+  11291002: 2912 Main system filter
+  11291004: Hydraulic main system line/fitting
+  11291005: Hydraulic system valve
+  11291008: Fluid
+  11291045: Hydraulic system seal
+  11291047: Hydraulic system by-pass valve
+  11291100: 2911 Power accumulator, main system
+  11291300: 2913 Electric/engine driven pump
+  11291400: 2914 Hand pump, main system
+  11291500: 2915 Pressure relief valve- main system
+  11291600: 2916 Reservoir-main
+  11291700: 2917 Pressure regulator system
+  11291701: Pressure regulator, main system
+  11292000: 2920 Hydraulic auxiliary system
+  11292100: 2921 Accumulator, auxiliary
+  11292200: 2922 Filter, auxiliary
+  11292300: 2923 Pump, auxiliary
+  11292400: 2924 Hand pump, auxiliary
+  11292500: 2925 Pressure relief- auxiliary
+  11292600: 2926 Reservoir, auxiliary
+  11292700: 2927 Pressure regulator, auxiliary
+  11292800: 2928 Ram air turbine
+  11293000: 2930 Indicating system
+  11293100: 2931 Pressure indicator
+  11293200: 2932 Pressure sensor
+  11293300: 2933 Hydraulic System-quantity indicator
+  11293400: 2934 Hydraulic system-quantity sensor
+  11299700: 2997 Hydraulic Power System Wiring
+  11300000: 3000 Ice/rain protection sys
+  11300500: De-icing fluid
+  11301000: 3010 Aerofoil anti/de-ice
+  11302000: 3020 Air intake anti/de-ice
+  11303000: 3030 Pitot/static anti-ice
+  11304000: 3040 Windshield/door rain/ice removal
+  11304100: 3041 Rain repellent system
+  11304200: 3042 Windshield washer system
+  11304300: 3043 Windshield wiper system
+  11305000: 3050 Antenna/radome anti-ice/de-ice
+  11306000: 3060 Propeller/rotor anti-ice/de-ice
+  11307000: 3070 Water line anti-ice system
+  11308000: 3080 Ice detection system
+  11309000: 3090 Ice protection indication
+  11309700: 3097 Ice/Rain Protection System Wiring
+  11310000: 3100 Indicating/recording system
+  11311000: 3110 Instrument & Control panels
+  11312000: 3120 Independent instruments
+  11313000: 3130 Flight recording
+  11313001: Fligh Data recorder
+  11313010: Quick access recorder
+  11314000: 3140 Central computers
+  11315000: 3150 Central warning system
+  11316000: 3160 Central display system
+  11317000: 3170 Automatic data report system
+  11319700: 3197 Instrument System Wiring
+  11320000: 3200 Landing gear system
+  11320100: 3201 Landing fairing
+  11321000: 3210 Main landing gear
+  11321100: 3211 Main attachment section
+  11321200: 3212 Emergency flotation system
+  11321300: 3213 Main strut/axle/truck
+  11322000: 3220 Nose/tail landing gear
+  11322100: 3221 Nose/tail gear attach section
+  11322200: 3222 Nose/tail gear strut/axle
+  11323000: 3230 Retract/extension system
+  11323001: Up lock
+  11323002: Down lock
+  11323004: Weight-on-wheels switch
+  11323021: Emergency extension system
+  11323100: 3231 Landing gear door retraction section
+  11323200: 3232 Door actuator
+  11323300: 3233 Landing gear actuator
+  11323400: 3234 Landing gear selector
+  11324000: 3240 Wheels and Brakes
+  11324100: 3241 Brake anti-skid section
+  11324200: 3242 Landing gear brake
+  11324211: Parking brake system
+  11324214: Emergency brake system
+  11324300: 3243 Master cylinder/brake valve
+  11324400: 3244 Landing gear tyres
+  11324401: Main tyre
+  11324402: Nose tyre
+  11324600: 3246 Wheel/ski/float
+  11324601: Main wheel
+  11324602: Nose wheel
+  11324603: Tail wheel
+  11324604: Float
+  11324606: Ski
+  11325000: 3250 Steering system
+  11325100: 3251 Steering unit
+  11325200: 3252 Shimmy damper
+  11326000: 3260 Landing gear position/warning
+  11326001: Brake temperature indication system
+  11327000: 3270 Auxiliary landing gear
+  11327001: Landing gear skid
+  11327002: Helicopter emergency floatation gear/floats
+  11329700: 3297 Landing Gear System Wiring
+  11330000: 3300 Lighting system
+  11331000: 3310 Flight compartment lighting
+  11332000: 3320 Passenger compartment lighting
+  11332001: Seat belt sign
+  11333000: 3330 Cargo/service compartment lighting
+  11334000: 3340 Exterior lighting
+  11334001: Navigation light
+  11334002: Landing light
+  11334003: Taxiing light
+  11334004: Ice inspection light
+  11334006: Anti-collision light
+  11334007: Strobe light
+  11334011: Aircraft logo light
+  11335000: 3350 Emergency lighting
+  11339700: 3397 Lighting System Wiring
+  11340000: 3400 Navigation system
+  11341000: 3410 Environment data system
+  11341100: 3411 Pitot/static system
+  11341200: 3412 OAT indicator/sensor
+  11341300: 3413 Rate of climb indication
+  11341301: Rate of climb indicator
+  11341400: 3414 Airspeed/Mach indication
+  11341401: Airspeed/Mach indicator
+  11341402: Standby airspeed indicator
+  11341500: 3415 High speed warning system
+  11341600: 3416 Altimeter/encoder
+  11341601: Altimeter
+  11341605: Altitude alert
+  11341700: 3417 Air data computer
+  11341800: 3418 Stall warning system
+  11342000: 3420 Attitude and direction data
+  11342100: 3421 Attitude gyro system
+  11342101: Attitude indicator/horizon/ADI
+  11342102: Attitude gyro
+  11342200: 3422 Directional gyro and indicating system
+  11342201: Compass rose
+  11342300: 3423 Magnetic compass
+  11342400: 3424 Turn and bank/rate of turn
+  11342500: 3425 Integrated flight director
+  11343000: 3430 Landing and taxi aids
+  11343100: 3431 Localizer/VOR system
+  11343200: 3432 Glide slope system
+  11343300: 3433 Microwave landing system
+  11343400: 3434 Marker beacon system
+  11343500: 3435 Head up display system
+  11343600: 3436 Wind shear detection system
+  11344000: 3440 Independent positioning
+  11344100: 3441 Inertial guidance system
+  11344200: 3442 Weather radar system
+  11344300: 3443 Doppler system
+  11344400: 3444 GPWS/TAWS
+  11344401: Radio altimeter
+  11344500: 3445 TCAS/ACAS
+  11344600: 3446 Non-radar weather system
+  11345000: 3450 Dependent positioning system
+  11345100: 3451 DME/TACAN
+  11345200: 3452 ATC transponder system
+  11345300: 3453 Loran
+  11345400: 3454 VOR system
+  11345401: ILS/VOR receivers
+  11345500: 3455 ADF system
+  11345600: 3456 Omega navigation system
+  11345700: 3457 Global positioning system
+  11346000: 3460 Flight management computing system (FMS)
+  11346001: Position computing system
+  11347000: 3470 Other navigation system
+  11349700: 3497 Navigation System Wiring
+  11350000: 3500 Oxygen system
+  11351000: 3510 Crew oxygen system
+  11352000: 3520 Passenger oxygen system
+  11353000: 3530 Portable oxygen system
+  11359700: 3597 Oxygen System Wiring
+  11360000: 3600 Pneumatic system
+  11361000: 3610 Distribution system
+  11362000: 3620 Indicating system
+  11369700: 3697 Pneumatic System Wiring
+  11370000: 3700 Vacuum system
+  11370500: Vacuum pump
+  11371000: 3710 Vacuum distribution system
+  11372000: 3720 Vacuum indicating system
+  11379700: 3797 Vacuum System Wiring
+  11380000: 3800 Water and waste system
+  11381000: 3810 Potable water system
+  11382000: 3820 Wash water system
+  11383000: 3830 Waste disposal system
+  11384000: 3840 Air supply water pressure
+  11389700: 3897 Water/Waste System Wiring
+  11410000: 4100 Water ballast
+  11411000: 4110 Water ballast storage
+  11412000: 4120 Water ballast dump system
+  11413000: 4130 Water ballast indicating system
+  11419700: 4197 Water ballast wiring
+  11420000: 4200 Integrated modular avionics
+  11440000: 4400 Cabin systems
+  11441000: 4410 Cabin core system
+  11442000: 4420 In-flight entertain system
+  11443000: 4430 Passenger address and entertainment system
+  11443001: Cabin address system
+  11444000: 4440 Cabin mass memory system
+  11445000: 4450 Cabin monitoring system
+  11446000: 4460 Miscellaneous cabin system
+  11449700: 4497 Cabin systems wiring
+  11450000: 4500 Central maintenance computer
+  11459700: 4597 Central Maintenance System Wiring
+  11460000: 4600 Information system
+  11461000: 4610 Aircraft general
+  11462000: 4620 Flight deck
+  11463000: 4630 Maintenance
+  11464000: 4640 Passenger cabin
+  11465000: 4650 Miscellaneous
+  11470000: 4700 Inert gas system
+  11471000: 4710 Inert gas generation/storage
+  11472000: 4720 Inert gas distribution system
+  11473000: 4730 Inert gas control system
+  11474000: 4740 Inert gas indicating system
+  11490000: 4900 Airborne APU system
+  11491000: 4910 APU cowling/containment
+  11492000: 4920 APU core engine
+  11493000: 4930 APU fuel and control
+  11494000: 4940 APU start/ignition system
+  11495000: 4950 APU bleed air system
+  11496000: 4960 APU controls
+  11497000: 4970 APU indicating system
+  11498000: 4980 APU exhaust system
+  11499000: 4990 APU oil system
+  11499700: 4997 APU System Wiring
+  11500000: 5000 Cargo and accessory compartments
+  11501000: 5010 Cargo compartments
+  11501100: 5011 Agricultural spray system
+  11502000: 5020 Cargo loading system
+  11502002: Cargo restraint/tie down
+  11502007: Helicopter cargo winch
+  11502008: Cargo hook/strop
+  11503000: 5030 Cargo related system
+  11504000: 5040 Not used
+  11505000: 5050 Accessory compartments
+  11506000: 5060 Compartment insulation
+  11509700: 5097 Cargo and accessory compartments wiring
+  11510000: 5100 STANDARD PRACTICES AND STRUCTURES - GENERAL
+  11510100: 5101 Aircraft structures
+  11510200: 5102 Balloon/dirigible components
+  11510201: Basket
+  11510202: Tether lines
+  11510203: Envelope
+  11510204: Ballast
+  11510205: Skirt
+  11510206: Skirt panel
+  11510207: Gores
+  11510208: Parachute valve
+  11510209: Parachute valve cord
+  11510210: Gas storage
+  11510211: Gas pipes/lines/hoses
+  11510212: Gas burner
+  11510213: Gas valve
+  11510214: Pilot light
+  11520000: 5200 Fuselage doors
+  11521000: 5210 Passenger/crew doors
+  11521001: Passenger door
+  11521002: Crew door
+  11522000: 5220 Emergency exits
+  11523000: 5230 Cargo/baggage
+  11524000: 5240 Service doors
+  11524100: 5241 Galley
+  11524200: 5242 Electronic compartment
+  11524300: 5243 Hydraulic compartment
+  11524400: 5244 Accessory compartment
+  11524500: 5245 Air conditioning
+  11524600: 5246 Fluid service doors
+  11524700: 5247 APU door
+  11524800: 5248 Tail cone door
+  11525000: 5250 Fixed inner doors
+  11526000: 5260 Entrance stairs
+  11527000: 5270 Door warning system
+  11528000: 5280 Landing gear doors
+  11528001: Main landing gear door
+  11528002: Nose landing gear door
+  11530000: 5300 Fuselage structure general
+  11530100: 5301 Aerial tow equipment
+  11530101: Tow release mechanism
+  11530200: 5302 Rotorcraft tail boom
+  11531000: 5310 Main structure
+  11531100: 5311 Main frames
+  11531200: 5312 Main bulkheads
+  11531300: 5313 Main longeron/stringer
+  11531400: 5314 Main keel
+  11531500: 5315 Main floor beam
+  11532000: 5320 Miscellaneous structure
+  11532100: 5321 Floor panel
+  11532200: 5322 Internal mounting
+  11532300: 5323 Internal stairs
+  11532400: 5324 Fixed partitions
+  11533000: 5330 Plate/skin
+  11533007: Fuselage panel
+  11534000: 5340 Fuselage attachment
+  11534100: 5341 Wing attachment fittings
+  11534200: 5342 Stabilizer attachment
+  11534300: 5343 Landing gear attachment
+  11534400: 5344 Door attachment/hinge
+  11534500: 5345 Equipment attachment
+  11534600: 5346 Powerplant attachment
+  11534700: 5347 Seat/cargo attachment
+  11535000: 5350 Fuselage fairings
+  11535001: Nose cone
+  11535002: Tail cone
+  11540000: 5400 Nacelle/pylon structure
+  11541000: 5410 Main frame
+  11541100: 5411 Frame/spar/rib
+  11541200: 5412 Bulkhead/firewall
+  11541300: 5413 Longeron/stringers
+  11541400: 5414 Plate skin
+  11541500: 5415 Attachment fitting
+  11541600: 5416 Fairing
+  11542000: 5420 Nacelle/Pylon, Miscellaneous Structure
+  11549700: 5497 Nacelle/Pylon, System Wiring
+  11550000: 5500 Empennage structure
+  11551000: 5510 Horizontal stabilizer structure
+  11551100: 5511 Spar/ribs-horizontal stabilizer
+  11551200: 5512 Skins-horizontal stabilizer
+  11551300: 5513 Horizontal stabilizer tab
+  11552000: 5520 Elevator structure
+  11552100: 5521 Spars/ribs-elevator
+  11552200: 5522 Plates/skins-elevator
+  11552300: 5523 Elevator tab structure
+  11553000: 5530 Vertical stabilizer
+  11553100: 5531 Spars/ribs-vertical stabilizer
+  11553200: 5532 Skins-vertical stabilizer
+  11553300: 5533 Ventral structure
+  11554000: 5540 Rudder structure
+  11554100: 5541 Spars/ribs-rudder
+  11554200: 5542 Plates/skins-rudder
+  11554300: 5543 Rudder tab structure
+  11555000: 5550 Empennage attachment
+  11555100: 5551 Horizon stabilizer attachment
+  11555200: 5552 Elevator/tab attachment
+  11555300: 5553 Vertical stabilizer fitting
+  11555400: 5554 Rudder attachment fitting
+  11556000: 5560 Stabilizer fairing
+  11557000: 5570 Canard
+  11559700: 5597 Stabilizer System Wiring
+  11560000: 5600 Window/windshield system
+  11561000: 5610 Flight compartment window
+  11561007: Canopy
+  11562000: 5620 Passenger compartment window
+  11563000: 5630 Door window
+  11564000: 5640 Inspection and observation window
+  11569700: 5697 Window System Wiring
+  11570000: 5700 Wing structure
+  11571000: 5710 Wing main frame structure
+  11571009: Bracing wire
+  11571010: Fairing
+  11571100: 5711 Wing spar
+  11571101: Front spar
+  11571102: Rear spar
+  11571103: Centre spar
+  11571104: Spar
+  11571105: Strut
+  11571200: 5712 Ribs/bulkheads
+  11571300: 5713 Longeron/stringer
+  11571400: 5714 Centre box
+  11572000: 5720 Miscellaneous structure
+  11572001: Leading edge
+  11572002: Trailing edge
+  11572003: Wingtip
+  11572005: Winglet
+  11573000: 5730 Plates/skins
+  11574000: 5740 Attachment fitting
+  11574100: 5741 Wing fuselage attachment
+  11574200: 5742 Nacelle/pylon attachment
+  11574300: 5743 Wing landing gear attachment
+  11574400: 5744 Wing control surface attachment
+  11575000: 5750 Wing flight control surface
+  11575300: 5753 Trailing edge flap
+  11575400: 5754 Leading edge devices
+  11575401: Leading edge flap
+  11575402: Leading edge slat
+  11575406: Flap vane
+  11576000: 5760 Ailerons and Elevons
+  11576100: 5761 Aileron structure
+  11576200: 5762 Aileron tab structure
+  11577000: 5770 Spoiler structure
+  11577011: Ground spoiler
+  11579000: 5790 Wing folding system
+  11579700: 5797 Wing systems wiring
+  11610000: 6100 Propeller system
+  11611000: 6110 Propeller assembly
+  11611100: 6111 Blade section
+  11611101: Blade
+  11611102: Blade bearing
+  11611200: 6112 De-ice boot
+  11611300: 6113 Spinner section
+  11611400: 6114 Hub section
+  11611403: Propeller hub bolt
+  11612000: 6120 Propeller control system
+  11612001: Pitch control unit/CSU
+  11612008: Pitch change mechanism
+  11612009: Fine pitch lock
+  11612100: 6121 Synchronizer section
+  11612200: 6122 Governor
+  11612300: 6123 Feather/reversing
+  11612307: Autofeather
+  11612309: Feather motor
+  11612310: Reversing
+  11613000: 6130 Propeller braking
+  11614000: 6140 Propeller indicating system
+  11614001: Pitch indication
+  11615000: 6150 Propulsor Duct
+  11619700: 6197 Propeller/Propulsor System Wiring
+  11620000: 6200 Rotorcraft main rotor system
+  11621000: 6210 Main rotor blades
+  11621004: Main rotor blade
+  11622000: 6220 Main rotor head
+  11622003: Tracking
+  11622007: Damper
+  11622008: Trunnion
+  11622009: Stabilizer bar
+  11622010: Main rotor hub
+  11623000: 6230 Mast/swashplate
+  11623005: Main rotor bearing
+  11623006: Main rotor spindle
+  11624000: 6240 Main rotor indicating system
+  11624001: Blade failure indication
+  11624002: RPM indication
+  11629700: 6297 Main Rotor System Wiring
+  11630000: 6300 Main rotor drive system
+  11631000: 6310 Engine/transmission coupling
+  11631001: Helicopter gearbox drive shaft
+  11631002: Main rotor gearbox belt drive
+  11631003: Main rotor drive clutch
+  11631004: Main rotor drive freewheel
+  11631005: Main rotor accessory drive
+  11631006: Main rotor drive bearing
+  11632000: 6320 Gearbox
+  11632100: 6321 Main rotor brake
+  11632200: 6322 Cooling fan system
+  11633000: 6330 Transmission mount
+  11634000: 6340 Rotor drive indicating system
+  11634001: Chip detector indicator
+  11634002: Gearbox failure
+  11639700: 6397 Main Rotor Drive System Wiring
+  11640000: 6400 Tail rotor system
+  11641000: 6410 Tail rotor blade
+  11642000: 6420 Tail rotor head
+  11642003: Tail rotor head bearing
+  11642015: Tail rotor damper
+  11642016: Tail rotor mixing unit
+  11642019: Tail rotor hydraulic actuator
+  11643000: 6430 not assigned
+  11644000: 6440 Tail rotor indicating system
+  11649700: 6497 Tail Rotor System Wiring
+  11650000: 6500 Tail rotor drive system
+  11651000: 6510 Tail rotor drive shaft
+  11651002: Tail rotor drive bearing
+  11652000: 6520 Tail rotor gearbox
+  11653000: 6530 not used
+  11654000: 6540 Tail rotor drive indication
+  11659700: 6597 Tail Rotor Drive System Wiring
+  11660000: 6600 Folding blades/pylon
+  11661000: 6610 Rotor blades folding
+  11662000: 6620 Tail pylon folding
+  11663000: 6630 Folding - Controls and Indicating
+  11670000: 6700 Rotorcraft flight control
+  11671000: 6710 Main rotor control
+  11671001: Cyclic control
+  11671002: Collective control
+  11671003: Yaw control system
+  11671100: 6711 Tilt rotor flight control
+  11672000: 6720 Anti-torque Rotor control (Yaw control)
+  11673000: 6730 Servo system
+  11679700: 6797 Rotors Flight Control System Wiring
+  11710000: 7100 Powerplant system
+  11711000: 7110 Engine cowling system
+  11711100: 7111 Cowl flap system
+  11711111: Control
+  11711200: 7112 Engine air baffle section
+  11712000: 7120 Engine mount
+  11713000: 7130 Engine fire seals
+  11714000: 7140 Engine attachment
+  11715000: 7150 Engine electrical harness
+  11716000: 7160 Engine air intake system
+  11716001: Filter
+  11716002: Induction manifold
+  11716005: Alternate air valve
+  11717000: 7170 Engine drains
+  11718000: 7180 Powerplant indications
+  11718005: Nacelle overheat warning
+  11719700: 7197 Powerplant System Wiring
+  11720000: 7200 Turbine/turboprop engine
+  11720200: Engine power
+  11721000: 7210 Reduction gear, shaft section
+  11721001: Reduction gear shaft
+  11721002: Propeller shaft
+  11721003: Reduction gear bearing
+  11721004: Engine housing/casing
+  11722000: 7220 Air inlet
+  11723000: 7230 Compressor
+  11723001: Compressor disc
+  11723002: Compressor hub
+  11723006: Compressor shaft
+  11723008: Compressor bearing
+  11723009: Compressor spacer/seal
+  11723010: Compressor blade
+  11723011: Compressor stator/vane
+  11723014: Compressor casing
+  11723017: Compressor bleed valve
+  11723018: Compressor impeller
+  11723019: Rotating guide vane
+  11724000: 7240 Turbine engine combustion
+  11724001: Turbine engine casing
+  11724002: Flame tube liner
+  11724004: Fuel nozzle
+  11724005: Fuel manifold
+  11725000: 7250 Turbine assembly
+  11725001: Turbine assembly casing
+  11725002: Turbine blade
+  11725003: Turbine assembly shaft
+  11725005: Turbine assembly disc
+  11725010: Turbine assembly bearing
+  11725011: Turbine assembly spacer/seal
+  11725012: Turbine assembly stator/vane
+  11726000: 7260 Accessory drive
+  11726100: 7261 Oil system
+  11727000: 7270 By-pass section
+  11727100: 7271 Engine fan
+  11727101: Fan case
+  11727102: Fan blade
+  11727103: Fan disc
+  11727106: Fan bearing
+  11727108: Fan shaft
+  11727109: Fan variable blade mechanism
+  11728000: 7280 Turbine Engine Propulsor Section (Rear Mounted)
+  11729700: 7297 Turbine Engine System Wiring
+  11730000: 7300 Engine fuel and control system
+  11731000: 7310 Engine fuel system
+  11731001: Fuel filter (on the engine)
+  11731002: Fuel line/fitting
+  11731003: Powerplant fuel valve
+  11731100: 7311 Fuel oil cooler
+  11731200: 7312 Fuel heater
+  11731300: 7313 Fuel injection nozzle
+  11731400: 7314 Engine fuel pump
+  11732000: 7320 Fuel control system
+  11732006: Fuel regulator
+  11732100: 7321 Fuel control-electronic
+  11732200: 7322 Fuel control-carburetor
+  11732201: Fuel injector
+  11732203: Mixture valve
+  11732225: Carburettor heat control
+  11732300: 7323 Turbine governor
+  11732400: 7324 Fuel divider
+  11733000: 7330 Indicating system
+  11733001: Fuel temperature indication
+  11733012: Carburetor air temperature indication
+  11733100: 7331 Flow indicating system
+  11733101: Fuel flow sensor
+  11733200: 7332 Pressure indicating
+  11733201: 7334 Fuel press sensor
+  11739700: 7397 Engine Fuel System Wiring
+  11740000: 7400 Ignition system
+  11741000: 7410 Ignition power supply
+  11741100: 7411 Low tension coil
+  11741200: 7412 Ignition system exciter
+  11741300: 7413 Induction vibrator
+  11741400: 7414 Magneto/distributor
+  11742000: 7420 Ignition harness
+  11742006: High tension wiring/harness
+  11742100: 7421 Spark plug/igniter
+  11742101: Spark plug
+  11742102: Igniter plug
+  11743000: 7430 Ignition switching
+  11743001: Ignition/magneto switch
+  11744000: 7440 Ignition indication
+  11749700: 7497 Ignition System Wiring
+  11749800: 7498 Ignition system-other
+  11749801: Ignition system - continuous ignition
+  11749802: Ignition system - auto-relight system
+  11750000: 7500 Engine bleed air system
+  11751000: 7510 Engine anti-icing system
+  11752000: 7520 Engine cooling system
+  11753000: 7530 Compressor bleed control
+  11753013: Bleed air coupling
+  11753100: 7531 Compressor bleed governor
+  11753200: 7532 Compressor bleed valve
+  11754000: 7540 Bleed air indicating system
+  11759700: 7597 Engine Bleed Air System Wiring
+  11760000: 7600 Engine controls
+  11760100: 7601 Synchronizing
+  11760200: 7602 Mixture control
+  11760300: 7603 Power lever
+  11761000: 7610 Engine power control
+  11761002: Thrust reverser control
+  11761003: High pressure cock
+  11762000: 7620 Emergency shutdown system
+  11769700: 7697 Engine Control System Wiring
+  11770000: 7700 Engine indicating system
+  11771000: 7710 Power indicating
+  11771100: 7711 Pressure ratio (EPR) indicating system
+  11771200: 7712 BMEP/torque indicating system
+  11771300: 7713 Manifold pressure indicating system
+  11771400: 7714 RPM indicating system
+  11772000: 7720 Temperature indicating system
+  11772100: 7721 Cylinder head temperature indicating system
+  11772200: 7722 EGT-TIT indicating system
+  11772202: JPT indicator
+  11772211: TIT indicator
+  11773000: 7730 Ignition analyzer system
+  11773100: 7731 Ignition analyzer
+  11773200: 7732 Vibration analyzer
+  11774000: 7740 Integrated instrument system
+  11779700: 7797 Engine Indicating System Wiring
+  11780000: 7800 Engine exhaust system
+  11781000: 7810 Collector/tailpipe/nozzle
+  11781007: Exhaust manifold
+  11781008: Exhaust cone
+  11781009: Engine exhaust pipe
+  11781010: Collector/tailpipe/nozzle
+  11781025: Engine exhaust clamp
+  11782000: 7820 Engine noise suppressor
+  11783000: 7830 Exhaust thrust reverser
+  11783001: Fan reverser
+  11783002: Turbine reverser
+  11783003: Reverser clamshell door
+  11783004: Reverser blocker door
+  11783008: Reverser cascade
+  11783014: Hydraulic reverser
+  11783015: Pneumatic reverser
+  11783016: Electric reverser
+  11783017: Mechanical reverser
+  11784000: 7840 Supplementary Air
+  11785000: 7850 Engine exhaust system indication
+  11785100: Reverser position indications
+  11789700: 7897 Engine Exhaust System Wiring
+  11790000: 7900 Engine oil system-airframe
+  11790100: Lubrication oil
+  11791000: 7910 Storage-airframe
+  11791001: Oil tank
+  11791008: Oil filler cap
+  11792000: 7920 Distribution-airframe
+  11792001: Lubrication-line/fitting
+  11792002: Oil system seal
+  11792003: Oil filter
+  11792004: Oil system valve
+  11792005: Oil pump
+  11792100: 7921 Cooler
+  11792200: 7922 Temperature regulator
+  11792300: 7923 Shut-off valve
+  11793000: 7930 Indicating system
+  11793004: Engine oil - chip detector
+  11793100: 7931 Pressure indication
+  11793200: 7932 Quantity indicator
+  11793300: 7933 Temperature indicator
+  11799700: 7997 Engine Oil System Wiring
+  11800000: 8000 Engine starting system
+  11801000: 8010 Engine cranking
+  11801100: 8011 Engine starter
+  11801101: Electric starter
+  11801102: Air starter
+  11801200: 8012 Start controls
+  11809700: 8097 Engine Starting System Wiring
+  11810000: 8100 Reciprocating exhaust turbine system
+  11811000: 8110 Power recovery turbine
+  11812000: 8120 Exhaust turbocharger
+  11812002: Turbocharger - Waste gate
+  11812003: Turbocharger - Impeller
+  11812004: Turbocharger - bearing
+  11819700: 8197 Turbocharger System Wiring
+  11820000: 8200 Water injection system
+  11821000: 8210 Water injection - Storage
+  11822000: 8220 Water Injection - Distribution
+  11823000: 8230 Water Injection - Dumping and Purging
+  11824000: 8240 Water Injection - Indicating
+  11829700: 8297 Water Injection System Wiring
+  11830000: 8300 Accessory gearboxes
+  11831000: 8310 Accessory Gearboxes Drive Shaft Section
+  11832000: 8320 Accessory Gearboxes Gearbox Section
+  11839700: 8397 Accessory Gearbox System Wiring
+  11850000: 8500 Reciprocating engine
+  11851000: 8510 Front section
+  11852000: 8520 Power section
+  11852001: Crankshaft
+  11852002: Camshaft
+  11852003: Cam drive gear
+  11852004: Crankshaft bearing
+  11852006: Crankcase
+  11852010: Counterweight/vibration damper
+  11852035: Push rod
+  11853000: 8530 Cylinder section
+  11853001: Cylinder head
+  11853002: Cylinder
+  11853003: Piston
+  11853004: Piston ring
+  11853005: Push rod
+  11853006: Connecting rod
+  11853007: Cylinder valve
+  11853009: Cooling baffle
+  11853011: Gudgeon pin
+  11853012: Rocker arm
+  11854000: 8540 Reciprocating engine rear section
+  11855000: 8550 Reciprocating engine oil system
+  11855001: Oil filter
+  11855002: Oil pump
+  11856000: 8560 Reciprocating Engine Supercharger
+  11857000: 8570 Reciprocating Engine Liquid Cooling
+  11859700: 8597 Reciprocating Engine System Wiring
+  100000017: 3245 Tyre tube
+  100000018: 5297 Door system wiring
+  100000019: 5780 not assigned
+  100000020: 7333 Fuel Flow Sensor
+  100000054: 2310 Speech Communications
+  100000179: Radome
+  100000180: HUMS
+  100000181: '0930 Air towing'
+  100000182: Air tow cable
+  100000185: Take-off configuration warning system
+  100000186: 2200 Autoflight system - general
+  100000187: Alpha Protection
+  100000188: Alpha floor
+  100000189: 2550 Cargo compartments
+  100000191: Trolley/food cart
+  100000192: Latch
+  100000193: Ceiling panel
+  100000194: Portable emergency light
+  100000195: Aileron actuator
+  100000196: Weight-Balance System
+  100000197: Ballast Resistor
+  100000198: Main wheel bearing
+  100000199: Nose wheel bearing
+  100000200: Tail landing gear tyre
+  100000201: Tyre pressure indications
+  100000202: Main tyre pressure
+  100000203: Nose tyre pressure
+  100000204: Stand-by altimeter
+  100000205: Stand-by compass
+  100000206: 3850 Water systems indications
+  100000207: Cargo pallet rails
+  100000208: Cargo pallet locks
+  100000209: Personnel carrying device / harness
+  100000210: Envelope rip line
+  100000211: Suspension cables
+  100000212: Flight compartment window frame
+  100000213: Flight compartment window inner pane
+  100000214: Flight compartment window outer pane
+  100000216: Canopy jettison system
+  100000217: Equipment cooling system
+  100000219: 0500 TIME LIMITS/MAINTENANCE CHECKS
+  100000220: 0510 Time Limits
+  100000221: 0520 Scheduled Maintenance Checks
+  100000222: 0550 Unscheduled Maintenance checks
+  100000223: 0600 DIMENSIONS AND AREAS
+  100000224: 2000 STANDARD PRACTICES-AIRFRAME
+  100000225: 2315 SATCOM
+  100000226: 4210 Shared Avionic Resources
+  100000227: 4220 Core System
+  100000228: 4230 Communication Network
+  100000229: 4240 Remote Shared Resources
+  100000230: 5110 Investigation, Cleanup and Aerodynamic Smoothness
+  100000231: 5120 Processes
+  100000232: 5130 Materials
+  100000233: 5140 Fasteners
+  100000234: 5150 Support of Airplane for Repair and Alignment Check Procedures
+  100000235: 5160 Control-Surface Balancing
+  100000236: 5170 Repairs
+  100000237: 5180 Electrical Bonding
+  100000238: 6000 STANDARD PRACTICES - PROPELLER/ROTOR
+  100000239: 7000 STANDARD PRACTICES - ENGINES
+  100000240: 8400 PROPULSION AUGMENTATION
+  100000241: 8410 Jet Assist Takeoff
+  100000242: 9100 CHARTS
+  100000244: Auto Flight control panel
+  100000245: Auto brake system
+  100000246: Flap configuration warning system
+  100000247: Gear configuration warning system
+  100000248: Other configuration warning system
+  100000249: Speedbrake configuration warning system
+  100000250: Trim configuration warning system
+  100000251: Movable Class Divider
+  100000252: Lift
+  100000253: AC Circuit Breaker
+  100000254: AC Circuitry switch
+  100000255: AC Distribution bus bar
+  100000256: AC Distribution relay
+  100000257: AC Wiring
+  100000258: Cockpit Loudspeaker
+  100000259: Door power assist
+  100000260: IFE fire detection
+  100000261: Cabin passenger service unit
+  100000262: Battery Hot Bus
+  100000263: EFB - Class 1
+  100000264: EFB - Class 2
+  100000265: EFB - Class 3
+  100000266: E-Charts
+  100000267: Cargo compartment fire detection
+  100000268: Toilet fire detection
+  100000269: Enhanced Vision Systems (EVS)
+  100000275: 9500 Aircraft Special Purpose Equipment
+  100000276: Wirestrike Protection Systems
+  100000277: Cable Cutters
+  100000278: Cable Deflectors
+  100000279: Wire Detection system
+hierarchy:
+- id: 11000000
+  description: Aircraft components and systems
+  children:
+  - id: 11070000
+    description: 0700 Lifting and shoring
+    children:
+    - id: 11071000
+      description: 0710 Jacking
+    - id: 11072000
+      description: 0720 Shoring
+  - id: 11080000
+    description: '0800 Leveling and weighting'
+    children:
+    - id: 11081000
+      description: '0810 Weighing and Balancing'
+    - id: 11082000
+      description: '0820 Leveling'
+  - id: 11090000
+    description: '0900 Towing and taxiing'
+    children:
+    - id: 11091000
+      description: '0910 Towing'
+      children:
+      - id: 11130100
+        description: Tow cable
+    - id: 11092000
+      description: '0920 Taxiing'
+    - id: 100000181
+      description: '0930 Air towing'
+      children:
+      - id: 100000182
+        description: Air tow cable
+  - id: 11100000
+    description: 1000 Parking, mooring, storage and return to service
+    children:
+    - id: 11101000
+      description: 1010 Parking/Storage
+    - id: 11102000
+      description: 1020 Mooring
+    - id: 11103000
+      description: 1030 Return to Service
+  - id: 11110000
+    description: 1100 Placards and markings
+    children:
+    - id: 11111000
+      description: 1110 Exterior Color Schemes and Markings
+    - id: 11112000
+      description: 1120 Exterior Placards and Markings
+    - id: 11113000
+      description: 1130 Interior Placards
+  - id: 11120000
+    description: 1200 Liquid servicing
+    children:
+    - id: 11121000
+      description: 1210 Fuel servicing
+    - id: 11122000
+      description: 1220 Oil servicing
+    - id: 11123000
+      description: 1230 Hydraulic fluid servicing
+    - id: 11124000
+      description: 1240 Coolant servicing
+  - id: 11140000
+    description: 1400 Miscellaneous hardware
+    children:
+    - id: 11141000
+      description: 1410 Hoses and tubes
+    - id: 11142000
+      description: 1420 Electrical Connectors
+    - id: 11143000
+      description: 1430 Fasteners
+    - id: 11149700
+      description: 1497 Miscellaneous Wiring
+  - id: 11180000
+    description: 1800 Helicopter vibration analysis
+    children:
+    - id: 11181000
+      description: 1810 Helicopter vibration analysis
+    - id: 11182000
+      description: 1820 Helicopter noise analysis
+    - id: 11189700
+      description: 1897 Helicopter Vibration System Wiring
+  - id: 11210000
+    description: 2100 Air conditioning system
+    children:
+    - id: 11211000
+      description: 2110 Cabin compressor system
+    - id: 11212000
+      description: 2120 Distribution system
+      children:
+      - id: 11211100
+        description: 2126 Avionics ventilation
+      - id: 11212001
+        description: Air conditioning duct
+      - id: 11212100
+        description: 2121 Air distribution fan
+    - id: 11213000
+      description: 2130 Pressurization control
+      children:
+      - id: 11213100
+        description: 2131 Cabin pressure control
+        children:
+        - id: 11213101
+          description: Cabin pressure controller
+        - id: 11213105
+          description: Pressurization system - duct
+      - id: 11213200
+        description: 2132 Pressure indicator
+      - id: 11213300
+        description: 2133 Pressure regulator valve
+      - id: 11213400
+        description: 2134 Pressure sensor
+    - id: 11214000
+      description: 2140 Heating system
+    - id: 11215000
+      description: 2150 Cabin cooling system
+      children:
+      - id: 100000217
+        description: Equipment cooling system
+    - id: 11216000
+      description: 2160 Temperature control system
+      children:
+      - id: 11216100
+        description: 2161 Cabin temperature control system
+        children:
+        - id: 11216101
+          description: Controller
+      - id: 11216200
+        description: 2162 Cabin temperature indicator
+      - id: 11216300
+        description: 2163 Cabin temperature sensor
+    - id: 11217000
+      description: 2170 Moisture/Air Contaminant Control
+    - id: 11219700
+      description: 2197 Air Conditioning System Wiring
+  - id: 11220000
+    description: 2200 Autoflight system
+    children:
+    - id: 11221000
+      description: 2210 Autopilot system
+      children:
+      - id: 11221001
+        description: Autoflight yaw damper
+      - id: 11221010
+        description: Auto flare
+      - id: 11221014
+        description: Approach coupler
+      - id: 11221100
+        description: 2211 Autopilot computer
+      - id: 11221200
+        description: 2212 Altitude controller
+      - id: 11221300
+        description: 2213 Flight controller
+      - id: 11221400
+        description: 2214 Autopilot trim indicator
+      - id: 11221500
+        description: 2215 Autopilot main servo
+      - id: 11221600
+        description: 2216 Autopilot trim servo
+    - id: 11221700
+      description: 2297 Auto Flight System Wiring
+    - id: 11222000
+      description: 2220 Speed-attitude correction
+    - id: 11223000
+      description: 2230 Auto throttle system
+      children:
+      - id: 100000188
+        description: Alpha floor
+    - id: 11224000
+      description: 2240 System monitor
+    - id: 11225000
+      description: 2250 Aerodynamic load alleviation
+    - id: 100000186
+      description: 2200 Autoflight system - general
+      children:
+      - id: 100000187
+        description: Alpha Protection
+      - id: 100000244
+        description: Auto Flight control panel
+  - id: 11230000
+    description: 2300 Communications system
+    children:
+    - id: 11232000
+      description: 2320 Data transmission automatic call
+      children:
+      - id: 11232100
+        description: 2321 Selcal
+    - id: 11233000
+      description: 2330 Passenger Address, Entertainment and Comfort
+    - id: 11234000
+      description: 2340 Interphone system
+    - id: 11235000
+      description: 2350 Audio integrating system
+      children:
+      - id: 11235001
+        description: Headset phones
+      - id: 11235002
+        description: Headset microphone
+      - id: 11235003
+        description: Hand microphone
+      - id: 100000258
+        description: Cockpit Loudspeaker
+    - id: 11236000
+      description: 2360 Static discharge system
+    - id: 11237000
+      description: 2370 Audio/video monitoring
+      children:
+      - id: 11237001
+        description: Cockpit voice recorder
+      - id: 11237003
+        description: CVR area microphone
+      - id: 11237005
+        description: CVR independent power
+    - id: 11238000
+      description: 2380 Integrated auto tuning
+    - id: 11239700
+      description: 2397 Communications System Wiring
+    - id: 100000054
+      description: 2310 Speech Communications
+      children:
+      - id: 11231100
+        description: 2311 UHF communication system
+      - id: 11231200
+        description: 2312 VHF communication system
+      - id: 11231500
+        description: 2315 Satcom
+      - id: 11231600
+        description: 2316 HF communication system
+    - id: 100000225
+      description: 2315 SATCOM
+  - id: 11240000
+    description: 2400 Electrical power system
+    children:
+    - id: 11241000
+      description: 2410 Alternator-generator drive
+      children:
+      - id: 11241001
+        description: Generator constant speed drive
+      - id: 11241007
+        description: Constant speed drive - oil pressure indicators
+      - id: 11241008
+        description: Constant speed drive - oil temperature indicators
+    - id: 11242000
+      description: 2420 AC generation system
+      children:
+      - id: 11242100
+        description: 2421 AC generator-alternator
+      - id: 11242200
+        description: 2422 AC inverter
+        children:
+        - id: 11242204
+          description: DC ram air turbine
+        - id: 11242224
+          description: DC circuit breaker/fuse
+        - id: 11242225
+          description: AC circuit breaker/fuse
+      - id: 11242300
+        description: 2423 Phase adapter
+      - id: 11242400
+        description: 2424 AC voltage regulator
+      - id: 11242500
+        description: 2425 AC indicating system
+    - id: 11243000
+      description: 2430 DC generating system
+      children:
+      - id: 11243100
+        description: 2431 Battery overheat warning system
+      - id: 11243200
+        description: 2432 Battery/charger system
+        children:
+        - id: 11243201
+          description: DC Battery
+        - id: 100000262
+          description: Battery Hot Bus
+      - id: 11243300
+        description: 2433 DC rectifier-converter
+      - id: 11243400
+        description: 2434 DC generator-alternator
+      - id: 11243500
+        description: 2435 Starter-generator
+      - id: 11243600
+        description: 2436 DC voltage regulator
+      - id: 11243700
+        description: 2437 DC indicating system
+    - id: 11244000
+      description: 2440 External Power
+    - id: 11245000
+      description: 2450 AC distribution system
+      children:
+      - id: 100000253
+        description: AC Circuit Breaker
+      - id: 100000254
+        description: AC Circuitry switch
+      - id: 100000255
+        description: AC Distribution bus bar
+      - id: 100000256
+        description: AC Distribution relay
+      - id: 100000257
+        description: AC Wiring
+    - id: 11246000
+      description: 2460 DC distribution system
+      children:
+      - id: 11246002
+        description: DC Distribution bus bar
+      - id: 11246004
+        description: DC Circuit breaker
+      - id: 11246010
+        description: DC Distribution relay
+      - id: 11246016
+        description: DC Circuitry switch
+      - id: 11246025
+        description: DC Wiring
+    - id: 11247000
+      description: 2470 Primary and Secondary Power
+    - id: 11249700
+      description: 2497 Electrical Power System Wiring
+  - id: 11250000
+    description: 2500 Cabin equipment/furnishings
+    children:
+    - id: 11251000
+      description: 2510 Flight compartment equipment
+      children:
+      - id: 11251001
+        description: Pilot's seat
+      - id: 11251002
+        description: Other flight crew seat
+      - id: 11251003
+        description: Shoulder harness
+      - id: 11251100
+        description: 2511 Flight crew documentation
+        children:
+        - id: 11251101
+          description: Maps
+        - id: 11251102
+          description: Approach charts/plates
+        - id: 11251103
+          description: Checklists
+        - id: 11251104
+          description: Emergency checklists
+        - id: 11251105
+          description: Flight manuals
+        - id: 11251106
+          description: Company operations manual
+    - id: 11252000
+      description: 2520 Passenger compartment equipment
+      children:
+      - id: 11252001
+        description: Passenger seat
+      - id: 11252002
+        description: Passenger seatbelt
+      - id: 11252007
+        description: Cabin crew seat
+      - id: 11252008
+        description: Cabin crew harness
+      - id: 100000193
+        description: Ceiling panel
+      - id: 100000251
+        description: Movable Class Divider
+      - id: 100000261
+        description: Cabin passenger service unit
+    - id: 11253000
+      description: 2530 Buffet/galleys
+      children:
+      - id: 11253001
+        description: Galley oven/heater
+      - id: 11253003
+        description: Water heater/boiler
+      - id: 11253007
+        description: Coffee maker
+      - id: 100000191
+        description: Trolley/food cart
+      - id: 100000192
+        description: Latch
+      - id: 100000252
+        description: Lift
+    - id: 11254000
+      description: 2540 Lavatories
+    - id: 11256000
+      description: 2560 Emergency equipment
+      children:
+      - id: 11256006
+        description: Smoke hoods/goggles/masks
+      - id: 11256007
+        description: Personal parachute
+      - id: 11256008
+        description: Escape rope
+      - id: 11256009
+        description: First aid/medical kit
+      - id: 11256010
+        description: Aircraft parachute
+      - id: 11256011
+        description: Drag/tail chute
+      - id: 11256012
+        description: Crash axe
+      - id: 11256013
+        description: Emergency radio
+      - id: 11256014
+        description: Underwater sonar beacon
+      - id: 11256100
+        description: 2561 Life-jacket
+      - id: 11256200
+        description: 2562 Emergency locator beacon
+      - id: 11256300
+        description: 2563 Parachute
+      - id: 11256400
+        description: 2564 Life-raft
+      - id: 11256500
+        description: 2565 Escape slide
+      - id: 100000194
+        description: Portable emergency light
+    - id: 11257000
+      description: 2570 Accessory compartments
+      children:
+      - id: 11257100
+        description: 2571 Battery box structure
+      - id: 11257200
+        description: 2572 Electronic shelf section
+    - id: 11258000
+      description: 2580 Insulation blankets
+    - id: 11259000
+      description: 2590 Emergency clothing
+      children:
+      - id: 11259001
+        description: Helicopter immersion suit
+    - id: 11259700
+      description: 2597 Equipment/Furnishings Wiring
+    - id: 100000189
+      description: 2550 Cargo compartments
+  - id: 11260000
+    description: 2600 Fire protection system
+    children:
+    - id: 11261000
+      description: 2610 Overheat/smoke, detection
+      children:
+      - id: 11261100
+        description: 2611 Smoke detection
+      - id: 11261200
+        description: 2612 Fire detection
+        children:
+        - id: 11261201
+          description: Powerplant fire detection
+        - id: 11261202
+          description: APU fire detection
+        - id: 100000260
+          description: IFE fire detection
+        - id: 100000267
+          description: Cargo compartment fire detection
+        - id: 100000268
+          description: Toilet fire detection
+      - id: 11261300
+        description: 2613 Overheat detection
+        children:
+        - id: 11261301
+          description: Cargo compartment overheat detection
+        - id: 11261302
+          description: Galley overheat detection
+        - id: 11261303
+          description: Heater overheat detection
+        - id: 11261304
+          description: Pneumatic duct overheat detection
+        - id: 11261305
+          description: Toilet overheat detection
+        - id: 11261307
+          description: Auxiliary power unit overheat detection
+    - id: 11262000
+      description: 2620 Extinguishing system
+      children:
+      - id: 11262100
+        description: 2621 Fire bottle, fixed
+      - id: 11262200
+        description: 2622 Fire bottle, portable
+    - id: 11263000
+      description: 2630 Explosion suppression system
+    - id: 11264000
+      description: 2640 Fire extinguishing indication system
+    - id: 11269700
+      description: 2697 Fire Protection System Wiring
+  - id: 11270000
+    description: 2700 Flight control system
+    children:
+    - id: 11270100
+      description: 2701 Control column section
+      children:
+      - id: 11270101
+        description: Side-stick
+    - id: 11271000
+      description: 2710 Aileron & Tab control system
+      children:
+      - id: 11271001
+        description: Aileron control column
+      - id: 11271002
+        description: Aileron control cable
+      - id: 11271100
+        description: 2711 Aileron tab control system
+      - id: 11271200
+        description: 2712 Aileron trim system
+      - id: 100000195
+        description: Aileron actuator
+    - id: 11272000
+      description: 2720 Rudder & Tab control system
+      children:
+      - id: 11272002
+        description: Rudder pedal
+      - id: 11272100
+        description: 2721 Rudder tab control system
+      - id: 11272200
+        description: 2722 Rudder actuator
+      - id: 11272300
+        description: 2723 Rudder feel system
+      - id: 11272400
+        description: 2724 Yaw damper system
+    - id: 11273000
+      description: 2730 Elevator & Tab control system
+      children:
+      - id: 11273003
+        description: Elevator control column
+      - id: 11273100
+        description: 2731 Elevator tab control system
+      - id: 11273200
+        description: 2732 Elevator trim system
+      - id: 11273300
+        description: 2733 Elevator feel system
+      - id: 11273400
+        description: 2734 Stall protection system
+      - id: 11273600
+        description: 2736 Mach trim
+    - id: 11274000
+      description: 2740 Horizontal stabilizer control
+      children:
+      - id: 11274001
+        description: Horizontal stabilizer trim
+      - id: 11274100
+        description: 2741 Stabilizer position indicating system
+      - id: 11274200
+        description: 2742 Horizontal stabilizer actuator
+    - id: 11275000
+      description: 2750 Trailing edge flap control system
+      children:
+      - id: 11275100
+        description: 2751 Trailing edge flap position
+      - id: 11275200
+        description: 2752 Trailing edge flap actuator
+    - id: 11276000
+      description: 2760 Drag control system
+      children:
+      - id: 11276100
+        description: 2761 Drag control actuator
+      - id: 11276200
+        description: 2762 Spoiler system
+    - id: 11277000
+      description: 2770 Gust lock and damper system
+    - id: 11278000
+      description: 2780 Lift Augmenting
+      children:
+      - id: 11278100
+        description: 2781 Leading edge flap position
+      - id: 11278200
+        description: 2782 Leading edge flap actuator
+    - id: 11279700
+      description: 2797 Flight Control System Wiring
+  - id: 11280000
+    description: 2800 Aircraft fuel system
+    children:
+    - id: 11280506
+      description: Fuel
+    - id: 11280510
+      description: Fuel anti-ice additive
+    - id: 11281000
+      description: 2810 Fuel storage system
+      children:
+      - id: 11281001
+        description: Fuel tank
+      - id: 11281002
+        description: Fuel system vent
+      - id: 11281003
+        description: Fuel tank cap
+      - id: 11281007
+        description: Fuel crossfeed
+      - id: 11281009
+        description: Fuel tank drain
+      - id: 11281010
+        description: Fuel filter/strainer
+    - id: 11282000
+      description: 2820 Fuel distribution system
+      children:
+      - id: 11282002
+        description: Fuel distribution pipe
+      - id: 11282010
+        description: Fuel drain
+      - id: 11282011
+        description: Fuel system water drain
+      - id: 11282100
+        description: 2821 Fuel filter/strainer
+        children:
+        - id: 11282101
+          description: Fuel filter/screen
+        - id: 11282102
+          description: Fuel filter indication
+      - id: 11282200
+        description: 2822 Fuel pumps
+        children:
+        - id: 11282201
+          description: Fuel boost pump
+        - id: 11282202
+          description: Fuel trim pump
+      - id: 11282300
+        description: 2823 Fuel select/shutoff valve
+      - id: 11282400
+        description: 2824 Fuel transfer valve
+    - id: 11283000
+      description: 2830 Fuel dump system
+    - id: 11284000
+      description: 2840 Fuel indicating system
+      children:
+      - id: 11284100
+        description: 2841 Fuel quantity indicator
+      - id: 11284200
+        description: 2842 Fuel quantity sensor
+      - id: 11284300
+        description: 2843 Fuel temperature indicating
+      - id: 11284400
+        description: 2844 Fuel pressure indicator
+    - id: 11289700
+      description: 2897 Fuel System Wiring
+  - id: 11290000
+    description: 2900 Hydraulic power system
+    children:
+    - id: 11291000
+      description: 2910 Hydraulic main system
+      children:
+      - id: 11291002
+        description: 2912 Main system filter
+      - id: 11291004
+        description: Hydraulic main system line/fitting
+      - id: 11291005
+        description: Hydraulic system valve
+      - id: 11291045
+        description: Hydraulic system seal
+      - id: 11291047
+        description: Hydraulic system by-pass valve
+      - id: 11291100
+        description: 2911 Power accumulator, main system
+      - id: 11291300
+        description: 2913 Electric/engine driven pump
+      - id: 11291400
+        description: 2914 Hand pump, main system
+      - id: 11291500
+        description: 2915 Pressure relief valve- main system
+      - id: 11291600
+        description: 2916 Reservoir-main
+      - id: 11291700
+        description: 2917 Pressure regulator system
+        children:
+        - id: 11291701
+          description: Pressure regulator, main system
+    - id: 11291008
+      description: Fluid
+    - id: 11292000
+      description: 2920 Hydraulic auxiliary system
+      children:
+      - id: 11292100
+        description: 2921 Accumulator, auxiliary
+      - id: 11292200
+        description: 2922 Filter, auxiliary
+      - id: 11292300
+        description: 2923 Pump, auxiliary
+      - id: 11292400
+        description: 2924 Hand pump, auxiliary
+      - id: 11292500
+        description: 2925 Pressure relief- auxiliary
+      - id: 11292600
+        description: 2926 Reservoir, auxiliary
+      - id: 11292700
+        description: 2927 Pressure regulator, auxiliary
+      - id: 11292800
+        description: 2928 Ram air turbine
+    - id: 11293000
+      description: 2930 Indicating system
+      children:
+      - id: 11293100
+        description: 2931 Pressure indicator
+      - id: 11293200
+        description: 2932 Pressure sensor
+      - id: 11293300
+        description: 2933 Hydraulic System-quantity indicator
+      - id: 11293400
+        description: 2934 Hydraulic system-quantity sensor
+    - id: 11299700
+      description: 2997 Hydraulic Power System Wiring
+  - id: 11300000
+    description: 3000 Ice/rain protection sys
+    children:
+    - id: 11300500
+      description: De-icing fluid
+    - id: 11301000
+      description: 3010 Aerofoil anti/de-ice
+    - id: 11302000
+      description: 3020 Air intake anti/de-ice
+    - id: 11303000
+      description: 3030 Pitot/static anti-ice
+    - id: 11304000
+      description: 3040 Windshield/door rain/ice removal
+      children:
+      - id: 11304100
+        description: 3041 Rain repellent system
+      - id: 11304200
+        description: 3042 Windshield washer system
+      - id: 11304300
+        description: 3043 Windshield wiper system
+    - id: 11305000
+      description: 3050 Antenna/radome anti-ice/de-ice
+    - id: 11306000
+      description: 3060 Propeller/rotor anti-ice/de-ice
+    - id: 11307000
+      description: 3070 Water line anti-ice system
+    - id: 11308000
+      description: 3080 Ice detection system
+    - id: 11309000
+      description: 3090 Ice protection indication
+    - id: 11309700
+      description: 3097 Ice/Rain Protection System Wiring
+  - id: 11310000
+    description: 3100 Indicating/recording system
+    children:
+    - id: 11311000
+      description: 3110 Instrument & Control panels
+    - id: 11312000
+      description: 3120 Independent instruments
+    - id: 11313000
+      description: 3130 Flight recording
+      children:
+      - id: 11313001
+        description: Fligh Data recorder
+      - id: 11313010
+        description: Quick access recorder
+      - id: 100000180
+        description: HUMS
+    - id: 11314000
+      description: 3140 Central computers
+      children:
+      - id: 100000196
+        description: Weight-Balance System
+    - id: 11315000
+      description: 3150 Central warning system
+      children:
+      - id: 100000185
+        description: Take-off configuration warning system
+      - id: 100000246
+        description: Flap configuration warning system
+      - id: 100000247
+        description: Gear configuration warning system
+      - id: 100000248
+        description: Other configuration warning system
+      - id: 100000249
+        description: Speedbrake configuration warning system
+      - id: 100000250
+        description: Trim configuration warning system
+    - id: 11316000
+      description: 3160 Central display system
+    - id: 11317000
+      description: 3170 Automatic data report system
+    - id: 11319700
+      description: 3197 Instrument System Wiring
+  - id: 11320000
+    description: 3200 Landing gear system
+    children:
+    - id: 11320100
+      description: 3201 Landing fairing
+    - id: 11321000
+      description: 3210 Main landing gear
+      children:
+      - id: 11321100
+        description: 3211 Main attachment section
+      - id: 11321200
+        description: 3212 Emergency flotation system
+      - id: 11321300
+        description: 3213 Main strut/axle/truck
+    - id: 11322000
+      description: 3220 Nose/tail landing gear
+      children:
+      - id: 11322100
+        description: 3221 Nose/tail gear attach section
+      - id: 11322200
+        description: 3222 Nose/tail gear strut/axle
+    - id: 11323000
+      description: 3230 Retract/extension system
+      children:
+      - id: 11323001
+        description: Up lock
+      - id: 11323002
+        description: Down lock
+      - id: 11323021
+        description: Emergency extension system
+      - id: 11323100
+        description: 3231 Landing gear door retraction section
+      - id: 11323200
+        description: 3232 Door actuator
+      - id: 11323300
+        description: 3233 Landing gear actuator
+      - id: 11323400
+        description: 3234 Landing gear selector
+    - id: 11324000
+      description: 3240 Wheels and Brakes
+      children:
+      - id: 11324100
+        description: 3241 Brake anti-skid section
+      - id: 11324200
+        description: 3242 Landing gear brake
+        children:
+        - id: 11324211
+          description: Parking brake system
+        - id: 11324214
+          description: Emergency brake system
+        - id: 100000245
+          description: Auto brake system
+      - id: 11324300
+        description: 3243 Master cylinder/brake valve
+      - id: 11324400
+        description: 3244 Landing gear tyres
+        children:
+        - id: 11324401
+          description: Main tyre
+        - id: 11324402
+          description: Nose tyre
+        - id: 100000200
+          description: Tail landing gear tyre
+        - id: 100000201
+          description: Tyre pressure indications
+        - id: 100000202
+          description: Main tyre pressure
+        - id: 100000203
+          description: Nose tyre pressure
+      - id: 11324600
+        description: 3246 Wheel/ski/float
+        children:
+        - id: 11324601
+          description: Main wheel
+        - id: 11324602
+          description: Nose wheel
+        - id: 11324603
+          description: Tail wheel
+        - id: 11324604
+          description: Float
+        - id: 11324606
+          description: Ski
+        - id: 100000198
+          description: Main wheel bearing
+        - id: 100000199
+          description: Nose wheel bearing
+      - id: 100000017
+        description: 3245 Tyre tube
+    - id: 11325000
+      description: 3250 Steering system
+      children:
+      - id: 11325100
+        description: 3251 Steering unit
+      - id: 11325200
+        description: 3252 Shimmy damper
+    - id: 11326000
+      description: 3260 Landing gear position/warning
+      children:
+      - id: 11323004
+        description: Weight-on-wheels switch
+      - id: 11326001
+        description: Brake temperature indication system
+    - id: 11327000
+      description: 3270 Auxiliary landing gear
+      children:
+      - id: 11327001
+        description: Landing gear skid
+      - id: 11327002
+        description: Helicopter emergency floatation gear/floats
+    - id: 11329700
+      description: 3297 Landing Gear System Wiring
+  - id: 11330000
+    description: 3300 Lighting system
+    children:
+    - id: 11331000
+      description: 3310 Flight compartment lighting
+    - id: 11332000
+      description: 3320 Passenger compartment lighting
+      children:
+      - id: 11332001
+        description: Seat belt sign
+      - id: 100000197
+        description: Ballast Resistor
+    - id: 11333000
+      description: 3330 Cargo/service compartment lighting
+    - id: 11334000
+      description: 3340 Exterior lighting
+      children:
+      - id: 11334001
+        description: Navigation light
+      - id: 11334002
+        description: Landing light
+      - id: 11334003
+        description: Taxiing light
+      - id: 11334004
+        description: Ice inspection light
+      - id: 11334006
+        description: Anti-collision light
+      - id: 11334007
+        description: Strobe light
+      - id: 11334011
+        description: Aircraft logo light
+    - id: 11335000
+      description: 3350 Emergency lighting
+    - id: 11339700
+      description: 3397 Lighting System Wiring
+  - id: 11340000
+    description: 3400 Navigation system
+    children:
+    - id: 11341000
+      description: 3410 Environment data system
+      children:
+      - id: 11341100
+        description: 3411 Pitot/static system
+        children:
+        - id: 100000204
+          description: Stand-by altimeter
+      - id: 11341200
+        description: 3412 OAT indicator/sensor
+      - id: 11341300
+        description: 3413 Rate of climb indication
+        children:
+        - id: 11341301
+          description: Rate of climb indicator
+      - id: 11341400
+        description: 3414 Airspeed/Mach indication
+        children:
+        - id: 11341401
+          description: Airspeed/Mach indicator
+        - id: 11341402
+          description: Standby airspeed indicator
+      - id: 11341500
+        description: 3415 High speed warning system
+      - id: 11341600
+        description: 3416 Altimeter/encoder
+        children:
+        - id: 11341601
+          description: Altimeter
+        - id: 11341605
+          description: Altitude alert
+      - id: 11341700
+        description: 3417 Air data computer
+      - id: 11341800
+        description: 3418 Stall warning system
+    - id: 11342000
+      description: 3420 Attitude and direction data
+      children:
+      - id: 11342100
+        description: 3421 Attitude gyro system
+        children:
+        - id: 11342101
+          description: Attitude indicator/horizon/ADI
+        - id: 11342102
+          description: Attitude gyro
+      - id: 11342200
+        description: 3422 Directional gyro and indicating system
+        children:
+        - id: 11342201
+          description: Compass rose
+        - id: 100000205
+          description: Stand-by compass
+      - id: 11342300
+        description: 3423 Magnetic compass
+      - id: 11342400
+        description: 3424 Turn and bank/rate of turn
+      - id: 11342500
+        description: 3425 Integrated flight director
+    - id: 11343000
+      description: 3430 Landing and taxi aids
+      children:
+      - id: 11343100
+        description: 3431 Localizer/VOR system
+      - id: 11343200
+        description: 3432 Glide slope system
+      - id: 11343300
+        description: 3433 Microwave landing system
+      - id: 11343400
+        description: 3434 Marker beacon system
+      - id: 11343500
+        description: 3435 Head up display system
+      - id: 11343600
+        description: 3436 Wind shear detection system
+      - id: 100000269
+        description: Enhanced Vision Systems (EVS)
+    - id: 11344000
+      description: 3440 Independent positioning
+      children:
+      - id: 11344100
+        description: 3441 Inertial guidance system
+      - id: 11344200
+        description: 3442 Weather radar system
+      - id: 11344300
+        description: 3443 Doppler system
+      - id: 11344400
+        description: 3444 GPWS/TAWS
+        children:
+        - id: 11344401
+          description: Radio altimeter
+      - id: 11344500
+        description: 3445 TCAS/ACAS
+      - id: 11344600
+        description: 3446 Non-radar weather system
+    - id: 11345000
+      description: 3450 Dependent positioning system
+      children:
+      - id: 11345100
+        description: 3451 DME/TACAN
+      - id: 11345200
+        description: 3452 ATC transponder system
+      - id: 11345300
+        description: 3453 Loran
+      - id: 11345400
+        description: 3454 VOR system
+        children:
+        - id: 11345401
+          description: ILS/VOR receivers
+      - id: 11345500
+        description: 3455 ADF system
+      - id: 11345600
+        description: 3456 Omega navigation system
+      - id: 11345700
+        description: 3457 Global positioning system
+    - id: 11346000
+      description: 3460 Flight management computing system (FMS)
+      children:
+      - id: 11346001
+        description: Position computing system
+    - id: 11347000
+      description: 3470 Other navigation system
+    - id: 11349700
+      description: 3497 Navigation System Wiring
+  - id: 11350000
+    description: 3500 Oxygen system
+    children:
+    - id: 11351000
+      description: 3510 Crew oxygen system
+    - id: 11352000
+      description: 3520 Passenger oxygen system
+    - id: 11353000
+      description: 3530 Portable oxygen system
+    - id: 11359700
+      description: 3597 Oxygen System Wiring
+  - id: 11360000
+    description: 3600 Pneumatic system
+    children:
+    - id: 11361000
+      description: 3610 Distribution system
+    - id: 11362000
+      description: 3620 Indicating system
+    - id: 11369700
+      description: 3697 Pneumatic System Wiring
+  - id: 11370000
+    description: 3700 Vacuum system
+    children:
+    - id: 11371000
+      description: 3710 Vacuum distribution system
+      children:
+      - id: 11370500
+        description: Vacuum pump
+    - id: 11372000
+      description: 3720 Vacuum indicating system
+    - id: 11379700
+      description: 3797 Vacuum System Wiring
+  - id: 11380000
+    description: 3800 Water and waste system
+    children:
+    - id: 11381000
+      description: 3810 Potable water system
+    - id: 11382000
+      description: 3820 Wash water system
+    - id: 11383000
+      description: 3830 Waste disposal system
+    - id: 11384000
+      description: 3840 Air supply water pressure
+    - id: 11389700
+      description: 3897 Water/Waste System Wiring
+    - id: 100000206
+      description: 3850 Water systems indications
+  - id: 11410000
+    description: 4100 Water ballast
+    children:
+    - id: 11411000
+      description: 4110 Water ballast storage
+    - id: 11412000
+      description: 4120 Water ballast dump system
+    - id: 11413000
+      description: 4130 Water ballast indicating system
+    - id: 11419700
+      description: 4197 Water ballast wiring
+  - id: 11420000
+    description: 4200 Integrated modular avionics
+    children:
+    - id: 100000226
+      description: 4210 Shared Avionic Resources
+    - id: 100000227
+      description: 4220 Core System
+    - id: 100000228
+      description: 4230 Communication Network
+    - id: 100000229
+      description: 4240 Remote Shared Resources
+  - id: 11440000
+    description: 4400 Cabin systems
+    children:
+    - id: 11441000
+      description: 4410 Cabin core system
+    - id: 11442000
+      description: 4420 In-flight entertain system
+    - id: 11443000
+      description: 4430 Passenger address and entertainment system
+      children:
+      - id: 11443001
+        description: Cabin address system
+    - id: 11444000
+      description: 4440 Cabin mass memory system
+    - id: 11445000
+      description: 4450 Cabin monitoring system
+    - id: 11446000
+      description: 4460 Miscellaneous cabin system
+    - id: 11449700
+      description: 4497 Cabin systems wiring
+  - id: 11450000
+    description: 4500 Central maintenance computer
+    children:
+    - id: 11459700
+      description: 4597 Central Maintenance System Wiring
+  - id: 11460000
+    description: 4600 Information system
+    children:
+    - id: 11461000
+      description: 4610 Aircraft general
+    - id: 11462000
+      description: 4620 Flight deck
+      children:
+      - id: 100000263
+        description: EFB - Class 1
+      - id: 100000264
+        description: EFB - Class 2
+      - id: 100000265
+        description: EFB - Class 3
+      - id: 100000266
+        description: E-Charts
+    - id: 11463000
+      description: 4630 Maintenance
+    - id: 11464000
+      description: 4640 Passenger cabin
+    - id: 11465000
+      description: 4650 Miscellaneous
+  - id: 11470000
+    description: 4700 Inert gas system
+    children:
+    - id: 11471000
+      description: 4710 Inert gas generation/storage
+    - id: 11472000
+      description: 4720 Inert gas distribution system
+    - id: 11473000
+      description: 4730 Inert gas control system
+    - id: 11474000
+      description: 4740 Inert gas indicating system
+  - id: 11490000
+    description: 4900 Airborne APU system
+    children:
+    - id: 11491000
+      description: 4910 APU cowling/containment
+    - id: 11492000
+      description: 4920 APU core engine
+    - id: 11493000
+      description: 4930 APU fuel and control
+    - id: 11494000
+      description: 4940 APU start/ignition system
+    - id: 11495000
+      description: 4950 APU bleed air system
+    - id: 11496000
+      description: 4960 APU controls
+    - id: 11497000
+      description: 4970 APU indicating system
+    - id: 11498000
+      description: 4980 APU exhaust system
+    - id: 11499000
+      description: 4990 APU oil system
+    - id: 11499700
+      description: 4997 APU System Wiring
+  - id: 11500000
+    description: 5000 Cargo and accessory compartments
+    children:
+    - id: 11255001
+      description: Cargo hold-cargo
+    - id: 11255003
+      description: Cargo hold baggage
+    - id: 11255006
+      description: External load
+    - id: 11501000
+      description: 5010 Cargo compartments
+      children:
+      - id: 11501100
+        description: 5011 Agricultural spray system
+        children:
+        - id: 11251201
+          description: Spray boom
+        - id: 11251202
+          description: Emergency jettison system
+    - id: 11502000
+      description: 5020 Cargo loading system
+      children:
+      - id: 11255007
+        description: Sling cable/wire/rope
+      - id: 11502002
+        description: Cargo restraint/tie down
+      - id: 11502007
+        description: Helicopter cargo winch
+      - id: 11502008
+        description: Cargo hook/strop
+      - id: 100000207
+        description: Cargo pallet rails
+      - id: 100000208
+        description: Cargo pallet locks
+      - id: 100000209
+        description: Personnel carrying device / harness
+    - id: 11503000
+      description: 5030 Cargo related system
+    - id: 11504000
+      description: 5040 Not used
+    - id: 11505000
+      description: 5050 Accessory compartments
+    - id: 11506000
+      description: 5060 Compartment insulation
+    - id: 11509700
+      description: 5097 Cargo and accessory compartments wiring
+  - id: 11510000
+    description: 5100 STANDARD PRACTICES AND STRUCTURES - GENERAL
+    children:
+    - id: 11510100
+      description: 5101 Aircraft structures
+    - id: 11510200
+      description: 5102 Balloon/dirigible components
+      children:
+      - id: 11510201
+        description: Basket
+      - id: 11510202
+        description: Tether lines
+      - id: 11510203
+        description: Envelope
+      - id: 11510204
+        description: Ballast
+      - id: 11510205
+        description: Skirt
+      - id: 11510206
+        description: Skirt panel
+      - id: 11510207
+        description: Gores
+      - id: 11510208
+        description: Parachute valve
+      - id: 11510209
+        description: Parachute valve cord
+      - id: 11510210
+        description: Gas storage
+      - id: 11510211
+        description: Gas pipes/lines/hoses
+      - id: 11510212
+        description: Gas burner
+      - id: 11510213
+        description: Gas valve
+      - id: 11510214
+        description: Pilot light
+      - id: 100000210
+        description: Envelope rip line
+      - id: 100000211
+        description: Suspension cables
+    - id: 100000230
+      description: 5110 Investigation, Cleanup and Aerodynamic Smoothness
+    - id: 100000231
+      description: 5120 Processes
+    - id: 100000232
+      description: 5130 Materials
+    - id: 100000233
+      description: 5140 Fasteners
+    - id: 100000234
+      description: 5150 Support of Airplane for Repair and Alignment Check Procedures
+    - id: 100000235
+      description: 5160 Control-Surface Balancing
+    - id: 100000236
+      description: 5170 Repairs
+    - id: 100000237
+      description: 5180 Electrical Bonding
+  - id: 11520000
+    description: 5200 Fuselage doors
+    children:
+    - id: 11521000
+      description: 5210 Passenger/crew doors
+      children:
+      - id: 11521001
+        description: Passenger door
+      - id: 11521002
+        description: Crew door
+      - id: 100000259
+        description: Door power assist
+    - id: 11522000
+      description: 5220 Emergency exits
+    - id: 11523000
+      description: 5230 Cargo/baggage
+    - id: 11524000
+      description: 5240 Service doors
+      children:
+      - id: 11524100
+        description: 5241 Galley
+      - id: 11524200
+        description: 5242 Electronic compartment
+      - id: 11524300
+        description: 5243 Hydraulic compartment
+      - id: 11524400
+        description: 5244 Accessory compartment
+      - id: 11524500
+        description: 5245 Air conditioning
+      - id: 11524600
+        description: 5246 Fluid service doors
+      - id: 11524700
+        description: 5247 APU door
+      - id: 11524800
+        description: 5248 Tail cone door
+    - id: 11525000
+      description: 5250 Fixed inner doors
+    - id: 11526000
+      description: 5260 Entrance stairs
+    - id: 11527000
+      description: 5270 Door warning system
+    - id: 11528000
+      description: 5280 Landing gear doors
+      children:
+      - id: 11528001
+        description: Main landing gear door
+      - id: 11528002
+        description: Nose landing gear door
+    - id: 100000018
+      description: 5297 Door system wiring
+  - id: 11530000
+    description: 5300 Fuselage structure general
+    children:
+    - id: 11530100
+      description: 5301 Aerial tow equipment
+      children:
+      - id: 11530101
+        description: Tow release mechanism
+    - id: 11530200
+      description: 5302 Rotorcraft tail boom
+    - id: 11531000
+      description: 5310 Main structure
+      children:
+      - id: 11531100
+        description: 5311 Main frames
+      - id: 11531200
+        description: 5312 Main bulkheads
+      - id: 11531300
+        description: 5313 Main longeron/stringer
+      - id: 11531400
+        description: 5314 Main keel
+      - id: 11531500
+        description: 5315 Main floor beam
+    - id: 11532000
+      description: 5320 Miscellaneous structure
+      children:
+      - id: 11532100
+        description: 5321 Floor panel
+      - id: 11532200
+        description: 5322 Internal mounting
+      - id: 11532300
+        description: 5323 Internal stairs
+      - id: 11532400
+        description: 5324 Fixed partitions
+    - id: 11533000
+      description: 5330 Plate/skin
+      children:
+      - id: 11533007
+        description: Fuselage panel
+    - id: 11534000
+      description: 5340 Fuselage attachment
+      children:
+      - id: 11534100
+        description: 5341 Wing attachment fittings
+      - id: 11534200
+        description: 5342 Stabilizer attachment
+      - id: 11534300
+        description: 5343 Landing gear attachment
+      - id: 11534400
+        description: 5344 Door attachment/hinge
+      - id: 11534500
+        description: 5345 Equipment attachment
+      - id: 11534600
+        description: 5346 Powerplant attachment
+      - id: 11534700
+        description: 5347 Seat/cargo attachment
+    - id: 11535000
+      description: 5350 Fuselage fairings
+      children:
+      - id: 11535001
+        description: Nose cone
+      - id: 11535002
+        description: Tail cone
+      - id: 100000179
+        description: Radome
+  - id: 11540000
+    description: 5400 Nacelle/pylon structure
+    children:
+    - id: 11541000
+      description: 5410 Main frame
+      children:
+      - id: 11541100
+        description: 5411 Frame/spar/rib
+      - id: 11541200
+        description: 5412 Bulkhead/firewall
+      - id: 11541300
+        description: 5413 Longeron/stringers
+      - id: 11541400
+        description: 5414 Plate skin
+      - id: 11541500
+        description: 5415 Attachment fitting
+      - id: 11541600
+        description: 5416 Fairing
+    - id: 11542000
+      description: 5420 Nacelle/Pylon, Miscellaneous Structure
+    - id: 11549700
+      description: 5497 Nacelle/Pylon, System Wiring
+  - id: 11550000
+    description: 5500 Empennage structure
+    children:
+    - id: 11551000
+      description: 5510 Horizontal stabilizer structure
+      children:
+      - id: 11551100
+        description: 5511 Spar/ribs-horizontal stabilizer
+      - id: 11551200
+        description: 5512 Skins-horizontal stabilizer
+      - id: 11551300
+        description: 5513 Horizontal stabilizer tab
+    - id: 11552000
+      description: 5520 Elevator structure
+      children:
+      - id: 11552100
+        description: 5521 Spars/ribs-elevator
+      - id: 11552200
+        description: 5522 Plates/skins-elevator
+      - id: 11552300
+        description: 5523 Elevator tab structure
+    - id: 11553000
+      description: 5530 Vertical stabilizer
+      children:
+      - id: 11553100
+        description: 5531 Spars/ribs-vertical stabilizer
+      - id: 11553200
+        description: 5532 Skins-vertical stabilizer
+      - id: 11553300
+        description: 5533 Ventral structure
+    - id: 11554000
+      description: 5540 Rudder structure
+      children:
+      - id: 11554100
+        description: 5541 Spars/ribs-rudder
+      - id: 11554200
+        description: 5542 Plates/skins-rudder
+      - id: 11554300
+        description: 5543 Rudder tab structure
+    - id: 11555000
+      description: 5550 Empennage attachment
+      children:
+      - id: 11555100
+        description: 5551 Horizon stabilizer attachment
+      - id: 11555200
+        description: 5552 Elevator/tab attachment
+      - id: 11555300
+        description: 5553 Vertical stabilizer fitting
+      - id: 11555400
+        description: 5554 Rudder attachment fitting
+    - id: 11556000
+      description: 5560 Stabilizer fairing
+    - id: 11557000
+      description: 5570 Canard
+    - id: 11559700
+      description: 5597 Stabilizer System Wiring
+  - id: 11560000
+    description: 5600 Window/windshield system
+    children:
+    - id: 11561000
+      description: 5610 Flight compartment window
+      children:
+      - id: 11561007
+        description: Canopy
+      - id: 100000212
+        description: Flight compartment window frame
+      - id: 100000213
+        description: Flight compartment window inner pane
+      - id: 100000214
+        description: Flight compartment window outer pane
+      - id: 100000216
+        description: Canopy jettison system
+    - id: 11562000
+      description: 5620 Passenger compartment window
+    - id: 11563000
+      description: 5630 Door window
+    - id: 11564000
+      description: 5640 Inspection and observation window
+    - id: 11569700
+      description: 5697 Window System Wiring
+  - id: 11570000
+    description: 5700 Wing structure
+    children:
+    - id: 11571000
+      description: 5710 Wing main frame structure
+      children:
+      - id: 11571009
+        description: Bracing wire
+      - id: 11571010
+        description: Fairing
+      - id: 11571100
+        description: 5711 Wing spar
+        children:
+        - id: 11571101
+          description: Front spar
+        - id: 11571102
+          description: Rear spar
+        - id: 11571103
+          description: Centre spar
+        - id: 11571104
+          description: Spar
+        - id: 11571105
+          description: Strut
+      - id: 11571200
+        description: 5712 Ribs/bulkheads
+      - id: 11571300
+        description: 5713 Longeron/stringer
+      - id: 11571400
+        description: 5714 Centre box
+    - id: 11572000
+      description: 5720 Miscellaneous structure
+      children:
+      - id: 11572001
+        description: Leading edge
+      - id: 11572002
+        description: Trailing edge
+      - id: 11572003
+        description: Wingtip
+      - id: 11572005
+        description: Winglet
+    - id: 11573000
+      description: 5730 Plates/skins
+    - id: 11574000
+      description: 5740 Attachment fitting
+      children:
+      - id: 11574100
+        description: 5741 Wing fuselage attachment
+      - id: 11574200
+        description: 5742 Nacelle/pylon attachment
+      - id: 11574300
+        description: 5743 Wing landing gear attachment
+      - id: 11574400
+        description: 5744 Wing control surface attachment
+    - id: 11575000
+      description: 5750 Wing flight control surface
+      children:
+      - id: 11575300
+        description: 5753 Trailing edge flap
+      - id: 11575400
+        description: 5754 Leading edge devices
+        children:
+        - id: 11575401
+          description: Leading edge flap
+        - id: 11575402
+          description: Leading edge slat
+        - id: 11575406
+          description: Flap vane
+    - id: 11576000
+      description: 5760 Ailerons and Elevons
+      children:
+      - id: 11576100
+        description: 5761 Aileron structure
+      - id: 11576200
+        description: 5762 Aileron tab structure
+    - id: 11577000
+      description: 5770 Spoiler structure
+      children:
+      - id: 11577011
+        description: Ground spoiler
+    - id: 11579000
+      description: 5790 Wing folding system
+      children:
+      - id: 11579700
+        description: 5797 Wing systems wiring
+    - id: 100000019
+      description: 5780 not assigned
+  - id: 11610000
+    description: 6100 Propeller system
+    children:
+    - id: 11611000
+      description: 6110 Propeller assembly
+      children:
+      - id: 11611100
+        description: 6111 Blade section
+        children:
+        - id: 11611101
+          description: Blade
+        - id: 11611102
+          description: Blade bearing
+      - id: 11611200
+        description: 6112 De-ice boot
+      - id: 11611300
+        description: 6113 Spinner section
+      - id: 11611400
+        description: 6114 Hub section
+        children:
+        - id: 11611403
+          description: Propeller hub bolt
+    - id: 11612000
+      description: 6120 Propeller control system
+      children:
+      - id: 11612001
+        description: Pitch control unit/CSU
+      - id: 11612008
+        description: Pitch change mechanism
+      - id: 11612009
+        description: Fine pitch lock
+      - id: 11612100
+        description: 6121 Synchronizer section
+      - id: 11612200
+        description: 6122 Governor
+      - id: 11612300
+        description: 6123 Feather/reversing
+        children:
+        - id: 11612307
+          description: Autofeather
+        - id: 11612309
+          description: Feather motor
+        - id: 11612310
+          description: Reversing
+    - id: 11613000
+      description: 6130 Propeller braking
+    - id: 11614000
+      description: 6140 Propeller indicating system
+      children:
+      - id: 11614001
+        description: Pitch indication
+    - id: 11615000
+      description: 6150 Propulsor Duct
+    - id: 11619700
+      description: 6197 Propeller/Propulsor System Wiring
+  - id: 11620000
+    description: 6200 Rotorcraft main rotor system
+    children:
+    - id: 11621000
+      description: 6210 Main rotor blades
+      children:
+      - id: 11621004
+        description: Main rotor blade
+    - id: 11622000
+      description: 6220 Main rotor head
+      children:
+      - id: 11622003
+        description: Tracking
+      - id: 11622007
+        description: Damper
+      - id: 11622008
+        description: Trunnion
+      - id: 11622009
+        description: Stabilizer bar
+      - id: 11622010
+        description: Main rotor hub
+    - id: 11623000
+      description: 6230 Mast/swashplate
+      children:
+      - id: 11623005
+        description: Main rotor bearing
+      - id: 11623006
+        description: Main rotor spindle
+    - id: 11624000
+      description: 6240 Main rotor indicating system
+      children:
+      - id: 11624001
+        description: Blade failure indication
+      - id: 11624002
+        description: RPM indication
+    - id: 11629700
+      description: 6297 Main Rotor System Wiring
+  - id: 11630000
+    description: 6300 Main rotor drive system
+    children:
+    - id: 11631000
+      description: 6310 Engine/transmission coupling
+      children:
+      - id: 11631001
+        description: Helicopter gearbox drive shaft
+      - id: 11631002
+        description: Main rotor gearbox belt drive
+      - id: 11631003
+        description: Main rotor drive clutch
+      - id: 11631004
+        description: Main rotor drive freewheel
+      - id: 11631005
+        description: Main rotor accessory drive
+      - id: 11631006
+        description: Main rotor drive bearing
+    - id: 11632000
+      description: 6320 Gearbox
+      children:
+      - id: 11632100
+        description: 6321 Main rotor brake
+      - id: 11632200
+        description: 6322 Cooling fan system
+    - id: 11633000
+      description: 6330 Transmission mount
+    - id: 11634000
+      description: 6340 Rotor drive indicating system
+      children:
+      - id: 11634001
+        description: Chip detector indicator
+      - id: 11634002
+        description: Gearbox failure
+    - id: 11639700
+      description: 6397 Main Rotor Drive System Wiring
+  - id: 11640000
+    description: 6400 Tail rotor system
+    children:
+    - id: 11641000
+      description: 6410 Tail rotor blade
+    - id: 11642000
+      description: 6420 Tail rotor head
+      children:
+      - id: 11642003
+        description: Tail rotor head bearing
+      - id: 11642015
+        description: Tail rotor damper
+      - id: 11642016
+        description: Tail rotor mixing unit
+      - id: 11642019
+        description: Tail rotor hydraulic actuator
+    - id: 11643000
+      description: 6430 not assigned
+    - id: 11644000
+      description: 6440 Tail rotor indicating system
+    - id: 11649700
+      description: 6497 Tail Rotor System Wiring
+  - id: 11650000
+    description: 6500 Tail rotor drive system
+    children:
+    - id: 11651000
+      description: 6510 Tail rotor drive shaft
+      children:
+      - id: 11651002
+        description: Tail rotor drive bearing
+    - id: 11652000
+      description: 6520 Tail rotor gearbox
+    - id: 11653000
+      description: 6530 not used
+    - id: 11654000
+      description: 6540 Tail rotor drive indication
+    - id: 11659700
+      description: 6597 Tail Rotor Drive System Wiring
+  - id: 11660000
+    description: 6600 Folding blades/pylon
+    children:
+    - id: 11661000
+      description: 6610 Rotor blades folding
+    - id: 11662000
+      description: 6620 Tail pylon folding
+    - id: 11663000
+      description: 6630 Folding - Controls and Indicating
+  - id: 11670000
+    description: 6700 Rotorcraft flight control
+    children:
+    - id: 11671000
+      description: 6710 Main rotor control
+      children:
+      - id: 11671001
+        description: Cyclic control
+      - id: 11671002
+        description: Collective control
+      - id: 11671003
+        description: Yaw control system
+    - id: 11671100
+      description: 6711 Tilt rotor flight control
+    - id: 11672000
+      description: 6720 Anti-torque Rotor control (Yaw control)
+    - id: 11673000
+      description: 6730 Servo system
+    - id: 11679700
+      description: 6797 Rotors Flight Control System Wiring
+  - id: 11710000
+    description: 7100 Powerplant system
+    children:
+    - id: 11711000
+      description: 7110 Engine cowling system
+      children:
+      - id: 11711100
+        description: 7111 Cowl flap system
+        children:
+        - id: 11711111
+          description: Control
+      - id: 11711200
+        description: 7112 Engine air baffle section
+    - id: 11712000
+      description: 7120 Engine mount
+    - id: 11713000
+      description: 7130 Engine fire seals
+    - id: 11714000
+      description: 7140 Engine attachment
+    - id: 11715000
+      description: 7150 Engine electrical harness
+    - id: 11716000
+      description: 7160 Engine air intake system
+      children:
+      - id: 11716001
+        description: Filter
+      - id: 11716002
+        description: Induction manifold
+      - id: 11716005
+        description: Alternate air valve
+    - id: 11717000
+      description: 7170 Engine drains
+    - id: 11718000
+      description: 7180 Powerplant indications
+      children:
+      - id: 11718005
+        description: Nacelle overheat warning
+    - id: 11719700
+      description: 7197 Powerplant System Wiring
+  - id: 11720000
+    description: 7200 Turbine/turboprop engine
+    children:
+    - id: 11720200
+      description: Engine power
+    - id: 11721000
+      description: 7210 Reduction gear, shaft section
+      children:
+      - id: 11721001
+        description: Reduction gear shaft
+      - id: 11721002
+        description: Propeller shaft
+      - id: 11721003
+        description: Reduction gear bearing
+      - id: 11721004
+        description: Engine housing/casing
+    - id: 11722000
+      description: 7220 Air inlet
+    - id: 11723000
+      description: 7230 Compressor
+      children:
+      - id: 11723001
+        description: Compressor disc
+      - id: 11723002
+        description: Compressor hub
+      - id: 11723006
+        description: Compressor shaft
+      - id: 11723008
+        description: Compressor bearing
+      - id: 11723009
+        description: Compressor spacer/seal
+      - id: 11723010
+        description: Compressor blade
+      - id: 11723011
+        description: Compressor stator/vane
+      - id: 11723014
+        description: Compressor casing
+      - id: 11723017
+        description: Compressor bleed valve
+      - id: 11723018
+        description: Compressor impeller
+      - id: 11723019
+        description: Rotating guide vane
+    - id: 11724000
+      description: 7240 Turbine engine combustion
+      children:
+      - id: 11724001
+        description: Turbine engine casing
+      - id: 11724002
+        description: Flame tube liner
+      - id: 11724004
+        description: Fuel nozzle
+      - id: 11724005
+        description: Fuel manifold
+    - id: 11725000
+      description: 7250 Turbine assembly
+      children:
+      - id: 11725001
+        description: Turbine assembly casing
+      - id: 11725002
+        description: Turbine blade
+      - id: 11725003
+        description: Turbine assembly shaft
+      - id: 11725005
+        description: Turbine assembly disc
+      - id: 11725010
+        description: Turbine assembly bearing
+      - id: 11725011
+        description: Turbine assembly spacer/seal
+      - id: 11725012
+        description: Turbine assembly stator/vane
+    - id: 11726000
+      description: 7260 Accessory drive
+      children:
+      - id: 11726100
+        description: 7261 Oil system
+    - id: 11727000
+      description: 7270 By-pass section
+      children:
+      - id: 11727100
+        description: 7271 Engine fan
+        children:
+        - id: 11727101
+          description: Fan case
+        - id: 11727102
+          description: Fan blade
+        - id: 11727103
+          description: Fan disc
+        - id: 11727106
+          description: Fan bearing
+        - id: 11727108
+          description: Fan shaft
+        - id: 11727109
+          description: Fan variable blade mechanism
+    - id: 11728000
+      description: 7280 Turbine Engine Propulsor Section (Rear Mounted)
+    - id: 11729700
+      description: 7297 Turbine Engine System Wiring
+  - id: 11730000
+    description: 7300 Engine fuel and control system
+    children:
+    - id: 11731000
+      description: 7310 Engine fuel system
+      children:
+      - id: 11731001
+        description: Fuel filter (on the engine)
+      - id: 11731002
+        description: Fuel line/fitting
+      - id: 11731003
+        description: Powerplant fuel valve
+      - id: 11731100
+        description: 7311 Fuel oil cooler
+      - id: 11731200
+        description: 7312 Fuel heater
+      - id: 11731300
+        description: 7313 Fuel injection nozzle
+      - id: 11731400
+        description: 7314 Engine fuel pump
+    - id: 11732000
+      description: 7320 Fuel control system
+      children:
+      - id: 11732006
+        description: Fuel regulator
+      - id: 11732100
+        description: 7321 Fuel control-electronic
+      - id: 11732200
+        description: 7322 Fuel control-carburetor
+        children:
+        - id: 11732201
+          description: Fuel injector
+        - id: 11732203
+          description: Mixture valve
+        - id: 11732225
+          description: Carburettor heat control
+      - id: 11732300
+        description: 7323 Turbine governor
+      - id: 11732400
+        description: 7324 Fuel divider
+    - id: 11733000
+      description: 7330 Indicating system
+      children:
+      - id: 11733001
+        description: Fuel temperature indication
+      - id: 11733012
+        description: Carburetor air temperature indication
+      - id: 11733100
+        description: 7331 Flow indicating system
+        children:
+        - id: 11733101
+          description: Fuel flow sensor
+      - id: 11733200
+        description: 7332 Pressure indicating
+      - id: 11733201
+        description: 7334 Fuel press sensor
+      - id: 100000020
+        description: 7333 Fuel Flow Sensor
+    - id: 11739700
+      description: 7397 Engine Fuel System Wiring
+  - id: 11740000
+    description: 7400 Ignition system
+    children:
+    - id: 11741000
+      description: 7410 Ignition power supply
+      children:
+      - id: 11741100
+        description: 7411 Low tension coil
+      - id: 11741200
+        description: 7412 Ignition system exciter
+      - id: 11741300
+        description: 7413 Induction vibrator
+      - id: 11741400
+        description: 7414 Magneto/distributor
+    - id: 11742000
+      description: 7420 Ignition harness
+      children:
+      - id: 11742006
+        description: High tension wiring/harness
+      - id: 11742100
+        description: 7421 Spark plug/igniter
+        children:
+        - id: 11742101
+          description: Spark plug
+        - id: 11742102
+          description: Igniter plug
+    - id: 11743000
+      description: 7430 Ignition switching
+      children:
+      - id: 11743001
+        description: Ignition/magneto switch
+    - id: 11744000
+      description: 7440 Ignition indication
+    - id: 11749700
+      description: 7497 Ignition System Wiring
+    - id: 11749800
+      description: 7498 Ignition system-other
+      children:
+      - id: 11749801
+        description: Ignition system - continuous ignition
+      - id: 11749802
+        description: Ignition system - auto-relight system
+  - id: 11750000
+    description: 7500 Engine bleed air system
+    children:
+    - id: 11751000
+      description: 7510 Engine anti-icing system
+    - id: 11752000
+      description: 7520 Engine cooling system
+    - id: 11753000
+      description: 7530 Compressor bleed control
+      children:
+      - id: 11753013
+        description: Bleed air coupling
+      - id: 11753100
+        description: 7531 Compressor bleed governor
+      - id: 11753200
+        description: 7532 Compressor bleed valve
+    - id: 11754000
+      description: 7540 Bleed air indicating system
+    - id: 11759700
+      description: 7597 Engine Bleed Air System Wiring
+  - id: 11760000
+    description: 7600 Engine controls
+    children:
+    - id: 11760100
+      description: 7601 Synchronizing
+    - id: 11760200
+      description: 7602 Mixture control
+    - id: 11760300
+      description: 7603 Power lever
+    - id: 11761000
+      description: 7610 Engine power control
+      children:
+      - id: 11761002
+        description: Thrust reverser control
+      - id: 11761003
+        description: High pressure cock
+    - id: 11762000
+      description: 7620 Emergency shutdown system
+    - id: 11769700
+      description: 7697 Engine Control System Wiring
+  - id: 11770000
+    description: 7700 Engine indicating system
+    children:
+    - id: 11771000
+      description: 7710 Power indicating
+      children:
+      - id: 11771100
+        description: 7711 Pressure ratio (EPR) indicating system
+      - id: 11771200
+        description: 7712 BMEP/torque indicating system
+      - id: 11771300
+        description: 7713 Manifold pressure indicating system
+      - id: 11771400
+        description: 7714 RPM indicating system
+    - id: 11772000
+      description: 7720 Temperature indicating system
+      children:
+      - id: 11772100
+        description: 7721 Cylinder head temperature indicating system
+      - id: 11772200
+        description: 7722 EGT-TIT indicating system
+        children:
+        - id: 11772202
+          description: JPT indicator
+        - id: 11772211
+          description: TIT indicator
+    - id: 11773000
+      description: 7730 Ignition analyzer system
+      children:
+      - id: 11773100
+        description: 7731 Ignition analyzer
+      - id: 11773200
+        description: 7732 Vibration analyzer
+    - id: 11774000
+      description: 7740 Integrated instrument system
+    - id: 11779700
+      description: 7797 Engine Indicating System Wiring
+  - id: 11780000
+    description: 7800 Engine exhaust system
+    children:
+    - id: 11781000
+      description: 7810 Collector/tailpipe/nozzle
+      children:
+      - id: 11781007
+        description: Exhaust manifold
+      - id: 11781008
+        description: Exhaust cone
+      - id: 11781009
+        description: Engine exhaust pipe
+      - id: 11781010
+        description: Collector/tailpipe/nozzle
+      - id: 11781025
+        description: Engine exhaust clamp
+    - id: 11782000
+      description: 7820 Engine noise suppressor
+    - id: 11783000
+      description: 7830 Exhaust thrust reverser
+      children:
+      - id: 11783001
+        description: Fan reverser
+      - id: 11783002
+        description: Turbine reverser
+      - id: 11783003
+        description: Reverser clamshell door
+      - id: 11783004
+        description: Reverser blocker door
+      - id: 11783008
+        description: Reverser cascade
+      - id: 11783014
+        description: Hydraulic reverser
+      - id: 11783015
+        description: Pneumatic reverser
+      - id: 11783016
+        description: Electric reverser
+      - id: 11783017
+        description: Mechanical reverser
+    - id: 11784000
+      description: 7840 Supplementary Air
+    - id: 11785000
+      description: 7850 Engine exhaust system indication
+      children:
+      - id: 11785100
+        description: Reverser position indications
+    - id: 11789700
+      description: 7897 Engine Exhaust System Wiring
+  - id: 11790000
+    description: 7900 Engine oil system-airframe
+    children:
+    - id: 11790100
+      description: Lubrication oil
+    - id: 11791000
+      description: 7910 Storage-airframe
+      children:
+      - id: 11791001
+        description: Oil tank
+      - id: 11791008
+        description: Oil filler cap
+    - id: 11792000
+      description: 7920 Distribution-airframe
+      children:
+      - id: 11792001
+        description: Lubrication-line/fitting
+      - id: 11792002
+        description: Oil system seal
+      - id: 11792003
+        description: Oil filter
+      - id: 11792004
+        description: Oil system valve
+      - id: 11792005
+        description: Oil pump
+      - id: 11792100
+        description: 7921 Cooler
+      - id: 11792200
+        description: 7922 Temperature regulator
+      - id: 11792300
+        description: 7923 Shut-off valve
+    - id: 11793000
+      description: 7930 Indicating system
+      children:
+      - id: 11793004
+        description: Engine oil - chip detector
+      - id: 11793100
+        description: 7931 Pressure indication
+      - id: 11793200
+        description: 7932 Quantity indicator
+      - id: 11793300
+        description: 7933 Temperature indicator
+    - id: 11799700
+      description: 7997 Engine Oil System Wiring
+  - id: 11800000
+    description: 8000 Engine starting system
+    children:
+    - id: 11801000
+      description: 8010 Engine cranking
+      children:
+      - id: 11801100
+        description: 8011 Engine starter
+        children:
+        - id: 11801101
+          description: Electric starter
+        - id: 11801102
+          description: Air starter
+      - id: 11801200
+        description: 8012 Start controls
+    - id: 11809700
+      description: 8097 Engine Starting System Wiring
+  - id: 11810000
+    description: 8100 Reciprocating exhaust turbine system
+    children:
+    - id: 11811000
+      description: 8110 Power recovery turbine
+    - id: 11812000
+      description: 8120 Exhaust turbocharger
+      children:
+      - id: 11812002
+        description: Turbocharger - Waste gate
+      - id: 11812003
+        description: Turbocharger - Impeller
+      - id: 11812004
+        description: Turbocharger - bearing
+    - id: 11819700
+      description: 8197 Turbocharger System Wiring
+  - id: 11820000
+    description: 8200 Water injection system
+    children:
+    - id: 11821000
+      description: 8210 Water injection - Storage
+    - id: 11822000
+      description: 8220 Water Injection - Distribution
+    - id: 11823000
+      description: 8230 Water Injection - Dumping and Purging
+    - id: 11824000
+      description: 8240 Water Injection - Indicating
+    - id: 11829700
+      description: 8297 Water Injection System Wiring
+  - id: 11830000
+    description: 8300 Accessory gearboxes
+    children:
+    - id: 11831000
+      description: 8310 Accessory Gearboxes Drive Shaft Section
+    - id: 11832000
+      description: 8320 Accessory Gearboxes Gearbox Section
+    - id: 11839700
+      description: 8397 Accessory Gearbox System Wiring
+  - id: 11850000
+    description: 8500 Reciprocating engine
+    children:
+    - id: 11851000
+      description: 8510 Front section
+    - id: 11852000
+      description: 8520 Power section
+      children:
+      - id: 11852001
+        description: Crankshaft
+      - id: 11852002
+        description: Camshaft
+      - id: 11852003
+        description: Cam drive gear
+      - id: 11852004
+        description: Crankshaft bearing
+      - id: 11852006
+        description: Crankcase
+      - id: 11852010
+        description: Counterweight/vibration damper
+      - id: 11852035
+        description: Push rod
+    - id: 11853000
+      description: 8530 Cylinder section
+      children:
+      - id: 11853001
+        description: Cylinder head
+      - id: 11853002
+        description: Cylinder
+      - id: 11853003
+        description: Piston
+      - id: 11853004
+        description: Piston ring
+      - id: 11853005
+        description: Push rod
+      - id: 11853006
+        description: Connecting rod
+      - id: 11853007
+        description: Cylinder valve
+      - id: 11853009
+        description: Cooling baffle
+      - id: 11853011
+        description: Gudgeon pin
+      - id: 11853012
+        description: Rocker arm
+    - id: 11854000
+      description: 8540 Reciprocating engine rear section
+    - id: 11855000
+      description: 8550 Reciprocating engine oil system
+      children:
+      - id: 11855001
+        description: Oil filter
+      - id: 11855002
+        description: Oil pump
+    - id: 11856000
+      description: 8560 Reciprocating Engine Supercharger
+    - id: 11857000
+      description: 8570 Reciprocating Engine Liquid Cooling
+    - id: 11859700
+      description: 8597 Reciprocating Engine System Wiring
+  - id: 100000219
+    description: 0500 TIME LIMITS/MAINTENANCE CHECKS
+    children:
+    - id: 100000220
+      description: 0510 Time Limits
+    - id: 100000221
+      description: 0520 Scheduled Maintenance Checks
+    - id: 100000222
+      description: 0550 Unscheduled Maintenance checks
+  - id: 100000223
+    description: 0600 DIMENSIONS AND AREAS
+  - id: 100000224
+    description: 2000 STANDARD PRACTICES-AIRFRAME
+  - id: 100000238
+    description: 6000 STANDARD PRACTICES - PROPELLER/ROTOR
+  - id: 100000239
+    description: 7000 STANDARD PRACTICES - ENGINES
+  - id: 100000240
+    description: 8400 PROPULSION AUGMENTATION
+    children:
+    - id: 100000241
+      description: 8410 Jet Assist Takeoff
+  - id: 100000242
+    description: 9100 CHARTS
+  - id: 100000275
+    description: 9500 Aircraft Special Purpose Equipment
+    children:
+    - id: 100000276
+      description: Wirestrike Protection Systems
+      children:
+      - id: 100000277
+        description: Cable Cutters
+      - id: 100000278
+        description: Cable Deflectors
+      - id: 100000279
+        description: Wire Detection system

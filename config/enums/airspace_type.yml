@@ -1,0 +1,29 @@
+---
+attribute_id: '15'
+xml_tag: Airspace_Type
+sequence: 2
+values:
+  1: TMA
+  2: CTA
+  3: ATZ
+  4: CTR
+  5: TSA
+  6: Restricted area
+  7: Prohibited area
+  8: Danger area
+  9: CBA
+  10: CVSM
+  11: RVSM
+  12: Transitional area
+  98: Other
+  99: Unknown
+  100: Airway - ATS Route
+  101: FIR / UIR
+  102: Upper Control Area (UTA)
+  103: Lower Control Area (LTA)
+  104: FAB
+  107: Not Applicable
+  108: RMZ
+  109: TMZ
+  110: FIZ
+  111: TRA

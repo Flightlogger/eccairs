@@ -1,0 +1,14 @@
+---
+attribute_id: '594'
+xml_tag: Traffic_Info_Type
+sequence:
+values:
+  1: Visual sighting
+  2: Air-air communications
+  3: ATC (non-radar)
+  4: ATC, radar information
+  5: ACAS display
+  6: Essential local traffic information
+  7: Essential traffic information
+  97: None
+  99: Unknown

@@ -1,0 +1,9 @@
+---
+attribute_id: '316'
+xml_tag: Wave_Height
+sequence:
+values:
+  1: Less than 0.3 metre
+  2: 0.3 to 1 metre
+  3: Greater than 1 metre
+  99: Unknown

@@ -3,17 +3,7 @@
 module Eccairs
   module Attributes
     class OccurrenceStatus < Eccairs::Base::EnumAttribute
-      attribute_id 455
-      xml_tag "Occurrence_Status"
-      sequence 27
-      allowed_values(
-        VALUE_5: 5,
-        NO: 2,
-        YES: 1,
-        VALUE_6: 6,
-        VALUE_3: 3,
-        VALUE_4: 4
-      )
+      enums_from :occurrence_status
     end
   end
 end

@@ -1,0 +1,9 @@
+---
+attribute_id: '12'
+xml_tag: Report_Validity
+sequence:
+values:
+  1: Valid
+  2: Not valid
+  3: Corrupted
+  4: Not available

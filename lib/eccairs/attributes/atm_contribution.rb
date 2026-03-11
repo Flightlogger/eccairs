@@ -3,17 +3,7 @@
 module Eccairs
   module Attributes
     class AtmContribution < Eccairs::Base::EnumAttribute
-      attribute_id 428
-      xml_tag "ATM_Contribution"
-      sequence 13
-      allowed_values(
-        NO: 2,
-        VALUE_3: 3,
-        VALUE_4: 4,
-        VALUE_100: 100,
-        VALUE_101: 101,
-        UNKNOWN: 99
-      )
+      enums_from :atm_contribution
     end
   end
 end

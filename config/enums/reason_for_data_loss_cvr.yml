@@ -1,0 +1,16 @@
+---
+attribute_id: '240'
+xml_tag: Reason_For_Data_Loss_CVR
+sequence:
+values:
+  1: Fire damage
+  2: Water damage
+  3: Impact damage
+  4: CVR failure (pre-occ)
+  5: Unreadable data
+  6: Duration insufficient
+  7: None/not applicable
+  8: Bulk eraser activated
+  9: Inadequate G-switch trigger
+  98: Other
+  99: Unknown

@@ -1,0 +1,10 @@
+---
+attribute_id: '613'
+xml_tag: RA_Classification
+sequence: 8
+values:
+  1: Useful
+  2: 'False'
+  3: Phantom
+  4: Unnecessary
+  5: Unclassifiable

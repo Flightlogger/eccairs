@@ -1,0 +1,10 @@
+---
+attribute_id: '481'
+xml_tag: License_Validity
+sequence:
+values:
+  1: Valid
+  2: Not valid
+  97: Not required
+  99: Unknown
+  100: Valid with waivers

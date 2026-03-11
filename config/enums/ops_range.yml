@@ -1,0 +1,8 @@
+---
+attribute_id: '638'
+xml_tag: Ops_Range
+sequence:
+values:
+  1: Domestic
+  2: International
+  3: Unknown

@@ -1,0 +1,9 @@
+---
+attribute_id: '243'
+xml_tag: Recovery_Status
+sequence:
+values:
+  1: Complete
+  2: Partial
+  3: Not recovered
+  99: Unknown

@@ -3,10 +3,7 @@
 module Eccairs
   module Attributes
     class BankDirection < Eccairs::Base::EnumAttribute
-      attribute_id 568
-      xml_tag "Bank_Direction"
-      sequence 0
-      allowed_values [1, 2, 99]
+      enums_from :bank_direction
     end
   end
 end

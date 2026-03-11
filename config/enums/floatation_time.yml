@@ -1,0 +1,10 @@
+---
+attribute_id: '122'
+xml_tag: Floatation_Time
+sequence:
+values:
+  1: Sank immediately
+  2: Sank during evacuation
+  3: Sank after evacuation
+  4: Did not sink
+  99: Unknown

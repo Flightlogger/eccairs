@@ -1,0 +1,10 @@
+---
+attribute_id: '635'
+xml_tag: Aircraft_Damage
+sequence:
+values:
+  1: Destroyed
+  2: Substantial
+  3: Minor
+  98: None
+  99: Unknown

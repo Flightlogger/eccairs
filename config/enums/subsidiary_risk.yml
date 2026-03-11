@@ -1,0 +1,15 @@
+---
+attribute_id: '1055'
+xml_tag: Subsidiary_Risk
+sequence: 5
+values:
+  1: Other
+  2: Unnown
+  3: 2.1  Flammable Gas
+  4: 3   Flammable Liquids
+  5: 4.1  Flammable Solids Self Reactives and Desensitized Explosives
+  6: 4.2  Spontaneously Combustible Substances
+  7: 4.3  Dangerous When Wet Substances
+  8: 5.1  Oxidizing Substances
+  9: 6.1  Toxic Substances
+  10: 8  Corrosive Substances

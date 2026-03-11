@@ -3,10 +3,7 @@
 module Eccairs
   module Attributes
     class MilitaryACInvolved < Eccairs::Base::EnumAttribute
-      attribute_id 574
-      xml_tag "Military_A_C_Involved"
-      sequence 1
-      allowed_values [1, 2, 99]
+      enums_from :military_a_c_involved
     end
   end
 end

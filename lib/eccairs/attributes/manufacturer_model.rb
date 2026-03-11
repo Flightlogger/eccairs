@@ -2,10 +2,8 @@
 
 module Eccairs
   module Attributes
-    class ManufacturerModel < Eccairs::Base::StringAttribute
-      attribute_id 387
-      xml_tag "Manufacturer_Model"
-      sequence 0
+    class ManufacturerModel < Eccairs::Base::EnumAttribute
+      enums_from :manufacturer_model_387
     end
   end
 end

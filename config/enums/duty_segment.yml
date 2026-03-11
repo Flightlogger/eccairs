@@ -1,0 +1,9 @@
+---
+attribute_id: '346'
+xml_tag: Duty_Segment
+sequence:
+values:
+  1: First
+  2: Middle
+  3: Last
+  99: Unknown

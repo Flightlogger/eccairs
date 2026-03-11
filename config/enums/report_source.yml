@@ -1,0 +1,11 @@
+---
+attribute_id: '476'
+xml_tag: Report_Source
+sequence: 2
+values:
+  1: Accident/Incident investigation
+  2: Reportable incident
+  3: Voluntary occurr report
+  4: Media
+  5: Industry sources
+  6: Other

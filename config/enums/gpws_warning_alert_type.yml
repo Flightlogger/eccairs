@@ -1,0 +1,35 @@
+---
+attribute_id: '417'
+xml_tag: GPWS_Warning_Alert_Type
+sequence:
+values:
+  1: Don't sink
+  2: Sink rate
+  3: Terrain
+  4: Too low gear
+  5: Too low flaps
+  6: Too low terrain
+  7: Glide slope
+  8: Bank angle
+  9: Pull-up
+  98: Other
+  99: Unknown
+  100: Windshear
+  101: Caution terrain
+  102: V1
+  103: Engine Fail
+  104: Obstacle
+  105: Minimums
+  106: Altitude
+  107: Speed brake
+  108: Approaching minimums
+  109: Caution Windshear
+  110: Autopilot
+  111: Airspeed low
+  112: Flaps
+  113: Too high
+  114: Too fast
+  115: Unstable
+  116: Altimeter Setting
+  117: RAAS Advisories
+  118: RAAS Distance Remaining Callouts

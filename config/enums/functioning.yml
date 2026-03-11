@@ -1,0 +1,9 @@
+---
+attribute_id: '97'
+xml_tag: Functioning
+sequence:
+values:
+  1: Functioned properly
+  2: Did not function
+  3: Not activated
+  99: Unknown

@@ -1,0 +1,15 @@
+---
+attribute_id: '13'
+xml_tag: Airspace_Class
+sequence: 0
+values:
+  1: A
+  2: B
+  3: C
+  4: D
+  5: E
+  6: F
+  7: G
+  98: Other
+  99: Unknown
+  100: Not Applicable

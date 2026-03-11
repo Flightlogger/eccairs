@@ -1,0 +1,17 @@
+---
+attribute_id: '1064'
+xml_tag: Parties_Informed
+sequence: 7
+values:
+  1: State of Registry
+  2: State of Operator
+  3: State of Occurrence
+  4: Design Approval Holder
+  5: Operator
+  6: Owner
+  7: CAMO
+  8: Competent Authority
+  9: Other
+  10: Aerodrome
+  11: ANSP
+  12: Safety Investigation Authority

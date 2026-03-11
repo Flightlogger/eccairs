@@ -1,0 +1,9 @@
+---
+attribute_id: '267'
+xml_tag: Goggles_Usage
+sequence:
+values:
+  1: Used
+  2: Not used
+  3: Not provided
+  99: Unknown

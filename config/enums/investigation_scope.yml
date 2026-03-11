@@ -1,0 +1,11 @@
+---
+attribute_id: '712'
+xml_tag: Investigation_Scope
+sequence:
+values:
+  1: Full (Annex 13) type investigation
+  2: Field investigation
+  3: Desk investigation
+  4: Internal investigation
+  5: No investigation
+  6: Unknown

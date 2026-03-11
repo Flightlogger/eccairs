@@ -3,10 +3,7 @@
 module Eccairs
   module Attributes
     class ControllingAgency < Eccairs::Base::EnumAttribute
-      attribute_id 64
-      xml_tag "Controlling_Agency"
-      sequence 11
-      allowed_values [1, 2, 3, 97, 98, 99]
+      enums_from :controlling_agency
     end
   end
 end

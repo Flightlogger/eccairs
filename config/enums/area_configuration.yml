@@ -1,0 +1,10 @@
+---
+attribute_id: '3'
+xml_tag: Area_Configuration
+sequence: 2
+values:
+  1: Sloping
+  2: Pinnacle
+  3: Confined area
+  98: Other
+  99: Unknown

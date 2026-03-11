@@ -1,0 +1,15 @@
+---
+attribute_id: '124'
+xml_tag: Fuel_Source
+sequence:
+values:
+  1: Powerplant fuel
+  2: Other aircraft fluids
+  3: Oven contents
+  4: Waste receptacle
+  5: Cargo
+  6: Wheels/tyres
+  98: Other
+  99: Unknown
+  100: Dangerous goods
+  101: Baggage

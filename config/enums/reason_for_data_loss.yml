@@ -1,0 +1,12 @@
+---
+attribute_id: '684'
+xml_tag: Reason_For_Data_Loss
+sequence:
+values:
+  1: Not applicable
+  2: Failure due to occ
+  3: Failure pre-occ
+  4: Decoding document
+  5: Memory power loss
+  6: Other
+  7: Unknown

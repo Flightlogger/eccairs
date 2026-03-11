@@ -19,8 +19,8 @@ RSpec.describe Eccairs::Attributes::MassGroup do
 
   describe "initialization" do
     it "creates an instance with a value" do
-      instance = described_class.new("99")
-      expect(instance.value).to eq(99)
+      instance = described_class.new("101")
+      expect(instance.value).to eq(101)
     end
   end
 
@@ -29,7 +29,7 @@ RSpec.describe Eccairs::Attributes::MassGroup do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
         occurrence.add_aircraft do |aircraft|
-          aircraft.add_mass_group("99")
+          aircraft.add_mass_group(101)
         end
       end
 
@@ -42,7 +42,7 @@ RSpec.describe Eccairs::Attributes::MassGroup do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
         occurrence.add_aircraft do |aircraft|
-          aircraft.add_mass_group("99")
+          aircraft.add_mass_group(101)
         end
       end
 

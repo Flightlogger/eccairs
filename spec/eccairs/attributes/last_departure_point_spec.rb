@@ -12,15 +12,15 @@ RSpec.describe Eccairs::Attributes::LastDeparturePoint do
       expect(described_class.xml_tag).to eq("Last_Departure_Point")
     end
 
-    it "inherits from StringAttribute" do
-      expect(described_class.superclass).to eq(Eccairs::Base::StringAttribute)
+    it "inherits from EnumAttribute" do
+      expect(described_class.superclass).to eq(Eccairs::Base::EnumAttribute)
     end
   end
 
   describe "initialization" do
     it "creates an instance with a value" do
-      instance = described_class.new("1000")
-      expect(instance.value).to eq("1000")
+      instance = described_class.new(1000)
+      expect(instance.value).to eq(1000)
     end
   end
 
@@ -29,7 +29,7 @@ RSpec.describe Eccairs::Attributes::LastDeparturePoint do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
         occurrence.add_aircraft do |aircraft|
-          aircraft.add_last_departure_point("1000")
+          aircraft.add_last_departure_point(1000)
         end
       end
 
@@ -42,7 +42,7 @@ RSpec.describe Eccairs::Attributes::LastDeparturePoint do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
         occurrence.add_aircraft do |aircraft|
-          aircraft.add_last_departure_point("1000")
+          aircraft.add_last_departure_point(1000)
         end
       end
 

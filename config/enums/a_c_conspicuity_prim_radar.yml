@@ -1,0 +1,10 @@
+---
+attribute_id: '1061'
+xml_tag: A_C_Conspicuity_Prim_Radar
+sequence:
+values:
+  1: Clutter
+  2: Intermittent
+  3: No contact
+  4: Not applicable
+  7: Unknown

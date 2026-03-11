@@ -3,10 +3,7 @@
 module Eccairs
   module Attributes
     class RaClassification < Eccairs::Base::EnumAttribute
-      attribute_id 613
-      xml_tag "RA_Classification"
-      sequence 8
-      allowed_values [1, 2, 3, 4, 5]
+      enums_from :ra_classification
     end
   end
 end

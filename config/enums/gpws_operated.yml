@@ -1,0 +1,8 @@
+---
+attribute_id: '131'
+xml_tag: GPWS_Operated
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown

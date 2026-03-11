@@ -1,0 +1,9 @@
+---
+attribute_id: '448'
+xml_tag: Damage_Not_To_A_C
+sequence: 22
+values:
+  1: Substantial
+  2: Minor
+  97: None
+  99: Unknown

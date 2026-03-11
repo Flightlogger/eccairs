@@ -1,0 +1,156 @@
+---
+attribute_id: '792'
+xml_tag: CC_Modifier
+sequence:
+values:
+  1: Weather
+  2: Documentation and Procedures
+  3: Workspace Design and HMI
+  4: Taxi difficulties
+  5: Vectoring problems / abilities
+  6: Route / altitude deviation
+  7: Difficulty tracking aircraft / vehicles
+  8: Holding patterns
+  9: Other
+  10: Unclear
+  11: Contradictory
+  12: Ambiguous
+  13: Incorrect
+  14: Incomplete
+  15: Inaccurate
+  16: Too complex
+  17: New / recent changes
+  18: In revision
+  19: Outdated
+  20: Not available
+  21: Other
+  22: Conflicting information
+  23: Failed or broken equipment
+  24: False information
+  26: Feedback problem
+  27: High false alarm rate
+  28: Illegilble information
+  29: Inaccessible information
+  30: Incorrect information
+  31: Interference
+  32: Lack of equipment / information
+  33: Lack of coverage / range
+  34: Lack of precision
+  35: Lost information
+  36: Mode confusion
+  37: No equipment / information
+  38: Nuisance infomation
+  39: Poor design
+  40: Poor display
+  41: Poor positioning
+  42: Recently introduced equipment / information
+  43: Equipment size problem
+  44: Suppressed information
+  45: Unavailable equipment / information
+  46: Unclear equipment / infomation
+  47: Unreliable equipment / information
+  48: Untrustworthy equipment / information
+  49: Visibility of equipment / information
+  50: Other
+hierarchy:
+- id: 1
+  description: Weather
+  children:
+  - id: 4
+    description: Taxi difficulties
+  - id: 5
+    description: Vectoring problems / abilities
+  - id: 6
+    description: Route / altitude deviation
+  - id: 7
+    description: Difficulty tracking aircraft / vehicles
+  - id: 8
+    description: Holding patterns
+  - id: 9
+    description: Other
+- id: 2
+  description: Documentation and Procedures
+  children:
+  - id: 10
+    description: Unclear
+  - id: 11
+    description: Contradictory
+  - id: 12
+    description: Ambiguous
+  - id: 13
+    description: Incorrect
+  - id: 14
+    description: Incomplete
+  - id: 15
+    description: Inaccurate
+  - id: 16
+    description: Too complex
+  - id: 17
+    description: New / recent changes
+  - id: 18
+    description: In revision
+  - id: 19
+    description: Outdated
+  - id: 20
+    description: Not available
+  - id: 21
+    description: Other
+- id: 3
+  description: Workspace Design and HMI
+  children:
+  - id: 22
+    description: Conflicting information
+  - id: 23
+    description: Failed or broken equipment
+  - id: 24
+    description: False information
+  - id: 26
+    description: Feedback problem
+  - id: 27
+    description: High false alarm rate
+  - id: 28
+    description: Illegilble information
+  - id: 29
+    description: Inaccessible information
+  - id: 30
+    description: Incorrect information
+  - id: 31
+    description: Interference
+  - id: 32
+    description: Lack of equipment / information
+  - id: 33
+    description: Lack of coverage / range
+  - id: 34
+    description: Lack of precision
+  - id: 35
+    description: Lost information
+  - id: 36
+    description: Mode confusion
+  - id: 37
+    description: No equipment / information
+  - id: 38
+    description: Nuisance infomation
+  - id: 39
+    description: Poor design
+  - id: 40
+    description: Poor display
+  - id: 41
+    description: Poor positioning
+  - id: 42
+    description: Recently introduced equipment / information
+  - id: 43
+    description: Equipment size problem
+  - id: 44
+    description: Suppressed information
+  - id: 45
+    description: Unavailable equipment / information
+  - id: 46
+    description: Unclear equipment / infomation
+  - id: 47
+    description: Unreliable equipment / information
+  - id: 48
+    description: Untrustworthy equipment / information
+  - id: 49
+    description: Visibility of equipment / information
+  - id: 50
+    description: Other

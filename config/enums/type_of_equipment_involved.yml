@@ -1,0 +1,33 @@
+---
+attribute_id: '1120'
+xml_tag: Type_Of_Equipment_Involved
+sequence: 4
+values:
+  1: Aircraft parking equipment (chocks)
+  2: Aircraft tie down equipment
+  3: Baggage cart
+  4: Baggage loader
+  5: Baggage loading conveyor belt
+  6: Baggage trolley
+  7: Tools (hammer, screwdriver…)
+  8: Container
+  9: Crane
+  10: Dolley/trailer for pallets or containers
+  11: Ground power unit
+  12: Moveable ladder/stairs
+  13: Net or other material for covering pallets
+  14: Pallet
+  15: Parking guidance equipment (fixed)
+  16: Passenger loading bridge
+  17: Passenger stairs/steps (towed)
+  18: Passenger wheelchair
+  19: Runway de-icing equipment
+  20: Snow blower
+  21: Snow plow
+  22: Sweeper
+  23: Tow bar
+  24: Tow bar pin
+  25: Traffic barrier
+  26: Traffic cone
+  27: Other
+  28: Not Applicable

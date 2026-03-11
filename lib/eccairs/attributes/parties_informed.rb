@@ -3,10 +3,7 @@
 module Eccairs
   module Attributes
     class PartiesInformed < Eccairs::Base::EnumAttribute
-      attribute_id 1064
-      xml_tag "Parties_Informed"
-      sequence 7
-      allowed_values [1, 2, 3, 4, 10, 11, 5, 6, 7, 8, 12, 9]
+      enums_from :parties_informed
     end
   end
 end

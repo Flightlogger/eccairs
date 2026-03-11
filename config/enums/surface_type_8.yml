@@ -1,0 +1,13 @@
+---
+attribute_id: '8'
+xml_tag: Surface_Type
+sequence: 6
+values:
+  1: Concrete/asphalt/steel
+  2: Steel mesh
+  3: Grass
+  4: Ice
+  5: Snow
+  6: Water
+  98: Other
+  99: Unknown

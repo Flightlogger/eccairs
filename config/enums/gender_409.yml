@@ -1,0 +1,8 @@
+---
+attribute_id: '409'
+xml_tag: Gender
+sequence:
+values:
+  1: Female
+  2: Male
+  99: Unknown

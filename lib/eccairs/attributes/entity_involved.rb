@@ -2,10 +2,8 @@
 
 module Eccairs
   module Attributes
-    class EntityInvolved < Eccairs::Base::StringAttribute
-      attribute_id "741"
-      xml_tag "Entity_Involved"
-      sequence 0
+    class EntityInvolved < Eccairs::Base::EnumAttribute
+      enums_from :entity_involved
     end
   end
 end

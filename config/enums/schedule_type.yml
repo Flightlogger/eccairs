@@ -1,0 +1,8 @@
+---
+attribute_id: '637'
+xml_tag: Schedule_Type
+sequence:
+values:
+  1: Scheduled
+  2: Non-scheduled
+  3: Unknown

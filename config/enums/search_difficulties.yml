@@ -1,0 +1,23 @@
+---
+attribute_id: '514'
+xml_tag: Search_Difficulties
+sequence:
+values:
+  1: Terrain
+  2: Darkness
+  3: Unfamiliarity terrain
+  4: Obstacles
+  5: Maps inadeq/inacc
+  6: Inadequate training
+  7: Inadequate equipment
+  8: Traffic
+  9: Co-ordination problem
+  10: Inadequate planning
+  11: Command problem
+  12: Communication problem
+  13: Weather/visibility
+  14: Equipment failed
+  15: Sea state
+  97: None
+  98: Other
+  99: Unknown

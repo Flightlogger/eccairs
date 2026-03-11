@@ -1,0 +1,11 @@
+---
+attribute_id: '323'
+xml_tag: Windshear
+sequence:
+values:
+  1: Light
+  2: Moderate
+  3: Strong
+  4: Severe
+  97: None
+  99: Unknown

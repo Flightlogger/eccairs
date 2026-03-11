@@ -1,0 +1,9 @@
+---
+attribute_id: '1037'
+xml_tag: STCA_Predicted_Installed
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown
+  100: Not applicable

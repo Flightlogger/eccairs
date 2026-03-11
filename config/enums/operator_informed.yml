@@ -1,0 +1,8 @@
+---
+attribute_id: '674'
+xml_tag: Operator_Informed
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'
+  4: Unknown

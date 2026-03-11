@@ -1,0 +1,2294 @@
+---
+attribute_id: '454'
+xml_tag: State_Area_Of_Occ
+sequence: 26
+values:
+  1: Azores
+  2: Afghanistan
+  4: Albania
+  5: Algeria
+  6: American Samoa
+  7: Andorra
+  8: Angola
+  9: Anguilla
+  10: Antigua and Barbuda
+  11: Argentina
+  12: Aruba
+  13: Ascension Island
+  14: Kosovo
+  15: Australia
+  16: Austria
+  19: Bahamas
+  20: Bahrain
+  21: Bangladesh
+  22: Barbados
+  24: Belgium
+  25: Belize
+  26: Benin
+  27: Bermuda
+  28: Bhutan
+  29: Bolivia
+  30: Botswana
+  31: Brazil
+  33: British Indian Ocean Territory
+  34: Solomon Islands
+  36: Brunei Darussalam
+  37: Bulgaria
+  38: Burkina Faso
+  39: Myanmar
+  40: Burundi
+  42: Cameroon
+  43: Canada
+  44: Canary Islands
+  46: Cape Verde
+  48: Cayman Islands
+  49: Central African Republic
+  50: Chad
+  51: Chile
+  52: China
+  53: Christmas Island
+  54: Cocos Islands
+  55: Colombia
+  56: Comoros
+  57: Congo, Republic of the
+  58: Cook Islands
+  59: Costa Rica
+  61: Cuba
+  62: Cyprus
+  63: Czech Republic
+  65: Korea, North
+  67: Denmark
+  68: Djibouti
+  69: Dominica
+  70: Dominican Republic
+  71: Easter island
+  72: Ecuador
+  73: Egypt
+  74: El Salvador
+  75: Equatorial Guinea
+  76: Ethiopia
+  78: Faroe Islands
+  79: Falkland Islands (Malvinas)
+  80: Fiji
+  81: Finland
+  82: France
+  83: French Guyana
+  84: French Polynesia
+  89: Gabon
+  90: Gambia
+  95: Germany
+  97: Ghana
+  98: Gibraltar
+  101: Greece
+  102: Greenland
+  103: Grenada
+  104: Guadeloupe
+  105: Guam
+  106: Guatemala
+  107: Guinea
+  108: Guinea-Bissau
+  109: Guyana
+  110: Haiti
+  111: Vatican City
+  112: Honduras
+  114: Hungary
+  115: Iceland
+  116: India
+  117: Indonesia
+  118: Iran, Islamic Republic of
+  119: Iraq
+  120: Ireland
+  121: Israel
+  122: Italy
+  123: Ivory Coast
+  124: Jamaica
+  125: Japan
+  126: Johnston Island
+  127: Jordan
+  128: Kenya
+  130: Korea, South
+  131: Kuwait
+  133: Lao People's Democratic Republic
+  135: Lebanon
+  136: Lesotho
+  137: Liberia
+  138: Libya
+  139: Liechtenstein
+  141: Luxembourg
+  143: Madagascar
+  144: Madeira
+  145: Malawi
+  146: Malaysia
+  147: Maldives
+  148: Mali
+  149: Malta
+  150: Mariana Islands
+  151: Marshall Islands
+  152: Martinique
+  153: Mauritania
+  154: Mauritius
+  155: Mexico
+  156: Midway
+  157: Monaco
+  158: Mongolia
+  159: Montserrat
+  160: Morocco
+  161: Mozambique
+  163: Namibia
+  164: Nauru
+  165: Nepal
+  166: Netherlands
+  167: Sint Maarten
+  169: New Caledonia
+  173: New Zealand
+  174: Nicaragua
+  175: Niger
+  176: Nigeria
+  177: Niue
+  178: Norfolk Island
+  179: Norway
+  180: Oman
+  184: Pakistan
+  185: Panama
+  187: Papua New Guinea
+  189: Paraguay
+  190: Peru
+  191: Philippines
+  192: Pitcairn Islands
+  193: Poland
+  194: Portugal
+  195: Puerto Rico
+  196: Qatar
+  197: Réunion
+  198: Romania
+  199: Rwanda
+  202: Saint Helena
+  204: Saint Kitts and Nevis
+  205: Saint Lucia
+  206: Saint Pierre and Miquelon
+  208: Saint Vincent and the Grenadines
+  209: Samoa
+  210: San Marino
+  211: Sao Tome and Principe
+  212: Saudi Arabia
+  213: Senegal
+  214: Seychelles
+  215: Sierra Leone
+  217: Singapore
+  218: Somalia
+  219: South Africa
+  221: Spain
+  222: Sri Lanka
+  224: Sudan
+  225: Suriname
+  227: Swaziland
+  228: Sweden
+  229: Switzerland
+  230: Syria
+  231: Taiwan
+  234: Thailand
+  236: Togo
+  237: Tokelau Islands
+  238: Tonga
+  239: Trinidad and Tobago
+  240: Tunisia
+  241: Turkey
+  242: Turks and Caicos Islands
+  243: Uganda
+  245: United Arab Emirates
+  246: United Kingdom
+  248: Tanzania
+  249: United States
+  251: Uruguay
+  252: Vanuatu
+  254: Venezuela
+  255: Vietnam
+  256: Virgin Islands (UK)
+  257: Virgin Islands (US)
+  260: Wake Island
+  261: Wallis and Futuna Islands
+  263: Yemen
+  266: Zambia
+  267: Antarctic Ocean
+  268: Arctic Ocean
+  269: Zimbabwe
+  270: Indian Ocean
+  271: Mediterranean Sea
+  272: North Atlantic Ocean
+  273: North Pacific Ocean
+  274: South Atlantic Ocean
+  275: South Pacific Ocean
+  276: Armenia
+  277: Azerbaijan
+  278: Belarus
+  279: Croatia
+  280: Estonia
+  281: Georgia
+  282: Kazakhstan
+  283: Kiribati
+  284: Kyrgyzstan
+  285: Latvia
+  286: Lithuania
+  287: Moldova
+  288: Russian Federation
+  289: Slovakia
+  290: Slovenia
+  291: Tajikistan
+  293: Turkmenistan
+  294: Ukraine
+  295: Uzbekistan
+  296: Antarctica
+  297: Bosnia and Herzegovina
+  298: Cambodia
+  299: Eritrea
+  303: Micronesia, Federated States of
+  304: Palau
+  306: Tuvalu
+  307: Hong Kong
+  308: Macao
+  309: Congo, Democratic Republic of the
+  310: Black Sea
+  311: Timor-Leste
+  312: Åland Islands
+  313: Guernsey
+  314: Isle of Man
+  315: Jersey
+  316: Macedonia
+  317: Mayotte
+  318: Montenegro
+  319: Serbia
+  320: Western Sahara
+  321: Palestine
+  322: Akrotiri and Dhekelia
+  323: French Southern and Antarctic Lands
+  324: Tristan da Cunha
+  325: North Sea
+  326: Baltic Sea
+  327: Gulf of Bothnia
+  328: English Channel
+  329: Bay of Biscay
+  330: Irish Sea
+  331: Norwegian Sea
+  332: Gulf of Finland
+  333: Gulf of Riga
+  334: Straight of Gibraltar
+  335: Ligurean Sea
+  336: Turrhenian Sea
+  337: Adriatic Sea
+  338: Ionian Sea
+  339: Agean Sea
+  340: Caspian Sea
+  341: Sea of Azov
+  342: White Sea
+  343: Barents Sea
+  344: Sea of Crete
+  345: Red Sea
+  346: Gulf of Aden
+  347: Arabian Sea
+  348: Bay of Bengal
+  349: Indian Ocean
+  350: Adaman Sea
+  351: Gulf of Thailand
+  352: Java Sea
+  353: South China Sea
+  354: Yellow Sea
+  355: East China Sea
+  356: Banda Sea
+  357: Celebes Sea
+  358: Sulu Sea
+  359: Philippine Sea
+  360: Bering Sea
+  361: Timor Sea
+  363: Persian Gulf
+  364: Gulf of Oman
+  365: Gulf of Tonking
+  366: Taiwan Strait
+  367: Sea of Japan
+  368: Kara Sea
+  369: Laptev Sea
+  370: East Siberian Sea
+  371: Bering Strait
+  372: Korea Bay
+  373: Bo Hai
+  374: Flores Sea
+  375: Molucca Sea
+  376: Bohol Sea
+  377: Moro Gulf
+  378: Davao Gulf
+  379: Gulf of Mannar
+  380: Souther Ocean
+  381: Tasman Sea
+  382: Coral Sea
+  383: Gulf of Carpentaria
+  384: Bismarck Sea
+  385: Solomon Sea
+  386: Arabian Sea
+  387: Gulf of Aquaba
+  388: Gulf of Guinea
+  389: Mozambique Channel
+  390: Baffin Bay
+  391: Hudson Bay
+  392: Beaufort Sea
+  393: Labrador Sea
+  394: Gulf of Alaska
+  395: Bering Sea
+  396: Davis Strait
+  397: Lincoln Sea
+  398: Denmark Strait
+  399: Caribbean Sea
+  400: Gulf of California
+  401: Golfo San Jorge
+  402: Golfo San Matias
+  403: Bahia Grande
+  404: Magellan's Strait
+  405: 01 Ain
+  406: 02 Aisne
+  407: 03 Allier
+  408: 04 Alpes-de-Haute-Provence
+  409: 05 Hautes-Alpes
+  410: 06 Alpes-Maritimes
+  411: 07 Ardèche
+  412: '08 Ardennes'
+  413: '09 Ariège'
+  414: 10 Aube
+  415: 11 Aude
+  416: 12 Aveyron
+  417: 13 Bouches-du-Rhône
+  418: 14 Calvados
+  419: 15 Cantal
+  420: 16 Charente
+  421: 17 Charente-Maritime
+  422: 18 Cher
+  423: 19 Corrèze
+  424: 21 Côte-d'Or
+  425: 22 Côtes-d'Armor
+  426: 23 Creuse
+  427: 24 Dordogne
+  428: 25 Doubs
+  429: 26 Drôme
+  430: 27 Eure
+  431: 28 Eure-et-Loir
+  432: 29 Finistère
+  433: 2A Corse-du-Sud
+  434: 2B Haute-Corse
+  435: 30 Gard
+  436: 31 Haute-Garonne
+  437: 32 Gers
+  438: 33 Gironde
+  439: 34 Hérault
+  440: 35 Ille-et-Vilaine
+  441: 36 Indre
+  442: 37 Indre-et-Loire
+  443: 38 Isère
+  444: 39 Jura
+  445: 40 Landes
+  446: 41 Loir-et-Cher
+  447: 42 Loire
+  448: 43 Haute-Loire
+  449: 44 Loire-Atlantique
+  450: 45 Loiret
+  451: 46 Lot
+  452: 47 Lot-et-Garonne
+  453: 48 Lozère
+  454: 49 Maine-et-Loire
+  455: 50 Manche
+  456: 51 Marne
+  457: 52 Haute-Marne
+  458: 53 Mayenne
+  459: 54 Meurthe-et-Moselle
+  460: 55 Meuse
+  461: 56 Morbihan
+  462: 57 Moselle
+  463: 58 Nièvre
+  464: 59 Nord
+  465: 60 Oise
+  466: 61 Orne
+  467: 62 Pas-de-Calais
+  468: 63 Puy-de-Dôme
+  469: 64 Pyrénées-Atlantiques
+  470: 65 Hautes-Pyrénées
+  471: 66 Pyrénées-Orientales
+  472: 67 Bas-Rhin
+  473: 68 Haut-Rhin
+  474: 69 Rhône
+  475: 70 Haute-Saône
+  476: 71 Saône-et-Loire
+  477: 72 Sarthe
+  478: 73 Savoie
+  479: 74 Haute-Savoie
+  480: 75 Paris
+  481: 76 Seine-Maritime
+  482: 77 Seine-et-Marne
+  483: 78 Yvelines
+  484: 79 Deux-Sèvres
+  485: 80 Somme
+  486: 81 Tarn
+  487: 82 Tarn-et-Garonne
+  488: 83 Var
+  489: 84 Vaucluse
+  490: 85 Vendée
+  491: 86 Vienne
+  492: 87 Haute-Vienne
+  493: 88 Vosges
+  494: 89 Yonne
+  495: 90 Territoire de Belfort
+  496: 91 Essonne
+  497: 92 Hauts-de-Seine
+  498: 93 Seine-Saint-Denis
+  499: 94 Val-de-Marne
+  500: 95 Val-d'Oise
+  501: Saint Barthélemy
+  502: Saint Martin
+  503: Alaska
+  504: Hawaii
+  901: Europe and North Atlantic
+  902: Asia
+  903: Oceania
+  904: Middle East
+  905: Africa
+  906: North America
+  907: South America
+  908: Central America and Caribbean
+  998: Other
+  999: Unknown
+  1001: Sea of Okhotsk
+  1002: Gulf of Mexico
+  1003: Hudson Strait
+  1004: Sargasso Sea
+  1005: Arnsberg (NRW)
+  1006: Berlin (BN)
+  1007: Brandenburg (BG)
+  1008: Braunschweig (NI)
+  1009: Bremen, Hansestadt (HB)
+  1010: Darmstadt (HE)
+  1011: Detmold (NRW)
+  1012: Düsseldorf (NRW)
+  1013: Freiburg (BW)
+  1014: Gießen (HE)
+  1015: Hamburg, Hansestadt (HH)
+  1016: Hannover (NI)
+  1017: Karlsruhe (BW)
+  1018: Kassel (HE)
+  1019: Koblenz (RHPF)
+  1020: Köln (NRW)
+  1021: Lüneburg (NI)
+  1022: Mecklenburg-Vorpommern (MV)
+  1023: Mittelfranken (BY)
+  1024: Montabaur (RHPF)
+  1025: Münster (NRW)
+  1026: Niederbayern (BY)
+  1027: Oberbayern (BY)
+  1028: Oberfranken (BY)
+  1029: Oberpfalz (BY)
+  1030: Rheinhessen-Pfalz (RHPF)
+  1031: Saarland (SL)
+  1032: Sachsen (SX)
+  1033: Sachsen-Anhalt (SA)
+  1034: Schleswig-Holstein (SH)
+  1035: Schwaben (BY)
+  1036: Stuttgart (BW)
+  1037: Thüringen (TH)
+  1038: Trier (RHPF)
+  1039: Tübingen (BW)
+  1040: Unterfranken (BY)
+  1041: Weser-Ems (NI)
+  1042: Wiesbaden (HE)
+  1043: unbekannt/nicht gemeldet
+  1044: Alberta
+  1045: British Columbia
+  1046: Manitoba
+  1047: New Brunswick
+  1048: Newfoundland and Labrador
+  1049: Northwest Territories
+  1050: Nova Scotia
+  1051: Nunavut
+  1052: Ontario
+  1053: Prince Edward Island
+  1054: Québec
+  1055: Saskatchewan
+  1056: Yukon
+  1057: Alabama
+  1058: Arizona
+  1059: Arkansas
+  1060: California
+  1061: Colorado
+  1062: Connecticut
+  1063: Delaware
+  1064: Florida
+  1065: Georgia
+  1066: Idaho
+  1067: Illinois
+  1068: Iowa
+  1069: Kansas
+  1070: Kentucky
+  1071: Louisiana
+  1072: Maine
+  1073: Maryland
+  1074: Massachusetts
+  1075: Michigan
+  1076: Minnesota
+  1077: Mississippi
+  1078: Missouri
+  1079: Montana
+  1080: Nebraska
+  1081: Nevada
+  1082: New Hampshire
+  1083: New Mexico
+  1084: New York
+  1085: North Carolina
+  1086: North Dakota
+  1087: Ohio
+  1088: Oklahoma
+  1089: Oregon
+  1090: Pennsylvania
+  1091: Rhode Island
+  1092: South Carolina
+  1093: South Dakota
+  1094: Tennessee
+  1095: Texas
+  1096: Utah
+  1097: Vermont
+  1098: Virginia
+  1099: Washington
+  1100: West Virginia
+  1101: Wisconsin
+  1102: Wyoming
+  1103: Akershus
+  1104: Aust-Agder
+  1105: Buskerud
+  1106: Finnmark
+  1107: Hedmark
+  1108: Hordaland
+  1109: More og Romsdal
+  1110: Nordland
+  1111: Nord-Trondelag
+  1112: Oppland
+  1113: Oslo
+  1114: Rogaland
+  1115: Sogn og Fjordane
+  1116: Sor-Trondelag
+  1117: Svalbard
+  1118: Telemark
+  1119: Troms
+  1120: Vestfold
+  1121: Vest-Agder
+  1122: Ostfold
+  1123: Avon
+  1124: Bedfordshire
+  1125: Berkshire
+  1126: Borders
+  1127: Buckinghamshire
+  1128: Cambridgeshire
+  1129: Central
+  1130: Cheshire
+  1131: Cleveland
+  1132: Clwyd
+  1133: Cornwall
+  1134: Cumbria
+  1135: Derbyshire
+  1136: Devon
+  1137: Dorset
+  1138: Dumfries & Galloway
+  1139: Durham
+  1140: Dyfed
+  1141: East Sussex
+  1142: Essex
+  1143: Fife
+  1144: Glamorgan
+  1145: Gloucestershire
+  1146: Grampian
+  1147: Greater London
+  1148: Greater Manchester
+  1149: Gwent
+  1150: Gwynedd
+  1151: Hampshire
+  1152: Hereford and Worcester
+  1153: Hertfordshire
+  1154: Highland
+  1155: Humberside
+  1156: Isle of Wight
+  1157: Kent
+  1158: Lancashire
+  1159: Leicestershire
+  1160: Lincolnshire
+  1161: Lothian
+  1162: Merseyside
+  1163: N Ireland
+  1164: Norfolk
+  1165: North Yorkshire
+  1166: Northamptonshire
+  1167: Northumberland
+  1168: Nottinghamshire
+  1169: Orkney
+  1170: Oxfordshire
+  1171: Powys
+  1172: Shetland
+  1173: Shropshire
+  1174: Somerset
+  1175: South Yorkshire
+  1176: Staffordshire
+  1177: Strathclyde
+  1178: Suffolk
+  1179: Surrey
+  1180: Tayside
+  1181: Tyne & Wear
+  1182: Warwickshire
+  1183: West Midlands
+  1184: West Sussex
+  1185: West Yorkshire
+  1186: Western Isles
+  1187: Wiltshire
+  1188: Dolnoslaskie
+  1189: Kujawsko-Pomorskie
+  1190: Lodzkie
+  1191: Lubelskie
+  1192: Lubuskie
+  1193: Malopolskie
+  1194: Mazowieckie
+  1195: Opolskie
+  1196: Podkarpackie
+  1197: Podlaskie
+  1198: Pomorskie
+  1199: Slaskie
+  1200: Swietokrzyskie
+  1201: Warmisko-Mazurskie
+  1202: Wielkopolskie
+  1203: Zachodniopomorskie
+  1204: Höfuðborgarsvæðið
+  1205: Faxaflói
+  1206: Breiðafjörður
+  1207: Vestfirðir
+  1208: Strandir og Norðurland vestra
+  1209: Norðurland eystra
+  1210: Austurland að Glettingi
+  1211: Austfirðir
+  1212: Suðausturland
+  1213: Suðurland
+  1214: Miðhálendið vestur
+  1215: Miðhálendið austur
+  1216: Ceuta
+  1217: Melilla
+  1218: Albacete
+  1219: Ciudad Real
+  1220: Cuenca
+  1221: Guadalajara
+  1222: Toledo
+  1223: Almería
+  1224: Cádiz
+  1225: Córdoba
+  1226: Granada
+  1227: Jaén
+  1228: Málaga
+  1229: Sevilla
+  1230: Huesca
+  1231: Teruel
+  1232: Zaragoza
+  1233: Cantabria
+  1234: Avila
+  1235: Burgos
+  1236: León
+  1237: Palencia
+  1238: Salamanca
+  1239: Segovia
+  1240: Soria
+  1241: Valladolid
+  1242: Zamora
+  1243: Barcelona
+  1244: Girona
+  1245: Lleida
+  1246: Tarragona
+  1247: Badajoz
+  1248: Cáceres
+  1249: La Coruña
+  1250: Lugo
+  1251: Orense
+  1252: Pontevedra
+  1253: Murcia
+  1254: La Rioja
+  1255: Madrid
+  1256: Navarra
+  1257: Alicante
+  1258: Castellón
+  1259: Valencia
+  1260: Formentera
+  1261: Ibiza
+  1262: Mallorca
+  1263: Menorca
+  1264: El Hierro
+  1265: Gran Canaria
+  1266: La Gomera
+  1267: La Palma
+  1268: Tenerife
+  1269: Álava
+  1270: Guipuzcoa
+  1271: Vizcaya
+  1272: Asturias
+  1273: Fuerteventura
+  1274: Lanzarote
+  1275: 01 Blagoevgrad
+  1276: 02 Burgas
+  1277: 03 Varna
+  1278: 04 Veliko Tarnovo
+  1279: 05 Vidin
+  1280: 06 Vratsa
+  1281: 07 Gabrovo
+  1282: '08 Dobrich'
+  1283: '09 Kardzhali'
+  1284: 10 Kyustendil
+  1285: 11 Lovech
+  1286: 12 Montana
+  1287: 13 Pazardzhik
+  1288: 14 Pernik
+  1289: 15 Pleven
+  1290: 16 Plovdiv
+  1291: 17 Razgrad
+  1292: 18 Ruse
+  1293: 19 Silistra
+  1294: 20 Sliven
+  1295: 21 Smolyan
+  1296: 22 Sofia-city
+  1297: 23 Sofia
+  1298: 24 Stara Zagora
+  1299: 25 Targovishte
+  1300: 26 Haskovo
+  1301: 27 Shumen
+  1302: 28 Yambol
+  1303: Indiana
+  1304: New Jersey
+  1305: District of Columbia
+  1306: South Sudan
+  1310: Bonaire, Sint Eustatius and Saba
+  1311: Curaçao
+hierarchy:
+- id: 901
+  description: Europe and North Atlantic
+  children:
+  - id: 1
+    description: Azores
+  - id: 4
+    description: Albania
+  - id: 7
+    description: Andorra
+  - id: 14
+    description: Kosovo
+  - id: 16
+    description: Austria
+  - id: 24
+    description: Belgium
+  - id: 37
+    description: Bulgaria
+    children:
+    - id: 1275
+      description: 01 Blagoevgrad
+    - id: 1276
+      description: 02 Burgas
+    - id: 1277
+      description: 03 Varna
+    - id: 1278
+      description: 04 Veliko Tarnovo
+    - id: 1279
+      description: 05 Vidin
+    - id: 1280
+      description: 06 Vratsa
+    - id: 1281
+      description: 07 Gabrovo
+    - id: 1282
+      description: '08 Dobrich'
+    - id: 1283
+      description: '09 Kardzhali'
+    - id: 1284
+      description: 10 Kyustendil
+    - id: 1285
+      description: 11 Lovech
+    - id: 1286
+      description: 12 Montana
+    - id: 1287
+      description: 13 Pazardzhik
+    - id: 1288
+      description: 14 Pernik
+    - id: 1289
+      description: 15 Pleven
+    - id: 1290
+      description: 16 Plovdiv
+    - id: 1291
+      description: 17 Razgrad
+    - id: 1292
+      description: 18 Ruse
+    - id: 1293
+      description: 19 Silistra
+    - id: 1294
+      description: 20 Sliven
+    - id: 1295
+      description: 21 Smolyan
+    - id: 1296
+      description: 22 Sofia-city
+    - id: 1297
+      description: 23 Sofia
+    - id: 1298
+      description: 24 Stara Zagora
+    - id: 1299
+      description: 25 Targovishte
+    - id: 1300
+      description: 26 Haskovo
+    - id: 1301
+      description: 27 Shumen
+    - id: 1302
+      description: 28 Yambol
+  - id: 62
+    description: Cyprus
+  - id: 63
+    description: Czech Republic
+  - id: 67
+    description: Denmark
+  - id: 78
+    description: Faroe Islands
+  - id: 81
+    description: Finland
+  - id: 82
+    description: France
+    children:
+    - id: 405
+      description: 01 Ain
+    - id: 406
+      description: 02 Aisne
+    - id: 407
+      description: 03 Allier
+    - id: 408
+      description: 04 Alpes-de-Haute-Provence
+    - id: 409
+      description: 05 Hautes-Alpes
+    - id: 410
+      description: 06 Alpes-Maritimes
+    - id: 411
+      description: 07 Ardèche
+    - id: 412
+      description: '08 Ardennes'
+    - id: 413
+      description: '09 Ariège'
+    - id: 414
+      description: 10 Aube
+    - id: 415
+      description: 11 Aude
+    - id: 416
+      description: 12 Aveyron
+    - id: 417
+      description: 13 Bouches-du-Rhône
+    - id: 418
+      description: 14 Calvados
+    - id: 419
+      description: 15 Cantal
+    - id: 420
+      description: 16 Charente
+    - id: 421
+      description: 17 Charente-Maritime
+    - id: 422
+      description: 18 Cher
+    - id: 423
+      description: 19 Corrèze
+    - id: 424
+      description: 21 Côte-d'Or
+    - id: 425
+      description: 22 Côtes-d'Armor
+    - id: 426
+      description: 23 Creuse
+    - id: 427
+      description: 24 Dordogne
+    - id: 428
+      description: 25 Doubs
+    - id: 429
+      description: 26 Drôme
+    - id: 430
+      description: 27 Eure
+    - id: 431
+      description: 28 Eure-et-Loir
+    - id: 432
+      description: 29 Finistère
+    - id: 433
+      description: 2A Corse-du-Sud
+    - id: 434
+      description: 2B Haute-Corse
+    - id: 435
+      description: 30 Gard
+    - id: 436
+      description: 31 Haute-Garonne
+    - id: 437
+      description: 32 Gers
+    - id: 438
+      description: 33 Gironde
+    - id: 439
+      description: 34 Hérault
+    - id: 440
+      description: 35 Ille-et-Vilaine
+    - id: 441
+      description: 36 Indre
+    - id: 442
+      description: 37 Indre-et-Loire
+    - id: 443
+      description: 38 Isère
+    - id: 444
+      description: 39 Jura
+    - id: 445
+      description: 40 Landes
+    - id: 446
+      description: 41 Loir-et-Cher
+    - id: 447
+      description: 42 Loire
+    - id: 448
+      description: 43 Haute-Loire
+    - id: 449
+      description: 44 Loire-Atlantique
+    - id: 450
+      description: 45 Loiret
+    - id: 451
+      description: 46 Lot
+    - id: 452
+      description: 47 Lot-et-Garonne
+    - id: 453
+      description: 48 Lozère
+    - id: 454
+      description: 49 Maine-et-Loire
+    - id: 455
+      description: 50 Manche
+    - id: 456
+      description: 51 Marne
+    - id: 457
+      description: 52 Haute-Marne
+    - id: 458
+      description: 53 Mayenne
+    - id: 459
+      description: 54 Meurthe-et-Moselle
+    - id: 460
+      description: 55 Meuse
+    - id: 461
+      description: 56 Morbihan
+    - id: 462
+      description: 57 Moselle
+    - id: 463
+      description: 58 Nièvre
+    - id: 464
+      description: 59 Nord
+    - id: 465
+      description: 60 Oise
+    - id: 466
+      description: 61 Orne
+    - id: 467
+      description: 62 Pas-de-Calais
+    - id: 468
+      description: 63 Puy-de-Dôme
+    - id: 469
+      description: 64 Pyrénées-Atlantiques
+    - id: 470
+      description: 65 Hautes-Pyrénées
+    - id: 471
+      description: 66 Pyrénées-Orientales
+    - id: 472
+      description: 67 Bas-Rhin
+    - id: 473
+      description: 68 Haut-Rhin
+    - id: 474
+      description: 69 Rhône
+    - id: 475
+      description: 70 Haute-Saône
+    - id: 476
+      description: 71 Saône-et-Loire
+    - id: 477
+      description: 72 Sarthe
+    - id: 478
+      description: 73 Savoie
+    - id: 479
+      description: 74 Haute-Savoie
+    - id: 480
+      description: 75 Paris
+    - id: 481
+      description: 76 Seine-Maritime
+    - id: 482
+      description: 77 Seine-et-Marne
+    - id: 483
+      description: 78 Yvelines
+    - id: 484
+      description: 79 Deux-Sèvres
+    - id: 485
+      description: 80 Somme
+    - id: 486
+      description: 81 Tarn
+    - id: 487
+      description: 82 Tarn-et-Garonne
+    - id: 488
+      description: 83 Var
+    - id: 489
+      description: 84 Vaucluse
+    - id: 490
+      description: 85 Vendée
+    - id: 491
+      description: 86 Vienne
+    - id: 492
+      description: 87 Haute-Vienne
+    - id: 493
+      description: 88 Vosges
+    - id: 494
+      description: 89 Yonne
+    - id: 495
+      description: 90 Territoire de Belfort
+    - id: 496
+      description: 91 Essonne
+    - id: 497
+      description: 92 Hauts-de-Seine
+    - id: 498
+      description: 93 Seine-Saint-Denis
+    - id: 499
+      description: 94 Val-de-Marne
+    - id: 500
+      description: 95 Val-d'Oise
+  - id: 95
+    description: Germany
+    children:
+    - id: 1005
+      description: Arnsberg (NRW)
+    - id: 1006
+      description: Berlin (BN)
+    - id: 1007
+      description: Brandenburg (BG)
+    - id: 1008
+      description: Braunschweig (NI)
+    - id: 1009
+      description: Bremen, Hansestadt (HB)
+    - id: 1010
+      description: Darmstadt (HE)
+    - id: 1011
+      description: Detmold (NRW)
+    - id: 1012
+      description: Düsseldorf (NRW)
+    - id: 1013
+      description: Freiburg (BW)
+    - id: 1014
+      description: Gießen (HE)
+    - id: 1015
+      description: Hamburg, Hansestadt (HH)
+    - id: 1016
+      description: Hannover (NI)
+    - id: 1017
+      description: Karlsruhe (BW)
+    - id: 1018
+      description: Kassel (HE)
+    - id: 1019
+      description: Koblenz (RHPF)
+    - id: 1020
+      description: Köln (NRW)
+    - id: 1021
+      description: Lüneburg (NI)
+    - id: 1022
+      description: Mecklenburg-Vorpommern (MV)
+    - id: 1023
+      description: Mittelfranken (BY)
+    - id: 1024
+      description: Montabaur (RHPF)
+    - id: 1025
+      description: Münster (NRW)
+    - id: 1026
+      description: Niederbayern (BY)
+    - id: 1027
+      description: Oberbayern (BY)
+    - id: 1028
+      description: Oberfranken (BY)
+    - id: 1029
+      description: Oberpfalz (BY)
+    - id: 1030
+      description: Rheinhessen-Pfalz (RHPF)
+    - id: 1031
+      description: Saarland (SL)
+    - id: 1032
+      description: Sachsen (SX)
+    - id: 1033
+      description: Sachsen-Anhalt (SA)
+    - id: 1034
+      description: Schleswig-Holstein (SH)
+    - id: 1035
+      description: Schwaben (BY)
+    - id: 1036
+      description: Stuttgart (BW)
+    - id: 1037
+      description: Thüringen (TH)
+    - id: 1038
+      description: Trier (RHPF)
+    - id: 1039
+      description: Tübingen (BW)
+    - id: 1040
+      description: Unterfranken (BY)
+    - id: 1041
+      description: Weser-Ems (NI)
+    - id: 1042
+      description: Wiesbaden (HE)
+    - id: 1043
+      description: unbekannt/nicht gemeldet
+  - id: 98
+    description: Gibraltar
+  - id: 101
+    description: Greece
+  - id: 102
+    description: Greenland
+  - id: 111
+    description: Vatican City
+  - id: 114
+    description: Hungary
+  - id: 115
+    description: Iceland
+    children:
+    - id: 1204
+      description: Höfuðborgarsvæðið
+    - id: 1205
+      description: Faxaflói
+    - id: 1206
+      description: Breiðafjörður
+    - id: 1207
+      description: Vestfirðir
+    - id: 1208
+      description: Strandir og Norðurland vestra
+    - id: 1209
+      description: Norðurland eystra
+    - id: 1210
+      description: Austurland að Glettingi
+    - id: 1211
+      description: Austfirðir
+    - id: 1212
+      description: Suðausturland
+    - id: 1213
+      description: Suðurland
+    - id: 1214
+      description: Miðhálendið vestur
+    - id: 1215
+      description: Miðhálendið austur
+  - id: 120
+    description: Ireland
+  - id: 122
+    description: Italy
+  - id: 139
+    description: Liechtenstein
+  - id: 141
+    description: Luxembourg
+  - id: 144
+    description: Madeira
+  - id: 149
+    description: Malta
+  - id: 157
+    description: Monaco
+  - id: 166
+    description: Netherlands
+  - id: 179
+    description: Norway
+    children:
+    - id: 1103
+      description: Akershus
+    - id: 1104
+      description: Aust-Agder
+    - id: 1105
+      description: Buskerud
+    - id: 1106
+      description: Finnmark
+    - id: 1107
+      description: Hedmark
+    - id: 1108
+      description: Hordaland
+    - id: 1109
+      description: More og Romsdal
+    - id: 1110
+      description: Nordland
+    - id: 1111
+      description: Nord-Trondelag
+    - id: 1112
+      description: Oppland
+    - id: 1113
+      description: Oslo
+    - id: 1114
+      description: Rogaland
+    - id: 1115
+      description: Sogn og Fjordane
+    - id: 1116
+      description: Sor-Trondelag
+    - id: 1117
+      description: Svalbard
+    - id: 1118
+      description: Telemark
+    - id: 1119
+      description: Troms
+    - id: 1120
+      description: Vestfold
+    - id: 1121
+      description: Vest-Agder
+    - id: 1122
+      description: Ostfold
+  - id: 193
+    description: Poland
+    children:
+    - id: 1188
+      description: Dolnoslaskie
+    - id: 1189
+      description: Kujawsko-Pomorskie
+    - id: 1190
+      description: Lodzkie
+    - id: 1191
+      description: Lubelskie
+    - id: 1192
+      description: Lubuskie
+    - id: 1193
+      description: Malopolskie
+    - id: 1194
+      description: Mazowieckie
+    - id: 1195
+      description: Opolskie
+    - id: 1196
+      description: Podkarpackie
+    - id: 1197
+      description: Podlaskie
+    - id: 1198
+      description: Pomorskie
+    - id: 1199
+      description: Slaskie
+    - id: 1200
+      description: Swietokrzyskie
+    - id: 1201
+      description: Warmisko-Mazurskie
+    - id: 1202
+      description: Wielkopolskie
+    - id: 1203
+      description: Zachodniopomorskie
+  - id: 194
+    description: Portugal
+  - id: 198
+    description: Romania
+  - id: 210
+    description: San Marino
+  - id: 221
+    description: Spain
+    children:
+    - id: 1216
+      description: Ceuta
+    - id: 1217
+      description: Melilla
+    - id: 1218
+      description: Albacete
+    - id: 1219
+      description: Ciudad Real
+    - id: 1220
+      description: Cuenca
+    - id: 1221
+      description: Guadalajara
+    - id: 1222
+      description: Toledo
+    - id: 1223
+      description: Almería
+    - id: 1224
+      description: Cádiz
+    - id: 1225
+      description: Córdoba
+    - id: 1226
+      description: Granada
+    - id: 1227
+      description: Jaén
+    - id: 1228
+      description: Málaga
+    - id: 1229
+      description: Sevilla
+    - id: 1230
+      description: Huesca
+    - id: 1231
+      description: Teruel
+    - id: 1232
+      description: Zaragoza
+    - id: 1233
+      description: Cantabria
+    - id: 1234
+      description: Avila
+    - id: 1235
+      description: Burgos
+    - id: 1236
+      description: León
+    - id: 1237
+      description: Palencia
+    - id: 1238
+      description: Salamanca
+    - id: 1239
+      description: Segovia
+    - id: 1240
+      description: Soria
+    - id: 1241
+      description: Valladolid
+    - id: 1242
+      description: Zamora
+    - id: 1243
+      description: Barcelona
+    - id: 1244
+      description: Girona
+    - id: 1245
+      description: Lleida
+    - id: 1246
+      description: Tarragona
+    - id: 1247
+      description: Badajoz
+    - id: 1248
+      description: Cáceres
+    - id: 1249
+      description: La Coruña
+    - id: 1250
+      description: Lugo
+    - id: 1251
+      description: Orense
+    - id: 1252
+      description: Pontevedra
+    - id: 1253
+      description: Murcia
+    - id: 1254
+      description: La Rioja
+    - id: 1255
+      description: Madrid
+    - id: 1256
+      description: Navarra
+    - id: 1257
+      description: Alicante
+    - id: 1258
+      description: Castellón
+    - id: 1259
+      description: Valencia
+    - id: 1260
+      description: Formentera
+    - id: 1261
+      description: Ibiza
+    - id: 1262
+      description: Mallorca
+    - id: 1263
+      description: Menorca
+    - id: 1269
+      description: Álava
+    - id: 1270
+      description: Guipuzcoa
+    - id: 1271
+      description: Vizcaya
+    - id: 1272
+      description: Asturias
+  - id: 228
+    description: Sweden
+  - id: 229
+    description: Switzerland
+  - id: 241
+    description: Turkey
+  - id: 246
+    description: United Kingdom
+    children:
+    - id: 1123
+      description: Avon
+    - id: 1124
+      description: Bedfordshire
+    - id: 1125
+      description: Berkshire
+    - id: 1126
+      description: Borders
+    - id: 1127
+      description: Buckinghamshire
+    - id: 1128
+      description: Cambridgeshire
+    - id: 1129
+      description: Central
+    - id: 1130
+      description: Cheshire
+    - id: 1131
+      description: Cleveland
+    - id: 1132
+      description: Clwyd
+    - id: 1133
+      description: Cornwall
+    - id: 1134
+      description: Cumbria
+    - id: 1135
+      description: Derbyshire
+    - id: 1136
+      description: Devon
+    - id: 1137
+      description: Dorset
+    - id: 1138
+      description: Dumfries & Galloway
+    - id: 1139
+      description: Durham
+    - id: 1140
+      description: Dyfed
+    - id: 1141
+      description: East Sussex
+    - id: 1142
+      description: Essex
+    - id: 1143
+      description: Fife
+    - id: 1144
+      description: Glamorgan
+    - id: 1145
+      description: Gloucestershire
+    - id: 1146
+      description: Grampian
+    - id: 1147
+      description: Greater London
+    - id: 1148
+      description: Greater Manchester
+    - id: 1149
+      description: Gwent
+    - id: 1150
+      description: Gwynedd
+    - id: 1151
+      description: Hampshire
+    - id: 1152
+      description: Hereford and Worcester
+    - id: 1153
+      description: Hertfordshire
+    - id: 1154
+      description: Highland
+    - id: 1155
+      description: Humberside
+    - id: 1156
+      description: Isle of Wight
+    - id: 1157
+      description: Kent
+    - id: 1158
+      description: Lancashire
+    - id: 1159
+      description: Leicestershire
+    - id: 1160
+      description: Lincolnshire
+    - id: 1161
+      description: Lothian
+    - id: 1162
+      description: Merseyside
+    - id: 1163
+      description: N Ireland
+    - id: 1164
+      description: Norfolk
+    - id: 1165
+      description: North Yorkshire
+    - id: 1166
+      description: Northamptonshire
+    - id: 1167
+      description: Northumberland
+    - id: 1168
+      description: Nottinghamshire
+    - id: 1169
+      description: Orkney
+    - id: 1170
+      description: Oxfordshire
+    - id: 1171
+      description: Powys
+    - id: 1172
+      description: Shetland
+    - id: 1173
+      description: Shropshire
+    - id: 1174
+      description: Somerset
+    - id: 1175
+      description: South Yorkshire
+    - id: 1176
+      description: Staffordshire
+    - id: 1177
+      description: Strathclyde
+    - id: 1178
+      description: Suffolk
+    - id: 1179
+      description: Surrey
+    - id: 1180
+      description: Tayside
+    - id: 1181
+      description: Tyne & Wear
+    - id: 1182
+      description: Warwickshire
+    - id: 1183
+      description: West Midlands
+    - id: 1184
+      description: West Sussex
+    - id: 1185
+      description: West Yorkshire
+    - id: 1186
+      description: Western Isles
+    - id: 1187
+      description: Wiltshire
+  - id: 276
+    description: Armenia
+  - id: 277
+    description: Azerbaijan
+  - id: 278
+    description: Belarus
+  - id: 279
+    description: Croatia
+  - id: 280
+    description: Estonia
+  - id: 281
+    description: Georgia
+  - id: 282
+    description: Kazakhstan
+  - id: 284
+    description: Kyrgyzstan
+  - id: 285
+    description: Latvia
+  - id: 286
+    description: Lithuania
+  - id: 287
+    description: Moldova
+  - id: 288
+    description: Russian Federation
+  - id: 289
+    description: Slovakia
+  - id: 290
+    description: Slovenia
+  - id: 291
+    description: Tajikistan
+  - id: 293
+    description: Turkmenistan
+  - id: 294
+    description: Ukraine
+  - id: 295
+    description: Uzbekistan
+  - id: 297
+    description: Bosnia and Herzegovina
+  - id: 310
+    description: Black Sea
+  - id: 312
+    description: Åland Islands
+  - id: 313
+    description: Guernsey
+  - id: 314
+    description: Isle of Man
+  - id: 315
+    description: Jersey
+  - id: 316
+    description: Macedonia
+  - id: 318
+    description: Montenegro
+  - id: 319
+    description: Serbia
+  - id: 322
+    description: Akrotiri and Dhekelia
+  - id: 325
+    description: North Sea
+  - id: 326
+    description: Baltic Sea
+  - id: 327
+    description: Gulf of Bothnia
+  - id: 328
+    description: English Channel
+  - id: 329
+    description: Bay of Biscay
+  - id: 330
+    description: Irish Sea
+  - id: 331
+    description: Norwegian Sea
+  - id: 332
+    description: Gulf of Finland
+  - id: 333
+    description: Gulf of Riga
+  - id: 334
+    description: Straight of Gibraltar
+  - id: 335
+    description: Ligurean Sea
+  - id: 336
+    description: Turrhenian Sea
+  - id: 337
+    description: Adriatic Sea
+  - id: 338
+    description: Ionian Sea
+  - id: 339
+    description: Agean Sea
+  - id: 340
+    description: Caspian Sea
+  - id: 341
+    description: Sea of Azov
+  - id: 342
+    description: White Sea
+  - id: 343
+    description: Barents Sea
+  - id: 344
+    description: Sea of Crete
+- id: 902
+  description: Asia
+  children:
+  - id: 21
+    description: Bangladesh
+  - id: 28
+    description: Bhutan
+  - id: 36
+    description: Brunei Darussalam
+  - id: 39
+    description: Myanmar
+  - id: 52
+    description: China
+  - id: 65
+    description: Korea, North
+  - id: 116
+    description: India
+  - id: 117
+    description: Indonesia
+  - id: 125
+    description: Japan
+  - id: 130
+    description: Korea, South
+  - id: 133
+    description: Lao People's Democratic Republic
+  - id: 146
+    description: Malaysia
+  - id: 147
+    description: Maldives
+  - id: 158
+    description: Mongolia
+  - id: 165
+    description: Nepal
+  - id: 191
+    description: Philippines
+  - id: 217
+    description: Singapore
+  - id: 222
+    description: Sri Lanka
+  - id: 231
+    description: Taiwan
+  - id: 234
+    description: Thailand
+  - id: 255
+    description: Vietnam
+  - id: 298
+    description: Cambodia
+  - id: 307
+    description: Hong Kong
+  - id: 308
+    description: Macao
+  - id: 311
+    description: Timor-Leste
+  - id: 345
+    description: Red Sea
+  - id: 346
+    description: Gulf of Aden
+  - id: 347
+    description: Arabian Sea
+  - id: 348
+    description: Bay of Bengal
+  - id: 349
+    description: Indian Ocean
+  - id: 350
+    description: Adaman Sea
+  - id: 351
+    description: Gulf of Thailand
+  - id: 352
+    description: Java Sea
+  - id: 353
+    description: South China Sea
+  - id: 354
+    description: Yellow Sea
+  - id: 355
+    description: East China Sea
+  - id: 356
+    description: Banda Sea
+  - id: 357
+    description: Celebes Sea
+  - id: 358
+    description: Sulu Sea
+  - id: 359
+    description: Philippine Sea
+  - id: 360
+    description: Bering Sea
+  - id: 361
+    description: Timor Sea
+  - id: 363
+    description: Persian Gulf
+  - id: 364
+    description: Gulf of Oman
+  - id: 365
+    description: Gulf of Tonking
+  - id: 366
+    description: Taiwan Strait
+  - id: 367
+    description: Sea of Japan
+  - id: 368
+    description: Kara Sea
+  - id: 369
+    description: Laptev Sea
+  - id: 370
+    description: East Siberian Sea
+  - id: 371
+    description: Bering Strait
+  - id: 372
+    description: Korea Bay
+  - id: 373
+    description: Bo Hai
+  - id: 374
+    description: Flores Sea
+  - id: 375
+    description: Molucca Sea
+  - id: 376
+    description: Bohol Sea
+  - id: 377
+    description: Moro Gulf
+  - id: 378
+    description: Davao Gulf
+  - id: 379
+    description: Gulf of Mannar
+  - id: 1001
+    description: Sea of Okhotsk
+- id: 903
+  description: Oceania
+  children:
+  - id: 6
+    description: American Samoa
+  - id: 15
+    description: Australia
+  - id: 33
+    description: British Indian Ocean Territory
+  - id: 34
+    description: Solomon Islands
+  - id: 53
+    description: Christmas Island
+  - id: 54
+    description: Cocos Islands
+  - id: 58
+    description: Cook Islands
+  - id: 71
+    description: Easter island
+  - id: 80
+    description: Fiji
+  - id: 84
+    description: French Polynesia
+  - id: 105
+    description: Guam
+  - id: 126
+    description: Johnston Island
+  - id: 150
+    description: Mariana Islands
+  - id: 151
+    description: Marshall Islands
+  - id: 156
+    description: Midway
+  - id: 164
+    description: Nauru
+  - id: 169
+    description: New Caledonia
+  - id: 173
+    description: New Zealand
+  - id: 177
+    description: Niue
+  - id: 178
+    description: Norfolk Island
+  - id: 187
+    description: Papua New Guinea
+  - id: 192
+    description: Pitcairn Islands
+  - id: 209
+    description: Samoa
+  - id: 237
+    description: Tokelau Islands
+  - id: 238
+    description: Tonga
+  - id: 252
+    description: Vanuatu
+  - id: 260
+    description: Wake Island
+  - id: 261
+    description: Wallis and Futuna Islands
+  - id: 283
+    description: Kiribati
+  - id: 303
+    description: Micronesia, Federated States of
+  - id: 304
+    description: Palau
+  - id: 306
+    description: Tuvalu
+  - id: 380
+    description: Souther Ocean
+  - id: 381
+    description: Tasman Sea
+  - id: 382
+    description: Coral Sea
+  - id: 383
+    description: Gulf of Carpentaria
+  - id: 384
+    description: Bismarck Sea
+  - id: 385
+    description: Solomon Sea
+- id: 904
+  description: Middle East
+  children:
+  - id: 2
+    description: Afghanistan
+  - id: 20
+    description: Bahrain
+  - id: 118
+    description: Iran, Islamic Republic of
+  - id: 119
+    description: Iraq
+  - id: 121
+    description: Israel
+  - id: 127
+    description: Jordan
+  - id: 131
+    description: Kuwait
+  - id: 135
+    description: Lebanon
+  - id: 180
+    description: Oman
+  - id: 184
+    description: Pakistan
+  - id: 196
+    description: Qatar
+  - id: 212
+    description: Saudi Arabia
+  - id: 230
+    description: Syria
+  - id: 245
+    description: United Arab Emirates
+  - id: 263
+    description: Yemen
+  - id: 321
+    description: Palestine
+  - id: 386
+    description: Arabian Sea
+  - id: 387
+    description: Gulf of Aquaba
+- id: 905
+  description: Africa
+  children:
+  - id: 5
+    description: Algeria
+  - id: 8
+    description: Angola
+  - id: 13
+    description: Ascension Island
+  - id: 26
+    description: Benin
+  - id: 30
+    description: Botswana
+  - id: 38
+    description: Burkina Faso
+  - id: 40
+    description: Burundi
+  - id: 42
+    description: Cameroon
+  - id: 44
+    description: Canary Islands
+    children:
+    - id: 1264
+      description: El Hierro
+    - id: 1265
+      description: Gran Canaria
+    - id: 1266
+      description: La Gomera
+    - id: 1267
+      description: La Palma
+    - id: 1268
+      description: Tenerife
+    - id: 1273
+      description: Fuerteventura
+    - id: 1274
+      description: Lanzarote
+  - id: 46
+    description: Cape Verde
+  - id: 49
+    description: Central African Republic
+  - id: 50
+    description: Chad
+  - id: 56
+    description: Comoros
+  - id: 57
+    description: Congo, Republic of the
+  - id: 68
+    description: Djibouti
+  - id: 73
+    description: Egypt
+  - id: 75
+    description: Equatorial Guinea
+  - id: 76
+    description: Ethiopia
+  - id: 89
+    description: Gabon
+  - id: 90
+    description: Gambia
+  - id: 97
+    description: Ghana
+  - id: 107
+    description: Guinea
+  - id: 108
+    description: Guinea-Bissau
+  - id: 123
+    description: Ivory Coast
+  - id: 128
+    description: Kenya
+  - id: 136
+    description: Lesotho
+  - id: 137
+    description: Liberia
+  - id: 138
+    description: Libya
+  - id: 143
+    description: Madagascar
+  - id: 145
+    description: Malawi
+  - id: 148
+    description: Mali
+  - id: 153
+    description: Mauritania
+  - id: 154
+    description: Mauritius
+  - id: 160
+    description: Morocco
+  - id: 161
+    description: Mozambique
+  - id: 163
+    description: Namibia
+  - id: 175
+    description: Niger
+  - id: 176
+    description: Nigeria
+  - id: 197
+    description: Réunion
+  - id: 199
+    description: Rwanda
+  - id: 202
+    description: Saint Helena
+  - id: 211
+    description: Sao Tome and Principe
+  - id: 213
+    description: Senegal
+  - id: 214
+    description: Seychelles
+  - id: 215
+    description: Sierra Leone
+  - id: 218
+    description: Somalia
+  - id: 219
+    description: South Africa
+  - id: 224
+    description: Sudan
+  - id: 227
+    description: Swaziland
+  - id: 236
+    description: Togo
+  - id: 240
+    description: Tunisia
+  - id: 243
+    description: Uganda
+  - id: 248
+    description: Tanzania
+  - id: 266
+    description: Zambia
+  - id: 269
+    description: Zimbabwe
+  - id: 299
+    description: Eritrea
+  - id: 309
+    description: Congo, Democratic Republic of the
+  - id: 317
+    description: Mayotte
+  - id: 320
+    description: Western Sahara
+  - id: 324
+    description: Tristan da Cunha
+  - id: 388
+    description: Gulf of Guinea
+  - id: 389
+    description: Mozambique Channel
+  - id: 1306
+    description: South Sudan
+- id: 906
+  description: North America
+  children:
+  - id: 43
+    description: Canada
+    children:
+    - id: 1044
+      description: Alberta
+    - id: 1045
+      description: British Columbia
+    - id: 1046
+      description: Manitoba
+    - id: 1047
+      description: New Brunswick
+    - id: 1048
+      description: Newfoundland and Labrador
+    - id: 1049
+      description: Northwest Territories
+    - id: 1050
+      description: Nova Scotia
+    - id: 1051
+      description: Nunavut
+    - id: 1052
+      description: Ontario
+    - id: 1053
+      description: Prince Edward Island
+    - id: 1054
+      description: Québec
+    - id: 1055
+      description: Saskatchewan
+    - id: 1056
+      description: Yukon
+  - id: 206
+    description: Saint Pierre and Miquelon
+  - id: 249
+    description: United States
+    children:
+    - id: 503
+      description: Alaska
+    - id: 504
+      description: Hawaii
+    - id: 1057
+      description: Alabama
+    - id: 1058
+      description: Arizona
+    - id: 1059
+      description: Arkansas
+    - id: 1060
+      description: California
+    - id: 1061
+      description: Colorado
+    - id: 1062
+      description: Connecticut
+    - id: 1063
+      description: Delaware
+    - id: 1064
+      description: Florida
+    - id: 1065
+      description: Georgia
+    - id: 1066
+      description: Idaho
+    - id: 1067
+      description: Illinois
+    - id: 1068
+      description: Iowa
+    - id: 1069
+      description: Kansas
+    - id: 1070
+      description: Kentucky
+    - id: 1071
+      description: Louisiana
+    - id: 1072
+      description: Maine
+    - id: 1073
+      description: Maryland
+    - id: 1074
+      description: Massachusetts
+    - id: 1075
+      description: Michigan
+    - id: 1076
+      description: Minnesota
+    - id: 1077
+      description: Mississippi
+    - id: 1078
+      description: Missouri
+    - id: 1079
+      description: Montana
+    - id: 1080
+      description: Nebraska
+    - id: 1081
+      description: Nevada
+    - id: 1082
+      description: New Hampshire
+    - id: 1083
+      description: New Mexico
+    - id: 1084
+      description: New York
+    - id: 1085
+      description: North Carolina
+    - id: 1086
+      description: North Dakota
+    - id: 1087
+      description: Ohio
+    - id: 1088
+      description: Oklahoma
+    - id: 1089
+      description: Oregon
+    - id: 1090
+      description: Pennsylvania
+    - id: 1091
+      description: Rhode Island
+    - id: 1092
+      description: South Carolina
+    - id: 1093
+      description: South Dakota
+    - id: 1094
+      description: Tennessee
+    - id: 1095
+      description: Texas
+    - id: 1096
+      description: Utah
+    - id: 1097
+      description: Vermont
+    - id: 1098
+      description: Virginia
+    - id: 1099
+      description: Washington
+    - id: 1100
+      description: West Virginia
+    - id: 1101
+      description: Wisconsin
+    - id: 1102
+      description: Wyoming
+    - id: 1303
+      description: Indiana
+    - id: 1304
+      description: New Jersey
+    - id: 1305
+      description: District of Columbia
+  - id: 390
+    description: Baffin Bay
+  - id: 391
+    description: Hudson Bay
+  - id: 392
+    description: Beaufort Sea
+  - id: 393
+    description: Labrador Sea
+  - id: 394
+    description: Gulf of Alaska
+  - id: 395
+    description: Bering Sea
+  - id: 396
+    description: Davis Strait
+  - id: 397
+    description: Lincoln Sea
+  - id: 398
+    description: Denmark Strait
+  - id: 399
+    description: Caribbean Sea
+  - id: 400
+    description: Gulf of California
+  - id: 1002
+    description: Gulf of Mexico
+  - id: 1003
+    description: Hudson Strait
+  - id: 1004
+    description: Sargasso Sea
+- id: 907
+  description: South America
+  children:
+  - id: 11
+    description: Argentina
+  - id: 29
+    description: Bolivia
+  - id: 31
+    description: Brazil
+  - id: 51
+    description: Chile
+  - id: 55
+    description: Colombia
+  - id: 72
+    description: Ecuador
+  - id: 79
+    description: Falkland Islands (Malvinas)
+  - id: 83
+    description: French Guyana
+  - id: 109
+    description: Guyana
+  - id: 189
+    description: Paraguay
+  - id: 190
+    description: Peru
+  - id: 225
+    description: Suriname
+  - id: 251
+    description: Uruguay
+  - id: 254
+    description: Venezuela
+  - id: 401
+    description: Golfo San Jorge
+  - id: 402
+    description: Golfo San Matias
+  - id: 403
+    description: Bahia Grande
+  - id: 404
+    description: Magellan's Strait
+- id: 908
+  description: Central America and Caribbean
+  children:
+  - id: 9
+    description: Anguilla
+  - id: 10
+    description: Antigua and Barbuda
+  - id: 12
+    description: Aruba
+  - id: 19
+    description: Bahamas
+  - id: 22
+    description: Barbados
+  - id: 25
+    description: Belize
+  - id: 27
+    description: Bermuda
+  - id: 48
+    description: Cayman Islands
+  - id: 59
+    description: Costa Rica
+  - id: 61
+    description: Cuba
+  - id: 69
+    description: Dominica
+  - id: 70
+    description: Dominican Republic
+  - id: 74
+    description: El Salvador
+  - id: 103
+    description: Grenada
+  - id: 104
+    description: Guadeloupe
+  - id: 106
+    description: Guatemala
+  - id: 110
+    description: Haiti
+  - id: 112
+    description: Honduras
+  - id: 124
+    description: Jamaica
+  - id: 152
+    description: Martinique
+  - id: 155
+    description: Mexico
+  - id: 159
+    description: Montserrat
+  - id: 167
+    description: Sint Maarten
+  - id: 174
+    description: Nicaragua
+  - id: 185
+    description: Panama
+  - id: 195
+    description: Puerto Rico
+  - id: 204
+    description: Saint Kitts and Nevis
+  - id: 205
+    description: Saint Lucia
+  - id: 208
+    description: Saint Vincent and the Grenadines
+  - id: 239
+    description: Trinidad and Tobago
+  - id: 242
+    description: Turks and Caicos Islands
+  - id: 256
+    description: Virgin Islands (UK)
+  - id: 257
+    description: Virgin Islands (US)
+  - id: 501
+    description: Saint Barthélemy
+  - id: 502
+    description: Saint Martin
+  - id: 1310
+    description: Bonaire, Sint Eustatius and Saba
+  - id: 1311
+    description: Curaçao
+- id: 998
+  description: Other
+  children:
+  - id: 267
+    description: Antarctic Ocean
+  - id: 268
+    description: Arctic Ocean
+  - id: 270
+    description: Indian Ocean
+  - id: 271
+    description: Mediterranean Sea
+  - id: 272
+    description: North Atlantic Ocean
+  - id: 273
+    description: North Pacific Ocean
+  - id: 274
+    description: South Atlantic Ocean
+  - id: 275
+    description: South Pacific Ocean
+  - id: 296
+    description: Antarctica
+  - id: 323
+    description: French Southern and Antarctic Lands
+- id: 999
+  description: Unknown

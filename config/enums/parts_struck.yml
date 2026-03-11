@@ -1,0 +1,21 @@
+---
+attribute_id: '644'
+xml_tag: Parts_Struck
+sequence: 47
+values:
+  1: Radome
+  2: Windshield
+  3: Nose excluding radome / windshield
+  4: Engine 1
+  5: Engine 2
+  6: Engine 3
+  7: Engine 4
+  8: Propeller
+  9: Wing
+  10: Rotor
+  11: Fuselage
+  12: Landing gear
+  13: Tail
+  14: Lights
+  15: Other
+  16: None

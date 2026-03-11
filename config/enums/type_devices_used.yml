@@ -1,0 +1,12 @@
+---
+attribute_id: '413'
+xml_tag: Type_Devices_Used
+sequence:
+values:
+  1: Seat cushion
+  2: Lifejacket
+  3: Dinghy/life-raft
+  4: Slide-raft
+  97: None
+  98: Other
+  99: Unknown

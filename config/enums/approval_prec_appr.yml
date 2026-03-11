@@ -1,0 +1,12 @@
+---
+attribute_id: '40'
+xml_tag: Approval_Prec_Appr
+sequence:
+values:
+  1: CAT I
+  2: CAT II
+  4: CAT III A
+  5: CAT III B
+  6: CAT III C
+  97: None
+  99: Unknown

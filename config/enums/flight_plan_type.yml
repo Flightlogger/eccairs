@@ -1,0 +1,11 @@
+---
+attribute_id: '297'
+xml_tag: Flight_Plan_Type
+sequence: 41
+values:
+  1: FPL
+  2: CPL
+  3: RPL
+  4: AFIL
+  5: Other
+  99: Unknown

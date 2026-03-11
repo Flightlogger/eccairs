@@ -3,6 +3,14 @@
 module Eccairs
   module Base
     class EnumAttribute < Attribute
+      def self.enums_from(name)
+        data = Eccairs::Enums.get(name)
+        attribute_id data[:attribute_id]
+        xml_tag      data[:xml_tag]
+        sequence     data[:sequence] if data[:sequence]
+        allowed_values data[:values]
+      end
+
       # DSL method to set allowed_values at class level
       # Can be an array of integers or a hash of symbolic names to integers
       def self.allowed_values(values = nil)

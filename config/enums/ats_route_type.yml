@@ -1,0 +1,20 @@
+---
+attribute_id: '47'
+xml_tag: ATS_Route_Type
+sequence:
+values:
+  1: Conventional
+  2: Advisory
+  3: F-type
+  4: RNAV
+  5: B-RNAV
+  6: P-RNAV
+  7: RNP1-Y
+  8: RNP1-Z
+  9: CDR
+  10: CDR1
+  11: CDR2
+  12: CDR3
+  13: K (helicopter)
+  14: S (supersonic)
+  98: Other

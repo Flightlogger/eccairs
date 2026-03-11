@@ -1,0 +1,9 @@
+---
+attribute_id: '376'
+xml_tag: Other_Grd_Safety_Net_Wkg
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown
+  100: Not applicable

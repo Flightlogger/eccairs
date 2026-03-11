@@ -1,0 +1,60 @@
+---
+attribute_id: '166'
+xml_tag: Landing_Gear_Type
+sequence: 20
+values:
+  1: Hull/float equipped
+  3: Amphibious
+  4: Ski
+  5: Tricycle, fixed
+  6: Tricycle, retractable
+  7: Skid
+  8: Tailwheel/tailskid, fixed
+  9: Tailwheel/tailskid, retractable
+  10: Mono-wheel/skid, fixed
+  11: Mono-wheel, retractable
+  12: Quadricycle
+  13: Tandem
+  98: Other
+  99: Unknown
+  100: Tricycle
+  101: Tailwheel
+  102: Mono-wheel
+hierarchy:
+- id: 1
+  description: Hull/float equipped
+- id: 3
+  description: Amphibious
+- id: 4
+  description: Ski
+- id: 7
+  description: Skid
+- id: 12
+  description: Quadricycle
+- id: 13
+  description: Tandem
+- id: 98
+  description: Other
+- id: 99
+  description: Unknown
+- id: 100
+  description: Tricycle
+  children:
+  - id: 5
+    description: Tricycle, fixed
+  - id: 6
+    description: Tricycle, retractable
+- id: 101
+  description: Tailwheel
+  children:
+  - id: 8
+    description: Tailwheel/tailskid, fixed
+  - id: 9
+    description: Tailwheel/tailskid, retractable
+- id: 102
+  description: Mono-wheel
+  children:
+  - id: 10
+    description: Mono-wheel/skid, fixed
+  - id: 11
+    description: Mono-wheel, retractable

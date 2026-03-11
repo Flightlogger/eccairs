@@ -3,10 +3,7 @@
 module Eccairs
   module Attributes
     class ReportSource < Eccairs::Base::EnumAttribute
-      attribute_id 476
-      xml_tag "Report_Source"
-      sequence 2
-      allowed_values [1, 5, 2, 4, 6, 3]
+      enums_from :report_source
     end
   end
 end

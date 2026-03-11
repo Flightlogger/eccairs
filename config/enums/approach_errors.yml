@@ -1,0 +1,9 @@
+---
+attribute_id: '41'
+xml_tag: Approach_Errors
+sequence:
+values:
+  1: Rate of descent
+  2: Airspeed
+  98: Other
+  99: Unknown

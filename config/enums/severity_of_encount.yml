@@ -1,0 +1,23 @@
+---
+attribute_id: '880'
+xml_tag: Severity_Of_Encount
+sequence:
+values:
+  1: Sulphurous odour noted in the cabin.
+  2: Anomalous atmospheric haze observed.
+  3: Electrostatic discharge (St. Elmo's fire) on windshield, nose or engine cowls.
+  4: Ash reported or suspected but no other effects or damage noted.
+  5: Light dust observed in cabin.
+  6: Ash deposits on exterior of aircraft.
+  7: Fluctuations in exhaust gas temperature (EGT) with return to normal values.
+  8: Heavy cabin dust ('dark as night' in cabin).
+  9: Contamination of air handling and air conditioning systems requiring use of oxygen.
+  10: Abrasion damage to exterior surfaces, engine inlet and compressor fan blades.
+  11: Pitting, frosting or breaking of windscreen or windows.
+  12: Minor plugging of pitot-static system insufficient to affect instrument readings.
+  13: Deposition of ash in engine.
+  14: Vibration or surging of engine(s).
+  15: Plugging of pitot-static system to give erroneous instrument readings.
+  16: Contamination of engine oil or hydraulic-system fluids.
+  17: Damage to electrical or computer systems.
+  18: Engine damage.

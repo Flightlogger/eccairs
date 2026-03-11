@@ -1,0 +1,13 @@
+---
+attribute_id: '300'
+xml_tag: Underwater_Locator_FDR
+sequence:
+values:
+  1: Assisted to locate FDR
+  2: Operated/unhelpful FDR
+  3: Did not operate
+  4: Not fitted
+  5: Separated
+  6: Inaudible signal
+  98: Other
+  99: Unknown

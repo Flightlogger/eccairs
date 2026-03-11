@@ -1,0 +1,14 @@
+---
+attribute_id: '610'
+xml_tag: RA_Type
+sequence: 6
+values:
+  1: Climb
+  2: Descend
+  3: Crossing
+  4: Reversal
+  5: Increase
+  6: Reduce / Adjust
+  7: Maintain vertical speed
+  8: Monitor vertical speed
+  9: Unknown

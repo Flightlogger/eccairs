@@ -1,0 +1,12 @@
+---
+attribute_id: '212'
+xml_tag: Obstructions_Water
+sequence:
+values:
+  1: Boats
+  2: Buoys
+  3: Piles/markers
+  4: Sandbar/shoal
+  5: Submerged object
+  98: Other
+  99: Unknown

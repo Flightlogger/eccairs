@@ -3,6 +3,36 @@
 require "spec_helper"
 
 RSpec.describe Eccairs::Base::EnumAttribute do
+  describe ".enums_from" do
+    it "loads attribute metadata from YAML" do
+      test_class = Class.new(described_class) do
+        enums_from :wx_conditions
+      end
+
+      expect(test_class.attribute_id).to eq("127")
+      expect(test_class.xml_tag).to eq("Wx_Conditions")
+      expect(test_class.allowed_values).to include(1, 2, 99)
+    end
+
+    it "enables validation with loaded values" do
+      test_class = Class.new(described_class) do
+        enums_from :wx_conditions
+      end
+
+      instance = test_class.new(1)
+      expect(instance.value).to eq(1)
+      expect { test_class.new(9999) }.to raise_error(ArgumentError, /not in allowed values/)
+    end
+
+    it "raises KeyError for missing enum key" do
+      expect {
+        Class.new(described_class) do
+          enums_from :nonexistent_key
+        end
+      }.to raise_error(KeyError)
+    end
+  end
+
   describe "class configuration" do
     describe ".allowed_values with array" do
       let(:test_enum_class) do

@@ -1,0 +1,9 @@
+---
+attribute_id: '286'
+xml_tag: Operation
+sequence:
+values:
+  1: Functioned properly
+  2: Failed to operate
+  3: Not Installed
+  99: Unknown

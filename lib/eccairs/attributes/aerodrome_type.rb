@@ -3,14 +3,7 @@
 module Eccairs
   module Attributes
     class AerodromeType < Eccairs::Base::EnumAttribute
-      attribute_id 10
-      xml_tag "Aerodrome_Type"
-      sequence 8
-      allowed_values(
-        AERODROME: 1,
-        HELIPORT: 2,
-        UNKNOWN: 99
-      )
+      enums_from :aerodrome_type
     end
   end
 end

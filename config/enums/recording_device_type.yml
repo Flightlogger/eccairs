@@ -1,0 +1,13 @@
+---
+attribute_id: '675'
+xml_tag: Recording_Device_Type
+sequence:
+values:
+  3: Quick Access Recorder
+  4: Direct Access Recorder
+  5: Global Positioning System
+  6: Failure Management System
+  7: Flight Management System
+  8: Engine Control Unit
+  9: Other
+  10: Unknown

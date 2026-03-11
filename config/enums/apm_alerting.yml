@@ -1,0 +1,9 @@
+---
+attribute_id: '1042'
+xml_tag: APM_Alerting
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown
+  100: Not applicable

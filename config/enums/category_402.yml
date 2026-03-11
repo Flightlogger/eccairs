@@ -1,0 +1,11 @@
+---
+attribute_id: '402'
+xml_tag: Category
+sequence: 0
+values:
+  1: Co-pilot
+  2: Dual student
+  3: Flight engineer
+  4: Pilot-in-command
+  98: Other
+  99: Unknown

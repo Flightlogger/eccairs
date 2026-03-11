@@ -1,0 +1,31 @@
+---
+attribute_id: '896'
+xml_tag: Prop_Involvement
+sequence: 5
+values:
+  1: Unknown
+  2: Uncontained failure
+  3: Fire
+  4: Shutdown
+  5: Shutdown - vibration
+  6: Shutdown - temperature
+  7: Shutdown - fire warning
+  8: Shutdown - other
+hierarchy:
+- id: 1
+  description: Unknown
+- id: 2
+  description: Uncontained failure
+- id: 3
+  description: Fire
+- id: 4
+  description: Shutdown
+  children:
+  - id: 5
+    description: Shutdown - vibration
+  - id: 6
+    description: Shutdown - temperature
+  - id: 7
+    description: Shutdown - fire warning
+  - id: 8
+    description: Shutdown - other

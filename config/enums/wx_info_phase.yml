@@ -1,0 +1,10 @@
+---
+attribute_id: '123'
+xml_tag: Wx_Info_Phase
+sequence:
+values:
+  1: Take-off/climb
+  2: En route
+  3: Approach/landing
+  4: Taxi/standing
+  99: Unknown

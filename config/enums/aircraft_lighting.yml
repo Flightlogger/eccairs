@@ -1,0 +1,13 @@
+---
+attribute_id: '596'
+xml_tag: Aircraft_Lighting
+sequence:
+values:
+  1: Navigation lights
+  2: Strobe lights
+  4: Anti-collision lights
+  5: Landing/taxi lights
+  6: Logo (tailfin) light
+  97: None
+  98: Other
+  99: Unknown

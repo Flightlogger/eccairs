@@ -1,0 +1,13 @@
+---
+attribute_id: '7'
+xml_tag: Aerodrome_Status
+sequence: 5
+values:
+  1: Private airstrip
+  2: Military airstrip, public
+  3: Military airstrip
+  4: Restricted aerodrome
+  5: Light a/c aerodrome
+  6: Public aerodrome
+  98: Other
+  99: Unknown

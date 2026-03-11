@@ -1,0 +1,12 @@
+---
+attribute_id: '713'
+xml_tag: Investigating_Entity
+sequence:
+values:
+  1: AIB
+  2: CAA
+  3: ANSP
+  4: Company / Operator
+  5: Aerodrome Operator
+  6: Other
+  7: Unknown

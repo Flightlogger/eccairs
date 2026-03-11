@@ -1,0 +1,8 @@
+---
+attribute_id: '83'
+xml_tag: Descent_Rate
+sequence:
+values:
+  1: Low
+  2: High
+  99: Unknown

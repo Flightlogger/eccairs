@@ -1,0 +1,11 @@
+---
+attribute_id: '538'
+xml_tag: Traffic_Complexity_Before_2Nd_Controller
+sequence:
+values:
+  1: Low
+  2: Low/medium
+  3: Medium
+  4: Medium/high
+  5: High
+  99: Unknown

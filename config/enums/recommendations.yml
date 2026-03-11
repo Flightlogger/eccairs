@@ -1,0 +1,140 @@
+---
+attribute_id: '427'
+xml_tag: Recommendations
+sequence:
+values:
+  1: Other
+  2: Aircraft / Equipment / Facilities
+  3: Aircraft equipment
+  4: ATS / ATS equipment / facilities
+  5: Electronic navigation landing aids
+  6: Aerodrome equipment / facilities
+  7: Meteorological equipment / facilities
+  8: Security equipment / facilities
+  9: Search and Rescue
+  10: Rescue Fire Fighting Services
+  12: Personnel
+  13: Medical / Human Factors
+  14: Management / scheduling / staffing
+  19: Training / proficiency / check
+  20: Other
+  21: Procedures / Regulations
+  22: Aircraft operations
+  23: Aircraft dispatch
+  24: Air Navigation Services
+  25: Aerodrome
+  26: Security
+  27: Aircraft maintenance/inspection
+  28: ANS maintenance/inspection
+  29: Search and Rescue
+  30: Rescue Fire Fighting Services
+  31: Aircraft certification
+  32: Design/Production/Manufacturing
+  33: Oversight/Auditing
+  34: QMS/SMS/SSP
+  35: Other
+  41: Survivability
+  45: Ground equipment
+  46: Safety policy and objectives
+  47: Safety risk management
+  48: Safety assurance
+  49: Safety promotion
+  50: Aircraft documentation
+  51: Aircraft systems
+  52: Powerplant
+  53: Structures
+  54: Transmission / rotor systems
+  55: Safety equipment
+  56: Recorded data systems
+hierarchy:
+- id: 2
+  description: Aircraft / Equipment / Facilities
+  children:
+  - id: 1
+    description: Other
+  - id: 3
+    description: Aircraft equipment
+    children:
+    - id: 51
+      description: Aircraft systems
+    - id: 52
+      description: Powerplant
+    - id: 53
+      description: Structures
+    - id: 54
+      description: Transmission / rotor systems
+    - id: 55
+      description: Safety equipment
+    - id: 56
+      description: Recorded data systems
+  - id: 4
+    description: ATS / ATS equipment / facilities
+  - id: 5
+    description: Electronic navigation landing aids
+  - id: 6
+    description: Aerodrome equipment / facilities
+  - id: 7
+    description: Meteorological equipment / facilities
+  - id: 8
+    description: Security equipment / facilities
+  - id: 9
+    description: Search and Rescue
+  - id: 10
+    description: Rescue Fire Fighting Services
+  - id: 45
+    description: Ground equipment
+  - id: 50
+    description: Aircraft documentation
+- id: 12
+  description: Personnel
+  children:
+  - id: 13
+    description: Medical / Human Factors
+  - id: 14
+    description: Management / scheduling / staffing
+  - id: 19
+    description: Training / proficiency / check
+  - id: 20
+    description: Other
+- id: 21
+  description: Procedures / Regulations
+  children:
+  - id: 22
+    description: Aircraft operations
+  - id: 23
+    description: Aircraft dispatch
+  - id: 24
+    description: Air Navigation Services
+  - id: 25
+    description: Aerodrome
+  - id: 26
+    description: Security
+  - id: 27
+    description: Aircraft maintenance/inspection
+  - id: 28
+    description: ANS maintenance/inspection
+  - id: 29
+    description: Search and Rescue
+  - id: 30
+    description: Rescue Fire Fighting Services
+  - id: 31
+    description: Aircraft certification
+  - id: 32
+    description: Design/Production/Manufacturing
+  - id: 33
+    description: Oversight/Auditing
+  - id: 35
+    description: Other
+  - id: 41
+    description: Survivability
+- id: 34
+  description: QMS/SMS/SSP
+  children:
+  - id: 46
+    description: Safety policy and objectives
+  - id: 47
+    description: Safety risk management
+  - id: 48
+    description: Safety assurance
+  - id: 49
+    description: Safety promotion

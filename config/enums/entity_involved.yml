@@ -1,0 +1,9 @@
+---
+attribute_id: '741'
+xml_tag: Entity_Involved
+sequence: 0
+values:
+  1: Person
+  2: Vehicle
+  3: Animal
+  4: Aircraft

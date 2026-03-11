@@ -1,0 +1,10 @@
+---
+attribute_id: '432'
+xml_tag: Highest_Damage
+sequence: 16
+values:
+  1: Destroyed
+  2: Substantial
+  3: Minor
+  98: None
+  99: Unknown

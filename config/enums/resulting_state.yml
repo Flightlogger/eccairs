@@ -1,0 +1,9 @@
+---
+attribute_id: '94'
+xml_tag: Resulting_State
+sequence:
+values:
+  1: Remained upright
+  2: Helicopter overturned
+  3: Helicopter sank
+  99: Unknown

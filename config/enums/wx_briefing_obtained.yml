@@ -1,0 +1,10 @@
+---
+attribute_id: '317'
+xml_tag: Wx_Briefing_Obtained
+sequence:
+values:
+  1: Pre-flight
+  2: In-flight
+  3: Pre- and in-flight
+  97: None
+  99: Unknown

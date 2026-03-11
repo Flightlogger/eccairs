@@ -1,0 +1,13 @@
+---
+attribute_id: '266'
+xml_tag: Cloud_Amount
+sequence: 6
+values:
+  1: CAVOK
+  2: Few clouds (1/8-2/8)
+  3: Broken (5/8 to 7/8)
+  4: Overcast
+  5: Sky obscured
+  6: Scattered (3/8 to 4/8)
+  99: Unknown
+  101: No significant Clouds (NSC)

@@ -1,0 +1,19 @@
+---
+attribute_id: '92'
+xml_tag: Electr_Landing_Aids
+sequence:
+values:
+  1: ILS complete
+  2: ILS - localizer only
+  3: ILS back course
+  4: NDB
+  5: VOR
+  6: MLS
+  7: DME
+  8: PAR/GCA
+  9: TACAN
+  10: Surveillance Radar
+  11: GNSS
+  97: None
+  98: Other
+  99: Unknown

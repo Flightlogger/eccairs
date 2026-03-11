@@ -1,0 +1,9 @@
+---
+attribute_id: '947'
+xml_tag: Active_Flow_Control_Performed
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'
+  3: Unknown
+  4: Not applicable

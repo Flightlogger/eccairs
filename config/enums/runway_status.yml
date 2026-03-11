@@ -1,0 +1,8 @@
+---
+attribute_id: '942'
+xml_tag: Runway_Status
+sequence:
+values:
+  1: Closed Runway
+  2: Unknown
+  3: Open Runway

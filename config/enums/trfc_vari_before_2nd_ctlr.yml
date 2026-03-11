@@ -1,0 +1,11 @@
+---
+attribute_id: '553'
+xml_tag: Trfc_Vari_Before_2Nd_Ctlr
+sequence:
+values:
+  1: Increasing slowly
+  2: Increasing rapidly
+  3: Decreasing slowly
+  4: Decreasing rapidly
+  5: No variation
+  99: Unknown

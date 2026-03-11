@@ -1,0 +1,367 @@
+---
+attribute_id: '790'
+xml_tag: Information_And_Equipment
+sequence:
+values:
+  1: Not applicable
+  2: ATC Activities and Aircraft Information
+  3: Controller activities
+  4: Airspace and Other Keywords
+  5: Not applicable or unknown
+  6: Unknown
+  7: Controller materials
+  8: Procedures
+  9: Briefing material
+  10: Flight Progress Strip (FPS)
+  11: Track Data Block (TDB)
+  12: Conflict alert
+  13: Restricted areas
+  14: ATS equipment
+  15: Aircraft sighting (tower)
+  16: Aircraft recognition (tower)
+  17: Point out
+  18: Handover
+  19: Separation
+  20: Transfer
+  21: Coordination
+  22: Type of air traffic service
+  23: Variable aircraft information
+  24: Climb
+  25: Descent
+  26: Flight Level (FL)
+  27: Altitude
+  28: Route
+  29: Heading
+  30: Direction
+  31: Speed
+  33: Direction of turn
+  35: Aircraft performance
+  36: Clearance
+  37: Frequency
+  38: Holding
+  39: Special instructions
+  40: Avoiding action
+  41: Emergency
+  42: Conversational R/T
+  43: Fixed aircraft information
+  44: Aircraft
+  45: Airline
+  46: Call sign
+  47: Aircraft type
+  48: Type of traffic
+  49: QNH / QFE
+  50: TCAS
+  51: Other information
+  52: Other
+  53: Equipment
+  54: Time and Location
+  55: Distance
+  56: Geographical position
+  57: Airspace type
+  58: Airspace restrictions
+  59: Destination
+  60: Sector
+  61: Conflict
+  62: Weather
+  63: Airport
+  64: Airport
+  65: Aiport monitoring and control equipment
+  66: Tower
+  67: Runway
+  68: Ground vehicles
+  69: Terrain
+  70: Personnel
+  71: Flight rules
+  72: Instrument Flight Rules (IFR)
+  73: Visual Flight Rules (VFR)
+  74: Other situation
+  75: Other
+  76: Communication
+  77: Navigation
+  78: Radiotelephone (R/T)
+  79: Telephone
+  80: Aeron.l Fix Tel. Net. (AFTN)
+  81: Datalink
+  82: Loudspeaker
+  83: Light signalling equipment
+  84: Other
+  85: Very high frequency Omni-directional Radio range (VOR)
+  86: Non-directionol Beacon (NDB)
+  87: Distance Measuring Equipment (DME)
+  88: Global Navigation Satellite System (GNSS)
+  89: Other
+  90: Surveillance
+  91: Primary radar
+  92: Secondary radar
+  93: Aircraft position display
+  94: Precision approach radar
+  95: Ground movement radar
+  96: Aerodrome surface movement indicator
+  97: Other
+  98: Visual approach aids
+  99: Aerodrome equipment warning panels
+  100: Aerodrome auxiliary controls
+  101: Flight information displays
+  102: Paper
+  103: Electronic
+  104: Other
+  105: Input devices
+  106: Touch
+  107: Pad
+  108: Keyboard
+  109: Mouse
+  110: Rollerball
+  111: Other
+  112: Other information displays
+  113: Auxiliary displays
+  114: Maps / charts / checklists
+  115: Notices
+  116: Other
+hierarchy:
+- id: 2
+  description: ATC Activities and Aircraft Information
+  children:
+  - id: 3
+    description: Controller activities
+    children:
+    - id: 15
+      description: Aircraft sighting (tower)
+    - id: 16
+      description: Aircraft recognition (tower)
+    - id: 17
+      description: Point out
+    - id: 18
+      description: Handover
+    - id: 19
+      description: Separation
+    - id: 20
+      description: Transfer
+    - id: 21
+      description: Coordination
+    - id: 22
+      description: Type of air traffic service
+  - id: 7
+    description: Controller materials
+    children:
+    - id: 8
+      description: Procedures
+    - id: 9
+      description: Briefing material
+    - id: 10
+      description: Flight Progress Strip (FPS)
+    - id: 11
+      description: Track Data Block (TDB)
+    - id: 12
+      description: Conflict alert
+    - id: 13
+      description: Restricted areas
+    - id: 14
+      description: ATS equipment
+  - id: 23
+    description: Variable aircraft information
+    children:
+    - id: 24
+      description: Climb
+    - id: 25
+      description: Descent
+    - id: 26
+      description: Flight Level (FL)
+    - id: 27
+      description: Altitude
+    - id: 28
+      description: Route
+    - id: 29
+      description: Heading
+    - id: 30
+      description: Direction
+    - id: 31
+      description: Speed
+    - id: 33
+      description: Direction of turn
+    - id: 35
+      description: Aircraft performance
+    - id: 36
+      description: Clearance
+    - id: 37
+      description: Frequency
+    - id: 38
+      description: Holding
+    - id: 39
+      description: Special instructions
+    - id: 40
+      description: Avoiding action
+    - id: 41
+      description: Emergency
+    - id: 42
+      description: Conversational R/T
+  - id: 43
+    description: Fixed aircraft information
+    children:
+    - id: 44
+      description: Aircraft
+    - id: 45
+      description: Airline
+    - id: 46
+      description: Call sign
+    - id: 47
+      description: Aircraft type
+    - id: 48
+      description: Type of traffic
+    - id: 49
+      description: QNH / QFE
+    - id: 50
+      description: TCAS
+  - id: 51
+    description: Other information
+    children:
+    - id: 52
+      description: Other
+- id: 4
+  description: Airspace and Other Keywords
+  children:
+  - id: 54
+    description: Time and Location
+    children:
+    - id: 55
+      description: Distance
+    - id: 56
+      description: Geographical position
+    - id: 57
+      description: Airspace type
+    - id: 58
+      description: Airspace restrictions
+    - id: 59
+      description: Destination
+    - id: 60
+      description: Sector
+    - id: 61
+      description: Conflict
+    - id: 62
+      description: Weather
+  - id: 63
+    description: Airport
+    children:
+    - id: 64
+      description: Airport
+    - id: 65
+      description: Aiport monitoring and control equipment
+    - id: 66
+      description: Tower
+    - id: 67
+      description: Runway
+    - id: 68
+      description: Ground vehicles
+    - id: 69
+      description: Terrain
+    - id: 70
+      description: Personnel
+  - id: 71
+    description: Flight rules
+    children:
+    - id: 72
+      description: Instrument Flight Rules (IFR)
+    - id: 73
+      description: Visual Flight Rules (VFR)
+  - id: 74
+    description: Other situation
+    children:
+    - id: 75
+      description: Other
+- id: 5
+  description: Not applicable or unknown
+  children:
+  - id: 1
+    description: Not applicable
+  - id: 6
+    description: Unknown
+- id: 53
+  description: Equipment
+  children:
+  - id: 76
+    description: Communication
+    children:
+    - id: 78
+      description: Radiotelephone (R/T)
+    - id: 79
+      description: Telephone
+    - id: 80
+      description: Aeron.l Fix Tel. Net. (AFTN)
+    - id: 81
+      description: Datalink
+    - id: 82
+      description: Loudspeaker
+    - id: 83
+      description: Light signalling equipment
+    - id: 84
+      description: Other
+  - id: 77
+    description: Navigation
+    children:
+    - id: 85
+      description: Very high frequency Omni-directional Radio range (VOR)
+    - id: 86
+      description: Non-directionol Beacon (NDB)
+    - id: 87
+      description: Distance Measuring Equipment (DME)
+    - id: 88
+      description: Global Navigation Satellite System (GNSS)
+    - id: 89
+      description: Other
+  - id: 90
+    description: Surveillance
+    children:
+    - id: 91
+      description: Primary radar
+    - id: 92
+      description: Secondary radar
+    - id: 93
+      description: Aircraft position display
+    - id: 94
+      description: Precision approach radar
+    - id: 95
+      description: Ground movement radar
+    - id: 96
+      description: Aerodrome surface movement indicator
+    - id: 97
+      description: Other
+    - id: 98
+      description: Visual approach aids
+    - id: 99
+      description: Aerodrome equipment warning panels
+    - id: 100
+      description: Aerodrome auxiliary controls
+  - id: 101
+    description: Flight information displays
+    children:
+    - id: 102
+      description: Paper
+    - id: 103
+      description: Electronic
+    - id: 104
+      description: Other
+  - id: 105
+    description: Input devices
+    children:
+    - id: 106
+      description: Touch
+    - id: 107
+      description: Pad
+    - id: 108
+      description: Keyboard
+    - id: 109
+      description: Mouse
+    - id: 110
+      description: Rollerball
+    - id: 111
+      description: Other
+  - id: 112
+    description: Other information displays
+    children:
+    - id: 113
+      description: Auxiliary displays
+    - id: 114
+      description: Maps / charts / checklists
+    - id: 115
+      description: Notices
+    - id: 116
+      description: Other

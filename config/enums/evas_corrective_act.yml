@@ -1,0 +1,13 @@
+---
+attribute_id: '740'
+xml_tag: Evas_Corrective_Act
+sequence:
+values:
+  1: Cancelled take-off clearance
+  2: Rejected take-off
+  3: Rotated early
+  4: Delayed rotation
+  5: Abrupt stop
+  6: Swerve
+  7: Missed approach
+  8: Other

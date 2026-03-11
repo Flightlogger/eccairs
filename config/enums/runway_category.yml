@@ -1,0 +1,14 @@
+---
+attribute_id: '502'
+xml_tag: Runway_Category
+sequence:
+values:
+  1: Non-instrument runway
+  2: Non-prec approach runway
+  3: Prec approach cat unknown
+  4: Prec approach cat I
+  5: Prec approach cat II
+  6: Prec approach cat III a
+  7: Prec approach cat III b
+  8: Prec approach cat III c
+  99: Unknown

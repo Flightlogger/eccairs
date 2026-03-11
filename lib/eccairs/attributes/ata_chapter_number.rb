@@ -2,10 +2,8 @@
 
 module Eccairs
   module Attributes
-    class AtaChapterNumber < Eccairs::Base::StringAttribute
-      attribute_id 659
-      xml_tag "ATA_Chapter_Number"
-      sequence 4
+    class AtaChapterNumber < Eccairs::Base::EnumAttribute
+      enums_from :ata_chapter_number
     end
   end
 end

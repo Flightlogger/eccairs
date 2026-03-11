@@ -1,0 +1,9 @@
+---
+attribute_id: '598'
+xml_tag: Vertical_Profile_Of_Separation
+sequence: 5
+values:
+  1: Level
+  2: Climb
+  3: Descent
+  99: Unknown

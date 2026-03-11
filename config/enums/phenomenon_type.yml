@@ -1,0 +1,87 @@
+---
+attribute_id: '299'
+xml_tag: Phenomenon_Type
+sequence: 1
+values:
+  1: Rain
+  2: Hail
+  3: Snow
+  4: Ice pellets
+  7: Drizzle
+  10: Tornado or waterspout
+  11: Squall
+  14: Duststorm
+  15: Smoke
+  16: Snow grains
+  17: Haze
+  18: Ice crystals
+  19: Small hail/snow pellets
+  20: Dust/sand whirls
+  21: Sandstorm
+  98: Other
+  99: Unknown
+  100: Mist
+  101: Fog
+  102: Volcanic ash
+  103: Sand
+  104: Dust
+  105: Funnel cloud
+  106: Precipitations
+  107: Obscurations
+  108: Other phenomena
+hierarchy:
+- id: 98
+  description: Other
+- id: 99
+  description: Unknown
+- id: 106
+  description: Precipitations
+  children:
+  - id: 1
+    description: Rain
+  - id: 2
+    description: Hail
+  - id: 3
+    description: Snow
+  - id: 4
+    description: Ice pellets
+  - id: 7
+    description: Drizzle
+  - id: 16
+    description: Snow grains
+  - id: 18
+    description: Ice crystals
+  - id: 19
+    description: Small hail/snow pellets
+- id: 107
+  description: Obscurations
+  children:
+  - id: 15
+    description: Smoke
+  - id: 17
+    description: Haze
+  - id: 100
+    description: Mist
+  - id: 101
+    description: Fog
+  - id: 102
+    description: Volcanic ash
+  - id: 103
+    description: Sand
+  - id: 104
+    description: Dust
+- id: 108
+  description: Other phenomena
+  children:
+  - id: 10
+    description: Tornado or waterspout
+  - id: 11
+    description: Squall
+  - id: 14
+    description: Duststorm
+  - id: 20
+    description: Dust/sand whirls
+  - id: 21
+    description: Sandstorm
+  - id: 105
+    description: Funnel cloud

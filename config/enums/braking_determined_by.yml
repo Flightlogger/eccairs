@@ -1,0 +1,9 @@
+---
+attribute_id: '497'
+xml_tag: Braking_Determined_By
+sequence:
+values:
+  1: Measurement
+  2: Estimate & pilot report
+  3: Not determined
+  99: Unknown

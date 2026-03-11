@@ -1,0 +1,8 @@
+---
+attribute_id: '804'
+xml_tag: Autopilot
+sequence:
+values:
+  1: 'On'
+  2: Unknown
+  3: 'Off'

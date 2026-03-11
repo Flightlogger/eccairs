@@ -1,0 +1,18 @@
+---
+attribute_id: '17'
+xml_tag: Special_Activities
+sequence: 4
+values:
+  1: Airshow
+  2: Parachuting
+  3: Glider
+  4: Military exercise
+  5: Calibration flights
+  6: Training flights
+  98: Other
+  99: Unknown
+  100: None
+  101: Aerobatics
+  102: Balloons
+  103: Model aircraft
+  104: UAS / RPAS

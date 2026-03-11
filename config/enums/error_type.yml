@@ -1,0 +1,100 @@
+---
+attribute_id: '699'
+xml_tag: Error_Type
+sequence:
+values:
+  1: Timing of Action
+  2: Selection of Action
+  3: Information Transfer
+  4: Too fast
+  5: Too slow
+  6: Too early
+  7: Too late
+  8: Repeated wrong action
+  9: Right action in the wrong order
+  10: Forgot to perform the action
+  11: Did not perform the action
+  12: Too much/too little instructions
+  13: Wrong action
+  14: Wrong action to the right aircraft
+  15: Wrong action to the wrong aircraft
+  16: Right action to the wrong aircraft
+  17: Unnecessary action
+  18: Transmission / sent unclear
+  19: Writing/typing unclear
+  20: Reception unclear
+  21: Did not get the required information
+  22: Did not transmit/send the information
+  23: Did not write/type the information
+  24: Transmission partial/incomplete
+  25: Writing partial/incomplete
+  26: Transmission incorrect
+  27: Writing incorrect
+  28: Not applicable or unknown
+  29: Unknown
+  30: Not applicable
+hierarchy:
+- id: 1
+  description: Timing of Action
+  children:
+  - id: 4
+    description: Too fast
+  - id: 5
+    description: Too slow
+  - id: 6
+    description: Too early
+  - id: 7
+    description: Too late
+  - id: 8
+    description: Repeated wrong action
+  - id: 9
+    description: Right action in the wrong order
+- id: 2
+  description: Selection of Action
+  children:
+  - id: 10
+    description: Forgot to perform the action
+  - id: 11
+    description: Did not perform the action
+  - id: 12
+    description: Too much/too little instructions
+  - id: 13
+    description: Wrong action
+  - id: 14
+    description: Wrong action to the right aircraft
+  - id: 15
+    description: Wrong action to the wrong aircraft
+  - id: 16
+    description: Right action to the wrong aircraft
+  - id: 17
+    description: Unnecessary action
+- id: 3
+  description: Information Transfer
+  children:
+  - id: 18
+    description: Transmission / sent unclear
+  - id: 19
+    description: Writing/typing unclear
+  - id: 20
+    description: Reception unclear
+  - id: 21
+    description: Did not get the required information
+  - id: 22
+    description: Did not transmit/send the information
+  - id: 23
+    description: Did not write/type the information
+  - id: 24
+    description: Transmission partial/incomplete
+  - id: 25
+    description: Writing partial/incomplete
+  - id: 26
+    description: Transmission incorrect
+  - id: 27
+    description: Writing incorrect
+- id: 28
+  description: Not applicable or unknown
+  children:
+  - id: 29
+    description: Unknown
+  - id: 30
+    description: Not applicable

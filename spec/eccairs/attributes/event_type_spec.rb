@@ -12,15 +12,15 @@ RSpec.describe Eccairs::Attributes::EventType do
       expect(described_class.xml_tag).to eq("Event_Type")
     end
 
-    it "inherits from StringAttribute" do
-      expect(described_class.superclass).to eq(Eccairs::Base::StringAttribute)
+    it "inherits from EnumAttribute" do
+      expect(described_class.superclass).to eq(Eccairs::Base::EnumAttribute)
     end
   end
 
   describe "initialization" do
     it "creates an instance with a value" do
-      instance = described_class.new("3000000")
-      expect(instance.value).to eq("3000000")
+      instance = described_class.new(1000000)
+      expect(instance.value).to eq(1000000)
     end
   end
 
@@ -29,7 +29,7 @@ RSpec.describe Eccairs::Attributes::EventType do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
         occurrence.add_events do |evt|
-          evt.add_event_type("3000000")
+          evt.add_event_type(1000000)
         end
       end
 
@@ -42,7 +42,7 @@ RSpec.describe Eccairs::Attributes::EventType do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
         occurrence.add_events do |evt|
-          evt.add_event_type("3000000")
+          evt.add_event_type(1000000)
         end
       end
 

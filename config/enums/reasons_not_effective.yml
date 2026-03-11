@@ -1,0 +1,16 @@
+---
+attribute_id: '239'
+xml_tag: Reasons_Not_Effective
+sequence:
+values:
+  1: Wind
+  2: Burnt
+  3: Ripped
+  4: Not inflated
+  5: Deflated
+  6: Aircraft attitude
+  7: Premature inflation
+  8: Incorrect rigging
+  97: None
+  98: Other
+  99: Unknown

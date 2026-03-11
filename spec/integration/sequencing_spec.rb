@@ -70,7 +70,7 @@ RSpec.describe "ECCAIRS Sequencing Tests - Attribute Order Independence" do
 
         # Add another entity
         occurrence.add_aerodrome_general do |aerodrome|
-          aerodrome.add_location_indicator("1000")
+          aerodrome.add_location_indicator(1000)
           aerodrome.add_aerodrome_type(1)
         end
 
@@ -139,7 +139,7 @@ RSpec.describe "ECCAIRS Sequencing Tests - Attribute Order Independence" do
           end
 
           # Add aerodrome attributes after
-          aerodrome.add_location_indicator("1000")
+          aerodrome.add_location_indicator(1000)
           aerodrome.add_aerodrome_type(1)
         end
       end
@@ -176,13 +176,13 @@ RSpec.describe "ECCAIRS Sequencing Tests - Attribute Order Independence" do
         occurrence.add_utc_time("14:30:00")
 
         occurrence.add_events(id: "EV1") do |event|
-          event.add_event_type("1000000") # Generic event type
+          event.add_event_type(1000000)
         end
 
         occurrence.add_local_date("2024-11-15")
 
         occurrence.add_events(id: "EV2") do |event|
-          event.add_event_type("2000000") # Another generic event type
+          event.add_event_type(2000000)
         end
 
         occurrence.add_local_time("15:30:00")
@@ -264,13 +264,13 @@ RSpec.describe "ECCAIRS Sequencing Tests - Attribute Order Independence" do
 
         # Add events in random order
         occurrence.add_events(id: "EV2") do |event|
-          event.add_event_type("2000000") # Generic event type
+          event.add_event_type(2000000)
         end
 
         occurrence.add_wind_speed(10.0)
 
         occurrence.add_events(id: "EV1") do |event|
-          event.add_event_type("1000000") # Generic event type
+          event.add_event_type(1000000)
         end
       end
 

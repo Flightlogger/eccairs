@@ -1,0 +1,14 @@
+---
+attribute_id: '1088'
+xml_tag: Aviation_Sector
+sequence: 51
+values:
+  1: Aerodrome
+  2: ATM Operational
+  3: ATM Specific/Technical
+  4: Design
+  5: Flight Operations
+  6: General Aviation
+  7: Ground Handling
+  8: Maintenance and Continuing Airworthiness
+  9: Production

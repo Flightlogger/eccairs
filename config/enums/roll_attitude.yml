@@ -1,0 +1,11 @@
+---
+attribute_id: '251'
+xml_tag: Roll_Attitude
+sequence:
+values:
+  1: Wings level
+  2: Slight bank (0-30)
+  3: Moderate bank (31-64)
+  4: Steep bank (65+)
+  5: Inverted (>90)
+  99: Unknown

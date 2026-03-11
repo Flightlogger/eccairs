@@ -1,0 +1,9 @@
+---
+attribute_id: '333'
+xml_tag: Endorsement_Validity
+sequence:
+values:
+  1: Not valid
+  2: Valid, medical waivers
+  3: Valid no waivers
+  99: Unknown

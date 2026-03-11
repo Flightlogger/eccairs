@@ -1,0 +1,10 @@
+---
+attribute_id: '330'
+xml_tag: Type_Of_Extinguishing_Agent
+sequence:
+values:
+  1: Halon
+  2: CO2
+  3: Water
+  98: Other
+  99: Unknown

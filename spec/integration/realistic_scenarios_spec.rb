@@ -27,7 +27,7 @@ RSpec.describe "Realistic ECCAIRS XML Generation Scenarios" do
 
         # Aerodrome information
         occurrence.add_aerodrome_general do |aerodrome|
-          aerodrome.add_location_indicator("1000")
+          aerodrome.add_location_indicator(1000)
           aerodrome.add_aerodrome_latitude(40.6413)
           aerodrome.add_aerodrome_longitude(-73.7781)
           aerodrome.add_elevation_above_msl(13.0)
@@ -104,7 +104,7 @@ RSpec.describe "Realistic ECCAIRS XML Generation Scenarios" do
 
         # Aerodrome information
         occurrence.add_aerodrome_general do |aerodrome|
-          aerodrome.add_location_indicator("1000")
+          aerodrome.add_location_indicator(1000)
           aerodrome.add_aerodrome_latitude(51.4700)
           aerodrome.add_aerodrome_longitude(-0.4543)
           aerodrome.add_aerodrome_type(1)

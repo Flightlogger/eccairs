@@ -1,0 +1,11 @@
+---
+attribute_id: '946'
+xml_tag: Hazardous_Prop_Effects
+sequence: 15
+values:
+  1: Development of eccessive drag
+  2: Failure that results in excessive imbalance
+  3: Release of the propeller or any major portion of it
+  4: Significant thrust in the opposite direction to that commanded by the pilot
+  5: Unknown
+  6: Other

@@ -1,0 +1,68 @@
+---
+attribute_id: '504'
+xml_tag: Type_Of_Deposits
+sequence:
+values:
+  1: Water
+  2: Slush
+  3: Ice
+  4: Snow
+  5: Oil
+  6: None
+  98: Other
+  99: Unknown
+  102: Dry snow
+  103: Wet snow
+  104: Compacted snow
+  105: Damp
+  106: Wet or water patches
+  107: Flooded or standing water
+  109: Frost
+  110: Frozen roots or ridges
+  111: Mud
+  112: Gravel
+  113: Sand
+  114: Plants, algae
+hierarchy:
+- id: 1
+  description: Water
+  children:
+  - id: 105
+    description: Damp
+  - id: 106
+    description: Wet or water patches
+  - id: 107
+    description: Flooded or standing water
+- id: 2
+  description: Slush
+- id: 3
+  description: Ice
+- id: 4
+  description: Snow
+  children:
+  - id: 102
+    description: Dry snow
+  - id: 103
+    description: Wet snow
+  - id: 104
+    description: Compacted snow
+- id: 5
+  description: Oil
+- id: 6
+  description: None
+- id: 98
+  description: Other
+- id: 99
+  description: Unknown
+- id: 109
+  description: Frost
+- id: 110
+  description: Frozen roots or ridges
+- id: 111
+  description: Mud
+- id: 112
+  description: Gravel
+- id: 113
+  description: Sand
+- id: 114
+  description: Plants, algae

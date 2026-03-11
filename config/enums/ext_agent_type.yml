@@ -1,0 +1,13 @@
+---
+attribute_id: '99'
+xml_tag: Ext_Agent_Type
+sequence:
+values:
+  1: Water
+  2: Protein foam
+  3: AFFF
+  4: Fluoroprotein foam
+  5: Dry chemical
+  6: Halons
+  98: Other
+  99: Unknown

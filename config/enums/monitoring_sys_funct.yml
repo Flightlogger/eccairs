@@ -1,0 +1,8 @@
+---
+attribute_id: '670'
+xml_tag: Monitoring_Sys_Funct
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'
+  4: Unknown

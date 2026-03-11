@@ -1,0 +1,232 @@
+---
+attribute_id: '214'
+xml_tag: Operation_Type
+sequence: 26
+values:
+  1: Commercial Air Transport
+  2: Passenger
+  3: Cargo
+  4: Unknown
+  5: Airline
+  6: Air Ambulance
+  7: Air Taxi
+  8: HEMS
+  9: Offshore
+  10: Sightseeing
+  11: Other
+  12: Airline
+  13: Air Ambulance
+  14: Air Taxi
+  15: Offshore
+  16: Other
+  17: Specialised Operations (Aerial Work)
+  18: Aerial Advertising
+  19: Aerial Observation
+  20: Aerial Patrol
+  21: Aerial Survey
+  22: Agricultural
+  23: Airshow/Race
+  24: Construction/Sling load
+  25: Logging
+  26: Parachute drop
+  27: Photography
+  28: Towing
+  29: Other
+  30: Unknown
+  31: Non-Commercial Operations
+  32: Business
+  33: Demonstration
+  35: Relocation
+  36: Flight Training/Instructional
+  37: Pleasure
+  38: Test Flight
+  39: Other
+  40: Unknown
+  41: Ferry
+  42: Delivery
+  43: Positioning
+  44: Recovery
+  45: Aerobatics
+  46: Check
+  47: Dual
+  48: First Solo
+  49: Solo
+  50: Other
+  51: Unknown
+  52: Cross Country
+  53: Local
+  54: Other
+  55: Unknown
+  56: Design/Approval Test Flight
+  57: Acceptance Check Flight
+  58: Post Maintenance Functional Check Flight
+  59: Nationally Regulated Operations
+  60: Illegal
+  61: Unknown
+  62: Coast Guard
+  63: Customs
+  64: Government
+  65: Firefighting
+  66: Military
+  67: Police
+  68: Search and Rescue
+  69: Other
+  70: Unknown
+  71: Animal Herding/Mustering
+  72: Calibration
+  73: Not Applicable
+hierarchy:
+- id: 1
+  description: Commercial Air Transport
+  children:
+  - id: 2
+    description: Passenger
+    children:
+    - id: 5
+      description: Airline
+    - id: 6
+      description: Air Ambulance
+    - id: 7
+      description: Air Taxi
+    - id: 8
+      description: HEMS
+    - id: 9
+      description: Offshore
+    - id: 10
+      description: Sightseeing
+    - id: 11
+      description: Other
+  - id: 3
+    description: Cargo
+    children:
+    - id: 12
+      description: Airline
+    - id: 13
+      description: Air Ambulance
+    - id: 14
+      description: Air Taxi
+    - id: 15
+      description: Offshore
+    - id: 16
+      description: Other
+  - id: 4
+    description: Unknown
+- id: 17
+  description: Specialised Operations (Aerial Work)
+  children:
+  - id: 18
+    description: Aerial Advertising
+  - id: 19
+    description: Aerial Observation
+  - id: 20
+    description: Aerial Patrol
+  - id: 21
+    description: Aerial Survey
+  - id: 22
+    description: Agricultural
+  - id: 23
+    description: Airshow/Race
+  - id: 24
+    description: Construction/Sling load
+  - id: 25
+    description: Logging
+  - id: 26
+    description: Parachute drop
+  - id: 27
+    description: Photography
+  - id: 28
+    description: Towing
+  - id: 29
+    description: Other
+  - id: 30
+    description: Unknown
+  - id: 71
+    description: Animal Herding/Mustering
+  - id: 72
+    description: Calibration
+- id: 31
+  description: Non-Commercial Operations
+  children:
+  - id: 32
+    description: Business
+  - id: 33
+    description: Demonstration
+  - id: 35
+    description: Relocation
+    children:
+    - id: 41
+      description: Ferry
+    - id: 42
+      description: Delivery
+    - id: 43
+      description: Positioning
+    - id: 44
+      description: Recovery
+  - id: 36
+    description: Flight Training/Instructional
+    children:
+    - id: 45
+      description: Aerobatics
+    - id: 46
+      description: Check
+    - id: 47
+      description: Dual
+    - id: 48
+      description: First Solo
+    - id: 49
+      description: Solo
+    - id: 50
+      description: Other
+    - id: 51
+      description: Unknown
+  - id: 37
+    description: Pleasure
+    children:
+    - id: 52
+      description: Cross Country
+    - id: 53
+      description: Local
+    - id: 54
+      description: Other
+    - id: 55
+      description: Unknown
+  - id: 38
+    description: Test Flight
+    children:
+    - id: 56
+      description: Design/Approval Test Flight
+    - id: 57
+      description: Acceptance Check Flight
+    - id: 58
+      description: Post Maintenance Functional Check Flight
+  - id: 39
+    description: Other
+  - id: 40
+    description: Unknown
+- id: 59
+  description: Nationally Regulated Operations
+  children:
+  - id: 62
+    description: Coast Guard
+  - id: 63
+    description: Customs
+  - id: 64
+    description: Government
+  - id: 65
+    description: Firefighting
+  - id: 66
+    description: Military
+  - id: 67
+    description: Police
+  - id: 68
+    description: Search and Rescue
+  - id: 69
+    description: Other
+  - id: 70
+    description: Unknown
+- id: 60
+  description: Illegal
+- id: 61
+  description: Unknown
+- id: 73
+  description: Not Applicable

@@ -1,0 +1,218 @@
+---
+attribute_id: '400'
+xml_tag: License_Type
+sequence: 3
+values:
+  100: Aeroplane pilots
+  101: Private pilot
+  102: Commercial pilot
+  104: Airline transport pilot
+  105: Student pilot
+  197: None
+  198: Other
+  199: Unknown
+  200: Balloon pilots
+  201: Private pilot
+  202: Commercial pilot
+  204: Airline transport pilot
+  205: Student pilot
+  297: None
+  298: Other
+  299: Unknown
+  300: Dirigible pilots
+  301: Private pilot
+  302: Commercial pilot
+  304: Airline transport pilot
+  305: Student pilot
+  397: None
+  398: Other
+  399: Unknown
+  400: Glider pilots
+  401: Private pilot
+  405: Student pilot
+  497: None
+  498: Other
+  499: Unknown
+  500: Helicopter pilots
+  501: Private pilot
+  502: Commercial pilot
+  504: Airline transport pilot
+  505: Student pilot
+  597: None
+  598: Other
+  599: Unknown
+  600: Microlight pilots
+  601: Private pilot
+  602: Commercial pilot
+  604: Airline transport pilot
+  605: Student pilot
+  697: None
+  698: Other
+  699: Unknown
+  9700: None
+  9800: Other
+  9801: Private pilot
+  9802: Commercial pilot
+  9804: Airline transport pilot
+  9805: Student pilot
+  9897: None
+  9898: Other
+  9899: Unknown
+  9900: Unknown types of pilot licences
+  9901: Private pilot
+  9902: Commercial pilot
+  9904: Airline transport pilot
+  9905: Student pilot
+  9997: None
+  9998: Other
+  9999: Unknown
+  10000: Light Aircraft Pilot Licence (LAPL(A))
+  10001: Muti-Crew Pilot Licence (MPL)
+  10002: Light Aircraft Pilot Licence (LAPL(H))
+  10003: Light Aircraft Pilot Licence (LAPL(S))
+  10004: Light Aircraft Pilot Licence (LAPL(B))
+hierarchy:
+- id: 100
+  description: Aeroplane pilots
+  children:
+  - id: 101
+    description: Private pilot
+  - id: 102
+    description: Commercial pilot
+  - id: 104
+    description: Airline transport pilot
+  - id: 105
+    description: Student pilot
+  - id: 197
+    description: None
+  - id: 198
+    description: Other
+  - id: 199
+    description: Unknown
+  - id: 10000
+    description: Light Aircraft Pilot Licence (LAPL(A))
+  - id: 10001
+    description: Muti-Crew Pilot Licence (MPL)
+- id: 200
+  description: Balloon pilots
+  children:
+  - id: 201
+    description: Private pilot
+  - id: 202
+    description: Commercial pilot
+  - id: 204
+    description: Airline transport pilot
+  - id: 205
+    description: Student pilot
+  - id: 297
+    description: None
+  - id: 298
+    description: Other
+  - id: 299
+    description: Unknown
+  - id: 10004
+    description: Light Aircraft Pilot Licence (LAPL(B))
+- id: 300
+  description: Dirigible pilots
+  children:
+  - id: 301
+    description: Private pilot
+  - id: 302
+    description: Commercial pilot
+  - id: 304
+    description: Airline transport pilot
+  - id: 305
+    description: Student pilot
+  - id: 397
+    description: None
+  - id: 398
+    description: Other
+  - id: 399
+    description: Unknown
+- id: 400
+  description: Glider pilots
+  children:
+  - id: 401
+    description: Private pilot
+  - id: 405
+    description: Student pilot
+  - id: 497
+    description: None
+  - id: 498
+    description: Other
+  - id: 499
+    description: Unknown
+  - id: 10003
+    description: Light Aircraft Pilot Licence (LAPL(S))
+- id: 500
+  description: Helicopter pilots
+  children:
+  - id: 501
+    description: Private pilot
+  - id: 502
+    description: Commercial pilot
+  - id: 504
+    description: Airline transport pilot
+  - id: 505
+    description: Student pilot
+  - id: 597
+    description: None
+  - id: 598
+    description: Other
+  - id: 599
+    description: Unknown
+  - id: 10002
+    description: Light Aircraft Pilot Licence (LAPL(H))
+- id: 600
+  description: Microlight pilots
+  children:
+  - id: 601
+    description: Private pilot
+  - id: 602
+    description: Commercial pilot
+  - id: 604
+    description: Airline transport pilot
+  - id: 605
+    description: Student pilot
+  - id: 697
+    description: None
+  - id: 698
+    description: Other
+  - id: 699
+    description: Unknown
+- id: 9700
+  description: None
+- id: 9800
+  description: Other
+  children:
+  - id: 9801
+    description: Private pilot
+  - id: 9802
+    description: Commercial pilot
+  - id: 9804
+    description: Airline transport pilot
+  - id: 9805
+    description: Student pilot
+  - id: 9897
+    description: None
+  - id: 9898
+    description: Other
+  - id: 9899
+    description: Unknown
+- id: 9900
+  description: Unknown types of pilot licences
+  children:
+  - id: 9901
+    description: Private pilot
+  - id: 9902
+    description: Commercial pilot
+  - id: 9904
+    description: Airline transport pilot
+  - id: 9905
+    description: Student pilot
+  - id: 9997
+    description: None
+  - id: 9998
+    description: Other
+  - id: 9999
+    description: Unknown

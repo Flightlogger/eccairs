@@ -1,0 +1,10 @@
+---
+attribute_id: '498'
+xml_tag: Braking_Action
+sequence:
+values:
+  1: Good
+  2: Medium
+  3: Poor
+  4: Nil
+  99: Unknown

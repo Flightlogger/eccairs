@@ -1,0 +1,18 @@
+---
+attribute_id: '24'
+xml_tag: Category_Provided
+sequence:
+values:
+  1: 'Cat 1: L 0-9m W 2m'
+  2: 'Cat 2: L 9-12m W 2m'
+  3: 'Cat 3: L 12-18m W 3m'
+  4: 'Cat 4: L 18-24m W 4m'
+  5: 'Cat 5: L 24-28m W 4m'
+  6: 'Cat 6: L 28-39m W 5m'
+  7: 'Cat 7: L 39-49m W 5m'
+  8: 'Cat 8: L 49-61m W 7m'
+  9: 'Cat 9: L 61-76m W 7m'
+  10: 'Cat 10: L 76-90m W 8m'
+  97: None
+  98: Other
+  99: Unknown

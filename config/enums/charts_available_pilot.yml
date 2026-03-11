@@ -1,0 +1,8 @@
+---
+attribute_id: '219'
+xml_tag: Charts_Available_Pilot
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown

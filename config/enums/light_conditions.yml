@@ -1,0 +1,11 @@
+---
+attribute_id: '168'
+xml_tag: Light_Conditions
+sequence: 4
+values:
+  1: Dawn
+  2: Daylight
+  3: Dusk/twilight
+  4: Night/moonlight
+  5: Night/dark
+  99: Unknown

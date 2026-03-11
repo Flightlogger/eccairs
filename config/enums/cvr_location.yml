@@ -1,0 +1,9 @@
+---
+attribute_id: '171'
+xml_tag: CVR_Location
+sequence:
+values:
+  1: Forward fuselage
+  2: Mid fuselage
+  3: Rear fuselage
+  99: Unknown

@@ -1,0 +1,14 @@
+---
+attribute_id: '590'
+xml_tag: Visib_Restrictions
+sequence:
+values:
+  1: Sun glare
+  2: Windscreen pillar
+  3: Dirty windscreen
+  4: Other cockpit structure
+  5: IMC
+  6: Haze/smog
+  97: None
+  98: Other
+  99: Unknown

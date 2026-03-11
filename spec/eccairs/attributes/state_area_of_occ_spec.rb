@@ -12,15 +12,15 @@ RSpec.describe Eccairs::Attributes::StateAreaOfOcc do
       expect(described_class.xml_tag).to eq("State_Area_Of_Occ")
     end
 
-    it "inherits from StringAttribute" do
-      expect(described_class.superclass).to eq(Eccairs::Base::StringAttribute)
+    it "inherits from EnumAttribute" do
+      expect(described_class.superclass).to eq(Eccairs::Base::EnumAttribute)
     end
   end
 
   describe "initialization" do
     it "creates an instance with a value" do
-      instance = described_class.new("905")
-      expect(instance.value).to eq("905")
+      instance = described_class.new(1)
+      expect(instance.value).to eq(1)
     end
   end
 
@@ -28,7 +28,7 @@ RSpec.describe Eccairs::Attributes::StateAreaOfOcc do
     it "generates valid XML within an occurrence" do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
-        occurrence.add_state_area_of_occ("905")
+        occurrence.add_state_area_of_occ(1)
       end
 
       xml = set.to_xml
@@ -39,7 +39,7 @@ RSpec.describe Eccairs::Attributes::StateAreaOfOcc do
     it "validates successfully in a minimal occurrence" do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
-        occurrence.add_state_area_of_occ("905")
+        occurrence.add_state_area_of_occ(1)
       end
 
       errors = set.validate

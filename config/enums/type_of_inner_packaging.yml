@@ -1,0 +1,15 @@
+---
+attribute_id: '1059'
+xml_tag: Type_Of_Inner_Packaging
+sequence: 9
+values:
+  1: Fibre Can or Box
+  2: Glass
+  3: Metal Can, Tin or Tube
+  4: Metal Aerosol
+  5: Paper Bag
+  6: Plastic
+  7: Plastic Aerosol
+  8: Plastic Bag
+  9: Other
+  10: Unknown

@@ -1,0 +1,19 @@
+---
+attribute_id: '237'
+xml_tag: Reason_For_Data_Loss_FDR
+sequence:
+values:
+  1: Fire damage
+  2: Water damage
+  3: Impact damage
+  4: FDR failure (pre-occ)
+  5: Unreadable data
+  6: FDR medium exhausted
+  7: Parameters not recorded
+  8: Period poor quality
+  9: Anachronisms
+  10: Decoding document
+  11: Desynchronizations
+  97: Not applicable
+  98: Other
+  99: Unknown

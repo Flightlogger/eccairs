@@ -25,7 +25,7 @@ RSpec.describe Eccairs::Entities::RunwayIncursion do
         occurrence.add_responsible_entity("1")
 
         occurrence.add_runway_incursion do |incursion|
-          incursion.add_entity_involved("1")
+          incursion.add_entity_involved(1)
         end
       end
 
@@ -41,7 +41,7 @@ RSpec.describe Eccairs::Entities::RunwayIncursion do
         occurrence.add_responsible_entity("1")
 
         occurrence.add_runway_incursion do |incursion|
-          incursion.add_entity_involved("1")
+          incursion.add_entity_involved(1)
         end
       end
 

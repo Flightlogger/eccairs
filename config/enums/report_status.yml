@@ -1,0 +1,13 @@
+---
+attribute_id: '800'
+xml_tag: Report_Status
+sequence: 4
+values:
+  1: Preliminary
+  2: Open
+  3: Closed
+  4: Data
+  5: Initial notification
+  6: Factual
+  7: Draft
+  8: Closed on issue

@@ -1,0 +1,10 @@
+---
+attribute_id: '647'
+xml_tag: Birds_Wildlife_Struck
+sequence: 50
+values:
+  1: '1'
+  2: 2-10
+  3: 11-100
+  4: More
+  5: Unknown

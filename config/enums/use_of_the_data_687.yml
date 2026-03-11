@@ -1,0 +1,13 @@
+---
+attribute_id: '687'
+xml_tag: Use_Of_The_Data
+sequence:
+values:
+  1: Unknown
+  2: Raw data retrieved
+  3: Parameters decoding
+  4: Plots / tabular
+  5: Flight path computation
+  6: Animation
+  7: Other computation
+  8: Other

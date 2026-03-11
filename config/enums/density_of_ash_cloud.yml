@@ -1,0 +1,8 @@
+---
+attribute_id: '878'
+xml_tag: Density_Of_Ash_Cloud
+sequence:
+values:
+  1: Wispy
+  2: Moderate dense
+  3: Very dense
