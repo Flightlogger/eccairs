@@ -12,10 +12,10 @@ require "yaml"
 require "fileutils"
 require "csv"
 
-SCRIPT_DIR  = __dir__
+SCRIPT_DIR = __dir__
 PROJECT_DIR = File.expand_path("..", SCRIPT_DIR)
-ENUMS_DIR   = File.join(PROJECT_DIR, "config", "enums")
-CSV_PATH    = File.join(PROJECT_DIR, "docs", "Eccairs Aviation v5100 RITedb", "mappings", "Attributes.csv")
+ENUMS_DIR = File.join(PROJECT_DIR, "config", "enums")
+CSV_PATH = File.join(PROJECT_DIR, "docs", "Eccairs Aviation v5100 RITedb", "mappings", "Attributes.csv")
 
 xml_path = ARGV[0]
 unless xml_path && File.file?(xml_path)
@@ -28,8 +28,8 @@ def build_sequence_map(csv_path)
   return map unless File.file?(csv_path)
 
   CSV.foreach(csv_path, col_sep: "\t", headers: true, liberal_parsing: true) do |row|
-    attr_id  = row["Attribute ID"]&.strip&.delete('"')
-    seq      = row["Attribute Sequence"]&.strip&.delete('"')
+    attr_id = row["Attribute ID"]&.strip&.delete('"')
+    seq = row["Attribute Sequence"]&.strip&.delete('"')
     next unless attr_id && seq && !attr_id.empty? && !seq.empty?
 
     map[attr_id] = seq.to_i
@@ -40,7 +40,7 @@ end
 def collect_values(values_node)
   map = {}
   values_node.xpath(".//VALUE").each do |v|
-    id   = v["ID"]
+    id = v["ID"]
     desc = v["DESCRIPTION"]
     next unless id && !id.empty?
 
@@ -55,7 +55,7 @@ def build_hierarchy(parent_node)
   return nil if children.empty?
 
   children.map do |v|
-    id   = v["ID"]
+    id = v["ID"]
     desc = v["DESCRIPTION"]
     next unless id && !id.empty?
 
@@ -98,7 +98,7 @@ duplicated_tags = tag_counts.select { |_, c| c > 1 }.keys.to_set
 written = 0
 attrs.each do |attr|
   attribute_id = attr["ID"]
-  xsd_tag      = attr["XSD-TAG"]
+  xsd_tag = attr["XSD-TAG"]
   next unless attribute_id && xsd_tag && !xsd_tag.empty?
 
   base_key = xsd_tag.downcase
@@ -114,9 +114,9 @@ attrs.each do |attr|
 
   data = {
     "attribute_id" => attribute_id.to_s,
-    "xml_tag"      => xsd_tag,
-    "sequence"     => sequence,
-    "values"       => values
+    "xml_tag" => xsd_tag,
+    "sequence" => sequence,
+    "values" => values
   }
 
   if multilevel?(values_node)

@@ -27,7 +27,7 @@ RSpec.describe Eccairs::Enums do
     end
 
     it "caches results" do
-      first  = described_class.get(:wx_conditions)
+      first = described_class.get(:wx_conditions)
       second = described_class.get(:wx_conditions)
       expect(first).to equal(second)
     end

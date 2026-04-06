@@ -6,8 +6,8 @@ module Eccairs
       def self.enums_from(name)
         data = Eccairs::Enums.get(name)
         attribute_id data[:attribute_id]
-        xml_tag      data[:xml_tag]
-        sequence     data[:sequence] if data[:sequence]
+        xml_tag data[:xml_tag]
+        sequence data[:sequence] if data[:sequence]
         allowed_values data[:values]
       end
 
