@@ -1,0 +1,11 @@
+attribute_id: '44'
+xml_tag: Person_At_Controls
+sequence:
+values:
+  1: Pilot-in-command
+  2: Co-pilot
+  3: Student pilot
+  4: Both pilots flying
+  97: No one
+  98: Other
+  99: Unknown

@@ -1,0 +1,8 @@
+attribute_id: '352'
+xml_tag: License_Validity_ATM
+sequence:
+values:
+  1: Valid
+  2: Valid with waivers
+  97: Not valid
+  99: Unknown

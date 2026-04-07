@@ -1,0 +1,21 @@
+attribute_id: '229'
+xml_tag: Wreckage_Position
+sequence:
+values:
+  1: off dep end  > 1000 m
+  2: off dep end > 150 m to right  < 1000 m from dep end
+  3: off dep end < 150 m to right  < 1000 m from dep
+  4: off dep end , on rwy centre line  < 1000 m from dep end
+  5: off dep end < 150 m to left  < 1000 m from dep
+  6: off dep end > 150 m to left  < 1000 m from dep end
+  7: to right of rwy > 150 m from rwy centre
+  8: to right of rwy  <150 m from rwy centre
+  9: on runway
+  10: to left of rwy  <150 m from rwy centre
+  11: to left of rwy > 150 m from rwy centre
+  12: "< 1000 m from app end, > 150 m to right of rwy centre"
+  13: "< 1000 m from app end, < 150 m to right of rwy centre"
+  14: "< 1000 m from app end, on extended rwy centre line"
+  15: "< 1000 m from app end, < 150 m to left of rwy centre"
+  16: "< 1000 m from app end, > 150 m to left of rwy centre"
+  17: "> 1000 m from approach end of the runway"

@@ -143,8 +143,8 @@ RSpec.describe "ECCAIRS Edge Cases and Boundary Tests" do
 
         # Events
         occurrence.add_events(id: "EVT1") do |event|
-          event.add_event_type("3000000") # Valid ECCAIRS event type code
-          event.add_phase("10000") # Valid ECCAIRS phase code
+          event.add_event_type(3000000)
+          event.add_phase(10000)
         end
 
         narrative_text = <<~NARRATIVE.strip

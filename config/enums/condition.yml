@@ -1,0 +1,529 @@
+attribute_id: '703'
+xml_tag: Condition
+sequence:
+values:
+  1: Pilot-controller communications
+  2: Pilot language/accent difficulties
+  3: Similar confusable call signs
+  4: Pilot readback incorrect
+  5: Pilot experience
+  6: Situation not conveyed by pilots
+  7: Pilot breach of R/T standards/phraseology
+  8: ATC breach of R/T standards/phraseology
+  9: Speech tone
+  10: Speech rate
+  11: Complexity of ATC transmission
+  12: Pilot high/excessive R/T workload
+  13: ATC high/excessive R/T workload
+  14: Aircraft stuck transmitter
+  15: R/T interference
+  16: R/T cross-transmission
+  17: R/T blocked frequency
+  18: Pilot-controller Communication - Other
+  19: Pilot actions
+  20: Responding to TCAS alert
+  21: Response time to ATC instructions
+  22: Correct pilot readback followed by incorrect action
+  23: Rate of Turn
+  24: Rate of climb/descent
+  25: Speed changes
+  26: Aircraft navigational limitations not considered by pilot
+  27: Pilot Actions - Other
+  28: Traffic and airspace
+  29: Sector capacity limitiations
+  30: Excessive traffic load
+  31: Complex traffic mix
+  32: Fluctuating traffic load with unexpected demands
+  33: Holding patterns
+  34: Aircraft with similar/confusable call signs
+  35: Underload
+  36: Post peak traffic
+  37: Unusual situation
+  38: Flight in non-controlled and controlled airspace
+  39: IFR/VFR mix
+  40: Flight in transitional airspace
+  41: Airspace design characteristics
+  42: Traffic management initiatives
+  43: Traffic and Airspace - Other
+  44: Weather
+  45: Snow / ice / slush
+  46: Fog/low cloud
+  47: Thunderstorm
+  48: Extreme winds at high altitude
+  49: Extreme wind at low altitude / surface winds.
+  50: Down draft / windshear
+  51: Weather - Other
+  52: Documentation and Procedures
+  53: Orders
+  54: Charts/notices
+  55: Temporary notices
+  56: Advisory manuals/circulars
+  57: Checklists
+  58: Automated References
+  59: Special information
+  60: Arrival procedures
+  61: Landing procedures
+  62: Special arrival procedures
+  63: Landing and hold short
+  64: Clearing runway
+  65: Simultaneous use of same runway
+  66: Crossing runway
+  67: Taxi for position and hold
+  68: Departure procedures
+  69: Wake turbulence
+  70: Visual separation
+  71: En-route
+  72: Oceanic
+  73: Noise abatement
+  74: Other Documentation and Procedures
+  75: Training and Experience
+  76: Inadequate knowledge for position
+  77: Inadequate experience on position
+  78: Inadequate time on position
+  79: Unfamiliar task in routine operations
+  80: Novel situation
+  81: Over-training
+  82: Inadequate mentoring
+  83: Inadequate OJT
+  84: Inadequate emergency training
+  85: Inadequate TRM training
+  86: Inadequate recurrent/continuation training
+  87: Controller under training
+  88: Controller under examination/check
+  89: Training and Experience - Other
+  90: Workplace Design and HMI
+  91: Working position/console
+  92: Surveillance
+  93: Communication
+  94: Navigation
+  95: Flight information display
+  96: Auxiliary equipment
+  97: Other information display
+  98: Equipment warning devices
+  99: Other Workplace Design and Human-Machine Interface
+  100: Environment
+  101: Noise from people
+  102: Noise from equipment
+  103: Distraction - job-related
+  104: Distraction - non-job-related
+  105: Air quality
+  106: Lighting problems
+  107: Pollution/fumes
+  108: Asbestos
+  109: Radiation
+  110: Environment - Other
+  111: Personal factors
+  112: Distracted by personal thoughts
+  113: Incapacitation
+  114: General health and fitness
+  115: Impairement
+  116: Fatigue - tiredness
+  117: Fatigue - sleep loss
+  118: Fatigue - sleep deprivation
+  119: Pain
+  120: Abnormal stress symptoms
+  121: High anxiety/panic
+  122: Domestic/lifestyle problems
+  123: Emotional stressors
+  124: Boredom
+  125: Complacency
+  126: Confidence in self
+  127: Trust in automation
+  128: Motivation/Morale
+  129: Personal Factors - Other
+  130: Team Factors
+  131: Controllers on the floor assisting one another with the traffic
+  132: Currency and availability of all necessary equipment
+  133: Position relief briefing
+  134: Cooperative effort to accommodate the flow of traffic
+  135: Team relations
+  136: Late returns to the position after breaks
+  137: Positions left temporary unstaffed
+  138: New and temporary team assignments
+  139: Lack of responsibility
+  140: Unclear working methods
+  141: Confidence in others
+  142: Team pressure
+  143: Cooperation from supervisors from other areas in traffic flow initiatives
+  144: Support from others
+  145: Management provision of resources and assistance as dictated by the traffic
+    needs
+  146: Support from other units
+  147: Staffing for the traffic requirements
+  148: Confidence in supervisor's ability to manage the air traffic activity
+  149: Supervisory cooperation to manage the traffic during this shift
+  150: Management cooperation to assist and support the sectors/positions/areas/facilities
+  151: Higher management cooperation to assist and support the sectors/positions/areas/facilities
+  152: Team Factors - Other
+  153: Organisational Factors
+  154: Work environment
+  155: Safety versus efficiency
+  156: Numbers of qualified controllers
+  157: Job satisfaction
+  158: Roster/rest duty times
+  159: Work scheduling
+  160: Adherence to rules by ATCO's
+  161: Adherence to rules by supervisors
+  162: Terms and conditions of work
+  163: Supervisory decisions in staffing and facilities
+  164: Management decisions in staffing and facilities
+  165: Supervisory decisions in safety and efficiency policies
+  166: Management decisions in safety and efficiency policies
+  167: Organisational Factors - Other
+  168: Not applicable or unknown
+  169: Not applicable
+  170: Unknown
+hierarchy:
+- id: 1
+  description: Pilot-controller communications
+  children:
+  - id: 2
+    description: Pilot language/accent difficulties
+  - id: 3
+    description: Similar confusable call signs
+  - id: 4
+    description: Pilot readback incorrect
+  - id: 5
+    description: Pilot experience
+  - id: 6
+    description: Situation not conveyed by pilots
+  - id: 7
+    description: Pilot breach of R/T standards/phraseology
+  - id: 8
+    description: ATC breach of R/T standards/phraseology
+  - id: 9
+    description: Speech tone
+  - id: 10
+    description: Speech rate
+  - id: 11
+    description: Complexity of ATC transmission
+  - id: 12
+    description: Pilot high/excessive R/T workload
+  - id: 13
+    description: ATC high/excessive R/T workload
+  - id: 14
+    description: Aircraft stuck transmitter
+  - id: 15
+    description: R/T interference
+  - id: 16
+    description: R/T cross-transmission
+  - id: 17
+    description: R/T blocked frequency
+  - id: 18
+    description: Pilot-controller Communication - Other
+- id: 19
+  description: Pilot actions
+  children:
+  - id: 20
+    description: Responding to TCAS alert
+  - id: 21
+    description: Response time to ATC instructions
+  - id: 22
+    description: Correct pilot readback followed by incorrect action
+  - id: 23
+    description: Rate of Turn
+  - id: 24
+    description: Rate of climb/descent
+  - id: 25
+    description: Speed changes
+  - id: 26
+    description: Aircraft navigational limitations not considered by pilot
+  - id: 27
+    description: Pilot Actions - Other
+- id: 28
+  description: Traffic and airspace
+  children:
+  - id: 29
+    description: Sector capacity limitiations
+  - id: 30
+    description: Excessive traffic load
+  - id: 31
+    description: Complex traffic mix
+  - id: 32
+    description: Fluctuating traffic load with unexpected demands
+  - id: 33
+    description: Holding patterns
+  - id: 34
+    description: Aircraft with similar/confusable call signs
+  - id: 35
+    description: Underload
+  - id: 36
+    description: Post peak traffic
+  - id: 37
+    description: Unusual situation
+  - id: 38
+    description: Flight in non-controlled and controlled airspace
+  - id: 39
+    description: IFR/VFR mix
+  - id: 40
+    description: Flight in transitional airspace
+  - id: 41
+    description: Airspace design characteristics
+  - id: 42
+    description: Traffic management initiatives
+  - id: 43
+    description: Traffic and Airspace - Other
+- id: 44
+  description: Weather
+  children:
+  - id: 45
+    description: Snow / ice / slush
+  - id: 46
+    description: Fog/low cloud
+  - id: 47
+    description: Thunderstorm
+  - id: 48
+    description: Extreme winds at high altitude
+  - id: 49
+    description: Extreme wind at low altitude / surface winds.
+  - id: 50
+    description: Down draft / windshear
+  - id: 51
+    description: Weather - Other
+- id: 52
+  description: Documentation and Procedures
+  children:
+  - id: 53
+    description: Orders
+  - id: 54
+    description: Charts/notices
+  - id: 55
+    description: Temporary notices
+  - id: 56
+    description: Advisory manuals/circulars
+  - id: 57
+    description: Checklists
+  - id: 58
+    description: Automated References
+  - id: 59
+    description: Special information
+  - id: 60
+    description: Arrival procedures
+  - id: 61
+    description: Landing procedures
+  - id: 62
+    description: Special arrival procedures
+  - id: 63
+    description: Landing and hold short
+  - id: 64
+    description: Clearing runway
+  - id: 65
+    description: Simultaneous use of same runway
+  - id: 66
+    description: Crossing runway
+  - id: 67
+    description: Taxi for position and hold
+  - id: 68
+    description: Departure procedures
+  - id: 69
+    description: Wake turbulence
+  - id: 70
+    description: Visual separation
+  - id: 71
+    description: En-route
+  - id: 72
+    description: Oceanic
+  - id: 73
+    description: Noise abatement
+  - id: 74
+    description: Other Documentation and Procedures
+- id: 75
+  description: Training and Experience
+  children:
+  - id: 76
+    description: Inadequate knowledge for position
+  - id: 77
+    description: Inadequate experience on position
+  - id: 78
+    description: Inadequate time on position
+  - id: 79
+    description: Unfamiliar task in routine operations
+  - id: 80
+    description: Novel situation
+  - id: 81
+    description: Over-training
+  - id: 82
+    description: Inadequate mentoring
+  - id: 83
+    description: Inadequate OJT
+  - id: 84
+    description: Inadequate emergency training
+  - id: 85
+    description: Inadequate TRM training
+  - id: 86
+    description: Inadequate recurrent/continuation training
+  - id: 87
+    description: Controller under training
+  - id: 88
+    description: Controller under examination/check
+  - id: 89
+    description: Training and Experience - Other
+- id: 90
+  description: Workplace Design and HMI
+  children:
+  - id: 91
+    description: Working position/console
+  - id: 92
+    description: Surveillance
+  - id: 93
+    description: Communication
+  - id: 94
+    description: Navigation
+  - id: 95
+    description: Flight information display
+  - id: 96
+    description: Auxiliary equipment
+  - id: 97
+    description: Other information display
+  - id: 98
+    description: Equipment warning devices
+  - id: 99
+    description: Other Workplace Design and Human-Machine Interface
+- id: 100
+  description: Environment
+  children:
+  - id: 101
+    description: Noise from people
+  - id: 102
+    description: Noise from equipment
+  - id: 103
+    description: Distraction - job-related
+  - id: 104
+    description: Distraction - non-job-related
+  - id: 105
+    description: Air quality
+  - id: 106
+    description: Lighting problems
+  - id: 107
+    description: Pollution/fumes
+  - id: 108
+    description: Asbestos
+  - id: 109
+    description: Radiation
+  - id: 110
+    description: Environment - Other
+- id: 111
+  description: Personal factors
+  children:
+  - id: 112
+    description: Distracted by personal thoughts
+  - id: 113
+    description: Incapacitation
+  - id: 114
+    description: General health and fitness
+  - id: 115
+    description: Impairement
+  - id: 116
+    description: Fatigue - tiredness
+  - id: 117
+    description: Fatigue - sleep loss
+  - id: 118
+    description: Fatigue - sleep deprivation
+  - id: 119
+    description: Pain
+  - id: 120
+    description: Abnormal stress symptoms
+  - id: 121
+    description: High anxiety/panic
+  - id: 122
+    description: Domestic/lifestyle problems
+  - id: 123
+    description: Emotional stressors
+  - id: 124
+    description: Boredom
+  - id: 125
+    description: Complacency
+  - id: 126
+    description: Confidence in self
+  - id: 127
+    description: Trust in automation
+  - id: 128
+    description: Motivation/Morale
+  - id: 129
+    description: Personal Factors - Other
+- id: 130
+  description: Team Factors
+  children:
+  - id: 131
+    description: Controllers on the floor assisting one another with the traffic
+  - id: 132
+    description: Currency and availability of all necessary equipment
+  - id: 133
+    description: Position relief briefing
+  - id: 134
+    description: Cooperative effort to accommodate the flow of traffic
+  - id: 135
+    description: Team relations
+  - id: 136
+    description: Late returns to the position after breaks
+  - id: 137
+    description: Positions left temporary unstaffed
+  - id: 138
+    description: New and temporary team assignments
+  - id: 139
+    description: Lack of responsibility
+  - id: 140
+    description: Unclear working methods
+  - id: 141
+    description: Confidence in others
+  - id: 142
+    description: Team pressure
+  - id: 143
+    description: Cooperation from supervisors from other areas in traffic flow initiatives
+  - id: 144
+    description: Support from others
+  - id: 145
+    description: Management provision of resources and assistance as dictated by the
+      traffic needs
+  - id: 146
+    description: Support from other units
+  - id: 147
+    description: Staffing for the traffic requirements
+  - id: 148
+    description: Confidence in supervisor's ability to manage the air traffic activity
+  - id: 149
+    description: Supervisory cooperation to manage the traffic during this shift
+  - id: 150
+    description: Management cooperation to assist and support the sectors/positions/areas/facilities
+  - id: 151
+    description: Higher management cooperation to assist and support the sectors/positions/areas/facilities
+  - id: 152
+    description: Team Factors - Other
+- id: 153
+  description: Organisational Factors
+  children:
+  - id: 154
+    description: Work environment
+  - id: 155
+    description: Safety versus efficiency
+  - id: 156
+    description: Numbers of qualified controllers
+  - id: 157
+    description: Job satisfaction
+  - id: 158
+    description: Roster/rest duty times
+  - id: 159
+    description: Work scheduling
+  - id: 160
+    description: Adherence to rules by ATCO's
+  - id: 161
+    description: Adherence to rules by supervisors
+  - id: 162
+    description: Terms and conditions of work
+  - id: 163
+    description: Supervisory decisions in staffing and facilities
+  - id: 164
+    description: Management decisions in staffing and facilities
+  - id: 165
+    description: Supervisory decisions in safety and efficiency policies
+  - id: 166
+    description: Management decisions in safety and efficiency policies
+  - id: 167
+    description: Organisational Factors - Other
+- id: 168
+  description: Not applicable or unknown
+  children:
+  - id: 169
+    description: Not applicable
+  - id: 170
+    description: Unknown

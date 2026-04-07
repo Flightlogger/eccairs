@@ -1,0 +1,11 @@
+attribute_id: '535'
+xml_tag: Traffic_Complexity_At_Investigator
+sequence:
+values:
+  1: Low
+  2: Low/medium
+  3: Medium
+  4: Medium/high
+  5: High
+  6: Very high
+  99: Unknown

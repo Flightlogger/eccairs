@@ -1,0 +1,7 @@
+attribute_id: '328'
+xml_tag: Fire_Suppression_System_Effective
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown

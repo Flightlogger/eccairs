@@ -1,0 +1,141 @@
+attribute_id: '495'
+xml_tag: Reporting_Form_Type
+sequence: 3
+values:
+  100: ACAS
+  101: National
+  102: SRC / JAR
+  200: AIRPROX
+  201: National
+  202: SRC / JAR
+  300: APDSG
+  301: National
+  302: SRC / JAR
+  400: ATIR
+  401: National
+  402: SRC / JAR
+  500: ICAO
+  501: Initial notification
+  502: Preliminary Report
+  503: Data Report
+  504: Final Report
+  9800: Other
+  9801: National
+  9802: SRC / JAR
+  9803: EASA
+  9804: Form 44
+  9805: IBIS (Bird strike) reporting form
+  9806: Other
+  9807: Wake-Vortex Report
+  9808: ASR - Air Safety Report
+  9809: GHR - Ground Handling Report
+  9810: CSR - Cabin Safety Report
+  9811: Police Report
+  9812: Other
+  9813: Maintenance Report
+  9814: Aerodrome Report
+  9815: Runway Incursion Report
+  9816: ATM
+  9817: Initial Report
+  9818: Final Report
+  9819: Other
+  9820: Other
+  9821: Bird Strike Report
+  9822: Aviation Reporting Portal
+  9823: E5X File
+  9824: E5F File
+hierarchy:
+- id: 500
+  description: ICAO
+  children:
+  - id: 501
+    description: Initial notification
+  - id: 502
+    description: Preliminary Report
+  - id: 503
+    description: Data Report
+  - id: 504
+    description: Final Report
+  - id: 9805
+    description: IBIS (Bird strike) reporting form
+  - id: 9807
+    description: Wake-Vortex Report
+  - id: 9815
+    description: Runway Incursion Report
+    children:
+    - id: 9817
+      description: Initial Report
+    - id: 9818
+      description: Final Report
+  - id: 9820
+    description: Other
+- id: 9803
+  description: EASA
+  children:
+  - id: 9804
+    description: Form 44
+  - id: 9806
+    description: Other
+  - id: 9822
+    description: Aviation Reporting Portal
+  - id: 9823
+    description: E5X File
+  - id: 9824
+    description: E5F File
+- id: 9816
+  description: ATM
+  children:
+  - id: 100
+    description: ACAS
+    children:
+    - id: 101
+      description: National
+    - id: 102
+      description: SRC / JAR
+  - id: 200
+    description: AIRPROX
+    children:
+    - id: 201
+      description: National
+    - id: 202
+      description: SRC / JAR
+  - id: 300
+    description: APDSG
+    children:
+    - id: 301
+      description: National
+    - id: 302
+      description: SRC / JAR
+  - id: 400
+    description: ATIR
+    children:
+    - id: 401
+      description: National
+    - id: 402
+      description: SRC / JAR
+  - id: 9800
+    description: Other
+    children:
+    - id: 9801
+      description: National
+    - id: 9802
+      description: SRC / JAR
+- id: 9819
+  description: Other
+  children:
+  - id: 9808
+    description: ASR - Air Safety Report
+  - id: 9809
+    description: GHR - Ground Handling Report
+  - id: 9810
+    description: CSR - Cabin Safety Report
+  - id: 9811
+    description: Police Report
+  - id: 9812
+    description: Other
+  - id: 9813
+    description: Maintenance Report
+  - id: 9814
+    description: Aerodrome Report
+  - id: 9821
+    description: Bird Strike Report

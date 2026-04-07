@@ -1,0 +1,8 @@
+attribute_id: '170'
+xml_tag: Wreckage_Location
+sequence:
+values:
+  1: On aerodrome/airstrip
+  2: Off aerodr < 10 km
+  3: Off aerodr > 10 km
+  99: Unknown

@@ -1,0 +1,9 @@
+attribute_id: '338'
+xml_tag: ATM_Recording_Type
+sequence:
+values:
+  1: Radar
+  2: RTF - radio telephony
+  3: Datalink
+  98: Other
+  99: Unknown

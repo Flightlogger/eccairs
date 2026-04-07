@@ -1,0 +1,10 @@
+attribute_id: '455'
+xml_tag: Occurrence_Status
+sequence: 27
+values:
+  1: Preliminary
+  2: Open
+  3: Closed
+  4: Data
+  5: Initial notification
+  6: Factual

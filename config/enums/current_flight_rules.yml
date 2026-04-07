@@ -1,0 +1,12 @@
+attribute_id: '79'
+xml_tag: Current_Flight_Rules
+sequence: 12
+values:
+  1: IFR
+  2: VFR
+  3: Special VFR
+  4: Controlled VFR
+  7: VFR night
+  97: None
+  98: Other
+  99: Unknown

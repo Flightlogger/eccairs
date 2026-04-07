@@ -1,0 +1,10 @@
+attribute_id: '218'
+xml_tag: Persons_Autopsied
+sequence:
+values:
+  1: Flight crew
+  2: Cabin crew
+  3: Passengers
+  97: Other on aircraft
+  98: None
+  99: Unknown

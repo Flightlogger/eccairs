@@ -1,0 +1,12 @@
+attribute_id: '1121'
+xml_tag: ERCS_Barrier
+sequence:
+values:
+  1: Aircraft, equipment and infrastructure design
+  2: Tactical planning
+  3: Regulations, procedures, processes
+  4: Situational awareness and action
+  5: Warning systems operation and action
+  6: Late recovery from a potential accident situation
+  7: Protections
+  8: Low energy occurrence

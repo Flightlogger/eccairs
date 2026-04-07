@@ -1,0 +1,1968 @@
+attribute_id: '489'
+xml_tag: Expl_Factor_Modifier
+sequence:
+values:
+  20: Abnormal
+  21: Failure-bolt, nut or fastener
+  22: Material inadequate
+  23: Wrong data entered
+  24: Data entered incorrectly
+  25: Wrong aircraft
+  26: Wrong language
+  27: Aft/back/rear
+  28: Amended/modified
+  29: ATC initiated
+  30: Cancelled
+  31: Bounced
+  32: Centre/middle
+  33: Destroyed
+  34: Disturbing
+  35: Dry
+  36: Duplicate/duplication
+  37: Failed on impact
+  38: False capture
+  39: Forward/front
+  40: Abort/reject - after V1
+  41: Improvised
+  42: Incorrect packaging
+  43: Incorrect weight/weighting
+  44: Late capture
+  45: Left
+  46: Loss of stiffness
+  47: Lower
+  48: Manufacturing/production issue
+  49: Mortal/human remains
+  50: Not captured
+  52: Not labeled
+  53: On test
+  54: Pilot initiated
+  55: Right
+  56: Rough water
+  57: Rushed/rushing
+  58: Upper
+  59: Wrong connection
+  60: Abort/reject - before V1
+  61: Wrongly declared
+  80: Above
+  90: Abrupt
+  100: Accidental
+  120: Acid leaked
+  130: Activated
+  140: Adverse
+  150: Adverse weather
+  160: Adversely affected
+  170: Air in
+  180: Animal in/on
+  220: Aquaplaning
+  240: Arced/arcing
+  260: Armed
+  280: Asymmetric
+  300: Attempted
+  320: Bad
+  330: Battered
+  340: Below
+  350: Below minima
+  360: Bent/warped
+  380: Between tanks
+  400: Binding
+  420: Bird damage
+  440: Bird strike/bird ingestion
+  480: Blocked
+  520: Bogus/unapproved part
+  540: Bolt/nut/screw/fastener missing
+  550: Bowed
+  555: Brinelling
+  560: Brittle fracture
+  580: Broke
+  600: Buckled
+  620: Built-up area
+  625: Bulged
+  630: Bumped
+  640: Burned
+  660: Burst
+  680: Carbon deposits
+  700: Careless
+  720: Carried out
+  740: Caught
+  760: Cavitated
+  780: Chafed
+  800: Channelized
+  820: Chipped
+  840: Close
+  860: Closed
+  880: Closed aerodrome
+  900: Closed runway
+  920: Collapsed
+  940: Committed
+  960: Complete/total loss of
+  980: Conflicting
+  1000: Confusing
+  1020: Congested/confined
+  1030: Compressed
+  1040: Contacted
+  1060: Contaminated
+  1080: Continued
+  1100: Corroded
+  1105: Corrupted
+  1120: Cracked/crazed
+  1160: Crossed
+  1180: Cultivated area
+  1185: Curled
+  1190: Cut/nicked
+  1200: Damaged
+  1220: Dangerous/hazardous
+  1240: Decompression
+  1250: Debonded/disbonded
+  1260: Decreased/diminished
+  1280: Deflated/underinflated/not inflated
+  1300: Degraded
+  1320: Delaminated
+  1340: Delayed
+  1350: Dented
+  1360: Departed from
+  1370: Deployed/extended
+  1380: Deployment failed/extension failed
+  1400: Descended below
+  1420: Detached/disconnected/separated/disintegrated
+  1440: Deteriorated
+  1460: Detonation
+  1480: Difficult
+  1500: Dirty
+  1510: Disabled
+  1540: Disregarded
+  1550: Discontinued
+  1560: Distorted
+  1570: Discharged
+  1580: Diverted
+  1590: Dispatched
+  1600: Downwind
+  1610: Displaced
+  1620: Drifted
+  1630: Eccentric
+  1640: Electrical failure
+  1660: Elongated
+  1670: Embrittled
+  1680: Encountered
+  1700: Engaged
+  1710: Entered
+  1720: Eroded
+  1730: Entangled
+  1740: Erratic
+  1780: Exceeded/exceeded limits
+  1820: Excessive
+  1840: Excessive consumption
+  1920: Excessive vibration
+  1960: Exhausted/depleted
+  1980: Existed
+  2000: Expectancy
+  2020: Experienced
+  2040: Expired
+  2060: Exploded
+  2070: Exposed
+  2080: Explosive decompression
+  2120: Failed
+  2140: Failed to close
+  2180: Failed to open
+  2200: Failed to operate
+  2220: Failed to respond
+  2240: Failed to retract/retraction failed
+  2260: Failed to trip
+  2280: Failed/malfunctioned
+  2300: Failure-material
+  2310: Failure-partial
+  2320: False indication
+  2330: Failure-total
+  2340: Fatigue corrosion
+  2360: Fatigue failure
+  2380: Fatigue fracture
+  2400: Faulty
+  2420: Fire in
+  2440: Fire warning
+  2460: Flameout
+  2480: Flames
+  2490: Flattened out
+  2500: Fluctuating
+  2520: Fluid ingress
+  2540: Fluid wrong
+  2560: Fluttered
+  2580: Foam on
+  2600: Fogged
+  2620: Foreign object damage
+  2640: Forgot
+  2680: Fractured
+  2700: Frayed
+  2710: Fretting/galled
+  2720: Frozen
+  2750: Fused
+  2760: Glassy
+  2765: Glazed
+  2770: Gouged
+  2780: Heavy
+  2790: Gradient excessive
+  2795: Grooved
+  2800: Hidden
+  2820: Hidden failure
+  2840: High/too High
+  2860: High compression
+  2890: High vegetation
+  2900: Hilly
+  2920: Holed
+  2940: Horizontal
+  2950: Hot-spot
+  2960: Hot start
+  2980: Hydraulic failure
+  3000: Ice/ice on
+  3020: Ice in/ice induction
+  3080: Ignited
+  3100: Ignored
+  3110: Impeded
+  3120: Impossible
+  3140: Improper
+  3160: Improper operation
+  3180: Improper positioning
+  3200: Improper procedure
+  3210: Improper timing
+  3220: Improper use/incorrect use/misused
+  3240: Improper venting
+  3280: Inadequate
+  3290: Inadequate design
+  3300: Inadequate grade
+  3320: Inadequate marking
+  3340: Inadequate type
+  3360: Inadvertent
+  3380: Inadvertent deployment/inadvertent extension
+  3390: Inadvertent activation
+  3410: Inadvertent de-activation
+  3420: Inadvertent retraction
+  3440: Inadvertent use
+  3480: Inattentive
+  3500: Incomplete
+  3520: Incorrect/erroneous/improper/inaccurate
+  3540: Incorrect adjustment
+  3550: Incorrect alignment
+  3560: Incorrect assembly
+  3580: Incorrect description
+  3600: Incorrect grade
+  3620: Incorrect installation
+  3640: Incorrect label/wrongly labeled
+  3660: Incorrect part
+  3680: Incorrect procedure
+  3700: Incorrect setting
+  3720: Incorrect type
+  3760: Incorrectly stowed/secured
+  3780: Increased
+  3800: Indication failed
+  3820: Indirect
+  3840: Ineffective
+  3850: Information insufficient
+  3852: Information lost/suppressed
+  3860: Inefficient
+  3870: Ingested
+  3890: Foreign object/substance on/ingestion of foreign object[s]
+  3900: Ingestion of volcanic ash
+  3910: Ingestion of water/water in
+  3920: Initiated
+  3930: Inoperative
+  3940: Instinctive
+  3960: Insufficient/insufficient details
+  4000: Insufficient equipment
+  4020: Insufficient friction
+  4040: Intentional
+  4060: Interfered
+  4080: Intermittent
+  4090: Interrupted
+  4100: Invalid
+  4120: Issued
+  4160: Jettisoned
+  4180: Known deficiency
+  4200: Lack (of)/lack of precision
+  4210: Lack of frangibility
+  4218: Lack of range/coverage
+  4220: Late
+  4260: Late use
+  4280: Lateral imbalance
+  4300: Leaded
+  4320: Leak/leaked
+  4340: Life expired
+  4360: Light
+  4380: Lightning strike
+  4400: Limited
+  4420: Local
+  4440: Locked
+  4460: Long
+  4480: Loose/not secured
+  4500: Loose gravel
+  4510: Loose bolt/nut/screw/fastener
+  4520: Low
+  4540: Low compression
+  4560: Low level
+  4570: Low ceiling
+  4580: Low output
+  4610: Malfunctioned
+  4620: Low voltage
+  4640: Mishandled
+  4650: Miscalculated
+  4660: Misinterpreted
+  4670: Misrouted
+  4680: Misjudged
+  4700: Misleading
+  4720: Mismanaged
+  4730: Mis-matched
+  4735: Mis-positioned
+  4740: Misread
+  4760: Mis-rigged
+  4780: Missing/missing part
+  4840: Moderate
+  4860: Mountainous
+  4880: Multiple failure
+  4890: Narrow
+  4920: No pressure
+  4940: Noisy
+  4960: Non-standard
+  4980: Not aborted
+  4990: Not activated/not effected
+  5000: Not advised of
+  5010: Not applicable
+  5020: Not airworthy
+  5040: Not approved/not authorized
+  5060: Not selected/not armed
+  5080: Not attained
+  5100: Not attempted
+  5140: Not available
+  5160: Not believed
+  5180: Not calibrated
+  5200: Not carried out/not performed/not completed
+  5220: Not checked/not verified
+  5240: Not comfortable
+  5260: Not controllable
+  5270: Not complied with
+  5280: No deployment/extension
+  5290: Not connected
+  5300: Not detected
+  5310: Not corrected
+  5320: Not determined
+  5340: Not displayed
+  5360: Not done
+  5400: Not enforced
+  5420: Not engaged
+  5440: Not established
+  5460: Not established on
+  5480: Not existing
+  5500: Not expected
+  5520: Not extended/deployed
+  5540: Not fastened
+  5560: Not favourable
+  5580: Not followed
+  5600: Not forecast
+  5620: Not fully utilized
+  5640: Not given/not supplied
+  5660: Not heard
+  5680: Not identified
+  5700: Not implemented/not initiated
+  5720: Not indicated
+  5780: Not inspected
+  5800: Not installed
+  5820: Not issued
+  5840: Not jettisoned
+  5860: Not locked
+  5880: Not lubricated
+  5900: Not made
+  5920: Not maintained
+  5940: Not marked
+  5960: Not met
+  5980: Not monitored
+  6000: Not notified/not declared
+  6020: Not observed
+  6040: Not obtained
+  6080: Not received
+  6090: Not possible
+  6100: Not recent
+  6120: Not recovered
+  6140: Not relinquished
+  6160: Not removed
+  6180: Not/not fully retracted
+  6210: Not safetied
+  6220: Not seen
+  6230: Not set
+  6250: Not shut down
+  6260: Not specified
+  6270: Not stabilized
+  6280: Not suitable/inappropriate/unsuitable
+  6320: Not understood (incl. language barrier)
+  6360: Not used
+  6380: Not wanted
+  6395: Not visible
+  6400: Obsolete
+  6410: Obscured
+  6420: Obstructed
+  6440: Obtrusive
+  6450: Obtained
+  6460: Oil on
+  6480: Open
+  6500: Open circuit
+  6520: Out of balance
+  6540: Out of tolerance
+  6580: Outside MEL
+  6600: Over-controlled
+  6620: Overestimated
+  6630: Overdue
+  6640: Overheated
+  6660: Over-inflated
+  6670: Overloaded
+  6680: Overload failure
+  6700: Overlooked
+  6720: Overspeed
+  6740: Overstrained/stretched
+  6750: Over-temperature
+  6760: Over-torqued
+  6780: Partial loss
+  6790: Peeled
+  6800: Penetrated
+  6820: Performed
+  6830: Person on
+  6837: Nuisance alarm/nuisance information
+  6840: Pinched
+  6850: Pitted
+  6855: Plugged
+  6860: Poor
+  6880: Poor condition
+  6885: Poor display
+  6900: Poor execution
+  6920: Poor planning
+  6925: Poor positioning
+  6940: Poor weld
+  6960: Popped/tripped
+  6970: Porous
+  6980: Premature abort
+  7000: Premature deployment
+  7020: Premature extension
+  7040: Premature retraction
+  7060: Premature use
+  7080: Present
+  7100: Pressure too high/residual pressure/high pressure
+  7120: Low pressure/pressure too low
+  7140: Previous damage
+  7160: Progress not monitored
+  7180: Radiation leak
+  7200: Radioactive
+  7220: Ran rough
+  7240: Rapid loss
+  7260: Rapid pressure loss
+  7280: Readback error
+  7290: Recommended
+  7300: Recovered
+  7310: Required
+  7320: Reduced
+  7330: Removed
+  7340: Restricted
+  7370: Retracted
+  7390: Reversed
+  7400: Rolling
+  7410: Rising
+  7420: Rotated
+  7440: Rough
+  7460: RPM uncontrollable
+  7470: Rubbed
+  7480: Rubber deposits
+  7500: Runaway
+  7520: Rundown
+  7540: Ruptured
+  7560: Sabotaged
+  7580: Sandy
+  7600: Scored
+  7610: Scratched
+  7620: Scuffed
+  7640: Selected
+  7670: Seized/jammed/fouled
+  7680: Severe
+  7690: Severed
+  7700: Sheared
+  7720: Shifted
+  7740: Shimmy
+  7745: Short
+  7760: Shorted/grounded
+  7780: Shut down
+  7800: Simulated/simulated failure
+  7840: Simulated shut down
+  7860: Siphoned
+  7880: Skidded
+  7910: Slipped/slippery
+  7920: Slow/slow reaction
+  7940: Slow loss
+  7960: Slow pressure loss
+  8000: Slush on
+  8020: Smelled
+  8060: Smoke warning
+  8080: Smoke/smoke in/fumes
+  8090: Snagged
+  8100: Snapped
+  8110: Snow
+  8120: Snow on
+  8140: Soft
+  8145: Software commissioning
+  8147: Software design
+  8160: Software error
+  8163: Software integration
+  8165: Software operation
+  8167: Software maintenance / software updates
+  8170: Soaked
+  8175: Spalled
+  8180: Spatter
+  8200: Spilt
+  8220: Spontaneous
+  8230: Staggered/off-set
+  8240: Stall/surge
+  8260: Starvation
+  8280: Static discharge
+  8300: Sticking
+  8320: Stiff
+  8340: Stolen
+  8360: Stopped
+  8380: Stress corrosion
+  8400: Stripped
+  8420: Strong
+  8440: Struck
+  8460: Struck by foreign object
+  8480: Stuck
+  8490: Submerged/submerged object
+  8500: Sub-standard
+  8520: Sudden
+  8560: Thermal runaway
+  8580: Tipped over
+  8600: Too close
+  8620: Too cold
+  8640: Too early
+  8680: Too hot
+  8700: Too late
+  8720: Too low
+  8740: Too shallow
+  8760: Too steep
+  8765: Torn
+  8770: Toxic
+  8780: Tread shed
+  8800: Tree covered
+  8820: Tripped
+  8840: Turned off
+  8860: Turned on
+  8880: Unable to disconnect
+  8900: Unable to reset
+  8920: Unacceptable
+  8940: Unaware
+  8960: Unclear
+  8980: Un-coordinated
+  8990: Uncontrolled
+  9000: Uncommanded
+  9020: Uncommanded deployment/uncommanded extension
+  9060: Uncommanded retraction
+  9100: Uncontained failure
+  9120: Underestimated
+  9150: Under-speed
+  9160: Under-torqued
+  9180: Undetermined failure
+  9200: Uneven
+  9210: Undetermined
+  9220: Unforeseen
+  9240: Unintentional
+  9260: Unknown
+  9270: Unlatched
+  9280: Unserviceable
+  9290: Unlocked
+  9300: Unsuccessful
+  9310: Unreliable
+  9340: Unsuitable area selected
+  9360: Unusual noise
+  9380: Used
+  9400: Using road/taxiway
+  9420: Vapour lock
+  9440: Vertical
+  9460: Vibration
+  9480: Illegal/violation
+  9490: Voltage too high/over-voltage/excessive voltage
+  9520: Water covered
+  9560: Weak
+  9580: Wet
+  9600: Within MEL
+  9620: Without assistance
+  9640: Worn
+  9660: Wrong
+  9680: Wrong aerodrome
+  9700: Wrong area selected
+  9710: Wrong engine selected
+  9720: Wrong material
+  9740: Wrong runway
+  9760: Wrong taxiway
+  10010: Suspected
+  10020: Possible
+  10030: Involved
+  10040: Likely
+  10041: CARGO
+  10042: DEGREE/EXTENT
+  10043: ELECTRICAL
+  10044: AIRCRAFT/EQUIPMENT
+  10045: FAILED OPERATION
+  10046: FUEL
+  10047: FAULTY CONDITION
+  10048: GENERAL
+  10049: HUMAN FACTORS
+  10050: INDICATIONS
+  10051: ATTACH
+  10052: LEGAL
+  10053: FLOW/MOVEMENT
+  10054: LIQUID/GASSES
+  10055: LOCATION-POSITION-TIMING
+  10057: OBSTRUCTIONS
+  10060: POWERPLANT
+  10061: SUITABILITY
+  10062: DAMAGE
+  10064: WEATHER
+  10066: ACTION NOT PERFORMED
+  10067: ENVIRONMENTAL
+  10068: TERRAIN/RUNWAY
+  10071: MAINTENANCE
+  10072: ACTION PERFORMED
+  10075: SOFTWARE/WARNINGS
+  10076: COMPRESSION
+  10077: PERFORMANCE/OPERATIONS
+  10078: decomposed
+  10079: No retraction
+  10080: Too far
+  10081: dropped/fell
+  10082: Attached incorrectly
+  10083: Low weight/mass
+  10084: Garbled/broken up
+  10086: Valve failure
+  10087: Failure-seal
+  10088: Pin not fitted
+  10089: Pin not removed
+  10090: System limitation
+  10091: Hard warning
+  10092: Soft warning
+  10093: Failure to shut down
+  10094: Misselected
+  10095: Repetitive
+  10096: Full
+  10097: Generated
+  10098: Loose wire
+  10099: Sluggish
+  10100: Will not arm / could not be armed
+  10101: Syphoning
+  10102: Disengaged
+hierarchy:
+- id: 10044
+  description: AIRCRAFT/EQUIPMENT
+  children:
+  - id: 10041
+    description: CARGO
+    children:
+    - id: 42
+      description: Incorrect packaging
+    - id: 43
+      description: Incorrect weight/weighting
+    - id: 49
+      description: Mortal/human remains
+    - id: 52
+      description: Not labeled
+    - id: 3640
+      description: Incorrect label/wrongly labeled
+    - id: 3760
+      description: Incorrectly stowed/secured
+    - id: 4160
+      description: Jettisoned
+    - id: 6670
+      description: Overloaded
+    - id: 7180
+      description: Radiation leak
+    - id: 7200
+      description: Radioactive
+    - id: 8770
+      description: Toxic
+    - id: 10081
+      description: dropped/fell
+    - id: 10083
+      description: Low weight/mass
+  - id: 10042
+    description: DEGREE/EXTENT
+    children:
+    - id: 46
+      description: Loss of stiffness
+    - id: 960
+      description: Complete/total loss of
+    - id: 1370
+      description: Deployed/extended
+    - id: 1620
+      description: Drifted
+    - id: 1660
+      description: Elongated
+    - id: 1780
+      description: Exceeded/exceeded limits
+    - id: 1820
+      description: Excessive
+    - id: 2780
+      description: Heavy
+    - id: 2790
+      description: Gradient excessive
+    - id: 4360
+      description: Light
+    - id: 4400
+      description: Limited
+    - id: 4760
+      description: Mis-rigged
+    - id: 4840
+      description: Moderate
+    - id: 4890
+      description: Narrow
+    - id: 5520
+      description: Not extended/deployed
+    - id: 6160
+      description: Not removed
+    - id: 6180
+      description: Not/not fully retracted
+    - id: 6780
+      description: Partial loss
+    - id: 7240
+      description: Rapid loss
+    - id: 7320
+      description: Reduced
+    - id: 7680
+      description: Severe
+    - id: 7940
+      description: Slow loss
+    - id: 8420
+      description: Strong
+    - id: 8580
+      description: Tipped over
+    - id: 8620
+      description: Too cold
+    - id: 8680
+      description: Too hot
+    - id: 8740
+      description: Too shallow
+    - id: 8760
+      description: Too steep
+    - id: 10084
+      description: Garbled/broken up
+    - id: 10099
+      description: Sluggish
+    - id: 10100
+      description: Will not arm / could not be armed
+  - id: 10043
+    description: ELECTRICAL
+    children:
+    - id: 240
+      description: Arced/arcing
+    - id: 1570
+      description: Discharged
+    - id: 1640
+      description: Electrical failure
+    - id: 4620
+      description: Low voltage
+    - id: 6500
+      description: Open circuit
+    - id: 6960
+      description: Popped/tripped
+    - id: 7760
+      description: Shorted/grounded
+    - id: 8280
+      description: Static discharge
+    - id: 9490
+      description: Voltage too high/over-voltage/excessive voltage
+  - id: 10046
+    description: FUEL
+    children:
+    - id: 380
+      description: Between tanks
+    - id: 1840
+      description: Excessive consumption
+    - id: 4280
+      description: Lateral imbalance
+    - id: 7860
+      description: Siphoned
+    - id: 8260
+      description: Starvation
+    - id: 9420
+      description: Vapour lock
+  - id: 10047
+    description: FAULTY CONDITION
+    children:
+    - id: 21
+      description: Failure-bolt, nut or fastener
+    - id: 37
+      description: Failed on impact
+    - id: 1060
+      description: Contaminated
+    - id: 1100
+      description: Corroded
+    - id: 1500
+      description: Dirty
+    - id: 2060
+      description: Exploded
+    - id: 2120
+      description: Failed
+    - id: 2300
+      description: Failure-material
+    - id: 2310
+      description: Failure-partial
+    - id: 2330
+      description: Failure-total
+    - id: 2340
+      description: Fatigue corrosion
+    - id: 2360
+      description: Fatigue failure
+    - id: 2380
+      description: Fatigue fracture
+    - id: 2400
+      description: Faulty
+    - id: 2420
+      description: Fire in
+    - id: 2820
+      description: Hidden failure
+    - id: 2980
+      description: Hydraulic failure
+    - id: 3080
+      description: Ignited
+    - id: 3720
+      description: Incorrect type
+    - id: 3930
+      description: Inoperative
+    - id: 4210
+      description: Lack of frangibility
+    - id: 4610
+      description: Malfunctioned
+    - id: 4880
+      description: Multiple failure
+    - id: 6680
+      description: Overload failure
+    - id: 6760
+      description: Over-torqued
+    - id: 6970
+      description: Porous
+    - id: 7500
+      description: Runaway
+    - id: 8300
+      description: Sticking
+    - id: 8900
+      description: Unable to reset
+    - id: 9160
+      description: Under-torqued
+    - id: 9180
+      description: Undetermined failure
+    - id: 9280
+      description: Unserviceable
+    - id: 9460
+      description: Vibration
+    - id: 10086
+      description: Valve failure
+    - id: 10087
+      description: Failure-seal
+    - id: 10093
+      description: Failure to shut down
+  - id: 10050
+    description: INDICATIONS
+    children:
+    - id: 36
+      description: Duplicate/duplication
+    - id: 38
+      description: False capture
+    - id: 50
+      description: Not captured
+    - id: 1260
+      description: Decreased/diminished
+    - id: 2320
+      description: False indication
+    - id: 2500
+      description: Fluctuating
+    - id: 2840
+      description: High/too High
+    - id: 3780
+      description: Increased
+    - id: 3800
+      description: Indication failed
+    - id: 3850
+      description: Information insufficient
+    - id: 4520
+      description: Low
+    - id: 4580
+      description: Low output
+    - id: 5720
+      description: Not indicated
+    - id: 6520
+      description: Out of balance
+    - id: 6837
+      description: Nuisance alarm/nuisance information
+    - id: 6885
+      description: Poor display
+    - id: 8560
+      description: Thermal runaway
+    - id: 10096
+      description: Full
+    - id: 10097
+      description: Generated
+  - id: 10051
+    description: ATTACH
+    children:
+    - id: 400
+      description: Binding
+    - id: 540
+      description: Bolt/nut/screw/fastener missing
+    - id: 600
+      description: Buckled
+    - id: 1160
+      description: Crossed
+    - id: 1190
+      description: Cut/nicked
+    - id: 1250
+      description: Debonded/disbonded
+    - id: 1420
+      description: Detached/disconnected/separated/disintegrated
+    - id: 1550
+      description: Discontinued
+    - id: 1700
+      description: Engaged
+    - id: 1730
+      description: Entangled
+    - id: 2560
+      description: Fluttered
+    - id: 2750
+      description: Fused
+    - id: 4480
+      description: Loose/not secured
+    - id: 4510
+      description: Loose bolt/nut/screw/fastener
+    - id: 4730
+      description: Mis-matched
+    - id: 4780
+      description: Missing/missing part
+    - id: 5290
+      description: Not connected
+    - id: 5420
+      description: Not engaged
+    - id: 5540
+      description: Not fastened
+    - id: 6210
+      description: Not safetied
+    - id: 6855
+      description: Plugged
+    - id: 6940
+      description: Poor weld
+    - id: 7690
+      description: Severed
+    - id: 8230
+      description: Staggered/off-set
+    - id: 8320
+      description: Stiff
+    - id: 8765
+      description: Torn
+    - id: 8780
+      description: Tread shed
+    - id: 8880
+      description: Unable to disconnect
+    - id: 9270
+      description: Unlatched
+    - id: 10082
+      description: Attached incorrectly
+    - id: 10098
+      description: Loose wire
+  - id: 10053
+    description: FLOW/MOVEMENT
+    children:
+    - id: 630
+      description: Bumped
+    - id: 1280
+      description: Deflated/underinflated/not inflated
+    - id: 1740
+      description: Erratic
+    - id: 2950
+      description: Hot-spot
+    - id: 4020
+      description: Insufficient friction
+    - id: 6540
+      description: Out of tolerance
+    - id: 6660
+      description: Over-inflated
+    - id: 6750
+      description: Over-temperature
+    - id: 7340
+      description: Restricted
+    - id: 7670
+      description: Seized/jammed/fouled
+    - id: 7880
+      description: Skidded
+    - id: 7910
+      description: Slipped/slippery
+    - id: 8440
+      description: Struck
+    - id: 8460
+      description: Struck by foreign object
+    - id: 10101
+      description: Syphoning
+  - id: 10054
+    description: LIQUID/GASSES
+    children:
+    - id: 120
+      description: Acid leaked
+    - id: 760
+      description: Cavitated
+    - id: 1960
+      description: Exhausted/depleted
+    - id: 2480
+      description: Flames
+    - id: 2520
+      description: Fluid ingress
+    - id: 2540
+      description: Fluid wrong
+    - id: 3910
+      description: Ingestion of water/water in
+    - id: 4320
+      description: Leak/leaked
+    - id: 5880
+      description: Not lubricated
+    - id: 6460
+      description: Oil on
+    - id: 8020
+      description: Smelled
+    - id: 8170
+      description: Soaked
+    - id: 8180
+      description: Spatter
+    - id: 8200
+      description: Spilt
+  - id: 10055
+    description: LOCATION-POSITION-TIMING
+    children:
+    - id: 27
+      description: Aft/back/rear
+    - id: 31
+      description: Bounced
+    - id: 32
+      description: Centre/middle
+    - id: 39
+      description: Forward/front
+    - id: 40
+      description: Abort/reject - after V1
+    - id: 44
+      description: Late capture
+    - id: 45
+      description: Left
+    - id: 47
+      description: Lower
+    - id: 55
+      description: Right
+    - id: 57
+      description: Rushed/rushing
+    - id: 58
+      description: Upper
+    - id: 60
+      description: Abort/reject - before V1
+    - id: 80
+      description: Above
+    - id: 90
+      description: Abrupt
+    - id: 340
+      description: Below
+    - id: 350
+      description: Below minima
+    - id: 1360
+      description: Departed from
+    - id: 1610
+      description: Displaced
+    - id: 1630
+      description: Eccentric
+    - id: 2040
+      description: Expired
+    - id: 2940
+      description: Horizontal
+    - id: 3820
+      description: Indirect
+    - id: 4080
+      description: Intermittent
+    - id: 4090
+      description: Interrupted
+    - id: 4200
+      description: Lack (of)/lack of precision
+    - id: 4220
+      description: Late
+    - id: 4260
+      description: Late use
+    - id: 4420
+      description: Local
+    - id: 4460
+      description: Long
+    - id: 4560
+      description: Low level
+    - id: 4735
+      description: Mis-positioned
+    - id: 5940
+      description: Not marked
+    - id: 6100
+      description: Not recent
+    - id: 6270
+      description: Not stabilized
+    - id: 6400
+      description: Obsolete
+    - id: 6630
+      description: Overdue
+    - id: 6800
+      description: Penetrated
+    - id: 6980
+      description: Premature abort
+    - id: 7000
+      description: Premature deployment
+    - id: 7020
+      description: Premature extension
+    - id: 7040
+      description: Premature retraction
+    - id: 7060
+      description: Premature use
+    - id: 7330
+      description: Removed
+    - id: 7370
+      description: Retracted
+    - id: 7390
+      description: Reversed
+    - id: 7420
+      description: Rotated
+    - id: 7720
+      description: Shifted
+    - id: 7745
+      description: Short
+    - id: 8490
+      description: Submerged/submerged object
+    - id: 8520
+      description: Sudden
+    - id: 8600
+      description: Too close
+    - id: 8640
+      description: Too early
+    - id: 8700
+      description: Too late
+    - id: 8720
+      description: Too low
+    - id: 9440
+      description: Vertical
+    - id: 9560
+      description: Weak
+    - id: 10080
+      description: Too far
+    - id: 10088
+      description: Pin not fitted
+    - id: 10089
+      description: Pin not removed
+  - id: 10060
+    description: POWERPLANT
+    children:
+    - id: 1185
+      description: Curled
+    - id: 1460
+      description: Detonation
+    - id: 1920
+      description: Excessive vibration
+    - id: 2460
+      description: Flameout
+    - id: 2960
+      description: Hot start
+    - id: 3870
+      description: Ingested
+    - id: 4300
+      description: Leaded
+    - id: 6720
+      description: Overspeed
+    - id: 7220
+      description: Ran rough
+    - id: 7460
+      description: RPM uncontrollable
+    - id: 7520
+      description: Rundown
+    - id: 7740
+      description: Shimmy
+    - id: 7780
+      description: Shut down
+    - id: 7840
+      description: Simulated shut down
+    - id: 8240
+      description: Stall/surge
+    - id: 8360
+      description: Stopped
+    - id: 9100
+      description: Uncontained failure
+    - id: 9150
+      description: Under-speed
+  - id: 10061
+    description: SUITABILITY
+    children:
+    - id: 20
+      description: Abnormal
+    - id: 22
+      description: Material inadequate
+    - id: 23
+      description: Wrong data entered
+    - id: 25
+      description: Wrong aircraft
+    - id: 26
+      description: Wrong language
+    - id: 53
+      description: On test
+    - id: 59
+      description: Wrong connection
+    - id: 61
+      description: Wrongly declared
+    - id: 320
+      description: Bad
+    - id: 1480
+      description: Difficult
+    - id: 3240
+      description: Improper venting
+    - id: 3300
+      description: Inadequate grade
+    - id: 3320
+      description: Inadequate marking
+    - id: 3340
+      description: Inadequate type
+    - id: 3520
+      description: Incorrect/erroneous/improper/inaccurate
+    - id: 4000
+      description: Insufficient equipment
+    - id: 4218
+      description: Lack of range/coverage
+    - id: 5140
+      description: Not available
+    - id: 5800
+      description: Not installed
+    - id: 5920
+      description: Not maintained
+    - id: 6280
+      description: Not suitable/inappropriate/unsuitable
+    - id: 6580
+      description: Outside MEL
+    - id: 6860
+      description: Poor
+    - id: 6880
+      description: Poor condition
+    - id: 6925
+      description: Poor positioning
+    - id: 8500
+      description: Sub-standard
+    - id: 9310
+      description: Unreliable
+    - id: 9600
+      description: Within MEL
+    - id: 9660
+      description: Wrong
+    - id: 9700
+      description: Wrong area selected
+    - id: 9710
+      description: Wrong engine selected
+    - id: 9720
+      description: Wrong material
+    - id: 10090
+      description: System limitation
+  - id: 10062
+    description: DAMAGE
+    children:
+    - id: 33
+      description: Destroyed
+    - id: 330
+      description: Battered
+    - id: 360
+      description: Bent/warped
+    - id: 420
+      description: Bird damage
+    - id: 550
+      description: Bowed
+    - id: 555
+      description: Brinelling
+    - id: 560
+      description: Brittle fracture
+    - id: 580
+      description: Broke
+    - id: 640
+      description: Burned
+    - id: 660
+      description: Burst
+    - id: 780
+      description: Chafed
+    - id: 820
+      description: Chipped
+    - id: 920
+      description: Collapsed
+    - id: 1105
+      description: Corrupted
+    - id: 1120
+      description: Cracked/crazed
+    - id: 1200
+      description: Damaged
+    - id: 1320
+      description: Delaminated
+    - id: 1350
+      description: Dented
+    - id: 1440
+      description: Deteriorated
+    - id: 1560
+      description: Distorted
+    - id: 1670
+      description: Embrittled
+    - id: 1720
+      description: Eroded
+    - id: 2620
+      description: Foreign object damage
+    - id: 2680
+      description: Fractured
+    - id: 2700
+      description: Frayed
+    - id: 2710
+      description: Fretting/galled
+    - id: 2770
+      description: Gouged
+    - id: 2920
+      description: Holed
+    - id: 6740
+      description: Overstrained/stretched
+    - id: 6790
+      description: Peeled
+    - id: 6850
+      description: Pitted
+    - id: 7140
+      description: Previous damage
+    - id: 7540
+      description: Ruptured
+    - id: 7560
+      description: Sabotaged
+    - id: 7600
+      description: Scored
+    - id: 7610
+      description: Scratched
+    - id: 7620
+      description: Scuffed
+    - id: 7700
+      description: Sheared
+    - id: 8100
+      description: Snapped
+    - id: 8175
+      description: Spalled
+    - id: 8380
+      description: Stress corrosion
+    - id: 8400
+      description: Stripped
+    - id: 9200
+      description: Uneven
+    - id: 9640
+      description: Worn
+  - id: 10071
+    description: MAINTENANCE
+    children:
+    - id: 48
+      description: Manufacturing/production issue
+    - id: 520
+      description: Bogus/unapproved part
+    - id: 3290
+      description: Inadequate design
+    - id: 3660
+      description: Incorrect part
+    - id: 4180
+      description: Known deficiency
+  - id: 10075
+    description: SOFTWARE/WARNINGS
+    children:
+    - id: 2440
+      description: Fire warning
+    - id: 3852
+      description: Information lost/suppressed
+    - id: 8060
+      description: Smoke warning
+    - id: 8145
+      description: Software commissioning
+    - id: 8147
+      description: Software design
+    - id: 8160
+      description: Software error
+    - id: 8163
+      description: Software integration
+    - id: 8165
+      description: Software operation
+    - id: 8167
+      description: Software maintenance / software updates
+    - id: 10091
+      description: Hard warning
+    - id: 10092
+      description: Soft warning
+  - id: 10076
+    description: COMPRESSION
+    children:
+    - id: 625
+      description: Bulged
+    - id: 1030
+      description: Compressed
+    - id: 1240
+      description: Decompression
+    - id: 2080
+      description: Explosive decompression
+    - id: 2490
+      description: Flattened out
+    - id: 2860
+      description: High compression
+    - id: 4540
+      description: Low compression
+    - id: 4920
+      description: No pressure
+    - id: 6840
+      description: Pinched
+    - id: 7100
+      description: Pressure too high/residual pressure/high pressure
+    - id: 7120
+      description: Low pressure/pressure too low
+    - id: 7260
+      description: Rapid pressure loss
+    - id: 7470
+      description: Rubbed
+    - id: 7960
+      description: Slow pressure loss
+- id: 10048
+  description: GENERAL
+  children:
+  - id: 100
+    description: Accidental
+  - id: 140
+    description: Adverse
+  - id: 260
+    description: Armed
+  - id: 740
+    description: Caught
+  - id: 860
+    description: Closed
+  - id: 940
+    description: Committed
+  - id: 1040
+    description: Contacted
+  - id: 1080
+    description: Continued
+  - id: 1220
+    description: Dangerous/hazardous
+  - id: 1300
+    description: Degraded
+  - id: 1340
+    description: Delayed
+  - id: 1510
+    description: Disabled
+  - id: 1680
+    description: Encountered
+  - id: 1710
+    description: Entered
+  - id: 1980
+    description: Existed
+  - id: 2070
+    description: Exposed
+  - id: 2800
+    description: Hidden
+  - id: 3120
+    description: Impossible
+  - id: 3140
+    description: Improper
+  - id: 3500
+    description: Incomplete
+  - id: 3580
+    description: Incorrect description
+  - id: 3840
+    description: Ineffective
+  - id: 3860
+    description: Inefficient
+  - id: 3960
+    description: Insufficient/insufficient details
+  - id: 4440
+    description: Locked
+  - id: 5010
+    description: Not applicable
+  - id: 5060
+    description: Not selected/not armed
+  - id: 5160
+    description: Not believed
+  - id: 5320
+    description: Not determined
+  - id: 5360
+    description: Not done
+  - id: 5480
+    description: Not existing
+  - id: 5560
+    description: Not favourable
+  - id: 5780
+    description: Not inspected
+  - id: 6090
+    description: Not possible
+  - id: 6120
+    description: Not recovered
+  - id: 6260
+    description: Not specified
+  - id: 6395
+    description: Not visible
+  - id: 6480
+    description: Open
+  - id: 6640
+    description: Overheated
+  - id: 7080
+    description: Present
+  - id: 7300
+    description: Recovered
+  - id: 8080
+    description: Smoke/smoke in/fumes
+  - id: 8220
+    description: Spontaneous
+  - id: 8920
+    description: Unacceptable
+  - id: 9210
+    description: Undetermined
+  - id: 9260
+    description: Unknown
+  - id: 9290
+    description: Unlocked
+  - id: 9380
+    description: Used
+  - id: 10010
+    description: Suspected
+  - id: 10020
+    description: Possible
+  - id: 10030
+    description: Involved
+  - id: 10040
+    description: Likely
+  - id: 10078
+    description: decomposed
+  - id: 10102
+    description: Disengaged
+- id: 10052
+  description: LEGAL
+  children:
+  - id: 28
+    description: Amended/modified
+  - id: 4100
+    description: Invalid
+  - id: 4120
+    description: Issued
+  - id: 4340
+    description: Life expired
+  - id: 4960
+    description: Non-standard
+  - id: 5020
+    description: Not airworthy
+  - id: 5040
+    description: Not approved/not authorized
+  - id: 5270
+    description: Not complied with
+  - id: 5400
+    description: Not enforced
+  - id: 5820
+    description: Not issued
+  - id: 6020
+    description: Not observed
+  - id: 7290
+    description: Recommended
+  - id: 7310
+    description: Required
+  - id: 8340
+    description: Stolen
+  - id: 9480
+    description: Illegal/violation
+- id: 10067
+  description: ENVIRONMENTAL
+  children:
+  - id: 10057
+    description: OBSTRUCTIONS
+    children:
+    - id: 170
+      description: Air in
+    - id: 180
+      description: Animal in/on
+    - id: 440
+      description: Bird strike/bird ingestion
+    - id: 480
+      description: Blocked
+    - id: 680
+      description: Carbon deposits
+    - id: 1020
+      description: Congested/confined
+    - id: 2765
+      description: Glazed
+    - id: 3020
+      description: Ice in/ice induction
+    - id: 3110
+      description: Impeded
+    - id: 3890
+      description: Foreign object/substance on/ingestion of foreign object[s]
+    - id: 3900
+      description: Ingestion of volcanic ash
+    - id: 4060
+      description: Interfered
+    - id: 4940
+      description: Noisy
+    - id: 6410
+      description: Obscured
+    - id: 6420
+      description: Obstructed
+    - id: 6440
+      description: Obtrusive
+    - id: 6830
+      description: Person on
+    - id: 8090
+      description: Snagged
+    - id: 8480
+      description: Stuck
+  - id: 10064
+    description: WEATHER
+    children:
+    - id: 150
+      description: Adverse weather
+    - id: 1600
+      description: Downwind
+    - id: 2600
+      description: Fogged
+    - id: 2720
+      description: Frozen
+    - id: 3000
+      description: Ice/ice on
+    - id: 4380
+      description: Lightning strike
+    - id: 4570
+      description: Low ceiling
+    - id: 8110
+      description: Snow
+  - id: 10068
+    description: TERRAIN/RUNWAY
+    children:
+    - id: 35
+      description: Dry
+    - id: 56
+      description: Rough water
+    - id: 220
+      description: Aquaplaning
+    - id: 620
+      description: Built-up area
+    - id: 880
+      description: Closed aerodrome
+    - id: 900
+      description: Closed runway
+    - id: 1180
+      description: Cultivated area
+    - id: 2580
+      description: Foam on
+    - id: 2760
+      description: Glassy
+    - id: 2795
+      description: Grooved
+    - id: 2890
+      description: High vegetation
+    - id: 2900
+      description: Hilly
+    - id: 4500
+      description: Loose gravel
+    - id: 4860
+      description: Mountainous
+    - id: 7400
+      description: Rolling
+    - id: 7410
+      description: Rising
+    - id: 7440
+      description: Rough
+    - id: 7480
+      description: Rubber deposits
+    - id: 7580
+      description: Sandy
+    - id: 8000
+      description: Slush on
+    - id: 8120
+      description: Snow on
+    - id: 8140
+      description: Soft
+    - id: 8800
+      description: Tree covered
+    - id: 9340
+      description: Unsuitable area selected
+    - id: 9400
+      description: Using road/taxiway
+    - id: 9520
+      description: Water covered
+    - id: 9580
+      description: Wet
+    - id: 9680
+      description: Wrong aerodrome
+    - id: 9740
+      description: Wrong runway
+    - id: 9760
+      description: Wrong taxiway
+- id: 10077
+  description: PERFORMANCE/OPERATIONS
+  children:
+  - id: 10045
+    description: FAILED OPERATION
+    children:
+    - id: 24
+      description: Data entered incorrectly
+    - id: 160
+      description: Adversely affected
+    - id: 280
+      description: Asymmetric
+    - id: 1380
+      description: Deployment failed/extension failed
+    - id: 2140
+      description: Failed to close
+    - id: 2180
+      description: Failed to open
+    - id: 2200
+      description: Failed to operate
+    - id: 2220
+      description: Failed to respond
+    - id: 2240
+      description: Failed to retract/retraction failed
+    - id: 2260
+      description: Failed to trip
+    - id: 2280
+      description: Failed/malfunctioned
+    - id: 3160
+      description: Improper operation
+    - id: 4740
+      description: Misread
+    - id: 5460
+      description: Not established on
+    - id: 5680
+      description: Not identified
+    - id: 5980
+      description: Not monitored
+    - id: 6040
+      description: Not obtained
+    - id: 6250
+      description: Not shut down
+    - id: 7160
+      description: Progress not monitored
+    - id: 7280
+      description: Readback error
+    - id: 9020
+      description: Uncommanded deployment/uncommanded extension
+    - id: 9060
+      description: Uncommanded retraction
+    - id: 9300
+      description: Unsuccessful
+  - id: 10049
+    description: HUMAN FACTORS
+    children:
+    - id: 34
+      description: Disturbing
+    - id: 41
+      description: Improvised
+    - id: 700
+      description: Careless
+    - id: 800
+      description: Channelized
+    - id: 980
+      description: Conflicting
+    - id: 1000
+      description: Confusing
+    - id: 1540
+      description: Disregarded
+    - id: 2000
+      description: Expectancy
+    - id: 2020
+      description: Experienced
+    - id: 2640
+      description: Forgot
+    - id: 3180
+      description: Improper positioning
+    - id: 3200
+      description: Improper procedure
+    - id: 3210
+      description: Improper timing
+    - id: 3220
+      description: Improper use/incorrect use/misused
+    - id: 3280
+      description: Inadequate
+    - id: 3360
+      description: Inadvertent
+    - id: 3380
+      description: Inadvertent deployment/inadvertent extension
+    - id: 3390
+      description: Inadvertent activation
+    - id: 3410
+      description: Inadvertent de-activation
+    - id: 3420
+      description: Inadvertent retraction
+    - id: 3440
+      description: Inadvertent use
+    - id: 3480
+      description: Inattentive
+    - id: 3540
+      description: Incorrect adjustment
+    - id: 3550
+      description: Incorrect alignment
+    - id: 3560
+      description: Incorrect assembly
+    - id: 3600
+      description: Incorrect grade
+    - id: 3620
+      description: Incorrect installation
+    - id: 3680
+      description: Incorrect procedure
+    - id: 3700
+      description: Incorrect setting
+    - id: 3940
+      description: Instinctive
+    - id: 4040
+      description: Intentional
+    - id: 4640
+      description: Mishandled
+    - id: 4650
+      description: Miscalculated
+    - id: 4660
+      description: Misinterpreted
+    - id: 4670
+      description: Misrouted
+    - id: 4680
+      description: Misjudged
+    - id: 4700
+      description: Misleading
+    - id: 4720
+      description: Mismanaged
+    - id: 5080
+      description: Not attained
+    - id: 5200
+      description: Not carried out/not performed/not completed
+    - id: 5220
+      description: Not checked/not verified
+    - id: 5240
+      description: Not comfortable
+    - id: 5260
+      description: Not controllable
+    - id: 5310
+      description: Not corrected
+    - id: 5500
+      description: Not expected
+    - id: 5600
+      description: Not forecast
+    - id: 5660
+      description: Not heard
+    - id: 5960
+      description: Not met
+    - id: 6220
+      description: Not seen
+    - id: 6320
+      description: Not understood (incl. language barrier)
+    - id: 6380
+      description: Not wanted
+    - id: 6600
+      description: Over-controlled
+    - id: 6620
+      description: Overestimated
+    - id: 6700
+      description: Overlooked
+    - id: 6820
+      description: Performed
+    - id: 6900
+      description: Poor execution
+    - id: 6920
+      description: Poor planning
+    - id: 7920
+      description: Slow/slow reaction
+    - id: 8940
+      description: Unaware
+    - id: 8960
+      description: Unclear
+    - id: 8980
+      description: Un-coordinated
+    - id: 8990
+      description: Uncontrolled
+    - id: 9000
+      description: Uncommanded
+    - id: 9120
+      description: Underestimated
+    - id: 9220
+      description: Unforeseen
+    - id: 9240
+      description: Unintentional
+    - id: 9360
+      description: Unusual noise
+    - id: 10094
+      description: Misselected
+    - id: 10095
+      description: Repetitive
+  - id: 10066
+    description: ACTION NOT PERFORMED
+    children:
+    - id: 4980
+      description: Not aborted
+    - id: 4990
+      description: Not activated/not effected
+    - id: 5000
+      description: Not advised of
+    - id: 5100
+      description: Not attempted
+    - id: 5180
+      description: Not calibrated
+    - id: 5280
+      description: No deployment/extension
+    - id: 5300
+      description: Not detected
+    - id: 5340
+      description: Not displayed
+    - id: 5440
+      description: Not established
+    - id: 5580
+      description: Not followed
+    - id: 5640
+      description: Not given/not supplied
+    - id: 5700
+      description: Not implemented/not initiated
+    - id: 5840
+      description: Not jettisoned
+    - id: 5860
+      description: Not locked
+    - id: 5900
+      description: Not made
+    - id: 6000
+      description: Not notified/not declared
+    - id: 6080
+      description: Not received
+    - id: 6140
+      description: Not relinquished
+    - id: 6230
+      description: Not set
+    - id: 6360
+      description: Not used
+    - id: 10079
+      description: No retraction
+  - id: 10072
+    description: ACTION PERFORMED
+    children:
+    - id: 29
+      description: ATC initiated
+    - id: 30
+      description: Cancelled
+    - id: 54
+      description: Pilot initiated
+    - id: 130
+      description: Activated
+    - id: 300
+      description: Attempted
+    - id: 720
+      description: Carried out
+    - id: 840
+      description: Close
+    - id: 1400
+      description: Descended below
+    - id: 1580
+      description: Diverted
+    - id: 1590
+      description: Dispatched
+    - id: 3100
+      description: Ignored
+    - id: 3920
+      description: Initiated
+    - id: 5620
+      description: Not fully utilized
+    - id: 6450
+      description: Obtained
+    - id: 7640
+      description: Selected
+    - id: 7800
+      description: Simulated/simulated failure
+    - id: 8820
+      description: Tripped
+    - id: 8840
+      description: Turned off
+    - id: 8860
+      description: Turned on
+    - id: 9620
+      description: Without assistance

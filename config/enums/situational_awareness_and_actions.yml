@@ -1,0 +1,10 @@
+attribute_id: '1101'
+xml_tag: Situational_Awareness_And_Actions
+sequence: 11
+values:
+  1: Stopped
+  2: Remaining Known
+  3: Remaining Assumed
+  4: Failed Known
+  5: Failed Assumed
+  6: Not Applicable

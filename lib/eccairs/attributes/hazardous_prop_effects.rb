@@ -3,10 +3,7 @@
 module Eccairs
   module Attributes
     class HazardousPropEffects < Eccairs::Base::EnumAttribute
-      attribute_id 946
-      xml_tag "Hazardous_Prop_Effects"
-      sequence 15
-      allowed_values [1, 2, 3, 4, 6, 5]
+      enums_from :hazardous_prop_effects
     end
   end
 end

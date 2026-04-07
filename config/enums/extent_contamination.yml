@@ -1,0 +1,9 @@
+attribute_id: '796'
+xml_tag: Extent_Contamination
+sequence:
+values:
+  1: 10% or less
+  2: 11% to 25%
+  3: 26% to 50%
+  4: 51% to 100%
+  5: Unknown

@@ -1,0 +1,8 @@
+attribute_id: '55'
+xml_tag: Chute_Slide_Ops
+sequence:
+values:
+  1: Effective
+  2: Ineffective
+  3: Not used
+  99: Unknown

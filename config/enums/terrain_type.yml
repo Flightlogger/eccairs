@@ -1,0 +1,11 @@
+attribute_id: '296'
+xml_tag: Terrain_Type
+sequence:
+values:
+  1: Mountainous
+  2: Hilly
+  3: Rolling
+  4: Level/flat
+  5: Water
+  98: Other
+  99: Unknown

@@ -1,0 +1,9 @@
+attribute_id: '39'
+xml_tag: Approval_Icing_Cond
+sequence:
+values:
+  1: 'No'
+  2: Yes-light
+  3: Yes-moderate
+  4: Yes-severe
+  99: Unknown

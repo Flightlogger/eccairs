@@ -1,0 +1,7 @@
+attribute_id: '274'
+xml_tag: Speed_Level
+sequence:
+values:
+  1: Low
+  2: High
+  99: Unknown

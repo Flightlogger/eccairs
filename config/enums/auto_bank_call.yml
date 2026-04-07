@@ -1,0 +1,7 @@
+attribute_id: '49'
+xml_tag: Auto_Bank_Call
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown

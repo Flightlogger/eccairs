@@ -2,10 +2,8 @@
 
 module Eccairs
   module Attributes
-    class AircraftManufacturerModel < Eccairs::Base::StringAttribute
-      attribute_id 21
-      xml_tag "Manufacturer_Model"
-      sequence 0
+    class AircraftManufacturerModel < Eccairs::Base::EnumAttribute
+      enums_from :manufacturer_model_21
     end
   end
 end

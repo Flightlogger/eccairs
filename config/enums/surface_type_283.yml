@@ -1,0 +1,17 @@
+attribute_id: '283'
+xml_tag: Surface_Type
+sequence:
+values:
+  1: Wooded/tree covered
+  2: Grass
+  3: Crops/cultivated field
+  4: Sand
+  5: Swamp
+  6: Snow/ice
+  7: Pavement
+  8: Open water
+  9: Sheltered water
+  10: Built-up area/houses
+  11: Tall vegetation
+  98: Other
+  99: Unknown

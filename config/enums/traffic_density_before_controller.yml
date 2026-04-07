@@ -1,0 +1,10 @@
+attribute_id: '549'
+xml_tag: Traffic_Density_Before_Controller
+sequence:
+values:
+  1: Low
+  2: Low/medium
+  3: Medium
+  4: Medium/high
+  5: High
+  99: Unknown

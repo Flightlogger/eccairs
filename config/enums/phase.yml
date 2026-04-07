@@ -1,0 +1,1000 @@
+attribute_id: '391'
+xml_tag: Phase
+sequence: 1
+values:
+  10000: Powered Fixed-wing aircraft
+  10100: Standing
+  10101: 'Standing : Engine(s) Not Operating'
+  10102: 'Standing : Engine(s) Start-up'
+  10103: 'Standing : Engine(s) Operating'
+  10104: 'Standing : Engine(s) Shut Down'
+  10105: 'Standing : Rotors turning'
+  10198: 'Standing : Other'
+  10200: Taxi
+  10201: Pushback
+  10202: Taxiing to/from runway
+  10203: Air taxi/hover taxi
+  10298: 'Taxiing: Other'
+  10300: Take-off
+  10301: Take-off run
+  10302: Initial climb
+  10303: Rejected take-off
+  10304: Climb into traffic pattern
+  10305: Emergency descent during take-off
+  10306: Uncontrolled descent during take-off
+  10307: Vertical take-off
+  10398: 'Take-off: Other'
+  10400: En-route
+  10401: Climb to cruising level or altitude
+  10402: Cruise
+  10403: Change of cruise level
+  10404: Normal descent
+  10405: Emergency descent en-route
+  10406: Uncontrolled descent en-route
+  10407: En-route - holding
+  10498: 'En-route: Other'
+  10500: Manoeuvring
+  10501: Aerobatics
+  10502: Low flying
+  10503: Emergency descent
+  10504: Uncontrolled descent
+  10507: Autorotative descent
+  10508: Hovering in ground effect
+  10509: Hovering out of ground effect
+  10598: 'Manoeuvring: Other'
+  10600: Approach
+  10601: Intermediate approach
+  10602: Final approach
+  10603: Circuit pattern - downwind
+  10604: Circuit pattern - base leg
+  10605: Circuit pattern - final
+  10606: Aborted approach before decision height
+  10607: Missed approach or go-around
+  10608: Emergency descent during approach
+  10609: Uncontrolled descent during an approach
+  10610: Approach - holding
+  10611: Initial Approach
+  10698: 'Approach : Other'
+  10700: Landing
+  10701: Level off-touchdown
+  10702: Landing roll
+  10703: Landing aborted after touch-down
+  10704: Run-on landing
+  10705: Autorotative landing
+  10706: Emergency landing or off-runway landing
+  10707: Vertical landing
+  10708: Landing roll - off runway
+  10709: Hovering - landing
+  10798: 'Landing: Other'
+  10800: Post-impact
+  19900: Unknown
+  30000: Sailplane/Glider
+  30100: Standing
+  30101: Standing - tow/winch wire attached
+  30102: Standing - after landing
+  30109: Standing - Other
+  30300: Take-off
+  30301: Take-off run
+  30302: Take-off - initial climb
+  30303: Rejected take-off
+  30304: Emergency descent during take-off
+  30305: Uncontrolled descent during take-off
+  30398: 'Take-off: Other'
+  30400: En-route
+  30401: Slope lift
+  30402: Thermal lift
+  30403: Wave lift
+  30404: Cloud flying
+  30405: Ferry towing
+  30406: Final glide - goal run
+  30407: Emergency descent en route
+  30408: Uncontrolled descent en route
+  30498: En-route - Other
+  30505: In search of lift
+  30506: Normal descent
+  30600: Approach
+  30601: Circuit pattern - downwind
+  30602: Circuit pattern - base leg
+  30603: Circuit pattern - final
+  30604: Emergency descent
+  30605: Uncontrolled descent
+  30698: 'Approach: Other'
+  30700: Landing
+  30701: Level-off/touchdown
+  30702: Landing roll
+  30703: Landing after failed launch
+  30704: Emergency landing
+  30798: 'Landing: Other'
+  30800: Post-impact
+  39900: Unknown
+  40000: Hang/Para-glider
+  40100: Standing
+  40101: Ground check
+  40198: Other
+  40300: Take-off
+  40301: Foot launch
+  40302: Winch launch
+  40303: Aerotow launch
+  40304: Aborted launch
+  40305: Initial climb
+  40306: Uncontrolled descent
+  40398: 'Take-off: Other'
+  40500: En-route
+  40501: Slope lift
+  40502: Thermal lift
+  40503: Emergency descent en route
+  40504: Uncontrolled descent en route
+  40598: 'En-route: Other'
+  40600: Approach
+  40601: Circuit pattern - downwind
+  40602: Circuit pattern - base leg
+  40604: Circuit pattern - final
+  40605: Emergency descent
+  40606: Uncontrolled descent
+  40698: 'Approach: Other'
+  40700: Landing
+  40701: Level-off-touchdown
+  40798: 'Landing: Other'
+  40800: Post-impact
+  49900: Unknown
+  50000: Balloon
+  50100: Standing
+  50101: Assembly & checking
+  50102: Cold air ventilation
+  50103: Hot air inflating
+  50104: Valve control test
+  50198: 'Standing: Other'
+  50300: Take-off
+  50301: Weighting
+  50302: Let-go
+  50303: Initial climb
+  50398: 'Take-off: Other'
+  50400: En-route
+  50401: Stabilized climb
+  50402: Level flight
+  50403: Stabilized descent
+  50404: 'En-route: Emergency descent'
+  50405: 'En-route: Uncontrolled descent'
+  50498: 'En-route: Other'
+  50600: Approach
+  50601: Final approach - normal
+  50602: 'Approach: Emergency descent'
+  50603: 'Approach: Uncontrolled descent'
+  50698: 'Approach: Other'
+  50700: Landing
+  50701: Flare
+  50702: Touch-down
+  50703: Tumbling
+  50704: Dragging
+  50705: Tear-away panels or valve opening
+  50706: Pilot light extinction
+  50707: Deflating
+  50708: Go-around
+  50798: 'Landing: Other'
+  50800: Post-impact
+  59900: Unknown
+  990000: Unknown aircraft category
+  990100: Standing
+  990200: Taxi
+  990300: Take-off
+  990400: En-route
+  990500: Manoeuvring
+  990600: Approach
+  990700: Landing
+  990800: Post-impact
+  990801: Take-off - Winch launch
+  990802: Take-off - Aircraft tow
+  990803: Take-off run
+  990804: Initital climb
+  990805: Rope release
+  990806: Rejected take-off
+  990807: Uncontrolled descent
+  990808: Take-off run
+  990809: Initital climb
+  990810: Rope release
+  990811: Rejected take-off
+  990812: Uncontrolled descent
+  990813: Off-field landing
+  990814: Normal descent
+  990815: Straight in
+  990816: Maintenance phases
+  990817: Aircraft repair
+  990818: Aircraft modification
+  990819: Scheduled maintenance
+  990820: Non-scheduled maintenance
+  990821: Airworthiness directive
+  990822: Service bulletin
+  990823: Other
+  990824: Helicopter
+  990825: Assisted, Engine(s) Not Operating
+  990826: Assisted, Engine(s) Start-up
+  990827: Assisted, Engine(s) Operating
+  990828: Assisted, Engine(s) Shutting Down
+  990829: Taxi to runway
+  990830: Taxi to take-off position
+  990831: Taxi from runway
+  990832: Maintaining position
+  990833: High speed taxi trial
+  990835: Standing
+  990836: Taxi
+  990837: Take-off
+  990838: En-route
+  990839: Manoeuvring
+  990840: Approach
+  990841: Landing
+  990842: Post-impact
+  990843: Unknown
+  990844: 'Standing : Engine(s) Not Operating'
+  990845: 'Standing : Engine(s) Start-up'
+  990846: 'Standing : Engine(s) Operating'
+  990847: 'Standing : Engine(s) Run-up'
+  990848: 'Standing : Other'
+  990849: Taxi to runway
+  990850: Taxi to take-off position
+  990851: Taxi from runway
+  990852: Maintaining position
+  990853: 'Taxi : Other'
+  990854: Running take-off
+  990855: Initial climb
+  990856: Rejected take-off
+  990857: Climb into traffic pattern
+  990858: Emergency descent during take-off
+  990859: Uncontrolled descent during take-off
+  990860: Vertical take-off with external load attached
+  990861: Hovering/transition from hover to forward flight
+  990862: 'Take-off : Other'
+  990863: Climb to cruising level or altitude
+  990864: Cruise
+  990865: Change of cruise level
+  990866: Normal descent
+  990867: Emergency descent en-route
+  990868: Emergency autorotation en-route
+  990869: Uncontrolled descent en-route
+  990870: En-route - holding
+  990871: 'En-route : Other'
+  990872: Aerobatics
+  990873: Low flying
+  990874: Pick-up/positioning of external load
+  990875: Emergency descent
+  990876: Emergency autorotation during manoeuvring
+  990877: Uncontrolled descent
+  990878: Autorotation – practice
+  990879: Hovering
+  990880: 'Manoeuvring : Other'
+  990881: Transition forward flight to hover
+  990882: Initial Approach
+  990883: Intermediate approach
+  990884: Final approach
+  990885: Circuit pattern - downwind
+  990886: Circuit pattern - base leg
+  990887: Circuit pattern - final
+  990888: Aborted approach before decision height
+  990889: Missed approach or go-around
+  990890: Emergency descent during approach
+  990891: Emergency autorotation during approach
+  990892: Uncontrolled descent during an approach
+  990893: Approach - holding
+  990894: 'Approach : Other'
+  990895: Flare
+  990896: Landing aborted after touch-down
+  990897: Emergency landing or off-runway landing
+  990898: Circuit pattern - crosswind
+  990899: 'Standing : Engine(s) Run-up'
+  990900: Off-field landing
+  990901: Landing - Other
+  990902: 'Take-off - winch-launch: Other'
+  990903: Parachuting
+  990904: Pre-flight preparation
+  990905: Leaving the aircraft
+  990906: Free falling
+  990907: Parachute opening
+  990908: Descend with parachute open
+  990909: Approach/landing preparation
+  990910: Landing
+  990911: Post landing
+  990912: Other
+  990913: Uncontrolled descent
+  990914: Power back
+  990915: Circuit pattern - crosswind
+  990916: Circuit pattern - crosswind
+  990917: Circuit pattern - crosswind
+  990918: Landing roll - on runway
+  990919: 'Take-off - aircraft tow: Other'
+  990920: Landing aborted before touch-down
+  990921: Tow
+  990922: Tow
+  990923: Tow
+  990924: Taxi
+  990925: Taxi to runway
+  990926: Taxi to take-off position
+  990927: Taxi from runway
+  990928: Maintaining position
+  990929: Air taxi/hover taxi
+  990930: 'Taxi : Other'
+  990931: Design
+  990932: Production
+  990933: Manufacturing
+  990934: Assembly/Installation
+  990935: Transportation
+  990936: Storage
+  990937: Testing
+hierarchy:
+- id: 10000
+  description: Powered Fixed-wing aircraft
+  children:
+  - id: 10100
+    description: Standing
+    children:
+    - id: 10101
+      description: 'Standing : Engine(s) Not Operating'
+    - id: 10102
+      description: 'Standing : Engine(s) Start-up'
+    - id: 10103
+      description: 'Standing : Engine(s) Operating'
+    - id: 10104
+      description: 'Standing : Engine(s) Shut Down'
+    - id: 10198
+      description: 'Standing : Other'
+    - id: 990899
+      description: 'Standing : Engine(s) Run-up'
+  - id: 10200
+    description: Taxi
+    children:
+    - id: 10201
+      description: Pushback
+      children:
+      - id: 990825
+        description: Assisted, Engine(s) Not Operating
+      - id: 990826
+        description: Assisted, Engine(s) Start-up
+      - id: 990827
+        description: Assisted, Engine(s) Operating
+      - id: 990828
+        description: Assisted, Engine(s) Shutting Down
+    - id: 10202
+      description: Taxiing to/from runway
+      children:
+      - id: 990829
+        description: Taxi to runway
+      - id: 990830
+        description: Taxi to take-off position
+      - id: 990831
+        description: Taxi from runway
+      - id: 990832
+        description: Maintaining position
+    - id: 10298
+      description: 'Taxiing: Other'
+    - id: 990833
+      description: High speed taxi trial
+    - id: 990914
+      description: Power back
+  - id: 10300
+    description: Take-off
+    children:
+    - id: 10301
+      description: Take-off run
+    - id: 10302
+      description: Initial climb
+    - id: 10303
+      description: Rejected take-off
+    - id: 10304
+      description: Climb into traffic pattern
+    - id: 10305
+      description: Emergency descent during take-off
+    - id: 10306
+      description: Uncontrolled descent during take-off
+    - id: 10398
+      description: 'Take-off: Other'
+  - id: 10400
+    description: En-route
+    children:
+    - id: 10401
+      description: Climb to cruising level or altitude
+    - id: 10402
+      description: Cruise
+    - id: 10403
+      description: Change of cruise level
+    - id: 10404
+      description: Normal descent
+    - id: 10405
+      description: Emergency descent en-route
+    - id: 10406
+      description: Uncontrolled descent en-route
+    - id: 10407
+      description: En-route - holding
+    - id: 10498
+      description: 'En-route: Other'
+  - id: 10500
+    description: Manoeuvring
+    children:
+    - id: 10501
+      description: Aerobatics
+    - id: 10502
+      description: Low flying
+    - id: 10503
+      description: Emergency descent
+    - id: 10504
+      description: Uncontrolled descent
+    - id: 10598
+      description: 'Manoeuvring: Other'
+  - id: 10600
+    description: Approach
+    children:
+    - id: 10601
+      description: Intermediate approach
+    - id: 10602
+      description: Final approach
+    - id: 10603
+      description: Circuit pattern - downwind
+    - id: 10604
+      description: Circuit pattern - base leg
+    - id: 10605
+      description: Circuit pattern - final
+    - id: 10606
+      description: Aborted approach before decision height
+    - id: 10607
+      description: Missed approach or go-around
+    - id: 10608
+      description: Emergency descent during approach
+    - id: 10609
+      description: Uncontrolled descent during an approach
+    - id: 10610
+      description: Approach - holding
+    - id: 10611
+      description: Initial Approach
+    - id: 10698
+      description: 'Approach : Other'
+    - id: 990898
+      description: Circuit pattern - crosswind
+  - id: 10700
+    description: Landing
+    children:
+    - id: 10701
+      description: Level off-touchdown
+    - id: 10702
+      description: Landing roll
+      children:
+      - id: 10708
+        description: Landing roll - off runway
+      - id: 990918
+        description: Landing roll - on runway
+    - id: 10703
+      description: Landing aborted after touch-down
+    - id: 10706
+      description: Emergency landing or off-runway landing
+    - id: 10798
+      description: 'Landing: Other'
+    - id: 990920
+      description: Landing aborted before touch-down
+  - id: 10800
+    description: Post-impact
+  - id: 19900
+    description: Unknown
+  - id: 990921
+    description: Tow
+- id: 30000
+  description: Sailplane/Glider
+  children:
+  - id: 30100
+    description: Standing
+    children:
+    - id: 30101
+      description: Standing - tow/winch wire attached
+    - id: 30102
+      description: Standing - after landing
+    - id: 30109
+      description: Standing - Other
+  - id: 30300
+    description: Take-off
+    children:
+    - id: 30301
+      description: Take-off run
+    - id: 30302
+      description: Take-off - initial climb
+    - id: 30303
+      description: Rejected take-off
+    - id: 30304
+      description: Emergency descent during take-off
+    - id: 30305
+      description: Uncontrolled descent during take-off
+    - id: 30398
+      description: 'Take-off: Other'
+  - id: 30400
+    description: En-route
+    children:
+    - id: 30401
+      description: Slope lift
+    - id: 30402
+      description: Thermal lift
+    - id: 30403
+      description: Wave lift
+    - id: 30404
+      description: Cloud flying
+    - id: 30405
+      description: Ferry towing
+    - id: 30407
+      description: Emergency descent en route
+    - id: 30408
+      description: Uncontrolled descent en route
+    - id: 30498
+      description: En-route - Other
+    - id: 30505
+      description: In search of lift
+    - id: 30506
+      description: Normal descent
+  - id: 30600
+    description: Approach
+    children:
+    - id: 30406
+      description: Final glide - goal run
+    - id: 30601
+      description: Circuit pattern - downwind
+    - id: 30602
+      description: Circuit pattern - base leg
+    - id: 30603
+      description: Circuit pattern - final
+    - id: 30604
+      description: Emergency descent
+    - id: 30605
+      description: Uncontrolled descent
+    - id: 30698
+      description: 'Approach: Other'
+    - id: 990916
+      description: Circuit pattern - crosswind
+  - id: 30700
+    description: Landing
+    children:
+    - id: 30701
+      description: Level-off/touchdown
+    - id: 30702
+      description: Landing roll
+    - id: 30703
+      description: Landing after failed launch
+    - id: 30704
+      description: Emergency landing
+    - id: 30798
+      description: 'Landing: Other'
+    - id: 990813
+      description: Off-field landing
+  - id: 30800
+    description: Post-impact
+  - id: 39900
+    description: Unknown
+  - id: 990801
+    description: Take-off - Winch launch
+    children:
+    - id: 990803
+      description: Take-off run
+    - id: 990804
+      description: Initital climb
+    - id: 990805
+      description: Rope release
+    - id: 990806
+      description: Rejected take-off
+    - id: 990807
+      description: Uncontrolled descent
+    - id: 990902
+      description: 'Take-off - winch-launch: Other'
+  - id: 990802
+    description: Take-off - Aircraft tow
+    children:
+    - id: 990808
+      description: Take-off run
+    - id: 990809
+      description: Initital climb
+    - id: 990810
+      description: Rope release
+    - id: 990811
+      description: Rejected take-off
+    - id: 990812
+      description: Uncontrolled descent
+    - id: 990919
+      description: 'Take-off - aircraft tow: Other'
+  - id: 990923
+    description: Tow
+  - id: 990924
+    description: Taxi
+    children:
+    - id: 990925
+      description: Taxi to runway
+    - id: 990926
+      description: Taxi to take-off position
+    - id: 990927
+      description: Taxi from runway
+    - id: 990928
+      description: Maintaining position
+    - id: 990929
+      description: Air taxi/hover taxi
+    - id: 990930
+      description: 'Taxi : Other'
+- id: 40000
+  description: Hang/Para-glider
+  children:
+  - id: 40100
+    description: Standing
+    children:
+    - id: 40101
+      description: Ground check
+    - id: 40198
+      description: Other
+  - id: 40300
+    description: Take-off
+    children:
+    - id: 40301
+      description: Foot launch
+    - id: 40302
+      description: Winch launch
+    - id: 40303
+      description: Aerotow launch
+    - id: 40304
+      description: Aborted launch
+    - id: 40305
+      description: Initial climb
+    - id: 40306
+      description: Uncontrolled descent
+    - id: 40398
+      description: 'Take-off: Other'
+  - id: 40500
+    description: En-route
+    children:
+    - id: 40501
+      description: Slope lift
+    - id: 40502
+      description: Thermal lift
+    - id: 40503
+      description: Emergency descent en route
+    - id: 40504
+      description: Uncontrolled descent en route
+    - id: 40598
+      description: 'En-route: Other'
+    - id: 990814
+      description: Normal descent
+  - id: 40600
+    description: Approach
+    children:
+    - id: 40601
+      description: Circuit pattern - downwind
+    - id: 40602
+      description: Circuit pattern - base leg
+    - id: 40604
+      description: Circuit pattern - final
+    - id: 40605
+      description: Emergency descent
+    - id: 40606
+      description: Uncontrolled descent
+    - id: 40698
+      description: 'Approach: Other'
+    - id: 990815
+      description: Straight in
+    - id: 990917
+      description: Circuit pattern - crosswind
+  - id: 40700
+    description: Landing
+    children:
+    - id: 40701
+      description: Level-off-touchdown
+    - id: 40798
+      description: 'Landing: Other'
+    - id: 990900
+      description: Off-field landing
+  - id: 40800
+    description: Post-impact
+  - id: 49900
+    description: Unknown
+- id: 50000
+  description: Balloon
+  children:
+  - id: 50100
+    description: Standing
+    children:
+    - id: 50101
+      description: Assembly & checking
+    - id: 50102
+      description: Cold air ventilation
+    - id: 50103
+      description: Hot air inflating
+    - id: 50104
+      description: Valve control test
+    - id: 50198
+      description: 'Standing: Other'
+  - id: 50300
+    description: Take-off
+    children:
+    - id: 50301
+      description: Weighting
+    - id: 50302
+      description: Let-go
+    - id: 50303
+      description: Initial climb
+    - id: 50398
+      description: 'Take-off: Other'
+  - id: 50400
+    description: En-route
+    children:
+    - id: 50401
+      description: Stabilized climb
+    - id: 50402
+      description: Level flight
+    - id: 50403
+      description: Stabilized descent
+    - id: 50404
+      description: 'En-route: Emergency descent'
+    - id: 50405
+      description: 'En-route: Uncontrolled descent'
+    - id: 50498
+      description: 'En-route: Other'
+  - id: 50600
+    description: Approach
+    children:
+    - id: 50601
+      description: Final approach - normal
+    - id: 50602
+      description: 'Approach: Emergency descent'
+    - id: 50603
+      description: 'Approach: Uncontrolled descent'
+    - id: 50698
+      description: 'Approach: Other'
+    - id: 50708
+      description: Go-around
+  - id: 50700
+    description: Landing
+    children:
+    - id: 50701
+      description: Flare
+    - id: 50702
+      description: Touch-down
+    - id: 50703
+      description: Tumbling
+    - id: 50704
+      description: Dragging
+    - id: 50705
+      description: Tear-away panels or valve opening
+    - id: 50706
+      description: Pilot light extinction
+    - id: 50707
+      description: Deflating
+    - id: 50798
+      description: 'Landing: Other'
+  - id: 50800
+    description: Post-impact
+  - id: 59900
+    description: Unknown
+- id: 990000
+  description: Unknown aircraft category
+  children:
+  - id: 990100
+    description: Standing
+  - id: 990200
+    description: Taxi
+  - id: 990300
+    description: Take-off
+  - id: 990400
+    description: En-route
+  - id: 990500
+    description: Manoeuvring
+  - id: 990600
+    description: Approach
+  - id: 990700
+    description: Landing
+  - id: 990800
+    description: Post-impact
+- id: 990816
+  description: Maintenance phases
+  children:
+  - id: 990817
+    description: Aircraft repair
+  - id: 990818
+    description: Aircraft modification
+  - id: 990819
+    description: Scheduled maintenance
+  - id: 990820
+    description: Non-scheduled maintenance
+    children:
+    - id: 990821
+      description: Airworthiness directive
+    - id: 990822
+      description: Service bulletin
+    - id: 990823
+      description: Other
+- id: 990824
+  description: Helicopter
+  children:
+  - id: 990835
+    description: Standing
+    children:
+    - id: 10105
+      description: 'Standing : Rotors turning'
+    - id: 990844
+      description: 'Standing : Engine(s) Not Operating'
+    - id: 990845
+      description: 'Standing : Engine(s) Start-up'
+    - id: 990846
+      description: 'Standing : Engine(s) Operating'
+    - id: 990847
+      description: 'Standing : Engine(s) Run-up'
+    - id: 990848
+      description: 'Standing : Other'
+  - id: 990836
+    description: Taxi
+    children:
+    - id: 10203
+      description: Air taxi/hover taxi
+    - id: 990849
+      description: Taxi to runway
+    - id: 990850
+      description: Taxi to take-off position
+    - id: 990851
+      description: Taxi from runway
+    - id: 990852
+      description: Maintaining position
+    - id: 990853
+      description: 'Taxi : Other'
+  - id: 990837
+    description: Take-off
+    children:
+    - id: 10307
+      description: Vertical take-off
+    - id: 990854
+      description: Running take-off
+    - id: 990855
+      description: Initial climb
+    - id: 990856
+      description: Rejected take-off
+    - id: 990857
+      description: Climb into traffic pattern
+    - id: 990858
+      description: Emergency descent during take-off
+    - id: 990859
+      description: Uncontrolled descent during take-off
+    - id: 990860
+      description: Vertical take-off with external load attached
+    - id: 990861
+      description: Hovering/transition from hover to forward flight
+    - id: 990862
+      description: 'Take-off : Other'
+  - id: 990838
+    description: En-route
+    children:
+    - id: 990863
+      description: Climb to cruising level or altitude
+    - id: 990864
+      description: Cruise
+    - id: 990865
+      description: Change of cruise level
+    - id: 990866
+      description: Normal descent
+    - id: 990867
+      description: Emergency descent en-route
+    - id: 990868
+      description: Emergency autorotation en-route
+    - id: 990869
+      description: Uncontrolled descent en-route
+    - id: 990870
+      description: En-route - holding
+    - id: 990871
+      description: 'En-route : Other'
+  - id: 990839
+    description: Manoeuvring
+    children:
+    - id: 10507
+      description: Autorotative descent
+      children:
+      - id: 990876
+        description: Emergency autorotation during manoeuvring
+      - id: 990878
+        description: Autorotation – practice
+    - id: 990872
+      description: Aerobatics
+    - id: 990873
+      description: Low flying
+    - id: 990874
+      description: Pick-up/positioning of external load
+    - id: 990875
+      description: Emergency descent
+    - id: 990877
+      description: Uncontrolled descent
+    - id: 990879
+      description: Hovering
+      children:
+      - id: 10508
+        description: Hovering in ground effect
+      - id: 10509
+        description: Hovering out of ground effect
+    - id: 990880
+      description: 'Manoeuvring : Other'
+  - id: 990840
+    description: Approach
+    children:
+    - id: 990881
+      description: Transition forward flight to hover
+    - id: 990882
+      description: Initial Approach
+    - id: 990883
+      description: Intermediate approach
+    - id: 990884
+      description: Final approach
+    - id: 990885
+      description: Circuit pattern - downwind
+    - id: 990886
+      description: Circuit pattern - base leg
+    - id: 990887
+      description: Circuit pattern - final
+    - id: 990888
+      description: Aborted approach before decision height
+    - id: 990889
+      description: Missed approach or go-around
+    - id: 990890
+      description: Emergency descent during approach
+    - id: 990891
+      description: Emergency autorotation during approach
+    - id: 990892
+      description: Uncontrolled descent during an approach
+    - id: 990893
+      description: Approach - holding
+    - id: 990894
+      description: 'Approach : Other'
+    - id: 990915
+      description: Circuit pattern - crosswind
+  - id: 990841
+    description: Landing
+    children:
+    - id: 10704
+      description: Run-on landing
+    - id: 10705
+      description: Autorotative landing
+    - id: 10707
+      description: Vertical landing
+    - id: 10709
+      description: Hovering - landing
+    - id: 990895
+      description: Flare
+    - id: 990896
+      description: Landing aborted after touch-down
+    - id: 990897
+      description: Emergency landing or off-runway landing
+    - id: 990901
+      description: Landing - Other
+  - id: 990842
+    description: Post-impact
+  - id: 990843
+    description: Unknown
+  - id: 990922
+    description: Tow
+- id: 990903
+  description: Parachuting
+  children:
+  - id: 990904
+    description: Pre-flight preparation
+  - id: 990905
+    description: Leaving the aircraft
+  - id: 990906
+    description: Free falling
+  - id: 990907
+    description: Parachute opening
+  - id: 990908
+    description: Descend with parachute open
+  - id: 990909
+    description: Approach/landing preparation
+  - id: 990910
+    description: Landing
+  - id: 990911
+    description: Post landing
+  - id: 990912
+    description: Other
+  - id: 990913
+    description: Uncontrolled descent
+- id: 990931
+  description: Design
+- id: 990932
+  description: Production
+  children:
+  - id: 990933
+    description: Manufacturing
+  - id: 990934
+    description: Assembly/Installation
+  - id: 990935
+    description: Transportation
+  - id: 990936
+    description: Storage
+  - id: 990937
+    description: Testing

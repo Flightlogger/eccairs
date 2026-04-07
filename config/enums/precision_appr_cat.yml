@@ -1,0 +1,10 @@
+attribute_id: '231'
+xml_tag: Precision_Appr_Cat
+sequence:
+values:
+  1: CAT I
+  2: CAT II
+  4: CAT III A
+  5: CAT III B
+  6: CAT III C
+  99: Unknown

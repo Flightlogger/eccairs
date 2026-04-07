@@ -1,0 +1,10 @@
+attribute_id: '245'
+xml_tag: Rel_Wind_Direction
+sequence: 31
+values:
+  1: Head wind
+  2: Tail wind
+  3: Crosswind
+  4: Quartering headwind
+  5: Quartering tailwind
+  99: Unknown

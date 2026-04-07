@@ -3,10 +3,7 @@
 module Eccairs
   module Attributes
     class StcaCurrentAlerting < Eccairs::Base::EnumAttribute
-      attribute_id 379
-      xml_tag "STCA_Current_Alerting"
-      sequence 4
-      allowed_values [1, 2, 99, 100]
+      enums_from :stca_current_alerting
     end
   end
 end

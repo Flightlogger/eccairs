@@ -1,0 +1,15 @@
+attribute_id: '135'
+xml_tag: Evacuation_Hampered
+sequence:
+values:
+  1: Fire
+  2: Smoke
+  3: Injuries
+  4: Aircraft/cabin debris
+  5: Darkness
+  6: Shock/fear
+  7: Door(s) blocked
+  8: Aircraft underwater
+  97: Not hampered
+  98: Other
+  99: Unknown

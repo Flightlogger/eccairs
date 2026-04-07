@@ -1,0 +1,12 @@
+attribute_id: '329'
+xml_tag: Type_Of_Fire_Suppression_System
+sequence:
+values:
+  1: Power plant
+  2: Portable
+  3: Galley
+  4: Bag/cargo compartment
+  5: APU
+  6: Toilet
+  97: Not Installed
+  99: Unknown

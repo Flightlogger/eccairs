@@ -1,0 +1,11 @@
+attribute_id: '1077'
+xml_tag: Overall_Severity
+sequence: 45
+values:
+  1: A
+  2: B
+  3: C
+  4: D
+  5: E
+  7: Not Applicable
+  8: Unknown

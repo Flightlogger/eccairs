@@ -1,0 +1,9 @@
+attribute_id: '571'
+xml_tag: Initiator_Avoiding_Act
+sequence:
+values:
+  1: Pilot
+  2: Controller
+  3: Pilot and controller
+  98: Other
+  99: Unknown

@@ -1,0 +1,55 @@
+attribute_id: '1090'
+xml_tag: Annex_2_A_C_Type
+sequence: 55
+values:
+  1: Historic Aircraft
+  2: Research/Experimental/Scientific
+  3: Amateur Built
+  4: Ex-military Aircraft
+  5: Ultralight Aeroplanes, Helicopters, Powered Parachutes
+  6: Gyroplane
+  7: Ultralight glider
+  8: Replica Aircraft
+  9: Unmanned Aircraft Below 150 kg
+  10: Any Other Aircraft Below 70 kg
+  11: Historic Non-Complex Aircraft
+  12: Aircraft with Clear Historical Relevance
+  13: Ultralight Helicopter
+  14: Ultralight Aeroplane
+  15: Powered Parachute
+  16: Not Applicable
+hierarchy:
+- id: 1
+  description: Historic Aircraft
+  children:
+  - id: 11
+    description: Historic Non-Complex Aircraft
+  - id: 12
+    description: Aircraft with Clear Historical Relevance
+- id: 2
+  description: Research/Experimental/Scientific
+- id: 3
+  description: Amateur Built
+- id: 4
+  description: Ex-military Aircraft
+- id: 5
+  description: Ultralight Aeroplanes, Helicopters, Powered Parachutes
+  children:
+  - id: 13
+    description: Ultralight Helicopter
+  - id: 14
+    description: Ultralight Aeroplane
+  - id: 15
+    description: Powered Parachute
+- id: 6
+  description: Gyroplane
+- id: 7
+  description: Ultralight glider
+- id: 8
+  description: Replica Aircraft
+- id: 9
+  description: Unmanned Aircraft Below 150 kg
+- id: 10
+  description: Any Other Aircraft Below 70 kg
+- id: 16
+  description: Not Applicable

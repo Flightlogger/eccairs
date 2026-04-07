@@ -1,0 +1,9 @@
+attribute_id: '692'
+xml_tag: Holding_Status
+sequence:
+values:
+  1: Entering
+  2: Holding
+  3: Leaving
+  4: Not applicable
+  5: Unknown

@@ -1,0 +1,39 @@
+attribute_id: '456'
+xml_tag: Third_Party_Damage
+sequence: 28
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown
+  100: Yes - by rotor / propeller wash / jet blast
+  101: Yes - by vortex
+  102: Yes - by fire
+  103: Yes - by impact
+  104: Yes - by fuel / fluid leak
+  105: Yes - by dispersed cargo
+  106: Yes - by other
+  107: Yes - by unknown
+hierarchy:
+- id: 1
+  description: 'Yes'
+  children:
+  - id: 100
+    description: Yes - by rotor / propeller wash / jet blast
+  - id: 101
+    description: Yes - by vortex
+  - id: 102
+    description: Yes - by fire
+  - id: 103
+    description: Yes - by impact
+  - id: 104
+    description: Yes - by fuel / fluid leak
+  - id: 105
+    description: Yes - by dispersed cargo
+  - id: 106
+    description: Yes - by other
+  - id: 107
+    description: Yes - by unknown
+- id: 2
+  description: 'No'
+- id: 99
+  description: Unknown

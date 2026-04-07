@@ -1,0 +1,9 @@
+attribute_id: '1113'
+xml_tag: Number_Of_Wildlife
+sequence:
+values:
+  1: '1'
+  2: 2-10
+  3: 11-100
+  4: More
+  5: Unknown

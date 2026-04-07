@@ -1,0 +1,17 @@
+attribute_id: '143'
+xml_tag: Ignition_Source
+sequence:
+values:
+  1: Exhaust
+  2: Sparks
+  3: Electrical
+  4: Hot surfaces
+  5: Cargo
+  6: Explosives
+  7: Short circuit
+  8: Lightning
+  9: Brakes
+  10: Static electricity
+  11: Aircraft occupant
+  98: Other
+  99: Unknown

@@ -1,0 +1,7 @@
+attribute_id: '807'
+xml_tag: Spoilers_Position
+sequence:
+values:
+  1: Up
+  2: Down
+  3: Unknown

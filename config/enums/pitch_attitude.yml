@@ -1,0 +1,8 @@
+attribute_id: '227'
+xml_tag: Pitch_Attitude
+sequence:
+values:
+  1: Nose up
+  2: Nose level
+  3: Nose down
+  99: Unknown

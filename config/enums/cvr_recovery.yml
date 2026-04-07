@@ -1,0 +1,7 @@
+attribute_id: '80'
+xml_tag: CVR_Recovery
+sequence:
+values:
+  1: Recovered
+  2: Not recovered
+  99: Unknown

@@ -1,0 +1,166 @@
+attribute_id: '701'
+xml_tag: Error_Mechanism
+sequence:
+values:
+  1: Perception and Vigilance
+  2: Hearback error
+  3: Memory
+  4: Planning and Decision Making
+  5: Response Execution
+  6: Rule breaking and violation
+  7: No auditory detection
+  8: Mishear
+  9: Late auditory detection
+  10: Misidentification of information
+  11: Misreading of information
+  12: No detection of visual information
+  13: Misperception of information
+  14: Late detection of visual information
+  15: Late identification of visual information
+  16: Unknown
+  17: No identification of visual information
+  18: Forgot to monitor
+  19: Forgot a planned action
+  20: Forgot to perform action
+  21: Forgot previous actions
+  22: No recall of temporary memory
+  23: Inaccurate recall of temporary memory
+  24: Misrecall information
+  25: No recall of information
+  26: Misjudge aircraft projection
+  27: Incorrect decision or plan
+  28: Late decision or plan
+  29: No decision or plan
+  30: Insufficient plan
+  31: Typing error
+  32: Selection Error
+  33: Positioning Error
+  34: Timing Error
+  35: Unclear information transmitted
+  36: Unclear information recorded
+  37: Incorrect information transmitted
+  38: Incorrect information recorded
+  39: Information not transmitted
+  40: Information not recorded
+  41: Omission of action
+  42: Intended violation
+  43: Possible negligent error
+  44: Possible negligent rule breaking
+  45: Possible reckless violation
+  46: System induced violation
+  47: Possible organisational induced violation
+  48: Routine rule breaking
+  49: Unknown
+  50: Unknown
+  51: Unknown
+  52: Unknown
+hierarchy:
+- id: 1
+  description: Perception and Vigilance
+  children:
+  - id: 2
+    description: Hearback error
+  - id: 7
+    description: No auditory detection
+  - id: 8
+    description: Mishear
+  - id: 9
+    description: Late auditory detection
+  - id: 10
+    description: Misidentification of information
+  - id: 11
+    description: Misreading of information
+  - id: 12
+    description: No detection of visual information
+  - id: 13
+    description: Misperception of information
+  - id: 14
+    description: Late detection of visual information
+  - id: 15
+    description: Late identification of visual information
+  - id: 16
+    description: Unknown
+  - id: 17
+    description: No identification of visual information
+- id: 3
+  description: Memory
+  children:
+  - id: 18
+    description: Forgot to monitor
+  - id: 19
+    description: Forgot a planned action
+  - id: 20
+    description: Forgot to perform action
+  - id: 21
+    description: Forgot previous actions
+  - id: 22
+    description: No recall of temporary memory
+  - id: 23
+    description: Inaccurate recall of temporary memory
+  - id: 24
+    description: Misrecall information
+  - id: 25
+    description: No recall of information
+  - id: 51
+    description: Unknown
+- id: 4
+  description: Planning and Decision Making
+  children:
+  - id: 26
+    description: Misjudge aircraft projection
+  - id: 27
+    description: Incorrect decision or plan
+  - id: 28
+    description: Late decision or plan
+  - id: 29
+    description: No decision or plan
+  - id: 30
+    description: Insufficient plan
+  - id: 49
+    description: Unknown
+- id: 5
+  description: Response Execution
+  children:
+  - id: 31
+    description: Typing error
+  - id: 32
+    description: Selection Error
+  - id: 33
+    description: Positioning Error
+  - id: 34
+    description: Timing Error
+  - id: 35
+    description: Unclear information transmitted
+  - id: 36
+    description: Unclear information recorded
+  - id: 37
+    description: Incorrect information transmitted
+  - id: 38
+    description: Incorrect information recorded
+  - id: 39
+    description: Information not transmitted
+  - id: 40
+    description: Information not recorded
+  - id: 41
+    description: Omission of action
+  - id: 50
+    description: Unknown
+- id: 6
+  description: Rule breaking and violation
+  children:
+  - id: 42
+    description: Intended violation
+  - id: 43
+    description: Possible negligent error
+  - id: 44
+    description: Possible negligent rule breaking
+  - id: 45
+    description: Possible reckless violation
+  - id: 46
+    description: System induced violation
+  - id: 47
+    description: Possible organisational induced violation
+  - id: 48
+    description: Routine rule breaking
+  - id: 52
+    description: Unknown

@@ -138,7 +138,7 @@ RSpec.describe "ECCAIRS Stress Tests - Pushing Limits" do
 
         # Aerodrome with multiple runways
         occurrence.add_aerodrome_general do |aerodrome|
-          aerodrome.add_location_indicator("1000")
+          aerodrome.add_location_indicator(1000)
           aerodrome.add_aerodrome_latitude(51.4700)
           aerodrome.add_aerodrome_longitude(-0.4543)
           aerodrome.add_aerodrome_type(1)
@@ -183,7 +183,7 @@ RSpec.describe "ECCAIRS Stress Tests - Pushing Limits" do
 
         # Runway incursion details
         occurrence.add_runway_incursion do |ri|
-          ri.add_entity_involved("1") # Aircraft
+          ri.add_entity_involved(1) # Aircraft
         end
 
         # Air Navigation Service

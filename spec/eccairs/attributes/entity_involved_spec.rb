@@ -12,15 +12,15 @@ RSpec.describe Eccairs::Attributes::EntityInvolved do
       expect(described_class.xml_tag).to eq("Entity_Involved")
     end
 
-    it "inherits from StringAttribute" do
-      expect(described_class.superclass).to eq(Eccairs::Base::StringAttribute)
+    it "inherits from EnumAttribute" do
+      expect(described_class.superclass).to eq(Eccairs::Base::EnumAttribute)
     end
   end
 
   describe "initialization" do
     it "creates an instance with a value" do
-      attribute = described_class.new("1")
-      expect(attribute.value).to eq("1")
+      attribute = described_class.new(1)
+      expect(attribute.value).to eq(1)
     end
   end
 
@@ -28,11 +28,11 @@ RSpec.describe Eccairs::Attributes::EntityInvolved do
     it "generates valid XML within an occurrence" do
       set = Eccairs::Set.new
       set.add_occurrence do |occurrence|
-        occurrence.add_file_number("TEST-001")
-        occurrence.add_responsible_entity("1")
+        occurrence.add_file_number("1")
+        occurrence.add_responsible_entity(1)
 
         occurrence.add_runway_incursion do |incursion|
-          incursion.add_entity_involved("1")
+          incursion.add_entity_involved(1)
         end
       end
 
@@ -44,11 +44,11 @@ RSpec.describe Eccairs::Attributes::EntityInvolved do
     it "validates successfully in a minimal occurrence" do
       set = Eccairs::Set.new
       set.add_occurrence do |occurrence|
-        occurrence.add_file_number("TEST-001")
-        occurrence.add_responsible_entity("1")
+        occurrence.add_file_number("1")
+        occurrence.add_responsible_entity(1)
 
         occurrence.add_runway_incursion do |incursion|
-          incursion.add_entity_involved("1")
+          incursion.add_entity_involved(1)
         end
       end
 

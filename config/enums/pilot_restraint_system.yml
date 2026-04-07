@@ -1,0 +1,11 @@
+attribute_id: '225'
+xml_tag: Pilot_Restraint_System
+sequence:
+values:
+  1: Lap belt used
+  2: Upper body restraint used
+  3: Upper body restraint unused
+  99: Unknown
+  100: Upper body restraint not present
+  101: Lap belt unused
+  102: Lap belt not present

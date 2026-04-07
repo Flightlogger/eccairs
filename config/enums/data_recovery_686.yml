@@ -1,0 +1,8 @@
+attribute_id: '686'
+xml_tag: Data_Recovery
+sequence:
+values:
+  1: Partially recovered
+  2: Not recovered
+  3: Unknown
+  4: Completely recovered

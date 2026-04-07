@@ -12,15 +12,15 @@ RSpec.describe Eccairs::Attributes::AtaChapterInvolved do
       expect(described_class.xml_tag).to eq("ATA_Chapter_Involved")
     end
 
-    it "inherits from StringAttribute" do
-      expect(described_class.superclass).to eq(Eccairs::Base::StringAttribute)
+    it "inherits from EnumAttribute" do
+      expect(described_class.superclass).to eq(Eccairs::Base::EnumAttribute)
     end
   end
 
   describe "initialization" do
     it "creates an instance with a value" do
-      instance = described_class.new("11000000")
-      expect(instance.value).to eq("11000000")
+      instance = described_class.new(11000000)
+      expect(instance.value).to eq(11000000)
     end
   end
 
@@ -30,7 +30,7 @@ RSpec.describe Eccairs::Attributes::AtaChapterInvolved do
       set.add_occurrence do |occurrence|
         occurrence.add_aircraft do |aircraft|
           aircraft.add_propeller do |prop|
-            prop.add_ata_chapter_involved("11000000")
+            prop.add_ata_chapter_involved(11000000)
           end
         end
       end
@@ -45,7 +45,7 @@ RSpec.describe Eccairs::Attributes::AtaChapterInvolved do
       set.add_occurrence do |occurrence|
         occurrence.add_aircraft do |aircraft|
           aircraft.add_propeller do |prop|
-            prop.add_ata_chapter_involved("11000000")
+            prop.add_ata_chapter_involved(11000000)
           end
         end
       end

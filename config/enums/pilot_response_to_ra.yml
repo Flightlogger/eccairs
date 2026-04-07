@@ -1,0 +1,10 @@
+attribute_id: '611'
+xml_tag: Pilot_Response_To_RA
+sequence: 7
+values:
+  1: Climb
+  2: Descend
+  3: Turn
+  4: No response done
+  5: No response required
+  6: Reduction vertical rate

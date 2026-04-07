@@ -1,0 +1,130 @@
+attribute_id: '527'
+xml_tag: Services_Provided
+sequence: 1
+values:
+  1000000: Air Traffic Management (ATM)
+  1010000: Air Traffic Control service (ATC)
+  1010100: Aerodrome
+  1010101: Radar service
+  1010102: Radar control
+  1010103: Procedural control
+  1010104: Other
+  1010200: Approach
+  1010201: Radar service
+  1010202: Radar control
+  1010203: Procedural control
+  1010204: Other
+  1010300: Area
+  1010301: Radar service
+  1010302: Radar control
+  1010303: Procedural control
+  1010304: Other surveilance means
+  1010305: Other
+  1010400: Oceanic area
+  1010401: Radar service
+  1010402: Radar control
+  1010403: Procedural control
+  1010404: Other
+  1020000: Air Traffic Advisory service
+  1020100: Radar
+  1020200: Other
+  1030000: Flight Information Service (FIS)
+  1030100: Broadcast
+  1030200: Radar
+  1030300: Operator ground station
+  1030400: Other
+  1040000: Alerting service (ALR)
+  1050000: Air Traffic Flow and Capacity Management (ATFCM)
+  1060000: Airspace Management (ASM)
+  1070000: No service
+  2000000: Aeronautical Information Services (AIS)
+  3000000: Search and Rescue services (SAR)
+  4000000: Meteorological services (MET)
+  5000000: Communications, Navigation and Surveillance (CNS)
+hierarchy:
+- id: 1000000
+  description: Air Traffic Management (ATM)
+  children:
+  - id: 1010000
+    description: Air Traffic Control service (ATC)
+    children:
+    - id: 1010100
+      description: Aerodrome
+      children:
+      - id: 1010101
+        description: Radar service
+      - id: 1010102
+        description: Radar control
+      - id: 1010103
+        description: Procedural control
+      - id: 1010104
+        description: Other
+    - id: 1010200
+      description: Approach
+      children:
+      - id: 1010201
+        description: Radar service
+      - id: 1010202
+        description: Radar control
+      - id: 1010203
+        description: Procedural control
+      - id: 1010204
+        description: Other
+    - id: 1010300
+      description: Area
+      children:
+      - id: 1010301
+        description: Radar service
+      - id: 1010302
+        description: Radar control
+      - id: 1010303
+        description: Procedural control
+      - id: 1010304
+        description: Other surveilance means
+      - id: 1010305
+        description: Other
+    - id: 1010400
+      description: Oceanic area
+      children:
+      - id: 1010401
+        description: Radar service
+      - id: 1010402
+        description: Radar control
+      - id: 1010403
+        description: Procedural control
+      - id: 1010404
+        description: Other
+  - id: 1020000
+    description: Air Traffic Advisory service
+    children:
+    - id: 1020100
+      description: Radar
+    - id: 1020200
+      description: Other
+  - id: 1030000
+    description: Flight Information Service (FIS)
+    children:
+    - id: 1030100
+      description: Broadcast
+    - id: 1030200
+      description: Radar
+    - id: 1030300
+      description: Operator ground station
+    - id: 1030400
+      description: Other
+  - id: 1040000
+    description: Alerting service (ALR)
+  - id: 1050000
+    description: Air Traffic Flow and Capacity Management (ATFCM)
+  - id: 1060000
+    description: Airspace Management (ASM)
+  - id: 1070000
+    description: No service
+- id: 2000000
+  description: Aeronautical Information Services (AIS)
+- id: 3000000
+  description: Search and Rescue services (SAR)
+- id: 4000000
+  description: Meteorological services (MET)
+- id: 5000000
+  description: Communications, Navigation and Surveillance (CNS)

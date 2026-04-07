@@ -1,0 +1,8 @@
+attribute_id: '648'
+xml_tag: Bird_Size
+sequence: 51
+values:
+  1: Small
+  2: Medium
+  3: Large
+  4: Unknown

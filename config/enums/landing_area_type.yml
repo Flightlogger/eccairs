@@ -1,0 +1,12 @@
+attribute_id: '9'
+xml_tag: Landing_Area_Type
+sequence: 7
+values:
+  1: Surface heliport
+  2: Elevated heliport
+  3: Off-shore helideck
+  4: Ship helideck
+  5: Natural landing site
+  6: Prepared landing area
+  98: Other
+  99: Unknown

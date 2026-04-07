@@ -1,0 +1,8 @@
+attribute_id: '379'
+xml_tag: STCA_Current_Alerting
+sequence: 4
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown
+  100: Not applicable

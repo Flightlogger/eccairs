@@ -1,0 +1,76 @@
+attribute_id: '165'
+xml_tag: Instrument_Appr_Type
+sequence: 19
+values:
+  1: NDB
+  2: VOR
+  3: VOR/DME
+  4: TACAN
+  5: VORTAC
+  7: ILS
+  10: MLS
+  11: PAR
+  13: SRA
+  97: Not applicable
+  98: Other
+  99: Unknown
+  100: 2D Instrument App.
+  101: RNP APCH - LNAV
+  102: RNP APCH – LP
+  103: LOC
+  104: LOC Backcourse
+  105: 3D Instrument App.
+  106: GLS
+  107: RNP - LNAV/VNAV
+  108: RNP - LPV
+  109: RNP - AR
+  110: RNP 0.3
+hierarchy:
+- id: 97
+  description: Not applicable
+- id: 98
+  description: Other
+- id: 99
+  description: Unknown
+- id: 100
+  description: 2D Instrument App.
+  children:
+  - id: 1
+    description: NDB
+  - id: 2
+    description: VOR
+  - id: 3
+    description: VOR/DME
+  - id: 4
+    description: TACAN
+  - id: 5
+    description: VORTAC
+  - id: 13
+    description: SRA
+  - id: 101
+    description: RNP APCH - LNAV
+  - id: 102
+    description: RNP APCH – LP
+  - id: 103
+    description: LOC
+  - id: 104
+    description: LOC Backcourse
+- id: 105
+  description: 3D Instrument App.
+  children:
+  - id: 7
+    description: ILS
+  - id: 10
+    description: MLS
+  - id: 11
+    description: PAR
+  - id: 106
+    description: GLS
+  - id: 107
+    description: RNP - LNAV/VNAV
+  - id: 108
+    description: RNP - LPV
+  - id: 109
+    description: RNP - AR
+- id: 110
+  description: RNP 0.3

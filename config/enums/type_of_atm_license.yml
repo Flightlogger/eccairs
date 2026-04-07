@@ -1,0 +1,11 @@
+attribute_id: '354'
+xml_tag: Type_Of_ATM_License
+sequence:
+values:
+  1: Air traffic controller
+  2: Student ATCO
+  3: Flight data operator
+  4: No license
+  5: AFIS officer
+  98: Other
+  99: Unknown

@@ -1,0 +1,62 @@
+attribute_id: '1056'
+xml_tag: Type_Of_Outer_Packaging
+sequence: 6
+values:
+  1: Bag, paper, multiwall
+  2: Bag, paper, multiwall, water resistant
+  3: Bag, plastic film
+  4: Bag, textile, siftproof
+  5: Bag, textile, water resistant
+  6: Bag, textile, without inner liner or coating
+  7: Bag, woven plastic, water-resistant
+  8: Bag, woven plastic, without inner liner or coating
+  9: Bag, woven, siftproof
+  10: Box, aluminium
+  11: Box, expanded plastic
+  12: Box, fibreboard
+  13: Box, natural wood - ordinary
+  14: Box, natural wood - with siftproof walls
+  15: Box, other metal
+  16: Box, plywood
+  17: Box, reconstituted wood
+  18: Box, steel
+  19: Boxes, solid plastic
+  20: Composite packaging - plastic receptacle with outer aluminium crate or box
+  21: Composite packaging - plastic receptacle with outer aluminium drum
+  22: Composite packaging - plastic receptacle with outer fibre drum
+  23: Composite packaging - plastic receptacle with outer fibreboard box
+  24: Composite packaging - plastic receptacle with outer plastic drum
+  25: Composite packaging - plastic receptacle with outer plywood box
+  26: Composite packaging - plastic receptacle with outer plywood drum
+  27: Composite packaging - plastic receptacle with outer solid plastic box
+  28: Composite packaging - plastic receptacle with outer steel crate or box
+  29: Composite packaging – plastic receptacle with outer steel drum
+  30: Composite packaging - plastic receptacle with outer wooden box
+  31: Composite packagings - glass, porcelain or stoneware receptacle with outer wooden
+    box
+  32: Composite packagings - glass, porcelain or stoneware receptacle with outer steel
+    drum
+  33: Composite packagings - glass, porcelain or stoneware receptacle with outer steel
+    crate or box
+  34: Composite packagings - glass, porcelain or stoneware receptacle with outer aluminium
+    drum
+  35: Composite packagings - glass, porcelain or stoneware receptacle with outer aluminium
+    crate or box
+  36: Drum aluminium - non-removable head
+  37: Drum aluminium - removable head
+  38: Drum, fibre
+  39: Drum, metal (other than steel or aluminium) - non-removable head
+  40: Drum, metal (other than steel or aluminium) - removable head
+  41: Drum, plastic - non-removable head
+  42: Drum, plastic - removable head
+  43: Drum, plywood
+  44: Drum, steel - non-removable head
+  45: Drum, steel - removable head
+  46: Jerrican, aluminium - non-removable head
+  47: Jerrican, aluminium - removable head
+  48: Jerrican, plastic - non-removable head
+  49: Jerrican, plastic - removable head
+  50: Jerrican, steel - non-removable head
+  51: Jerrican, steel - removable head
+  52: Other
+  53: Unknown

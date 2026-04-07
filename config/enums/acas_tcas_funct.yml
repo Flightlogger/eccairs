@@ -1,0 +1,8 @@
+attribute_id: '696'
+xml_tag: ACAS_TCAS_Funct
+sequence:
+values:
+  1: Functioning
+  2: Functioning but false alert
+  3: Not functioning
+  4: Unknown

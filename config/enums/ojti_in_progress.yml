@@ -1,0 +1,8 @@
+attribute_id: '355'
+xml_tag: OJTI_In_Progress
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown
+  100: Not Applicable

@@ -2,10 +2,8 @@
 
 module Eccairs
   module Attributes
-    class LocationIndicator < Eccairs::Base::StringAttribute
-      attribute_id 5
-      xml_tag "Location_Indicator"
-      sequence 4
+    class LocationIndicator < Eccairs::Base::EnumAttribute
+      enums_from :location_indicator
     end
   end
 end

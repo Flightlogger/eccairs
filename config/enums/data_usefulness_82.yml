@@ -1,0 +1,8 @@
+attribute_id: '82'
+xml_tag: Data_Usefulness
+sequence:
+values:
+  1: Very useful
+  2: Useful
+  3: Not useful
+  99: Unknown

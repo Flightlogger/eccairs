@@ -1,0 +1,65 @@
+attribute_id: '332'
+xml_tag: Endorsement_Type
+sequence:
+values:
+  100: ADV - Aerodrome Control Visual
+  200: ADI - Aerodrome Control Instrument
+  201: GMC - Ground movement control
+  202: GMS - Ground movement surveillance
+  203: AIR - Air control
+  204: TWR - Tower control
+  205: RAD - Aerodrome radar
+  300: APP - Approach Control Procedural
+  400: APS - Approach Control Surveillance
+  401: RAD - Aerodrome radar
+  402: ADS - Automatic dependent surveillance
+  403: TC - Terminal control
+  404: PAR - Precision approach radar
+  405: SRA - Surveillance radar approach
+  500: ACP - Area Control Procedural
+  600: ACS - Area Control Surveillance
+  601: RAD - Aerodrome radar
+  602: ADS - Automatic dependent surveillance
+  603: TC - Terminal control
+hierarchy:
+- id: 100
+  description: ADV - Aerodrome Control Visual
+- id: 200
+  description: ADI - Aerodrome Control Instrument
+  children:
+  - id: 201
+    description: GMC - Ground movement control
+  - id: 202
+    description: GMS - Ground movement surveillance
+  - id: 203
+    description: AIR - Air control
+  - id: 204
+    description: TWR - Tower control
+  - id: 205
+    description: RAD - Aerodrome radar
+- id: 300
+  description: APP - Approach Control Procedural
+- id: 400
+  description: APS - Approach Control Surveillance
+  children:
+  - id: 401
+    description: RAD - Aerodrome radar
+  - id: 402
+    description: ADS - Automatic dependent surveillance
+  - id: 403
+    description: TC - Terminal control
+  - id: 404
+    description: PAR - Precision approach radar
+  - id: 405
+    description: SRA - Surveillance radar approach
+- id: 500
+  description: ACP - Area Control Procedural
+- id: 600
+  description: ACS - Area Control Surveillance
+  children:
+  - id: 601
+    description: RAD - Aerodrome radar
+  - id: 602
+    description: ADS - Automatic dependent surveillance
+  - id: 603
+    description: TC - Terminal control

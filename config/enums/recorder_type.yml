@@ -1,0 +1,7 @@
+attribute_id: '295'
+xml_tag: Recorder_Type
+sequence:
+values:
+  1: Digital FDR
+  2: Analogue
+  99: Unknown

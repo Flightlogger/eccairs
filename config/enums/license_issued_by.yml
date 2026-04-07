@@ -1,0 +1,8 @@
+attribute_id: '399'
+xml_tag: License_Issued_By
+sequence: 2
+values:
+  1: State of Registry
+  2: State of Operator
+  99: Unknown
+  100: Other

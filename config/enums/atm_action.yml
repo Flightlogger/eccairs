@@ -1,0 +1,10 @@
+attribute_id: '565'
+xml_tag: ATM_Action
+sequence: 0
+values:
+  1: 'Yes'
+  2: Late
+  3: Inadequate
+  4: In progress
+  97: None
+  99: Unknown

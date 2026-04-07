@@ -1,0 +1,18 @@
+attribute_id: '1115'
+xml_tag: GH_Type_Of_Service
+sequence: 0
+values:
+  1: Administrative Assistance
+  2: Passenger Assistance
+  3: Baggage Assistance
+  4: Cargo Assistance
+  5: Cargo Services
+  6: Operation assistance
+  7: Aircraft pushback/tow
+  8: Aircraft handling
+  9: Aircraft cleaning tasks
+  10: Refuelling operations
+  11: Maintenance in line operations
+  12: Flight planning and preparation assistance
+  13: Ground movements of pax, baggage and/or cargo
+  14: Other

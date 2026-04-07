@@ -12,15 +12,15 @@ RSpec.describe Eccairs::Attributes::StateOfRegistry do
       expect(described_class.xml_tag).to eq("State_Of_Registry")
     end
 
-    it "inherits from StringAttribute" do
-      expect(described_class.superclass).to eq(Eccairs::Base::StringAttribute)
+    it "inherits from EnumAttribute" do
+      expect(described_class.superclass).to eq(Eccairs::Base::EnumAttribute)
     end
   end
 
   describe "initialization" do
     it "creates an instance with a value" do
-      instance = described_class.new("2")
-      expect(instance.value).to eq("2")
+      instance = described_class.new(2)
+      expect(instance.value).to eq(2)
     end
   end
 
@@ -29,7 +29,7 @@ RSpec.describe Eccairs::Attributes::StateOfRegistry do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
         occurrence.add_aircraft do |aircraft|
-          aircraft.add_state_of_registry("2")
+          aircraft.add_state_of_registry(2)
         end
       end
 
@@ -42,7 +42,7 @@ RSpec.describe Eccairs::Attributes::StateOfRegistry do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
         occurrence.add_aircraft do |aircraft|
-          aircraft.add_state_of_registry("2")
+          aircraft.add_state_of_registry(2)
         end
       end
 

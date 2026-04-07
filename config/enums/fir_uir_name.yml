@@ -1,0 +1,1937 @@
+attribute_id: '16'
+xml_tag: FIR_UIR_Name
+sequence: 3
+values:
+  1: 'EDGG : Langen (FIR)'
+  2: 'EFIN : Finland (FIR)'
+  3: 'FAJA : Johannesburg (FIR)'
+  4: 'FVHF: Harare (FIR)'
+  5: 'LBSR : Sofia (FIR)'
+  6: 'LQSB : Sarajevo (FIR)'
+  7: 'LUUU : Chisinau (FIR/UIR)'
+  8: 'LWSS : Skopje (FIR)'
+  9: 'MMFO : Oceanica Mazatlan (FIR)'
+  10: 'MMFR : Mexico (FIR)'
+  11: 'ORBB : Baghdad (FIR)'
+  12: 'OSTT : Damascus (FIR)'
+  13: 'PGZU : Guam (FIR)'
+  14: 'RCAA : Taipei (FIR)'
+  15: 'RKRR : Incheon (FIR)'
+  16: 'SBAO : Atlantico (FIR)'
+  17: 'SBAZ : Amazonica (FIR)'
+  18: 'UBBA : BAKU (FIR)'
+  19: 'UDDD : Yerevan (FIR)'
+  20: 'UHKK : Komsomolsk-Na-Amure (FIR/CTA)'
+  21: 'UKFV: Simferopol'' (FIR)'
+  22: 'UKHV: Kharkiv (FIR)'
+  23: 'UKLV: L''Viv (FIR)'
+  24: 'UKOV : Odesa (FIR)'
+  25: 'UMMV : Minsk (FIR)'
+  26: 'WAAF : Ujung Pandang (FIR)'
+  27: 'ZSJA : Sanya (FIR)'
+  28: 'CY31EG : GENERAL FORECAST AREA 31 (FIR-P)'
+  29: 'CY32EG : GENERAL FORECAST AREA 32 (FIR-P)'
+  30: 'CY33UL : GENERAL FORECAST AREA 33 (FIR-P)'
+  31: 'CY34UL : GENERAL FORECAST AREA 34 (FIR-P)'
+  32: 'CY35EG : GENERAL FORECAST AREA 35 (FIR-P)'
+  33: 'CY36EG: GENERAL FORECAST AREA 36 (FIR-P)'
+  34: 'CY37EG : GENERAL FORECAST AREA 37 (FIR-P)'
+  35: 'EGPX-1 : DELEGATION TO NORWAY (FIR-P)'
+  36: 'EHAA : North Sea Area V (FIR-P)'
+  37: 'ENOR-1 : DELEGATION TO UNITED KINGDOM (FIR-P)'
+  38: 'ESMM MM01 : AOR MM01 (FIR-P)'
+  39: 'ESMM MM02 : AOR MM02 (FIR-P)'
+  40: 'ESMM MM03 : AOR MM03 (FIR-P)'
+  41: 'ESMM MM04 : AOR MM04 (FIR-P)'
+  42: 'ESOS OS01 : AOR OS01 (FIR-P)'
+  43: 'ESOS OS02 : AOR OS02 (FIR-P)'
+  44: 'ESOS OS03 : AOR OS03 (FIR-P)'
+  45: 'ESOS OS04 : AOR OS04 (FIR-P)'
+  46: 'HTDC1 : Dar Es-Salaam (FIR-P)'
+  47: 'HTDC2 : Dar Es-Salaam (FIR-P)'
+  48: 'KZAK: Oakland Oceanic (FIR-P)'
+  49: 'EFIN : Finland (UIR)'
+  50: 'FVHF: Harare (UIR)'
+  51: 'LQSB : Sarajevo (UIR)'
+  52: 'OAKX : Kabul (FIR)'
+  53: 'FACA : Cap Town (FIR)'
+  54: 'FAJO : Johannesburg oceanic (FIR)'
+  55: 'PAZA : Anchorage (FIR/UIR)'
+  56: 'PAZA1 : Anchorage (FIR/UIR - 1)'
+  57: 'PAZA2 : Anchorage (FIR/UIR - 2)'
+  58: 'PAZA3 : Anchorage (FIR/UIR - 3)'
+  59: 'LAAA : Tirana (FIR)'
+  60: 'DAAA : Alger (FIR)'
+  61: 'EDMM : Munchen (FIR)'
+  62: 'EDWW : Bremen (FIR)'
+  63: 'EDVV : Hannover (UIR)'
+  64: 'FNAN : Luanda (FIR)'
+  65: 'FNAN : Luanda (UIR)'
+  66: 'TNCF : Curacao (FIR)'
+  67: 'TNCF : Curacao (UIR)'
+  68: 'OEJD : Jeddah (FIR)'
+  69: 'SACF : Cordoba (FIR)'
+  70: 'SAEF : Ezeiza (FIR)'
+  71: 'SAMF : Mendoza (FIR)'
+  72: 'SARR : Resistencia (FIR)'
+  73: 'SAVF : Comodoro Rivadavia (FIR)'
+  74: 'SACU : Cordoba (UIR)'
+  75: 'SAEU : Ezeiza (UIR)'
+  76: 'SAMV : Mendoza (UIR)'
+  77: 'SARU : Resistencia (UIR)'
+  78: 'SAVU : Comodoro Rivadavia (UIR)'
+  79: 'YBBB : Brisbane (FIR)'
+  80: 'YMMM : Melbourne (FIR)'
+  81: 'LOVV : Vienna (FIR)'
+  82: 'MYNA : Nassau (FIR)'
+  83: 'OBBB : Bahrain (FIR)'
+  84: 'OBBB : Bahrain (UIR)'
+  85: 'VGFR : Dhaka (FIR)'
+  86: 'EBBU : Brussels (FIR)'
+  87: 'EBUR : Brussels (UIR)'
+  88: 'TXKF : Bermuda'
+  89: 'SLLF : La Paz (FIR)'
+  90: 'FBGR : Gaborone (FIR)'
+  91: 'SBBS : Brasilia (FIR)'
+  92: 'SBCW : Curitiba (FIR)'
+  93: 'SBRE : Recife (FIR)'
+  94: 'HBBA : Bujumbura'
+  95: 'VDPP : Phnom-Penh'
+  96: 'CZEG : Edmonton (FIR)'
+  97: 'CZQM : Moncton (FIR)'
+  98: 'CZQX : Gander Domestic (FIR)'
+  99: 'CZQX1 : Gander Oceanic (FIR)'
+  100: 'CZUL : Montreal (FIR)'
+  101: 'CZVR : Vancouver (FIR)'
+  102: 'CZWG : Winnipeg (FIR)'
+  103: 'CZYZ : Toronto (FIR)'
+  104: 'GCCC : Canarias (FIR)'
+  105: 'GCCC : Canarias (UIR)'
+  106: 'GVSC : Sal Oceanic (FIR)'
+  107: 'GVSC : Sal Oceanic (UIR)'
+  108: 'SCCZ : Punta Arenas (FIR)'
+  109: 'SCEZ : Santiago (FIR)'
+  110: 'SCFZ : Antofagasta (FIR)'
+  111: 'SCIZ : Isla De Pascua (FIR) (Easter Island)'
+  112: 'SCTZ : Puerto Montt (FIR)'
+  113: 'ZBPE : Beijing (FIR)'
+  114: 'ZGZU : Guangzhou (FIR)'
+  115: 'ZHWH : Wuhan (FIR)'
+  116: 'ZLHW : Lanzhou (FIR)'
+  117: 'ZPKM : Kunming (FIR)'
+  118: 'ZSHA : Shanghai (FIR)'
+  119: 'ZWUQ : Urumqi (FIR)'
+  120: 'ZYSH : Shenyang (FIR)'
+  121: 'LCCC : Nicosia (FIR)'
+  122: 'LCCC : Nicosia (UIR)'
+  123: 'SKEC : Barranquilla (FIR)'
+  124: 'SKED : Bogota (FIR)'
+  125: 'FCCC : Brazzaville (FIR)'
+  126: 'FCCC : Brazzaville (UIR)'
+  127: 'ZKKP : Pyongyang (FIR)'
+  128: 'LDZO : Zagreb (FIR/UIR)'
+  129: 'MUFH : Havana (FIR/UIR)'
+  130: 'EKDK : Kobenhavn (FIR)'
+  131: 'MDCS : Santo Domingo (FIR)'
+  132: 'MDCS : Santo Domingo (UIR)'
+  133: 'HECC : Cairo (FIR)'
+  134: 'OMAE : United Arab Emirates (FIR)'
+  135: 'OMAE : United Arab Emirates (UIR)'
+  136: 'SEGU : Guayaquil/Simon Bolivar (FIR/UIR)'
+  137: 'HHAA : Asmara (FIR)'
+  138: 'LECB : Barcelona (FIR)'
+  139: 'LECM : Madrid (FIR)'
+  140: 'LECB : Barcelona (UIR)'
+  141: 'LECM : Madrid (UIR)'
+  142: 'EETT : Tallinn (FIR)'
+  143: 'EETT : Tallinn (UIR)'
+  144: 'KZAB : Albuquerque (FIR),Nm.'
+  145: 'KZAU : Chicago (FIR),Il.'
+  146: 'KZBW : Boston (FIR),Nashua, Nh.'
+  147: 'KZDV : Denver (FIR),Co.'
+  148: 'KZFW : Fort Worth(FIR),Tx.'
+  149: 'KZHU : Houston (FIR),Tx.'
+  150: 'KZID : Indianapolis (FIR),In.'
+  151: 'KZJX : Jacksonville (FIR),Fl.'
+  152: 'KZKC : Kansas City (FIR),Ks.'
+  153: 'KZLA : Los Angeles (FIR)palmdale, Ca.'
+  154: 'KZMA : Miami (FIR), Fl.'
+  155: 'KZME : Memphis (FIR),Tn.'
+  156: 'KZMP : Minneapolis (FIR),Farming-  Ton,Mn.'
+  157: 'KZNY : New York (FIR) Ronkonkoma  Ny.'
+  158: 'KZOA : Oakland Inland and oceanic (FIR) Fremont,Ca.'
+  159: 'KZOB : Cleveland (FIR),Oberlin, Oh.'
+  160: 'KZTL : Atlanta (FIR),Hampton,Ga.'
+  161: 'KZHU1 : Houston (FIR-P 1),Tx.'
+  162: 'KZHU2 : Houston (FIR-P 2),Tx.'
+  163: 'KZMA1 : Miami (FIR-P 1), Fl.'
+  164: 'KZMA2 : Miami (FIR-P 2), Fl.'
+  165: 'KZMA3 : Miami (FIR-P 3), Fl.'
+  166: 'KZNY1 : New York (FIR-P 1) Ronkonkoma  Ny.'
+  167: 'KZNY2 : New York (FIR-P 2) Ronkonkoma  Ny.'
+  168: 'KZOA : Oakland (FIR-P) Fremont,Ca.'
+  169: 'KZAB : Albuquerque (UIR),Nm.'
+  170: 'KZAU : Chicago (UIR),Il.'
+  171: 'KZBW : Boston (UIR),Nashua, Nh.'
+  172: 'KZDV : Denver (UIR),Co.'
+  173: 'KZFW : Fort Worth(UIR),Tx.'
+  174: 'KZID : Indianapolis (UIR),In.'
+  175: 'KZJX : Jacksonville (UIR),Fl.'
+  176: 'KZKC : Kansas City (UIR),Ks.'
+  177: 'KZLA : Los Angeles (UIR),palmdale, Ca.'
+  178: 'KZME : Memphis (UIR),Tn.'
+  179: 'KZMP : Minneapolis (UIR),Farming-  Ton,Mn.'
+  180: 'KZNY : New York (UIR) Ronkonkoma  Ny.'
+  181: 'KZOB : Cleveland (UIR),Oberlin, Oh.'
+  182: 'KZTL : Atlanta (UIR),Hampton,Ga.'
+  183: 'KZNY1 : New York (UIR-P 1) Ronkonkoma  Ny.'
+  184: 'KZNY2 : New York (UIR-P 2) Ronkonkoma  Ny.'
+  185: 'HAAA : Addis Ababa (FIR)'
+  186: 'NFFF : Nandi Oceanic (FIR)'
+  187: 'LFBB : Bordeaux (FIR)'
+  188: 'LFEE : Reims (FIR)'
+  189: 'LFFF : Paris (FIR)'
+  190: 'LFMM : Aix-En-Provence (Marseille FIR)'
+  191: 'LFRR : Brest (FIR)'
+  192: 'LFFF : France (UIR)'
+  193: 'UGGG : Tbilisi (FIR)'
+  194: 'UGGG : Tbilisi (UIR)'
+  196: 'EDUU : Rhein (UIR)'
+  197: 'LGGG : Athens (FIR)'
+  198: 'LGGG : Hellas (UIR)'
+  199: 'BGGL : Sondrestrom (FIR)'
+  200: 'SYGC : Georgetown (FIR)'
+  201: 'SOOO : Cayenne (FIR)'
+  202: 'SOOO : Cayenne (UIR)'
+  203: 'MTEG : Port-Au-Prince (FIR)'
+  204: 'PHZH : Honolulu (FIR)'
+  205: 'MHTG : Central America (FIR/UIR)'
+  206: 'VHHK : Hong Kong (FIR)'
+  207: 'LHCC : Budapest (FIR)'
+  208: 'VABF : Bombay (FIR)'
+  209: 'VECF : Calcutta (FIR)'
+  210: 'VIDF : Delhi (FIR)'
+  211: 'VOMF : Madras (FIR)'
+  212: 'WIIF : Jakarta (FIR)'
+  213: 'OIIX : Teheran (FIR)'
+  214: 'EISN : Shannon (FIR)'
+  215: 'EISN : Shannon (UIR)'
+  216: 'BIRD : Reykjavik (FIR)'
+  217: 'LLLL : Tel-Aviv (FIR)'
+  218: 'LIBB : Brindisi (FIR)'
+  219: 'LIMM : Milano (FIR)'
+  220: 'LIRR : Roma (FIR)'
+  221: 'LIBB : Brindisi (UIR)'
+  222: 'LIMM : Milano (UIR)'
+  223: 'LIRR : Roma (UIR)'
+  224: 'MKJK : Kingston (FIR)'
+  225: 'MKJK : Kingston (UIR)'
+  226: 'RJJJ : Fukuoka (FIR)'
+  227: 'OJAC : Amman (FIR)'
+  228: 'UAAA : Almaty (FIR)'
+  229: 'UACC : Astana (FIR)'
+  230: 'UAII : Shymkent (FIR)'
+  231: 'UAOO : KzylOrda (FIR)'
+  232: 'UATE : Aktau (FIR)'
+  233: 'UATT : Aktyubinsk (FIR)'
+  234: 'HKNA : Nairobi (FIR)'
+  235: 'OKAC : Kuwait (FIR)'
+  236: 'UAFM : Bishkek (FIR)'
+  237: 'UAFO : Osh (FIR)'
+  238: 'VLVT : Vientiane (FIR)'
+  239: 'EVRR : Riga (FIR)'
+  240: 'EVRR : Riga (UIR)'
+  241: 'OLBB : Beirut (FIR)'
+  242: 'GLRB : Monrovia/Roberts (FIR)'
+  243: 'HLLL : Tripoli (FIR)'
+  244: 'EYVL : Vilnius (FIR)'
+  245: 'EYVL : Vilnius (UIR)'
+  246: 'FMMM : Antananarivo (FIR)'
+  247: 'FMMM : Antananarivo (UIR)'
+  248: 'WBFC : Kota Kinabalu (FIR)'
+  249: 'WMFC : Kuala Lumpur (FIR)'
+  250: 'FWLL : Lilongwe (FIR)'
+  251: 'VRMF : Male (FIR)'
+  252: 'LMMM : Malta (FIR)'
+  253: 'LMMM : Malta (UIR)'
+  254: 'GMMM : Casablanca (FIR)'
+  255: 'FIMM : Mauritius (FIR)'
+  256: 'ZMUB : Ulan bator (FIR)'
+  257: 'FQBE : Beira (FIR/UIR)'
+  258: 'VYYF : Yangon fir'
+  259: 'FYWH : Windhoek (FIR)'
+  260: 'ANAU : Nauru (FIR)'
+  261: 'VNSM : Kathmandu (FIR)'
+  262: 'DRRR : Niamey (FIR)'
+  263: 'DRRR : Niamey (UIR)'
+  264: 'DNKK : Kano (FIR)'
+  265: 'ENOB : Bodo Oceanic (FIR/UIR)'
+  266: 'ENOR : Norway (FIR)'
+  267: 'ENOR : Norway (UIR)'
+  268: 'NZZC : New Zealand (FIR)'
+  269: 'NZZO : Auckland Oceanic (FIR)'
+  270: 'OOMM : Muscat fir'
+  271: 'HUEC : Entebbe (FIR)'
+  272: 'KZDC : Washington (FIR),Dc.'
+  273: 'KZLC : Salt Lake City (FIR),Ut.'
+  274: 'KZSE : Seattle (FIR),Auburn,Wa.'
+  275: 'KZDC : Washington (UIR),Dc.'
+  276: 'KZLC : Salt Lake City (UIR),Ut.'
+  277: 'KZSE : Seattle (UIR),Auburn,Wa.'
+  278: 'UTNR : Nukus (FIR)'
+  279: 'UTSD : Samarkand (FIR)'
+  280: 'UTTR : Tashkent (FIR)'
+  281: 'OPKR : Karachi (FIR)'
+  282: 'OPLR : Lahore (FIR)'
+  283: 'MPZL : Panama (FIR)'
+  284: 'AYPM : Port Moresby (FIR)'
+  285: 'SGFA : Asuncion (FIR/UIR)'
+  286: 'EHAA : Amsterdam (FIR)'
+  287: 'SPIM : Lima (FIR)'
+  288: 'RPHI : Manila (FIR)'
+  289: 'EPWW : Warszawa (FIR)'
+  290: 'NTTT : Tahiti Oceanic (FIR)'
+  291: 'TJZS : San Juan Oceanic (FIR)'
+  292: 'LPPC : Lisboa (FIR)'
+  293: 'LPPO : Santa Maria Oceanic (FIR)'
+  294: 'LPPC : Lisboa (UIR)'
+  295: 'LRBB : Bucuresti (FIR)'
+  296: 'EGGX : Shanwick (FIR)'
+  297: 'EGPX : Scottish (FIR)'
+  298: 'EGTT : London (FIR)'
+  299: 'EGPX : Scottish (UIR)'
+  300: 'EGTT : London (UIR)'
+  301: 'UEBB : Batagay (FIR/CTA)'
+  302: 'UEEA : Aldan (FIR/CTA)'
+  303: 'UEEE : Yakutsk (FIR/CTA)'
+  304: 'UELL : Chulman (FIR/CTA)'
+  305: 'UEMH : Teply klyuch (FIR/CTA)'
+  306: 'UEMO : Olekminsk (FIR/CTA)'
+  307: 'UENN : Nyurba (FIR/CTA)'
+  308: 'UERP (PYJ): Polyarny (FIR/CTA)'
+  309: 'UERR : Mirny (FIR/CTA)'
+  310: 'UESO : Chokurdakh (FIR/CTA)'
+  311: 'UESS : Chersky (FIR)'
+  312: 'UEST : Tiksi (FIR/CTA)'
+  313: 'UESU : Zyryanka (FIR/CTA)'
+  314: 'UEVV : Gigansk (FIR/CTA)'
+  315: 'UHBA : Arkhara (FIR/CTA)'
+  316: 'UHBB : Blagoveschensk (FIR/CTA)'
+  317: 'UHBI : Magdagachi (FIR/CTA)'
+  318: 'UHBP : Ekimcham (FIR/CTA)'
+  319: 'UHHH : Khabarovsk/Novy (FIR/CTA)'
+  320: 'UHKM : Sovetskaya gavan (FIR/CTA)'
+  321: 'UHMA : Anadyr (FIR/CTA)'
+  322: 'UHMI : Mys schmidta (FIR/CTA)'
+  323: 'UHMK : Keperveem (FIR/CTA)'
+  324: 'UHMM : Magadan/Sokol (FIR/CTA)'
+  325: 'UHMN : Omolon (FIR/CTA)'
+  326: 'UHMO : Markovo (FIR/CTA)'
+  327: 'UHMP : Pevek (FIR/CTA)'
+  328: 'UHNN : Nikolaevsk-Na-Amure (FIR/CTA)'
+  329: 'UHOO : Okhotsk (FIR/CTA)'
+  330: 'UHPD : Ossora (FIR/CTA)'
+  331: 'UHPK : Ust-Kamchatsk (FIR/CTA)'
+  332: 'UHPM : Milkovo (FIR/CTA)'
+  333: 'UHPP : Petropavlovsk-Kamchatsky (FIR)'
+  334: 'UHPU : Ust-Khayruzovo (FIR/CTA)'
+  335: 'UHSH : Okha (FIR/CTA)'
+  336: 'UHSS : Yuzhno-Sakhalinsk (FIR/CTA)'
+  337: 'UHWW : Vladivostok (FIR/CTA)'
+  338: 'UIAA : Chita/Kadala (FIR/CTA)'
+  339: 'UIII : Irkutsk (FIR/CTA)'
+  340: 'UIKB : Bodaybo (FIR/CTA)'
+  341: 'UIKK : Kirensk (FIR/CTA)'
+  342: 'ULAA : Arkhangelsk/Talagi (FIR/CTA)'
+  343: 'ULAL : Leshukonskoye (FIR/CTA)'
+  344: 'ULAM : Naryan-Mar (FIR/CTA)'
+  345: 'ULDD : Amderma (FIR/CTA)'
+  346: 'ULKK : Kotlas (FIR/CTA)'
+  347: 'ULLL : Sankt-Peterburg (FIR/CTA)'
+  348: 'ULMM : Murmansk (FIR/CTA)'
+  349: 'ULOL : Velikiye luki (FIR/CTA)'
+  350: 'ULPB : Petrozavodsk/Besovets (FIR/CTA)'
+  351: 'ULWW : Vologda (FIR/CTA)'
+  352: 'UMKK : Kaliningrad/Khrabrovo (FIR)'
+  353: 'UNBB : Barnaul (FIR/CTA)'
+  354: 'UNIP : Podkamennaya tunguska (FIR/CTA)'
+  355: 'UNIT : Tura (FIR/CTA)'
+  356: 'UNIW : Vanavara (FIR/CTA)'
+  357: 'UNKL : Krasnoyarsk (FIR/CTA)'
+  358: 'UNLL : Kolpashevo (FIR/CTA)'
+  359: 'UNNT : Novosibirsk/Tolmachevo (FIR/CTA)'
+  360: 'UNOO : Omsk (FIR)'
+  361: 'UNWW : Novokuznetsk (FIR/CTA)'
+  362: 'UOHH : Khatanga (FIR/CTA)'
+  363: 'UOOO : Norilsk (FIR/CTA)'
+  364: 'UOTT : Turukharnsk (FIR)'
+  365: 'URRV : Rosto-Na-Donu (FIR/CTA)'
+  366: 'USCC : Chelyabinsk (FIR/CTA)'
+  367: 'USCM : Magnitogorsk (FIR/CTA)'
+  368: 'USDD : Salekhard (FIR/CTA)'
+  369: 'USDK : Kamenny mys (FIR/CTA)'
+  370: 'USDS : Tarko-Sale (FIR/CTA)'
+  371: 'USHB : Beryzovo (FIR)'
+  372: 'USHH : Khanty-Mansiysk (FIR)'
+  373: 'USKK : Kirov (FIR/CTA)'
+  374: 'USMM : Nadym'
+  375: 'USPP : Perm (FIR)'
+  376: 'USRR : Surgut (FIR)'
+  377: 'USSE : Severouralsk (FIR)'
+  378: 'USSS : Yekaterinburg (FIR/CTA)'
+  379: 'USTR : Tumen (Roqino) (FIR/CTA)'
+  380: 'USUU : Kurgan (FIR/CTA)'
+  381: 'UUWV : Moskva (FIR/CTA)'
+  382: 'UUYH : Ukhta (CTA)'
+  383: 'UUYP : Pechora (FIR/CTA)'
+  384: 'UUYW : Vorkuta (FIR/CTA)'
+  385: 'UUYY : Syktyvkar (FIR/CTA)'
+  386: 'UWKD : Kazan (FIR/CTA)'
+  387: 'UWOO : Orenburg (FIR/CTA)'
+  388: 'UWOR : Orsk (FIR/CTA)'
+  389: 'UWPP : Penza (FIR/CTA)'
+  390: 'UWSS : Saratov (FIR/CTA)'
+  391: 'UWUU : Ufa (FIR/CTA)'
+  392: 'UWWW : Samara/Kurumoch (FIR/CTA)'
+  393: 'HRYR : Kigali (FIR)'
+  394: 'AGGG : Honiara (FIR)'
+  395: 'GOOO : Dakar (FIR)'
+  396: 'GOOO : Dakar (UIR)'
+  397: 'FSSS : Seychelles (FIR)'
+  398: 'WSJC : Singapore (FIR)'
+  399: 'LZBB : Bratislava (FIR)'
+  400: 'LZ-RUTOL : Rutol Area (FIR-P)'
+  401: 'LJLA : Ljubljana (FIR)'
+  402: 'HCSM : Mogadishu (FIR/UIR)'
+  403: 'HSSS : Khartoum (FIR)'
+  404: 'VCCC : Colombo (FIR)'
+  405: 'ESAA : Sweden (FIR)'
+  406: 'ESAA : Sweden (UIR)'
+  407: 'LSAS : Switzerland (FIR)'
+  408: 'LSAS : Switzerland (UIR)'
+  409: 'SMPM : Paramaribo (FIR)'
+  410: 'UTDD : Dushanbe (FIR)'
+  411: 'HTDC : Dar Es-Salaam (FIR)'
+  412: 'FTTT : N''djamena (FIR)'
+  413: 'FTTT : N''djamena (UIR)'
+  414: 'LKAA : Praha (FIR)'
+  415: 'VTBB : Bangkok (FIR)'
+  416: 'TTZP : Piarco (FIR)'
+  417: 'DTTC : Tunis (FIR)'
+  418: 'DTTC : Tunis (UIR)'
+  419: 'UTAA : Askhabad (FIR)'
+  420: 'UTAK : Krasnovodsk (FIR)'
+  421: 'UTAT : Dashkhovuz'
+  422: 'UTAV : Chardzhou (FIR)'
+  423: 'LTAA : Ankara (FIR)'
+  424: 'LTBB : Istanbul (FIR)'
+  425: 'UKBV : Kiev (FIR)'
+  426: 'SUEO : Montevideo (FIR)'
+  427: 'SVZM : Maiquetia (FIR)'
+  428: 'VVTS : Hochiminh (FIR)'
+  429: 'VVVV : Hanoi (City)'
+  430: 'OYSC : Sanaa (FIR)'
+  431: 'LYBA : Beograd (FIR)'
+  432: 'LYBA : Beograd (UIR)'
+  433: 'FZZA : Kinshasa (FIR)'
+  434: 'FZZA : Kinshasa (UIR)'
+  435: 'FLFI : Lusaka (FIR)'
+  436: 'DGAC : Accra (FIR)'
+  1000: Afghanistan
+  2000: Alaska (U.S.)
+  3000: Albania
+  4000: Algeria
+  6000: Angola
+  10000: Argentina
+  11000: Armenia
+  14000: Australia
+  15000: Austria
+  16000: Azerbaijan
+  17000: Bahamas
+  18000: Bahrain
+  19000: Bangladesh
+  21000: Belarus
+  22000: Belgium
+  25000: Bermuda (U.K.)
+  27000: Bolivia
+  28000: Bosnia-Herzegovina
+  29000: Botswana
+  30000: Brazil
+  33000: Bulgaria
+  35000: Burundi
+  36000: Cambodia
+  38000: Canada
+  39000: Cape-Verde
+  41000: Chile
+  42000: China
+  43000: Colombia
+  45000: Congo
+  49000: Croatia
+  50000: Cuba
+  51000: Cyprus
+  52000: Czech Republic
+  53000: Democratic Peoples Republic of Korea
+  54000: Denmark
+  58000: Ecuador
+  59000: Egypt
+  61000: Spain
+  62000: Spain (Canary Islands)
+  64000: Ethiopia
+  66000: Fiji
+  67000: Finland
+  68000: France
+  71000: Georgia
+  72000: Germany
+  73000: Ghana
+  75000: Greece
+  76000: Greenland (Denmark)
+  81000: Guyana
+  82000: French Guyana
+  83000: Haiti
+  84000: Hawaii (U.S.)
+  85000: Honduras
+  86000: Hong Kong
+  87000: Hungary
+  88000: Iceland
+  90000: India
+  91000: Indonesia
+  92000: Iran, Islamic Repuplic of
+  93000: Iraq
+  94000: Ireland
+  95000: Israel
+  96000: Italy
+  97000: Jamaica
+  98000: Japan
+  100000: Jordan
+  101000: Kazakhstan
+  102000: Kenya
+  104000: Kuwait
+  105000: Kyrgyzstan
+  107000: Lao Peoples Democratic Republic
+  110000: Lebanon
+  111000: Liberia
+  112000: Libyan Arab Jamahiriya
+  114000: Lithuania
+  117000: Madagascar
+  118000: Malawi
+  119000: Malaysia
+  120000: Malaysia (Peninsular)
+  121000: Maldives
+  123000: Malta
+  124000: Mariana Is. (U.S.)
+  125000: Morocco
+  128000: Mauritius
+  129000: Mexico
+  133000: Mongolia
+  135000: Mozambique
+  136000: Myanmar
+  137000: Namibia
+  138000: Nauru
+  139000: Nepal
+  140000: Netherlands Antilles
+  141000: Netherlands, Kingdom of the
+  142000: New Zealand
+  144000: Niger
+  145000: Nigeria
+  147000: Norway
+  149000: Oman
+  150000: Pakistan
+  152000: Panama
+  153000: Papua New Guinea
+  154000: Paraguay
+  155000: Peru
+  156000: Philippines
+  157000: Poland
+  158000: French Polynesia
+  159000: Portugal (Madeira And Acores)
+  160000: Puerto Rico (U.S.)
+  164000: Republica Dominicana
+  165000: Republic of Korea
+  167000: Romania
+  168000: Russian Federation
+  169000: Rwanda
+  173000: Saudi Arabia
+  174000: Senegal
+  175000: Seychelles
+  177000: Singapore
+  178000: Slovakia
+  179000: Slovenia
+  180000: Solomon Islands
+  181000: Somalia
+  182000: South Africa
+  183000: Sri Lanka
+  187000: Sudan
+  188000: Switzerland
+  189000: Suriname
+  191000: Sweden
+  192000: Syrian Arab Republic
+  193000: Tadjikistan
+  194000: Chad
+  195000: Taiwan, Province of China
+  196000: Thailand
+  197000: Macedonia, The Former Yugoslav Republic of
+  200000: Trinidad and Tobago
+  201000: Tunisia
+  202000: Turkey
+  203000: Turkmenistan
+  207000: United States of America
+  208000: Uganda
+  209000: Ukraine
+  210000: United Arab Emirates
+  211000: United Kingdom
+  212000: United Republic of Tanzania
+  213000: Uruguay
+  214000: Uzbekistan
+  216000: Venezuela
+  217000: Vietnam
+  221000: Yemen
+  222000: Serbia and Montenegro
+  223000: Congo, Democratic Republic
+  224000: Zambia
+  225000: Zimbabwe
+  226000: Estonia
+  227000: Latvia
+  230000: Eritrea
+  998000: Other
+  998004: Unknown
+hierarchy:
+- id: 1000
+  description: Afghanistan
+  children:
+  - id: 52
+    description: 'OAKX : Kabul (FIR)'
+- id: 2000
+  description: Alaska (U.S.)
+  children:
+  - id: 55
+    description: 'PAZA : Anchorage (FIR/UIR)'
+  - id: 56
+    description: 'PAZA1 : Anchorage (FIR/UIR - 1)'
+  - id: 57
+    description: 'PAZA2 : Anchorage (FIR/UIR - 2)'
+  - id: 58
+    description: 'PAZA3 : Anchorage (FIR/UIR - 3)'
+- id: 3000
+  description: Albania
+  children:
+  - id: 59
+    description: 'LAAA : Tirana (FIR)'
+- id: 4000
+  description: Algeria
+  children:
+  - id: 60
+    description: 'DAAA : Alger (FIR)'
+- id: 6000
+  description: Angola
+  children:
+  - id: 64
+    description: 'FNAN : Luanda (FIR)'
+  - id: 65
+    description: 'FNAN : Luanda (UIR)'
+- id: 10000
+  description: Argentina
+  children:
+  - id: 69
+    description: 'SACF : Cordoba (FIR)'
+  - id: 70
+    description: 'SAEF : Ezeiza (FIR)'
+  - id: 71
+    description: 'SAMF : Mendoza (FIR)'
+  - id: 72
+    description: 'SARR : Resistencia (FIR)'
+  - id: 73
+    description: 'SAVF : Comodoro Rivadavia (FIR)'
+  - id: 74
+    description: 'SACU : Cordoba (UIR)'
+  - id: 75
+    description: 'SAEU : Ezeiza (UIR)'
+  - id: 76
+    description: 'SAMV : Mendoza (UIR)'
+  - id: 77
+    description: 'SARU : Resistencia (UIR)'
+  - id: 78
+    description: 'SAVU : Comodoro Rivadavia (UIR)'
+- id: 11000
+  description: Armenia
+  children:
+  - id: 19
+    description: 'UDDD : Yerevan (FIR)'
+- id: 14000
+  description: Australia
+  children:
+  - id: 79
+    description: 'YBBB : Brisbane (FIR)'
+  - id: 80
+    description: 'YMMM : Melbourne (FIR)'
+- id: 15000
+  description: Austria
+  children:
+  - id: 81
+    description: 'LOVV : Vienna (FIR)'
+- id: 16000
+  description: Azerbaijan
+  children:
+  - id: 18
+    description: 'UBBA : BAKU (FIR)'
+- id: 17000
+  description: Bahamas
+  children:
+  - id: 82
+    description: 'MYNA : Nassau (FIR)'
+- id: 18000
+  description: Bahrain
+  children:
+  - id: 83
+    description: 'OBBB : Bahrain (FIR)'
+  - id: 84
+    description: 'OBBB : Bahrain (UIR)'
+- id: 19000
+  description: Bangladesh
+  children:
+  - id: 85
+    description: 'VGFR : Dhaka (FIR)'
+- id: 21000
+  description: Belarus
+  children:
+  - id: 25
+    description: 'UMMV : Minsk (FIR)'
+- id: 22000
+  description: Belgium
+  children:
+  - id: 86
+    description: 'EBBU : Brussels (FIR)'
+  - id: 87
+    description: 'EBUR : Brussels (UIR)'
+- id: 25000
+  description: Bermuda (U.K.)
+  children:
+  - id: 88
+    description: 'TXKF : Bermuda'
+- id: 27000
+  description: Bolivia
+  children:
+  - id: 89
+    description: 'SLLF : La Paz (FIR)'
+- id: 28000
+  description: Bosnia-Herzegovina
+  children:
+  - id: 6
+    description: 'LQSB : Sarajevo (FIR)'
+  - id: 51
+    description: 'LQSB : Sarajevo (UIR)'
+- id: 29000
+  description: Botswana
+  children:
+  - id: 90
+    description: 'FBGR : Gaborone (FIR)'
+- id: 30000
+  description: Brazil
+  children:
+  - id: 16
+    description: 'SBAO : Atlantico (FIR)'
+  - id: 17
+    description: 'SBAZ : Amazonica (FIR)'
+  - id: 91
+    description: 'SBBS : Brasilia (FIR)'
+  - id: 92
+    description: 'SBCW : Curitiba (FIR)'
+  - id: 93
+    description: 'SBRE : Recife (FIR)'
+- id: 33000
+  description: Bulgaria
+  children:
+  - id: 5
+    description: 'LBSR : Sofia (FIR)'
+- id: 35000
+  description: Burundi
+  children:
+  - id: 94
+    description: 'HBBA : Bujumbura'
+- id: 36000
+  description: Cambodia
+  children:
+  - id: 95
+    description: 'VDPP : Phnom-Penh'
+- id: 38000
+  description: Canada
+  children:
+  - id: 96
+    description: 'CZEG : Edmonton (FIR)'
+  - id: 97
+    description: 'CZQM : Moncton (FIR)'
+  - id: 98
+    description: 'CZQX : Gander Domestic (FIR)'
+  - id: 99
+    description: 'CZQX1 : Gander Oceanic (FIR)'
+  - id: 100
+    description: 'CZUL : Montreal (FIR)'
+  - id: 101
+    description: 'CZVR : Vancouver (FIR)'
+  - id: 102
+    description: 'CZWG : Winnipeg (FIR)'
+  - id: 103
+    description: 'CZYZ : Toronto (FIR)'
+- id: 39000
+  description: Cape-Verde
+  children:
+  - id: 106
+    description: 'GVSC : Sal Oceanic (FIR)'
+  - id: 107
+    description: 'GVSC : Sal Oceanic (UIR)'
+- id: 41000
+  description: Chile
+  children:
+  - id: 108
+    description: 'SCCZ : Punta Arenas (FIR)'
+  - id: 109
+    description: 'SCEZ : Santiago (FIR)'
+  - id: 110
+    description: 'SCFZ : Antofagasta (FIR)'
+  - id: 111
+    description: 'SCIZ : Isla De Pascua (FIR) (Easter Island)'
+  - id: 112
+    description: 'SCTZ : Puerto Montt (FIR)'
+- id: 42000
+  description: China
+  children:
+  - id: 27
+    description: 'ZSJA : Sanya (FIR)'
+  - id: 113
+    description: 'ZBPE : Beijing (FIR)'
+  - id: 114
+    description: 'ZGZU : Guangzhou (FIR)'
+  - id: 115
+    description: 'ZHWH : Wuhan (FIR)'
+  - id: 116
+    description: 'ZLHW : Lanzhou (FIR)'
+  - id: 117
+    description: 'ZPKM : Kunming (FIR)'
+  - id: 118
+    description: 'ZSHA : Shanghai (FIR)'
+  - id: 119
+    description: 'ZWUQ : Urumqi (FIR)'
+  - id: 120
+    description: 'ZYSH : Shenyang (FIR)'
+- id: 43000
+  description: Colombia
+  children:
+  - id: 123
+    description: 'SKEC : Barranquilla (FIR)'
+  - id: 124
+    description: 'SKED : Bogota (FIR)'
+- id: 45000
+  description: Congo
+  children:
+  - id: 125
+    description: 'FCCC : Brazzaville (FIR)'
+  - id: 126
+    description: 'FCCC : Brazzaville (UIR)'
+- id: 49000
+  description: Croatia
+  children:
+  - id: 128
+    description: 'LDZO : Zagreb (FIR/UIR)'
+- id: 50000
+  description: Cuba
+  children:
+  - id: 129
+    description: 'MUFH : Havana (FIR/UIR)'
+- id: 51000
+  description: Cyprus
+  children:
+  - id: 121
+    description: 'LCCC : Nicosia (FIR)'
+  - id: 122
+    description: 'LCCC : Nicosia (UIR)'
+- id: 52000
+  description: Czech Republic
+  children:
+  - id: 414
+    description: 'LKAA : Praha (FIR)'
+- id: 53000
+  description: Democratic Peoples Republic of Korea
+  children:
+  - id: 127
+    description: 'ZKKP : Pyongyang (FIR)'
+- id: 54000
+  description: Denmark
+  children:
+  - id: 130
+    description: 'EKDK : Kobenhavn (FIR)'
+- id: 58000
+  description: Ecuador
+  children:
+  - id: 136
+    description: 'SEGU : Guayaquil/Simon Bolivar (FIR/UIR)'
+- id: 59000
+  description: Egypt
+  children:
+  - id: 133
+    description: 'HECC : Cairo (FIR)'
+- id: 61000
+  description: Spain
+  children:
+  - id: 138
+    description: 'LECB : Barcelona (FIR)'
+  - id: 139
+    description: 'LECM : Madrid (FIR)'
+  - id: 140
+    description: 'LECB : Barcelona (UIR)'
+  - id: 141
+    description: 'LECM : Madrid (UIR)'
+- id: 62000
+  description: Spain (Canary Islands)
+  children:
+  - id: 104
+    description: 'GCCC : Canarias (FIR)'
+  - id: 105
+    description: 'GCCC : Canarias (UIR)'
+- id: 64000
+  description: Ethiopia
+  children:
+  - id: 185
+    description: 'HAAA : Addis Ababa (FIR)'
+- id: 66000
+  description: Fiji
+  children:
+  - id: 186
+    description: 'NFFF : Nandi Oceanic (FIR)'
+- id: 67000
+  description: Finland
+  children:
+  - id: 2
+    description: 'EFIN : Finland (FIR)'
+  - id: 49
+    description: 'EFIN : Finland (UIR)'
+- id: 68000
+  description: France
+  children:
+  - id: 187
+    description: 'LFBB : Bordeaux (FIR)'
+  - id: 188
+    description: 'LFEE : Reims (FIR)'
+  - id: 189
+    description: 'LFFF : Paris (FIR)'
+  - id: 190
+    description: 'LFMM : Aix-En-Provence (Marseille FIR)'
+  - id: 191
+    description: 'LFRR : Brest (FIR)'
+  - id: 192
+    description: 'LFFF : France (UIR)'
+- id: 71000
+  description: Georgia
+  children:
+  - id: 193
+    description: 'UGGG : Tbilisi (FIR)'
+  - id: 194
+    description: 'UGGG : Tbilisi (UIR)'
+- id: 72000
+  description: Germany
+  children:
+  - id: 1
+    description: 'EDGG : Langen (FIR)'
+  - id: 61
+    description: 'EDMM : Munchen (FIR)'
+  - id: 62
+    description: 'EDWW : Bremen (FIR)'
+  - id: 63
+    description: 'EDVV : Hannover (UIR)'
+  - id: 196
+    description: 'EDUU : Rhein (UIR)'
+- id: 73000
+  description: Ghana
+  children:
+  - id: 436
+    description: 'DGAC : Accra (FIR)'
+- id: 75000
+  description: Greece
+  children:
+  - id: 197
+    description: 'LGGG : Athens (FIR)'
+  - id: 198
+    description: 'LGGG : Hellas (UIR)'
+- id: 76000
+  description: Greenland (Denmark)
+  children:
+  - id: 199
+    description: 'BGGL : Sondrestrom (FIR)'
+- id: 81000
+  description: Guyana
+  children:
+  - id: 200
+    description: 'SYGC : Georgetown (FIR)'
+- id: 82000
+  description: French Guyana
+  children:
+  - id: 201
+    description: 'SOOO : Cayenne (FIR)'
+  - id: 202
+    description: 'SOOO : Cayenne (UIR)'
+- id: 83000
+  description: Haiti
+  children:
+  - id: 203
+    description: 'MTEG : Port-Au-Prince (FIR)'
+- id: 84000
+  description: Hawaii (U.S.)
+  children:
+  - id: 204
+    description: 'PHZH : Honolulu (FIR)'
+- id: 85000
+  description: Honduras
+  children:
+  - id: 205
+    description: 'MHTG : Central America (FIR/UIR)'
+- id: 86000
+  description: Hong Kong
+  children:
+  - id: 206
+    description: 'VHHK : Hong Kong (FIR)'
+- id: 87000
+  description: Hungary
+  children:
+  - id: 207
+    description: 'LHCC : Budapest (FIR)'
+- id: 88000
+  description: Iceland
+  children:
+  - id: 216
+    description: 'BIRD : Reykjavik (FIR)'
+- id: 90000
+  description: India
+  children:
+  - id: 208
+    description: 'VABF : Bombay (FIR)'
+  - id: 209
+    description: 'VECF : Calcutta (FIR)'
+  - id: 210
+    description: 'VIDF : Delhi (FIR)'
+  - id: 211
+    description: 'VOMF : Madras (FIR)'
+- id: 91000
+  description: Indonesia
+  children:
+  - id: 26
+    description: 'WAAF : Ujung Pandang (FIR)'
+  - id: 212
+    description: 'WIIF : Jakarta (FIR)'
+- id: 92000
+  description: Iran, Islamic Repuplic of
+  children:
+  - id: 213
+    description: 'OIIX : Teheran (FIR)'
+- id: 93000
+  description: Iraq
+  children:
+  - id: 11
+    description: 'ORBB : Baghdad (FIR)'
+- id: 94000
+  description: Ireland
+  children:
+  - id: 214
+    description: 'EISN : Shannon (FIR)'
+  - id: 215
+    description: 'EISN : Shannon (UIR)'
+- id: 95000
+  description: Israel
+  children:
+  - id: 217
+    description: 'LLLL : Tel-Aviv (FIR)'
+- id: 96000
+  description: Italy
+  children:
+  - id: 218
+    description: 'LIBB : Brindisi (FIR)'
+  - id: 219
+    description: 'LIMM : Milano (FIR)'
+  - id: 220
+    description: 'LIRR : Roma (FIR)'
+  - id: 221
+    description: 'LIBB : Brindisi (UIR)'
+  - id: 222
+    description: 'LIMM : Milano (UIR)'
+  - id: 223
+    description: 'LIRR : Roma (UIR)'
+- id: 97000
+  description: Jamaica
+  children:
+  - id: 224
+    description: 'MKJK : Kingston (FIR)'
+  - id: 225
+    description: 'MKJK : Kingston (UIR)'
+- id: 98000
+  description: Japan
+  children:
+  - id: 226
+    description: 'RJJJ : Fukuoka (FIR)'
+- id: 100000
+  description: Jordan
+  children:
+  - id: 227
+    description: 'OJAC : Amman (FIR)'
+- id: 101000
+  description: Kazakhstan
+  children:
+  - id: 228
+    description: 'UAAA : Almaty (FIR)'
+  - id: 229
+    description: 'UACC : Astana (FIR)'
+  - id: 231
+    description: 'UAOO : KzylOrda (FIR)'
+  - id: 232
+    description: 'UATE : Aktau (FIR)'
+  - id: 233
+    description: 'UATT : Aktyubinsk (FIR)'
+- id: 102000
+  description: Kenya
+  children:
+  - id: 234
+    description: 'HKNA : Nairobi (FIR)'
+- id: 104000
+  description: Kuwait
+  children:
+  - id: 235
+    description: 'OKAC : Kuwait (FIR)'
+- id: 105000
+  description: Kyrgyzstan
+  children:
+  - id: 230
+    description: 'UAII : Shymkent (FIR)'
+  - id: 236
+    description: 'UAFM : Bishkek (FIR)'
+  - id: 237
+    description: 'UAFO : Osh (FIR)'
+- id: 107000
+  description: Lao Peoples Democratic Republic
+  children:
+  - id: 238
+    description: 'VLVT : Vientiane (FIR)'
+- id: 110000
+  description: Lebanon
+  children:
+  - id: 241
+    description: 'OLBB : Beirut (FIR)'
+- id: 111000
+  description: Liberia
+  children:
+  - id: 242
+    description: 'GLRB : Monrovia/Roberts (FIR)'
+- id: 112000
+  description: Libyan Arab Jamahiriya
+  children:
+  - id: 243
+    description: 'HLLL : Tripoli (FIR)'
+- id: 114000
+  description: Lithuania
+  children:
+  - id: 244
+    description: 'EYVL : Vilnius (FIR)'
+  - id: 245
+    description: 'EYVL : Vilnius (UIR)'
+- id: 117000
+  description: Madagascar
+  children:
+  - id: 246
+    description: 'FMMM : Antananarivo (FIR)'
+  - id: 247
+    description: 'FMMM : Antananarivo (UIR)'
+- id: 118000
+  description: Malawi
+  children:
+  - id: 250
+    description: 'FWLL : Lilongwe (FIR)'
+- id: 119000
+  description: Malaysia
+  children:
+  - id: 248
+    description: 'WBFC : Kota Kinabalu (FIR)'
+- id: 120000
+  description: Malaysia (Peninsular)
+  children:
+  - id: 249
+    description: 'WMFC : Kuala Lumpur (FIR)'
+- id: 121000
+  description: Maldives
+  children:
+  - id: 251
+    description: 'VRMF : Male (FIR)'
+- id: 123000
+  description: Malta
+  children:
+  - id: 252
+    description: 'LMMM : Malta (FIR)'
+  - id: 253
+    description: 'LMMM : Malta (UIR)'
+- id: 124000
+  description: Mariana Is. (U.S.)
+  children:
+  - id: 13
+    description: 'PGZU : Guam (FIR)'
+- id: 125000
+  description: Morocco
+  children:
+  - id: 254
+    description: 'GMMM : Casablanca (FIR)'
+- id: 128000
+  description: Mauritius
+  children:
+  - id: 255
+    description: 'FIMM : Mauritius (FIR)'
+- id: 129000
+  description: Mexico
+  children:
+  - id: 9
+    description: 'MMFO : Oceanica Mazatlan (FIR)'
+  - id: 10
+    description: 'MMFR : Mexico (FIR)'
+- id: 133000
+  description: Mongolia
+  children:
+  - id: 256
+    description: 'ZMUB : Ulan bator (FIR)'
+- id: 135000
+  description: Mozambique
+  children:
+  - id: 257
+    description: 'FQBE : Beira (FIR/UIR)'
+- id: 136000
+  description: Myanmar
+  children:
+  - id: 258
+    description: 'VYYF : Yangon fir'
+- id: 137000
+  description: Namibia
+  children:
+  - id: 259
+    description: 'FYWH : Windhoek (FIR)'
+- id: 138000
+  description: Nauru
+  children:
+  - id: 260
+    description: 'ANAU : Nauru (FIR)'
+- id: 139000
+  description: Nepal
+  children:
+  - id: 261
+    description: 'VNSM : Kathmandu (FIR)'
+- id: 140000
+  description: Netherlands Antilles
+  children:
+  - id: 66
+    description: 'TNCF : Curacao (FIR)'
+  - id: 67
+    description: 'TNCF : Curacao (UIR)'
+- id: 141000
+  description: Netherlands, Kingdom of the
+  children:
+  - id: 36
+    description: 'EHAA : North Sea Area V (FIR-P)'
+  - id: 286
+    description: 'EHAA : Amsterdam (FIR)'
+- id: 142000
+  description: New Zealand
+  children:
+  - id: 268
+    description: 'NZZC : New Zealand (FIR)'
+  - id: 269
+    description: 'NZZO : Auckland Oceanic (FIR)'
+- id: 144000
+  description: Niger
+  children:
+  - id: 262
+    description: 'DRRR : Niamey (FIR)'
+  - id: 263
+    description: 'DRRR : Niamey (UIR)'
+- id: 145000
+  description: Nigeria
+  children:
+  - id: 264
+    description: 'DNKK : Kano (FIR)'
+- id: 147000
+  description: Norway
+  children:
+  - id: 265
+    description: 'ENOB : Bodo Oceanic (FIR/UIR)'
+  - id: 266
+    description: 'ENOR : Norway (FIR)'
+  - id: 267
+    description: 'ENOR : Norway (UIR)'
+- id: 149000
+  description: Oman
+  children:
+  - id: 270
+    description: 'OOMM : Muscat fir'
+- id: 150000
+  description: Pakistan
+  children:
+  - id: 281
+    description: 'OPKR : Karachi (FIR)'
+  - id: 282
+    description: 'OPLR : Lahore (FIR)'
+- id: 152000
+  description: Panama
+  children:
+  - id: 283
+    description: 'MPZL : Panama (FIR)'
+- id: 153000
+  description: Papua New Guinea
+  children:
+  - id: 284
+    description: 'AYPM : Port Moresby (FIR)'
+- id: 154000
+  description: Paraguay
+  children:
+  - id: 285
+    description: 'SGFA : Asuncion (FIR/UIR)'
+- id: 155000
+  description: Peru
+  children:
+  - id: 287
+    description: 'SPIM : Lima (FIR)'
+- id: 156000
+  description: Philippines
+  children:
+  - id: 288
+    description: 'RPHI : Manila (FIR)'
+- id: 157000
+  description: Poland
+  children:
+  - id: 289
+    description: 'EPWW : Warszawa (FIR)'
+- id: 158000
+  description: French Polynesia
+  children:
+  - id: 290
+    description: 'NTTT : Tahiti Oceanic (FIR)'
+- id: 159000
+  description: Portugal (Madeira And Acores)
+  children:
+  - id: 292
+    description: 'LPPC : Lisboa (FIR)'
+  - id: 293
+    description: 'LPPO : Santa Maria Oceanic (FIR)'
+  - id: 294
+    description: 'LPPC : Lisboa (UIR)'
+- id: 160000
+  description: Puerto Rico (U.S.)
+  children:
+  - id: 291
+    description: 'TJZS : San Juan Oceanic (FIR)'
+- id: 164000
+  description: Republica Dominicana
+  children:
+  - id: 131
+    description: 'MDCS : Santo Domingo (FIR)'
+  - id: 132
+    description: 'MDCS : Santo Domingo (UIR)'
+- id: 165000
+  description: Republic of Korea
+  children:
+  - id: 15
+    description: 'RKRR : Incheon (FIR)'
+- id: 167000
+  description: Romania
+  children:
+  - id: 295
+    description: 'LRBB : Bucuresti (FIR)'
+- id: 168000
+  description: Russian Federation
+  children:
+  - id: 20
+    description: 'UHKK : Komsomolsk-Na-Amure (FIR/CTA)'
+  - id: 301
+    description: 'UEBB : Batagay (FIR/CTA)'
+  - id: 302
+    description: 'UEEA : Aldan (FIR/CTA)'
+  - id: 303
+    description: 'UEEE : Yakutsk (FIR/CTA)'
+  - id: 304
+    description: 'UELL : Chulman (FIR/CTA)'
+  - id: 305
+    description: 'UEMH : Teply klyuch (FIR/CTA)'
+  - id: 306
+    description: 'UEMO : Olekminsk (FIR/CTA)'
+  - id: 307
+    description: 'UENN : Nyurba (FIR/CTA)'
+  - id: 308
+    description: 'UERP (PYJ): Polyarny (FIR/CTA)'
+  - id: 309
+    description: 'UERR : Mirny (FIR/CTA)'
+  - id: 310
+    description: 'UESO : Chokurdakh (FIR/CTA)'
+  - id: 311
+    description: 'UESS : Chersky (FIR)'
+  - id: 312
+    description: 'UEST : Tiksi (FIR/CTA)'
+  - id: 313
+    description: 'UESU : Zyryanka (FIR/CTA)'
+  - id: 314
+    description: 'UEVV : Gigansk (FIR/CTA)'
+  - id: 315
+    description: 'UHBA : Arkhara (FIR/CTA)'
+  - id: 316
+    description: 'UHBB : Blagoveschensk (FIR/CTA)'
+  - id: 317
+    description: 'UHBI : Magdagachi (FIR/CTA)'
+  - id: 318
+    description: 'UHBP : Ekimcham (FIR/CTA)'
+  - id: 319
+    description: 'UHHH : Khabarovsk/Novy (FIR/CTA)'
+  - id: 320
+    description: 'UHKM : Sovetskaya gavan (FIR/CTA)'
+  - id: 321
+    description: 'UHMA : Anadyr (FIR/CTA)'
+  - id: 322
+    description: 'UHMI : Mys schmidta (FIR/CTA)'
+  - id: 323
+    description: 'UHMK : Keperveem (FIR/CTA)'
+  - id: 324
+    description: 'UHMM : Magadan/Sokol (FIR/CTA)'
+  - id: 325
+    description: 'UHMN : Omolon (FIR/CTA)'
+  - id: 326
+    description: 'UHMO : Markovo (FIR/CTA)'
+  - id: 327
+    description: 'UHMP : Pevek (FIR/CTA)'
+  - id: 328
+    description: 'UHNN : Nikolaevsk-Na-Amure (FIR/CTA)'
+  - id: 329
+    description: 'UHOO : Okhotsk (FIR/CTA)'
+  - id: 330
+    description: 'UHPD : Ossora (FIR/CTA)'
+  - id: 331
+    description: 'UHPK : Ust-Kamchatsk (FIR/CTA)'
+  - id: 332
+    description: 'UHPM : Milkovo (FIR/CTA)'
+  - id: 333
+    description: 'UHPP : Petropavlovsk-Kamchatsky (FIR)'
+  - id: 334
+    description: 'UHPU : Ust-Khayruzovo (FIR/CTA)'
+  - id: 335
+    description: 'UHSH : Okha (FIR/CTA)'
+  - id: 336
+    description: 'UHSS : Yuzhno-Sakhalinsk (FIR/CTA)'
+  - id: 337
+    description: 'UHWW : Vladivostok (FIR/CTA)'
+  - id: 338
+    description: 'UIAA : Chita/Kadala (FIR/CTA)'
+  - id: 339
+    description: 'UIII : Irkutsk (FIR/CTA)'
+  - id: 340
+    description: 'UIKB : Bodaybo (FIR/CTA)'
+  - id: 341
+    description: 'UIKK : Kirensk (FIR/CTA)'
+  - id: 342
+    description: 'ULAA : Arkhangelsk/Talagi (FIR/CTA)'
+  - id: 343
+    description: 'ULAL : Leshukonskoye (FIR/CTA)'
+  - id: 344
+    description: 'ULAM : Naryan-Mar (FIR/CTA)'
+  - id: 345
+    description: 'ULDD : Amderma (FIR/CTA)'
+  - id: 346
+    description: 'ULKK : Kotlas (FIR/CTA)'
+  - id: 347
+    description: 'ULLL : Sankt-Peterburg (FIR/CTA)'
+  - id: 348
+    description: 'ULMM : Murmansk (FIR/CTA)'
+  - id: 349
+    description: 'ULOL : Velikiye luki (FIR/CTA)'
+  - id: 350
+    description: 'ULPB : Petrozavodsk/Besovets (FIR/CTA)'
+  - id: 351
+    description: 'ULWW : Vologda (FIR/CTA)'
+  - id: 352
+    description: 'UMKK : Kaliningrad/Khrabrovo (FIR)'
+  - id: 353
+    description: 'UNBB : Barnaul (FIR/CTA)'
+  - id: 354
+    description: 'UNIP : Podkamennaya tunguska (FIR/CTA)'
+  - id: 355
+    description: 'UNIT : Tura (FIR/CTA)'
+  - id: 356
+    description: 'UNIW : Vanavara (FIR/CTA)'
+  - id: 357
+    description: 'UNKL : Krasnoyarsk (FIR/CTA)'
+  - id: 358
+    description: 'UNLL : Kolpashevo (FIR/CTA)'
+  - id: 359
+    description: 'UNNT : Novosibirsk/Tolmachevo (FIR/CTA)'
+  - id: 360
+    description: 'UNOO : Omsk (FIR)'
+  - id: 361
+    description: 'UNWW : Novokuznetsk (FIR/CTA)'
+  - id: 362
+    description: 'UOHH : Khatanga (FIR/CTA)'
+  - id: 363
+    description: 'UOOO : Norilsk (FIR/CTA)'
+  - id: 364
+    description: 'UOTT : Turukharnsk (FIR)'
+  - id: 365
+    description: 'URRV : Rosto-Na-Donu (FIR/CTA)'
+  - id: 366
+    description: 'USCC : Chelyabinsk (FIR/CTA)'
+  - id: 367
+    description: 'USCM : Magnitogorsk (FIR/CTA)'
+  - id: 368
+    description: 'USDD : Salekhard (FIR/CTA)'
+  - id: 369
+    description: 'USDK : Kamenny mys (FIR/CTA)'
+  - id: 370
+    description: 'USDS : Tarko-Sale (FIR/CTA)'
+  - id: 371
+    description: 'USHB : Beryzovo (FIR)'
+  - id: 372
+    description: 'USHH : Khanty-Mansiysk (FIR)'
+  - id: 373
+    description: 'USKK : Kirov (FIR/CTA)'
+  - id: 374
+    description: 'USMM : Nadym'
+  - id: 375
+    description: 'USPP : Perm (FIR)'
+  - id: 376
+    description: 'USRR : Surgut (FIR)'
+  - id: 377
+    description: 'USSE : Severouralsk (FIR)'
+  - id: 378
+    description: 'USSS : Yekaterinburg (FIR/CTA)'
+  - id: 379
+    description: 'USTR : Tumen (Roqino) (FIR/CTA)'
+  - id: 380
+    description: 'USUU : Kurgan (FIR/CTA)'
+  - id: 381
+    description: 'UUWV : Moskva (FIR/CTA)'
+  - id: 382
+    description: 'UUYH : Ukhta (CTA)'
+  - id: 383
+    description: 'UUYP : Pechora (FIR/CTA)'
+  - id: 384
+    description: 'UUYW : Vorkuta (FIR/CTA)'
+  - id: 385
+    description: 'UUYY : Syktyvkar (FIR/CTA)'
+  - id: 386
+    description: 'UWKD : Kazan (FIR/CTA)'
+  - id: 387
+    description: 'UWOO : Orenburg (FIR/CTA)'
+  - id: 388
+    description: 'UWOR : Orsk (FIR/CTA)'
+  - id: 389
+    description: 'UWPP : Penza (FIR/CTA)'
+  - id: 390
+    description: 'UWSS : Saratov (FIR/CTA)'
+  - id: 391
+    description: 'UWUU : Ufa (FIR/CTA)'
+  - id: 392
+    description: 'UWWW : Samara/Kurumoch (FIR/CTA)'
+- id: 169000
+  description: Rwanda
+  children:
+  - id: 393
+    description: 'HRYR : Kigali (FIR)'
+- id: 173000
+  description: Saudi Arabia
+  children:
+  - id: 68
+    description: 'OEJD : Jeddah (FIR)'
+- id: 174000
+  description: Senegal
+  children:
+  - id: 395
+    description: 'GOOO : Dakar (FIR)'
+  - id: 396
+    description: 'GOOO : Dakar (UIR)'
+- id: 175000
+  description: Seychelles
+  children:
+  - id: 397
+    description: 'FSSS : Seychelles (FIR)'
+- id: 177000
+  description: Singapore
+  children:
+  - id: 398
+    description: 'WSJC : Singapore (FIR)'
+- id: 178000
+  description: Slovakia
+  children:
+  - id: 399
+    description: 'LZBB : Bratislava (FIR)'
+  - id: 400
+    description: 'LZ-RUTOL : Rutol Area (FIR-P)'
+- id: 179000
+  description: Slovenia
+  children:
+  - id: 401
+    description: 'LJLA : Ljubljana (FIR)'
+- id: 180000
+  description: Solomon Islands
+  children:
+  - id: 394
+    description: 'AGGG : Honiara (FIR)'
+- id: 181000
+  description: Somalia
+  children:
+  - id: 402
+    description: 'HCSM : Mogadishu (FIR/UIR)'
+- id: 182000
+  description: South Africa
+  children:
+  - id: 3
+    description: 'FAJA : Johannesburg (FIR)'
+  - id: 53
+    description: 'FACA : Cap Town (FIR)'
+  - id: 54
+    description: 'FAJO : Johannesburg oceanic (FIR)'
+- id: 183000
+  description: Sri Lanka
+  children:
+  - id: 404
+    description: 'VCCC : Colombo (FIR)'
+- id: 187000
+  description: Sudan
+  children:
+  - id: 403
+    description: 'HSSS : Khartoum (FIR)'
+- id: 188000
+  description: Switzerland
+  children:
+  - id: 407
+    description: 'LSAS : Switzerland (FIR)'
+  - id: 408
+    description: 'LSAS : Switzerland (UIR)'
+- id: 189000
+  description: Suriname
+  children:
+  - id: 409
+    description: 'SMPM : Paramaribo (FIR)'
+- id: 191000
+  description: Sweden
+  children:
+  - id: 405
+    description: 'ESAA : Sweden (FIR)'
+  - id: 406
+    description: 'ESAA : Sweden (UIR)'
+- id: 192000
+  description: Syrian Arab Republic
+  children:
+  - id: 12
+    description: 'OSTT : Damascus (FIR)'
+- id: 193000
+  description: Tadjikistan
+  children:
+  - id: 410
+    description: 'UTDD : Dushanbe (FIR)'
+- id: 194000
+  description: Chad
+  children:
+  - id: 412
+    description: 'FTTT : N''djamena (FIR)'
+  - id: 413
+    description: 'FTTT : N''djamena (UIR)'
+- id: 195000
+  description: Taiwan, Province of China
+  children:
+  - id: 14
+    description: 'RCAA : Taipei (FIR)'
+- id: 196000
+  description: Thailand
+  children:
+  - id: 415
+    description: 'VTBB : Bangkok (FIR)'
+- id: 197000
+  description: Macedonia, The Former Yugoslav Republic of
+  children:
+  - id: 8
+    description: 'LWSS : Skopje (FIR)'
+- id: 200000
+  description: Trinidad and Tobago
+  children:
+  - id: 416
+    description: 'TTZP : Piarco (FIR)'
+- id: 201000
+  description: Tunisia
+  children:
+  - id: 417
+    description: 'DTTC : Tunis (FIR)'
+  - id: 418
+    description: 'DTTC : Tunis (UIR)'
+- id: 202000
+  description: Turkey
+  children:
+  - id: 7
+    description: 'LUUU : Chisinau (FIR/UIR)'
+  - id: 423
+    description: 'LTAA : Ankara (FIR)'
+  - id: 424
+    description: 'LTBB : Istanbul (FIR)'
+- id: 203000
+  description: Turkmenistan
+  children:
+  - id: 419
+    description: 'UTAA : Askhabad (FIR)'
+  - id: 420
+    description: 'UTAK : Krasnovodsk (FIR)'
+  - id: 421
+    description: 'UTAT : Dashkhovuz'
+  - id: 422
+    description: 'UTAV : Chardzhou (FIR)'
+- id: 207000
+  description: United States of America
+  children:
+  - id: 48
+    description: 'KZAK: Oakland Oceanic (FIR-P)'
+  - id: 144
+    description: 'KZAB : Albuquerque (FIR),Nm.'
+  - id: 145
+    description: 'KZAU : Chicago (FIR),Il.'
+  - id: 146
+    description: 'KZBW : Boston (FIR),Nashua, Nh.'
+  - id: 147
+    description: 'KZDV : Denver (FIR),Co.'
+  - id: 148
+    description: 'KZFW : Fort Worth(FIR),Tx.'
+  - id: 149
+    description: 'KZHU : Houston (FIR),Tx.'
+  - id: 150
+    description: 'KZID : Indianapolis (FIR),In.'
+  - id: 151
+    description: 'KZJX : Jacksonville (FIR),Fl.'
+  - id: 152
+    description: 'KZKC : Kansas City (FIR),Ks.'
+  - id: 153
+    description: 'KZLA : Los Angeles (FIR)palmdale, Ca.'
+  - id: 154
+    description: 'KZMA : Miami (FIR), Fl.'
+  - id: 155
+    description: 'KZME : Memphis (FIR),Tn.'
+  - id: 156
+    description: 'KZMP : Minneapolis (FIR),Farming-  Ton,Mn.'
+  - id: 157
+    description: 'KZNY : New York (FIR) Ronkonkoma  Ny.'
+  - id: 158
+    description: 'KZOA : Oakland Inland and oceanic (FIR) Fremont,Ca.'
+  - id: 159
+    description: 'KZOB : Cleveland (FIR),Oberlin, Oh.'
+  - id: 160
+    description: 'KZTL : Atlanta (FIR),Hampton,Ga.'
+  - id: 161
+    description: 'KZHU1 : Houston (FIR-P 1),Tx.'
+  - id: 162
+    description: 'KZHU2 : Houston (FIR-P 2),Tx.'
+  - id: 163
+    description: 'KZMA1 : Miami (FIR-P 1), Fl.'
+  - id: 164
+    description: 'KZMA2 : Miami (FIR-P 2), Fl.'
+  - id: 165
+    description: 'KZMA3 : Miami (FIR-P 3), Fl.'
+  - id: 166
+    description: 'KZNY1 : New York (FIR-P 1) Ronkonkoma  Ny.'
+  - id: 167
+    description: 'KZNY2 : New York (FIR-P 2) Ronkonkoma  Ny.'
+  - id: 168
+    description: 'KZOA : Oakland (FIR-P) Fremont,Ca.'
+  - id: 169
+    description: 'KZAB : Albuquerque (UIR),Nm.'
+  - id: 170
+    description: 'KZAU : Chicago (UIR),Il.'
+  - id: 171
+    description: 'KZBW : Boston (UIR),Nashua, Nh.'
+  - id: 172
+    description: 'KZDV : Denver (UIR),Co.'
+  - id: 173
+    description: 'KZFW : Fort Worth(UIR),Tx.'
+  - id: 174
+    description: 'KZID : Indianapolis (UIR),In.'
+  - id: 175
+    description: 'KZJX : Jacksonville (UIR),Fl.'
+  - id: 176
+    description: 'KZKC : Kansas City (UIR),Ks.'
+  - id: 177
+    description: 'KZLA : Los Angeles (UIR),palmdale, Ca.'
+  - id: 178
+    description: 'KZME : Memphis (UIR),Tn.'
+  - id: 179
+    description: 'KZMP : Minneapolis (UIR),Farming-  Ton,Mn.'
+  - id: 180
+    description: 'KZNY : New York (UIR) Ronkonkoma  Ny.'
+  - id: 181
+    description: 'KZOB : Cleveland (UIR),Oberlin, Oh.'
+  - id: 182
+    description: 'KZTL : Atlanta (UIR),Hampton,Ga.'
+  - id: 183
+    description: 'KZNY1 : New York (UIR-P 1) Ronkonkoma  Ny.'
+  - id: 184
+    description: 'KZNY2 : New York (UIR-P 2) Ronkonkoma  Ny.'
+  - id: 272
+    description: 'KZDC : Washington (FIR),Dc.'
+  - id: 273
+    description: 'KZLC : Salt Lake City (FIR),Ut.'
+  - id: 274
+    description: 'KZSE : Seattle (FIR),Auburn,Wa.'
+  - id: 275
+    description: 'KZDC : Washington (UIR),Dc.'
+  - id: 276
+    description: 'KZLC : Salt Lake City (UIR),Ut.'
+  - id: 277
+    description: 'KZSE : Seattle (UIR),Auburn,Wa.'
+- id: 208000
+  description: Uganda
+  children:
+  - id: 271
+    description: 'HUEC : Entebbe (FIR)'
+- id: 209000
+  description: Ukraine
+  children:
+  - id: 21
+    description: 'UKFV: Simferopol'' (FIR)'
+  - id: 22
+    description: 'UKHV: Kharkiv (FIR)'
+  - id: 23
+    description: 'UKLV: L''Viv (FIR)'
+  - id: 24
+    description: 'UKOV : Odesa (FIR)'
+  - id: 425
+    description: 'UKBV : Kiev (FIR)'
+- id: 210000
+  description: United Arab Emirates
+  children:
+  - id: 134
+    description: 'OMAE : United Arab Emirates (FIR)'
+  - id: 135
+    description: 'OMAE : United Arab Emirates (UIR)'
+- id: 211000
+  description: United Kingdom
+  children:
+  - id: 296
+    description: 'EGGX : Shanwick (FIR)'
+  - id: 297
+    description: 'EGPX : Scottish (FIR)'
+  - id: 298
+    description: 'EGTT : London (FIR)'
+  - id: 299
+    description: 'EGPX : Scottish (UIR)'
+  - id: 300
+    description: 'EGTT : London (UIR)'
+- id: 212000
+  description: United Republic of Tanzania
+  children:
+  - id: 46
+    description: 'HTDC1 : Dar Es-Salaam (FIR-P)'
+  - id: 47
+    description: 'HTDC2 : Dar Es-Salaam (FIR-P)'
+  - id: 411
+    description: 'HTDC : Dar Es-Salaam (FIR)'
+- id: 213000
+  description: Uruguay
+  children:
+  - id: 426
+    description: 'SUEO : Montevideo (FIR)'
+- id: 214000
+  description: Uzbekistan
+  children:
+  - id: 278
+    description: 'UTNR : Nukus (FIR)'
+  - id: 279
+    description: 'UTSD : Samarkand (FIR)'
+  - id: 280
+    description: 'UTTR : Tashkent (FIR)'
+- id: 216000
+  description: Venezuela
+  children:
+  - id: 427
+    description: 'SVZM : Maiquetia (FIR)'
+- id: 217000
+  description: Vietnam
+  children:
+  - id: 428
+    description: 'VVTS : Hochiminh (FIR)'
+  - id: 429
+    description: 'VVVV : Hanoi (City)'
+- id: 221000
+  description: Yemen
+  children:
+  - id: 430
+    description: 'OYSC : Sanaa (FIR)'
+- id: 222000
+  description: Serbia and Montenegro
+  children:
+  - id: 431
+    description: 'LYBA : Beograd (FIR)'
+  - id: 432
+    description: 'LYBA : Beograd (UIR)'
+- id: 223000
+  description: Congo, Democratic Republic
+  children:
+  - id: 433
+    description: 'FZZA : Kinshasa (FIR)'
+  - id: 434
+    description: 'FZZA : Kinshasa (UIR)'
+- id: 224000
+  description: Zambia
+  children:
+  - id: 435
+    description: 'FLFI : Lusaka (FIR)'
+- id: 225000
+  description: Zimbabwe
+  children:
+  - id: 4
+    description: 'FVHF: Harare (FIR)'
+  - id: 50
+    description: 'FVHF: Harare (UIR)'
+- id: 226000
+  description: Estonia
+  children:
+  - id: 142
+    description: 'EETT : Tallinn (FIR)'
+  - id: 143
+    description: 'EETT : Tallinn (UIR)'
+- id: 227000
+  description: Latvia
+  children:
+  - id: 239
+    description: 'EVRR : Riga (FIR)'
+  - id: 240
+    description: 'EVRR : Riga (UIR)'
+- id: 230000
+  description: Eritrea
+  children:
+  - id: 137
+    description: 'HHAA : Asmara (FIR)'
+- id: 998000
+  description: Other
+  children:
+  - id: 28
+    description: 'CY31EG : GENERAL FORECAST AREA 31 (FIR-P)'
+  - id: 29
+    description: 'CY32EG : GENERAL FORECAST AREA 32 (FIR-P)'
+  - id: 30
+    description: 'CY33UL : GENERAL FORECAST AREA 33 (FIR-P)'
+  - id: 31
+    description: 'CY34UL : GENERAL FORECAST AREA 34 (FIR-P)'
+  - id: 32
+    description: 'CY35EG : GENERAL FORECAST AREA 35 (FIR-P)'
+  - id: 33
+    description: 'CY36EG: GENERAL FORECAST AREA 36 (FIR-P)'
+  - id: 34
+    description: 'CY37EG : GENERAL FORECAST AREA 37 (FIR-P)'
+  - id: 35
+    description: 'EGPX-1 : DELEGATION TO NORWAY (FIR-P)'
+  - id: 37
+    description: 'ENOR-1 : DELEGATION TO UNITED KINGDOM (FIR-P)'
+  - id: 38
+    description: 'ESMM MM01 : AOR MM01 (FIR-P)'
+  - id: 39
+    description: 'ESMM MM02 : AOR MM02 (FIR-P)'
+  - id: 40
+    description: 'ESMM MM03 : AOR MM03 (FIR-P)'
+  - id: 41
+    description: 'ESMM MM04 : AOR MM04 (FIR-P)'
+  - id: 42
+    description: 'ESOS OS01 : AOR OS01 (FIR-P)'
+  - id: 43
+    description: 'ESOS OS02 : AOR OS02 (FIR-P)'
+  - id: 44
+    description: 'ESOS OS03 : AOR OS03 (FIR-P)'
+  - id: 45
+    description: 'ESOS OS04 : AOR OS04 (FIR-P)'
+- id: 998004
+  description: Unknown

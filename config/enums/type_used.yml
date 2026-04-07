@@ -1,0 +1,96 @@
+attribute_id: '126'
+xml_tag: Type_Used
+sequence:
+values:
+  100: Reciprocating engine fuel
+  108: Grade 100 LL
+  109: Grade 98 unleaded
+  110: Autogas (93)
+  111: Two stroke mixture
+  198: Other
+  199: Unknown
+  200: Turbine engine fuel
+  201: Jet A (US)
+  202: Jet A-1 (F35 NATO)
+  203: Jet B / JP-4 (US) / AVTAG / F40 (NATO)
+  204: Jet A-1 / JP-8 (US) / F34 (NATO) / AVTUR
+  205: JP-5 (US) / AVCAT / F44 (NATO)
+  298: Other
+  299: Unknown
+  300: Balloon fuel
+  301: Propane
+  398: Other
+  399: Unknown
+  9800: Other
+  9900: Unknown
+  9901: Grade 95 unleaded
+  9902: Diesel
+  9903: T8-V
+  9904: T-6
+  9905: T-1
+  9906: T-2
+  9907: RT (PT)
+  9908: TS-1 (TC-1)
+hierarchy:
+- id: 100
+  description: Reciprocating engine fuel
+  children:
+  - id: 108
+    description: Grade 100 LL
+  - id: 109
+    description: Grade 98 unleaded
+  - id: 110
+    description: Autogas (93)
+  - id: 111
+    description: Two stroke mixture
+  - id: 198
+    description: Other
+  - id: 199
+    description: Unknown
+  - id: 9901
+    description: Grade 95 unleaded
+  - id: 9902
+    description: Diesel
+- id: 200
+  description: Turbine engine fuel
+  children:
+  - id: 201
+    description: Jet A (US)
+  - id: 202
+    description: Jet A-1 (F35 NATO)
+  - id: 203
+    description: Jet B / JP-4 (US) / AVTAG / F40 (NATO)
+  - id: 204
+    description: Jet A-1 / JP-8 (US) / F34 (NATO) / AVTUR
+  - id: 205
+    description: JP-5 (US) / AVCAT / F44 (NATO)
+  - id: 298
+    description: Other
+  - id: 299
+    description: Unknown
+  - id: 9907
+    description: RT (PT)
+  - id: 9908
+    description: TS-1 (TC-1)
+- id: 300
+  description: Balloon fuel
+  children:
+  - id: 301
+    description: Propane
+  - id: 398
+    description: Other
+  - id: 399
+    description: Unknown
+- id: 9800
+  description: Other
+  children:
+  - id: 9903
+    description: T8-V
+  - id: 9904
+    description: T-6
+  - id: 9905
+    description: T-1
+  - id: 9906
+    description: T-2
+- id: 9900
+  description: Unknown

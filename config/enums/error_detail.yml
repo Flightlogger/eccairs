@@ -1,0 +1,10 @@
+attribute_id: '700'
+xml_tag: Error_Detail
+sequence:
+values:
+  1: Perception and Vigilance
+  2: Planning and Decision Making
+  3: Response Execution
+  4: Memory
+  5: Rule breaking and violation
+  6: Unknown

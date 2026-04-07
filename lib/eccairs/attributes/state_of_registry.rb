@@ -2,10 +2,8 @@
 
 module Eccairs
   module Attributes
-    class StateOfRegistry < Eccairs::Base::StringAttribute
-      attribute_id 281
-      xml_tag "State_Of_Registry"
-      sequence 38
+    class StateOfRegistry < Eccairs::Base::EnumAttribute
+      enums_from :state_of_registry
     end
   end
 end

@@ -1,0 +1,10 @@
+attribute_id: '312'
+xml_tag: Visual_Approach_Type
+sequence:
+values:
+  1: Visual, straight in
+  2: Traffic pattern
+  3: Visual, IFR approach
+  97: Not applicable
+  98: Other
+  99: Unknown

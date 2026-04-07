@@ -1,0 +1,10 @@
+attribute_id: '530'
+xml_tag: Stress_Before_Investigator
+sequence:
+values:
+  1: Low
+  2: Medium
+  3: High
+  99: Unknown
+  100: Low/medium
+  101: Medium/high

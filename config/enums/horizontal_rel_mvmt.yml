@@ -1,0 +1,11 @@
+attribute_id: '570'
+xml_tag: Horizontal_Rel_Mvmt
+sequence: 0
+values:
+  1: Crossing tracks
+  2: Parallel tracks
+  3: Converging tracks
+  4: Same Tracks
+  5: Diverging Tracks
+  6: Reciprocal Tracks
+  99: Unknown

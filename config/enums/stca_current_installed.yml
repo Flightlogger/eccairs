@@ -1,0 +1,8 @@
+attribute_id: '380'
+xml_tag: STCA_Current_Installed
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown
+  100: Not applicable

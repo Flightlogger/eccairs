@@ -3,15 +3,7 @@
 module Eccairs
   module Attributes
     class DamageNotToAC < Eccairs::Base::EnumAttribute
-      attribute_id 448
-      xml_tag "Damage_Not_To_A_C"
-      sequence 22
-      allowed_values(
-        NOT_APPLICABLE: 97,
-        NO: 2,
-        YES: 1,
-        UNKNOWN: 99
-      )
+      enums_from :damage_not_to_a_c
     end
   end
 end

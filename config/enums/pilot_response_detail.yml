@@ -1,0 +1,12 @@
+attribute_id: '612'
+xml_tag: Pilot_Response_Detail
+sequence:
+values:
+  1: In accordance with RA
+  2: Vertical rate change < indicated
+  3: Vertical rate change > indicated
+  4: Opposite sense to the RA
+  5: Switching to TA - only mode
+  6: Switching to Stanby
+  7: Switching transponder off
+  8: Horizontal manouevre

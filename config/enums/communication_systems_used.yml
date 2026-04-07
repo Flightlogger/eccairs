@@ -1,0 +1,19 @@
+attribute_id: '350'
+xml_tag: Communication_Systems_Used
+sequence:
+values:
+  1: headset used
+  2: headset not used
+  99: headset use unknown
+  100: hand microphone used
+  101: hand microphone not used
+  102: hand microphone used unknown
+  103: telephone used
+  104: telephone not used
+  105: telephone used unknown
+  106: other communication systems used
+  107: other communication systems not used
+  108: other communication systems used unknown
+  109: none
+  110: unknown
+  111: not applicable

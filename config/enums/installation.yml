@@ -1,0 +1,7 @@
+attribute_id: '163'
+xml_tag: Installation
+sequence:
+values:
+  1: Installed
+  2: Not installed
+  99: Unknown

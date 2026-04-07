@@ -1,0 +1,7 @@
+attribute_id: '891'
+xml_tag: Mon_Sys_Funtioning
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'
+  4: Unknown

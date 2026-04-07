@@ -1,0 +1,10 @@
+attribute_id: '428'
+xml_tag: ATM_Contribution
+sequence: 13
+values:
+  2: Directly involved
+  3: Indirectly involved
+  4: None
+  99: Unknown
+  100: Not Applicable
+  101: Not Assessed

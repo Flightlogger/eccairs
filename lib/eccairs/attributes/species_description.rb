@@ -2,10 +2,8 @@
 
 module Eccairs
   module Attributes
-    class SpeciesDescription < Eccairs::Base::StringAttribute
-      attribute_id 645
-      xml_tag "Species_Description"
-      sequence 48
+    class SpeciesDescription < Eccairs::Base::EnumAttribute
+      enums_from :species_description
     end
   end
 end

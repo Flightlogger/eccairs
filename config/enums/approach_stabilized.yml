@@ -1,0 +1,7 @@
+attribute_id: '43'
+xml_tag: Approach_Stabilized
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown

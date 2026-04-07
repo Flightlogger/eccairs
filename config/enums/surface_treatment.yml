@@ -1,0 +1,8 @@
+attribute_id: '508'
+xml_tag: Surface_Treatment
+sequence:
+values:
+  1: Partially grooved
+  2: Fully grooved
+  98: Other
+  99: Unknown

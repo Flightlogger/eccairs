@@ -2,10 +2,8 @@
 
 module Eccairs
   module Attributes
-    class AtaChapterInvolved < Eccairs::Base::StringAttribute
-      attribute_id 894
-      xml_tag "ATA_Chapter_Involved"
-      sequence 3
+    class AtaChapterInvolved < Eccairs::Base::EnumAttribute
+      enums_from :ata_chapter_involved_894
     end
   end
 end

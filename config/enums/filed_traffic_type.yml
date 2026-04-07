@@ -1,0 +1,8 @@
+attribute_id: '118'
+xml_tag: Filed_Traffic_Type
+sequence: 15
+values:
+  1: OAT
+  2: GAT
+  3: OAT/GAT
+  99: Unknown

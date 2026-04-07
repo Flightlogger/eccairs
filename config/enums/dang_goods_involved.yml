@@ -1,0 +1,7 @@
+attribute_id: '129'
+xml_tag: Dang_Goods_Involved
+sequence: 2
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown

@@ -1,0 +1,7 @@
+attribute_id: '589'
+xml_tag: Risk_Reduction_ATM
+sequence:
+values:
+  1: Did/would have
+  2: None/would not have
+  99: Unknown

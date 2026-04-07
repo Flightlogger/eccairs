@@ -1,0 +1,10 @@
+attribute_id: '64'
+xml_tag: Controlling_Agency
+sequence: 11
+values:
+  1: Air traffic control
+  2: Flight Information service station
+  3: Operator
+  97: None
+  98: Other
+  99: Unknown

@@ -1,0 +1,10 @@
+attribute_id: '506'
+xml_tag: Runway_Slope
+sequence:
+values:
+  1: Up
+  2: Down
+  3: Level
+  4: Up-down
+  5: Down-up
+  99: Unknown

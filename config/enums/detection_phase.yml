@@ -1,0 +1,17 @@
+attribute_id: '1072'
+xml_tag: Detection_Phase
+sequence: 40
+values:
+  1: Manufacturing
+  2: Scheduled Maintenance
+  3: Non-scheduled Maintenance
+  4: Standing
+  5: Taxi
+  6: Take-Off
+  8: En-Route
+  10: Approach
+  11: Landing
+  12: Manoeuvring
+  14: Unknown
+  15: Other
+  16: Post-Impact

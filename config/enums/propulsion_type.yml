@@ -1,0 +1,14 @@
+attribute_id: '232'
+xml_tag: Propulsion_Type
+sequence: 29
+values:
+  1: Reciprocating
+  2: Turboprop
+  3: Turboshaft
+  4: Turbojet
+  5: Turbofan
+  97: None
+  98: Other
+  99: Unknown
+  100: Electrical
+  101: Not Applicable

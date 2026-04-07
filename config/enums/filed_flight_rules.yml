@@ -1,0 +1,14 @@
+attribute_id: '117'
+xml_tag: Filed_Flight_Rules
+sequence: 14
+values:
+  1: Instrument flight rules (IFR)
+  2: Visual flight rules (VFR)
+  3: Special VFR
+  4: Controlled VFR
+  5: IFR/VFR
+  6: VFR/IFR
+  7: VFR night
+  97: None
+  98: Other
+  99: Unknown

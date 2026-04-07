@@ -1,0 +1,11 @@
+attribute_id: '642'
+xml_tag: Source_Of_Briefing
+sequence:
+values:
+  1: Unknown
+  2: Accredited forecast office
+  3: Aeronautical Information Service
+  4: Air Traffic Services information
+  5: Local observer
+  6: Commercial provider
+  7: Other

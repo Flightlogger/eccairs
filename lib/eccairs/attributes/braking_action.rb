@@ -3,10 +3,7 @@
 module Eccairs
   module Attributes
     class BrakingAction < Eccairs::Base::EnumAttribute
-      attribute_id 498
-      xml_tag "Braking_Action"
-      sequence 10
-      allowed_values [1, 2, 3, 4, 99]
+      enums_from :braking_action
     end
   end
 end

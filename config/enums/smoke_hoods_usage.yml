@@ -1,0 +1,8 @@
+attribute_id: '268'
+xml_tag: Smoke_Hoods_Usage
+sequence:
+values:
+  1: Used
+  2: Not used
+  3: Not provided
+  99: Unknown

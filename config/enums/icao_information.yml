@@ -1,0 +1,9 @@
+attribute_id: '28'
+xml_tag: ICAO_Information
+sequence:
+values:
+  1: Off-shore
+  2: United Nations
+  3: Humanitarian/Relief
+  97: None
+  99: Unknown

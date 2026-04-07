@@ -1,0 +1,8 @@
+attribute_id: '72'
+xml_tag: Co-Pilot_Restraint_System
+sequence:
+values:
+  1: Lap belt
+  2: Upper body restraint
+  3: Upper restraint unused
+  99: Unknown

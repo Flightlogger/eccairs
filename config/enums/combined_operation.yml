@@ -1,0 +1,7 @@
+attribute_id: '518'
+xml_tag: Combined_Operation
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown

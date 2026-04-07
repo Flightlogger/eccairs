@@ -1,0 +1,27 @@
+attribute_id: '744'
+xml_tag: Radio_Install_Oper
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown
+  100: Yes - ineffective
+  101: Yes - not used
+  102: Yes - effective
+  103: Yes - unknown
+hierarchy:
+- id: 1
+  description: 'Yes'
+  children:
+  - id: 100
+    description: Yes - ineffective
+  - id: 101
+    description: Yes - not used
+  - id: 102
+    description: Yes - effective
+  - id: 103
+    description: Yes - unknown
+- id: 2
+  description: 'No'
+- id: 99
+  description: Unknown

@@ -2,10 +2,8 @@
 
 module Eccairs
   module Attributes
-    class ReportingEntity < Eccairs::Base::StringAttribute
-      attribute_id 447
-      xml_tag "Reporting_Entity"
-      sequence 1
+    class ReportingEntity < Eccairs::Base::EnumAttribute
+      enums_from :reporting_entity
     end
   end
 end

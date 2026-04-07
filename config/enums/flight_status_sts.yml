@@ -1,0 +1,19 @@
+attribute_id: '620'
+xml_tag: Flight_Status_STS
+sequence:
+values:
+  1: ATFMX
+  4: HEAD
+  5: HOSP
+  6: HUM
+  7: NIL
+  9: NONRVSM
+  12: SAR
+  13: STATE
+  14: ALTRV
+  16: FFR
+  17: FLTCK
+  18: HAZMAT
+  19: MARSA
+  20: MEDEVAC
+  21: Other

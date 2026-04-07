@@ -1,0 +1,7 @@
+attribute_id: '116'
+xml_tag: FDR_Recovery
+sequence:
+values:
+  1: Recovered
+  2: Not recovered
+  99: Unknown

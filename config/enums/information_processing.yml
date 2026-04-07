@@ -1,0 +1,168 @@
+attribute_id: '702'
+xml_tag: Information_Processing
+sequence:
+values:
+  1: Perception and Vigilance
+  2: Visual search failure
+  3: Monitoring failure
+  4: Expectation bias
+  5: Association bias
+  6: Spatial confusion
+  7: Visual/sound confusion
+  8: Distraction
+  9: Discrimination problem
+  10: Tunneling of information
+  11: Out of sight bias
+  12: Information overload
+  13: Vigilance problem
+  14: Unknown
+  15: Memory
+  16: Planning and Decision Making
+  17: Response Execution
+  18: Incorrect knowledge
+  19: Lack of knowledge
+  20: Failure to consider side effects
+  21: Failure to integrate information
+  22: Misunderstand communication
+  23: Fixation
+  24: Failed to recognize risk
+  25: Denied risk
+  26: Incorrect assumption
+  27: Incorrect prioritization
+  28: Problem of manual habit
+  29: Lack of manual precision
+  30: Problem of similar function
+  31: Unclear speech
+  32: Wrong voice tone
+  33: Problem of similar look
+  34: Intrusion of thoughts
+  35: Interruption from the environment
+  36: Slip of the tongue
+  37: Slip of the pen
+  38: Speech spatial confusion
+  39: Equipment mode error
+  40: Similarity of information
+  41: Memory capacity overload
+  42: Negative transfer information
+  43: Mis-stored information
+  44: Insufficient learning
+  45: Rarely used information
+  46: Distraction
+  47: Preoccupation
+  48: Preoccupation
+  49: Unknown
+  50: Problem of speech habit
+  51: Manual spatial confusion
+  52: Unknown
+  53: Unknown
+hierarchy:
+- id: 1
+  description: Perception and Vigilance
+  children:
+  - id: 2
+    description: Visual search failure
+  - id: 3
+    description: Monitoring failure
+  - id: 4
+    description: Expectation bias
+  - id: 5
+    description: Association bias
+  - id: 6
+    description: Spatial confusion
+  - id: 7
+    description: Visual/sound confusion
+  - id: 8
+    description: Distraction
+  - id: 9
+    description: Discrimination problem
+  - id: 10
+    description: Tunneling of information
+  - id: 11
+    description: Out of sight bias
+  - id: 12
+    description: Information overload
+  - id: 13
+    description: Vigilance problem
+  - id: 14
+    description: Unknown
+  - id: 48
+    description: Preoccupation
+- id: 15
+  description: Memory
+  children:
+  - id: 39
+    description: Equipment mode error
+  - id: 40
+    description: Similarity of information
+  - id: 41
+    description: Memory capacity overload
+  - id: 42
+    description: Negative transfer information
+  - id: 43
+    description: Mis-stored information
+  - id: 44
+    description: Insufficient learning
+  - id: 45
+    description: Rarely used information
+  - id: 46
+    description: Distraction
+  - id: 47
+    description: Preoccupation
+  - id: 53
+    description: Unknown
+- id: 16
+  description: Planning and Decision Making
+  children:
+  - id: 18
+    description: Incorrect knowledge
+  - id: 19
+    description: Lack of knowledge
+  - id: 20
+    description: Failure to consider side effects
+  - id: 21
+    description: Failure to integrate information
+  - id: 22
+    description: Misunderstand communication
+  - id: 23
+    description: Fixation
+  - id: 24
+    description: Failed to recognize risk
+  - id: 25
+    description: Denied risk
+  - id: 26
+    description: Incorrect assumption
+  - id: 27
+    description: Incorrect prioritization
+  - id: 49
+    description: Unknown
+- id: 17
+  description: Response Execution
+  children:
+  - id: 28
+    description: Problem of manual habit
+  - id: 29
+    description: Lack of manual precision
+  - id: 30
+    description: Problem of similar function
+  - id: 31
+    description: Unclear speech
+  - id: 32
+    description: Wrong voice tone
+  - id: 33
+    description: Problem of similar look
+  - id: 34
+    description: Intrusion of thoughts
+  - id: 35
+    description: Interruption from the environment
+  - id: 36
+    description: Slip of the tongue
+  - id: 37
+    description: Slip of the pen
+  - id: 38
+    description: Speech spatial confusion
+  - id: 50
+    description: Problem of speech habit
+  - id: 51
+    description: Manual spatial confusion
+  - id: 52
+    description: Unknown

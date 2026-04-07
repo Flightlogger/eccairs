@@ -2,10 +2,8 @@
 
 module Eccairs
   module Attributes
-    class PlannedDestination < Eccairs::Base::StringAttribute
-      attribute_id 228
-      xml_tag "Planned_Destination"
-      sequence 28
+    class PlannedDestination < Eccairs::Base::EnumAttribute
+      enums_from :planned_destination
     end
   end
 end

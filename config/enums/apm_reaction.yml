@@ -1,0 +1,11 @@
+attribute_id: '1044'
+xml_tag: APM_Reaction
+sequence:
+values:
+  2: Delayed
+  3: Ignored
+  4: Not noticed
+  5: Not understood
+  98: Other
+  99: Unknown
+  100: Correct

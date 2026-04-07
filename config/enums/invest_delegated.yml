@@ -1,0 +1,21 @@
+attribute_id: '714'
+xml_tag: Invest_Delegated
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'
+  3: Unknown
+  4: delegated in full
+  5: delegated in part
+hierarchy:
+- id: 1
+  description: 'Yes'
+  children:
+  - id: 4
+    description: delegated in full
+  - id: 5
+    description: delegated in part
+- id: 2
+  description: 'No'
+- id: 3
+  description: Unknown

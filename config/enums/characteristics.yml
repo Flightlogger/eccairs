@@ -1,0 +1,12 @@
+attribute_id: '607'
+xml_tag: Characteristics
+sequence:
+values:
+  1: Thunderstorm
+  2: Showers
+  3: Freezing
+  4: Blowing
+  5: Low drifting
+  6: Shallow
+  7: Patches / isolated
+  8: Partial

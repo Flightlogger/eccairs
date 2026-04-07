@@ -1,0 +1,7 @@
+attribute_id: '805'
+xml_tag: Auto_Throttle
+sequence:
+values:
+  1: 'On'
+  2: Unknown
+  3: 'Off'

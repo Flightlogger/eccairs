@@ -1,0 +1,7 @@
+attribute_id: '127'
+xml_tag: Wx_Conditions
+sequence: 1
+values:
+  1: VMC
+  2: IMC
+  99: Unknown

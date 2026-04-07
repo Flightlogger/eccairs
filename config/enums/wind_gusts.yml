@@ -1,0 +1,7 @@
+attribute_id: '321'
+xml_tag: Wind_Gusts
+sequence: 11
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown

@@ -1,0 +1,22 @@
+attribute_id: '1117'
+xml_tag: Type_of_Ground_staff
+sequence: 2
+values:
+  1: Administrative/support staff
+  2: Aircraft cabin conditioning staff
+  3: Aircraft cleaning staff
+  4: Terminal agent
+  5: Driver
+  6: Flight dispacher/coordinator
+  7: Aircraft maintenance staff
+  8: Ramp agent
+  9: Baggage-cargo porter/handler
+  10: Baggage-cargo supervisor
+  11: Refuelling personnel
+  12: Anti-icing agent
+  13: Safety inspector
+  14: Bridge operator
+  15: Ground handling equipment maintenance staff
+  16: Wing walker
+  17: Other
+  18: Unknown

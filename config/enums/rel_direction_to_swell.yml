@@ -1,0 +1,9 @@
+attribute_id: '136'
+xml_tag: Rel_Direction_To_Swell
+sequence:
+values:
+  1: Along
+  2: Across
+  3: Diagonal
+  98: No swell
+  99: Unknown

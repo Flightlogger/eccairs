@@ -1,0 +1,250 @@
+attribute_id: '32'
+xml_tag: Aircraft_Category
+sequence: 4
+values:
+  1: Fixed Wing
+  2: Rotary Wing
+  3: Lighter-than-air
+  4: Other
+  5: Hybrid
+  6: RPAS
+  7: Unknown
+  8: Aeroplane
+  9: Sailplane (Glider)
+  11: Small Aeroplane
+  12: Large Aeroplane
+  13: Military Aeroplane
+  14: Very Light Aeroplane
+  15: Light Sport Aeroplane
+  16: Small Aeroplane
+  17: Large Aeroplane
+  18: Fast jet / Combat aeroplane
+  19: Other military aeroplane
+  20: Non-Powered Sailplane (Glider)
+  21: Powered Sailplane (Glider)
+  22: Ultralight Sailplane (Glider)
+  23: Fixed powerplant installation
+  24: Retractable powerplant
+  25: Single Seat Ultralight Sailplane (Glider)
+  26: Two Seat Ultralight Sailplane (Glider)
+  27: Ultralight Aeroplane
+  28: Flex-Wing
+  29: Helicopter
+  30: Gyroplane
+  31: Small/light Helicopter
+  32: Large Helicopter
+  33: Military Helicopter
+  34: Very Light Helicopter
+  35: Small Helicopter
+  36: Ultralight Helicopter
+  37: Gyroplane single seat
+  38: Gyroplane two seats
+  39: Balloon
+  40: Airship
+  41: Other
+  42: Free Gas Balloon
+  43: Hot Air Balloon
+  44: Tethered Gas Balloon
+  45: Gas Airship
+  46: Hot Air Airship
+  47: Rigid Structure
+  48: Non-rigid Structure
+  49: Hang-glider
+  50: Paraglider
+  51: Para-motors/para-planes
+  52: Parachute
+  53: Rocket
+  54: Other
+  55: Space Plane
+  56: Powered Hang-glider
+  57: Non-powered Hang-glider
+  58: Powered Paraglider
+  59: Non-powered Paraglider
+  60: Tilt Rotor
+  61: Fixed-wing RPAS
+  62: Rotary-wing RPAS
+  63: Balloon RPAS
+  64: RPAS lighter than 150 kg
+  65: Not Applicable
+  67: Not Certified
+  68: Not Certified
+  69: Not Certified
+  70: Not Certified
+  71: Not Certified
+  72: Not Certified
+  73: Not Certified
+  74: Not Certified
+  75: Non-Powered Sailplane (Glider)
+  76: Large Helicopter
+hierarchy:
+- id: 1
+  description: Fixed Wing
+  children:
+  - id: 8
+    description: Aeroplane
+    children:
+    - id: 11
+      description: Small Aeroplane
+      children:
+      - id: 14
+        description: Very Light Aeroplane
+      - id: 15
+        description: Light Sport Aeroplane
+      - id: 16
+        description: Small Aeroplane
+      - id: 27
+        description: Ultralight Aeroplane
+      - id: 74
+        description: Not Certified
+    - id: 12
+      description: Large Aeroplane
+      children:
+      - id: 17
+        description: Large Aeroplane
+      - id: 73
+        description: Not Certified
+    - id: 13
+      description: Military Aeroplane
+      children:
+      - id: 18
+        description: Fast jet / Combat aeroplane
+      - id: 19
+        description: Other military aeroplane
+  - id: 9
+    description: Sailplane (Glider)
+    children:
+    - id: 20
+      description: Non-Powered Sailplane (Glider)
+      children:
+      - id: 71
+        description: Not Certified
+      - id: 75
+        description: Non-Powered Sailplane (Glider)
+    - id: 21
+      description: Powered Sailplane (Glider)
+      children:
+      - id: 23
+        description: Fixed powerplant installation
+      - id: 24
+        description: Retractable powerplant
+      - id: 70
+        description: Not Certified
+    - id: 22
+      description: Ultralight Sailplane (Glider)
+      children:
+      - id: 25
+        description: Single Seat Ultralight Sailplane (Glider)
+      - id: 26
+        description: Two Seat Ultralight Sailplane (Glider)
+- id: 2
+  description: Rotary Wing
+  children:
+  - id: 29
+    description: Helicopter
+    children:
+    - id: 31
+      description: Small/light Helicopter
+      children:
+      - id: 34
+        description: Very Light Helicopter
+      - id: 35
+        description: Small Helicopter
+      - id: 36
+        description: Ultralight Helicopter
+      - id: 67
+        description: Not Certified
+    - id: 32
+      description: Large Helicopter
+      children:
+      - id: 72
+        description: Not Certified
+      - id: 76
+        description: Large Helicopter
+    - id: 33
+      description: Military Helicopter
+  - id: 30
+    description: Gyroplane
+    children:
+    - id: 37
+      description: Gyroplane single seat
+    - id: 38
+      description: Gyroplane two seats
+- id: 3
+  description: Lighter-than-air
+  children:
+  - id: 39
+    description: Balloon
+    children:
+    - id: 42
+      description: Free Gas Balloon
+    - id: 43
+      description: Hot Air Balloon
+    - id: 44
+      description: Tethered Gas Balloon
+    - id: 68
+      description: Not Certified
+  - id: 40
+    description: Airship
+    children:
+    - id: 45
+      description: Gas Airship
+      children:
+      - id: 47
+        description: Rigid Structure
+      - id: 48
+        description: Non-rigid Structure
+    - id: 46
+      description: Hot Air Airship
+    - id: 69
+      description: Not Certified
+  - id: 41
+    description: Other
+- id: 4
+  description: Other
+  children:
+  - id: 28
+    description: Flex-Wing
+  - id: 49
+    description: Hang-glider
+    children:
+    - id: 56
+      description: Powered Hang-glider
+    - id: 57
+      description: Non-powered Hang-glider
+  - id: 50
+    description: Paraglider
+    children:
+    - id: 58
+      description: Powered Paraglider
+    - id: 59
+      description: Non-powered Paraglider
+  - id: 51
+    description: Para-motors/para-planes
+  - id: 52
+    description: Parachute
+  - id: 53
+    description: Rocket
+  - id: 54
+    description: Other
+  - id: 55
+    description: Space Plane
+- id: 5
+  description: Hybrid
+  children:
+  - id: 60
+    description: Tilt Rotor
+- id: 6
+  description: RPAS
+  children:
+  - id: 61
+    description: Fixed-wing RPAS
+  - id: 62
+    description: Rotary-wing RPAS
+  - id: 63
+    description: Balloon RPAS
+  - id: 64
+    description: RPAS lighter than 150 kg
+- id: 7
+  description: Unknown
+- id: 65
+  description: Not Applicable

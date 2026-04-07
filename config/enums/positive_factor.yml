@@ -1,0 +1,80 @@
+attribute_id: '771'
+xml_tag: Positive_Factor
+sequence:
+values:
+  1: Decision
+  2: Soft Safety Net
+  3: External intervention
+  5: Assistance of an instructor/supervisor
+  6: Logical Problem Solving
+  7: Use of training instructions/SOPs
+  8: Decision to go-around
+  9: Decision to land as precaution
+  10: Decision to land on an unexpected runway
+  11: Air traffic intervention/assistance
+  12: Decision to reject take-off
+  13: Decision to return to departing point or to divert
+  14: Visual detection/anticipation
+  15: Third party intervention/assistance
+  16: Passenger intervention/assistance
+  17: Accurate usage of documentation
+  18: Avoidance manoeuvre
+  19: Environment observation
+  20: Engine failure anticipation
+  21: Communications
+  22: Design requirements
+  23: Hardware Safety Net
+  24: Providence
+  25: Aerodrome intervention/assistance
+hierarchy:
+- id: 1
+  description: Decision
+  children:
+  - id: 8
+    description: Decision to go-around
+  - id: 9
+    description: Decision to land as precaution
+  - id: 10
+    description: Decision to land on an unexpected runway
+  - id: 12
+    description: Decision to reject take-off
+  - id: 13
+    description: Decision to return to departing point or to divert
+  - id: 18
+    description: Avoidance manoeuvre
+- id: 2
+  description: Soft Safety Net
+  children:
+  - id: 6
+    description: Logical Problem Solving
+  - id: 7
+    description: Use of training instructions/SOPs
+  - id: 14
+    description: Visual detection/anticipation
+  - id: 17
+    description: Accurate usage of documentation
+  - id: 19
+    description: Environment observation
+  - id: 20
+    description: Engine failure anticipation
+  - id: 21
+    description: Communications
+  - id: 22
+    description: Design requirements
+- id: 3
+  description: External intervention
+  children:
+  - id: 5
+    description: Assistance of an instructor/supervisor
+  - id: 11
+    description: Air traffic intervention/assistance
+  - id: 15
+    description: Third party intervention/assistance
+  - id: 16
+    description: Passenger intervention/assistance
+  - id: 25
+    description: Aerodrome intervention/assistance
+- id: 23
+  description: Hardware Safety Net
+- id: 24
+  description: Providence

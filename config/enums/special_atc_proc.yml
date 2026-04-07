@@ -1,0 +1,10 @@
+attribute_id: '270'
+xml_tag: Special_ATC_Proc
+sequence:
+values:
+  1: Land after
+  2: Low visibility
+  3: Experimental
+  4: SIRO
+  5: LAHSO
+  98: Other

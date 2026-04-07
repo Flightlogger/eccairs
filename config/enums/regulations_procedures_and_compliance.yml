@@ -1,0 +1,10 @@
+attribute_id: '1100'
+xml_tag: Regulations_Procedures_And_Compliance
+sequence: 10
+values:
+  1: Stopped
+  2: Remaining Known
+  3: Remaining Assumed
+  4: Failed Known
+  5: Failed Assumed
+  6: Not Applicable

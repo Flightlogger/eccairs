@@ -3,10 +3,7 @@
 module Eccairs
   module Attributes
     class CurrentFlightRules < Eccairs::Base::EnumAttribute
-      attribute_id 79
-      xml_tag "Current_Flight_Rules"
-      sequence 12
-      allowed_values [1, 2, 4, 3, 7, 97, 98, 99]
+      enums_from :current_flight_rules
     end
   end
 end

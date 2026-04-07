@@ -1,0 +1,15 @@
+attribute_id: '121'
+xml_tag: Flight_Phase
+sequence: 17
+values:
+  1: Standing
+  2: Taxi
+  3: Take-off
+  4: En route
+  5: Manoeuvring
+  6: Approach
+  7: Landing
+  8: Post-impact
+  99: Unknown
+  100: Tow
+  101: Not Applicable

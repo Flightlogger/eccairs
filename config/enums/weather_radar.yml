@@ -1,0 +1,7 @@
+attribute_id: '809'
+xml_tag: Weather_Radar
+sequence:
+values:
+  1: 'Off'
+  2: Unknown
+  3: 'On'

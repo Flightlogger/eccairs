@@ -1,0 +1,12 @@
+attribute_id: '301'
+xml_tag: Underwater_Locator_CVR
+sequence:
+values:
+  1: Assisted to locate CVR
+  2: Operated/unhelpful CVR
+  3: Did not operate
+  4: Not fitted
+  5: Separated
+  6: Inaudible signal
+  98: Other
+  99: Unknown

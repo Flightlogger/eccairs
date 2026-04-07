@@ -3,10 +3,7 @@
 module Eccairs
   module Attributes
     class LicenseIssuedBy < Eccairs::Base::EnumAttribute
-      attribute_id 399
-      xml_tag "License_Issued_By"
-      sequence 2
-      allowed_values [1, 2, 100, 99]
+      enums_from :license_issued_by
     end
   end
 end

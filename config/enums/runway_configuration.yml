@@ -1,0 +1,10 @@
+attribute_id: '503'
+xml_tag: Runway_Configuration
+sequence:
+values:
+  1: Single
+  2: Crossing
+  3: Dependent parallel
+  4: Independent parallel
+  98: Other
+  99: Unknown

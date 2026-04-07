@@ -1,0 +1,10 @@
+attribute_id: '1103'
+xml_tag: Recovery_Action
+sequence: 13
+values:
+  1: Stopped
+  2: Remaining Known
+  3: Remaining Assumed
+  4: Failed Known
+  5: Failed Assumed
+  6: Not Applicable

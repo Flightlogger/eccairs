@@ -1,0 +1,8 @@
+attribute_id: '483'
+xml_tag: License_Rating
+sequence:
+values:
+  1: Held required ratings
+  2: No required ratings
+  97: Not required
+  99: Unknown

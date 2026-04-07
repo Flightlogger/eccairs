@@ -1,0 +1,7 @@
+attribute_id: '1109'
+xml_tag: ERCS_Risk_Grade
+sequence: 18
+values:
+  1: Low (green)
+  2: Elevated (Yellow)
+  3: High (Red)

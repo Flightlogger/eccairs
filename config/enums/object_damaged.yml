@@ -1,0 +1,71 @@
+attribute_id: '640'
+xml_tag: Object_Damaged
+sequence: 39
+values:
+  1: Unknown
+  2: Structures
+  3: Objects
+  4: Environment
+  5: Other
+  6: Building/houses
+  7: Hospital/medical centre
+  8: School/university
+  9: Residential area
+  10: Industrial Building
+  11: Industrial area/park
+  12: Powerlines/cables
+  13: Aerodrome facilities
+  14: Fence/Pole
+  15: Windturbine
+  16: Parked aircraft - unoccupied aircraft
+  17: Vehicle – on aerodrome
+  18: Vehicle – off aerodrome
+  19: Crane
+  20: Crop/vegetation
+  21: None
+hierarchy:
+- id: 1
+  description: Unknown
+- id: 2
+  description: Structures
+  children:
+  - id: 6
+    description: Building/houses
+  - id: 7
+    description: Hospital/medical centre
+  - id: 8
+    description: School/university
+  - id: 9
+    description: Residential area
+  - id: 10
+    description: Industrial Building
+  - id: 11
+    description: Industrial area/park
+  - id: 12
+    description: Powerlines/cables
+  - id: 13
+    description: Aerodrome facilities
+  - id: 14
+    description: Fence/Pole
+  - id: 15
+    description: Windturbine
+- id: 3
+  description: Objects
+  children:
+  - id: 16
+    description: Parked aircraft - unoccupied aircraft
+  - id: 17
+    description: Vehicle – on aerodrome
+  - id: 18
+    description: Vehicle – off aerodrome
+  - id: 19
+    description: Crane
+- id: 4
+  description: Environment
+  children:
+  - id: 20
+    description: Crop/vegetation
+- id: 5
+  description: Other
+- id: 21
+  description: None

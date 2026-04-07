@@ -1,0 +1,9 @@
+attribute_id: '313'
+xml_tag: Wake_Turb_Category
+sequence: 43
+values:
+  1: Light
+  2: Medium
+  3: Heavy
+  4: Unknown
+  5: Super

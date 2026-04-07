@@ -19,8 +19,8 @@ RSpec.describe Eccairs::Attributes::TypeOfAirspeed do
 
   describe "initialization" do
     it "creates an instance with a value" do
-      instance = described_class.new("1")
-      expect(instance.value).to eq(1)
+      instance = described_class.new("99")
+      expect(instance.value).to eq(99)
     end
   end
 
@@ -29,7 +29,7 @@ RSpec.describe Eccairs::Attributes::TypeOfAirspeed do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
         occurrence.add_aircraft do |aircraft|
-          aircraft.add_type_of_airspeed("1")
+          aircraft.add_type_of_airspeed(99)
         end
       end
 
@@ -42,7 +42,7 @@ RSpec.describe Eccairs::Attributes::TypeOfAirspeed do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
         occurrence.add_aircraft do |aircraft|
-          aircraft.add_type_of_airspeed("1")
+          aircraft.add_type_of_airspeed(99)
         end
       end
 

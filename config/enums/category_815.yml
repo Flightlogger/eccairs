@@ -1,0 +1,12 @@
+attribute_id: '815'
+xml_tag: Category
+sequence:
+values:
+  3: Flight disp/ops officer
+  4: Flight service
+  6: Maintenance
+  7: MET personnel
+  8: CAA-related
+  9: Instructor on the ground
+  98: Other
+  99: Unknown

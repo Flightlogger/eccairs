@@ -1,0 +1,81 @@
+attribute_id: '319'
+xml_tag: Mass_Group
+sequence: 44
+values:
+  101: Fixed wing
+  102: Rotorcraft
+  103: RPAS
+  104: Lighter-than-air
+  105: 0 - 2 250 kg
+  106: 2 251 - 5 700 kg
+  107: 5 701 - 27 000 kg
+  108: 27 001 - 272 000 kg
+  109: "> 272 000 kg"
+  110: Unknown
+  111: 0 - 2 250 kg
+  112: 2 251 - 3 175 kg
+  113: "> 3 175 kg"
+  114: Unknown
+  115: 0 - 0.25 kg
+  116: 0.25 - 0.9 kg
+  117: 0.9 - 4 kg
+  118: 4 - 25 kg
+  119: 25 - 150 kg
+  120: "> 150 kg"
+  121: Unknown
+  122: 0 - 2 250 kg
+  123: "> 2 251 kg"
+  124: Unknown
+hierarchy:
+- id: 101
+  description: Fixed wing
+  children:
+  - id: 105
+    description: 0 - 2 250 kg
+  - id: 106
+    description: 2 251 - 5 700 kg
+  - id: 107
+    description: 5 701 - 27 000 kg
+  - id: 108
+    description: 27 001 - 272 000 kg
+  - id: 109
+    description: "> 272 000 kg"
+  - id: 110
+    description: Unknown
+- id: 102
+  description: Rotorcraft
+  children:
+  - id: 111
+    description: 0 - 2 250 kg
+  - id: 112
+    description: 2 251 - 3 175 kg
+  - id: 113
+    description: "> 3 175 kg"
+  - id: 114
+    description: Unknown
+- id: 103
+  description: RPAS
+  children:
+  - id: 115
+    description: 0 - 0.25 kg
+  - id: 116
+    description: 0.25 - 0.9 kg
+  - id: 117
+    description: 0.9 - 4 kg
+  - id: 118
+    description: 4 - 25 kg
+  - id: 119
+    description: 25 - 150 kg
+  - id: 120
+    description: "> 150 kg"
+  - id: 121
+    description: Unknown
+- id: 104
+  description: Lighter-than-air
+  children:
+  - id: 122
+    description: 0 - 2 250 kg
+  - id: 123
+    description: "> 2 251 kg"
+  - id: 124
+    description: Unknown

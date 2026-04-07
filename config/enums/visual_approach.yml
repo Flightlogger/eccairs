@@ -1,0 +1,7 @@
+attribute_id: '599'
+xml_tag: Visual_Approach
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown

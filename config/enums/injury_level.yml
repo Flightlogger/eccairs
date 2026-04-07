@@ -1,0 +1,9 @@
+attribute_id: '451'
+xml_tag: Injury_Level
+sequence: 23
+values:
+  1: Fatal
+  2: Serious
+  3: Minor
+  98: None
+  99: Unknown

@@ -12,15 +12,15 @@ RSpec.describe Eccairs::Attributes::DangerousGood do
       expect(described_class.xml_tag).to eq("Dangerous_Good")
     end
 
-    it "inherits from StringAttribute" do
-      expect(described_class.superclass).to eq(Eccairs::Base::StringAttribute)
+    it "inherits from EnumAttribute" do
+      expect(described_class.superclass).to eq(Eccairs::Base::EnumAttribute)
     end
   end
 
   describe "initialization" do
     it "creates an instance with a value" do
-      instance = described_class.new("1")
-      expect(instance.value).to eq("1")
+      instance = described_class.new(1)
+      expect(instance.value).to eq(1)
     end
   end
 
@@ -29,7 +29,7 @@ RSpec.describe Eccairs::Attributes::DangerousGood do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
         occurrence.add_dangerous_goods do |dg|
-          dg.add_dangerous_good("1")
+          dg.add_dangerous_good(1)
         end
       end
 
@@ -42,7 +42,7 @@ RSpec.describe Eccairs::Attributes::DangerousGood do
       set = Eccairs.set
       set.add_occurrence do |occurrence|
         occurrence.add_dangerous_goods do |dg|
-          dg.add_dangerous_good("1")
+          dg.add_dangerous_good(1)
         end
       end
 

@@ -1,0 +1,8 @@
+attribute_id: '57'
+xml_tag: Clearance_Validity
+sequence: 8
+values:
+  2: Not Valid
+  6: Valid
+  7: Not applicable
+  99: Unknown

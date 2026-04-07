@@ -1,0 +1,7 @@
+attribute_id: '213'
+xml_tag: Occ_On_Ground
+sequence: 25
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown

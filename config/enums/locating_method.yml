@@ -1,0 +1,15 @@
+attribute_id: '173'
+xml_tag: Locating_Method
+sequence:
+values:
+  1: ELB-A (ELT) only
+  2: HF radio
+  3: VHF radio
+  4: UHF radio
+  5: Sighting of wreckage
+  6: Sighting of occupants
+  7: SAR satellite and ELB-A
+  8: Smoke/signal sighted
+  9: ATC computer generated
+  98: Other
+  99: Unknown

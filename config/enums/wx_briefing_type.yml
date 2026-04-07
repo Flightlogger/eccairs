@@ -1,0 +1,10 @@
+attribute_id: '875'
+xml_tag: Wx_Briefing_Type
+sequence:
+values:
+  1: Accreditated forecast office
+  2: AIS
+  3: ATS information
+  4: Local observer
+  5: Other
+  6: Unknown

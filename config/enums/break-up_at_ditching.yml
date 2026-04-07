@@ -1,0 +1,9 @@
+attribute_id: '31'
+xml_tag: Break-Up_At_Ditching
+sequence:
+values:
+  1: Remained largely intact
+  2: Partial
+  3: Complete
+  97: None
+  99: Unknown

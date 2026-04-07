@@ -1,0 +1,415 @@
+attribute_id: '394'
+xml_tag: Organization_Person
+sequence:
+values:
+  10000: Persons
+  10100: Flight crew
+  10101: Pilot
+  10102: Co-pilot
+  10103: Instructor/check-pilot
+  10104: Pilot of other aircraft
+  10105: Check of student/pilot
+  10106: Flight engineer
+  10198: Other
+  10199: Unknown
+  10200: Non-flight crew
+  10201: Cabin crew
+  10202: Flight nurse
+  10203: Observer rescue person
+  10204: Load master
+  10205: Security guard
+  10298: Other
+  10299: Unknown
+  10300: Other persons on board
+  10301: Passenger
+  10302: Stow-away
+  10398: Other
+  10399: Unknown
+  10400: Ground handling crew
+  10401: Loader
+  10402: Driver of vehicle
+  10403: Ramp/line crewman
+  10498: Other
+  10499: Unknown
+  10500: Ground services person
+  10501: Flight operations officer/dispatcher
+  10502: Meteorological briefer
+  10503: Load controller
+  10504: Flight planning staff
+  10505: Vehicle driver
+  10598: Other
+  10599: Unknown
+  10600: ATS personnel
+  10601: Air traffic controller
+  10602: Supervisor
+  10603: Flight service personnel
+  10604: Assistant
+  10605: Student
+  10606: Coach / instructor
+  10698: Other
+  10699: Unknown
+  10700: Maintenance personnel
+  10701: Foreman/supervisor
+  10702: Technician
+  10703: Engineer
+  10798: Other
+  10799: Unknown
+  10800: Government supervisory staff
+  10801: Government inspector
+  10898: Other
+  10899: Unknown
+  10900: Miscellaneous persons
+  10901: Ground instructor
+  10998: Other
+  10999: Unknown
+  11000: Parachutists
+  11001: Parachute jumper
+  11002: Parachute instructor (tandem)
+  11003: Parachute student (single)
+  11004: Parachute student (tandem)
+  19900: Unknown
+  19999: Unknown
+  20000: Organizations
+  20100: Operator
+  20101: Management
+  20102: Training staff
+  20103: Operational staff
+  20104: Maintenance staff
+  20198: Other
+  20199: Unknown
+  20200: Training organization
+  20201: management
+  20202: Flight instruction
+  20203: Ground instruction
+  20298: Other
+  20299: Unknown
+  20300: Government - CAA
+  20301: Management
+  20302: Operations staff
+  20303: Airworthiness staff
+  20398: Other
+  20399: Unknown
+  20400: ATS organization
+  20401: Management/supervision
+  20402: ATCOs and FIS staff
+  20403: Technicians
+  20404: Communications staff
+  20498: Other
+  20499: Unknown
+  20500: Aerodrome personnel
+  20501: Management
+  20502: Maintenance staff
+  20503: Security staff
+  20598: Other
+  20599: Unknown
+  20600: Maintenance/repair
+  20601: Management
+  20602: Operations
+  20698: Other
+  20699: Unknown
+  20700: Manufacturer
+  20701: Management
+  20702: Design staff
+  20703: Production staff
+  20798: Other
+  20799: Unknown
+  20800: Emergency service organization
+  20801: Emergency service management
+  20802: Operations staff
+  20803: Rescue fire service staff
+  20804: Ambulance services
+  20898: Other
+  20899: Unknown
+  20900: Meteorological service
+  20901: Management
+  20902: Maintenance staff
+  20903: Operational staff
+  20998: Other
+  20999: Unknown
+  21000: Design Authority
+  29900: Unknown
+  29999: Unknown
+  9980000: Other
+  9990000: Unknown
+hierarchy:
+- id: 10000
+  description: Persons
+  children:
+  - id: 10100
+    description: Flight crew
+    children:
+    - id: 10101
+      description: Pilot
+    - id: 10102
+      description: Co-pilot
+    - id: 10103
+      description: Instructor/check-pilot
+    - id: 10104
+      description: Pilot of other aircraft
+    - id: 10105
+      description: Check of student/pilot
+    - id: 10106
+      description: Flight engineer
+    - id: 10198
+      description: Other
+    - id: 10199
+      description: Unknown
+  - id: 10200
+    description: Non-flight crew
+    children:
+    - id: 10201
+      description: Cabin crew
+    - id: 10202
+      description: Flight nurse
+    - id: 10203
+      description: Observer rescue person
+    - id: 10204
+      description: Load master
+    - id: 10205
+      description: Security guard
+    - id: 10298
+      description: Other
+    - id: 10299
+      description: Unknown
+  - id: 10300
+    description: Other persons on board
+    children:
+    - id: 10301
+      description: Passenger
+    - id: 10302
+      description: Stow-away
+    - id: 10398
+      description: Other
+    - id: 10399
+      description: Unknown
+  - id: 10400
+    description: Ground handling crew
+    children:
+    - id: 10401
+      description: Loader
+    - id: 10402
+      description: Driver of vehicle
+    - id: 10403
+      description: Ramp/line crewman
+    - id: 10498
+      description: Other
+    - id: 10499
+      description: Unknown
+  - id: 10500
+    description: Ground services person
+    children:
+    - id: 10501
+      description: Flight operations officer/dispatcher
+    - id: 10502
+      description: Meteorological briefer
+    - id: 10503
+      description: Load controller
+    - id: 10504
+      description: Flight planning staff
+    - id: 10505
+      description: Vehicle driver
+    - id: 10598
+      description: Other
+    - id: 10599
+      description: Unknown
+  - id: 10600
+    description: ATS personnel
+    children:
+    - id: 10601
+      description: Air traffic controller
+    - id: 10602
+      description: Supervisor
+    - id: 10603
+      description: Flight service personnel
+    - id: 10604
+      description: Assistant
+    - id: 10605
+      description: Student
+    - id: 10606
+      description: Coach / instructor
+    - id: 10698
+      description: Other
+    - id: 10699
+      description: Unknown
+  - id: 10700
+    description: Maintenance personnel
+    children:
+    - id: 10701
+      description: Foreman/supervisor
+    - id: 10702
+      description: Technician
+    - id: 10703
+      description: Engineer
+    - id: 10798
+      description: Other
+    - id: 10799
+      description: Unknown
+  - id: 10800
+    description: Government supervisory staff
+    children:
+    - id: 10801
+      description: Government inspector
+    - id: 10898
+      description: Other
+    - id: 10899
+      description: Unknown
+  - id: 10900
+    description: Miscellaneous persons
+    children:
+    - id: 10901
+      description: Ground instructor
+    - id: 10998
+      description: Other
+    - id: 10999
+      description: Unknown
+  - id: 11000
+    description: Parachutists
+    children:
+    - id: 11001
+      description: Parachute jumper
+    - id: 11002
+      description: Parachute instructor (tandem)
+    - id: 11003
+      description: Parachute student (single)
+    - id: 11004
+      description: Parachute student (tandem)
+  - id: 19900
+    description: Unknown
+    children:
+    - id: 19999
+      description: Unknown
+- id: 20000
+  description: Organizations
+  children:
+  - id: 20100
+    description: Operator
+    children:
+    - id: 20101
+      description: Management
+    - id: 20102
+      description: Training staff
+    - id: 20103
+      description: Operational staff
+    - id: 20104
+      description: Maintenance staff
+    - id: 20198
+      description: Other
+    - id: 20199
+      description: Unknown
+  - id: 20200
+    description: Training organization
+    children:
+    - id: 20201
+      description: management
+    - id: 20202
+      description: Flight instruction
+    - id: 20203
+      description: Ground instruction
+    - id: 20298
+      description: Other
+    - id: 20299
+      description: Unknown
+  - id: 20300
+    description: Government - CAA
+    children:
+    - id: 20301
+      description: Management
+    - id: 20302
+      description: Operations staff
+    - id: 20303
+      description: Airworthiness staff
+    - id: 20398
+      description: Other
+    - id: 20399
+      description: Unknown
+  - id: 20400
+    description: ATS organization
+    children:
+    - id: 20401
+      description: Management/supervision
+    - id: 20402
+      description: ATCOs and FIS staff
+    - id: 20403
+      description: Technicians
+    - id: 20404
+      description: Communications staff
+    - id: 20498
+      description: Other
+    - id: 20499
+      description: Unknown
+  - id: 20500
+    description: Aerodrome personnel
+    children:
+    - id: 20501
+      description: Management
+    - id: 20502
+      description: Maintenance staff
+    - id: 20503
+      description: Security staff
+    - id: 20598
+      description: Other
+    - id: 20599
+      description: Unknown
+  - id: 20600
+    description: Maintenance/repair
+    children:
+    - id: 20601
+      description: Management
+    - id: 20602
+      description: Operations
+    - id: 20698
+      description: Other
+    - id: 20699
+      description: Unknown
+  - id: 20700
+    description: Manufacturer
+    children:
+    - id: 20701
+      description: Management
+    - id: 20702
+      description: Design staff
+    - id: 20703
+      description: Production staff
+    - id: 20798
+      description: Other
+    - id: 20799
+      description: Unknown
+  - id: 20800
+    description: Emergency service organization
+    children:
+    - id: 20801
+      description: Emergency service management
+    - id: 20802
+      description: Operations staff
+    - id: 20803
+      description: Rescue fire service staff
+    - id: 20804
+      description: Ambulance services
+    - id: 20898
+      description: Other
+    - id: 20899
+      description: Unknown
+  - id: 20900
+    description: Meteorological service
+    children:
+    - id: 20901
+      description: Management
+    - id: 20902
+      description: Maintenance staff
+    - id: 20903
+      description: Operational staff
+    - id: 20998
+      description: Other
+    - id: 20999
+      description: Unknown
+  - id: 21000
+    description: Design Authority
+  - id: 29900
+    description: Unknown
+    children:
+    - id: 29999
+      description: Unknown
+- id: 9980000
+  description: Other
+- id: 9990000
+  description: Unknown

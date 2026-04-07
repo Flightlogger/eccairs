@@ -1,0 +1,8 @@
+attribute_id: '174'
+xml_tag: Maintenance_Docs
+sequence:
+values:
+  1: Current
+  2: Not current
+  98: Other
+  99: Unknown

@@ -1,0 +1,9 @@
+attribute_id: '35'
+xml_tag: Airworthiness_Cert
+sequence:
+values:
+  1: Valid
+  2: Invalid
+  98: Other
+  99: Unknown
+  100: Permit to fly

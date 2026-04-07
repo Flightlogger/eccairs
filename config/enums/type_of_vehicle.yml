@@ -1,0 +1,32 @@
+attribute_id: '733'
+xml_tag: Type_Of_Vehicle
+sequence: 0
+values:
+  1: FO and runway inspection vehicle
+  2: Bird control vehicle
+  3: Tugging / Towing vehicle
+  4: Fire Services vehicle
+  5: Maintenance vehicle
+  6: Snow clearing vehicle
+  8: Other
+  11: Military vehicle
+  12: Air Start Unit
+  13: Bus
+  14: Car
+  15: Catering truck
+  16: Forklift
+  17: "'Follow Me' Vehicle"
+  18: Lavatory service vehicle
+  19: Medical services vehicle
+  20: Pallet/container loading vehicle
+  21: Passenger steps/stairs vehicle
+  22: Refuelling truck
+  23: General use Tractor
+  24: Construction work vehicle
+  25: Security vehicle
+  26: Police vehicle
+  27: Unknown
+  35: Civil Works vehicle
+  48: Snow blower
+  49: Snow plow
+  50: Sweeper

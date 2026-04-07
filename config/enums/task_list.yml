@@ -1,0 +1,109 @@
+attribute_id: '789'
+xml_tag: Task_List
+sequence:
+values:
+  1: Unknown
+  2: Tower observation
+  3: Planning
+  4: R/T communications and instruction
+  5: Control room communications
+  6: Strip work
+  7: Materials checking
+  8: Not applicable or unknown
+  9: Radar monitoring
+  10: Coordination
+  11: HMI input and functions
+  12: Handover briefing
+  13: Takeover briefing
+  14: Training
+  15: Supervision
+  16: Check / Examination
+  17: Not applicable
+  18: within sector
+  19: between sector / position same facility
+  20: between sector / position different facility
+  21: instruction / clearance
+  22: acknowledgement
+  23: readback
+  24: advisory remark
+  25: request
+  26: courtesy
+  27: other / non-codable remarks
+  28: within sector
+  29: between sector / same facility
+  30: preparation
+  31: marking
+  32: checking
+  33: handling
+hierarchy:
+- id: 2
+  description: Tower observation
+- id: 3
+  description: Planning
+- id: 4
+  description: R/T communications and instruction
+  children:
+  - id: 21
+    description: instruction / clearance
+  - id: 22
+    description: acknowledgement
+  - id: 23
+    description: readback
+  - id: 24
+    description: advisory remark
+  - id: 25
+    description: request
+  - id: 26
+    description: courtesy
+  - id: 27
+    description: other / non-codable remarks
+- id: 5
+  description: Control room communications
+  children:
+  - id: 28
+    description: within sector
+  - id: 29
+    description: between sector / same facility
+- id: 6
+  description: Strip work
+  children:
+  - id: 30
+    description: preparation
+  - id: 31
+    description: marking
+  - id: 32
+    description: checking
+  - id: 33
+    description: handling
+- id: 7
+  description: Materials checking
+- id: 8
+  description: Not applicable or unknown
+  children:
+  - id: 1
+    description: Unknown
+  - id: 17
+    description: Not applicable
+- id: 9
+  description: Radar monitoring
+- id: 10
+  description: Coordination
+  children:
+  - id: 18
+    description: within sector
+  - id: 19
+    description: between sector / position same facility
+  - id: 20
+    description: between sector / position different facility
+- id: 11
+  description: HMI input and functions
+- id: 12
+  description: Handover briefing
+- id: 13
+  description: Takeover briefing
+- id: 14
+  description: Training
+- id: 15
+  description: Supervision
+- id: 16
+  description: Check / Examination

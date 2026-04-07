@@ -1,0 +1,10 @@
+attribute_id: '554'
+xml_tag: Traffic_Variation_Before_Controller
+sequence:
+values:
+  1: Increasing slowly
+  2: Increasing rapidly
+  3: Decreasing slowly
+  4: Decreasing rapidly
+  5: No variation
+  99: Unknown

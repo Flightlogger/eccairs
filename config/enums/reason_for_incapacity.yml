@@ -1,0 +1,17 @@
+attribute_id: '419'
+xml_tag: Reason_For_Incapacity
+sequence: 1
+values:
+  1: Medical condition
+  2: Psychiatric condition
+  3: Drugs
+  4: Alcohol
+  5: Smoke/fumes
+  6: Carbon monoxide
+  7: Chemicals
+  8: Injury
+  9: Hypoxia
+  10: Food poisoning
+  97: Not applicable
+  98: Other
+  99: Unknown

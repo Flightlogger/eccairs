@@ -1,0 +1,17 @@
+attribute_id: '144'
+xml_tag: Initial_Location
+sequence:
+values:
+  1: Powerplant
+  2: APU
+  3: Passenger cabin
+  4: Bag/cargo compartment
+  5: Toilet
+  6: Cockpit
+  7: Electrical system
+  8: Heat/air conditioning
+  9: Avionics
+  10: Galley
+  11: Wheel/tyre
+  98: Other
+  99: Unknown

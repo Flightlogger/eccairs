@@ -1,0 +1,13 @@
+attribute_id: '945'
+xml_tag: Hazard_Eng_Effect
+sequence: 14
+values:
+  1: Complete inability to shut the engine down
+  2: Non-containment of high-energy debris
+  3: Significant thrust in the opposite direction
+  4: Concentration of toxic products
+  6: Uncontrolled fire
+  7: Unknown
+  8: Other
+  9: Failure of the Engine mount system
+  10: Release of the propeller by the Engine

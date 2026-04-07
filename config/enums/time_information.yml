@@ -1,0 +1,9 @@
+attribute_id: '680'
+xml_tag: Time_Information
+sequence:
+values:
+  1: Unknown
+  2: Missing
+  3: Frequency Shift Keying (FSK)
+  4: Not operational
+  5: Other

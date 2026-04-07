@@ -1,0 +1,8 @@
+attribute_id: '738'
+xml_tag: Movement_Profile
+sequence:
+values:
+  1: Climb
+  2: Descent
+  3: On ground
+  4: Unknown

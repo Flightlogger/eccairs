@@ -1,0 +1,8 @@
+attribute_id: '944'
+xml_tag: Single-Manned_Sector_Operation_SSO
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'
+  3: Unknown
+  4: Not Applicable

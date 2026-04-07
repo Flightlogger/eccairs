@@ -1,0 +1,9 @@
+attribute_id: '515'
+xml_tag: Search_Method
+sequence:
+values:
+  1: Air
+  2: Sea
+  3: Ground (vehicle)
+  4: Ground (foot)
+  99: Unknown

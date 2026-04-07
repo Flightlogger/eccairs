@@ -1,0 +1,9 @@
+attribute_id: '30'
+xml_tag: Break-Up_On_Impact
+sequence:
+values:
+  1: Minor
+  2: Substantial
+  3: Complete
+  97: None
+  99: Unknown

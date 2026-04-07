@@ -1,0 +1,13 @@
+attribute_id: '216'
+xml_tag: Operator_Type
+sequence:
+values:
+  1: Flying club/school
+  2: Corporate/executive
+  3: Government agency
+  4: Private owner
+  5: Sales/rental/service
+  97: Not applicable
+  98: Other
+  99: Unknown
+  100: Fractional ownership

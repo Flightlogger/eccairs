@@ -1,0 +1,7 @@
+attribute_id: '76'
+xml_tag: Terrain_Contours_CoPilot
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'
+  99: Unknown

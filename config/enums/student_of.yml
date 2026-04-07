@@ -1,0 +1,16 @@
+attribute_id: '943'
+xml_tag: Student_Of
+sequence:
+values:
+  1: Watch supervisor
+  2: Area supervisor
+  3: Sector supervisor
+  4: Executive controller
+  5: Planning controller
+  6: Co-ordinator
+  7: Radar assistant
+  8: Flight data assistant
+  9: Technical staff
+  10: Supervisor other
+  12: AFIS officer
+  98: Other

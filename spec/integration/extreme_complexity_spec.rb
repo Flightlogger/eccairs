@@ -36,7 +36,7 @@ RSpec.describe "Extreme Complexity ECCAIRS XML Generation Tests" do
 
         # Aerodrome information
         occurrence.add_aerodrome_general do |aerodrome|
-          aerodrome.add_location_indicator("1000")
+          aerodrome.add_location_indicator(1000)
           aerodrome.add_aerodrome_latitude(39.8561)
           aerodrome.add_aerodrome_longitude(-104.6737)
           aerodrome.add_elevation_above_msl(1655.0)
@@ -207,8 +207,8 @@ RSpec.describe "Extreme Complexity ECCAIRS XML Generation Tests" do
 
         # Events
         occurrence.add_events(id: "EVT1") do |event|
-          event.add_event_type("3000000") # Valid ECCAIRS event type code
-          event.add_phase("50000") # Valid ECCAIRS phase code - Cruise
+          event.add_event_type(3000000)
+          event.add_phase(50000)
         end
 
         # Risk Assessment
@@ -216,7 +216,7 @@ RSpec.describe "Extreme Complexity ECCAIRS XML Generation Tests" do
           risk.add_risk_level(5) # Catastrophic
           risk.add_risk_grade(1) # A
           risk.add_risk_method(1)
-          risk.add_key_risk_area(1)
+          risk.add_key_risk_area(2)
         end
 
         # Comprehensive narrative
@@ -291,7 +291,7 @@ RSpec.describe "Extreme Complexity ECCAIRS XML Generation Tests" do
 
         # Aerodrome
         occurrence.add_aerodrome_general do |aerodrome|
-          aerodrome.add_location_indicator("1000")
+          aerodrome.add_location_indicator(1000)
           aerodrome.add_aerodrome_latitude(50.0379)
           aerodrome.add_aerodrome_longitude(8.5622)
           aerodrome.add_aerodrome_type(1)
@@ -307,7 +307,7 @@ RSpec.describe "Extreme Complexity ECCAIRS XML Generation Tests" do
 
         # Multiple dangerous goods packages
         occurrence.add_dangerous_goods(id: "DG1") do |dg|
-          dg.add_dangerous_good("1203") # Gasoline - Class 3 Flammable liquid
+          dg.add_dangerous_good(1203)
           dg.add_air_waybill_consignment_tracking_number("AWB-123456789")
           dg.add_shipper_name("Chemical Transport GmbH")
           dg.add_origin_of_goods("Hamburg, Germany")
@@ -321,7 +321,7 @@ RSpec.describe "Extreme Complexity ECCAIRS XML Generation Tests" do
         end
 
         occurrence.add_dangerous_goods(id: "DG2") do |dg|
-          dg.add_dangerous_good("1230") # Methanol - Class 3 Flammable liquid
+          dg.add_dangerous_good(1230)
           dg.add_air_waybill_consignment_tracking_number("AWB-987654321")
           dg.add_shipper_name("Industrial Chemicals Ltd")
           dg.add_origin_of_goods("Rotterdam, Netherlands")
@@ -333,7 +333,7 @@ RSpec.describe "Extreme Complexity ECCAIRS XML Generation Tests" do
         end
 
         occurrence.add_dangerous_goods(id: "DG3") do |dg|
-          dg.add_dangerous_good("1789") # Hydrochloric acid - Class 8 Corrosive
+          dg.add_dangerous_good(1789)
           dg.add_air_waybill_consignment_tracking_number("AWB-555666777")
           dg.add_shipper_name("Acid Solutions SA")
           dg.add_origin_of_goods("Lyon, France")

@@ -1,0 +1,7 @@
+attribute_id: '718'
+xml_tag: Risk_Grade
+sequence: 0
+values:
+  1: Low (green)
+  2: Elevated (Yellow)
+  3: High (Red)

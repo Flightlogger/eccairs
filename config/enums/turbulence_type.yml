@@ -1,0 +1,8 @@
+attribute_id: '294'
+xml_tag: Turbulence_Type
+sequence:
+values:
+  1: In clear air
+  2: Induced by cloud
+  97: None
+  99: Unknown

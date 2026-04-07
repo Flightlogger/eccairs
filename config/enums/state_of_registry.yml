@@ -1,0 +1,248 @@
+attribute_id: '281'
+xml_tag: State_Of_Registry
+sequence: 38
+values:
+  2: Afghanistan
+  4: Albania
+  5: Algeria
+  6: American Samoa
+  7: Andorra
+  8: Angola
+  9: Anguilla
+  10: Antigua and Barbuda
+  11: Argentina
+  12: Aruba
+  14: Kosovo
+  15: Australia
+  16: Austria
+  17: Not registered
+  19: Bahamas
+  20: Bahrain
+  21: Bangladesh
+  22: Barbados
+  24: Belgium
+  25: Belize
+  26: Benin
+  27: Bermuda
+  28: Bhutan
+  29: Bolivia
+  30: Botswana
+  31: Brazil
+  33: British Indian Ocean Territory
+  34: Solomon Islands
+  36: Brunei Darussalam
+  37: Bulgaria
+  38: Burkina Faso
+  39: Myanmar
+  40: Burundi
+  42: Cameroon
+  43: Canada
+  46: Cape Verde
+  48: Cayman Islands
+  49: Central African Republic
+  50: Chad
+  51: Chile
+  52: China
+  53: Christmas Island
+  54: Cocos Islands
+  55: Colombia
+  56: Comoros
+  57: Congo, Republic of the
+  58: Cook Islands
+  59: Costa Rica
+  61: Cuba
+  62: Cyprus
+  63: Czech Republic
+  65: Korea, North
+  67: Denmark
+  68: Djibouti
+  69: Dominica
+  70: Dominican Republic
+  72: Ecuador
+  73: Egypt
+  74: El Salvador
+  75: Equatorial Guinea
+  76: Ethiopia
+  78: Faroe Islands
+  79: Falkland Islands (Malvinas)
+  80: Fiji
+  81: Finland
+  82: France
+  84: French Polynesia
+  89: Gabon
+  90: Gambia
+  95: Germany
+  97: Ghana
+  98: Gibraltar
+  101: Greece
+  102: Greenland
+  103: Grenada
+  106: Guatemala
+  107: Guinea
+  108: Guinea-Bissau
+  109: Guyana
+  110: Haiti
+  111: Vatican City
+  112: Honduras
+  114: Hungary
+  115: Iceland
+  116: India
+  117: Indonesia
+  118: Iran, Islamic Republic of
+  119: Iraq
+  120: Ireland
+  121: Israel
+  122: Italy
+  123: Ivory Coast
+  124: Jamaica
+  125: Japan
+  127: Jordan
+  128: Kenya
+  130: Korea, South
+  131: Kuwait
+  133: Lao People's Democratic Republic
+  135: Lebanon
+  136: Lesotho
+  137: Liberia
+  138: Libya
+  139: Liechtenstein
+  141: Luxembourg
+  143: Madagascar
+  145: Malawi
+  146: Malaysia
+  147: Maldives
+  148: Mali
+  149: Malta
+  150: Mariana Islands
+  151: Marshall Islands
+  153: Mauritania
+  154: Mauritius
+  155: Mexico
+  157: Monaco
+  158: Mongolia
+  159: Montserrat
+  160: Morocco
+  161: Mozambique
+  163: Namibia
+  164: Nauru
+  165: Nepal
+  166: Netherlands
+  167: Sint Maarten
+  169: New Caledonia
+  173: New Zealand
+  174: Nicaragua
+  175: Niger
+  176: Nigeria
+  177: Niue
+  178: Norfolk Island
+  179: Norway
+  180: Oman
+  184: Pakistan
+  185: Panama
+  187: Papua New Guinea
+  189: Paraguay
+  190: Peru
+  191: Philippines
+  192: Pitcairn Islands
+  193: Poland
+  194: Portugal
+  195: Puerto Rico
+  196: Qatar
+  198: Romania
+  199: Rwanda
+  202: Saint Helena
+  204: Saint Kitts and Nevis
+  205: Saint Lucia
+  208: Saint Vincent and the Grenadines
+  209: Samoa
+  210: San Marino
+  211: Sao Tome and Principe
+  212: Saudi Arabia
+  213: Senegal
+  214: Seychelles
+  215: Sierra Leone
+  217: Singapore
+  218: Somalia
+  219: South Africa
+  221: Spain
+  222: Sri Lanka
+  224: Sudan
+  225: Suriname
+  226: Svalbard and Jan Mayen Islands
+  227: Swaziland
+  228: Sweden
+  229: Switzerland
+  230: Syria
+  231: Taiwan
+  234: Thailand
+  236: Togo
+  237: Tokelau Islands
+  238: Tonga
+  239: Trinidad and Tobago
+  240: Tunisia
+  241: Turkey
+  242: Turks and Caicos Islands
+  243: Uganda
+  245: United Arab Emirates
+  246: United Kingdom
+  248: Tanzania
+  249: United States
+  251: Uruguay
+  252: Vanuatu
+  254: Venezuela
+  255: Vietnam
+  256: Virgin Islands (UK)
+  257: Virgin Islands (US)
+  261: Wallis and Futuna Islands
+  263: Yemen
+  266: Zambia
+  269: Zimbabwe
+  276: Armenia
+  277: Azerbaijan
+  278: Belarus
+  279: Croatia
+  280: Estonia
+  281: Georgia
+  282: Kazakhstan
+  283: Kiribati
+  284: Kyrgyzstan
+  285: Latvia
+  286: Lithuania
+  287: Moldova
+  288: Russian Federation
+  289: Slovakia
+  290: Slovenia
+  291: Tajikistan
+  293: Turkmenistan
+  294: Ukraine
+  295: Uzbekistan
+  297: Bosnia and Herzegovina
+  298: Cambodia
+  299: Eritrea
+  303: Micronesia, Federated States of
+  304: Palau
+  306: Tuvalu
+  307: Hong Kong
+  308: Macao
+  309: Congo, Democratic Republic of the
+  311: Timor-Leste
+  312: Åland Islands
+  313: Guernsey
+  314: Isle of Man
+  315: Jersey
+  316: Macedonia
+  317: Mayotte
+  318: Montenegro
+  319: Serbia
+  320: Western Sahara
+  321: Palestine
+  998: Other
+  999: Unknown
+  1001: Not applicable
+  1002: South Sudan
+  1005: Guadeloupe
+  1006: Martinique
+  1007: Saint Barthélemy
+  1008: Saint Martin
+  1009: Bonaire, Sint Eustatius and Saba
+  1010: Curaçao

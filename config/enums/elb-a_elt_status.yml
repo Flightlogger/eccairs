@@ -1,0 +1,14 @@
+attribute_id: '91'
+xml_tag: ELB-A_ELT_Status
+sequence:
+values:
+  1: Operated effectively
+  2: Not carried
+  3: Not activated
+  4: Damaged
+  5: Battery failed
+  6: Internal failure
+  7: Terrain shielding
+  8: Submerged
+  98: Other
+  99: Unknown

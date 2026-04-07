@@ -1,0 +1,9 @@
+attribute_id: '224'
+xml_tag: Pilot_Altimeter_Type
+sequence:
+values:
+  1: Drum pointer
+  2: Counter-drum pointer
+  3: Three pointer
+  98: Other
+  99: Unknown

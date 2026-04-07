@@ -1,0 +1,1780 @@
+attribute_id: '491'
+xml_tag: Expl_Factor_Subject
+sequence:
+values:
+  100000000: Liveware (human)
+  101000000: Physical/sensory limits
+  101010000: Physical characteristics
+  101010100: Age/physical limitations
+  101010200: Personal anthropometrics
+  101010201: Personal size
+  101010202: Personal reach
+  101010203: Personal strength
+  101010204: Personal mass
+  101020000: Human sensory limitations
+  101020100: Vision
+  101020101: Uncorrected vision
+  101020102: Colour vision
+  101020103: Empty field myopia
+  101020200: Hearing
+  101020300: Vestibular function
+  101020400: G tolerance
+  101020500: Proprioception
+  101020600: Mandelbaum effect
+  101020700: Sensory threshold
+  101030000: Other physical limits
+  102000000: Human physiology
+  102010000: Illness/incapacitation
+  102010100: Mortality
+  102010200: Illness
+  102010201: Illness-food poisoning
+  102010202: Vertigo/dizziness
+  102010300: Pre-existing injury
+  102010400: Heart attack
+  102010500: Hypoxia/anoxia
+  102010600: Hyperventilation
+  102010700: Carbon monoxide poisoning
+  102010800: Reaction to toxic fumes
+  102010900: Loss of consciousness
+  102011000: Motion sickness
+  102011100: Visual disturbance
+  102011200: Impairment-diving
+  102011201: Impairment-decompression
+  102011202: Impairment-trapped gas
+  102011203: Impairment-underwater diving
+  102011300: Medical history
+  102020000: Impairment-fitness lack
+  102020100: Impairment-stress
+  102020200: Impairment-fitness
+  102020300: Impairment-obesity
+  102020400: Impairment-food intake
+  102020500: Impairment-blood/sugar
+  102020600: Impairment-use of alcohol
+  102020700: Impairment-alcohol level
+  102020800: Impairment-alcohol intake
+  102020900: Impairment-alcohol effect
+  102021000: Impairment-self treatment
+  102021100: Impairment-prescription
+  102021200: Impairment-barred drugs
+  102021300: Impairment-stimulants
+  102021400: Impairment-illicit drugs
+  102021500: Impairment-blood donation
+  102021600: Impairment-disease
+  102021700: Impairment-pain
+  102021800: Impairment-smoking
+  102021900: Impairment-predisposition
+  102022000: Impairment-psychological
+  102022100: Impairment-other fitness
+  102022200: Impairment-other living
+  102030000: Human fatigue/alertness
+  102030100: Fatigue-falling asleep
+  102030200: Fatigue-acute
+  102030300: Fatigue-chronic
+  102030400: Circadian disrythmia
+  102030500: Fatigue-rest/duty time
+  102030600: Fatigue-sleep deficit
+  102030700: Fatigue-sleep disorder
+  102030800: Fatigue-sleep disruption
+  102030900: Fatigue-other
+  102040000: Human illusions
+  102040100: Vestibular illusions
+  102040101: Coriolis illusion
+  102040102: Elevator illusion
+  102040103: "'Giant-hand' illusion"
+  102040104: Somatogravic illusion
+  102040105: Somatogyral illusion
+  102040106: The 'leans' illusion
+  102040200: Human visual illusions
+  102040201: Black hole
+  102040202: Flicker vertigo
+  102040203: Landing visual illusions
+  102040204: Perspective illusion
+  102040205: Auto kinesis illusion
+  102040206: Visual illusions-other
+  102040300: Illusions-other
+  102050000: Physiological limit-other
+  103000000: Psychological limitations
+  103010000: Action or lack of action
+  103010100: Action-slip
+  103010200: Action-lapse/omission
+  103010300: Action-mistake
+  103010400: Procedure violation
+  103010500: Timing
+  103010600: Third party
+  103010700: Psychological error-other
+  103020000: Psychological planning
+  103020100: Flight planning
+  103020101: Pre-flight planning
+  103020102: In-flight planning
+  103020200: Action-preparedness
+  103020300: ATC planning
+  103020400: Maintenance planning
+  103020401: Spares provisioning
+  103030000: Information processing
+  103030100: Action-decision making
+  103030200: Mental capacity
+  103030300: Comprehension
+  103030400: Mis-recognition
+  103030500: Misunderstanding
+  103030600: Assumption incorrect
+  103030700: False hypothesis
+  103030800: Confirmation bias
+  103030900: Mind set/expectancy
+  103031000: Psychological-habituation
+  103031100: Information processing-other
+  103040000: Perception & monitoring
+  103040100: Psychological-perception
+  103040200: Psychological-attention
+  103040300: Psychological-monitoring
+  103040301: Monitoring automation
+  103040302: Monitoring displays
+  103040303: Monitoring outside world
+  103040304: Monitoring frequencies
+  103040305: Monitoring a person
+  103040400: Boredom/monotony
+  103040500: Psychological-vigilance
+  103040600: Psychological-distraction
+  103040700: Channelized attention
+  103040800: Attention habituation
+  103040900: Attention-other
+  103050000: Psychological-ability
+  103050100: Psychological-technique
+  103050200: Psychological-airmanship
+  103050201: Handling of aircraft
+  103050202: Psychological-airmanship
+  103050300: Psychological-competence
+  103050400: Psychological-past record
+  103050500: Psychological-skill
+  103050501: Maintenance-automation
+  103050502: Skill maintenance-age
+  103050503: Lack of practice
+  103050504: Negative transfer
+  103050600: Interaction-automation
+  103050700: Reaction time-ability
+  103050800: Non-standard technique
+  103050900: Other factors
+  103060000: Human judgement factors
+  103060100: Spatial
+  103060200: Separation
+  103060300: Timing/speed
+  103060400: Other human judgement
+  103070000: Knowledge acquisition
+  103080000: Situational awareness
+  103080100: Spatial disorientation
+  103080200: Geographic disorientation
+  103080300: Temporal disorientation
+  103080400: Visual disorientation
+  103080500: "'Losing the picture'"
+  103080600: Situational awareness
+  103080700: Other orientation factors
+  103090000: Personality/attitude
+  103090100: Personality factors
+  103090101: Aggressive personality
+  103090102: Assertive personality
+  103090103: Non-assertive personality
+  103090200: Risk-taking factors
+  103090300: Confidence problems
+  103090301: Confidence in aircraft
+  103090302: Confidence in equipment
+  103090303: Self confidence problems
+  103090304: Confidence in others
+  103090305: Confidence in information
+  103090306: Confidence in automation
+  103090307: Confidence in ATC factors
+  103090400: Complacency factors
+  103090500: "'Get-home-itis' factors"
+  103090600: Motivation problems
+  103090700: Other attitude factors
+  103100000: Mental state factors
+  103100100: Alertness problems
+  103100200: Personal stress factors
+  103100201: Post-incident stress
+  103100300: Apprehension problems
+  103100400: Personal anxiety problems
+  103100500: Personal panic factors
+  103100600: Personal boredom problems
+  103100700: Personal situation denial
+  103100800: Other emotional factors
+  103100801: Suicide
+  104000000: Personal work management
+  104010000: Task scheduling
+  104020000: Personal timing of actions
+  104020100: Unforeseen task additions
+  104030000: Workload task shedding
+  104040000: Task allocation
+  104050000: Other workload management
+  105000000: Experience & knowledge
+  105010000: Experience & qualification
+  105010100: Qualifications
+  105010200: Personal experience
+  105010201: Total hours/years
+  105010202: Experience in position
+  105010203: Experience of aircraft type
+  105010204: Experience of aerodrome
+  105010205: Experience of route
+  105010206: Instrument flying
+  105010207: Other experience factors
+  105010300: Use of tools and equipment
+  105020000: Recency factors
+  105020100: Recency in position
+  105020200: Recency on aircraft type
+  105020300: With aerodrome
+  105020400: Recent experience-route
+  105020500: Recent experience-IFR
+  105020600: Experience-operational
+  105020700: Other recency factor
+  105030000: Adequacy of knowledge
+  105030100: General knowledge
+  105030200: Current knowledge
+  105030300: Regulatory requirements
+  105030400: Aeronautical knowledge
+  105030500: Aircraft system knowledge
+  105030600: Knowledge of procedures
+  105030601: Company policies
+  105030602: Flight procedures
+  105030603: ATM procedures
+  105030604: Aerodrome procedures
+  105030605: Maintenance procedures
+  105030700: Knowledge of flight rules
+  105030800: Self briefing factors
+  105030900: Meteorological knowledge
+  105031000: Other knowledge factors
+  200000000: Liveware-environment
+  201000000: Physical environment
+  201010000: Landing/take-off site
+  201010100: Taxiway/runway
+  201010200: Approach aids
+  201010300: Infrastructure
+  201010400: Obstructions to vision
+  201010500: Landing take-off
+  201020000: Air traffic services
+  201020100: Inappropriate
+  201020200: Air Traffic Control lack
+  201030000: ATS information provision
+  201030100: Weather information
+  201030200: Aerodrome conditions
+  201030300: Other information
+  201040000: Weather/visibility
+  201050000: Workspace environment
+  201050100: Anthropometric space
+  201050200: Access (for maintenance)
+  201050300: Visibility from workplace
+  201050400: Air quality in workplace
+  201050500: Ambient air pressure
+  201050600: Cold working environment
+  201050700: Hot working environment
+  201050800: Ill-lit environment
+  201050900: Vision impairment-glare
+  201051000: Environment humidity
+  201051100: Noise in the workplace
+  201051200: Ozone contamination
+  201051300: Smoke/fumes contamination
+  201051400: Radiation environment
+  201051500: Excessive vibration
+  201051600: Other workspace issues
+  201060000: Other interface
+  202000000: Psychosocial factors
+  202010000: Job satisfaction
+  202020000: Morale/motivation
+  202030000: Cultural issues
+  202040000: Domestic issues
+  202040100: Domestic event/crisis
+  202040200: Family pressure
+  202040300: Financial problems/issues
+  202040400: Interpersonal conflicts
+  202040500: Lifestyle change
+  202040600: Mental pressure-domestic
+  202050000: Other psychosocial issues
+  202060000: Non-sterile cockpit/workplace
+  203000000: Company/regulatory issues
+  203010000: Pressure to achieve
+  203010100: Commercial pressures
+  203010200: Specific company problems
+  203010300: Supervision problems
+  203010400: Managerial pressures
+  203020000: Labour relations factors
+  203020100: Employee-management
+  203020200: Industrial action
+  203020300: Union/professional group
+  203030000: Management personnel policy
+  203030100: Operational
+  203030200: Operational control
+  203030300: Operational support
+  203030400: Recruitment
+  203030500: Staffing
+  203030600: Resource allocation
+  203030700: Crew pairing
+  203030800: Scheduling
+  203030900: Maintenance scheduling
+  203031000: Career progression
+  203031100: Terms and conditions
+  203031200: Personnel requirement
+  203031300: Instructions
+  203031400: Shiftwork, duty time
+  203040000: Manning issues
+  203040100: Unexpected staff shortage
+  203040200: Unexpected skill shortage
+  203050000: Regulatory policies
+  204000000: Operational task demands
+  204010000: Workload task demands
+  204010100: Overload/task saturation
+  204010200: High-staff/skills short
+  204010300: Underload-low demand
+  204010400: Workload level transition
+  204010500: Additional-unexpected
+  204010600: Additional-extraneous
+  204010700: Additional administrative
+  204010800: Additional-unusual
+  204010900: Additional-emergency
+  204011000: Additional-flow control
+  204020000: Time pressure factors
+  204020100: While flying
+  204020200: Controlling air traffic
+  204020300: Maintenance/turn around
+  204020400: Night curfew
+  204020500: Flight time limitations
+  204030000: Mental pressure normal operations
+  204040000: Training/check situation
+  204040100: Training in progress
+  204040101: Flight crew
+  204040102: ATCO
+  204040103: Engineer
+  204040200: Other training going on
+  204050000: Operational task demands
+  204050100: Caused by other aircraft
+  204050200: Caused by passengers
+  204050201: Disruptive passengers
+  204050300: Technical problem/failure
+  204050400: Ground operations
+  204050500: Ground services
+  204050600: Technical support
+  300000000: Hard/software interface
+  301000000: Human/hardware interface
+  301010000: Workplace equipment/design
+  301010100: Design or ergonomics
+  301010101: Eye reference overlooked
+  301010102: Seat design inadequate
+  301010103: Layout not optimum
+  301010104: Instrument design
+  301010105: Electronic display design
+  301010106: Control design unsuitable
+  301010107: Control/display incompatible
+  301010108: Control/display badly lit
+  301010109: Control/display location
+  301010110: Controls and displays
+  301010111: Equipment control
+  301010112: Motor workload excessive
+  301010113: Reach/vision restrictions
+  301010200: Personal discomfort
+  301010300: Alerts/warnings intrusive
+  301010400: Non-standard controls
+  301010500: Unreliable equipment
+  301010600: Electronic map display
+  301020000: Non-flight deck equipment
+  301020100: Ergonomics
+  301020101: Cabin crew seat design
+  301020200: Comfort
+  301020300: Intrusive alerts
+  301020400: Standardization
+  301020500: Reliability-other
+  301030000: Aircraft maintenance equipment
+  301030100: Design tools/equipment
+  301030200: Reliability
+  301040000: ATC equipment
+  301040100: Ergonomics-ATC equipment
+  301040200: Radar display standards
+  301040300: Progress strips display
+  301040400: ATC communications equipment
+  301040500: Reliability-ATC equipment
+  301040600: Other ATC equipment
+  301050000: Ergonomics for training
+  301060000: Suitability-maintenance
+  302000000: Inadequate info sources
+  302010000: Data sources
+  302010100: Radar information
+  302010101: Primary radar information
+  302010102: Secondary radar information
+  302010200: Transponder information
+  302010201: Mode C information
+  302010202: Squawk/identification
+  302010300: Human data source
+  302010301: Civil air traffic control
+  302010302: Information-military
+  302010303: Information-other pilots
+  302010400: Other information
+  302020000: Communications media
+  302020100: VHF/HF frequencies
+  302020200: Telephone
+  302020300: Data link communications
+  302020400: Other communications media
+  303000000: Human software interface
+  303010000: Human firmware interface
+  303010100: Firmware reliability
+  303010200: Electronic display
+  303010300: Data link/digital communications
+  303010400: Warning/checklist display
+  303020000: Software
+  303020100: Software reliability
+  303020200: User friendliness
+  303020300: Menus/menu navigation
+  304000000: Automation systems
+  304010000: Design philosophies
+  304010100: User friendliness
+  304010200: System mode awareness
+  304010300: Additional workload
+  304010400: Compatibility-hardware
+  304010500: Reliability of automation
+  304010600: Unwanted disconnects
+  304020000: Use of automation
+  304020100: Training-automation
+  304020200: Reliance on automation
+  304020300: Use/overuse of automation
+  304020400: Automation complacency
+  305000000: Automatic defence/warning
+  305010000: Cockpit warnings
+  305010100: Stall warnings
+  305010200: Windshear warnings
+  305010300: TCAS
+  305010400: GPWS
+  305010500: Gear warning system
+  305020000: ATC alarms/alerts
+  305020100: Conflict alert
+  305020200: MSAWS
+  305030000: Other defences/warnings
+  306000000: Operational material
+  306010000: Workplace documents
+  306010100: Workplace manuals
+  306010200: Workplace checklists
+  306010300: Emergency checklists
+  306010400: Maps/charts or use of
+  306020000: Flight progress strips
+  306030000: Maintenance engineering material
+  306030100: Maintenance process sheet
+  306040000: Operational documents
+  306040100: Notices-advisory material
+  306040200: Other publications
+  306040300: Aircraft safety card
+  306040400: Written regulations
+  306040500: Other handbooks/manuals
+  306040600: Other checklists
+  306040700: Signage
+  306040800: Other written information
+  400000000: Human v system support
+  401000000: Human v procedures
+  401010000: Human v SOP
+  401020000: Human v abnormal procedure
+  401030000: Human v ATC procedures
+  401030100: Human v ATC operational procedures
+  401030200: Human v SIDS/STARS
+  401030300: Human v noise abatement
+  401040000: Human v aerodrome procedure
+  401050000: Human v maintenance procedures
+  401050100: Human v maintenance recording
+  401060000: Human v company procedure
+  401070000: Human v other procedures
+  401080000: Human v custom & practice
+  402000000: Human v training
+  402010000: Human v basic training
+  402010100: Human v training syllabus
+  402020000: Human v specific training
+  402030000: Human v simulator training
+  402040000: Human v on-the-job training
+  402050000: Human v emergency training
+  402060000: Human v CRM/TRM
+  402070000: Human v recurrent training
+  402070100: Human LOFT
+  402080000: Human v route training
+  402090000: Human v miscellaneous training
+  402090100: Use of automation
+  402090200: Use of maps/charts
+  402090300: Use of manuals
+  402090400: Other training
+  403000000: Human/system interface-other
+  500000000: Interface between humans
+  501000000: Human v communications
+  501010000: Human v spoken communications
+  501010100: Human v communications between crew
+  501010200: Human v air-air communications
+  501010300: Human v air-ground communications
+  501010301: Human v ATC-pilot communications
+  501010302: Human v company communications
+  501010303: Human v party line information
+  501010400: Human v ground-ground communications
+  501010500: Human interface-language
+  501010600: Human interface-accent
+  501010700: Human v phraseology
+  501010800: Human v readback/hearback
+  501010900: Human v callsign confusion
+  501011000: Human v noise interference
+  501011100: Human v interpretation
+  501020000: Human v written/read communications
+  501020100: Human v documentation
+  501020101: Human v incomplete documentation
+  501020102: Human v maintenance information
+  501020200: Human v flight progress strip
+  501020300: Human v data link communications
+  501020400: Human v teletype communications
+  501020500: Human v keying error
+  501020600: Human v handwriting
+  501020700: Human v misreading
+  501020800: Human v feedback loop
+  501030000: Human v visual signals
+  501030100: Human v ground-hand signals
+  501030200: Human v visual signals
+  502000000: Human v team skill/CRM
+  502010000: Human v team skills
+  502010100: Human v coordination
+  502010200: Human v incompatibility
+  502010300: Human v confidence/trust
+  502010400: Human v cross-checking
+  502010500: Human v authority gradient
+  502010600: Human v peer pressure
+  502010700: Human v team assertion
+  502010800: Human v briefing team
+  502010900: Human v self feedback
+  502011000: Human v decision process
+  502011100: Human v group climate
+  502011200: Human v team planning
+  502011300: Human v managing workload
+  502020000: Human v formal coordination
+  502030000: Human v team changeover
+  502040000: Human v-other interaction
+  503000000: Human interface-supervision
+  503010000: Human v operational supervision
+  503020000: Human v training supervision
+  503030000: Human v quality control
+  503040000: Human interface-standards
+  504000000: Human v regulatory activities
+  504010000: Regulatory procedures
+  504020000: Regulatory standards
+  504020100: Design standards
+  504020200: Certification
+  504030000: Human interface-regulations
+  504040000: Human interface-inspections
+  504050000: Human interface-monitoring organizations
+  504060000: Human interface-surveillance
+  504070000: Human interface-audits
+  504080000: Human interface-checks
+  505000000: Other human human interface
+  505000001: G Force Effects
+hierarchy:
+- id: 100000000
+  description: Liveware (human)
+  children:
+  - id: 101000000
+    description: Physical/sensory limits
+    children:
+    - id: 101010000
+      description: Physical characteristics
+      children:
+      - id: 101010100
+        description: Age/physical limitations
+      - id: 101010200
+        description: Personal anthropometrics
+        children:
+        - id: 101010201
+          description: Personal size
+        - id: 101010202
+          description: Personal reach
+        - id: 101010203
+          description: Personal strength
+        - id: 101010204
+          description: Personal mass
+    - id: 101020000
+      description: Human sensory limitations
+      children:
+      - id: 101020100
+        description: Vision
+        children:
+        - id: 101020101
+          description: Uncorrected vision
+        - id: 101020102
+          description: Colour vision
+        - id: 101020103
+          description: Empty field myopia
+      - id: 101020200
+        description: Hearing
+      - id: 101020300
+        description: Vestibular function
+      - id: 101020400
+        description: G tolerance
+      - id: 101020500
+        description: Proprioception
+      - id: 101020600
+        description: Mandelbaum effect
+      - id: 101020700
+        description: Sensory threshold
+    - id: 101030000
+      description: Other physical limits
+      children:
+      - id: 505000001
+        description: G Force Effects
+  - id: 102000000
+    description: Human physiology
+    children:
+    - id: 102010000
+      description: Illness/incapacitation
+      children:
+      - id: 102010100
+        description: Mortality
+      - id: 102010200
+        description: Illness
+        children:
+        - id: 102010201
+          description: Illness-food poisoning
+        - id: 102010202
+          description: Vertigo/dizziness
+      - id: 102010300
+        description: Pre-existing injury
+      - id: 102010400
+        description: Heart attack
+      - id: 102010500
+        description: Hypoxia/anoxia
+      - id: 102010600
+        description: Hyperventilation
+      - id: 102010700
+        description: Carbon monoxide poisoning
+      - id: 102010800
+        description: Reaction to toxic fumes
+      - id: 102010900
+        description: Loss of consciousness
+      - id: 102011000
+        description: Motion sickness
+      - id: 102011100
+        description: Visual disturbance
+      - id: 102011200
+        description: Impairment-diving
+        children:
+        - id: 102011201
+          description: Impairment-decompression
+        - id: 102011202
+          description: Impairment-trapped gas
+        - id: 102011203
+          description: Impairment-underwater diving
+      - id: 102011300
+        description: Medical history
+    - id: 102020000
+      description: Impairment-fitness lack
+      children:
+      - id: 102020100
+        description: Impairment-stress
+      - id: 102020200
+        description: Impairment-fitness
+      - id: 102020300
+        description: Impairment-obesity
+      - id: 102020400
+        description: Impairment-food intake
+      - id: 102020500
+        description: Impairment-blood/sugar
+      - id: 102020600
+        description: Impairment-use of alcohol
+      - id: 102020700
+        description: Impairment-alcohol level
+      - id: 102020800
+        description: Impairment-alcohol intake
+      - id: 102020900
+        description: Impairment-alcohol effect
+      - id: 102021000
+        description: Impairment-self treatment
+      - id: 102021100
+        description: Impairment-prescription
+      - id: 102021200
+        description: Impairment-barred drugs
+      - id: 102021300
+        description: Impairment-stimulants
+      - id: 102021400
+        description: Impairment-illicit drugs
+      - id: 102021500
+        description: Impairment-blood donation
+      - id: 102021600
+        description: Impairment-disease
+      - id: 102021700
+        description: Impairment-pain
+      - id: 102021800
+        description: Impairment-smoking
+      - id: 102021900
+        description: Impairment-predisposition
+      - id: 102022000
+        description: Impairment-psychological
+      - id: 102022100
+        description: Impairment-other fitness
+      - id: 102022200
+        description: Impairment-other living
+    - id: 102030000
+      description: Human fatigue/alertness
+      children:
+      - id: 102030100
+        description: Fatigue-falling asleep
+      - id: 102030200
+        description: Fatigue-acute
+      - id: 102030300
+        description: Fatigue-chronic
+      - id: 102030400
+        description: Circadian disrythmia
+      - id: 102030500
+        description: Fatigue-rest/duty time
+      - id: 102030600
+        description: Fatigue-sleep deficit
+      - id: 102030700
+        description: Fatigue-sleep disorder
+      - id: 102030800
+        description: Fatigue-sleep disruption
+      - id: 102030900
+        description: Fatigue-other
+    - id: 102040000
+      description: Human illusions
+      children:
+      - id: 102040100
+        description: Vestibular illusions
+        children:
+        - id: 102040101
+          description: Coriolis illusion
+        - id: 102040102
+          description: Elevator illusion
+        - id: 102040103
+          description: "'Giant-hand' illusion"
+        - id: 102040104
+          description: Somatogravic illusion
+        - id: 102040105
+          description: Somatogyral illusion
+        - id: 102040106
+          description: The 'leans' illusion
+      - id: 102040200
+        description: Human visual illusions
+        children:
+        - id: 102040201
+          description: Black hole
+        - id: 102040202
+          description: Flicker vertigo
+        - id: 102040203
+          description: Landing visual illusions
+        - id: 102040204
+          description: Perspective illusion
+        - id: 102040205
+          description: Auto kinesis illusion
+        - id: 102040206
+          description: Visual illusions-other
+      - id: 102040300
+        description: Illusions-other
+    - id: 102050000
+      description: Physiological limit-other
+  - id: 103000000
+    description: Psychological limitations
+    children:
+    - id: 103010000
+      description: Action or lack of action
+      children:
+      - id: 103010100
+        description: Action-slip
+      - id: 103010200
+        description: Action-lapse/omission
+      - id: 103010300
+        description: Action-mistake
+      - id: 103010400
+        description: Procedure violation
+      - id: 103010500
+        description: Timing
+      - id: 103010600
+        description: Third party
+      - id: 103010700
+        description: Psychological error-other
+    - id: 103020000
+      description: Psychological planning
+      children:
+      - id: 103020100
+        description: Flight planning
+        children:
+        - id: 103020101
+          description: Pre-flight planning
+        - id: 103020102
+          description: In-flight planning
+      - id: 103020200
+        description: Action-preparedness
+      - id: 103020300
+        description: ATC planning
+      - id: 103020400
+        description: Maintenance planning
+        children:
+        - id: 103020401
+          description: Spares provisioning
+    - id: 103030000
+      description: Information processing
+      children:
+      - id: 103030100
+        description: Action-decision making
+      - id: 103030200
+        description: Mental capacity
+      - id: 103030300
+        description: Comprehension
+      - id: 103030400
+        description: Mis-recognition
+      - id: 103030500
+        description: Misunderstanding
+      - id: 103030600
+        description: Assumption incorrect
+      - id: 103030700
+        description: False hypothesis
+      - id: 103030800
+        description: Confirmation bias
+      - id: 103030900
+        description: Mind set/expectancy
+      - id: 103031000
+        description: Psychological-habituation
+      - id: 103031100
+        description: Information processing-other
+    - id: 103040000
+      description: Perception & monitoring
+      children:
+      - id: 103040100
+        description: Psychological-perception
+      - id: 103040200
+        description: Psychological-attention
+      - id: 103040300
+        description: Psychological-monitoring
+        children:
+        - id: 103040301
+          description: Monitoring automation
+        - id: 103040302
+          description: Monitoring displays
+        - id: 103040303
+          description: Monitoring outside world
+        - id: 103040304
+          description: Monitoring frequencies
+        - id: 103040305
+          description: Monitoring a person
+      - id: 103040400
+        description: Boredom/monotony
+      - id: 103040500
+        description: Psychological-vigilance
+      - id: 103040600
+        description: Psychological-distraction
+      - id: 103040700
+        description: Channelized attention
+      - id: 103040800
+        description: Attention habituation
+      - id: 103040900
+        description: Attention-other
+    - id: 103050000
+      description: Psychological-ability
+      children:
+      - id: 103050100
+        description: Psychological-technique
+      - id: 103050200
+        description: Psychological-airmanship
+        children:
+        - id: 103050201
+          description: Handling of aircraft
+        - id: 103050202
+          description: Psychological-airmanship
+      - id: 103050300
+        description: Psychological-competence
+      - id: 103050400
+        description: Psychological-past record
+      - id: 103050500
+        description: Psychological-skill
+        children:
+        - id: 103050501
+          description: Maintenance-automation
+        - id: 103050502
+          description: Skill maintenance-age
+        - id: 103050503
+          description: Lack of practice
+        - id: 103050504
+          description: Negative transfer
+      - id: 103050600
+        description: Interaction-automation
+      - id: 103050700
+        description: Reaction time-ability
+      - id: 103050800
+        description: Non-standard technique
+      - id: 103050900
+        description: Other factors
+    - id: 103060000
+      description: Human judgement factors
+      children:
+      - id: 103060100
+        description: Spatial
+      - id: 103060200
+        description: Separation
+      - id: 103060300
+        description: Timing/speed
+      - id: 103060400
+        description: Other human judgement
+    - id: 103070000
+      description: Knowledge acquisition
+    - id: 103080000
+      description: Situational awareness
+      children:
+      - id: 103080100
+        description: Spatial disorientation
+      - id: 103080200
+        description: Geographic disorientation
+      - id: 103080300
+        description: Temporal disorientation
+      - id: 103080400
+        description: Visual disorientation
+      - id: 103080500
+        description: "'Losing the picture'"
+      - id: 103080600
+        description: Situational awareness
+      - id: 103080700
+        description: Other orientation factors
+    - id: 103090000
+      description: Personality/attitude
+      children:
+      - id: 103090100
+        description: Personality factors
+        children:
+        - id: 103090101
+          description: Aggressive personality
+        - id: 103090102
+          description: Assertive personality
+        - id: 103090103
+          description: Non-assertive personality
+      - id: 103090200
+        description: Risk-taking factors
+      - id: 103090300
+        description: Confidence problems
+        children:
+        - id: 103090301
+          description: Confidence in aircraft
+        - id: 103090302
+          description: Confidence in equipment
+        - id: 103090303
+          description: Self confidence problems
+        - id: 103090304
+          description: Confidence in others
+        - id: 103090305
+          description: Confidence in information
+        - id: 103090306
+          description: Confidence in automation
+        - id: 103090307
+          description: Confidence in ATC factors
+      - id: 103090400
+        description: Complacency factors
+      - id: 103090500
+        description: "'Get-home-itis' factors"
+      - id: 103090600
+        description: Motivation problems
+      - id: 103090700
+        description: Other attitude factors
+    - id: 103100000
+      description: Mental state factors
+      children:
+      - id: 103100100
+        description: Alertness problems
+      - id: 103100200
+        description: Personal stress factors
+        children:
+        - id: 103100201
+          description: Post-incident stress
+      - id: 103100300
+        description: Apprehension problems
+      - id: 103100400
+        description: Personal anxiety problems
+      - id: 103100500
+        description: Personal panic factors
+      - id: 103100600
+        description: Personal boredom problems
+      - id: 103100700
+        description: Personal situation denial
+      - id: 103100800
+        description: Other emotional factors
+        children:
+        - id: 103100801
+          description: Suicide
+  - id: 104000000
+    description: Personal work management
+    children:
+    - id: 104010000
+      description: Task scheduling
+    - id: 104020000
+      description: Personal timing of actions
+      children:
+      - id: 104020100
+        description: Unforeseen task additions
+    - id: 104030000
+      description: Workload task shedding
+    - id: 104040000
+      description: Task allocation
+    - id: 104050000
+      description: Other workload management
+  - id: 105000000
+    description: Experience & knowledge
+    children:
+    - id: 105010000
+      description: Experience & qualification
+      children:
+      - id: 105010100
+        description: Qualifications
+      - id: 105010200
+        description: Personal experience
+        children:
+        - id: 105010201
+          description: Total hours/years
+        - id: 105010202
+          description: Experience in position
+        - id: 105010203
+          description: Experience of aircraft type
+        - id: 105010204
+          description: Experience of aerodrome
+        - id: 105010205
+          description: Experience of route
+        - id: 105010206
+          description: Instrument flying
+        - id: 105010207
+          description: Other experience factors
+      - id: 105010300
+        description: Use of tools and equipment
+    - id: 105020000
+      description: Recency factors
+      children:
+      - id: 105020100
+        description: Recency in position
+      - id: 105020200
+        description: Recency on aircraft type
+      - id: 105020300
+        description: With aerodrome
+      - id: 105020400
+        description: Recent experience-route
+      - id: 105020500
+        description: Recent experience-IFR
+      - id: 105020600
+        description: Experience-operational
+      - id: 105020700
+        description: Other recency factor
+    - id: 105030000
+      description: Adequacy of knowledge
+      children:
+      - id: 105030100
+        description: General knowledge
+      - id: 105030200
+        description: Current knowledge
+      - id: 105030300
+        description: Regulatory requirements
+      - id: 105030400
+        description: Aeronautical knowledge
+      - id: 105030500
+        description: Aircraft system knowledge
+      - id: 105030600
+        description: Knowledge of procedures
+        children:
+        - id: 105030601
+          description: Company policies
+        - id: 105030602
+          description: Flight procedures
+        - id: 105030603
+          description: ATM procedures
+        - id: 105030604
+          description: Aerodrome procedures
+        - id: 105030605
+          description: Maintenance procedures
+      - id: 105030700
+        description: Knowledge of flight rules
+      - id: 105030800
+        description: Self briefing factors
+      - id: 105030900
+        description: Meteorological knowledge
+      - id: 105031000
+        description: Other knowledge factors
+- id: 200000000
+  description: Liveware-environment
+  children:
+  - id: 201000000
+    description: Physical environment
+    children:
+    - id: 201010000
+      description: Landing/take-off site
+      children:
+      - id: 201010100
+        description: Taxiway/runway
+      - id: 201010200
+        description: Approach aids
+      - id: 201010300
+        description: Infrastructure
+      - id: 201010400
+        description: Obstructions to vision
+      - id: 201010500
+        description: Landing take-off
+    - id: 201020000
+      description: Air traffic services
+      children:
+      - id: 201020100
+        description: Inappropriate
+      - id: 201020200
+        description: Air Traffic Control lack
+    - id: 201030000
+      description: ATS information provision
+      children:
+      - id: 201030100
+        description: Weather information
+      - id: 201030200
+        description: Aerodrome conditions
+      - id: 201030300
+        description: Other information
+    - id: 201040000
+      description: Weather/visibility
+    - id: 201050000
+      description: Workspace environment
+      children:
+      - id: 201050100
+        description: Anthropometric space
+      - id: 201050200
+        description: Access (for maintenance)
+      - id: 201050300
+        description: Visibility from workplace
+      - id: 201050400
+        description: Air quality in workplace
+      - id: 201050500
+        description: Ambient air pressure
+      - id: 201050600
+        description: Cold working environment
+      - id: 201050700
+        description: Hot working environment
+      - id: 201050800
+        description: Ill-lit environment
+      - id: 201050900
+        description: Vision impairment-glare
+      - id: 201051000
+        description: Environment humidity
+      - id: 201051100
+        description: Noise in the workplace
+      - id: 201051200
+        description: Ozone contamination
+      - id: 201051300
+        description: Smoke/fumes contamination
+      - id: 201051400
+        description: Radiation environment
+      - id: 201051500
+        description: Excessive vibration
+      - id: 201051600
+        description: Other workspace issues
+    - id: 201060000
+      description: Other interface
+  - id: 202000000
+    description: Psychosocial factors
+    children:
+    - id: 202010000
+      description: Job satisfaction
+    - id: 202020000
+      description: Morale/motivation
+    - id: 202030000
+      description: Cultural issues
+    - id: 202040000
+      description: Domestic issues
+      children:
+      - id: 202040100
+        description: Domestic event/crisis
+      - id: 202040200
+        description: Family pressure
+      - id: 202040300
+        description: Financial problems/issues
+      - id: 202040400
+        description: Interpersonal conflicts
+      - id: 202040500
+        description: Lifestyle change
+      - id: 202040600
+        description: Mental pressure-domestic
+    - id: 202050000
+      description: Other psychosocial issues
+    - id: 202060000
+      description: Non-sterile cockpit/workplace
+  - id: 203000000
+    description: Company/regulatory issues
+    children:
+    - id: 203010000
+      description: Pressure to achieve
+      children:
+      - id: 203010100
+        description: Commercial pressures
+      - id: 203010200
+        description: Specific company problems
+      - id: 203010300
+        description: Supervision problems
+      - id: 203010400
+        description: Managerial pressures
+    - id: 203020000
+      description: Labour relations factors
+      children:
+      - id: 203020100
+        description: Employee-management
+      - id: 203020200
+        description: Industrial action
+      - id: 203020300
+        description: Union/professional group
+    - id: 203030000
+      description: Management personnel policy
+      children:
+      - id: 203030100
+        description: Operational
+      - id: 203030200
+        description: Operational control
+      - id: 203030300
+        description: Operational support
+      - id: 203030400
+        description: Recruitment
+      - id: 203030500
+        description: Staffing
+      - id: 203030600
+        description: Resource allocation
+      - id: 203030700
+        description: Crew pairing
+      - id: 203030800
+        description: Scheduling
+      - id: 203030900
+        description: Maintenance scheduling
+      - id: 203031000
+        description: Career progression
+      - id: 203031100
+        description: Terms and conditions
+      - id: 203031200
+        description: Personnel requirement
+      - id: 203031300
+        description: Instructions
+      - id: 203031400
+        description: Shiftwork, duty time
+    - id: 203040000
+      description: Manning issues
+      children:
+      - id: 203040100
+        description: Unexpected staff shortage
+      - id: 203040200
+        description: Unexpected skill shortage
+    - id: 203050000
+      description: Regulatory policies
+  - id: 204000000
+    description: Operational task demands
+    children:
+    - id: 204010000
+      description: Workload task demands
+      children:
+      - id: 204010100
+        description: Overload/task saturation
+      - id: 204010200
+        description: High-staff/skills short
+      - id: 204010300
+        description: Underload-low demand
+      - id: 204010400
+        description: Workload level transition
+      - id: 204010500
+        description: Additional-unexpected
+      - id: 204010600
+        description: Additional-extraneous
+      - id: 204010700
+        description: Additional administrative
+      - id: 204010800
+        description: Additional-unusual
+      - id: 204010900
+        description: Additional-emergency
+      - id: 204011000
+        description: Additional-flow control
+    - id: 204020000
+      description: Time pressure factors
+      children:
+      - id: 204020100
+        description: While flying
+      - id: 204020200
+        description: Controlling air traffic
+      - id: 204020300
+        description: Maintenance/turn around
+      - id: 204020400
+        description: Night curfew
+      - id: 204020500
+        description: Flight time limitations
+    - id: 204030000
+      description: Mental pressure normal operations
+    - id: 204040000
+      description: Training/check situation
+      children:
+      - id: 204040100
+        description: Training in progress
+        children:
+        - id: 204040101
+          description: Flight crew
+        - id: 204040102
+          description: ATCO
+        - id: 204040103
+          description: Engineer
+      - id: 204040200
+        description: Other training going on
+    - id: 204050000
+      description: Operational task demands
+      children:
+      - id: 204050100
+        description: Caused by other aircraft
+      - id: 204050200
+        description: Caused by passengers
+        children:
+        - id: 204050201
+          description: Disruptive passengers
+      - id: 204050300
+        description: Technical problem/failure
+      - id: 204050400
+        description: Ground operations
+      - id: 204050500
+        description: Ground services
+      - id: 204050600
+        description: Technical support
+- id: 300000000
+  description: Hard/software interface
+  children:
+  - id: 301000000
+    description: Human/hardware interface
+    children:
+    - id: 301010000
+      description: Workplace equipment/design
+      children:
+      - id: 301010100
+        description: Design or ergonomics
+        children:
+        - id: 301010101
+          description: Eye reference overlooked
+        - id: 301010102
+          description: Seat design inadequate
+        - id: 301010103
+          description: Layout not optimum
+        - id: 301010104
+          description: Instrument design
+        - id: 301010105
+          description: Electronic display design
+        - id: 301010106
+          description: Control design unsuitable
+        - id: 301010107
+          description: Control/display incompatible
+        - id: 301010108
+          description: Control/display badly lit
+        - id: 301010109
+          description: Control/display location
+        - id: 301010110
+          description: Controls and displays
+        - id: 301010111
+          description: Equipment control
+        - id: 301010112
+          description: Motor workload excessive
+        - id: 301010113
+          description: Reach/vision restrictions
+      - id: 301010200
+        description: Personal discomfort
+      - id: 301010300
+        description: Alerts/warnings intrusive
+      - id: 301010400
+        description: Non-standard controls
+      - id: 301010500
+        description: Unreliable equipment
+      - id: 301010600
+        description: Electronic map display
+    - id: 301020000
+      description: Non-flight deck equipment
+      children:
+      - id: 301020100
+        description: Ergonomics
+        children:
+        - id: 301020101
+          description: Cabin crew seat design
+      - id: 301020200
+        description: Comfort
+      - id: 301020300
+        description: Intrusive alerts
+      - id: 301020400
+        description: Standardization
+      - id: 301020500
+        description: Reliability-other
+    - id: 301030000
+      description: Aircraft maintenance equipment
+      children:
+      - id: 301030100
+        description: Design tools/equipment
+      - id: 301030200
+        description: Reliability
+    - id: 301040000
+      description: ATC equipment
+      children:
+      - id: 301040100
+        description: Ergonomics-ATC equipment
+      - id: 301040200
+        description: Radar display standards
+      - id: 301040300
+        description: Progress strips display
+      - id: 301040400
+        description: ATC communications equipment
+      - id: 301040500
+        description: Reliability-ATC equipment
+      - id: 301040600
+        description: Other ATC equipment
+    - id: 301050000
+      description: Ergonomics for training
+    - id: 301060000
+      description: Suitability-maintenance
+  - id: 302000000
+    description: Inadequate info sources
+    children:
+    - id: 302010000
+      description: Data sources
+      children:
+      - id: 302010100
+        description: Radar information
+        children:
+        - id: 302010101
+          description: Primary radar information
+        - id: 302010102
+          description: Secondary radar information
+      - id: 302010200
+        description: Transponder information
+        children:
+        - id: 302010201
+          description: Mode C information
+        - id: 302010202
+          description: Squawk/identification
+      - id: 302010300
+        description: Human data source
+        children:
+        - id: 302010301
+          description: Civil air traffic control
+        - id: 302010302
+          description: Information-military
+        - id: 302010303
+          description: Information-other pilots
+      - id: 302010400
+        description: Other information
+    - id: 302020000
+      description: Communications media
+      children:
+      - id: 302020100
+        description: VHF/HF frequencies
+      - id: 302020200
+        description: Telephone
+      - id: 302020300
+        description: Data link communications
+      - id: 302020400
+        description: Other communications media
+  - id: 303000000
+    description: Human software interface
+    children:
+    - id: 303010000
+      description: Human firmware interface
+      children:
+      - id: 303010100
+        description: Firmware reliability
+      - id: 303010200
+        description: Electronic display
+      - id: 303010300
+        description: Data link/digital communications
+      - id: 303010400
+        description: Warning/checklist display
+    - id: 303020000
+      description: Software
+      children:
+      - id: 303020100
+        description: Software reliability
+      - id: 303020200
+        description: User friendliness
+      - id: 303020300
+        description: Menus/menu navigation
+  - id: 304000000
+    description: Automation systems
+    children:
+    - id: 304010000
+      description: Design philosophies
+      children:
+      - id: 304010100
+        description: User friendliness
+      - id: 304010200
+        description: System mode awareness
+      - id: 304010300
+        description: Additional workload
+      - id: 304010400
+        description: Compatibility-hardware
+      - id: 304010500
+        description: Reliability of automation
+      - id: 304010600
+        description: Unwanted disconnects
+    - id: 304020000
+      description: Use of automation
+      children:
+      - id: 304020100
+        description: Training-automation
+      - id: 304020200
+        description: Reliance on automation
+      - id: 304020300
+        description: Use/overuse of automation
+      - id: 304020400
+        description: Automation complacency
+  - id: 305000000
+    description: Automatic defence/warning
+    children:
+    - id: 305010000
+      description: Cockpit warnings
+      children:
+      - id: 305010100
+        description: Stall warnings
+      - id: 305010200
+        description: Windshear warnings
+      - id: 305010300
+        description: TCAS
+      - id: 305010400
+        description: GPWS
+      - id: 305010500
+        description: Gear warning system
+    - id: 305020000
+      description: ATC alarms/alerts
+      children:
+      - id: 305020100
+        description: Conflict alert
+      - id: 305020200
+        description: MSAWS
+    - id: 305030000
+      description: Other defences/warnings
+  - id: 306000000
+    description: Operational material
+    children:
+    - id: 306010000
+      description: Workplace documents
+      children:
+      - id: 306010100
+        description: Workplace manuals
+      - id: 306010200
+        description: Workplace checklists
+      - id: 306010300
+        description: Emergency checklists
+      - id: 306010400
+        description: Maps/charts or use of
+    - id: 306020000
+      description: Flight progress strips
+    - id: 306030000
+      description: Maintenance engineering material
+      children:
+      - id: 306030100
+        description: Maintenance process sheet
+    - id: 306040000
+      description: Operational documents
+      children:
+      - id: 306040100
+        description: Notices-advisory material
+      - id: 306040200
+        description: Other publications
+      - id: 306040300
+        description: Aircraft safety card
+      - id: 306040400
+        description: Written regulations
+      - id: 306040500
+        description: Other handbooks/manuals
+      - id: 306040600
+        description: Other checklists
+      - id: 306040700
+        description: Signage
+      - id: 306040800
+        description: Other written information
+- id: 400000000
+  description: Human v system support
+  children:
+  - id: 401000000
+    description: Human v procedures
+    children:
+    - id: 401010000
+      description: Human v SOP
+    - id: 401020000
+      description: Human v abnormal procedure
+    - id: 401030000
+      description: Human v ATC procedures
+      children:
+      - id: 401030100
+        description: Human v ATC operational procedures
+      - id: 401030200
+        description: Human v SIDS/STARS
+      - id: 401030300
+        description: Human v noise abatement
+    - id: 401040000
+      description: Human v aerodrome procedure
+    - id: 401050000
+      description: Human v maintenance procedures
+      children:
+      - id: 401050100
+        description: Human v maintenance recording
+    - id: 401060000
+      description: Human v company procedure
+    - id: 401070000
+      description: Human v other procedures
+    - id: 401080000
+      description: Human v custom & practice
+  - id: 402000000
+    description: Human v training
+    children:
+    - id: 402010000
+      description: Human v basic training
+      children:
+      - id: 402010100
+        description: Human v training syllabus
+    - id: 402020000
+      description: Human v specific training
+    - id: 402030000
+      description: Human v simulator training
+    - id: 402040000
+      description: Human v on-the-job training
+    - id: 402050000
+      description: Human v emergency training
+    - id: 402060000
+      description: Human v CRM/TRM
+    - id: 402070000
+      description: Human v recurrent training
+      children:
+      - id: 402070100
+        description: Human LOFT
+    - id: 402080000
+      description: Human v route training
+    - id: 402090000
+      description: Human v miscellaneous training
+      children:
+      - id: 402090100
+        description: Use of automation
+      - id: 402090200
+        description: Use of maps/charts
+      - id: 402090300
+        description: Use of manuals
+      - id: 402090400
+        description: Other training
+  - id: 403000000
+    description: Human/system interface-other
+- id: 500000000
+  description: Interface between humans
+  children:
+  - id: 501000000
+    description: Human v communications
+    children:
+    - id: 501010000
+      description: Human v spoken communications
+      children:
+      - id: 501010100
+        description: Human v communications between crew
+      - id: 501010200
+        description: Human v air-air communications
+      - id: 501010300
+        description: Human v air-ground communications
+        children:
+        - id: 501010301
+          description: Human v ATC-pilot communications
+        - id: 501010302
+          description: Human v company communications
+        - id: 501010303
+          description: Human v party line information
+      - id: 501010400
+        description: Human v ground-ground communications
+      - id: 501010500
+        description: Human interface-language
+      - id: 501010600
+        description: Human interface-accent
+      - id: 501010700
+        description: Human v phraseology
+      - id: 501010800
+        description: Human v readback/hearback
+      - id: 501010900
+        description: Human v callsign confusion
+      - id: 501011000
+        description: Human v noise interference
+      - id: 501011100
+        description: Human v interpretation
+    - id: 501020000
+      description: Human v written/read communications
+      children:
+      - id: 501020100
+        description: Human v documentation
+        children:
+        - id: 501020101
+          description: Human v incomplete documentation
+        - id: 501020102
+          description: Human v maintenance information
+      - id: 501020200
+        description: Human v flight progress strip
+      - id: 501020300
+        description: Human v data link communications
+      - id: 501020400
+        description: Human v teletype communications
+      - id: 501020500
+        description: Human v keying error
+      - id: 501020600
+        description: Human v handwriting
+      - id: 501020700
+        description: Human v misreading
+      - id: 501020800
+        description: Human v feedback loop
+    - id: 501030000
+      description: Human v visual signals
+      children:
+      - id: 501030100
+        description: Human v ground-hand signals
+      - id: 501030200
+        description: Human v visual signals
+  - id: 502000000
+    description: Human v team skill/CRM
+    children:
+    - id: 502010000
+      description: Human v team skills
+      children:
+      - id: 502010100
+        description: Human v coordination
+      - id: 502010200
+        description: Human v incompatibility
+      - id: 502010300
+        description: Human v confidence/trust
+      - id: 502010400
+        description: Human v cross-checking
+      - id: 502010500
+        description: Human v authority gradient
+      - id: 502010600
+        description: Human v peer pressure
+      - id: 502010700
+        description: Human v team assertion
+      - id: 502010800
+        description: Human v briefing team
+      - id: 502010900
+        description: Human v self feedback
+      - id: 502011000
+        description: Human v decision process
+      - id: 502011100
+        description: Human v group climate
+      - id: 502011200
+        description: Human v team planning
+      - id: 502011300
+        description: Human v managing workload
+    - id: 502020000
+      description: Human v formal coordination
+    - id: 502030000
+      description: Human v team changeover
+    - id: 502040000
+      description: Human v-other interaction
+  - id: 503000000
+    description: Human interface-supervision
+    children:
+    - id: 503010000
+      description: Human v operational supervision
+    - id: 503020000
+      description: Human v training supervision
+    - id: 503030000
+      description: Human v quality control
+    - id: 503040000
+      description: Human interface-standards
+  - id: 504000000
+    description: Human v regulatory activities
+    children:
+    - id: 504010000
+      description: Regulatory procedures
+    - id: 504020000
+      description: Regulatory standards
+      children:
+      - id: 504020100
+        description: Design standards
+      - id: 504020200
+        description: Certification
+    - id: 504030000
+      description: Human interface-regulations
+    - id: 504040000
+      description: Human interface-inspections
+    - id: 504050000
+      description: Human interface-monitoring organizations
+    - id: 504060000
+      description: Human interface-surveillance
+    - id: 504070000
+      description: Human interface-audits
+    - id: 504080000
+      description: Human interface-checks
+  - id: 505000000
+    description: Other human human interface

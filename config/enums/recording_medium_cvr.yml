@@ -1,0 +1,10 @@
+attribute_id: '241'
+xml_tag: Recording_Medium_CVR
+sequence:
+values:
+  1: Magnetic tape
+  2: Metal tape
+  3: Wire
+  4: Solid state
+  98: Other
+  99: Unknown

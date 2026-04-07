@@ -1,0 +1,8 @@
+attribute_id: '89'
+xml_tag: ARFS_Effective
+sequence:
+values:
+  1: Very effective
+  2: Moderately effective
+  3: Ineffective
+  99: Unknown

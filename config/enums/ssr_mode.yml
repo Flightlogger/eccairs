@@ -1,0 +1,10 @@
+attribute_id: '278'
+xml_tag: SSR_Mode
+sequence: 37
+values:
+  1: A
+  2: C
+  3: S
+  97: None
+  98: Other
+  99: Unknown

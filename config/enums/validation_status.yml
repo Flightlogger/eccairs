@@ -1,0 +1,6 @@
+attribute_id: '795'
+xml_tag: Validation_Status
+sequence:
+values:
+  1: 'Yes'
+  2: 'No'

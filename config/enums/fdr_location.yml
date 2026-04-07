@@ -1,0 +1,8 @@
+attribute_id: '169'
+xml_tag: FDR_Location
+sequence:
+values:
+  1: Forward fuselage
+  2: Mid-fuselage
+  3: Rear fuselage
+  99: Unknown

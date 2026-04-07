@@ -1,0 +1,7 @@
+attribute_id: '672'
+xml_tag: Maint_Report_Type
+sequence:
+values:
+  1: Initial finding only
+  2: Notification with complete report
+  3: Follow-up report
