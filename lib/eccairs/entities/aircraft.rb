@@ -440,7 +440,7 @@ module Eccairs
         add_attribute(Eccairs::Attributes::LossOfRevenue, false, value)
       end
 
-      # Add icao information
+      # Add ICAO information
       # @param value [Object] The attribute value
       # @return [Eccairs::Attributes::IcaoInformation] The created attribute instance
       # @note Attribute ID: 28, XML Tag: ICAO_Information
