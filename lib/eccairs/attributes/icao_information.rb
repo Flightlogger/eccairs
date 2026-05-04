@@ -2,10 +2,8 @@
 
 module Eccairs
   module Attributes
-    class IcaoInformation < Eccairs::Base::StringAttribute
-      attribute_id 28
-      xml_tag "ICAO_Information"
-      sequence 0
+    class IcaoInformation < Eccairs::Base::EnumAttribute
+      enums_from :icao_information
     end
   end
 end

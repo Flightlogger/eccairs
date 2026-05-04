@@ -1,6 +1,6 @@
 attribute_id: '28'
 xml_tag: ICAO_Information
-sequence:
+sequence: 0
 values:
   1: Off-shore
   2: United Nations
