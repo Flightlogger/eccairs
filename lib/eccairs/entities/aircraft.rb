@@ -440,13 +440,12 @@ module Eccairs
         add_attribute(Eccairs::Attributes::LossOfRevenue, false, value)
       end
 
-      # Add ICAO information (+icao_information+ enum, attribute ID 28 in E5x).
-      # Prefer a taxonomy id from +config/enums/icao_information.yml+ (integer or digits-only string).
-      # @param enum_id [Integer, String] Allowed enum id, or a string +EnumAttribute+ can resolve (e.g. "99").
+      # Add ICAO information
+      # @param value [Object] The attribute value
       # @return [Eccairs::Attributes::IcaoInformation] The created attribute instance
       # @note Attribute ID: 28, XML Tag: ICAO_Information
-      def add_icao_information(enum_id)
-        add_attribute(Eccairs::Attributes::IcaoInformation, false, enum_id)
+      def add_icao_information(value)
+        add_attribute(Eccairs::Attributes::IcaoInformation, false, value)
       end
 
       # Add ssr mode

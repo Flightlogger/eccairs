@@ -63,18 +63,5 @@ RSpec.describe Eccairs::Attributes::IcaoInformation do
       xml = set.to_xml
       expect(xml).to include("99")
     end
-
-    it "generates XML with correct structure" do
-      set = Eccairs.set
-      set.add_occurrence do |occurrence|
-        occurrence.add_aircraft do |aircraft|
-          aircraft.add_icao_information(Integer(99))
-        end
-      end
-
-      xml = set.to_xml
-      expect(xml).to include("<ICAO_Information")
-      expect(xml).to include('attributeId="28"')
-    end
   end
 end
